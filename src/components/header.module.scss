@@ -1,0 +1,51 @@
+@import '../styles/theme';
+
+.header {
+  padding: 0.6rem 1.5rem;
+}
+
+.logo {
+  margin: 0;
+}
+
+.layout {
+  max-width: $layout-width;
+  margin: 0 auto;
+}
+
+.link {
+  color: $text;
+  font-size: 0.8rem;
+  margin-left: 1.8rem;
+  text-decoration: none;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: $text-highlight;
+  }
+}
+
+.minorLink {
+  color: $text;
+  font-size: 0.7rem;
+  margin-left: 1.5rem;
+  margin-bottom: 0.4rem;
+  text-decoration: none;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: $text-highlight;
+  }
+}
+
+.phone {
+  color: $text;
+  font-size: 0.8rem;
+  margin-right: 1.8rem;
+  text-decoration: none;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: $text-highlight;
+  }
+}
