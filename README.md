@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/87d6e8c1-8310-4209-bf39-7299a20eb0f9/deploy-status)](https://app.netlify.com/sites/ourlifeloop/deploys)
+
 ## 🚀 Quick start
 
 1.  **Install Gatsby.**
