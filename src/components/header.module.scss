@@ -1,16 +1,12 @@
 @import '../styles/theme';
 
 .header {
+  box-shadow: 0px 0px 10px 0px $highlight;
   padding: 0.6rem 1.5rem;
 }
 
 .logo {
   margin: 0;
-}
-
-.layout {
-  max-width: $layout-width;
-  margin: 0 auto;
 }
 
 .link {
@@ -48,4 +44,8 @@
   &:hover {
     color: $text-highlight;
   }
+}
+
+.linkContainer {
+  display: flex;
 }
