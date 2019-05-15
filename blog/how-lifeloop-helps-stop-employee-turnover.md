@@ -3,6 +3,8 @@ path: stop-employee-turnover
 date: 2019-05-15T22:40:45.100Z
 title: How LifeLoop Helps Stop Employee Turnover
 ---
+![](/images/employee-turnover.png)
+
 #### TURNOVER IS A WELL-KNOWN PROBLEM IN LONG-TERM CARE. EVERY SETTING IN SENIOR LIVING STRUGGLES TO HANG ONTO QUALITY WORKERS.
 
 The numbers paint a pretty grim portrait of the issue. For nurses, the median turnover rate (the percentage of employees who leave a position in one year or less) in long-term care is 44%. For support staff, it’s 50%, which is almost the same rate as full-time retail workers.
@@ -13,9 +15,8 @@ As dramatic as these numbers look, they may be the least of the problems associa
 
 In the face of these consequences, long-term care administrators have to consider two questions:
 
-1) How can our community prevent turnover from happening?
-
-2) When turnover does occur, how can we minimize its effects?
+1. How can our community prevent turnover from happening?
+2. When turnover does occur, how can we minimize its effects?
 
 It might surprise them to learn that LifeLoop can help with both.
 
