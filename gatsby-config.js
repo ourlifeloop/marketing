@@ -10,14 +10,46 @@ module.exports = {
     email: 'inquiries@ourlifeloop.com',
   },
   plugins: [
-    'gatsby-plugin-sass',
-    'gatsby-plugin-favicon',
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        path: `${__dirname}/src/cms`,
+        name: 'cms',
       },
     },
-    'gatsby-plugin-netlify-cms',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1400,
+            },
+          },
+        ],
+      },
+    },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-favicon',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/utils/typography',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+    'gatsby-plugin-netlify',
   ],
 };

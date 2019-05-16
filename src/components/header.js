@@ -28,7 +28,7 @@ export default () => {
             <Link className={styles.linkContainer} to="/">
               <img
                 className={styles.logo}
-                src="lifeloop-logo.png"
+                src="/lifeloop-logo.png"
                 alt="Lifeloop"
               />
             </Link>
@@ -48,7 +48,7 @@ export default () => {
               Contact Us
             </Link>
           </FlexContainer>
-          <FlexContainer direction="column" align="flexEnd">
+          <FlexContainer direction="column" align="flexend">
             <FlexContainer>
               <Link className={styles.minorLink} to="/training">
                 Training
