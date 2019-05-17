@@ -8,7 +8,7 @@ export default () => (
   <>
     <Header />
     <Layout>
-      <h1>Features</h1>
+      <h1>Privacy Statement</h1>
     </Layout>
     <Footer />
   </>

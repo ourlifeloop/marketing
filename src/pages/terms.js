@@ -2,12 +2,14 @@ import React from 'react';
 
 import Header from '../components/header';
 import Layout from '../components/layout';
+import Footer from '../components/footer';
 
 export default () => (
   <>
     <Header />
     <Layout>
-      <h1>Training</h1>
+      <h1>Terms of Service</h1>
     </Layout>
+    <Footer />
   </>
 );

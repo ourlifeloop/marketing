@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from '../components/header';
 import Layout from '../components/layout';
+import Footer from '../components/footer';
 
 export default () => (
   <>
@@ -9,5 +10,6 @@ export default () => (
     <Layout>
       <h1>Demo</h1>
     </Layout>
+    <Footer />
   </>
 );

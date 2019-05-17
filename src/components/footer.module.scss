@@ -1,0 +1,39 @@
+@import '../styles/theme';
+
+.footer {
+  background-color: $primary-blue;
+  padding: 1rem 0;
+}
+
+.link {
+  color: $text-light;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: $highlight;
+  }
+}
+
+$social-size: 35px;
+.socialLink {
+  align-items: center;
+  background-color: $text-light;
+  border-radius: $social-size / 2;
+  color: $primary-blue;
+  display: flex;
+  height: $social-size;
+  margin: 0 1rem 1rem 0;
+  justify-content: center;
+  transition: background-color 0.2s linear;
+  width: $social-size;
+
+  &:hover {
+    background-color: $highlight;
+  }
+}
+
+.appLinkImg {
+  margin-left: 1rem;
+}

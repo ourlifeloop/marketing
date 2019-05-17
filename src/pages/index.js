@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import FlexContainer from '../primitives/flex-container';
 import Header from '../components/header';
 import Layout from '../components/layout';
+import Footer from '../components/footer';
 
 import styles from './index.module.scss';
 
@@ -32,6 +33,7 @@ export default ({ data }) => {
       <Layout>
         <h1>Home</h1>
       </Layout>
+      <Footer />
     </>
   );
 };
@@ -40,7 +42,7 @@ export const query = graphql`
   query {
     hero: file(relativePath: { eq: "home-hero.png" }) {
       childImageSharp {
-        fluid(maxHeight: 700, quality: 100, toFormat: JPG, fit: COVER) {
+        fluid(maxHeight: 600, quality: 100, toFormat: JPG, fit: COVER) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }

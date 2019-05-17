@@ -62,9 +62,12 @@ export default function Header({ backgroundImage, children }) {
           </FlexContainer>
           <FlexContainer direction="column" align="flexend">
             <FlexContainer>
-              <Link className={styles.minorLink} to="/training">
+              <a
+                className={styles.minorLink}
+                href="https://ourlifeloop.squarespace.com/training"
+              >
                 Training
-              </Link>
+              </a>
               <a
                 className={styles.minorLink}
                 href="https://ourlifeloop.com/login"
@@ -93,7 +96,6 @@ export default function Header({ backgroundImage, children }) {
     return header;
   }
 
-  console.log(styles.heroImage);
   return (
     <div className={styles.relativeContainer}>
       <Img className={styles.heroImage} fluid={backgroundImage} />
