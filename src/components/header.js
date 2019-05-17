@@ -28,7 +28,7 @@ export default () => {
             <Link className={styles.linkContainer} to="/">
               <img
                 className={styles.logo}
-                src="/lifeloop-logo.png"
+                src="/images/lifeloop-logo.png"
                 alt="Lifeloop"
               />
             </Link>
