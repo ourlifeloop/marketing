@@ -40,6 +40,7 @@ export default function Footer() {
                 className={styles.socialLink}
                 href="https://twitter.com/ourlifeloop"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <Twitter size={20} />
               </a>
@@ -47,6 +48,7 @@ export default function Footer() {
                 className={styles.socialLink}
                 href="https://www.facebook.com/ourlifeloop"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <Facebook size={20} />
               </a>
@@ -54,6 +56,7 @@ export default function Footer() {
                 className={styles.socialLink}
                 href="https://www.linkedin.com/company/lifeloop"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <LinkedIn size={20} />
               </a>
@@ -71,13 +74,18 @@ export default function Footer() {
             <a
               href="https://play.google.com/store/apps/details?id=com.lifeloopproject"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Img
                 className={styles.appLinkImg}
                 fixed={google.childImageSharp.fixed}
               />
             </a>
-            <a href="https://appstore.com/lifeloopforiphone" target="_blank">
+            <a
+              href="https://appstore.com/lifeloopforiphone"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Img
                 className={styles.appLinkImg}
                 fixed={apple.childImageSharp.fixed}
