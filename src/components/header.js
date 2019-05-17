@@ -1,4 +1,7 @@
 import React from 'react';
+import Img from 'gatsby-image';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
 import FlexContainer from '../primitives/flex-container';
@@ -7,7 +10,7 @@ import Layout from './layout';
 
 import styles from './header.module.scss';
 
-export default () => {
+export default ({ backgroundImage, children }) => {
   const { site, logo } = useStaticQuery(
     graphql`
       query {
@@ -19,10 +22,7 @@ export default () => {
         logo: file(relativePath: { eq: "lifeloop-logo.png" }) {
           childImageSharp {
             fixed(width: 180) {
-              src
-              srcSet
-              height
-              width
+              ...GatsbyImageSharpFixed_noBase64
             }
           }
         }
@@ -30,20 +30,17 @@ export default () => {
     `,
   );
 
-  return (
-    <header className={styles.header}>
+  const header = (
+    <header
+      className={classNames(styles.header, {
+        [styles.headerImg]: backgroundImage,
+      })}
+    >
       <Layout>
         <FlexContainer justify="spacebetween">
           <FlexContainer align="center">
             <Link className={styles.linkContainer} to="/">
-              <img
-                className={styles.logo}
-                src={logo.childImageSharp.fixed.src}
-                srcSet={logo.childImageSharp.fixed.srcSet}
-                height={logo.childImageSharp.fixed.height}
-                width={logo.childImageSharp.fixed.width}
-                alt="Lifeloop"
-              />
+              <Img fixed={logo.childImageSharp.fixed} />
             </Link>
             <Link className={styles.link} to="/features">
               Features
@@ -89,4 +86,31 @@ export default () => {
       </Layout>
     </header>
   );
+
+  if (!backgroundImage) {
+    return header;
+  }
+
+  console.log(styles.heroImage);
+  return (
+    <div className={styles.relativeContainer}>
+      <Img className={styles.heroImage} fluid={backgroundImage} />
+      {header}
+      {children}
+    </div>
+  );
+};
+
+Headers.propTypes = {
+  children: PropTypes.node,
+  backgroundImage: PropTypes.shape({
+    src: PropTypes.string,
+    srcSet: PropTypes.string,
+    originalName: PropTypes.string,
+  }),
+};
+
+Headers.defaultProps = {
+  children: undefined,
+  backgroundImage: undefined,
 };
