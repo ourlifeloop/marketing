@@ -8,12 +8,22 @@ import Layout from './layout';
 import styles from './header.module.scss';
 
 export default () => {
-  const data = useStaticQuery(
+  const { site, logo } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             phoneNumber
+          }
+        }
+        logo: file(relativePath: { eq: "lifeloop-logo.png" }) {
+          childImageSharp {
+            fixed(width: 180) {
+              src
+              srcSet
+              height
+              width
+            }
           }
         }
       }
@@ -28,7 +38,10 @@ export default () => {
             <Link className={styles.linkContainer} to="/">
               <img
                 className={styles.logo}
-                src="/images/lifeloop-logo.png"
+                src={logo.childImageSharp.fixed.src}
+                srcSet={logo.childImageSharp.fixed.srcSet}
+                height={logo.childImageSharp.fixed.height}
+                width={logo.childImageSharp.fixed.width}
                 alt="Lifeloop"
               />
             </Link>
@@ -63,9 +76,9 @@ export default () => {
             <FlexContainer align="center">
               <a
                 className={styles.phone}
-                href={`tel:${data.site.siteMetadata.phoneNumber}`}
+                href={`tel:${site.siteMetadata.phoneNumber}`}
               >
-                Call us: <b>{data.site.siteMetadata.phoneNumber}</b>
+                Call us: <b>{site.siteMetadata.phoneNumber}</b>
               </a>
               <Link to="/demo">
                 <Button>Request a Demo</Button>

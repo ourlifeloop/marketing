@@ -2,11 +2,14 @@
 
 .header {
   box-shadow: 0px 0px 10px 0px $highlight;
-  padding: 0.6rem 1.5rem;
+  padding: 0.6rem 0;
 }
 
 .logo {
+  display: block;
+  height: auto;
   margin: 0;
+  width: 100%;
 }
 
 .link {
@@ -47,5 +50,5 @@
 }
 
 .linkContainer {
-  display: flex;
+  width: 180px;
 }
