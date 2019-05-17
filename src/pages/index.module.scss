@@ -1,0 +1,21 @@
+@import '../styles/theme';
+
+.layout {
+  height: 100%;
+}
+
+.heroContainer {
+  height: 100%;
+  max-width: 550px;
+}
+
+.title {
+  font-size: 3.5rem;
+}
+
+.titleDescription {
+  color: $text;
+  margin: 1.5rem 0;
+  line-height: 27px;
+  font-size: 1.1rem;
+}

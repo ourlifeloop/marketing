@@ -39,7 +39,7 @@ export default function Header({ backgroundImage, children }) {
     >
       <Helmet title="Senior Living Calendar and Activity Management - LifeLoop" />
       <Layout>
-        <FlexContainer justify="spacebetween">
+        <FlexContainer justify="spacebetween" className={styles.innerContainer}>
           <FlexContainer align="center">
             <Link className={styles.linkContainer} to="/">
               <Img fixed={logo.childImageSharp.fixed} />
@@ -98,7 +98,7 @@ export default function Header({ backgroundImage, children }) {
     <div className={styles.relativeContainer}>
       <Img className={styles.heroImage} fluid={backgroundImage} />
       {header}
-      {children}
+      <div className={styles.childContainer}>{children}</div>
     </div>
   );
 }

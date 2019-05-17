@@ -1,12 +1,27 @@
 @import '../styles/theme';
 
+$vertical-padding: 0.6rem;
+$inner-height: 56px;
+
 .relativeContainer {
-  display: relative;
+  position: relative;
+}
+
+.childContainer {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: calc(#{$inner-height} + #{$vertical-padding * 2});
+}
+
+.innerContainer {
+  height: $inner-height;
 }
 
 .header {
   box-shadow: 0px 0px 10px 0px $highlight;
-  padding: 0.6rem 0;
+  padding: $vertical-padding 0;
 
   &--img {
     background-color: rgba(#ffffff, 0.37);
@@ -20,16 +35,11 @@
 
 .heroImage {
   height: 700px;
-
-  img {
-    margin: 0;
-  }
 }
 
 .logo {
   display: block;
   height: auto;
-  margin: 0;
   width: 100%;
 }
 
