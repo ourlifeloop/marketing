@@ -5,7 +5,6 @@ import Header from '../components/header';
 import Layout from '../components/layout';
 
 export default ({ data }) => {
-  console.log(data);
   return (
     <>
       <Header backgroundImage={data.hero.childImageSharp.fluid} />

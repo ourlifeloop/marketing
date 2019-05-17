@@ -1,5 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link, useStaticQuery, graphql } from 'gatsby';
@@ -36,6 +37,7 @@ export default function Header({ backgroundImage, children }) {
         [styles.headerImg]: backgroundImage,
       })}
     >
+      <Helmet title="Senior Living Calendar and Activity Management - LifeLoop" />
       <Layout>
         <FlexContainer justify="spacebetween">
           <FlexContainer align="center">
