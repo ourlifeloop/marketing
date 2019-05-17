@@ -10,7 +10,7 @@ import Layout from './layout';
 
 import styles from './header.module.scss';
 
-export default ({ backgroundImage, children }) => {
+export default function Header({ backgroundImage, children }) {
   const { site, logo } = useStaticQuery(
     graphql`
       query {
@@ -99,9 +99,9 @@ export default ({ backgroundImage, children }) => {
       {children}
     </div>
   );
-};
+}
 
-Headers.propTypes = {
+Header.propTypes = {
   children: PropTypes.node,
   backgroundImage: PropTypes.shape({
     src: PropTypes.string,
@@ -110,7 +110,7 @@ Headers.propTypes = {
   }),
 };
 
-Headers.defaultProps = {
+Header.defaultProps = {
   children: undefined,
   backgroundImage: undefined,
 };
