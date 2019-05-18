@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import { Link, useStaticQuery } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 
 import Layout from './layout';
 import FlexContainer from '../primitives/flex-container';

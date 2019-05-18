@@ -47,6 +47,7 @@ $inner-height: 56px;
   color: $text;
   font-size: 0.8rem;
   margin-left: 1.8rem;
+  padding: 1rem 0;
   text-decoration: none;
   transition: color 0.2s linear;
 
@@ -82,4 +83,74 @@ $inner-height: 56px;
 
 .linkContainer {
   width: 180px;
+}
+
+.dropdownContainer {
+  color: $text;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-left: 1.8rem;
+  padding: 1rem 0;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: $text-highlight;
+
+    img,
+    .dropdown,
+    .dropdownLink {
+      opacity: 1;
+      pointer-events: all;
+      height: auto;
+    }
+  }
+}
+
+.dropdown {
+  background-color: $text-light;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px $highlight;
+  pointer-events: none;
+  left: -20px;
+  margin-top: 3rem;
+  opacity: 0;
+  padding: 0.4rem 0.8rem;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s linear;
+  width: 200px;
+  z-index: 100;
+
+  &:before {
+    position: absolute;
+    top: -6px;
+    left: 2.8rem;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid white;
+    border-left: 6px solid transparent;
+    content: '';
+  }
+}
+
+.dropdownLink {
+  color: $text;
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  transition: color 0.2s linear;
+
+  img {
+    margin-right: 0.8rem;
+    opacity: 0;
+    width: 30px;
+  }
+
+  &:hover {
+    color: $text-highlight;
+  }
 }

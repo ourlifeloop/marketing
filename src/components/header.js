@@ -6,8 +6,18 @@ import classNames from 'classnames';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
 import FlexContainer from '../primitives/flex-container';
+import { ChevronDown } from '../utils/icons';
 import Button from '../primitives/button';
 import Layout from './layout';
+
+import calendar from '../assets/calendar.svg';
+import family from '../assets/family.svg';
+import maintenance from '../assets/maintenance.svg';
+import messages from '../assets/messages.svg';
+import photos from '../assets/photos.svg';
+import reports from '../assets/reports.svg';
+import residents from '../assets/residents.svg';
+import transportation from '../assets/transportation.svg';
 
 import styles from './header.module.scss';
 
@@ -44,9 +54,75 @@ export default function Header({ backgroundImage, children }) {
             <Link className={styles.linkContainer} to="/">
               <Img fixed={logo.childImageSharp.fixed} />
             </Link>
-            <Link className={styles.link} to="/features">
+            <FlexContainer className={styles.dropdownContainer} align="center">
               Features
-            </Link>
+              <ChevronDown size={15} />
+              <div className={styles.dropdown}>
+                <Link to="/features/activities" className={styles.dropdownLink}>
+                  <FlexContainer align="center">
+                    <img src={calendar} alt="Activity Calendar Feature" />
+                    Activity Calendar
+                  </FlexContainer>
+                </Link>
+                <Link
+                  to="/features/resident-management"
+                  className={styles.dropdownLink}
+                >
+                  <FlexContainer align="center">
+                    <img src={reports} alt="Resident Management Feature" />
+                    Resident Management
+                  </FlexContainer>
+                </Link>
+                <Link to="/features/messaging" className={styles.dropdownLink}>
+                  <FlexContainer align="center">
+                    <img src={messages} alt="Messaging Feature" />
+                    Messaging
+                  </FlexContainer>
+                </Link>
+                <Link
+                  to="/features/transportation"
+                  className={styles.dropdownLink}
+                >
+                  <FlexContainer align="center">
+                    <img src={transportation} alt="Transportation Feature" />
+                    Transportation
+                  </FlexContainer>
+                </Link>
+                <Link
+                  to="/features/maintenance"
+                  className={styles.dropdownLink}
+                >
+                  <FlexContainer align="center">
+                    <img src={maintenance} alt="Maintenance Feature" />
+                    Maintenance
+                  </FlexContainer>
+                </Link>
+                <Link
+                  to="/features/resident-portal"
+                  className={styles.dropdownLink}
+                >
+                  <FlexContainer align="center">
+                    <img src={residents} alt="Resident Portal Feature" />
+                    Resident Portal
+                  </FlexContainer>
+                </Link>
+                <Link
+                  to="/features/family-portal"
+                  className={styles.dropdownLink}
+                >
+                  <FlexContainer align="center">
+                    <img src={family} alt="Family Portal Feature" />
+                    Family Portal
+                  </FlexContainer>
+                </Link>
+                <Link to="/features/photos" className={styles.dropdownLink}>
+                  <FlexContainer align="center">
+                    <img src={photos} alt="Photos Feature" />
+                    Photos
+                  </FlexContainer>
+                </Link>
+              </div>
+            </FlexContainer>
             <Link className={styles.link} to="/benefits">
               Benefits
             </Link>
