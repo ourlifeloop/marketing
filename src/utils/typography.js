@@ -2,13 +2,14 @@ import Typography from 'typography';
 
 const typography = new Typography({
   baseFontSize: '18px',
+  headerWeight: '700',
   bodyWeight: '400',
-  headerFontFamily: ['Roboto', 'Helvetica', 'sans-serif'],
-  bodyFontFamily: ['Roboto', 'Helvetica', 'sans-serif'],
+  headerFontFamily: ['PT Sans', 'Helvetica', 'sans-serif'],
+  bodyFontFamily: ['PT Sans', 'Helvetica', 'sans-serif'],
   googleFonts: [
     {
-      name: 'Roboto',
-      styles: ['300', '400', '500', '700'],
+      name: 'PT Sans',
+      styles: ['400', '400i', '700', '700i'],
     },
   ],
 });

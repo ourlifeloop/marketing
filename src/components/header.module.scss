@@ -120,7 +120,7 @@ $inner-height: 56px;
   position: absolute;
   top: 0;
   transition: all 0.2s linear;
-  width: 200px;
+  width: 220px;
   z-index: 100;
 
   &:before {
@@ -145,7 +145,7 @@ $inner-height: 56px;
   transition: color 0.2s linear;
 
   img {
-    margin-right: 0.8rem;
+    margin: 0 0.8rem 0 0;
     opacity: 0;
     width: 30px;
   }
