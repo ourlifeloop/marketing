@@ -4,11 +4,17 @@ import { debounce } from './lodash';
 
 export const useResize = cb =>
   useEffect(() => {
+    if (typeof window === 'undefined') {
+      return;
+    }
     window.addEventListener('resize', cb);
     return () => window.removeEventListener('resize', cb);
   }, []);
 
 export const useDimensions = () => {
+  if (typeof window === 'undefined') {
+    return { width: 2000, height: 2000 };
+  }
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
