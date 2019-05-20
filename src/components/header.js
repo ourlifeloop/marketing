@@ -6,7 +6,8 @@ import classNames from 'classnames';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
 import FlexContainer from '../primitives/flex-container';
-import { ChevronDown } from '../utils/icons';
+import { ChevronDown, Menu } from '../utils/icons';
+import { useDevice } from '../utils/effects';
 import Button from '../primitives/button';
 import Layout from './layout';
 
@@ -22,6 +23,7 @@ import transportation from '../assets/transportation.svg';
 import styles from './header.module.scss';
 
 export default function Header({ backgroundImage, children }) {
+  const { isDesktop, isMobile } = useDevice();
   const { site, logo } = useStaticQuery(
     graphql`
       query {
@@ -41,6 +43,94 @@ export default function Header({ backgroundImage, children }) {
     `,
   );
 
+  const renderDesktopLinks = () => (
+    <>
+      <FlexContainer className={styles.dropdownContainer} align="center">
+        Features
+        <ChevronDown size={15} />
+        <div className={styles.dropdown}>
+          <Link to="/features/activities" className={styles.dropdownLink}>
+            <FlexContainer align="center">
+              <img src={calendar} alt="Activity Calendar Feature" />
+              Activity Calendar
+            </FlexContainer>
+          </Link>
+          <Link
+            to="/features/resident-management"
+            className={styles.dropdownLink}
+          >
+            <FlexContainer align="center">
+              <img src={reports} alt="Resident Management Feature" />
+              Resident Management
+            </FlexContainer>
+          </Link>
+          <Link to="/features/messaging" className={styles.dropdownLink}>
+            <FlexContainer align="center">
+              <img src={messages} alt="Messaging Feature" />
+              Messaging
+            </FlexContainer>
+          </Link>
+          <Link to="/features/transportation" className={styles.dropdownLink}>
+            <FlexContainer align="center">
+              <img src={transportation} alt="Transportation Feature" />
+              Transportation
+            </FlexContainer>
+          </Link>
+          <Link to="/features/maintenance" className={styles.dropdownLink}>
+            <FlexContainer align="center">
+              <img src={maintenance} alt="Maintenance Feature" />
+              Maintenance
+            </FlexContainer>
+          </Link>
+          <Link to="/features/resident-portal" className={styles.dropdownLink}>
+            <FlexContainer align="center">
+              <img src={residents} alt="Resident Portal Feature" />
+              Resident Portal
+            </FlexContainer>
+          </Link>
+          <Link to="/features/family-portal" className={styles.dropdownLink}>
+            <FlexContainer align="center">
+              <img src={family} alt="Family Portal Feature" />
+              Family Portal
+            </FlexContainer>
+          </Link>
+          <Link to="/features/photos" className={styles.dropdownLink}>
+            <FlexContainer align="center">
+              <img src={photos} alt="Photos Feature" />
+              Photos
+            </FlexContainer>
+          </Link>
+        </div>
+      </FlexContainer>
+      <Link className={styles.link} to="/benefits">
+        Benefits
+      </Link>
+      <Link className={styles.link} to="/our-story">
+        Our Story
+      </Link>
+      <Link className={styles.link} to="/blog">
+        Blog
+      </Link>
+      <Link className={styles.link} to="/contact">
+        Contact Us
+      </Link>
+    </>
+  );
+
+  const renderExternalLinks = () => (
+    <FlexContainer>
+      <a
+        className={styles.minorLink}
+        href="https://ourlifeloop.squarespace.com/training"
+      >
+        Training
+      </a>
+      <a className={styles.minorLink} href="https://ourlifeloop.com/login">
+        Login
+      </a>
+    </FlexContainer>
+  );
+
   const header = (
     <header
       className={classNames(styles.header, {
@@ -51,116 +141,33 @@ export default function Header({ backgroundImage, children }) {
       <Layout>
         <FlexContainer justify="spacebetween" className={styles.innerContainer}>
           <FlexContainer align="center">
-            <Link className={styles.linkContainer} to="/">
-              <Img fixed={logo.childImageSharp.fixed} />
+            <Link className={classNames(styles.linkContainer)} to="/">
+              <Img
+                fixed={logo.childImageSharp.fixed}
+                className={styles.logoLink}
+              />
             </Link>
-            <FlexContainer className={styles.dropdownContainer} align="center">
-              Features
-              <ChevronDown size={15} />
-              <div className={styles.dropdown}>
-                <Link to="/features/activities" className={styles.dropdownLink}>
-                  <FlexContainer align="center">
-                    <img src={calendar} alt="Activity Calendar Feature" />
-                    Activity Calendar
-                  </FlexContainer>
-                </Link>
-                <Link
-                  to="/features/resident-management"
-                  className={styles.dropdownLink}
-                >
-                  <FlexContainer align="center">
-                    <img src={reports} alt="Resident Management Feature" />
-                    Resident Management
-                  </FlexContainer>
-                </Link>
-                <Link to="/features/messaging" className={styles.dropdownLink}>
-                  <FlexContainer align="center">
-                    <img src={messages} alt="Messaging Feature" />
-                    Messaging
-                  </FlexContainer>
-                </Link>
-                <Link
-                  to="/features/transportation"
-                  className={styles.dropdownLink}
-                >
-                  <FlexContainer align="center">
-                    <img src={transportation} alt="Transportation Feature" />
-                    Transportation
-                  </FlexContainer>
-                </Link>
-                <Link
-                  to="/features/maintenance"
-                  className={styles.dropdownLink}
-                >
-                  <FlexContainer align="center">
-                    <img src={maintenance} alt="Maintenance Feature" />
-                    Maintenance
-                  </FlexContainer>
-                </Link>
-                <Link
-                  to="/features/resident-portal"
-                  className={styles.dropdownLink}
-                >
-                  <FlexContainer align="center">
-                    <img src={residents} alt="Resident Portal Feature" />
-                    Resident Portal
-                  </FlexContainer>
-                </Link>
-                <Link
-                  to="/features/family-portal"
-                  className={styles.dropdownLink}
-                >
-                  <FlexContainer align="center">
-                    <img src={family} alt="Family Portal Feature" />
-                    Family Portal
-                  </FlexContainer>
-                </Link>
-                <Link to="/features/photos" className={styles.dropdownLink}>
-                  <FlexContainer align="center">
-                    <img src={photos} alt="Photos Feature" />
-                    Photos
-                  </FlexContainer>
-                </Link>
-              </div>
-            </FlexContainer>
-            <Link className={styles.link} to="/benefits">
-              Benefits
-            </Link>
-            <Link className={styles.link} to="/our-story">
-              Our Story
-            </Link>
-            <Link className={styles.link} to="/blog">
-              Blog
-            </Link>
-            <Link className={styles.link} to="/contact">
-              Contact Us
-            </Link>
+            {isDesktop && renderDesktopLinks()}
           </FlexContainer>
-          <FlexContainer direction="column" align="flexend">
-            <FlexContainer>
-              <a
-                className={styles.minorLink}
-                href="https://ourlifeloop.squarespace.com/training"
-              >
-                Training
-              </a>
-              <a
-                className={styles.minorLink}
-                href="https://ourlifeloop.com/login"
-              >
-                Login
-              </a>
-            </FlexContainer>
+          <FlexContainer direction="column" justify="center" align="flexend">
+            {isDesktop && renderExternalLinks()}
             <FlexContainer align="center">
-              <a
-                className={styles.phone}
-                href={`tel:${site.siteMetadata.phoneNumber}`}
-              >
-                Call us: <b>{site.siteMetadata.phoneNumber}</b>
-              </a>
+              {!isMobile && (
+                <a
+                  className={styles.phone}
+                  href={`tel:${site.siteMetadata.phoneNumber}`}
+                >
+                  Call us: <b>{site.siteMetadata.phoneNumber}</b>
+                </a>
+              )}
               <Link to="/demo">
                 <Button>Request a Demo</Button>
               </Link>
+              {!isDesktop && (
+                <FlexContainer align="center" className={styles.menuContainer}>
+                  <Menu className={styles.menu} size={50} />
+                </FlexContainer>
+              )}
             </FlexContainer>
           </FlexContainer>
         </FlexContainer>

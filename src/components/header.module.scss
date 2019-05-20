@@ -1,7 +1,7 @@
 @import '../styles/theme';
 
 $vertical-padding: 0.6rem;
-$inner-height: 56px;
+$inner-height: 64px;
 
 .relativeContainer {
   position: relative;
@@ -27,6 +27,7 @@ $inner-height: 56px;
     background-color: rgba(#ffffff, 0.37);
     box-shadow: none;
     left: 0;
+    margin: 0;
     position: absolute;
     right: 0;
     top: 0;
@@ -82,7 +83,16 @@ $inner-height: 56px;
 }
 
 .linkContainer {
+  display: flex;
   width: 180px;
+}
+
+.logoLink {
+  display: flex;
+
+  img {
+    margin: 0;
+  }
 }
 
 .dropdownContainer {
@@ -153,4 +163,15 @@ $inner-height: 56px;
   &:hover {
     color: $text-highlight;
   }
+}
+
+.menuContainer {
+  border-left: 2px solid $highlight;
+  margin-left: 0.8rem;
+  padding-left: 0.4rem;
+}
+
+.menu {
+  color: $primary-blue;
+  cursor: pointer;
 }
