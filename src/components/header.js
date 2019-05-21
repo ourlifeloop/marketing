@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Img from 'gatsby-image';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
@@ -6,8 +6,8 @@ import classNames from 'classnames';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
 import FlexContainer from '../primitives/flex-container';
-import { ChevronDown, Menu } from '../utils/icons';
-import { useDevice } from '../utils/effects';
+import { ChevronDown, Menu, X } from '../utils/icons';
+import { usePrevious, useDevice } from '../utils/effects';
 import Button from '../primitives/button';
 import Layout from './layout';
 
@@ -23,7 +23,32 @@ import transportation from '../assets/transportation.svg';
 import styles from './header.module.scss';
 
 export default function Header({ backgroundImage, children }) {
+  const mobilePanel = useRef(null);
   const { isDesktop, isMobile } = useDevice();
+  const previousIsDesktop = usePrevious(isDesktop);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  useEffect(() => {
+    mobilePanel.current.style.top = `-${mobilePanel.current.clientHeight}px`;
+    setTimeout(() => {
+      mobilePanel.current.style.transition = 'all 0.2s linear';
+    }, 1);
+  }, []);
+
+  const onOpenPanel = () => {
+    mobilePanel.current.style.top = null;
+    setIsNavOpen(true);
+  };
+
+  const onClosePanel = () => {
+    mobilePanel.current.style.top = `-${mobilePanel.current.clientHeight}px`;
+    setIsNavOpen(false);
+  };
+
+  if (!previousIsDesktop && isDesktop && isNavOpen) {
+    onClosePanel();
+  }
+
   const { site, logo } = useStaticQuery(
     graphql`
       query {
@@ -131,10 +156,20 @@ export default function Header({ backgroundImage, children }) {
     </FlexContainer>
   );
 
+  const renderMobilePanel = () => (
+    <div
+      ref={mobilePanel}
+      className={classNames(styles.mobilePanel, {
+        [styles.mobilePanelOpen]: isNavOpen,
+      })}
+    />
+  );
+
   const header = (
     <header
       className={classNames(styles.header, {
         [styles.headerImg]: backgroundImage,
+        [styles.headerOpenNav]: isNavOpen,
       })}
     >
       <Helmet title="Senior Living Calendar and Activity Management - LifeLoop" />
@@ -165,7 +200,19 @@ export default function Header({ backgroundImage, children }) {
               </Link>
               {!isDesktop && (
                 <FlexContainer align="center" className={styles.menuContainer}>
-                  <Menu className={styles.menu} size={50} />
+                  {isNavOpen ? (
+                    <X
+                      className={styles.menu}
+                      size={50}
+                      onClick={onClosePanel}
+                    />
+                  ) : (
+                    <Menu
+                      className={styles.menu}
+                      size={50}
+                      onClick={onOpenPanel}
+                    />
+                  )}
                 </FlexContainer>
               )}
             </FlexContainer>
@@ -176,12 +223,18 @@ export default function Header({ backgroundImage, children }) {
   );
 
   if (!backgroundImage) {
-    return header;
+    return (
+      <div className={styles.relativeContainer}>
+        {!isDesktop && renderMobilePanel()}
+        {header}
+      </div>
+    );
   }
 
   return (
     <div className={styles.relativeContainer}>
       <Img className={styles.heroImage} fluid={backgroundImage} />
+      {!isDesktop && renderMobilePanel()}
       {header}
       <div className={styles.childContainer}>{children}</div>
     </div>
