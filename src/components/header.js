@@ -1,13 +1,14 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState } from 'react';
 import Img from 'gatsby-image';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
+import { usePrevious, useDevice } from '../utils/effects';
 import FlexContainer from '../primitives/flex-container';
 import { ChevronDown, Menu, X } from '../utils/icons';
-import { usePrevious, useDevice } from '../utils/effects';
+import MobileDropdown from './mobile-dropdown';
 import Button from '../primitives/button';
 import Layout from './layout';
 
@@ -22,31 +23,13 @@ import transportation from '../assets/transportation.svg';
 
 import styles from './header.module.scss';
 
-export default function Header({ backgroundImage, children }) {
-  const mobilePanel = useRef(null);
-  const { isDesktop, isMobile } = useDevice();
+export default function Header({ transparent }) {
+  const { isDesktop, isMobile, isMini } = useDevice();
   const previousIsDesktop = usePrevious(isDesktop);
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  useEffect(() => {
-    mobilePanel.current.style.top = `-${mobilePanel.current.clientHeight}px`;
-    setTimeout(() => {
-      mobilePanel.current.style.transition = 'all 0.2s linear';
-    }, 1);
-  }, []);
-
-  const onOpenPanel = () => {
-    mobilePanel.current.style.top = null;
-    setIsNavOpen(true);
-  };
-
-  const onClosePanel = () => {
-    mobilePanel.current.style.top = `-${mobilePanel.current.clientHeight}px`;
-    setIsNavOpen(false);
-  };
-
   if (!previousIsDesktop && isDesktop && isNavOpen) {
-    onClosePanel();
+    setIsNavOpen(false);
   }
 
   const { site, logo } = useStaticQuery(
@@ -156,101 +139,85 @@ export default function Header({ backgroundImage, children }) {
     </FlexContainer>
   );
 
-  const renderMobilePanel = () => (
+  return (
     <div
-      ref={mobilePanel}
-      className={classNames(styles.mobilePanel, {
-        [styles.mobilePanelOpen]: isNavOpen,
-      })}
-    />
-  );
-
-  const header = (
-    <header
-      className={classNames(styles.header, {
-        [styles.headerImg]: backgroundImage,
-        [styles.headerOpenNav]: isNavOpen,
+      className={classNames(styles.relativeContainer, {
+        [styles.relativeContainerTransparent]: transparent,
       })}
     >
-      <Helmet title="Senior Living Calendar and Activity Management - LifeLoop" />
-      <Layout>
-        <FlexContainer justify="spacebetween" className={styles.innerContainer}>
-          <FlexContainer align="center">
-            <Link className={classNames(styles.linkContainer)} to="/">
-              <Img
-                fixed={logo.childImageSharp.fixed}
-                className={styles.logoLink}
-              />
-            </Link>
-            {isDesktop && renderDesktopLinks()}
-          </FlexContainer>
-          <FlexContainer direction="column" justify="center" align="flexend">
-            {isDesktop && renderExternalLinks()}
+      <MobileDropdown isOpen={isNavOpen} />
+      <header
+        className={classNames(styles.header, {
+          [styles.headerTransparent]: transparent,
+          [styles.headerOpenNav]: isNavOpen,
+        })}
+      >
+        <Helmet title="Senior Living Calendar and Activity Management - LifeLoop" />
+        <Layout>
+          <FlexContainer
+            justify="spacebetween"
+            className={styles.innerContainer}
+          >
             <FlexContainer align="center">
-              {!isMobile && (
-                <a
-                  className={styles.phone}
-                  href={`tel:${site.siteMetadata.phoneNumber}`}
-                >
-                  Call us: <b>{site.siteMetadata.phoneNumber}</b>
-                </a>
-              )}
-              <Link to="/demo">
-                <Button>Request a Demo</Button>
+              <Link className={classNames(styles.linkContainer)} to="/">
+                <Img
+                  fixed={logo.childImageSharp.fixed}
+                  className={styles.logoLink}
+                />
               </Link>
-              {!isDesktop && (
-                <FlexContainer align="center" className={styles.menuContainer}>
-                  {isNavOpen ? (
-                    <X
-                      className={styles.menu}
-                      size={50}
-                      onClick={onClosePanel}
-                    />
-                  ) : (
-                    <Menu
-                      className={styles.menu}
-                      size={50}
-                      onClick={onOpenPanel}
-                    />
-                  )}
-                </FlexContainer>
-              )}
+              {isDesktop && renderDesktopLinks()}
+            </FlexContainer>
+            <FlexContainer direction="column" justify="center" align="flexend">
+              {isDesktop && renderExternalLinks()}
+              <FlexContainer align="center">
+                {!isMobile && (
+                  <a
+                    className={styles.phone}
+                    href={`tel:${site.siteMetadata.phoneNumber}`}
+                  >
+                    Call us: <b>{site.siteMetadata.phoneNumber}</b>
+                  </a>
+                )}
+                {!isMini && (
+                  <Link to="/demo">
+                    <Button>Request a Demo</Button>
+                  </Link>
+                )}
+                {!isDesktop && (
+                  <FlexContainer
+                    align="center"
+                    className={classNames(styles.menuContainer, {
+                      [styles.menuContainerMini]: isMini,
+                    })}
+                  >
+                    {isNavOpen ? (
+                      <X
+                        className={styles.menu}
+                        size={50}
+                        onClick={() => setIsNavOpen(false)}
+                      />
+                    ) : (
+                      <Menu
+                        className={styles.menu}
+                        size={50}
+                        onClick={() => setIsNavOpen(true)}
+                      />
+                    )}
+                  </FlexContainer>
+                )}
+              </FlexContainer>
             </FlexContainer>
           </FlexContainer>
-        </FlexContainer>
-      </Layout>
-    </header>
-  );
-
-  if (!backgroundImage) {
-    return (
-      <div className={styles.relativeContainer}>
-        {!isDesktop && renderMobilePanel()}
-        {header}
-      </div>
-    );
-  }
-
-  return (
-    <div className={styles.relativeContainer}>
-      <Img className={styles.heroImage} fluid={backgroundImage} />
-      {!isDesktop && renderMobilePanel()}
-      {header}
-      <div className={styles.childContainer}>{children}</div>
+        </Layout>
+      </header>
     </div>
   );
 }
 
 Header.propTypes = {
-  children: PropTypes.node,
-  backgroundImage: PropTypes.shape({
-    src: PropTypes.string,
-    srcSet: PropTypes.string,
-    originalName: PropTypes.string,
-  }),
+  transparent: PropTypes.bool,
 };
 
 Header.defaultProps = {
-  children: undefined,
-  backgroundImage: undefined,
+  transparent: false,
 };

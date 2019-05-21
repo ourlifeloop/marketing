@@ -44,5 +44,7 @@ export const useDevice = () => {
   const { width } = useDimensions();
   const isTablet = width <= 1100;
   const isMobile = width <= 700;
-  return { isTablet, isMobile, isDesktop: !isTablet && !isMobile };
+  const isMini = width <= 500;
+  const isDesktop = !isTablet;
+  return { isMini, isTablet, isMobile, isDesktop };
 };

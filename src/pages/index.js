@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import FlexContainer from '../primitives/flex-container';
 import Header from '../components/header';
@@ -9,9 +10,15 @@ import Footer from '../components/footer';
 import styles from './index.module.scss';
 
 export default ({ data }) => {
+  console.log(styles.heroImage);
   return (
     <>
-      <Header backgroundImage={data.hero.childImageSharp.fluid}>
+      <Header transparent />
+      <div className={styles.relativeContainer}>
+        <Img
+          className={styles.heroImage}
+          fluid={data.hero.childImageSharp.fluid}
+        />
         <Layout className={styles.layout}>
           <FlexContainer
             className={styles.heroContainer}
@@ -19,8 +26,7 @@ export default ({ data }) => {
             justify="center"
           >
             <h1 className={styles.title}>
-              Enhancing Resident
-              <br />& Family Engagement Through Technology
+              Enhancing Resident & Family Engagement Through Technology
             </h1>
             <p className={styles.titleDescription}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -29,7 +35,7 @@ export default ({ data }) => {
             </p>
           </FlexContainer>
         </Layout>
-      </Header>
+      </div>
       <Layout>
         <h1>Home</h1>
       </Layout>

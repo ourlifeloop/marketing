@@ -1,20 +1,31 @@
 @import '../styles/theme';
+@import '../styles/utils';
 
 .layout {
   height: 100%;
 }
 
+.relativeContainer {
+  position: relative;
+}
+
 .heroContainer {
   height: 100%;
-  max-width: 550px;
+  max-width: variableSize(350, 480);
+  position: absolute;
+  top: 0;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: variableSize(36, 48);
 }
 
 .titleDescription {
   color: $text;
   line-height: 27px;
   font-size: 1.1rem;
+}
+
+.heroImage {
+  height: 600px;
 }

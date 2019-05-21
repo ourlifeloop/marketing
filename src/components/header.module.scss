@@ -8,13 +8,18 @@ $nav-height: calc(
 );
 
 .relativeContainer {
+  height: $nav-height;
   position: relative;
+
+  &--transparent {
+    height: 0;
+  }
 }
 
 .childContainer {
   bottom: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: $nav-height;
 }
@@ -24,34 +29,20 @@ $nav-height: calc(
 }
 
 .header {
-  background-color: $text-light;
   border-bottom: $border-height solid $text-light;
   box-shadow: 0px 0px 10px 0px $highlight;
+  left: 0;
   padding: $vertical-padding 0;
-  position: inherit;
+  position: fixed;
+  right: 0;
   transition: all 0.2s linear;
   z-index: 100;
 
-  &--img {
+  &--transparent {
     background-color: rgba(#ffffff, 0.37);
     border-bottom-color: transparent;
     box-shadow: none;
-    left: 0;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
   }
-
-  &--openNav {
-    background-color: $text-light;
-    border-bottom-color: $highlight;
-    box-shadow: 0 0 0 0 $highlight;
-  }
-}
-
-.heroImage {
-  height: 600px;
 }
 
 .logo {
@@ -185,23 +176,13 @@ $nav-height: calc(
   border-left: 2px solid $highlight;
   margin-left: 0.8rem;
   padding-left: 0.4rem;
+
+  &--mini {
+    border-left-width: 0;
+  }
 }
 
 .menu {
   color: $primary-blue;
   cursor: pointer;
-}
-
-.mobilePanel {
-  background-color: $text-light;
-  box-shadow: 0px 0px 10px 0px $highlight;
-  height: 20rem;
-  position: absolute;
-  top: $nav-height;
-  width: 100vw;
-  z-index: 99;
-
-  &--open {
-    position: absolute;
-  }
 }
