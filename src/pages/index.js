@@ -10,7 +10,6 @@ import Footer from '../components/footer';
 import styles from './index.module.scss';
 
 export default ({ data }) => {
-  console.log(styles.heroImage);
   return (
     <>
       <Header transparent />

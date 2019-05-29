@@ -9,17 +9,10 @@ import { usePrevious, useDevice } from '../utils/effects';
 import FlexContainer from '../primitives/flex-container';
 import { ChevronDown, Menu, X } from '../utils/icons';
 import MobileDropdown from './mobile-dropdown';
+import NAVIGATION from '../utils/navigation';
 import Button from '../primitives/button';
+import { map } from '../utils/lodash';
 import Layout from './layout';
-
-import calendar from '../assets/calendar.svg';
-import family from '../assets/family.svg';
-import maintenance from '../assets/maintenance.svg';
-import messages from '../assets/messages.svg';
-import photos from '../assets/photos.svg';
-import reports from '../assets/reports.svg';
-import residents from '../assets/residents.svg';
-import transportation from '../assets/transportation.svg';
 
 import styles from './header.module.scss';
 
@@ -51,79 +44,36 @@ export default function Header({ transparent }) {
     `,
   );
 
-  const renderDesktopLinks = () => (
-    <>
-      <FlexContainer className={styles.dropdownContainer} align="center">
-        Features
-        <ChevronDown size={15} />
-        <div className={styles.dropdown}>
-          <Link to="/features/activities" className={styles.dropdownLink}>
-            <FlexContainer align="center">
-              <img src={calendar} alt="Activity Calendar Feature" />
-              Activity Calendar
-            </FlexContainer>
+  const renderDesktopLinks = () =>
+    map(NAVIGATION, ({ key, name, link, subNav }) => {
+      if (!subNav) {
+        return (
+          <Link key={key} className={styles.link} to={link}>
+            {name}
           </Link>
-          <Link
-            to="/features/resident-management"
-            className={styles.dropdownLink}
-          >
-            <FlexContainer align="center">
-              <img src={reports} alt="Resident Management Feature" />
-              Resident Management
-            </FlexContainer>
-          </Link>
-          <Link to="/features/messaging" className={styles.dropdownLink}>
-            <FlexContainer align="center">
-              <img src={messages} alt="Messaging Feature" />
-              Messaging
-            </FlexContainer>
-          </Link>
-          <Link to="/features/transportation" className={styles.dropdownLink}>
-            <FlexContainer align="center">
-              <img src={transportation} alt="Transportation Feature" />
-              Transportation
-            </FlexContainer>
-          </Link>
-          <Link to="/features/maintenance" className={styles.dropdownLink}>
-            <FlexContainer align="center">
-              <img src={maintenance} alt="Maintenance Feature" />
-              Maintenance
-            </FlexContainer>
-          </Link>
-          <Link to="/features/resident-portal" className={styles.dropdownLink}>
-            <FlexContainer align="center">
-              <img src={residents} alt="Resident Portal Feature" />
-              Resident Portal
-            </FlexContainer>
-          </Link>
-          <Link to="/features/family-portal" className={styles.dropdownLink}>
-            <FlexContainer align="center">
-              <img src={family} alt="Family Portal Feature" />
-              Family Portal
-            </FlexContainer>
-          </Link>
-          <Link to="/features/photos" className={styles.dropdownLink}>
-            <FlexContainer align="center">
-              <img src={photos} alt="Photos Feature" />
-              Photos
-            </FlexContainer>
-          </Link>
-        </div>
-      </FlexContainer>
-      <Link className={styles.link} to="/benefits">
-        Benefits
-      </Link>
-      <Link className={styles.link} to="/our-story">
-        Our Story
-      </Link>
-      <Link className={styles.link} to="/blog">
-        Blog
-      </Link>
-      <Link className={styles.link} to="/contact">
-        Contact Us
-      </Link>
-    </>
-  );
+        );
+      }
+      return (
+        <FlexContainer
+          key={key}
+          className={styles.dropdownContainer}
+          align="center"
+        >
+          {name}
+          <ChevronDown size={15} />
+          <div className={styles.dropdown}>
+            {map(subNav, ({ key, name, icon, link }) => (
+              <Link key={key} to={link} className={styles.dropdownLink}>
+                <FlexContainer align="center">
+                  <img src={icon} alt={name} />
+                  {name}
+                </FlexContainer>
+              </Link>
+            ))}
+          </div>
+        </FlexContainer>
+      );
+    });
 
   const renderExternalLinks = () => (
     <FlexContainer>
