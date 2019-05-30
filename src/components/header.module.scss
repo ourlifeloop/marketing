@@ -29,6 +29,7 @@ $nav-height: calc(
 }
 
 .header {
+  background-color: $text-light;
   border-bottom: $border-height solid $text-light;
   box-shadow: 0px 0px 10px 0px $highlight;
   left: 0;
@@ -39,9 +40,13 @@ $nav-height: calc(
   z-index: 100;
 
   &--transparent {
-    background-color: rgba(#ffffff, 0.37);
+    background-color: rgba($text-light, 0.37);
     border-bottom-color: transparent;
     box-shadow: none;
+  }
+
+  &--openNav {
+    background-color: $text-light;
   }
 }
 

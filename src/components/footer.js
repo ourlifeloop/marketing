@@ -77,7 +77,7 @@ export default function Footer() {
               </Link>
             </FlexContainer>
           </FlexContainer>
-          <FlexContainer>
+          <FlexContainer wrap>
             <a
               className={styles.appLinkContainer}
               href="https://play.google.com/store/apps/details?id=com.lifeloopproject"

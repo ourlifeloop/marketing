@@ -18,7 +18,8 @@ $border: 1px solid $highlight;
 
 .innerContainer {
   height: 100%;
-  padding-top: 80px;
+  padding-top: 90px;
+  overflow: auto;
 }
 
 .link {
@@ -58,7 +59,6 @@ $border: 1px solid $highlight;
 .featureLink {
   color: $text;
   font-size: 1.1rem;
-  min-width: 285px;
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: color 0.2s linear;
@@ -72,4 +72,25 @@ $border: 1px solid $highlight;
     margin: 0 1rem 0 0;
     width: 35px;
   }
+
+  &--fullWidth {
+    width: 100%;
+  }
+}
+
+.minorLink {
+  border-right: $border;
+  color: $text;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.2rem 1rem;
+  text-decoration: none;
+
+  &:last-of-type {
+    border-right: 0;
+  }
+}
+
+.requestButton {
+  padding: 1rem 0;
 }
