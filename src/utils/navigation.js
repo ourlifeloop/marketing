@@ -1,11 +1,11 @@
-import calendar from '../assets/calendar.svg';
-import family from '../assets/family.svg';
-import maintenance from '../assets/maintenance.svg';
-import messages from '../assets/messages.svg';
-import photos from '../assets/photos.svg';
-import reports from '../assets/reports.svg';
-import residents from '../assets/residents.svg';
-import transportation from '../assets/transportation.svg';
+import calendar from '../assets/icons/calendar.svg';
+import family from '../assets/icons/family.svg';
+import maintenance from '../assets/icons/maintenance.svg';
+import messages from '../assets/icons/messages.svg';
+import photos from '../assets/icons/photos.svg';
+import reports from '../assets/icons/reports.svg';
+import residents from '../assets/icons/residents.svg';
+import transportation from '../assets/icons/transportation.svg';
 
 export default {
   features: {

@@ -4,12 +4,12 @@ const typography = new Typography({
   baseFontSize: '18px',
   headerWeight: '700',
   bodyWeight: '400',
-  headerFontFamily: ['PT Sans', 'Helvetica', 'sans-serif'],
-  bodyFontFamily: ['PT Sans', 'Helvetica', 'sans-serif'],
+  headerFontFamily: ['Amelia Basic', 'Helvetica', 'sans-serif'],
+  bodyFontFamily: ['Source Sans Pro', 'Helvetica', 'sans-serif'],
   googleFonts: [
     {
-      name: 'PT Sans',
-      styles: ['400', '400i', '700', '700i'],
+      name: 'Source Sans Pro',
+      styles: ['300', '400', '700'],
     },
   ],
 });
