@@ -11,8 +11,8 @@ import { ChevronDown, Menu, X } from '../utils/icons';
 import MobileDropdown from './mobile-dropdown';
 import NAVIGATION from '../utils/navigation';
 import Button from '../primitives/button';
+import Layout from '../primitives/layout';
 import { map } from '../utils/lodash';
-import Layout from './layout';
 
 import styles from './header.module.scss';
 

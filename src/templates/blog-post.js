@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/layout';
+import Layout from '../primitives/layout';
 import Header from '../components/header';
 
 export default function BlogPostTemplate({ data }) {

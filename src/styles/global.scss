@@ -1,10 +1,13 @@
 @import './theme';
 @import './fonts';
 
+$header-margin: 0.8rem;
+
 h1,
 h2,
 h3 {
   color: $text-blue;
+  margin-bottom: $header-margin;
 }
 
 h1 {
@@ -17,4 +20,11 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
+}
+
+p {
+  color: $text-meta;
+  font-size: 1rem;
+  line-height: 30px;
+  margin: 0;
 }

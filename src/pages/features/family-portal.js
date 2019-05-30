@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../../components/header';
-import Layout from '../../components/layout';
+import Layout from '../../primitives/layout';
 import Footer from '../../components/footer';
 
 export default () => (

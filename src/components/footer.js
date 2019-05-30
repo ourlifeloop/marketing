@@ -3,10 +3,10 @@ import Img from 'gatsby-image';
 import classNames from 'classnames';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
-import Layout from './layout';
+import { Facebook, LinkedIn, Twitter } from '../utils/icons';
 import FlexContainer from '../primitives/flex-container';
 import { useDevice } from '../utils/effects';
-import { Facebook, LinkedIn, Twitter } from '../utils/icons';
+import Layout from '../primitives/layout';
 
 import styles from './footer.module.scss';
 

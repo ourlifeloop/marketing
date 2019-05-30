@@ -1,0 +1,26 @@
+@import '../styles/theme';
+
+.container {
+  padding: 3rem 0;
+
+  &--secondary {
+    background-color: $background-secondary;
+  }
+
+  &--centered * {
+    text-align: center;
+  }
+}
+
+.innerContainer {
+  margin: 0 auto;
+  max-width: $layout-width;
+
+  &--medium {
+    max-width: 1000px;
+  }
+
+  &--small {
+    max-width: 850px;
+  }
+}

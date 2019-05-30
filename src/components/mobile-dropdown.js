@@ -8,8 +8,8 @@ import { useDevice } from '../utils/effects';
 import { ChevronDown } from '../utils/icons';
 import NAVIGATION from '../utils/navigation';
 import Button from '../primitives/button';
+import Layout from '../primitives/layout';
 import { map } from '../utils/lodash';
-import Layout from './layout';
 
 import styles from './mobile-dropdown.module.scss';
 

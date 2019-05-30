@@ -3,7 +3,7 @@
 $border: 1px solid $highlight;
 
 .mobilePanel {
-  background-color: $text-light;
+  background-color: $background;
   height: 100vh;
   position: absolute;
   top: -100vh;
@@ -46,7 +46,7 @@ $border: 1px solid $highlight;
 }
 
 .featuresContainer {
-  background-color: $background;
+  background-color: $background-dark;
   display: none;
   margin-top: 1rem;
   padding: 0.5rem 0;
