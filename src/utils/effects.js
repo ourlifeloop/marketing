@@ -10,6 +10,25 @@ export const usePrevious = value => {
   return ref.current;
 };
 
+export const useWindowPosition = ({ lessThan } = {}) => {
+  const [position, setPosition] = useState(0);
+
+  useEffect(() => {
+    const onScroll = evt => {
+      const { scrollY } = evt.currentTarget;
+      if (!lessThan || scrollY <= lessThan) {
+        setPosition(scrollY);
+      } else if (position !== lessThan) {
+        setPosition(lessThan);
+      }
+    };
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return position;
+};
+
 export const useResize = cb =>
   useEffect(() => {
     if (typeof window === 'undefined') {

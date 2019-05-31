@@ -29,24 +29,26 @@ $nav-height: calc(
 }
 
 .header {
-  background-color: $background;
   border-bottom: $border-height solid $background;
   box-shadow: 0px 0px 10px 0px $highlight;
   left: 0;
   padding: $vertical-padding 0;
   position: fixed;
   right: 0;
-  transition: all 0.2s linear;
+  transition: box-shadow 0.2s linear;
   z-index: 100;
 
   &--transparent {
-    background-color: rgba($background, 0.37);
     border-bottom-color: transparent;
     box-shadow: none;
   }
 
   &--openNav {
     background-color: $background;
+  }
+
+  &--withShadow {
+    box-shadow: 0px 0px 10px 0px $highlight;
   }
 }
 
