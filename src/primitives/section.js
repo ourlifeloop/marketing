@@ -11,6 +11,8 @@ export default function Section({
   children,
   centered,
   secondary,
+  noTopPadding,
+  noBottomPadding,
   width,
   className,
 }) {
@@ -21,6 +23,8 @@ export default function Section({
       className={classNames(styles.container, className, {
         [styles.containerSecondary]: secondary,
         [styles.containerCentered]: centered,
+        [styles.containerNoTopPadding]: noTopPadding,
+        [styles.containerNoBottomPadding]: noBottomPadding,
       })}
     >
       <Layout>
@@ -41,6 +45,8 @@ Section.propTypes = {
   children: PropTypes.node.isRequired,
   centered: PropTypes.bool,
   secondary: PropTypes.bool,
+  noTopPadding: PropTypes.bool,
+  noBottomPadding: PropTypes.bool,
   width: PropTypes.string,
   className: PropTypes.string,
 };
@@ -48,6 +54,8 @@ Section.propTypes = {
 Section.defaultProps = {
   centered: false,
   secondary: false,
+  noTopPadding: false,
+  noBottomPadding: false,
   width: undefined,
   className: undefined,
 };

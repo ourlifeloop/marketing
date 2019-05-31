@@ -10,6 +10,14 @@
   &--centered * {
     text-align: center;
   }
+
+  &--noTopPadding {
+    padding-top: 0;
+  }
+
+  &--noBottomPadding {
+    padding-bottom: 0;
+  }
 }
 
 .innerContainer {

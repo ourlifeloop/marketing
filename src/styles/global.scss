@@ -1,7 +1,7 @@
 @import './theme';
 @import './fonts';
 
-$header-margin: 0.8rem;
+$header-margin: 1rem;
 
 h1,
 h2,
@@ -26,5 +26,5 @@ p {
   color: $text-meta;
   font-size: 1rem;
   line-height: 30px;
-  margin: 0;
+  margin-bottom: 0.8rem;
 }
