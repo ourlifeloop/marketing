@@ -9,11 +9,13 @@ import SiteWrapper from '../components/site-wrapper';
 import HeroImage from '../primitives/hero-image';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
+import TEAM from '../utils/team';
 
 import styles from './our-story.module.scss';
 
 export default ({ data }) => {
   const { isMobile } = useDevice();
+
   return (
     <SiteWrapper>
       <HeroImage
@@ -72,6 +74,23 @@ export default ({ data }) => {
           culture.
         </p>
       </TitleSection>
+      <Section noTopPadding>
+        <FlexContainer flex="1" wrap className={styles.teamContainer}>
+          {TEAM.map(({ name, title, image }) => {
+            const imageData = data[image];
+            if (!imageData) {
+              return null;
+            }
+            return (
+              <div key={name} className={styles.teamMember}>
+                <Img fluid={imageData.childImageSharp.fluid} />
+                <b>{name}</b>
+                <p>{title}</p>
+              </div>
+            );
+          })}
+        </FlexContainer>
+      </Section>
     </SiteWrapper>
   );
 };
@@ -93,5 +112,6 @@ export const query = graphql`
         }
       }
     }
+    ...teamImages
   }
 `;

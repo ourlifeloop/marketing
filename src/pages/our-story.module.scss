@@ -10,3 +10,41 @@
     max-width: initial;
   }
 }
+
+$team-margin: 1rem;
+.teamContainer {
+  margin: 0 -$team-margin;
+}
+
+.teamMember {
+  padding: 0 $team-margin;
+  text-align: center;
+  width: 25%;
+
+  b {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  p {
+    margin: 0 0 $team-margin;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .teamMember {
+    width: 33.3%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .teamMember {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .teamMember {
+    width: 100%;
+  }
+}
