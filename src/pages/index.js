@@ -7,9 +7,9 @@ import ResponsiveEmbed from 'react-responsive-embed';
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
 import SiteWrapper from '../components/site-wrapper';
+import HeroImage from '../primitives/hero-image';
 import Section from '../primitives/section';
 import Button from '../primitives/button';
-import Layout from '../primitives/layout';
 
 import { useDevice } from '../utils/effects';
 
@@ -20,28 +20,15 @@ export default ({ data }) => {
 
   return (
     <SiteWrapper transparent>
-      <div className={styles.relativeContainer}>
-        <Img
-          className={styles.heroImage}
-          fluid={data.hero.childImageSharp.fluid}
-        />
-        <Layout className={styles.layout}>
-          <FlexContainer
-            className={styles.heroContainer}
-            direction="column"
-            justify="center"
-          >
-            <h1 className={styles.title}>
-              Enhancing Resident & Family Engagement Through Technology
-            </h1>
-            <p className={styles.titleDescription}>
-              Adapting technology solutions in a way to enhance the lives of
-              resident and the staff members and family who care for them.
-              LifeLoop is your full-service senior living solution.
-            </p>
-          </FlexContainer>
-        </Layout>
-      </div>
+      <HeroImage
+        height="600px"
+        objectPosition="30% center"
+        image={data.hero.childImageSharp.fluid}
+        title="Enhancing Resident & Family Engagement Through Technology"
+        description="Adapting technology solutions in a way to enhance the lives of
+          resident and the staff members and family who care for them. LifeLoop
+          is your full-service senior living solution."
+      />
       <TitleSection header="A higher level of connection.">
         <p>
           We believe that quality community life extends far beyond the physical

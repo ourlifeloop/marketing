@@ -1,0 +1,29 @@
+@import '../styles/theme';
+@import '../styles/utils';
+
+.layout {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.heroContainer {
+  height: 100%;
+  max-width: variableSize(350, 480);
+
+  &--right {
+    margin-left: auto;
+  }
+}
+
+.title {
+  font-size: variableSize(36, 48);
+}
+
+.titleDescription {
+  color: $text;
+  line-height: 27px;
+  font-size: 1.1rem;
+}
