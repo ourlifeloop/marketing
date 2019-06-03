@@ -1,0 +1,12 @@
+@import '../styles/utils';
+
+.storyImage {
+  flex: 1;
+  margin-left: variableSize(5, 100);
+  max-width: 500px;
+
+  &--vertical {
+    margin: 0 2rem;
+    max-width: initial;
+  }
+}
