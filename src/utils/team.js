@@ -61,7 +61,7 @@ export default [
 export const teamImages = graphql`
   fragment teamImage on File {
     childImageSharp {
-      fluid(maxWidth: 1100) {
+      fluid(maxWidth: 500) {
         ...GatsbyImageSharpFluid
       }
     }

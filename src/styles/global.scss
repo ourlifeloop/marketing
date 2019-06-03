@@ -28,3 +28,13 @@ p {
   line-height: 30px;
   margin-bottom: 0.8rem;
 }
+
+a {
+  color: $text-blue;
+  text-decoration: none;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: $text-dark;
+  }
+}

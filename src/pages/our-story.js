@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import classNames from 'classnames';
 
+import RelativeContainer from '../primitives/relative-container';
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
 import SiteWrapper from '../components/site-wrapper';
@@ -91,12 +92,44 @@ export default ({ data }) => {
           })}
         </FlexContainer>
       </Section>
+      <Section
+        className={styles.joinSection}
+        centered
+        width="medium"
+        noTopPadding
+        noBottomPadding
+      >
+        <div className={styles.joinContainer}>
+          <h2>Join the LifeLoop Team</h2>
+          <p>
+            We care about our customers. We are problem solvers, we embrace
+            growth and trust that everyone is here to foster their passion. If
+            you are interested in applying for a position at LifeLoop, please
+            send your resume to{' '}
+            <a href={`mailto:${data.site.siteMetadata.careers}`}>
+              {data.site.siteMetadata.careers}
+            </a>
+            .
+          </p>
+        </div>
+      </Section>
+      <RelativeContainer>
+        <Img
+          className={styles.teamImage}
+          fluid={data.team.childImageSharp.fluid}
+        />
+      </RelativeContainer>
     </SiteWrapper>
   );
 };
 
 export const query = graphql`
   query {
+    site {
+      siteMetadata {
+        careers
+      }
+    }
     hero: file(relativePath: { eq: "our-story-hero.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1100) {
@@ -108,6 +141,13 @@ export const query = graphql`
     story: file(relativePath: { eq: "story-origin.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    team: file(relativePath: { eq: "team.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
         }
       }

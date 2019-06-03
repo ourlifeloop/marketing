@@ -7,7 +7,8 @@
 module.exports = {
   siteMetadata: {
     phoneNumber: '(402) 915-3860',
-    email: 'inquiries@ourlifeloop.com',
+    inquiries: 'inquiries@ourlifeloop.com',
+    careers: 'careers@ourlifeloop.com',
   },
   plugins: [
     {

@@ -1,3 +1,4 @@
+@import '../styles/theme';
 @import '../styles/utils';
 
 .storyImage {
@@ -47,4 +48,19 @@ $team-margin: 1rem;
   .teamMember {
     width: 100%;
   }
+}
+
+.teamImage {
+  height: variableSize(325, 600);
+}
+
+.joinSection > div {
+  display: block;
+}
+
+.joinContainer {
+  background-color: $background-secondary;
+  display: block;
+  padding: 1rem 4rem;
+  margin-bottom: -100px;
 }
