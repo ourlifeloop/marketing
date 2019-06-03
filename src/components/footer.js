@@ -3,10 +3,13 @@ import Img from 'gatsby-image';
 import classNames from 'classnames';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
-import { Facebook, LinkedIn, Twitter } from '../utils/icons';
 import FlexContainer from '../primitives/flex-container';
 import { useDevice } from '../utils/effects';
 import Layout from '../primitives/layout';
+
+import Facebook from '../assets/icons/facebook.svg';
+import LinkedIn from '../assets/icons/linked-in.svg';
+import Twitter from '../assets/icons/twitter.svg';
 
 import styles from './footer.module.scss';
 
@@ -49,7 +52,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Twitter size={20} />
+                <Twitter />
               </a>
               <a
                 className={styles.socialLink}
@@ -57,7 +60,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Facebook size={20} />
+                <Facebook />
               </a>
               <a
                 className={styles.socialLink}
@@ -65,7 +68,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <LinkedIn size={20} />
+                <LinkedIn />
               </a>
             </FlexContainer>
             <FlexContainer>

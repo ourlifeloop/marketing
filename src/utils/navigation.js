@@ -1,4 +1,5 @@
 import calendar from '../assets/icons/calendar.svg';
+import displays from '../assets/icons/displays.svg';
 import family from '../assets/icons/family.svg';
 import maintenance from '../assets/icons/maintenance.svg';
 import messages from '../assets/icons/messages.svg';
@@ -14,49 +15,55 @@ export default {
     subNav: {
       calendar: {
         key: 'calendar',
-        icon: calendar,
+        Icon: calendar,
         name: 'Activity Calendar',
         link: '/features/activities',
       },
+      displays: {
+        key: 'displays',
+        Icon: displays,
+        name: 'Displays',
+        link: '/features/displays',
+      },
       residentManagement: {
         key: 'residentManagement',
-        icon: reports,
+        Icon: reports,
         name: 'Resident Management',
         link: '/features/resident-management',
       },
       messaging: {
         key: 'messaging',
-        icon: messages,
+        Icon: messages,
         name: 'Messaging',
         link: '/features/messaging',
       },
       transportation: {
         key: 'transportation',
-        icon: transportation,
+        Icon: transportation,
         name: 'Transportation',
         link: '/features/transportation',
       },
       maintenance: {
         key: 'maintenance',
-        icon: maintenance,
+        Icon: maintenance,
         name: 'Maintenance',
         link: '/features/maintenance',
       },
       residentPortal: {
         key: 'residentPortal',
-        icon: residents,
+        Icon: residents,
         name: 'Resident Portal',
         link: '/features/resident-portal',
       },
       familyPortal: {
         key: 'familyPortal',
-        icon: family,
+        Icon: family,
         name: 'Family Portal',
         link: '/features/family-portal',
       },
       photos: {
         key: 'photos',
-        icon: photos,
+        Icon: photos,
         name: 'Photos',
         link: '/features/photos',
       },

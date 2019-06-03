@@ -159,6 +159,7 @@ $nav-height: calc(
   }
 }
 
+$icon-size: 30px;
 .dropdownLink {
   color: $text;
   display: block;
@@ -168,10 +169,11 @@ $nav-height: calc(
   text-decoration: none;
   transition: color 0.2s linear;
 
-  img {
+  svg {
+    fill: $primary-blue;
+    height: $icon-size;
     margin: 0 0.8rem 0 0;
-    opacity: 0;
-    width: 30px;
+    width: $icon-size;
   }
 
   &:hover {

@@ -56,6 +56,7 @@ $border: 1px solid $highlight;
   }
 }
 
+$icon-size: 35px;
 .featureLink {
   color: $text;
   font-size: 1.1rem;
@@ -68,9 +69,11 @@ $border: 1px solid $highlight;
     color: $text-highlight;
   }
 
-  img {
+  svg {
+    fill: $primary-blue;
+    height: $icon-size;
     margin: 0 1rem 0 0;
-    width: 35px;
+    width: $icon-size;
   }
 
   &--fullWidth {

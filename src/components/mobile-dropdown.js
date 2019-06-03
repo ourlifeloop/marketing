@@ -67,7 +67,7 @@ export default function MobileDropdown({ isOpen }) {
                     })}
                     wrap
                   >
-                    {map(subNav, ({ key, name, icon, link }) => (
+                    {map(subNav, ({ key, name, Icon, link }) => (
                       <Link
                         key={key}
                         to={link}
@@ -76,7 +76,7 @@ export default function MobileDropdown({ isOpen }) {
                         })}
                       >
                         <FlexContainer align="center">
-                          <img src={icon} alt={name} />
+                          <Icon />
                           {name}
                         </FlexContainer>
                       </Link>

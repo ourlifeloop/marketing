@@ -73,10 +73,10 @@ export default function Header({ transparent }) {
           {name}
           <ChevronDown size={15} />
           <div className={styles.dropdown}>
-            {map(subNav, ({ key, name, icon, link }) => (
+            {map(subNav, ({ key, name, Icon, link }) => (
               <Link key={key} to={link} className={styles.dropdownLink}>
                 <FlexContainer align="center">
-                  <img src={icon} alt={name} />
+                  <Icon />
                   {name}
                 </FlexContainer>
               </Link>

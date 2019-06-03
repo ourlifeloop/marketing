@@ -45,6 +45,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-favicon',
+    'gatsby-plugin-react-svg',
     {
       resolve: 'gatsby-plugin-typography',
       options: {

@@ -19,21 +19,23 @@ $horizontal-padding: 1rem;
   }
 }
 
-$social-size: 35px;
+$social-size: 34px;
 .socialLink {
   align-items: center;
-  background-color: $background;
-  border-radius: $social-size / 2;
   color: $dark-blue;
   display: flex;
-  height: $social-size;
   margin: 0 $vertical-padding $horizontal-padding 0;
   justify-content: center;
-  transition: background-color 0.2s linear;
-  width: $social-size;
 
-  &:hover {
-    background-color: $highlight;
+  &:hover svg {
+    fill: $highlight;
+  }
+
+  svg {
+    fill: $background;
+    margin: 0;
+    width: 2rem;
+    transition: fill 0.2s linear;
   }
 }
 
