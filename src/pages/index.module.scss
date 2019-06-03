@@ -73,3 +73,19 @@
     margin: 0;
   }
 }
+
+.videoContainer {
+  margin: 0 variableSize(5, 60);
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &--vertical {
+    margin: 0;
+  }
+}

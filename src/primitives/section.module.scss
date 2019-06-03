@@ -23,6 +23,7 @@
 .innerContainer {
   margin: 0 auto;
   max-width: $layout-width;
+  width: 100%;
 
   &--medium {
     max-width: 1000px;

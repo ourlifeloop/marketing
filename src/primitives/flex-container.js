@@ -69,7 +69,7 @@ FlexContainer.propTypes = {
 
 FlexContainer.defaultProps = {
   className: null,
-  align: 'stretch',
+  align: null,
   justify: null,
   direction: null,
   wrap: false,

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import classNames from 'classnames';
+import ResponsiveEmbed from 'react-responsive-embed';
 
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
@@ -15,7 +16,7 @@ import { useDevice } from '../utils/effects';
 import styles from './index.module.scss';
 
 export default ({ data }) => {
-  const { isMini, isTablet } = useDevice();
+  const { isMini, isMobile, isTablet } = useDevice();
 
   return (
     <SiteWrapper transparent>
@@ -169,6 +170,40 @@ export default ({ data }) => {
           and more!
         </p>
       </TitleSection>
+      <Section centered noTopPadding>
+        <FlexContainer direction={isMobile ? 'column' : 'row'}>
+          <FlexContainer
+            className={classNames(styles.videoContainer, {
+              [styles.videoContainerVertical]: isMobile,
+            })}
+            flex="1"
+            direction="column"
+            align="center"
+          >
+            <ResponsiveEmbed
+              src="https://www.youtube-nocookie.com/embed/JW5KkDSdt8w"
+              // ratio="4:3"
+              allowFullScreen
+            />
+            <p>Connecting Management & Staff</p>
+          </FlexContainer>
+          <FlexContainer
+            className={classNames(styles.videoContainer, {
+              [styles.videoContainerVertical]: isMobile,
+            })}
+            flex="1"
+            direction="column"
+            align="center"
+          >
+            <ResponsiveEmbed
+              src="https://www.youtube-nocookie.com/embed/DucvjjOT0bs"
+              // ratio="4:3"
+              allowFullScreen
+            />
+            <p>Connecting Residents & Family</p>
+          </FlexContainer>
+        </FlexContainer>
+      </Section>
       <TitleSection
         secondary
         header="See how LifeLoop can help connect your community."
