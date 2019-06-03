@@ -16,5 +16,11 @@ collections:
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
+      - name: type
+        label: Type,
+        widget: select
+        options:
+          - { label: Customer Spotlight, value: spotlight }
+          - { label: News, value: news }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }

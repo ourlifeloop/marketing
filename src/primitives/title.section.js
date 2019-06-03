@@ -5,7 +5,7 @@ import Section from './section';
 
 import styles from './title.section.module.scss';
 
-export default function TitleSection({ header, text, children, ...rest }) {
+export default function TitleSection({ header, children, ...rest }) {
   return (
     <Section centered width="medium" {...rest}>
       <h2 className={styles.header}>{header}</h2>

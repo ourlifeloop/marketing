@@ -3,11 +3,12 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import classNames from 'classnames';
 
+import FlexContainer from '../primitives/flex-container';
+import TitleSection from '../primitives/title.section';
 import SiteWrapper from '../components/site-wrapper';
 import HeroImage from '../primitives/hero-image';
-import Section from '../primitives/section';
-import FlexContainer from '../primitives/flex-container';
 import { useDevice } from '../utils/effects';
+import Section from '../primitives/section';
 
 import styles from './our-story.module.scss';
 
@@ -62,6 +63,15 @@ export default ({ data }) => {
           </div>
         </FlexContainer>
       </Section>
+      <TitleSection header="Our Team">
+        <p>
+          We are a group of people who are constantly striving to improve our
+          company, our product, our community and ourselves. We believe that
+          aging is something to be embraced, not feared. At LifeLoop, a
+          collaborative process is the foundation of our success and our
+          culture.
+        </p>
+      </TitleSection>
     </SiteWrapper>
   );
 };
