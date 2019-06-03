@@ -3,7 +3,7 @@ backend:
   branch: master
 
 publish_mode: editorial_workflow
-media_folder: static/images
+media_folder: static/images/cms
 public_folder: /images
 
 display_url: https://ourlifeloop.netlify.com/
