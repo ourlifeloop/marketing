@@ -7,21 +7,25 @@ $nav-height: calc(
   #{$inner-height} + #{$border-height} + #{$vertical-padding * 2}
 );
 
-.relativeContainer {
-  height: $nav-height;
-  position: relative;
-
-  &--transparent {
-    height: 0;
-  }
-}
-
-.childContainer {
+.siteContainer {
   bottom: 0;
   left: 0;
   position: fixed;
   right: 0;
+  top: 0;
+}
+
+.contentContainer {
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
   top: $nav-height;
+
+  &--transparent {
+    top: 0;
+  }
 }
 
 .innerContainer {

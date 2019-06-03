@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
-import { usePrevious, useDevice, useWindowPosition } from '../utils/effects';
+import { usePrevious, useDevice, useScrollPosition } from '../utils/effects';
 import FlexContainer from '../primitives/flex-container';
 import { ChevronDown, Menu, X } from '../utils/icons';
 import MobileDropdown from './mobile-dropdown';
@@ -19,18 +19,17 @@ import styles from './header.module.scss';
 const TRANSPARENT_START_OPACITY = 0.37;
 const TRANSPARENT_HEADER_END = 400;
 
-export default function Header({ transparent }) {
+export default function Header({ transparent, children }) {
   const { isDesktop, isMobile, isMini } = useDevice();
   const previousIsDesktop = usePrevious(isDesktop);
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const scrollPosition = useWindowPosition({
+  const [containerRef, scrollPosition] = useScrollPosition({
     lessThan: TRANSPARENT_HEADER_END,
   });
+
   const opacity =
     TRANSPARENT_START_OPACITY +
     (1 - TRANSPARENT_START_OPACITY) * (scrollPosition / TRANSPARENT_HEADER_END);
-
-  console.log(opacity);
 
   if (!previousIsDesktop && isDesktop && isNavOpen) {
     setIsNavOpen(false);
@@ -101,11 +100,7 @@ export default function Header({ transparent }) {
   );
 
   return (
-    <div
-      className={classNames(styles.relativeContainer, {
-        [styles.relativeContainerTransparent]: transparent,
-      })}
-    >
+    <div className={styles.siteContainer}>
       <MobileDropdown isOpen={isNavOpen} />
       <header
         style={{
@@ -178,12 +173,21 @@ export default function Header({ transparent }) {
           </FlexContainer>
         </Layout>
       </header>
+      <div
+        ref={containerRef}
+        className={classNames(styles.contentContainer, {
+          [styles.contentContainerTransparent]: transparent,
+        })}
+      >
+        {children}
+      </div>
     </div>
   );
 }
 
 Header.propTypes = {
   transparent: PropTypes.bool,
+  children: PropTypes.node.isRequired,
 };
 
 Header.defaultProps = {

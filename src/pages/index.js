@@ -5,10 +5,9 @@ import classNames from 'classnames';
 
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
+import SiteWrapper from '../components/site-wrapper';
 import Section from '../primitives/section';
 import Button from '../primitives/button';
-import Header from '../components/header';
-import Footer from '../components/footer';
 import Layout from '../primitives/layout';
 
 import { useDevice } from '../utils/effects';
@@ -19,8 +18,7 @@ export default ({ data }) => {
   const { isMini, isTablet } = useDevice();
 
   return (
-    <>
-      <Header transparent />
+    <SiteWrapper transparent>
       <div className={styles.relativeContainer}>
         <Img
           className={styles.heroImage}
@@ -184,8 +182,7 @@ export default ({ data }) => {
           <Button>Request a Demo</Button>
         </Link>
       </TitleSection>
-      <Footer />
-    </>
+    </SiteWrapper>
   );
 };
 

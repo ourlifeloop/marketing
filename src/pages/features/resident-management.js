@@ -1,15 +1,12 @@
 import React from 'react';
 
-import Header from '../../components/header';
+import SiteWrapper from '../../components/site-wrapper';
 import Layout from '../../primitives/layout';
-import Footer from '../../components/footer';
 
 export default () => (
-  <>
-    <Header />
+  <SiteWrapper>
     <Layout>
       <h1>Resident Management Feature</h1>
     </Layout>
-    <Footer />
-  </>
+  </SiteWrapper>
 );
