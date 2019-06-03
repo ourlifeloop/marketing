@@ -1,6 +1,7 @@
 ---
 path: stop-employee-turnover
 date: 2019-05-15T22:40:45.100Z
+type: news
 title: How LifeLoop Helps Stop Employee Turnover
 ---
 ![](/images/employee-turnover.png)
