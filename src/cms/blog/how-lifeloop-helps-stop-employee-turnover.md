@@ -3,7 +3,7 @@ path: stop-employee-turnover
 date: 2019-05-15T22:40:45.100Z
 type: news
 title: How LifeLoop Helps Stop Employee Turnover
-photo: /images/employee-turnover.png
+photo: /images/cms/employee-turnover.png
 ---
 #### TURNOVER IS A WELL-KNOWN PROBLEM IN LONG-TERM CARE. EVERY SETTING IN SENIOR LIVING STRUGGLES TO HANG ONTO QUALITY WORKERS.
 
