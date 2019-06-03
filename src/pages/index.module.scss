@@ -75,7 +75,7 @@
 }
 
 .videoContainer {
-  margin: 0 variableSize(5, 60);
+  margin: 0 variableSize(5, 50);
 
   &:first-of-type {
     margin-left: 0;
@@ -87,5 +87,9 @@
 
   &--vertical {
     margin: 0;
+  }
+
+  > div {
+    min-width: 100%;
   }
 }
