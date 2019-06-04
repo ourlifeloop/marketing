@@ -73,10 +73,10 @@ export default function Footer() {
             </FlexContainer>
             <FlexContainer>
               <Link className={styles.link} to="/terms">
-                Terms of Service
+                Terms & Conditions
               </Link>
               <Link className={styles.link} to="/privacy">
-                Privacy Statement
+                Privacy Policy
               </Link>
             </FlexContainer>
           </FlexContainer>

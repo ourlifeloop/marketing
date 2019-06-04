@@ -30,7 +30,10 @@ export default ({ data }) => {
         objectPosition="100% 35%"
       />
       <Section>
-        <FlexContainer direction={isMobile ? 'column' : 'row'}>
+        <FlexContainer
+          align={isMobile ? 'initial' : 'center'}
+          direction={isMobile ? 'column' : 'row'}
+        >
           <FlexContainer flex="1" direction="column">
             <h2>
               In 2013, we had an idea
