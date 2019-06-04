@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
-// import FlexContainer from '../../primitives/flex-container';
 import SiteWrapper from '../../components/site-wrapper';
 import BlogHeader from '../../components/blog-header';
 import Layout from '../../primitives/layout';
