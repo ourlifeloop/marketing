@@ -1,7 +1,7 @@
 import CMS from 'netlify-cms-app';
 
+import BlogPostPreview from './preview-templates/blog-post-preview';
+
 import '../styles/global.scss';
 
-import BlogPostTemplate from '../templates/blog-post';
-
-CMS.registerPreviewTemplate('blog', BlogPostTemplate);
+CMS.registerPreviewTemplate('blog', BlogPostPreview);

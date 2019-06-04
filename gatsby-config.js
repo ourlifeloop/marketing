@@ -44,15 +44,15 @@ module.exports = {
     'gatsby-plugin-favicon',
     'gatsby-plugin-react-svg',
     {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/utils/typography',
       },
     },
     'gatsby-plugin-netlify',
