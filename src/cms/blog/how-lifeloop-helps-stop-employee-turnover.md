@@ -1,6 +1,5 @@
 ---
-path: stop-employee-turnover
-date: 2019-05-15T22:40:45.100Z
+date: 2018-06-26T22:40:45.100Z
 type: news
 author: Megan King
 title: How LifeLoop Helps Stop Employee Turnover
