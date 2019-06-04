@@ -5,11 +5,12 @@ author: Megan King
 title: >-
   Slim Activity Budget? Try These Four Creative Tactics to Get the Most Out of
   It!
-photo: /images/slim-activity-budget.png
+photo: /images/cms/slim-activity-budget.png
 ---
+
 #### IF YOU’RE A LIFE ENRICHMENT DIRECTOR (LED), YOU KNOW THE STRUGGLE. MORE THAN LIKELY, YOU HAVE A BIG JOB THAT COMES WITH A TINY BUDGET.
 
-Even with a deep-pocketed department, planning meaningful activities for residents is a serious challenge. But it’s much, much harder operating with the average activity allocation in a senior living community — about $10 per resident, per month.
+Even with a deep-pocketed department, planning meaningful activities for residents is a serious challenge. But it’s much, much harder operating with the average activity allocation in a senior living community — about \$10 per resident, per month.
 
 You already know you have to think deeply about every dollar you spend. But you may not have heard of these four tactics that can help keep your department humming.
 
