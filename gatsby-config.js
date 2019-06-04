@@ -1,11 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   siteMetadata: {
+    displayUrl: 'https://ourlifeloop.netlify.com',
     phoneNumber: '(402) 915-3860',
     inquiries: 'inquiries@ourlifeloop.com',
     careers: 'careers@ourlifeloop.com',

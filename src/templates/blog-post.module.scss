@@ -3,7 +3,55 @@
   text-align: center;
 }
 
+.separator {
+  margin: 0 0.8rem;
+}
+
 .postContent {
   margin: 0 auto;
   max-width: 700px;
+}
+
+.socialLinks {
+  left: -60px;
+  position: absolute;
+}
+
+.socialLink {
+  margin-bottom: 0.3rem;
+  width: 1.8rem;
+
+  svg {
+    transition: fill 0.2s linear;
+  }
+}
+
+.twitter {
+  fill: #1da1f2;
+
+  &:hover {
+    fill: #aab8c2;
+  }
+}
+
+.facebook {
+  fill: #1877f2;
+
+  &:hover {
+    fill: #3b5998;
+  }
+}
+
+.linkedIn {
+  fill: #007bb5;
+
+  &:hover {
+    fill: #00a0dc;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .socialLinks {
+    display: none;
+  }
 }

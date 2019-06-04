@@ -1,4 +1,3 @@
-const { kebabCase } = require('lodash');
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
@@ -15,6 +14,9 @@ exports.createPages = ({ actions, graphql }) => {
         edges {
           node {
             id
+            fields {
+              slug
+            }
             frontmatter {
               title
             }
@@ -29,7 +31,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
-        path: `blog/${kebabCase(node.frontmatter.title)}`,
+        path: node.fields.slug,
         component: path.resolve(`src/templates/blog-post.js`),
         context: {
           postId: node.id,
@@ -42,4 +44,13 @@ exports.createPages = ({ actions, graphql }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
   fmImagesToRelative(node);
+
+  if (node.internal.type === 'MarkdownRemark') {
+    const value = createFilePath({ node, getNode });
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    });
+  }
 };

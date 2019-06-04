@@ -2,9 +2,11 @@
 path: stop-employee-turnover
 date: 2019-05-15T22:40:45.100Z
 type: news
+author: Megan King
 title: How LifeLoop Helps Stop Employee Turnover
 photo: /images/cms/employee-turnover.png
 ---
+
 #### TURNOVER IS A WELL-KNOWN PROBLEM IN LONG-TERM CARE. EVERY SETTING IN SENIOR LIVING STRUGGLES TO HANG ONTO QUALITY WORKERS.
 
 The numbers paint a pretty grim portrait of the issue. For nurses, the median turnover rate (the percentage of employees who leave a position in one year or less) in long-term care is 44%. For support staff, it’s 50%, which is almost the same rate as full-time retail workers.
