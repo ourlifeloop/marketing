@@ -23,39 +23,36 @@ export default ({ data }) => {
         height="500px"
         image={data.hero.childImageSharp.fluid}
         direction="right"
-        title="We Saw a Need"
-        description="As an Activity Director, you’re busy planning events, managing your staff, and trying to engage your residents. It gets overwhelming trying to meet the needs of every individual."
+        title="We Saw A Need."
+        description={
+          'LifeLoop ensures a flow of communication between residents, family members and staff. Being "in the loop" means always having the latest information at your fingertips.'
+        }
         objectPosition="100% 35%"
       />
       <Section>
         <FlexContainer direction={isMobile ? 'column' : 'row'}>
           <FlexContainer flex="1" direction="column">
             <h2>
-              The idea stemmed from our
+              In 2013, we had an idea
               <br />
-              personal situation.
+              for LifeLoop
             </h2>
             <p>
               This photo is of my father-in-law, Lee, his two brothers and their
-              mom. She lived in a senior living community and started on the
-              independent side but quickly progressed to assisted living, then
-              memory care. Unfortunately, this is a situation many families
-              eventually arrive at but never find easy. Our family couldn’t help
-              but wonder what warning signs we may have missed. This personal
-              situation sparked us to think, “Can we make this better?”
+              mom. She moved into a senior living community and started on the
+              independent side but quickly progressed to assisted living, and
+              then memory care. Our family couldn’t help but wonder what warning
+              signs we may have missed. This personal situation sparked us to
+              think, “Can we make this better?”
             </p>
             <p>
-              Fast-forward through the process of working closely with
-              owners/operators to develop a software product that helps them
+              This led us to work closely with owners and operators of senior
+              living communities to develop a software product that helps them
               provide better care and service to their customers while also
               enhancing family and resident engagement.
             </p>
-            <p>
-              Today helping families stay “in the loop” is our passion. Being
-              "in the loop" means always having the latest information at your
-              fingertips. LifeLoop ensures a flow of communication between
-              residents, family members and staff.
-            </p>
+            <b>Amy Johnson</b>
+            <p>Co-Founder & CEO, LifeLoop</p>
           </FlexContainer>
           <div
             className={classNames(styles.storyImage, {
