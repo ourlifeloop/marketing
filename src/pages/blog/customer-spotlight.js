@@ -6,7 +6,7 @@ import SiteWrapper from '../../components/site-wrapper';
 import BlogHeader from '../../components/blog-header';
 import Layout from '../../primitives/layout';
 
-import styles from './index.module.scss';
+import styles from './blog.module.scss';
 
 export default ({ data }) => {
   console.log(styles, data);
