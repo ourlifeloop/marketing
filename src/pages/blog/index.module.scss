@@ -1,0 +1,26 @@
+@import '../../styles/theme';
+
+.headerRow {
+  margin: 1.5rem 0;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.link {
+  border-bottom: 2px solid transparent;
+  color: $text;
+  margin-left: 3rem;
+  padding: 0.2rem 0.3rem 0;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: $primary-blue;
+  }
+
+  &--active {
+    color: $primary-blue;
+    border-bottom: 2px solid $primary-blue;
+  }
+}
