@@ -7,7 +7,6 @@ import SiteWrapper from '../components/site-wrapper';
 import BlogPost from '../components/blog-post';
 
 export default function BlogPostTemplate({ data }) {
-  console.log(data);
   const { markdownRemark: post, site } = data;
   const { frontmatter, html, fields } = post;
   const { title, photo } = frontmatter;

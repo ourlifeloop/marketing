@@ -5,8 +5,8 @@ import classNames from 'classnames';
 
 import FlexContainer from '../../primitives/flex-container';
 import SiteWrapper from '../../components/site-wrapper';
-import ArticleCard from '../../components/article-card';
 import BlogHeader from '../../components/blog-header';
+import BlogRoll from '../../components/blog-roll';
 import { useDevice } from '../../utils/effects';
 import Layout from '../../primitives/layout';
 import Button from '../../primitives/button';
@@ -17,7 +17,6 @@ export default ({ data, location }) => {
   const { isTablet } = useDevice();
   const { edges: posts } = data.allMarkdownRemark;
   const [featuredPost, ...latestPosts] = posts;
-  const [firstPost, secondPost, ...olderPosts] = latestPosts;
 
   return (
     <SiteWrapper>
@@ -49,22 +48,7 @@ export default ({ data, location }) => {
           </FlexContainer>
         </FlexContainer>
         <h2>The Latest Articles</h2>
-        <FlexContainer className={styles.postContainer}>
-          <ArticleCard
-            className={styles.firstRowPost}
-            link={firstPost.node.fields.slug}
-            photo={firstPost.node.frontmatter.photo.childImageSharp.fluid}
-            title={firstPost.node.frontmatter.title}
-            excerpt={firstPost.node.excerpt}
-          />
-          <ArticleCard
-            className={styles.firstRowPost}
-            link={secondPost.node.fields.slug}
-            photo={secondPost.node.frontmatter.photo.childImageSharp.fluid}
-            title={secondPost.node.frontmatter.title}
-            excerpt={secondPost.node.excerpt}
-          />
-        </FlexContainer>
+        <BlogRoll posts={latestPosts} />
       </Layout>
     </SiteWrapper>
   );

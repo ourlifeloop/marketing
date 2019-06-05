@@ -4,6 +4,10 @@
 .postImage {
   width: 100%;
   height: variableSize(200, 350);
+
+  &--small {
+    height: variableSize(150, 275);
+  }
 }
 
 .postTitle {

@@ -1,0 +1,39 @@
+@import '../styles/theme';
+@import '../styles/utils';
+
+$post-margin-min: 5;
+$post-margin-max: 20;
+
+$positive-margin: variableSize($post-margin-min, $post-margin-max);
+$double-margin: variableSize(2 * $post-margin-min, 2 * $post-margin-max);
+$negative-margin: variableSize(-$post-margin-min, -$post-margin-max);
+
+.postContainer {
+  margin: 0 $negative-margin $positive-margin;
+}
+
+.firstRowPost {
+  width: calc(50% - #{$double-margin});
+  margin: 0 $positive-margin;
+
+  &--vertical {
+    width: calc(100% - #{$double-margin});
+  }
+}
+
+.otherRowPost {
+  width: 33.3%;
+  margin: 0 $positive-margin;
+
+  &--tablet {
+    width: calc(50% - #{$double-margin});
+  }
+
+  &--mobile {
+    width: calc(100% - #{$double-margin});
+  }
+}
+
+.showMore {
+  margin-bottom: 3rem;
+}

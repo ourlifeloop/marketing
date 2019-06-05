@@ -4,9 +4,11 @@ import classNames from 'classnames';
 
 import styles from './button.module.scss';
 
-export default function Button({ children, className }) {
+export default function Button({ children, className, ...rest }) {
   return (
-    <button className={classNames(styles.button, className)}>{children}</button>
+    <button {...rest} className={classNames(styles.button, className)}>
+      {children}
+    </button>
   );
 }
 

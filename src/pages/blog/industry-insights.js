@@ -3,15 +3,15 @@ import { graphql } from 'gatsby';
 
 import SiteWrapper from '../../components/site-wrapper';
 import BlogHeader from '../../components/blog-header';
+import BlogRoll from '../../components/blog-roll';
 import Layout from '../../primitives/layout';
 
-// import styles from './blog.module.scss';
-
-export default ({ location }) => {
+export default ({ data, location }) => {
   return (
     <SiteWrapper>
       <Layout>
         <BlogHeader pathname={location.pathname} />
+        <BlogRoll posts={data.allMarkdownRemark.edges} />
       </Layout>
     </SiteWrapper>
   );

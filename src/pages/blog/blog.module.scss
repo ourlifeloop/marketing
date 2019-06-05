@@ -46,22 +46,3 @@
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
-
-$post-margin-min: 5;
-$post-margin-max: 20;
-
-$positive-margin: variableSize($post-margin-min, $post-margin-max);
-$negative-margin: variableSize(-$post-margin-min, -$post-margin-max);
-
-.postContainer {
-  margin: 0 $negative-margin $positive-margin;
-}
-
-.firstRowPost {
-  width: 50%;
-  margin: 0 $positive-margin;
-
-  &--vertical {
-    width: 100%;
-  }
-}
