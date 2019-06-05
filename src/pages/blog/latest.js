@@ -12,14 +12,14 @@ import Button from '../../primitives/button';
 
 import styles from './blog.module.scss';
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const { isTablet } = useDevice();
   const { edges: posts } = data.allMarkdownRemark;
   const featuredPost = posts[0];
   return (
     <SiteWrapper>
       <Layout>
-        <BlogHeader />
+        <BlogHeader pathname={location.pathname} />
         <FlexContainer
           direction={isTablet ? 'column' : 'row'}
           className={classNames(styles.featured, {

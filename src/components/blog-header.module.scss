@@ -7,12 +7,18 @@
   h1 {
     margin: 0;
   }
+
+  &--vertical {
+    h1 {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 .link {
   border-bottom: 2px solid transparent;
   color: $text;
-  margin-left: variableSize(10, 50);
+  margin-left: variableSize(10, 40);
   padding: 0.2rem 0.3rem 0;
   transition: color 0.2s linear;
 
@@ -28,4 +34,8 @@
     color: $primary-blue;
     border-bottom: 2px solid $primary-blue;
   }
+}
+
+.select {
+  width: 205px;
 }

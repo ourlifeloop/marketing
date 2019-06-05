@@ -1,6 +1,6 @@
 ---
 date: 2018-07-10T19:15:43.623Z
-type: news
+type: insights
 author: Megan King
 title: >-
   Slim Activity Budget? Try These Four Creative Tactics to Get the Most Out of

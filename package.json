@@ -36,6 +36,7 @@
     "react-feather": "^1.1.6",
     "react-helmet": "^5.2.1",
     "react-responsive-embed": "^2.1.0",
+    "react-select": "^3.0.4",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19"
   },

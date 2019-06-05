@@ -82,7 +82,7 @@ export default {
   blog: {
     key: 'blog',
     name: 'Blog',
-    link: '/blog/',
+    link: '/blog/latest',
   },
   contactUs: {
     key: 'contactUs',

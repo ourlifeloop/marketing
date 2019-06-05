@@ -5,14 +5,13 @@ import SiteWrapper from '../../components/site-wrapper';
 import BlogHeader from '../../components/blog-header';
 import Layout from '../../primitives/layout';
 
-import styles from './blog.module.scss';
+// import styles from './blog.module.scss';
 
-export default ({ data }) => {
-  console.log(styles, data);
+export default ({ location }) => {
   return (
     <SiteWrapper>
       <Layout>
-        <BlogHeader />
+        <BlogHeader pathname={location.pathname} />
       </Layout>
     </SiteWrapper>
   );

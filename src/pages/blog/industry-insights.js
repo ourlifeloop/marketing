@@ -18,10 +18,10 @@ export default ({ location }) => {
 };
 
 export const query = graphql`
-  query CustomerSpotlightQuery {
+  query IndustryInsightsQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { type: { eq: "spotlight" } } }
+      filter: { frontmatter: { type: { eq: "insights" } } }
     ) {
       edges {
         node {

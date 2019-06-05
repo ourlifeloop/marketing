@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 media_folder: static/images/cms
 public_folder: /images/cms
 
@@ -22,6 +22,7 @@ collections:
         options:
           - { label: Customer Spotlight, value: spotlight }
           - { label: News, value: news }
+          - { label: Industry Insights, value: insights }
       - { name: author, label: Author }
       - { name: title, label: Title }
       - { name: photo, label: Photo, widget: image }
