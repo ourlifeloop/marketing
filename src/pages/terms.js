@@ -8,7 +8,7 @@ export default () => (
   <SiteWrapper>
     <Layout>
       <Section width="medium">
-        <h1>Terms of Service</h1>
+        <h1>Terms & Conditions</h1>
 
         <p>
           <strong>SECTION 1.&nbsp; SCOPE</strong>
