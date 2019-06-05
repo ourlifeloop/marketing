@@ -1,0 +1,33 @@
+@import '../styles/theme';
+
+.input {
+  color: $text-dark;
+  display: inline-block;
+  border: solid 1px $highlight;
+  height: 38px;
+  padding: 0 10px;
+  background-color: white;
+  font-size: 0.8rem;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  outline: none;
+
+  &:disabled,
+  &:disabled:hover {
+    background-color: $background-secondary;
+    box-shadow: none;
+    cursor: default;
+  }
+
+  &:hover {
+    box-shadow: 2px 2px 10px 0px $highlight;
+    outline: 0;
+  }
+
+  &--error {
+    border-color: red;
+  }
+}

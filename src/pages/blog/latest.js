@@ -6,6 +6,7 @@ import classNames from 'classnames';
 import FlexContainer from '../../primitives/flex-container';
 import SiteWrapper from '../../components/site-wrapper';
 import BlogHeader from '../../components/blog-header';
+import BlogFooter from '../../components/blog-subscriber';
 import BlogRoll from '../../components/blog-roll';
 import { useDevice } from '../../utils/effects';
 import Layout from '../../primitives/layout';
@@ -50,6 +51,7 @@ export default ({ data, location }) => {
         <h2>The Latest Articles</h2>
         <BlogRoll posts={latestPosts} />
       </Layout>
+      <BlogFooter />
     </SiteWrapper>
   );
 };
