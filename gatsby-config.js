@@ -4,6 +4,7 @@ module.exports = {
     phoneNumber: '(402) 915-3860',
     inquiries: 'inquiries@ourlifeloop.com',
     careers: 'careers@ourlifeloop.com',
+    information: 'info@ourlifeloop.com',
   },
   plugins: [
     {
