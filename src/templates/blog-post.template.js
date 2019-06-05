@@ -3,6 +3,7 @@ import Img from 'gatsby-image';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 
+import BlogSubscriber from '../components/blog-subscriber';
 import SiteWrapper from '../components/site-wrapper';
 import BlogPost from '../components/blog-post';
 
@@ -19,6 +20,7 @@ export default function BlogPostTemplate({ data }) {
         html={<div dangerouslySetInnerHTML={{ __html: html }} />}
         photo={<Img fluid={photo.childImageSharp.fluid} />}
       />
+      <BlogSubscriber />
     </SiteWrapper>
   );
 }
