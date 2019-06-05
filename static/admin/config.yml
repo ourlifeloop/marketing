@@ -25,5 +25,5 @@ collections:
           - { label: Industry Insights, value: insights }
       - { name: author, label: Author }
       - { name: title, label: Title }
-      - { name: photo, label: Photo, widget: image }
+      - { name: photo, label: Photo, widget: image, required: false }
       - { name: body, label: Body, widget: markdown }

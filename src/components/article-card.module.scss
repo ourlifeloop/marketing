@@ -1,0 +1,17 @@
+@import '../styles/theme';
+@import '../styles/utils';
+
+.postImage {
+  width: 100%;
+  height: variableSize(200, 350);
+}
+
+.postTitle {
+  color: $text-dark;
+  font-weight: bold;
+  margin: 0.8rem 0 0.3rem;
+}
+
+.postExcerpt {
+  font-size: 0.9rem;
+}
