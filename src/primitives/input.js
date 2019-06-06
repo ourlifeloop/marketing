@@ -1,10 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import Select from 'react-select';
 
 import styles from './input.module.scss';
 
-export default function Input({ className, isError, ...rest }) {
+export default function Input({ className, isError, type, ...rest }) {
+  if (type === 'select') {
+    return <Select className={className} {...rest} />;
+  }
+  if (type === 'textarea') {
+    return (
+      <textarea
+        {...rest}
+        className={classNames(styles.input, styles.textarea, className, {
+          [styles.inputError]: isError,
+        })}
+      />
+    );
+  }
   return (
     <input
       {...rest}
@@ -16,11 +30,12 @@ export default function Input({ className, isError, ...rest }) {
 }
 
 Input.propTypes = {
-  children: PropTypes.node.isRequired,
   isError: PropTypes.bool,
   className: PropTypes.string,
+  type: PropTypes.string,
 };
 
 Input.defaultProps = {
   isError: false,
+  type: 'string',
 };

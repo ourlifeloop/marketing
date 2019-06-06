@@ -28,12 +28,12 @@ export default [
   },
   {
     name: 'Brett Robeson',
-    title: 'Sales Manager',
+    title: 'Strategic Programs Manager',
     image: 'brettRobeson',
   },
   {
     name: 'Joey Carney',
-    title: 'Sales Manager',
+    title: 'Territory Manager',
     image: 'joeyCarney',
   },
   {

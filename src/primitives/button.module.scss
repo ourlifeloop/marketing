@@ -24,6 +24,7 @@
 
   &:disabled,
   &:disabled:hover {
+    background-color: $text-highlight;
     box-shadow: none;
     cursor: default;
   }
