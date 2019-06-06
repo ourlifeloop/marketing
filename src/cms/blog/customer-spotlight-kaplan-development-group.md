@@ -3,6 +3,7 @@ date: 2018-07-24T18:28:35.927Z
 type: spotlight
 author: Nick Nemer
 title: 'Customer Spotlight: Kaplan Development Group'
+photo: /images/cms/blog-title-graphic.png
 ---
 **THE LIFELOOP TEAM WORKS HARD TO DELIVER A GREAT PRODUCT. BUT, IT’S OUR CUSTOMERS THAT TRULY REALIZE THE PLATFORM’S POTENTIAL.**
 
