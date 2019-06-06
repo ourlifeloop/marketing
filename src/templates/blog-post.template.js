@@ -38,7 +38,7 @@ export const query = graphql`
         author
         photo {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 1000, quality: 80) {
               ...GatsbyImageSharpFluid
               presentationWidth
             }

@@ -54,7 +54,7 @@ a {
   color: $text-blue;
   text-decoration: none;
   transition: color 0.2s linear;
-  white-space: nowrap;
+  // white-space: nowrap;
 
   &:hover {
     color: $text-dark;

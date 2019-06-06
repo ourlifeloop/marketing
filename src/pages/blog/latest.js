@@ -48,10 +48,12 @@ export default ({ data, location }) => {
             </Link>
           </FlexContainer>
         </FlexContainer>
-        <h2>The Latest Articles</h2>
-        <BlogRoll posts={latestPosts} />
       </Layout>
       <BlogFooter />
+      <Layout>
+        <h2 className={styles.rollTitle}>The Latest Articles</h2>
+        <BlogRoll posts={latestPosts} />
+      </Layout>
     </SiteWrapper>
   );
 };
@@ -70,7 +72,7 @@ export const query = graphql`
             title
             photo {
               childImageSharp {
-                fluid(maxHeight: 700) {
+                fluid(maxHeight: 500, quality: 90) {
                   ...GatsbyImageSharpFluid
                   presentationWidth
                 }
