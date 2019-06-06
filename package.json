@@ -42,7 +42,7 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "typography": "^0.16.19",
-    "whatwg-fetch": "^3.0.0"
+    "whatwg-fetch": "^2.0.4"
   },
   "devDependencies": {
     "prettier": "^1.17.1"
