@@ -1,14 +1,25 @@
 import React, { useState } from 'react';
+import { navigate } from 'gatsby';
+import 'whatwg-fetch';
 
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
 import Button from '../primitives/button';
+import { subscribe } from '../utils/api';
 import Input from '../primitives/input';
 
 import styles from './blog-subscriber.module.scss';
+import { navigate } from 'gatsby';
 
 export default () => {
   const [email, setEmail] = useState('');
+  const [isError, setIsError] = useState(false);
+
+  const onSubscribe = () =>
+    subscribe(email)
+      .then(() => navigate('/form-success'))
+      .catch(() => setIsError(true));
+
   return (
     <TitleSection secondary header="Stay in the Loop.">
       <p>
@@ -24,7 +35,7 @@ export default () => {
           value={email}
           onChange={e => setEmail(e.target.value)}
         />
-        <Button>Subscribe</Button>
+        <Button onClick={onSubscribe}>Subscribe</Button>
       </FlexContainer>
     </TitleSection>
   );

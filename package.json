@@ -30,6 +30,7 @@
     "gatsby-transformer-sharp": "^2.1.19",
     "lodash": "^4.17.11",
     "netlify-cms-app": "^2.9.1",
+    "netlify-lambda": "^1.4.13",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -38,7 +39,10 @@
     "react-responsive-embed": "^2.1.0",
     "react-select": "^3.0.4",
     "react-typography": "^0.16.19",
-    "typography": "^0.16.19"
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "typography": "^0.16.19",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "prettier": "^1.17.1"
