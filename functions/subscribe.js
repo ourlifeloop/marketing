@@ -11,5 +11,8 @@ exports.handler = (event, context, callback) => {
     body: JSON.stringify({ email_address: email, status: 'subscribed' }),
   })
     .then(() => callback(null, { statusCode: 200 }))
-    .catch(() => callback(null, { statusCode: 500 }));
+    .catch(err => {
+      console.log(err);
+      callback(null, { statusCode: 500 });
+    });
 };
