@@ -1,5 +1,9 @@
 import 'whatwg-fetch';
 
-export const subscribe = email => {
-  fetch('/.netlify/functions/subscribe').then(response => response.json());
-};
+export const subscribe = email =>
+  fetch(
+    `https://ourlifeloop.netlify.com/.netlify/functions/subscribe?email=${email}`,
+    {
+      method: 'POST',
+    },
+  ).then(response => response.json());
