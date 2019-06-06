@@ -9,7 +9,6 @@ import { subscribe } from '../utils/api';
 import Input from '../primitives/input';
 
 import styles from './blog-subscriber.module.scss';
-import { navigate } from 'gatsby';
 
 export default () => {
   const [email, setEmail] = useState('');
@@ -19,6 +18,8 @@ export default () => {
     subscribe(email)
       .then(() => navigate('/form-success'))
       .catch(() => setIsError(true));
+
+  console.log(isError);
 
   return (
     <TitleSection secondary header="Stay in the Loop.">
