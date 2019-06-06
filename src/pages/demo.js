@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { graphql } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 
 import FlexContainer from '../primitives/flex-container';
 import SiteWrapper from '../components/site-wrapper';
@@ -73,6 +73,7 @@ export default ({ data }) => {
   const onSubmit = e => {
     e.preventDefault();
     console.log(form);
+    navigate('/form-success');
   };
 
   return (

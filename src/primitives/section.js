@@ -13,6 +13,7 @@ export default function Section({
   secondary,
   noTopPadding,
   noBottomPadding,
+  fullHeight,
   width,
   className,
 }) {
@@ -25,6 +26,7 @@ export default function Section({
         [styles.containerCentered]: centered,
         [styles.containerNoTopPadding]: noTopPadding,
         [styles.containerNoBottomPadding]: noBottomPadding,
+        [styles.containerFullHeight]: fullHeight,
       })}
     >
       <Layout>
@@ -47,6 +49,7 @@ Section.propTypes = {
   secondary: PropTypes.bool,
   noTopPadding: PropTypes.bool,
   noBottomPadding: PropTypes.bool,
+  fullHeight: PropTypes.bool,
   width: PropTypes.string,
   className: PropTypes.string,
 };
@@ -56,6 +59,7 @@ Section.defaultProps = {
   secondary: false,
   noTopPadding: false,
   noBottomPadding: false,
+  fullHeight: false,
   width: undefined,
   className: undefined,
 };

@@ -18,6 +18,10 @@
   &--noBottomPadding {
     padding-bottom: 0;
   }
+
+  &--fullHeight {
+    height: calc(100vh - 1.2rem - 175px);
+  }
 }
 
 .innerContainer {
