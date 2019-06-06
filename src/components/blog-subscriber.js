@@ -12,14 +12,15 @@ import styles from './blog-subscriber.module.scss';
 
 export default () => {
   const [email, setEmail] = useState('');
-  const [isError, setIsError] = useState(false);
+  const [error, setError] = useState();
 
   const onSubscribe = () =>
     subscribe(email)
       .then(() => navigate('/form-success'))
-      .catch(() => setIsError(true));
-
-  console.log(isError);
+      .catch(error => {
+        console.log(error);
+        setError('An error has occured.');
+      });
 
   return (
     <TitleSection secondary header="Stay in the Loop.">
@@ -38,6 +39,7 @@ export default () => {
         />
         <Button onClick={onSubscribe}>Subscribe</Button>
       </FlexContainer>
+      {!!error && <div className={styles.error}>{error}</div>}
     </TitleSection>
   );
 };

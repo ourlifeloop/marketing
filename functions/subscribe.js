@@ -15,10 +15,11 @@ exports.handler = (event, context, callback) => {
     },
   })
     .then(() => callback(null, { body: 'Success', statusCode: 200 }))
-    .catch(err =>
+    .catch(err => {
+      console.error(err);
       callback(null, {
-        body: JSON.parse(err.response.body).title,
+        body: err.response.body ? JSON.parse(err.response.body).title : '',
         statusCode: 500,
-      }),
-    );
+      });
+    });
 };

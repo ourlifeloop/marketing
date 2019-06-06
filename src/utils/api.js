@@ -6,4 +6,4 @@ export const subscribe = email =>
     {
       method: 'POST',
     },
-  ).then(response => response.json());
+  );
