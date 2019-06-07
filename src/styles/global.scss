@@ -51,10 +51,9 @@ li {
 }
 
 a {
-  color: $text-blue;
+  color: $primary-blue;
   text-decoration: none;
   transition: color 0.2s linear;
-  // white-space: nowrap;
 
   &:hover {
     color: $text-dark;

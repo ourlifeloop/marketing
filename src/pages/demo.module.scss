@@ -1,3 +1,5 @@
+@import '../styles/theme';
+
 .formContainer {
   max-width: 35rem;
   width: 100%;
@@ -5,4 +7,39 @@
   a {
     white-space: nowrap;
   }
+}
+
+.infoContainer {
+  background-color: $background-secondary;
+  padding: 2rem;
+  margin: 0 0 2rem 2rem;
+  width: 450px;
+
+  &--vertical {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.infoLink {
+  display: block;
+  padding-bottom: 0.3rem;
+
+  &:hover * {
+    color: $text-dark;
+    fill: $text-dark;
+  }
+}
+
+.featureIcon {
+  color: $primary-blue;
+  fill: $primary-blue;
+  margin-right: 0.5rem;
+  width: 30px;
+  transition: all 0.2s linear;
+}
+
+.featureName {
+  color: $text;
+  transition: all 0.2s linear;
 }

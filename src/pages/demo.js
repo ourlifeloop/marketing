@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
-import { graphql, navigate } from 'gatsby';
+import { Link, graphql, navigate } from 'gatsby';
+import classNames from 'classnames';
+import { map } from 'lodash';
 
 import FlexContainer from '../primitives/flex-container';
 import SiteWrapper from '../components/site-wrapper';
 import FormRow from '../primitives/form-row';
+import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
 import Layout from '../primitives/layout';
 import Button from '../primitives/button';
 import Label from '../primitives/label';
 import Input from '../primitives/input';
+import NAVIGATION from '../utils/navigation';
 
 import styles from './demo.module.scss';
 
@@ -52,6 +56,7 @@ const INITIAL_STATE = {
 const arrayToOptions = arr => arr.map(str => ({ label: str, value: str }));
 
 export default ({ data }) => {
+  const { isTablet } = useDevice();
   const [form, setForm] = useState(INITIAL_STATE);
 
   const isValid =
@@ -80,7 +85,10 @@ export default ({ data }) => {
     <SiteWrapper>
       <Layout>
         <Section>
-          <FlexContainer>
+          <FlexContainer
+            direction={isTablet ? 'column' : 'row'}
+            justify="spacebetween"
+          >
             <FlexContainer direction="column" className={styles.formContainer}>
               <h1>Request a Demo</h1>
               <p>
@@ -177,6 +185,66 @@ export default ({ data }) => {
                 </Button>
               </form>
             </FlexContainer>
+            <FlexContainer direction="column">
+              <div
+                className={classNames(styles.infoContainer, {
+                  [styles.infoContainerVertical]: isTablet,
+                })}
+              >
+                <h3>Other ways to connect with us</h3>
+                <Link className={styles.infoLink} to="/recommend">
+                  Are you a family Member?
+                </Link>
+                <Link className={styles.infoLink} to="/contact">
+                  Would you like to send us a message?
+                </Link>
+                <Link className={styles.infoLink} to="/support">
+                  Do you need technical support?
+                </Link>
+              </div>
+              <div
+                className={classNames(styles.infoContainer, {
+                  [styles.infoContainerVertical]: isTablet,
+                })}
+              >
+                <h3>Interested in joining the team?</h3>
+                <p>
+                  We care about our customers. We are problem solvers, we
+                  embrace growth and trust that everyone is here to foster their
+                  passion.
+                </p>
+                <p>
+                  If you are interested in applying for a position at LifeLoop,
+                  please send your resume to{' '}
+                  <a href={`mailto:${data.site.siteMetadata.careers}`}>
+                    {data.site.siteMetadata.careers}
+                  </a>
+                </p>
+              </div>
+              <div
+                className={classNames(styles.infoContainer, {
+                  [styles.infoContainerVertical]: isTablet,
+                })}
+              >
+                <h3>How LifeLoop Works</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur in scelerisque augue. Sed consectetur arcu sed orci
+                  hendrerit tempor.
+                </p>
+                {map(
+                  NAVIGATION.features.subNav,
+                  ({ key, Icon, name, link }) => (
+                    <Link key={key} to={link} className={styles.infoLink}>
+                      <FlexContainer align="center">
+                        <Icon className={styles.featureIcon} />
+                        <span className={styles.featureName}>{name}</span>
+                      </FlexContainer>
+                    </Link>
+                  ),
+                )}
+              </div>
+            </FlexContainer>
           </FlexContainer>
         </Section>
       </Layout>
@@ -189,6 +257,7 @@ export const query = graphql`
     site {
       siteMetadata {
         phoneNumber
+        careers
       }
     }
   }
