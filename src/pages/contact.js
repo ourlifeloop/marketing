@@ -105,8 +105,8 @@ export default () => {
             </FormContainer>
             <ContactSidebar
               links={[
-                <Link key="contact" to="/contact">
-                  Would you like to send us a message?
+                <Link key="contact" to="/demo">
+                  Would you like to schedule a demo?
                 </Link>,
                 <Link key="recommend" to="/recommend">
                   Are you a family member?
