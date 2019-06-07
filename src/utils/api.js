@@ -8,5 +8,5 @@ export const subscribe = email =>
 export const submitForm = (form, isSupport = false) =>
   fetch('/.netlify/functions/form-submission', {
     method: 'POST',
-    body: JSON.stringify(form),
+    body: JSON.stringify({ isSupport, form }),
   });
