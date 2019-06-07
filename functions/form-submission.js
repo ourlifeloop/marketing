@@ -1,6 +1,6 @@
 const { map } = require('lodash');
 const nodemailer = require('nodemailer');
-const querystring = require('querystring');
+// const querystring = require('querystring');
 const mandrillTransport = require('nodemailer-mandrill-transport');
 
 const transport = nodemailer.createTransport(
@@ -14,8 +14,8 @@ exports.handler = event => {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
 
-  const { isSupport, form } = querystring.parse(event.body);
-  console.log(event.body, querystring.parse(event.body), isSupport, form);
+  const { isSupport, form } = event.body;
+  console.log(event.body, isSupport, form);
   if (!form) {
     return { statusCode: 400 };
   }
