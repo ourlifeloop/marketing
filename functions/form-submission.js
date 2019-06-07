@@ -15,8 +15,9 @@ exports.handler = event => {
   }
 
   const { isSupport, form } = querystring.parse(event.body);
+  console.log(event.body, querystring.parse(event.body), isSupport, form);
   if (!form) {
-    return { statusCode: 200 };
+    return { statusCode: 400 };
   }
 
   const targetEmail =
