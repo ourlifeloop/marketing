@@ -7,7 +7,7 @@ exports.handler = (event, context, callback) => {
   if (!email) {
     return callback(null, {
       body: createBody('Invalid Email'),
-      statusCode: 400,
+      statusCode: 200,
     });
   }
 
@@ -27,6 +27,6 @@ exports.handler = (event, context, callback) => {
         ? JSON.parse(err.response.body).title
         : '';
       console.log(err.response.body, response);
-      callback(null, { body: createBody(response), statusCode: 500 });
+      callback(null, { body: createBody(response), statusCode: 200 });
     });
 };
