@@ -19,10 +19,11 @@ exports.handler = event => {
     return { statusCode: 400 };
   }
 
-  const targetEmail =
-    isSupport === 'true'
-      ? process.env.SUPPORT_EMAIL
-      : process.env.INQUIRY_EMAIL;
+  console.log(typeof isSupport);
+
+  const targetEmail = isSupport
+    ? process.env.SUPPORT_EMAIL
+    : process.env.INQUIRY_EMAIL;
 
   return transport
     .sendMail({
