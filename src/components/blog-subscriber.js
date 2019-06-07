@@ -28,9 +28,9 @@ export default () => {
           ? 'Your subscription has been received!'
           : undefined;
       if (response === 'Invalid Email') {
-        email = 'Email is Invlaid.';
+        error = 'Email is Invlaid.';
       } else if (response === 'Member Exists') {
-        email = 'You are already subscribed!';
+        error = 'You are already subscribed!';
       }
       setState({ email: '', success, error });
     });
