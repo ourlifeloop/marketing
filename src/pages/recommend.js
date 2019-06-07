@@ -47,7 +47,8 @@ export default () => {
     e.preventDefault();
     submitForm({
       ...form,
-      subject: `Family Recommendation: ${form.subject}`,
+      subject: `Family Recommendation: ${form.subject ||
+        'I want a community to utilize LifeLoop.'}`,
     }).then(() => navigate('/form-success'));
   };
 
