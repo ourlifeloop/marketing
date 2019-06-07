@@ -26,7 +26,9 @@ exports.handler = (event, context, callback) => {
       const response = err.response.body
         ? JSON.parse(err.response.body).title
         : '';
-      console.log(err.response.body, response);
+      if (!response) {
+        console.error(err);
+      }
       callback(null, { body: createBody(response), statusCode: 200 });
     });
 };

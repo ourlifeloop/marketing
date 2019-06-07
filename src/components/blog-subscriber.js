@@ -21,22 +21,19 @@ export default () => {
     if (!email) {
       return;
     }
-    subscribe(email)
-      .then(() =>
-        setState({
-          ...state,
-          success: 'Your subscription has been received!',
-          error: undefined,
-        }),
-      )
-      .catch(error => {
-        console.error(error);
-        setState({
-          ...state,
-          success: undefined,
-          error: 'An error has occured.',
-        });
-      });
+    subscribe(email).then(({ response }) => {
+      let error = response === 'Success' ? undefined : 'An error has occured.';
+      const success =
+        response === 'Success'
+          ? 'Your subscription has been received!'
+          : undefined;
+      if (response === 'Invalid Email') {
+        email = 'Email is Invlaid.';
+      } else if (response === 'Member Exists') {
+        email = 'You are already subscribed!';
+      }
+      setState({ email: '', success, error });
+    });
   };
 
   return (
