@@ -41,10 +41,10 @@ export default () => {
 
   const onSubmit = e => {
     e.preventDefault();
-    submitForm(form).then(response => {
-      console.log(response);
-      // navigate('/form-success');
-    });
+    submitForm({
+      ...form,
+      subject: `General Contact: ${form.subject}`,
+    }).then(() => navigate('/form-success'));
   };
 
   return (

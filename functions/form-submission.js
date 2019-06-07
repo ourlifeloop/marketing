@@ -15,13 +15,6 @@ exports.handler = event => {
   }
 
   const { isSupport, form } = JSON.parse(event.body);
-  console.log(
-    event.body,
-    typeof event.body,
-    JSON.parse(event.body),
-    isSupport,
-    form,
-  );
   if (!form) {
     return { statusCode: 400 };
   }
@@ -31,16 +24,12 @@ exports.handler = event => {
       ? process.env.SUPPORT_EMAIL
       : process.env.INQUIRY_EMAIL;
 
-  const { subject, ...rest } = form;
-
-  console.log(targetEmail, isSupport, isSupport === 'true', form);
-
   return transport
     .sendMail({
       from: form.email || 'do_not_reply@ourlifeloop.com',
       to: targetEmail,
       subject: form.subject || 'Form Submission - Marketing',
-      html: map(rest, (value, key) => `<p>${key}: ${value}</p>`).join(),
+      html: map(form, (value, key) => `<p>${key}: ${value}</p>`).join(''),
     })
     .then(() => ({ statusCode: 200 }))
     .catch(err => {
