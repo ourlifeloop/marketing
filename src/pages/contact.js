@@ -41,7 +41,10 @@ export default () => {
 
   const onSubmit = e => {
     e.preventDefault();
-    submitForm(form).then(() => navigate('/form-success'));
+    submitForm(form).then(response => {
+      console.log(response);
+      // navigate('/form-success');
+    });
   };
 
   return (

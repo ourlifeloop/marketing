@@ -26,11 +26,13 @@ exports.handler = event => {
 
   const { subject, ...rest } = form;
 
+  console.log(targetEmail, isSupport, isSupport === 'true', form);
+
   return transport
     .sendMail({
-      from: form.email,
+      from: form.email || 'do_not_reply@ourlifeloop.com',
       to: targetEmail,
-      subject: form.subject,
+      subject: form.subject || 'Form Submission - Marketing',
       html: map(rest, (value, key) => `<p>${key}: ${value}</p>`).join(),
     })
     .then(() => ({ statusCode: 200 }))
