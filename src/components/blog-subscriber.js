@@ -18,7 +18,7 @@ export default () => {
     subscribe(email)
       .then(() => navigate('/form-success'))
       .catch(error => {
-        console.log(error);
+        console.error(error);
         setError('An error has occured.');
       });
 

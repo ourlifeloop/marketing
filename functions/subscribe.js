@@ -16,10 +16,10 @@ exports.handler = (event, context, callback) => {
   })
     .then(() => callback(null, { body: 'Success', statusCode: 200 }))
     .catch(err => {
-      console.error(err);
-      callback(null, {
-        body: err.response.body ? JSON.parse(err.response.body).title : '',
-        statusCode: 500,
-      });
+      const response = err.response.body
+        ? JSON.parse(err.response.body).title
+        : '';
+      console.log(err.response.body, response);
+      callback(null, { body: response, statusCode: 500 });
     });
 };
