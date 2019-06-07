@@ -14,8 +14,14 @@ exports.handler = event => {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
 
-  const { isSupport, form } = event.body;
-  console.log(event.body, isSupport, form);
+  const { isSupport, form } = JSON.parse(event.body);
+  console.log(
+    event.body,
+    typeof event.body,
+    JSON.parse(event.body),
+    isSupport,
+    form,
+  );
   if (!form) {
     return { statusCode: 400 };
   }
