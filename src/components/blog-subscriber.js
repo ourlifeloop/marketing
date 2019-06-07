@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { navigate } from 'gatsby';
 import 'whatwg-fetch';
 
 import FlexContainer from '../primitives/flex-container';
@@ -11,16 +10,34 @@ import Input from '../primitives/input';
 import styles from './blog-subscriber.module.scss';
 
 export default () => {
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState();
+  const [state, setState] = useState({
+    email: '',
+    error: undefined,
+    success: undefined,
+  });
+  const { email, error, success } = state;
 
-  const onSubscribe = () =>
+  const onSubscribe = () => {
+    if (!email) {
+      return;
+    }
     subscribe(email)
-      .then(() => navigate('/form-success'))
+      .then(() =>
+        setState({
+          ...state,
+          success: 'Your subscription has been received!',
+          error: undefined,
+        }),
+      )
       .catch(error => {
         console.error(error);
-        setError('An error has occured.');
+        setState({
+          ...state,
+          success: undefined,
+          error: 'An error has occured.',
+        });
       });
+  };
 
   return (
     <TitleSection secondary header="Stay in the Loop.">
@@ -35,11 +52,18 @@ export default () => {
           className={styles.input}
           placeholder="Enter your email address"
           value={email}
-          onChange={e => setEmail(e.target.value)}
+          onChange={e =>
+            setState({
+              email: e.target.value,
+              error: undefined,
+              success: undefined,
+            })
+          }
         />
         <Button onClick={onSubscribe}>Subscribe</Button>
       </FlexContainer>
       {!!error && <div className={styles.error}>{error}</div>}
+      {!!success && <div className={styles.success}>{success}</div>}
     </TitleSection>
   );
 };
