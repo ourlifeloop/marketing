@@ -1,10 +1,12 @@
 const rp = require('request-promise');
 
+const createBody = response => JSON.stringify({ response });
+
 exports.handler = (event, context, callback) => {
   const { email } = event.queryStringParameters;
   if (!email) {
     return callback(null, {
-      body: { response: 'Invalid Email' },
+      body: createBody('Invalid Email'),
       statusCode: 400,
     });
   }
@@ -18,13 +20,13 @@ exports.handler = (event, context, callback) => {
     },
   })
     .then(() =>
-      callback(null, { body: { response: 'Success' }, statusCode: 200 }),
+      callback(null, { body: createBody('Success'), statusCode: 200 }),
     )
     .catch(err => {
       const response = err.response.body
         ? JSON.parse(err.response.body).title
         : '';
       console.log(err.response.body, response);
-      callback(null, { body: { response }, statusCode: 500 });
+      callback(null, { body: createBody(response), statusCode: 500 });
     });
 };
