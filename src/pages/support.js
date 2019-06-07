@@ -10,6 +10,7 @@ import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
 import Layout from '../primitives/layout';
 import Button from '../primitives/button';
+import { submitForm } from '../utils/api';
 import Label from '../primitives/label';
 import Input from '../primitives/input';
 
@@ -64,8 +65,15 @@ export default () => {
 
   const onSubmit = e => {
     e.preventDefault();
-    console.log(form);
-    navigate('/form-success');
+    submitForm(
+      {
+        ...form,
+        userType: form.userType.value,
+        categories: form.categories.map(({ value }) => value).join(', '),
+        subject: `Support Request: ${form.subject}`,
+      },
+      true,
+    ).then(() => navigate('/form-success'));
   };
 
   return (
