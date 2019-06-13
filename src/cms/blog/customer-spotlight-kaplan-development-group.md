@@ -5,7 +5,7 @@ author: Nick Nemer
 title: 'Customer Spotlight: Kaplan Development Group'
 photo: /images/cms/blog-title-graphic.png
 ---
-## **THE LIFELOOP TEAM WORKS HARD TO DELIVER A GREAT PRODUCT. BUT, IT’S OUR CUSTOMERS THAT TRULY REALIZE THE PLATFORM’S POTENTIAL.**
+The LifeLoop team works hard to deliver a great product. But, it's our customers that truly realize the platform's potential. 
 
  Amy Cullen has a unique perspective to share. She’s the Corporate Life Engagement Director at Kaplan Development Group, a New Jersey-based company overseeing 21 senior living communities on the east coast. She knows how much LifeLoop can help a large system connect their teams.
 
