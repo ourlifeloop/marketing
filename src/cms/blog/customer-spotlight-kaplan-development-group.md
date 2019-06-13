@@ -5,7 +5,7 @@ author: Nick Nemer
 title: 'Customer Spotlight: Kaplan Development Group'
 photo: /images/cms/blog-title-graphic.png
 ---
-**THE LIFELOOP TEAM WORKS HARD TO DELIVER A GREAT PRODUCT. BUT, IT’S OUR CUSTOMERS THAT TRULY REALIZE THE PLATFORM’S POTENTIAL.**
+## **THE LIFELOOP TEAM WORKS HARD TO DELIVER A GREAT PRODUCT. BUT, IT’S OUR CUSTOMERS THAT TRULY REALIZE THE PLATFORM’S POTENTIAL.**
 
  Amy Cullen has a unique perspective to share. She’s the Corporate Life Engagement Director at Kaplan Development Group, a New Jersey-based company overseeing 21 senior living communities on the east coast. She knows how much LifeLoop can help a large system connect their teams.
 
@@ -65,7 +65,7 @@ With the recurring activities taken care of, LEDs can focus more attention on th
 
 ## 
 
-Fulfilling Expectations
+## Fulfilling Expectations
 
 Of course, from her corporate position, Amy can’t neglect the role that LifeLoop plays in sales. Many Kaplan branches agree: LifeLoop is a powerful sales tool.
 
@@ -77,7 +77,7 @@ She’s also noticed that this has become more important as time goes on.
 
 ## 
 
-Better Bonding
+## Better Bonding
 
 That’s a reasonable assessment. Today’s families live in a connected world. They don’t want to break a connection with their loved ones just because they’ve joined a senior living community.
 
