@@ -29,6 +29,7 @@ export default {
         key: 'residentManagement',
         Icon: reports,
         name: 'Resident Management',
+        shortName: 'Resident Mgmt',
         link: '/features/resident-management',
       },
       messaging: {
