@@ -28,6 +28,7 @@ const INITIAL_STATE = {
 export default () => {
   const { isTablet } = useDevice();
   const [form, setForm] = useState(INITIAL_STATE);
+  const [isLoading, setIsLoading] = useState(false);
 
   const isValid =
     !!form.firstName &&
@@ -45,6 +46,7 @@ export default () => {
 
   const onSubmit = e => {
     e.preventDefault();
+    setIsLoading(true);
     submitForm({
       ...form,
       subject: `Family Recommendation: ${form.subject ||
@@ -135,7 +137,7 @@ export default () => {
                     />
                   </Label>
                 </FormRow>
-                <Button disabled={!isValid} type="submit">
+                <Button isLoading={isLoading} disabled={!isValid} type="submit">
                   Submit
                 </Button>
               </form>

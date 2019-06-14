@@ -34,3 +34,17 @@
     outline: 0;
   }
 }
+
+.inner {
+  pointer-events: none;
+}
+
+.loading {
+  visibility: hidden;
+}
+
+.spinner {
+  left: calc(50% - 10px);
+  position: absolute !important;
+  top: calc(50% - 10px);
+}

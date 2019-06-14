@@ -56,6 +56,7 @@ const arrayToOptions = arr => arr.map(str => ({ label: str, value: str }));
 export default ({ data }) => {
   const { isTablet } = useDevice();
   const [form, setForm] = useState(INITIAL_STATE);
+  const [isLoading, setIsLoading] = useState(false);
 
   const isValid =
     !!form.firstName &&
@@ -75,6 +76,7 @@ export default ({ data }) => {
 
   const onSubmit = e => {
     e.preventDefault();
+    setIsLoading(true);
     submitForm({
       ...form,
       role: form.role.value,
@@ -182,7 +184,7 @@ export default ({ data }) => {
                     />
                   </Label>
                 </FormRow>
-                <Button disabled={!isValid} type="submit">
+                <Button isLoading={isLoading} disabled={!isValid} type="submit">
                   Send Request
                 </Button>
               </form>
