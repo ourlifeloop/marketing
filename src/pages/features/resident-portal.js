@@ -1,16 +1,12 @@
 import React from 'react';
 
-import FeatureHeader from '../../components/feature-header';
-import SiteWrapper from '../../components/site-wrapper';
-import DemoSection from '../../components/demo-section';
+import FeatureWrapper from '../../components/feature-wrapper';
 import Layout from '../../primitives/layout';
 
 export default () => (
-  <SiteWrapper>
-    <FeatureHeader />
+  <FeatureWrapper>
     <Layout>
       <h1>Resident Portal Feature</h1>
     </Layout>
-    <DemoSection />
-  </SiteWrapper>
+  </FeatureWrapper>
 );

@@ -1,0 +1,19 @@
+@import '../styles/theme';
+@import '../styles/utils';
+
+$post-margin-min: 5;
+$post-margin-max: 20;
+
+$positive-margin: variableSize($post-margin-min, $post-margin-max);
+
+.article {
+  margin: 1rem $positive-margin 0;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
