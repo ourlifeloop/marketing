@@ -3,7 +3,7 @@ import React from 'react';
 import FeatureWrapper from '../../components/feature-wrapper';
 import TitleSection from '../../primitives/title.section';
 
-export default ({ location }) => (
+export default ({ data, location }) => (
   <FeatureWrapper pathname={location.pathname}>
     <TitleSection header="Maintenance">
       <p>
