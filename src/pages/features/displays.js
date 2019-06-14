@@ -6,7 +6,7 @@ import ImageSection from '../../primitives/image-section';
 
 export default ({ data, location }) => (
   <FeatureWrapper pathname={location.pathname}>
-    <TitleSection header="Displays">
+    <TitleSection header="TV Displays">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
         vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar
