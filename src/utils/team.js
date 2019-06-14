@@ -47,6 +47,11 @@ export default [
     image: 'mitchelPigsley',
   },
   {
+    name: 'Dylan Kuzelka',
+    title: 'Quality Assurance Specialist',
+    image: 'dylanKuzelka',
+  },
+  {
     name: 'Andrea Clauson',
     title: 'Marketing Manager',
     image: 'andreaClauson',
@@ -93,6 +98,9 @@ export const teamImages = graphql`
       ...teamImage
     }
     mitchelPigsley: file(relativePath: { eq: "team/mitchel.pigsley.jpg" }) {
+      ...teamImage
+    }
+    dylanKuzelka: file(relativePath: { eq: "team/dylan.kuzelka.jpg" }) {
       ...teamImage
     }
     andreaClauson: file(relativePath: { eq: "team/andrea.clauson.jpg" }) {
