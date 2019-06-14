@@ -15,7 +15,7 @@ export default () => {
       query {
         hero: file(relativePath: { eq: "features-hero.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1100) {
+            fluid(maxWidth: 2000) {
               ...GatsbyImageSharpFluid
               presentationWidth
             }

@@ -71,7 +71,7 @@ export default function ImageSection({
       </FlexContainer>
     );
   }
-  return <Section>{content}</Section>;
+  return <Section noTopPadding={isMobile}>{content}</Section>;
 }
 
 ImageSection.propTypes = {
