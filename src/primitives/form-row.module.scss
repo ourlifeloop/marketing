@@ -9,4 +9,9 @@
   &:last-of-type {
     margin-right: 0;
   }
+
+  &--collapsed {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
