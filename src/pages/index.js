@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import ResponsiveEmbed from 'react-responsive-embed';
 
 import FlexContainer from '../primitives/flex-container';
+import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
 import DemoSection from '../components/demo-section';
 import SiteWrapper from '../components/site-wrapper';
@@ -17,7 +18,7 @@ import { useDevice } from '../utils/effects';
 import styles from './index.module.scss';
 
 export default ({ data }) => {
-  const { isMini, isMobile, isTablet } = useDevice();
+  const { isMobile, isTablet } = useDevice();
 
   return (
     <SiteWrapper transparent>
@@ -132,25 +133,16 @@ export default ({ data }) => {
           </FlexContainer>
         </FlexContainer>
       </Section>
-      <Section noTopPadding width="medium">
-        <FlexContainer
-          direction={isMini ? 'column' : 'row'}
-          className={styles.actionView}
-          align="center"
-        >
-          <FlexContainer className={styles.actionViewText} direction="column">
-            <h3>See LifeLoop in action.</h3>
-            <p>
-              The demo is customized around you. Get answers to your unique
-              questions and find out why LifeLoop is the right choice for your
-              community.
-            </p>
-          </FlexContainer>
+      <ActionCallout
+        noTopPadding
+        title="See LifeLoop in action."
+        body="The demo is customized around you. Get answers to your unique questions and find out why LifeLoop is the right choice for your community."
+        button={
           <Link to="/demo">
             <Button>Request a Demo</Button>
           </Link>
-        </FlexContainer>
-      </Section>
+        }
+      />
       <TitleSection header="Solutions custom-made for your senior living community.">
         <p>
           LifeLoop has tools for today's communities. LifeLoop can help

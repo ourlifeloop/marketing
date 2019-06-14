@@ -1,0 +1,14 @@
+@import '../styles/theme';
+
+.callout {
+  background-color: $background-secondary;
+  padding: 2rem;
+}
+
+.calloutText {
+  margin-right: 1rem;
+
+  h3 {
+    margin: 0;
+  }
+}
