@@ -6,6 +6,7 @@ import ResponsiveEmbed from 'react-responsive-embed';
 
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
+import DemoSection from '../components/demo-section';
 import SiteWrapper from '../components/site-wrapper';
 import HeroImage from '../primitives/hero-image';
 import Section from '../primitives/section';
@@ -191,19 +192,7 @@ export default ({ data }) => {
           </FlexContainer>
         </FlexContainer>
       </Section>
-      <TitleSection
-        secondary
-        header="See how LifeLoop can help connect your community."
-      >
-        <p>
-          See how LifeLoop helps improve relationships between staff members,
-          residents and their family members all while providing them with a
-          seamless user experience.
-        </p>
-        <Link to="/demo">
-          <Button>Request a Demo</Button>
-        </Link>
-      </TitleSection>
+      <DemoSection />
     </SiteWrapper>
   );
 };

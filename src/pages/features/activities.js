@@ -2,6 +2,7 @@ import React from 'react';
 
 import FeatureHeader from '../../components/feature-header';
 import SiteWrapper from '../../components/site-wrapper';
+import DemoSection from '../../components/demo-section';
 import Layout from '../../primitives/layout';
 
 export default () => (
@@ -10,5 +11,6 @@ export default () => (
     <Layout>
       <h1>Activity Calendar Feature</h1>
     </Layout>
+    <DemoSection />
   </SiteWrapper>
 );
