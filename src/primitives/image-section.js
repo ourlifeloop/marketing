@@ -77,7 +77,7 @@ export default function ImageSection({
 ImageSection.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  image: PropTypes.node.isRequired,
+  image: PropTypes.shape().isRequired,
   leftImage: PropTypes.bool,
   rightImage: PropTypes.bool,
 };

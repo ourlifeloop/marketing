@@ -9,10 +9,10 @@ import SiteWrapper from './site-wrapper';
 import DemoSection from './demo-section';
 import BlogSection from './blog-section';
 
-export default function FeatureWrapper({ children }) {
+export default function FeatureWrapper({ children, pathname }) {
   return (
     <SiteWrapper>
-      <FeatureHeader />
+      <FeatureHeader pathname={pathname} />
       {children}
       <ActionCallout
         noTopPadding

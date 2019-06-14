@@ -1,11 +1,12 @@
 import React from 'react';
-import { find, endsWith, trimEnd } from 'lodash';
 import { Link, navigate } from 'gatsby';
 import Select from 'react-select';
 import classNames from 'classnames';
 
 import FlexContainer from '../primitives/flex-container';
+import { removeTrailingSlash } from '../utils/common';
 import { useDevice } from '../utils/effects';
+import { find } from '../utils/lodash';
 
 import styles from './blog-header.module.scss';
 
@@ -15,9 +16,6 @@ const BLOG_TYPES = [
   { label: 'Industry Insights', value: '/blog/industry-insights' },
   { label: 'News', value: '/blog/news' },
 ];
-
-const removeTrailingSlash = pathname =>
-  endsWith(pathname, '/') ? trimEnd(pathname, '/') : pathname;
 
 export default ({ pathname }) => {
   const { isMini, isMobile } = useDevice();

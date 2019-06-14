@@ -5,8 +5,8 @@ import FeatureWrapper from '../../components/feature-wrapper';
 import TitleSection from '../../primitives/title.section';
 import ImageSection from '../../primitives/image-section';
 
-export default ({ data }) => (
-  <FeatureWrapper>
+export default ({ data, location }) => (
+  <FeatureWrapper pathname={location.pathname}>
     <TitleSection header="Activity Calendars">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
