@@ -6,6 +6,7 @@ import FlexContainer from './flex-container';
 import Layout from './layout';
 
 import styles from './section.module.scss';
+import { useDevice } from '../utils/effects';
 
 export default function Section({
   children,
@@ -17,6 +18,7 @@ export default function Section({
   width,
   className,
 }) {
+  const { isMobile } = useDevice();
   return (
     <FlexContainer
       direction="column"
@@ -27,6 +29,7 @@ export default function Section({
         [styles.containerNoTopPadding]: noTopPadding,
         [styles.containerNoBottomPadding]: noBottomPadding,
         [styles.containerFullHeight]: fullHeight,
+        [styles.containerFullHeightMobile]: fullHeight && isMobile,
       })}
     >
       <Layout>

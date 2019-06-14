@@ -37,7 +37,9 @@ export default function Footer() {
   );
 
   return (
-    <footer className={styles.footer}>
+    <footer
+      className={classNames(styles.footer, { [styles.footerMobile]: isMobile })}
+    >
       <Layout>
         <FlexContainer
           justify="spacebetween"

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useStaticQuery } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 
 import FlexContainer from '../primitives/flex-container';
 import HeroImage from '../primitives/hero-image';

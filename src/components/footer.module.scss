@@ -7,6 +7,10 @@ $horizontal-padding: 1rem;
   background-color: $dark-blue;
   height: 110px;
   padding: 1rem 0;
+
+  &--mobile {
+    height: 170px;
+  }
 }
 
 .link {
