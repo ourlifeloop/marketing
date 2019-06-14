@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import FeatureWrapper from '../../components/feature-wrapper';
 import TitleSection from '../../primitives/title.section';
