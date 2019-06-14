@@ -7,6 +7,7 @@ import Section from '../primitives/section';
 import Facebook from '../assets/icons/facebook.svg';
 import LinkedIn from '../assets/icons/linked-in.svg';
 import Twitter from '../assets/icons/twitter.svg';
+import Share from '../assets/icons/share.svg';
 
 import styles from './blog-post.module.scss';
 
@@ -63,6 +64,16 @@ export default function BlogPostTemplate({
               rel="noopener noreferrer"
             >
               <LinkedIn className={styles.linkedIn} />
+            </a>
+            <a
+              className={styles.socialLink}
+              href={`mailto:?subject=${encodeURIComponent(
+                title,
+              )}&body=${encodeURIComponent(postUrl)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Share className={styles.share} />
             </a>
           </FlexContainer>
           {html}
