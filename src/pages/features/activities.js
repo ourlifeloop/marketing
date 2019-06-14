@@ -7,7 +7,7 @@ import ImageSection from '../../primitives/image-section';
 
 export default ({ data, location }) => (
   <FeatureWrapper pathname={location.pathname}>
-    <TitleSection header="Activity Calendars">
+    <TitleSection header="Calendar Management">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
         vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar
@@ -28,13 +28,13 @@ export default ({ data, location }) => (
       image={data.designer.childImageSharp.fluid}
     />
     <ImageSection
-      leftImage
+      rightImage
       title="Keeping You Data-Informed"
       description="With LifeLoop’s reporting feature, you can build robust activity calendars based on your residents likes. Easily identify the most popular and least popular activities every month which allows you to measure, manage and optimize resident engagement."
       image={data.dataInformed.childImageSharp.fluid}
     />
     <ImageSection
-      rightImage
+      leftImage
       title="Endless Integration"
       description="As with anything in LifeLoop, you can expect a seamless integration from your calendar to other features within the platform. Your calendar can be automatically shared and updated real-time on your website, on your displays, in the resident portal and in the family mobile app for no additional cost."
       image={data.integration.childImageSharp.fluid}
