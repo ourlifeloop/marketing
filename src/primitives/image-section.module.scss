@@ -1,0 +1,26 @@
+@import '../styles/utils';
+
+.mobile h3 {
+  margin-top: 1rem;
+}
+
+.centered {
+  text-align: center;
+
+  h3 {
+    margin: 0 0 0.2rem;
+  }
+}
+
+$margin: variableSize(10, 40);
+.rightImageText {
+  margin-right: $margin;
+}
+
+.leftImageText {
+  margin-left: $margin;
+}
+
+.imgContainer {
+  width: 60%;
+}

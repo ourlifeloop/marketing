@@ -1,12 +1,18 @@
 import React from 'react';
 
 import FeatureWrapper from '../../components/feature-wrapper';
-import Layout from '../../primitives/layout';
+import TitleSection from '../../primitives/title.section';
 
 export default () => (
   <FeatureWrapper>
-    <Layout>
-      <h1>Transportation Feature</h1>
-    </Layout>
+    <TitleSection header="Transportation">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
+        vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar
+        finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi
+        id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor
+        vel, pulvinar condimentum tellus.
+      </p>
+    </TitleSection>
   </FeatureWrapper>
 );
