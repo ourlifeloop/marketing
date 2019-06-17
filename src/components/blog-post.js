@@ -13,7 +13,6 @@ import styles from './blog-post.module.scss';
 
 export default function BlogPostTemplate({
   postUrl,
-  helmet,
   title,
   date,
   author,
@@ -22,7 +21,6 @@ export default function BlogPostTemplate({
 }) {
   return (
     <>
-      {helmet}
       <Section width="medium">
         <div className={styles.container}>
           <h1>{title}</h1>

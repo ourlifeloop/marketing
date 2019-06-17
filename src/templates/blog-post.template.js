@@ -1,6 +1,5 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 
 import BlogSubscriber from '../components/blog-subscriber';
@@ -12,10 +11,9 @@ export default function BlogPostTemplate({ data }) {
   const { frontmatter, html, fields } = post;
   const { title, photo } = frontmatter;
   return (
-    <SiteWrapper>
+    <SiteWrapper title={`LifeLoop - ${title}`}>
       <BlogPost
         {...frontmatter}
-        helmet={<Helmet title={`LifeLoop - ${title}`} />}
         postUrl={`${site.siteMetadata.displayUrl}${fields.slug}`}
         html={<div dangerouslySetInnerHTML={{ __html: html }} />}
         photo={<Img fluid={photo.childImageSharp.fluid} />}
