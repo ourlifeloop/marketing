@@ -5,7 +5,8 @@ author: Megan King
 title: How LifeLoop Helps Stop Employee Turnover
 photo: /images/cms/employee-turnover.png
 ---
-Turnover is a well-known problem in long-term care. Every setting in senior living struggles to hang onto quality workers. 
+
+Turnover is a well-known problem in long-term care. Every setting in senior living struggles to hang onto quality workers.
 
 The numbers paint a pretty grim portrait of the issue. For nurses, the median turnover rate (the percentage of employees who leave a position in one year or less) in long-term care is 44%. For support staff, it’s 50%, which is almost the same rate as full-time retail workers.
 

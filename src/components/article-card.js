@@ -19,12 +19,14 @@ export default function ArticleCard({
   return (
     <Link to={link} className={className}>
       <FlexContainer direction="column">
-        <Img
-          className={classNames(styles.postImage, {
-            [styles.postImageSmall]: small,
-          })}
-          fluid={photo}
-        />
+        {!!photo && (
+          <Img
+            className={classNames(styles.postImage, {
+              [styles.postImageSmall]: small,
+            })}
+            fluid={photo}
+          />
+        )}
         <p className={styles.postTitle}>{title}</p>
         <p className={styles.postExcerpt}>{excerpt}</p>
       </FlexContainer>

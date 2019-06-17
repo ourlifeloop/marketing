@@ -66,6 +66,8 @@ export default function BlogRoll({ posts }) {
     }
   }
 
+  console.log(chunkedOlderPosts);
+
   return (
     <>
       <FlexContainer
@@ -86,7 +88,11 @@ export default function BlogRoll({ posts }) {
                   [styles.otherRowPostMobile]: isMobile,
                 })}
                 link={otherPost.node.fields.slug}
-                photo={otherPost.node.frontmatter.photo.childImageSharp.fluid}
+                photo={
+                  otherPost.node.frontmatter.photo
+                    ? otherPost.node.frontmatter.photo.childImageSharp.fluid
+                    : null
+                }
                 title={otherPost.node.frontmatter.title}
                 excerpt={otherPost.node.excerpt}
               />

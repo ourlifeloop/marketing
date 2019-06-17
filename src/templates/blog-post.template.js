@@ -16,7 +16,7 @@ export default function BlogPostTemplate({ data }) {
         {...frontmatter}
         postUrl={`${site.siteMetadata.displayUrl}${fields.slug}`}
         html={<div dangerouslySetInnerHTML={{ __html: html }} />}
-        photo={<Img fluid={photo.childImageSharp.fluid} />}
+        photo={!!photo && <Img fluid={photo.childImageSharp.fluid} />}
       />
       <BlogSubscriber />
     </SiteWrapper>
