@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
@@ -33,9 +34,19 @@ const qnaItem = ({ question, answer }) => {
 };
 
 export default function QuestionAndAnswer({ questions }) {
+  console.log(questions);
   return (
     <TitleSection header="Explore how LifeLoop can help connect your community.">
       {questions.map(qnaItem)}
     </TitleSection>
   );
 }
+
+QuestionAndAnswer.propTypes = {
+  questions: PropTypes.arrayOf(
+    PropTypes.shape({
+      question: PropTypes.string.isRequired,
+      answer: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
+};
