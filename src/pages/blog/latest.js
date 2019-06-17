@@ -29,11 +29,15 @@ export default ({ data, location }) => {
             [styles.featuredVertical]: isTablet,
           })}
         >
-          <div className={styles.featuredPhoto}>
-            <Img
-              fluid={featuredPost.node.frontmatter.photo.childImageSharp.fluid}
-            />
-          </div>
+          {featuredPost.node.frontmatter.photo && (
+            <div className={styles.featuredPhoto}>
+              <Img
+                fluid={
+                  featuredPost.node.frontmatter.photo.childImageSharp.fluid
+                }
+              />
+            </div>
+          )}
           <FlexContainer
             flex="1"
             direction="column"
