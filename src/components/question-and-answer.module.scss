@@ -1,0 +1,47 @@
+@import '../styles/theme';
+
+.container {
+  background-color: $background;
+  border-bottom: 1px solid $highlight;
+  color: $text;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.8rem 0.5rem;
+  transition: all 0.2s linear;
+
+  &:first-of-type {
+    margin-top: 1rem;
+    border-top: 1px solid $highlight;
+  }
+
+  &:hover {
+    background-color: $background-secondary;
+  }
+
+  &--open {
+    background-color: $background-secondary;
+
+    .icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.innerContainer {
+  width: 100%;
+}
+
+.question {
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.answer {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.icon {
+  color: $primary-blue;
+  transition: all 0.2s linear;
+}
