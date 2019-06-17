@@ -7,11 +7,12 @@ photo: /images/cms/image-107.jpg
 ---
 The Tech Tribune staff has compiled the very best tech startups in Omaha, Nebraska. In doing our research, we considered several factors including but not limited to:
 
-1. Revenue potential
+1. Revenue potential
 2. Leadership team
-3. Brand/product traction
-4. Competitive landscape
+3. Brand/product traction
+4. Competitive landscape
 
-Additionally, all companies must be independent (un-acquired), privately owned, at most 10 years old, and have received at least one round of funding in order to qualify. 
+Additionally, all companies must be independent (un-acquired), privately owned, at most 10 years old, and have received at least one round of funding in order to qualify. 
 
-[Check out LifeLoop and the other tech startups here! ](http://thetechtribune.com/10-best-tech-startups-in-omaha/)
+[
+Check out LifeLoop and the other tech startups here! ](http://thetechtribune.com/10-best-tech-startups-in-omaha/)
