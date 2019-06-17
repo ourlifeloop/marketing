@@ -19,25 +19,25 @@ export default ({ data, location }) => (
     <ImageSection
       rightImage
       title="Photo & Video Sharing"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Capture and share the moments that make life special! The LifeLoop family portal and mobile app offers you the ability to share photos/videos with your loved one and see any photos the community takes as well."
       image={data.photoAndVideo.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
       title="Real-Time Access"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Get a window into your loved ones world with 24/7 access to their activity feed. Stay in constant contact with community staff and so much more from the convenience of your LifeLoop mobile app."
       image={data.access.childImageSharp.fluid}
     />
     <ImageSection
       rightImage
       title="Proactive, Detailed Weekly Email"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Receive a weekly email that highlights, in depth, your loved ones activity and attendance for the week.  This weekly summary keeps you informed even when you are on-the-go."
       image={data.email.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
       title="Making Requests Has Never Been Easier"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="With the transportation feature in LifeLoop, you can easily manage and schedule ride requests for your loved one. With the maintenance feature, you can input maintenance requests on behalf of your loved one and receive progress updates and a detailed history log."
       image={data.requests.childImageSharp.fluid}
     />
   </FeatureWrapper>

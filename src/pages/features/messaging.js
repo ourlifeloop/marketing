@@ -12,35 +12,32 @@ export default ({ data, location }) => (
   >
     <TitleSection header="Communication">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
-        vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar
-        finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi
-        id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor
-        vel, pulvinar condimentum tellus.
+        Residents, family and staff are in constant contact creating a strong
+        community environment.
       </p>
     </TitleSection>
     <ImageSection
       rightImage
       title="Seamless Flow of Communication"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="With the announcements feature in LifeLoop, you can broadcast messages to all staff, family and residents who are connected. Having an event at your community and want to inform family members? Send a broadcast announcement through LifeLoop and families will get notified in the family portal/mobile app as well as their email. Effortlessly add attachments, photos, or whatever you like."
       image={data.flow.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
       title="Inform Your Staff"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Staff can easily message back and forth within LifeLoop and have records of all contacts with other staff members, family members and residents. Allowing staff members to be in constant contact and in-the-know creates a strong community environment and helps with retention."
       image={data.inform.childImageSharp.fluid}
     />
     <ImageSection
       rightImage
       title="Transparancy With Your Residents' Families"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="The messaging feature allows family members the transparency they want and the access they deserve. With LifeLoop, all connected family members can see the staff directory and easily send messages to the appropriate staff member. Even better, family members can send messages to their loved one as well."
       image={data.transparency.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
       title="Residents Maintain Sense Of Independence"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Within the senior living industry, it is widely acknowledged that engaging the resident and their family members with technology can have positive impact on the life of the resident, help alleviate social isolation and give your community a competitive edge. This platform was made custom with residents in mind and is easy for them to learn and use."
       image={data.transparency.childImageSharp.fluid}
     />
   </FeatureWrapper>

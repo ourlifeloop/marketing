@@ -12,11 +12,10 @@ export default ({ data, location }) => (
   >
     <TitleSection header="Calendar Management">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
-        vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar
-        finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi
-        id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor
-        vel, pulvinar condimentum tellus.
+        Looking for a way to simplify your assisted living activity calendar or
+        enhance your activity calendar for your skilled nursing, memory care or
+        independent living facility? LifeLoop has helped communities of all
+        sizes effectively develop, communicate and display their calendar.
       </p>
     </TitleSection>
     <ImageSection

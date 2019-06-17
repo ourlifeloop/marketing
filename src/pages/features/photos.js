@@ -12,23 +12,20 @@ export default ({ data, location }) => (
   >
     <TitleSection header="Photo & Video Sharing">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
-        vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar
-        finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi
-        id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor
-        vel, pulvinar condimentum tellus.
+        Capture and share the moments that make life wonderful, keeping friends
+        and family engaged.
       </p>
     </TitleSection>
     <ImageSection
       rightImage
       title="Organize All Of Your Community Photos"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="With no storage limits, you can easily access all of your community photos within LifeLoop. Photos will be organized by month in your photo library allowing you to easily sort and filter as needed."
       image={data.organize.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
       title="Tag Residents In Special Moments"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Taking photos as bingo? Great! Tag residents in photos which allows those photos to show up in their resident profile and be shared with family members."
       image={data.tag.childImageSharp.fluid}
     />
   </FeatureWrapper>

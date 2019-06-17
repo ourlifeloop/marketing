@@ -21,25 +21,25 @@ export default ({ data, location }) => (
     </TitleSection>
     <ImageSection
       title="A Fully Custom Solution"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Easily incorporate your brand elements, share birthdays, photos and display the local weather throughout your community from any television. LifeLoop offers you an unlimited number of unique displays allowing you the option to customize displays by room, location, etc."
       image={data.custom.childImageSharp.fluid}
     />
     <ImageSection
       rightImage
       title="Seamlessly Sync With Your Activity Calendar"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="TV displays with LifeLoop will automatically pull over your activity calendar and update in real time.  Community guests and residents alike will enjoy seeing the daily activities in this highly visual format."
       image={data.sync.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
       title="Enhance Resident Engagement In An Affordable Way"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Digital signage with LifeLoop is a low cost, easy to deploy solution for your community.  The only hardware you need is an Amazon FireStick making this an impressive, yet affordable digital signage option to implement for your residents."
       image={data.sync.childImageSharp.fluid}
     />
     <ImageSection
       rightImage
       title="Compatible With In-Room Channels"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="If your community has an in-room channel, you can easily show your displays in this format allowing you to broadcast this information in all of your residents’ rooms."
       image={data.sync.childImageSharp.fluid}
     />
   </FeatureWrapper>

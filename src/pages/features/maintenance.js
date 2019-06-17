@@ -21,26 +21,26 @@ export default ({ data, location }) => (
     </TitleSection>
     <ImageSection
       rightImage
-      title="A Transportation Management System"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      title="A Full Maintenance Management System"
+      description="Input and manage maintenance requests with live progress updates and a detailed history log. Easily view the status of each request and sort by approved and pending requests. Take it a step further by inputting preventative maintenance reminders."
       image={data.management.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
       title="Customize Your Experience"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Quickly filter requests by crew member, resident, room number or community location. In addition, print and view to-do lists for each member of the maintenance team."
       image={data.experience.childImageSharp.fluid}
     />
     <ImageSection
       rightImage
       title="On-Demand Access"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="The LifeLoop maintenance management system is accessible from any apple or android device making it easy to use no matter where you are. The full-service maintenance feature is one of many features offered on the LifeLoop mobile app."
       image={data.demand.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
       title="Resident & Family Requests"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Residents and family members can request maintenance via the LifeLoop mobile app or online portal. This is an optional feature that communities can choose to utilize at their discretion."
       image={data.demand.childImageSharp.fluid}
     />
   </FeatureWrapper>

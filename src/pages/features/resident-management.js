@@ -22,31 +22,31 @@ export default ({ data, location }) => (
     <ImageSection
       leftImage
       title="Quantify Your Life Enrichment"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="With LifeLoop’s reporting feature, you can build robust activity calendars based on your residents likes. Easily identify the most popular and least popular activities every month which allows you to measure, manage and optimize resident engagement."
       image={data.quantify.childImageSharp.fluid}
     />
     <ImageSection
       rightImage
       title="Empower Your Staff"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Metrics can be shared between your staff and the resident’s family to track individual needs and create personalized care plans. LifeLoop’s dynamic resident reports can be created for a community, for a specific resident or by activity."
       image={data.empower.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
       title="Person-Centered Care"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Understanding the residents flow of information is essential to maximizing their level of care and proactively identifying their needs. Capturing the full picture is the key to implementing person-centered care all while providing you with a distinct perspective into your residents’ lives."
       image={data.care.childImageSharp.fluid}
     />
     <ImageSection
       rightImage
       title="Create Efficiencies"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="LifeLoop helps your staff create work flow efficiencies and slash documentation time. All that time spent ticking boxes and charting participation is time that can be spent dreaming up new activities or in direct contact with residents."
       image={data.efficiencies.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
       title="A Trusted, HIPPA Compliant Platform"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Keep all of your information in one, trusted location, accessible through one entry point. LifeLoop is fully complaint with HIPPA and can integrate with your clinical software."
       image={data.hippa.childImageSharp.fluid}
     />
   </FeatureWrapper>

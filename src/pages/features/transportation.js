@@ -22,25 +22,25 @@ export default ({ data, location }) => (
     <ImageSection
       rightImage
       title="A Transportation Management System"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="The management of your community’s transportation shouldn’t be cumbersome. Our transportation platform was specifically designed with senior living communities in mind."
       image={data.management.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
       title="Customize Your Experience"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Quickly filter requests by driver, vehicle, resident, or location. In addition, print and view to-do lists for each member of the transportation team."
       image={data.customize.childImageSharp.fluid}
     />
     <ImageSection
       rightImage
       title="On-Demand Access"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="The LifeLoop transportation management system is accessible from any apple or android device making it easy to use no matter where you are. The full-service transportation module is one of many features offered on the LifeLoop mobile app and seamlessly integrates with Google Maps."
       image={data.onDemand.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
       title="Resident & Family Requests"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor vel, pulvinar condimentum tellus."
+      description="Residents and family members can request transportation via the LifeLoop mobile app or online portal. This is an optional feature that communities can choose to utilize at their discretion."
       image={data.management.childImageSharp.fluid}
     />
   </FeatureWrapper>
