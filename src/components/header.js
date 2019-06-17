@@ -136,7 +136,7 @@ export default function Header({
         <Helmet>
           <html lang="en" />
           <title>{title}</title>
-          <description>{description}</description>
+          <meta name="description" content={description} />
           {!!canonical && (
             <link
               ref="canonical"
