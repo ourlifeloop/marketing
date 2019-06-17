@@ -8,6 +8,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import { usePrevious, useDevice, useScrollPosition } from '../utils/effects';
 import FlexContainer from '../primitives/flex-container';
 import { ChevronDown, Menu, X } from '../utils/icons';
+import { removeTrailingSlash } from '../utils/common';
 import MobileDropdown from './mobile-dropdown';
 import NAVIGATION from '../utils/navigation';
 import Button from '../primitives/button';
@@ -19,7 +20,13 @@ import styles from './header.module.scss';
 const TRANSPARENT_START_OPACITY = 0.37;
 const TRANSPARENT_HEADER_END = 400;
 
-export default function Header({ transparent, children, title }) {
+export default function Header({
+  transparent,
+  children,
+  title,
+  description,
+  canonical,
+}) {
   const { isDesktop, isMobile, isMini } = useDevice();
   const previousIsDesktop = usePrevious(isDesktop);
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -41,6 +48,7 @@ export default function Header({ transparent, children, title }) {
         site {
           siteMetadata {
             phoneNumber
+            displayUrl
           }
         }
         logo: file(relativePath: { eq: "lifeloop-logo.png" }) {
@@ -58,7 +66,7 @@ export default function Header({ transparent, children, title }) {
     map(NAVIGATION, ({ key, name, link, subNav }) => {
       if (!subNav) {
         return (
-          <Link key={key} className={styles.link} to={link}>
+          <Link key={key} className={styles.link} to={link} aria-label={name}>
             {name}
           </Link>
         );
@@ -73,7 +81,12 @@ export default function Header({ transparent, children, title }) {
           <ChevronDown size={15} />
           <div className={styles.dropdown}>
             {map(subNav, ({ key, name, Icon, link }) => (
-              <Link key={key} to={link} className={styles.dropdownLink}>
+              <Link
+                key={key}
+                to={link}
+                className={styles.dropdownLink}
+                aria-label={name}
+              >
                 <FlexContainer align="center">
                   <Icon />
                   {name}
@@ -89,11 +102,16 @@ export default function Header({ transparent, children, title }) {
     <FlexContainer>
       <a
         className={styles.minorLink}
+        aria-label="LifeLoop Training"
         href="https://ourlifeloop.squarespace.com/training"
       >
         Training
       </a>
-      <a className={styles.minorLink} href="https://ourlifeloop.com/login">
+      <a
+        className={styles.minorLink}
+        aria-label="LifeLoop Login"
+        href="https://ourlifeloop.com/login"
+      >
         Login
       </a>
     </FlexContainer>
@@ -115,14 +133,30 @@ export default function Header({ transparent, children, title }) {
             transparent && scrollPosition === TRANSPARENT_HEADER_END,
         })}
       >
-        <Helmet title={title} />
+        <Helmet>
+          <html lang="en" />
+          <title>{title}</title>
+          <description>{description}</description>
+          {!!canonical && (
+            <link
+              ref="canonical"
+              href={removeTrailingSlash(
+                `${site.siteMetadata.displayUrl}${canonical}`,
+              )}
+            />
+          )}
+        </Helmet>
         <Layout>
           <FlexContainer
             justify="spacebetween"
             className={styles.innerContainer}
           >
             <FlexContainer align="center">
-              <Link className={classNames(styles.linkContainer)} to="/">
+              <Link
+                className={classNames(styles.linkContainer)}
+                to="/"
+                aria-label="Lifeloop Home"
+              >
                 <Img
                   fixed={logo.childImageSharp.fixed}
                   className={styles.logoLink}
@@ -189,10 +223,14 @@ Header.propTypes = {
   transparent: PropTypes.bool,
   children: PropTypes.node.isRequired,
   title: PropTypes.string,
+  description: PropTypes.string,
+  canonical: PropTypes.string,
 };
 
 Header.defaultProps = {
   transparent: false,
   title:
     'LifeLoop assisted living community management software: connecting families, residents and communities.',
+  description: '',
+  canonical: '',
 };

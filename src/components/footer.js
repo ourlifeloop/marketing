@@ -53,6 +53,7 @@ export default function Footer() {
                 href="https://twitter.com/ourlifeloop"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LifeLoop Twitter"
               >
                 <Twitter />
               </a>
@@ -61,6 +62,7 @@ export default function Footer() {
                 href="https://www.facebook.com/ourlifeloop"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LifeLoop Facebook"
               >
                 <Facebook />
               </a>
@@ -69,15 +71,24 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/lifeloop"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LifeLoop Linked In"
               >
                 <LinkedIn />
               </a>
             </FlexContainer>
             <FlexContainer>
-              <Link className={styles.link} to="/terms">
+              <Link
+                className={styles.link}
+                to="/terms"
+                aria-label="Terms & Conditions"
+              >
                 Terms & Conditions
               </Link>
-              <Link className={styles.link} to="/privacy">
+              <Link
+                className={styles.link}
+                to="/privacy"
+                aria-label="Privacy Policy"
+              >
                 Privacy Policy
               </Link>
             </FlexContainer>
@@ -87,6 +98,7 @@ export default function Footer() {
               className={styles.appLinkContainer}
               href="https://play.google.com/store/apps/details?id=com.lifeloopproject"
               target="_blank"
+              aria-label="LifeLoop Google Play"
               rel="noopener noreferrer"
             >
               <Img
@@ -100,6 +112,7 @@ export default function Footer() {
               className={styles.appLinkContainer}
               href="https://appstore.com/lifeloopforiphone"
               target="_blank"
+              aria-label="LifeLoop iOS App Store"
               rel="noopener noreferrer"
             >
               <Img

@@ -11,7 +11,7 @@ export default function BlogPostTemplate({ data }) {
   const { frontmatter, html, fields } = post;
   const { title, photo } = frontmatter;
   return (
-    <SiteWrapper title={`LifeLoop - ${title}`}>
+    <SiteWrapper title={`LifeLoop - ${title}`} canonical={fields.slug}>
       <BlogPost
         {...frontmatter}
         postUrl={`${site.siteMetadata.displayUrl}${fields.slug}`}

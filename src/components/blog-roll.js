@@ -66,8 +66,6 @@ export default function BlogRoll({ posts }) {
     }
   }
 
-  console.log(chunkedOlderPosts);
-
   return (
     <>
       <FlexContainer

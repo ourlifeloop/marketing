@@ -162,7 +162,7 @@ export default ({ data }) => {
           >
             <ResponsiveEmbed
               src="https://www.youtube-nocookie.com/embed/JW5KkDSdt8w"
-              // ratio="4:3"
+              title="Connecting Management & Staff"
               allowFullScreen
             />
             <p>Connecting Management & Staff</p>
@@ -177,7 +177,7 @@ export default ({ data }) => {
           >
             <ResponsiveEmbed
               src="https://www.youtube-nocookie.com/embed/DucvjjOT0bs"
-              // ratio="4:3"
+              title="Connecting Residents & Family"
               allowFullScreen
             />
             <p>Connecting Residents & Family</p>
