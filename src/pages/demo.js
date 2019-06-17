@@ -86,7 +86,7 @@ export default ({ data }) => {
   };
 
   return (
-    <SiteWrapper>
+    <SiteWrapper title="Request a Demo | LifeLoop assisted living community management software">
       <Layout>
         <Section>
           <FlexContainer

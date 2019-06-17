@@ -18,7 +18,7 @@ export default ({ data }) => {
   const { isMobile } = useDevice();
 
   return (
-    <SiteWrapper>
+    <SiteWrapper title="Improving the care and overall experience of residents living in senior living communities | LifeLoop">
       <HeroImage
         height="500px"
         image={data.hero.childImageSharp.fluid}

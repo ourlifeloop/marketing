@@ -79,7 +79,7 @@ export default () => {
   };
 
   return (
-    <SiteWrapper>
+    <SiteWrapper title="Support | LifeLoop assisted living community management software">
       <Layout>
         <Section>
           <FlexContainer

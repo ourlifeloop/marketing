@@ -6,7 +6,10 @@ import TitleSection from '../../primitives/title.section';
 import ImageSection from '../../primitives/image-section';
 
 export default ({ data, location }) => (
-  <FeatureWrapper pathname={location.pathname}>
+  <FeatureWrapper
+    pathname={location.pathname}
+    title="Photo and video sharing app for seniors | LifeLoop"
+  >
     <TitleSection header="Photo & Video Sharing">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus

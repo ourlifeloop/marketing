@@ -9,7 +9,7 @@ import Layout from '../../primitives/layout';
 
 export default ({ data, location }) => {
   return (
-    <SiteWrapper>
+    <SiteWrapper title="Blog | LifeLoop assisted living community management software">
       <Layout>
         <BlogHeader pathname={location.pathname} />
         <BlogRoll posts={data.allMarkdownRemark.edges} />

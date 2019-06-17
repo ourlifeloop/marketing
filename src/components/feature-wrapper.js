@@ -9,9 +9,9 @@ import SiteWrapper from './site-wrapper';
 import DemoSection from './demo-section';
 import BlogSection from './blog-section';
 
-export default function FeatureWrapper({ children, pathname }) {
+export default function FeatureWrapper({ children, pathname, ...rest }) {
   return (
-    <SiteWrapper>
+    <SiteWrapper {...rest}>
       <FeatureHeader pathname={pathname} />
       {children}
       <ActionCallout

@@ -19,7 +19,7 @@ import styles from './header.module.scss';
 const TRANSPARENT_START_OPACITY = 0.37;
 const TRANSPARENT_HEADER_END = 400;
 
-export default function Header({ transparent, children }) {
+export default function Header({ transparent, children, title }) {
   const { isDesktop, isMobile, isMini } = useDevice();
   const previousIsDesktop = usePrevious(isDesktop);
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -115,7 +115,7 @@ export default function Header({ transparent, children }) {
             transparent && scrollPosition === TRANSPARENT_HEADER_END,
         })}
       >
-        <Helmet title="Senior Living Calendar and Activity Management - LifeLoop" />
+        <Helmet title={title} />
         <Layout>
           <FlexContainer
             justify="spacebetween"
@@ -188,8 +188,11 @@ export default function Header({ transparent, children }) {
 Header.propTypes = {
   transparent: PropTypes.bool,
   children: PropTypes.node.isRequired,
+  title: PropTypes.string,
 };
 
 Header.defaultProps = {
   transparent: false,
+  title:
+    'LifeLoop assisted living community management software: connecting families, residents and communities.',
 };

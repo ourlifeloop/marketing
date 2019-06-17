@@ -6,7 +6,10 @@ import TitleSection from '../../primitives/title.section';
 import ImageSection from '../../primitives/image-section';
 
 export default ({ data, location }) => (
-  <FeatureWrapper pathname={location.pathname}>
+  <FeatureWrapper
+    pathname={location.pathname}
+    title="Schedule, track and analyze resident activities and events on our powerful assisted living activity community calendar | LifeLoop"
+  >
     <TitleSection header="Calendar Management">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus

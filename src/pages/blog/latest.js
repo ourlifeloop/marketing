@@ -20,7 +20,7 @@ export default ({ data, location }) => {
   const [featuredPost, ...latestPosts] = posts;
 
   return (
-    <SiteWrapper>
+    <SiteWrapper title="Blog | LifeLoop assisted living community management software">
       <Layout>
         <BlogHeader pathname={location.pathname} />
         <FlexContainer
