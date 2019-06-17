@@ -2,8 +2,8 @@
 date: 2018-06-26T22:40:45.100Z
 type: insights
 author: Megan King
-title: How LifeLoop Helps Stop Employee Turnover
-photo: /images/cms/employee-turnover.png
+title: 'How LifeLoop Helps Stop Employee Turnover'
+photo: /images/cms/turnover.png
 ---
 
 Turnover is a well-known problem in long-term care. Every setting in senior living struggles to hang onto quality workers.
