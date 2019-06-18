@@ -7,10 +7,9 @@ title: >-
   It!
 photo: /images/cms/slim-activity-budget.png
 ---
+If you're a Life Enrichment Director (LED), you know the struggle. More than likely, you have a big job that comes with a tiny budget. 
 
-#### IF YOU’RE A LIFE ENRICHMENT DIRECTOR (LED), YOU KNOW THE STRUGGLE. MORE THAN LIKELY, YOU HAVE A BIG JOB THAT COMES WITH A TINY BUDGET.
-
-Even with a deep-pocketed department, planning meaningful activities for residents is a serious challenge. But it’s much, much harder operating with the average activity allocation in a senior living community — about \$10 per resident, per month.
+Even with a deep-pocketed department, planning meaningful activities for residents is a serious challenge. But it’s much, much harder operating with the average activity allocation in a senior living community — about $10 per resident, per month.
 
 You already know you have to think deeply about every dollar you spend. But you may not have heard of these four tactics that can help keep your department humming.
 
@@ -24,8 +23,8 @@ Just like an investor will carefully track the performance of their portfolio, i
 
 Two ways this helps your budget:
 
-- You see what doesn’t work, so you no longer waste time and energy producing it;
-- You can mine the information to come up with new activity ideas.
+* You see what doesn’t work, so you no longer waste time and energy producing it;
+* You can mine the information to come up with new activity ideas.
 
 This streamlined planning is the first step to a leaner, more effective life enrichment department.
 
