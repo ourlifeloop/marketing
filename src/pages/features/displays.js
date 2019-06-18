@@ -13,9 +13,9 @@ export default ({ data, location }) => (
     <TitleSection header="Digital Signage">
       <p>
         Digital signage with LifeLoop is a low cost, easy to deploy solution for
-        your community. The only hardware you need is an Amazon FireStick making
-        this an impressive, yet affordable digital signage option to implement
-        for your residents.
+        your community and an excellent way to increase resident engagement. The
+        only hardware you need is an Amazon FireStick making this an impressive,
+        yet affordable digital signage option to implement for your residents.
       </p>
     </TitleSection>
     <ImageSection
@@ -27,12 +27,6 @@ export default ({ data, location }) => (
       rightImage
       title="Seamlessly Sync With Your Activity Calendar"
       description="TV displays with LifeLoop will automatically pull over your activity calendar and update in real time.  Community guests and residents alike will enjoy seeing the daily activities in this highly visual format."
-      image={data.sync.childImageSharp.fluid}
-    />
-    <ImageSection
-      leftImage
-      title="Enhance Resident Engagement In An Affordable Way"
-      description="Digital signage with LifeLoop is a low cost, easy to deploy solution for your community.  The only hardware you need is an Amazon FireStick making this an impressive, yet affordable digital signage option to implement for your residents."
       image={data.sync.childImageSharp.fluid}
     />
     <ImageSection
