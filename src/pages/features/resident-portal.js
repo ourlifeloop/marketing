@@ -12,11 +12,10 @@ export default ({ data, location }) => (
   >
     <TitleSection header="Resident Portal">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
-        vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar
-        finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi
-        id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor
-        vel, pulvinar condimentum tellus.
+        Within the senior living industry, it is widely acknowledged that
+        engaging the resident and their family members with technology can have
+        positive impact on the life of the resident, help alleviate social
+        isolation and give your community a competitive edge.
       </p>
     </TitleSection>
     <ImageSection

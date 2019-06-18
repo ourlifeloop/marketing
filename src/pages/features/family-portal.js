@@ -9,11 +9,10 @@ export default ({ data, location }) => (
   <FeatureWrapper pathname={location.pathname}>
     <TitleSection header="Family Portal">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
-        vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar
-        finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi
-        id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor
-        vel, pulvinar condimentum tellus.
+        Family members lean on LifeLoop to keep them up-to-date on the lives and
+        care of their loved ones no matter where they are. The family portal
+        sparks a genuine connection between family members and staff members and
+        helps foster communication between residents and their families.
       </p>
     </TitleSection>
     <ImageSection
@@ -35,7 +34,7 @@ export default ({ data, location }) => (
       image={data.email.childImageSharp.fluid}
     />
     <ImageSection
-      leftImage
+      rightImage
       title="Making Requests Has Never Been Easier"
       description="With the transportation feature in LifeLoop, you can easily manage and schedule ride requests for your loved one. With the maintenance feature, you can input maintenance requests on behalf of your loved one and receive progress updates and a detailed history log."
       image={data.requests.childImageSharp.fluid}

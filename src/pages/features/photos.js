@@ -28,6 +28,12 @@ export default ({ data, location }) => (
       description="Taking photos as bingo? Great! Tag residents in photos which allows those photos to show up in their resident profile and be shared with family members."
       image={data.tag.childImageSharp.fluid}
     />
+    <ImageSection
+      leftImage
+      title="Set Your Community Apart"
+      description="The ability to share photos on a daily basis with connected family members gives your community a competitive advantage to potential residents and their families."
+      image={data.photoAndVideo.childImageSharp.fluid}
+    />
   </FeatureWrapper>
 );
 
@@ -42,6 +48,14 @@ export const query = graphql`
       }
     }
     tag: file(relativePath: { eq: "tag-residents.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 860) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+    photoAndVideo: file(relativePath: { eq: "photo-and-video-sharing.png" }) {
       childImageSharp {
         fluid(maxWidth: 860) {
           ...GatsbyImageSharpFluid

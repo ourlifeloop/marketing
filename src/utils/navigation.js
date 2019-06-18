@@ -123,11 +123,11 @@ export default {
           { question: 'What devices is LifeLoop compatible on?', answer: '' },
         ],
       },
-      messaging: {
-        key: 'messaging',
+      communication: {
+        key: 'communication',
         Icon: messages,
-        name: 'Messaging',
-        link: '/features/messaging',
+        name: 'Communication',
+        link: '/features/communication',
         questions: [
           {
             question:

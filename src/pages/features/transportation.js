@@ -12,11 +12,9 @@ export default ({ data, location }) => (
   >
     <TitleSection header="Transportation">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
-        vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar
-        finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi
-        id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor
-        vel, pulvinar condimentum tellus.
+        The management of your community’s transportation shouldn’t be
+        cumbersome. Our transportation platform was specifically designed with
+        senior living communities in mind.
       </p>
     </TitleSection>
     <ImageSection

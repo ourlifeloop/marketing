@@ -12,11 +12,11 @@ export default ({ data, location }) => (
   >
     <TitleSection header="Resident Tracking & Reporting">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
-        vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar
-        finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi
-        id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor
-        vel, pulvinar condimentum tellus.
+        Understanding the residents flow of information is essential to
+        maximizing their level of care and proactively identifying their needs.
+        Capturing the full picture is the key to implementing person-centered
+        care all while providing you with a distinct perspective into your
+        residents’ lives.
       </p>
     </TitleSection>
     <ImageSection

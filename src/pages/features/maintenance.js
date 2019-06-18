@@ -12,11 +12,9 @@ export default ({ data, location }) => (
   >
     <TitleSection header="Maintenance">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
-        vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar
-        finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi
-        id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor
-        vel, pulvinar condimentum tellus.
+        The LifeLoop maintenance platform was designed for your senior living
+        community. Our maintenance software clears the clutter making it easy to
+        have a clear picture of what needs to be done.
       </p>
     </TitleSection>
     <ImageSection

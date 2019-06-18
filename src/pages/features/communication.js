@@ -12,8 +12,9 @@ export default ({ data, location }) => (
   >
     <TitleSection header="Communication">
       <p>
-        Residents, family and staff are in constant contact creating a strong
-        community environment.
+        Communication between staff members, family members and residents has
+        never been easier or more efficient. The LifeLoop messaging platform
+        means you can communicate 24/7 from any device.
       </p>
     </TitleSection>
     <ImageSection

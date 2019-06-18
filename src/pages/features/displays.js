@@ -12,11 +12,10 @@ export default ({ data, location }) => (
   >
     <TitleSection header="TV Displays">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus
-        vitae augue ornare ultrices. Nullam a elementum nisi. Aenean pulvinar
-        finibus pharetra. Integer ornare euismod enim id dictum. Donec id nisi
-        id sapien sagittis pharetra. Quisque mi purus, fermentum mattis tortor
-        vel, pulvinar condimentum tellus.
+        Digital signage with LifeLoop is a low cost, easy to deploy solution for
+        your community. The only hardware you need is an Amazon FireStick making
+        this an impressive, yet affordable digital signage option to implement
+        for your residents.
       </p>
     </TitleSection>
     <ImageSection
