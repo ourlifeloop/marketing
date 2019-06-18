@@ -27,9 +27,7 @@ export default ({ data }) => {
         objectPosition="30% center"
         image={data.hero.childImageSharp.fluid}
         title="Enhancing Resident & Family Engagement Through Technology"
-        description="Adapting technology solutions in a way to enhance the lives of
-          resident and the staff members and family who care for them. LifeLoop
-          is your full-service senior living solution."
+        description="Creating technology solutions to enhance the lives of residents, family members and the staff who care for them. LifeLoop is your innovative senior living solution."
       />
       <TitleSection header="A higher level of connection.">
         <p>
@@ -46,7 +44,7 @@ export default ({ data }) => {
           and communication with your internal and external stakeholders.
         </p>
       </TitleSection>
-      <TitleSection header="Join more than 100 communities who are creating a better connection.">
+      <TitleSection header="Join communities across the United States & Canada who are creating a better connection.">
         <p>
           Our product is proven to provide results that can benefit clients both
           large and small. With LifeLoop, you will gain an experienced partner
@@ -129,13 +127,17 @@ export default ({ data }) => {
             </p>
             <p>
               <b className={styles.quoteAuthor}>Lisa Moes</b>
+              <br />
+              <i className={styles.authorPosition}>
+                Dial Retirement Communities
+              </i>
             </p>
           </FlexContainer>
         </FlexContainer>
       </Section>
       <ActionCallout
         noTopPadding
-        title="See LifeLoop in action."
+        title="Innovative solutions for your senior living community."
         body="The demo is customized around you. Get answers to your unique questions and find out why LifeLoop is the right choice for your community."
         button={
           <Link to="/demo">

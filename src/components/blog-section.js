@@ -52,7 +52,7 @@ export default () => {
   return (
     <TitleSection
       width="large"
-      header="Explore how LifeLoop can help connect your community."
+      header={'Stay "in the loop" with our latest blogs.'}
     >
       <FlexContainer>
         {take(posts.edges, numPosts).map(post => (
