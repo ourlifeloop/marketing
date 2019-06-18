@@ -5,7 +5,7 @@ author: Andrea Clauson
 title: >-
   Jason Stevens Joins LifeLoop Team as Vice President of Strategy & Sales
   Operations
-photo: /images/cms/jason.jpg
+photo: /images/cms/mbj-graphic-1-.png
 ---
 Omaha, Nebraska — LifeLoop, Omaha-based creator of a life-enrichment platform for senior living communities is pleased to announce the hiring of Jason Stevens as Vice President of Strategy & Sales Operations. Stevens brings more than 25 years of healthcare & sales management experience. 
 
