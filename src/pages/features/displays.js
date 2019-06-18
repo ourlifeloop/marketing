@@ -10,7 +10,7 @@ export default ({ data, location }) => (
     pathname={location.pathname}
     title="Digital Signange Software for assisted living communities | LifeLoop"
   >
-    <TitleSection header="TV Displays">
+    <TitleSection header="Digital Signage">
       <p>
         Digital signage with LifeLoop is a low cost, easy to deploy solution for
         your community. The only hardware you need is an Amazon FireStick making

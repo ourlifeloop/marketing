@@ -98,12 +98,12 @@ export default {
           },
         ],
       },
-      residentManagement: {
-        key: 'residentManagement',
+      residentTracking: {
+        key: 'residentTracking',
         Icon: reports,
-        name: 'Resident Management',
+        name: 'Resident Tracking & Reporting',
         shortName: 'Resident Mgmt',
-        link: '/features/resident-management',
+        link: '/features/resident-tracking',
         questions: [
           { question: 'How often can I run reports?', answer: '' },
           {
@@ -328,7 +328,8 @@ export default {
       photos: {
         key: 'photos',
         Icon: photos,
-        name: 'Photos',
+        name: 'Photo & Video Sharing',
+        shortName: 'Photos',
         link: '/features/photos',
         questions: [
           {
