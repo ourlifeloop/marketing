@@ -1,5 +1,5 @@
 ---
-date: 2019-06-17T17:07:12.143Z
+date: 2018-11-07T18:07:12.143Z
 type: news
 author: Andrea Clauson
 title: Amy Johnson named 2018 Entrepreneur of the Year
