@@ -12,11 +12,13 @@ export default ({ data, location }) => (
   >
     <TitleSection header="Resident Tracking & Reporting">
       <p>
-        Understanding the residents flow of information is essential to
-        maximizing their level of care and proactively identifying their needs.
-        Capturing the full picture is the key to implementing person-centered
-        care all while providing you with a distinct perspective into your
-        residents’ lives.
+        Many staff members and Life Enrichment Directors have to spend too much
+        time with paper distractions such as taking attendance, filling out
+        activity binders and producing daily reports. The LifeLoop software
+        allows for seamless attendance taking and lets you to track resident
+        activities or one-on-ones. Within LifeLoop, providing reports and
+        identifying your residents needs has never been easier or more
+        intuitive.
       </p>
     </TitleSection>
     <ImageSection
