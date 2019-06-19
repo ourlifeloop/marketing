@@ -51,3 +51,35 @@
     min-width: 100%;
   }
 }
+
+.hero {
+  padding-top: 1rem;
+}
+
+.videoBtn {
+  background-color: $background;
+  border: 1px solid $highlight;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px $highlight;
+  cursor: pointer;
+  transition: box-shadow 0.2s linear;
+
+  &:hover {
+    box-shadow: 0px 0px 16px 0px $primary-blue;
+  }
+}
+
+.videoBtnEmbed {
+  pointer-events: none;
+  width: 158px;
+}
+
+.videoBtnText {
+  padding: 0 1rem;
+
+  * {
+    color: $primary-blue;
+    font-size: 0.85rem;
+    margin: 0;
+  }
+}

@@ -24,11 +24,29 @@ export default ({ data }) => {
     <SiteWrapper transparent>
       <HeroImage
         height="600px"
+        className={styles.hero}
         objectPosition="30% center"
         image={data.hero.childImageSharp.fluid}
         title="Enhancing Resident & Family Engagement Through Technology"
         description="Creating technology solutions to enhance the lives of residents, family members and the staff who care for them. LifeLoop is your innovative senior living solution."
-      />
+      >
+        <FlexContainer className={styles.videoBtn}>
+          <div className={styles.videoBtnEmbed}>
+            <ResponsiveEmbed
+              src="https://www.youtube-nocookie.com/embed/zOjOiZbJybM"
+              title="Enhancing the lives of older adults"
+            />
+          </div>
+          <FlexContainer
+            direction="column"
+            justify="center"
+            className={styles.videoBtnText}
+          >
+            <b>Enhancing the lives of older adults</b>
+            <p>Watch the Video</p>
+          </FlexContainer>
+        </FlexContainer>
+      </HeroImage>
       <TitleSection header="A higher level of connection.">
         <p>
           We believe that quality community life extends far beyond the physical

@@ -5,6 +5,7 @@ import classNames from 'classnames';
 
 import RelativeContainer from './relative-container';
 import FlexContainer from './flex-container';
+import { useDevice } from '../utils/effects';
 import Layout from './layout';
 
 import styles from './hero-image.module.scss';
@@ -16,8 +17,10 @@ export default function HeroImage({
   title,
   description,
   children,
+  className,
   ...rest
 }) {
+  const { isMini } = useDevice();
   return (
     <RelativeContainer>
       <Img style={{ height }} fluid={image} {...rest} />
@@ -25,8 +28,9 @@ export default function HeroImage({
         <FlexContainer
           direction="column"
           justify="center"
-          className={classNames(styles.heroContainer, {
+          className={classNames(styles.heroContainer, className, {
             [styles.heroContainerRight]: direction === 'right',
+            [styles.heroContainerFullWidth]: isMini,
           })}
         >
           <h1 className={styles.title}>{title}</h1>
@@ -45,9 +49,11 @@ HeroImage.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   children: PropTypes.node,
+  className: PropTypes.string,
 };
 
 HeroImage.defaultProps = {
   direction: 'left',
   children: undefined,
+  className: undefined,
 };
