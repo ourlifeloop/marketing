@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import classNames from 'classnames';
+import ReactModal from 'react-modal';
 import ResponsiveEmbed from 'react-responsive-embed';
 
 import FlexContainer from '../primitives/flex-container';
@@ -17,7 +18,27 @@ import { useDevice } from '../utils/effects';
 
 import styles from './index.module.scss';
 
+ReactModal.setAppElement('body');
+const modalStyle = {
+  overlay: {
+    zIndex: 1000,
+    backgroundColor: 'rgba(0, 0, 0, 0.65)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  content: {
+    padding: 0,
+    position: 'static',
+    overflow: 'visible',
+    border: 'none',
+    width: '100%',
+    maxWidth: 800,
+  },
+};
+
 export default ({ data }) => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
   const { isMobile, isTablet } = useDevice();
 
   return (
@@ -30,7 +51,10 @@ export default ({ data }) => {
         title="Enhancing Resident & Family Engagement Through Technology"
         description="Creating technology solutions to enhance the lives of residents, family members and the staff who care for them. LifeLoop is your innovative senior living solution."
       >
-        <FlexContainer className={styles.videoBtn}>
+        <FlexContainer
+          className={styles.videoBtn}
+          onClick={() => setIsVideoOpen(true)}
+        >
           <div className={styles.videoBtnEmbed}>
             <ResponsiveEmbed
               src="https://www.youtube-nocookie.com/embed/zOjOiZbJybM"
@@ -205,6 +229,16 @@ export default ({ data }) => {
         </FlexContainer>
       </Section>
       <DemoSection />
+      <ReactModal
+        style={modalStyle}
+        isOpen={isVideoOpen}
+        onRequestClose={() => setIsVideoOpen(false)}
+      >
+        <ResponsiveEmbed
+          src="https://www.youtube-nocookie.com/embed/zOjOiZbJybM"
+          title="Enhancing the lives of older adults"
+        />
+      </ReactModal>
     </SiteWrapper>
   );
 };
