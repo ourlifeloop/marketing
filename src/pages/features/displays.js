@@ -19,6 +19,7 @@ export default ({ data, location }) => (
       </p>
     </TitleSection>
     <ImageSection
+      noTopPadding
       title="A Fully Custom Solution"
       description="Easily incorporate your brand elements, share birthdays, photos and display the local weather throughout your community from any television. LifeLoop offers you an unlimited number of unique displays allowing you the option to customize displays by room, location, etc."
       image={data.custom.childImageSharp.fluid}

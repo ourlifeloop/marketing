@@ -15,6 +15,7 @@ export default function ImageSection({
   image,
   leftImage,
   rightImage,
+  ...rest
 }) {
   const { isMobile } = useDevice();
 
@@ -71,7 +72,11 @@ export default function ImageSection({
       </FlexContainer>
     );
   }
-  return <Section noTopPadding={isMobile}>{content}</Section>;
+  return (
+    <Section noTopPadding={isMobile} {...rest}>
+      {content}
+    </Section>
+  );
 }
 
 ImageSection.propTypes = {

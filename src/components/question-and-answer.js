@@ -34,7 +34,6 @@ const qnaItem = ({ question, answer }) => {
 };
 
 export default function QuestionAndAnswer({ questions }) {
-  console.log(questions);
   return (
     <TitleSection header="Want to know more? Read our FAQ's below.">
       {questions.map(qnaItem)}

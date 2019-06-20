@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 
 import FlexContainer from '../primitives/flex-container';
+import { Check, MoreHorizontal } from '../utils/icons';
+import { useDimensions, useDevice } from '../utils/effects';
 import NAVIGATION from '../utils/navigation';
-import { find } from '../utils/lodash';
-import { Check } from '../utils/icons';
+import { find, take } from '../utils/lodash';
 
 import styles from './feature-card-switcher.module.scss';
 
@@ -74,7 +75,7 @@ const FEATURES = [
     bullets: [
       'A full transportation management system',
       'Quickly filter requests by resident, driver, or vehicle',
-      'Accessible from any Apple or Android device making it easy to use no matter where you are.',
+      'Accessible from any Apple or Android device making it easy to use no matter where you are',
       'Compatible with Google Maps',
     ],
   },
@@ -87,8 +88,8 @@ const FEATURES = [
       'Input and manage maintenance requests with live progress updates and a detailed history log. Easily view the status of each request and sort by approved and pending requests.',
     bullets: [
       'A full maintenance management system',
-      'Quickly filter requests by crew member, resident, room number or community location.',
-      'Accessible from any Apple or Android device making it easy to use no matter where you are.',
+      'Quickly filter requests by crew member, resident, room number or community location',
+      'Accessible from any Apple or Android device making it easy to use no matter where you are',
     ],
   },
   {
@@ -134,28 +135,30 @@ const FEATURES = [
 ];
 
 export default () => {
+  const { width } = useDimensions();
+  const { isMobile } = useDevice();
   const [selected, setSelected] = useState(FEATURES[0].key);
-  const { headline, body, bullets } = find(FEATURES, { key: selected });
-  return (
-    <FlexContainer direction="column" className={styles.container}>
-      <FlexContainer justify="center" className={styles.navContainer}>
-        {FEATURES.map(({ key, name, Icon }) => (
-          <FlexContainer
-            align="center"
-            justify="center"
-            key={key}
-            direction="column"
-            className={classNames(styles.iconContainer, {
-              [styles.iconContainerSelected]: key === selected,
-            })}
-            onClick={() => setSelected(key)}
-          >
-            <Icon className={styles.icon} />
-            <p className={styles.iconTitle}>{name}</p>
-          </FlexContainer>
-        ))}
-      </FlexContainer>
-      <FlexContainer className={styles.contentContainer}>
+
+  const tabWidth = 1310 / FEATURES.length;
+  const numTabs =
+    width > 1400 ? FEATURES.length : Math.floor((width - 90) / tabWidth) - 1;
+  const featureList = take(FEATURES, numTabs);
+
+  useEffect(() => {
+    if (
+      !find(featureList, { key: selected }) ||
+      (numTabs === FEATURES.length && selected === 'more')
+    ) {
+      setSelected(FEATURES[0].key);
+    }
+  }, [numTabs]);
+
+  let content;
+  const selectedFeature = find(FEATURES, { key: selected });
+  if (selectedFeature) {
+    const { headline, body, bullets } = selectedFeature;
+    content = (
+      <>
         <FlexContainer
           flex="1"
           direction="column"
@@ -177,6 +180,50 @@ export default () => {
         <FlexContainer flex="1">
           <div />
         </FlexContainer>
+      </>
+    );
+  } else {
+    content = <div />;
+  }
+
+  return (
+    <FlexContainer direction="column" className={styles.container}>
+      <FlexContainer justify="center" className={styles.navContainer}>
+        {featureList.map(({ key, name, Icon }) => (
+          <FlexContainer
+            align="center"
+            justify="center"
+            key={key}
+            direction="column"
+            className={classNames(styles.iconContainer, {
+              [styles.iconContainerSelected]: key === selected,
+            })}
+            onClick={() => setSelected(key)}
+          >
+            <Icon className={styles.icon} />
+            <p className={styles.iconTitle}>{name}</p>
+          </FlexContainer>
+        ))}
+        {numTabs < FEATURES.length && (
+          <FlexContainer
+            align="center"
+            justify="center"
+            direction="column"
+            className={classNames(styles.iconContainer, {
+              [styles.iconContainerSelected]: 'more' === selected,
+            })}
+            onClick={() => setSelected('more')}
+          >
+            <MoreHorizontal className={styles.icon} />
+            <p className={styles.iconTitle}>More</p>
+          </FlexContainer>
+        )}
+      </FlexContainer>
+      <FlexContainer
+        direction={isMobile ? 'column' : 'row'}
+        className={styles.contentContainer}
+      >
+        {content}
       </FlexContainer>
     </FlexContainer>
   );
