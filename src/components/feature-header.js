@@ -1,13 +1,14 @@
 import React from 'react';
 import Select from 'react-select';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import { Link, useStaticQuery, graphql, navigate } from 'gatsby';
 
 import FlexContainer from '../primitives/flex-container';
+import { map, find, startsWith } from '../utils/lodash';
 import { removeTrailingSlash } from '../utils/common';
 import HeroImage from '../primitives/hero-image';
 import NAVIGATION from '../utils/navigation';
-import { map, find } from '../utils/lodash';
 import Layout from '../primitives/layout';
 
 import styles from './feature-header.module.scss';
@@ -16,7 +17,7 @@ import { useDevice } from '../utils/effects';
 const FEATURE_OPTIONS = map(
   NAVIGATION.features.subNav,
   ({ name, link, Icon }) => ({
-    value: link,
+    value: `${link}#features`,
     label: name,
     Icon,
   }),
@@ -52,14 +53,14 @@ export default function FeatureHeader({ pathname }) {
   let subNav;
   if (isTablet) {
     subNav = (
-      <FlexContainer justify="center">
+      <FlexContainer justify="center" id="features">
         <Select
           isSearchable={false}
           className={styles.select}
           options={FEATURE_OPTIONS}
-          value={find(FEATURE_OPTIONS, {
-            value: removeTrailingSlash(pathname),
-          })}
+          value={find(FEATURE_OPTIONS, option =>
+            startsWith(option.value, pathname),
+          )}
           onChange={({ value }) => navigate(value)}
           components={{ Option: FeatureOption, SingleValue: FeatureOption }}
         />
@@ -67,7 +68,7 @@ export default function FeatureHeader({ pathname }) {
     );
   } else {
     subNav = (
-      <div className={styles.container}>
+      <div className={styles.container} id="features">
         <Layout>
           <FlexContainer>
             {map(
@@ -75,10 +76,10 @@ export default function FeatureHeader({ pathname }) {
               ({ key, Icon, shortName, name, link }) => (
                 <Link
                   key={key}
-                  to={link}
-                  partiallyActive
-                  className={styles.link}
-                  activeClassName={styles.linkActive}
+                  to={`${link}#features`}
+                  className={classNames(styles.link, {
+                    [styles.linkActive]: startsWith(pathname, link),
+                  })}
                 >
                   <FlexContainer direction="column" align="center">
                     <Icon className={styles.icon} />
