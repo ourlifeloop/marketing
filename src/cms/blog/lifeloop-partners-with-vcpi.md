@@ -5,7 +5,7 @@ author: Andrea Clauson
 title: LifeLoop partners with Vcpi
 photo: /images/cms/vcpi.jpg
 ---
-Milwaukee, Wi, June 3, 2019 - Vcpi, a nationwide provider of outsourced IT services and LifeLoop, a cloud-based application that enhances resident, family and provider connections in senior living communities, have entered into a strategic partnership to enable vcpi’s clients to easily leverage LifeLoop’s application in their communities.  
+Vcpi, a nationwide provider of outsourced IT services and LifeLoop, a cloud-based application that enhances resident, family and provider connections in senior living communities, have entered into a strategic partnership to enable vcpi’s clients to easily leverage LifeLoop’s application in their communities.  
 
  “When we started LifeLoop in 2015 we did so with one mission, to improve the care and overall experience of residents living in senior living communities. Partnering with vcpi is an opportunity to leverage a trusted IT services provider for the senior living industry to help us accomplish this.” – Amy Johnson, CEO, LifeLoop
 
@@ -21,12 +21,12 @@ Contact vcpi to learn more about how your community can benefit from the LifeLoo
 
 
 
-
-
-About LifeLoop
+**About LifeLoop**
 
 LifeLoop connects senior living residents, staff, and family members with its inclusive senior living solutions. At work in hundreds of communities across the country, LifeLoop is the go-to solution to enhance your operational efficiency, increase and simplify your communication, and vastly improve your resident and family engagement. LifeLoop gives both staff and family members an unprecedented level of transparency, and helps family maintain a more meaningful connection with their loved ones. For more information, visit www.ourlifeloop.com
 
-About vcpi
+
+
+**About vcpi**
 
 Founded in 2000, vcpi is headquartered in Milwaukee, Wi and is privately held by Agility Holdings, LLC. The team at vcpi helps care providers best serve their employees, residents and patients by removing technology distractions with outsourced IT support rooted in the unique world of long-term, post-acute care (LTPAC). Vcpi offers a range of services focused on LTPAC organizations including managed cloud hosting, security & access management, US based 24/7 service desk, IT consulting, network management and more. To learn more about vcpi please visit vcpi.com.
