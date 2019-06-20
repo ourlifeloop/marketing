@@ -62,8 +62,10 @@ export default function ContactSidebar({ links }) {
       >
         <h3>How LifeLoop Works</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in
-          scelerisque augue. Sed consectetur arcu sed orci hendrerit tempor.
+          LifeLoop was founded based on the need to better communicate and
+          engage family members of senior living communities. Today, we are a
+          multi-faceted platform designed to streamline operations, work flow,
+          and communication with your internal and external stakeholders.
         </p>
         {map(NAVIGATION.features.subNav, ({ key, Icon, name, link }) => (
           <Link key={key} to={link} className={styles.infoLink}>

@@ -12,8 +12,10 @@ export default ({ data, location }) => (
   >
     <TitleSection header="Photo & Video Sharing">
       <p>
-        Capture and share the moments that make life wonderful, keeping friends
-        and family engaged.
+        Photo and video sharing through the LifeLoop portals and mobile app
+        ensures that family members have a unique window into the daily lives of
+        their loved ones. Capture and share the moments that make life
+        wonderful, keeping friends and family engaged.
       </p>
     </TitleSection>
     <ImageSection

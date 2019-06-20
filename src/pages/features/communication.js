@@ -41,6 +41,12 @@ export default ({ data, location }) => (
       description="Within the senior living industry, it is widely acknowledged that engaging the resident and their family members with technology can have positive impact on the life of the resident, help alleviate social isolation and give your community a competitive edge. This platform was made custom with residents in mind and is easy for them to learn and use."
       image={data.independence.childImageSharp.fluid}
     />
+    <ImageSection
+      rightImage
+      title="Customized Notifications"
+      description="LifeLoop allows you to customize notifications and permissions based on each staff members individual preferences and needs. Notifications can be received as in-app notifications, texts and/or emails. Additionally, residents who are registered for an activity can receive a text message reminder 30 minutes before the activity takes place."
+      image={data.independence.childImageSharp.fluid}
+    />
   </FeatureWrapper>
 );
 
