@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import ReactModal from 'react-modal';
 import ResponsiveEmbed from 'react-responsive-embed';
 
+import FeatureCardSwitcher from '../components/feature-card-switcher';
 import FlexContainer from '../primitives/flex-container';
 import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
@@ -86,6 +87,9 @@ export default ({ data }) => {
           and communication with your internal and external stakeholders.
         </p>
       </TitleSection>
+      <Section>
+        <FeatureCardSwitcher />
+      </Section>
       <TitleSection header="Join communities across the United States & Canada who are creating a better connection.">
         <p>
           Our product is proven to provide results that can benefit clients both

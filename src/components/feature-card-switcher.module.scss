@@ -1,0 +1,79 @@
+@import '../styles/theme';
+
+.container {
+  background-color: $background-secondary;
+}
+
+.navContainer {
+  background-color: $background-dark;
+}
+
+.iconContainer {
+  background-color: $background-dark;
+  cursor: pointer;
+  height: 100px;
+  position: relative;
+  width: #{((1346 - (18 * 2)) / 9)}px;
+  transition: background-color 0.2s linear;
+
+  &--selected {
+    background-color: $background-secondary;
+
+    .iconTitle {
+      color: $primary-blue;
+    }
+
+    &:after {
+      background: transparent;
+      background: linear-gradient(
+        98deg,
+        $highlight 0%,
+        transparent 56%,
+        transparent 100%
+      );
+      bottom: 0;
+      content: '';
+      left: 100%;
+      position: absolute;
+      top: 0;
+      width: 18px;
+      z-index: 1;
+    }
+  }
+}
+
+$icon-size: 50px;
+.icon {
+  color: $primary-blue;
+  fill: $primary-blue;
+  height: $icon-size;
+  width: $icon-size;
+}
+
+.iconTitle {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.contentContainer {
+  padding: 2rem;
+
+  h4 {
+    font-weight: normal;
+    margin-bottom: 0.2rem;
+  }
+}
+
+.bulletContainer {
+  margin-bottom: 0.3rem;
+}
+
+.check {
+  color: $primary-green;
+  margin-right: 0.6rem;
+}
+
+.bullet {
+  font-size: 0.9rem;
+  margin: 0;
+}
