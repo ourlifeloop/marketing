@@ -331,7 +331,13 @@ export default () => {
             })}
             onClick={() => setSelected('more')}
           >
-            <MoreHorizontal className={styles.icon} />
+            <MoreHorizontal
+              className={styles.icon}
+              width="50px"
+              height="50px"
+              strokeWidth="2"
+              stroke="currentColor"
+            />
             <p className={styles.iconTitle}>More</p>
           </FlexContainer>
         )}
