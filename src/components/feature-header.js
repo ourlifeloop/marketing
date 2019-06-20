@@ -6,7 +6,6 @@ import { Link, useStaticQuery, graphql, navigate } from 'gatsby';
 
 import FlexContainer from '../primitives/flex-container';
 import { map, find, startsWith } from '../utils/lodash';
-import { removeTrailingSlash } from '../utils/common';
 import HeroImage from '../primitives/hero-image';
 import NAVIGATION from '../utils/navigation';
 import Layout from '../primitives/layout';

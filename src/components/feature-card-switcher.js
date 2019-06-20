@@ -46,10 +46,10 @@ const FEATURES = [
     ],
   },
   {
-    key: NAVIGATION.features.subNav.activityTracking.key,
-    name: NAVIGATION.features.subNav.activityTracking.name,
-    Icon: NAVIGATION.features.subNav.activityTracking.Icon,
-    link: NAVIGATION.features.subNav.activityTracking.link,
+    key: NAVIGATION.features.subNav.residentTracking.key,
+    name: NAVIGATION.features.subNav.residentTracking.name,
+    Icon: NAVIGATION.features.subNav.residentTracking.Icon,
+    link: NAVIGATION.features.subNav.residentTracking.link,
     headline: 'Person-centered care',
     image: 'person',
     body:
