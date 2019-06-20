@@ -105,22 +105,36 @@ export default {
         shortName: 'Resident Mgmt',
         link: '/features/resident-tracking',
         questions: [
-          { question: 'How often can I run reports?', answer: '' },
+          {
+            question: 'How often can I run reports?',
+            answer:
+              'You can run reports as frequently as you would like. There is no limit to the number of reports you can run.',
+          },
           {
             question: 'Is their an additional cost for the reporting feature?',
-            answer: '',
+            answer: 'There is no additional cost for this feature.',
           },
           {
             question:
               'Do family members automatically see their loved ones reports and data?',
-            answer: '',
+            answer:
+              'Family members will see their loved one’s activity feed and receive weekly emails with the activities attended. Family members will not see the reporting feature which is only available at the community level. If families would like to see reports, they can request these from staff members.',
           },
           {
             question: 'Can you run a personalized report for a care plan?',
-            answer: '',
+            answer:
+              'Yes, you can create a customized report based on activities and/or meals. You can create a report on any timeframe you wish. You can export this report to a PDF and share with family members, other staff, etc.',
           },
-          { question: 'How many users can you have in LifeLoop?', answer: '' },
-          { question: 'What devices is LifeLoop compatible on?', answer: '' },
+          {
+            question: 'How many users can you have in LifeLoop?',
+            answer:
+              'There is no limit to the number of users and customers don’t get charged by the user either.',
+          },
+          {
+            question: 'What devices is LifeLoop compatible on?',
+            answer:
+              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
+          },
         ],
       },
       communication: {
