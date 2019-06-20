@@ -10,7 +10,7 @@ export default ({ data, location }) => (
     pathname={location.pathname}
     title="Powerful and easy to use software for senior care management | LifeLoop."
   >
-    <TitleSection header="Resident Tracking & Reporting">
+    <TitleSection header="Activity Tracking & Reporting">
       <p>
         Many staff members and Life Enrichment Directors have to spend too much
         time with paper distractions such as taking attendance, filling out

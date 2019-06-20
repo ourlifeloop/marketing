@@ -98,12 +98,11 @@ export default {
           },
         ],
       },
-      residentTracking: {
-        key: 'residentTracking',
+      activityTracking: {
+        key: 'activityTracking',
         Icon: reports,
-        name: 'Resident Tracking & Reporting',
-        shortName: 'Resident Mgmt',
-        link: '/features/resident-tracking',
+        name: 'Activity Tracking',
+        link: '/features/activity-tracking',
         questions: [
           {
             question: 'How often can I run reports?',
