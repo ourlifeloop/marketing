@@ -65,9 +65,9 @@ export default function ImageSection({
   } else {
     content = (
       <FlexContainer direction="column" className={styles.centered}>
+        <Img fluid={image} />
         <h3>{title}</h3>
         <p>{description}</p>
-        <Img fluid={image} />
       </FlexContainer>
     );
   }

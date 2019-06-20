@@ -62,7 +62,8 @@ export default {
       displays: {
         key: 'displays',
         Icon: displays,
-        name: 'Displays',
+        name: 'Digital Signage',
+        shortName: 'Displays',
         link: '/features/displays',
         questions: [
           {
