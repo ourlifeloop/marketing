@@ -39,7 +39,7 @@ export default ({ data, location }) => (
       leftImage
       title="Resident & Family Requests"
       description="Residents and family members can request transportation via the LifeLoop mobile app or online portal. This is an optional feature that communities can choose to utilize at their discretion."
-      image={data.management.childImageSharp.fluid}
+      image={data.resident.childImageSharp.fluid}
     />
   </FeatureWrapper>
 );
@@ -65,6 +65,16 @@ export const query = graphql`
       }
     }
     onDemand: file(relativePath: { eq: "on-demand-access.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 860) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+    resident: file(
+      relativePath: { eq: "resident-family-requests-transp.png" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 860) {
           ...GatsbyImageSharpFluid

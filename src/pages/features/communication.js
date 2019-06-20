@@ -39,7 +39,7 @@ export default ({ data, location }) => (
       leftImage
       title="Residents Maintain Sense Of Independence"
       description="Within the senior living industry, it is widely acknowledged that engaging the resident and their family members with technology can have positive impact on the life of the resident, help alleviate social isolation and give your community a competitive edge. This platform was made custom with residents in mind and is easy for them to learn and use."
-      image={data.transparency.childImageSharp.fluid}
+      image={data.independence.childImageSharp.fluid}
     />
   </FeatureWrapper>
 );
@@ -63,6 +63,14 @@ export const query = graphql`
       }
     }
     transparency: file(relativePath: { eq: "transparency-with-family.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 860) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+    independence: file(relativePath: { eq: "residents-independence.png" }) {
       childImageSharp {
         fluid(maxWidth: 860) {
           ...GatsbyImageSharpFluid

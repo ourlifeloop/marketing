@@ -34,7 +34,7 @@ export default ({ data, location }) => (
       image={data.email.childImageSharp.fluid}
     />
     <ImageSection
-      rightImage
+      leftImage
       title="Making Requests Has Never Been Easier"
       description="With the transportation feature in LifeLoop, you can easily manage and schedule ride requests for your loved one. With the maintenance feature, you can input maintenance requests on behalf of your loved one and receive progress updates and a detailed history log."
       image={data.requests.childImageSharp.fluid}

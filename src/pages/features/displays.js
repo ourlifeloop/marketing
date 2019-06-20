@@ -30,7 +30,7 @@ export default ({ data, location }) => (
       image={data.sync.childImageSharp.fluid}
     />
     <ImageSection
-      rightImage
+      leftImage
       title="Compatible With In-Room Channels"
       description="If your community has an in-room channel, you can easily show your displays in this format allowing you to broadcast this information in all of your residents’ rooms."
       image={data.sync.childImageSharp.fluid}

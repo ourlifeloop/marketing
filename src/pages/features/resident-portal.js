@@ -28,13 +28,13 @@ export default ({ data, location }) => (
       leftImage
       title="Ease Of Use"
       description="The simplistic design of the LifeLoop resident portal makes it easy to navigate. Even better, this can be viewed on several types of devices: desktops, laptops, tablets or mobile phones. LifeLoop is compatible with both apple and android devices."
-      image={data.independence.childImageSharp.fluid}
+      image={data.ease.childImageSharp.fluid}
     />
     <ImageSection
       rightImage
       title="Keep Residents In The Loop"
       description="Within the portal, residents can view daily, weekly and monthly activities as well as register for those activities directly from their device. Residents can also view photos and videos that family members have shared."
-      image={data.independence.childImageSharp.fluid}
+      image={data.loop.childImageSharp.fluid}
     />
     <ImageSection
       leftImage
@@ -48,6 +48,22 @@ export default ({ data, location }) => (
 export const query = graphql`
   query {
     independence: file(relativePath: { eq: "maximize-independence.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 860) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+    loop: file(relativePath: { eq: "keep-residents-in-the-loop.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 860) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+    ease: file(relativePath: { eq: "ease-of-use.png" }) {
       childImageSharp {
         fluid(maxWidth: 860) {
           ...GatsbyImageSharpFluid
