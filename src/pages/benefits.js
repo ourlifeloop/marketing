@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import SiteWrapper from '../components/site-wrapper';
 import HeroImage from '../primitives/hero-image';
