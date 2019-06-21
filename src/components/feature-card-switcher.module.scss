@@ -11,14 +11,16 @@
 
 .iconContainer {
   background-color: $background-dark;
+  border-top: 3px solid $background-dark;
   cursor: pointer;
   height: 100px;
   position: relative;
   width: #{((1346 - (18 * 2)) / 9)}px;
-  transition: background-color 0.2s linear;
+  transition: all 0.2s linear;
 
   &--selected {
     background-color: $background-secondary;
+    border-top-color: $primary-blue;
 
     .iconTitle {
       color: $primary-blue;
