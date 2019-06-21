@@ -47,7 +47,7 @@ export default ({ data }) => {
       <HeroImage
         height="600px"
         className={styles.hero}
-        objectPosition="30% center"
+        objectPosition="30% 0%"
         image={data.hero.childImageSharp.fluid}
         title="Enhancing Resident & Family Engagement Through Technology"
         description="Creating technology solutions to enhance the lives of residents, family members and the staff who care for them. LifeLoop is your innovative senior living solution."
@@ -249,9 +249,9 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    hero: file(relativePath: { eq: "home-hero.png" }) {
+    hero: file(relativePath: { eq: "home-hero.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1100, toFormat: JPG) {
+        fluid(maxWidth: 1100) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
