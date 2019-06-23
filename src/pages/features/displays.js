@@ -34,7 +34,7 @@ export default ({ data, location }) => (
       leftImage
       title="Compatible With In-Room Channels"
       description="If your community has an in-room channel, you can easily show your displays in this format allowing you to broadcast this information in all of your residents’ rooms."
-      image={data.sync.childImageSharp.fluid}
+      image={data.channels.childImageSharp.fluid}
     />
   </FeatureWrapper>
 );
@@ -50,6 +50,16 @@ export const query = graphql`
       }
     }
     sync: file(relativePath: { eq: "seamlessly-sync.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 860) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+    channels: file(
+      relativePath: { eq: "compatible-with-in-room-channels.png" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 860) {
           ...GatsbyImageSharpFluid

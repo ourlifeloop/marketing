@@ -40,7 +40,7 @@ export default ({ data, location }) => (
       leftImage
       title="Built In Reminders"
       description="The LifeLoop resident portal will send residents reminders to attend events and meals before the event takes place. This is a great way to keep attendance high at your activities."
-      image={data.independence.childImageSharp.fluid}
+      image={data.reminders.childImageSharp.fluid}
     />
   </FeatureWrapper>
 );
@@ -64,6 +64,14 @@ export const query = graphql`
       }
     }
     ease: file(relativePath: { eq: "ease-of-use.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 860) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+    reminders: file(relativePath: { eq: "built-in-reminders.png" }) {
       childImageSharp {
         fluid(maxWidth: 860) {
           ...GatsbyImageSharpFluid
