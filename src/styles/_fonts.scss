@@ -1,22 +1,9 @@
 @font-face {
-  font-family: 'Amelia Basic';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Amelia Basic Light'), local('amelia-basic-light-webfont'),
-    url(../assets/fonts/amelia-basic-light-webfont.woff) format('woff');
-}
-@font-face {
-  font-family: 'Amelia Basic';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Amelia Basic'), local('amelia-basic-regular-webfont'),
-    url(../assets/fonts/amelia-basic-regular-webfont.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Amelia Basic';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Amelia Basic Bold'), local('amelia-basic-bold-webfont'),
-    url(../assets/fonts/amelia-basic-bold-webfont.woff) format('woff');
+  font-family: 'FilsonProBook';
+  src: url(../assets/fonts/filson-pro-book.eot);
+  src: url(../assets/fonts/filson-pro-book.eot?#iefix)
+      format('embedded-opentype'),
+    url(../assets/fonts/filson-pro-book.woff2) format('woff2'),
+    url(../assets/fonts/filson-pro-book.woff) format('woff'),
+    url(../assets/fonts/filson-pro-book.ttf) format('truetype');
 }

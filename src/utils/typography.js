@@ -4,7 +4,7 @@ const typography = new Typography({
   baseFontSize: '18px',
   headerWeight: '700',
   bodyWeight: '400',
-  headerFontFamily: ['Amelia Basic', 'Helvetica', 'sans-serif'],
+  headerFontFamily: ['FilsonProBook', 'Helvetica', 'sans-serif'],
   bodyFontFamily: ['Source Sans Pro', 'Helvetica', 'sans-serif'],
   googleFonts: [
     {
