@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import classNames from 'classnames';
-import ReactModal from 'react-modal';
 import ResponsiveEmbed from 'react-responsive-embed';
 
 import FeatureCardSwitcher from '../components/feature-card-switcher';
@@ -11,6 +10,7 @@ import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
 import DemoSection from '../components/demo-section';
 import SiteWrapper from '../components/site-wrapper';
+import VideoModal from '../primitives/video-modal';
 import HeroImage from '../primitives/hero-image';
 import Section from '../primitives/section';
 import Button from '../primitives/button';
@@ -19,27 +19,8 @@ import { useDevice } from '../utils/effects';
 
 import styles from './index.module.scss';
 
-ReactModal.setAppElement('body');
-const modalStyle = {
-  overlay: {
-    zIndex: 1000,
-    backgroundColor: 'rgba(0, 0, 0, 0.65)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  content: {
-    padding: 0,
-    position: 'static',
-    overflow: 'visible',
-    border: 'none',
-    width: '100%',
-    maxWidth: 800,
-  },
-};
-
 export default ({ data }) => {
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [video, setVideo] = useState();
   const { isMobile, isTablet } = useDevice();
 
   return (
@@ -54,7 +35,12 @@ export default ({ data }) => {
       >
         <FlexContainer
           className={styles.videoBtn}
-          onClick={() => setIsVideoOpen(true)}
+          onClick={() =>
+            setVideo({
+              link: 'https://www.youtube-nocookie.com/embed/zOjOiZbJybM',
+              title: 'Enhancing the lives of older adults',
+            })
+          }
         >
           <div className={styles.videoBtnEmbed}>
             <ResponsiveEmbed
@@ -207,12 +193,14 @@ export default ({ data }) => {
             flex="1"
             direction="column"
             align="center"
+            onClick={() =>
+              setVideo({
+                link: 'https://www.youtube-nocookie.com/embed/JW5KkDSdt8w',
+                title: 'Connecting Management & Staff',
+              })
+            }
           >
-            <ResponsiveEmbed
-              src="https://www.youtube-nocookie.com/embed/JW5KkDSdt8w"
-              title="Connecting Management & Staff"
-              allowFullScreen
-            />
+            <Img fluid={data.connectStaff.childImageSharp.fluid} />
             <p>Connecting Management & Staff</p>
           </FlexContainer>
           <FlexContainer
@@ -222,27 +210,24 @@ export default ({ data }) => {
             flex="1"
             direction="column"
             align="center"
+            onClick={() =>
+              setVideo({
+                link: 'https://www.youtube-nocookie.com/embed/DucvjjOT0bs',
+                title: 'Connecting Residents & Family',
+              })
+            }
           >
-            <ResponsiveEmbed
-              src="https://www.youtube-nocookie.com/embed/DucvjjOT0bs"
-              title="Connecting Residents & Family"
-              allowFullScreen
-            />
+            <Img fluid={data.connectFamily.childImageSharp.fluid} />
             <p>Connecting Residents & Family</p>
           </FlexContainer>
         </FlexContainer>
       </Section>
       <DemoSection />
-      <ReactModal
-        style={modalStyle}
-        isOpen={isVideoOpen}
-        onRequestClose={() => setIsVideoOpen(false)}
-      >
-        <ResponsiveEmbed
-          src="https://www.youtube-nocookie.com/embed/zOjOiZbJybM"
-          title="Enhancing the lives of older adults"
-        />
-      </ReactModal>
+      <VideoModal
+        isOpen={!!video}
+        onClose={() => setVideo()}
+        {...video || {}}
+      />
     </SiteWrapper>
   );
 };
@@ -275,6 +260,26 @@ export const query = graphql`
       childImageSharp {
         fixed(width: 280, toFormat: JPG) {
           ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    connectFamily: file(
+      relativePath: { eq: "video-callout-connect-family.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 623) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+    connectStaff: file(
+      relativePath: { eq: "video-callout-connect-staff.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 623) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
         }
       }
     }
