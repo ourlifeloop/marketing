@@ -1,0 +1,33 @@
+@import '../styles/theme';
+@import '../styles/utils';
+
+.communityColumn {
+  margin: 0 2rem;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &--vertical {
+    margin: 0;
+  }
+}
+
+.communityLogo {
+  align-items: center;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+}
+
+.quoteAuthor {
+  color: $text-dark;
+}
+
+.authorPosition {
+  font-size: 0.9rem;
+}

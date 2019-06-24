@@ -8,6 +8,7 @@ import FeatureCardSwitcher from '../components/feature-card-switcher';
 import FlexContainer from '../primitives/flex-container';
 import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
+import Testimonials from '../components/testimonials';
 import DemoSection from '../components/demo-section';
 import SiteWrapper from '../components/site-wrapper';
 import VideoModal from '../primitives/video-modal';
@@ -21,7 +22,7 @@ import styles from './index.module.scss';
 
 export default ({ data }) => {
   const [video, setVideo] = useState();
-  const { isMobile, isTablet } = useDevice();
+  const { isMobile } = useDevice();
 
   return (
     <SiteWrapper transparent>
@@ -73,100 +74,32 @@ export default ({ data }) => {
           and communication with your internal and external stakeholders.
         </p>
       </TitleSection>
-      <Section>
-        <FeatureCardSwitcher />
-      </Section>
-      <TitleSection header="Join communities across the United States & Canada who are creating a better connection.">
-        <p>
-          Our product is proven to provide results that can benefit clients both
-          large and small. With LifeLoop, you will gain an experienced partner
-          who can help you achieve your desired outcomes, create efficiencies
-          and set your community apart.
-        </p>
-      </TitleSection>
-      <Section centered noTopPadding>
-        <FlexContainer direction={isTablet ? 'column' : 'row'}>
-          <FlexContainer
-            className={classNames(styles.communityColumn, {
-              [styles.communityColumnVertical]: isTablet,
-            })}
-            direction="column"
-            flex="1"
-          >
-            <div className={styles.communityLogo}>
-              <Img fixed={data.cascadia.childImageSharp.fixed} />
-            </div>
-            <p>
-              <i>
-                "LifeLoop’s valuable to us because the present and the future of
-                our industry is to keep family members more and more involved in
-                our residents’ lives. Family members are naturally curious about
-                what’s going on with their loved ones, and LifeLoop is both a
-                proactive and reactive way of helping with that."
-              </i>
-            </p>
-            <p>
-              <b className={styles.quoteAuthor}>Thomas Cloutier</b>
-              <br />
-              <i className={styles.authorPosition}>
-                Vice President of Operations
-              </i>
-            </p>
-          </FlexContainer>
-          <FlexContainer
-            className={classNames(styles.communityColumn, {
-              [styles.communityColumnVertical]: isTablet,
-            })}
-            direction="column"
-            flex="1"
-          >
-            <div className={styles.communityLogo}>
-              <Img fixed={data.fieldstone.childImageSharp.fixed} />
-            </div>
-            <p>
-              <i>
-                "I have worked with Life Loop since its beginnings and I
-                continue to be impressed with the continued growth and
-                improvement of the product. Our families enjoy the information
-                and photos they get daily, a kind of a window into their loved
-                one’s day, and our staff relies on the communication and
-                attendance tracking."
-              </i>
-            </p>
-            <p>
-              <b className={styles.quoteAuthor}>Lucie Flood</b>
-              <br />
-              <i className={styles.authorPosition}>Life Enrichment Director</i>
-            </p>
-          </FlexContainer>
-          <FlexContainer
-            className={classNames(styles.communityColumn, {
-              [styles.communityColumnVertical]: isTablet,
-            })}
-            direction="column"
-            flex="1"
-          >
-            <div className={styles.communityLogo}>
-              <Img fixed={data.dial.childImageSharp.fixed} />
-            </div>
-            <p>
-              <i>
-                "In this industry, employee turnover is common, unfortunately,
-                and it can be very difficult to bring new staff up to speed. An
-                easy system like this really helps. And it can even help build a
-                consistent company culture, even as staff rotates."
-              </i>
-            </p>
-            <p>
-              <b className={styles.quoteAuthor}>Lisa Moes</b>
-              <br />
-              <i className={styles.authorPosition}>
-                Dial Retirement Communities
-              </i>
-            </p>
-          </FlexContainer>
-        </FlexContainer>
-      </Section>
+      <FeatureCardSwitcher />
+      <Testimonials
+        testimonials={[
+          {
+            logo: data.cascadia.childImageSharp.fixed,
+            quote:
+              "LifeLoop's valuable to us because the present and the future of our industry is to keep family members more and more involved in our residents' lives. Family members are naturally curious about what's going on with their loved ones, and LifeLoop is both a proactive and reactive way of helping with that.",
+            author: 'Thomas Cloutier',
+            position: 'Vice President of Operations',
+          },
+          {
+            logo: data.fieldstone.childImageSharp.fixed,
+            quote:
+              "I have worked with Life Loop since its beginnings and I continue to be impressed with the continued growth and improvement of the product. Our families enjoy the information and photos they get daily, a kind of a window into their loved one's day, and our staff relies on the communication and attendance tracking.",
+            author: 'Lucie Flood',
+            position: 'Life Enrichment Director',
+          },
+          {
+            logo: data.dial.childImageSharp.fixed,
+            quote:
+              'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
+            author: 'Lisa Moes',
+            position: 'Dial Retirement Communities',
+          },
+        ]}
+      />
       <ActionCallout
         noTopPadding
         title="Innovative solutions for your senior living community."

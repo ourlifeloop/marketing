@@ -9,6 +9,7 @@ import FlexContainer from '../primitives/flex-container';
 import { Check, MoreHorizontal } from '../utils/icons';
 import NAVIGATION from '../utils/navigation';
 import { find, take } from '../utils/lodash';
+import Section from '../primitives/section';
 import Button from '../primitives/button';
 
 import styles from './feature-card-switcher.module.scss';
@@ -304,50 +305,52 @@ export default () => {
   }
 
   return (
-    <FlexContainer direction="column" className={styles.container}>
-      <FlexContainer justify="center" className={styles.navContainer}>
-        {featureList.map(({ key, name, Icon }) => (
-          <FlexContainer
-            align="center"
-            justify="center"
-            key={key}
-            direction="column"
-            className={classNames(styles.iconContainer, {
-              [styles.iconContainerSelected]: key === selected,
-            })}
-            onClick={() => setSelected(key)}
-          >
-            <Icon className={styles.icon} />
-            <p className={styles.iconTitle}>{name}</p>
-          </FlexContainer>
-        ))}
-        {numTabs < FEATURES.length && (
-          <FlexContainer
-            align="center"
-            justify="center"
-            direction="column"
-            className={classNames(styles.iconContainer, {
-              [styles.iconContainerSelected]: 'more' === selected,
-            })}
-            onClick={() => setSelected('more')}
-          >
-            <MoreHorizontal
-              className={styles.icon}
-              width="50px"
-              height="50px"
-              strokeWidth="2"
-              stroke="currentColor"
-            />
-            <p className={styles.iconTitle}>More</p>
-          </FlexContainer>
-        )}
+    <Section>
+      <FlexContainer direction="column" className={styles.container}>
+        <FlexContainer justify="center" className={styles.navContainer}>
+          {featureList.map(({ key, name, Icon }) => (
+            <FlexContainer
+              align="center"
+              justify="center"
+              key={key}
+              direction="column"
+              className={classNames(styles.iconContainer, {
+                [styles.iconContainerSelected]: key === selected,
+              })}
+              onClick={() => setSelected(key)}
+            >
+              <Icon className={styles.icon} />
+              <p className={styles.iconTitle}>{name}</p>
+            </FlexContainer>
+          ))}
+          {numTabs < FEATURES.length && (
+            <FlexContainer
+              align="center"
+              justify="center"
+              direction="column"
+              className={classNames(styles.iconContainer, {
+                [styles.iconContainerSelected]: 'more' === selected,
+              })}
+              onClick={() => setSelected('more')}
+            >
+              <MoreHorizontal
+                className={styles.icon}
+                width="50px"
+                height="50px"
+                strokeWidth="2"
+                stroke="currentColor"
+              />
+              <p className={styles.iconTitle}>More</p>
+            </FlexContainer>
+          )}
+        </FlexContainer>
+        <FlexContainer
+          direction={isMobile ? 'column' : 'row'}
+          className={styles.contentContainer}
+        >
+          {content}
+        </FlexContainer>
       </FlexContainer>
-      <FlexContainer
-        direction={isMobile ? 'column' : 'row'}
-        className={styles.contentContainer}
-      >
-        {content}
-      </FlexContainer>
-    </FlexContainer>
+    </Section>
   );
 };
