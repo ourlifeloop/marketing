@@ -3,12 +3,15 @@ import Img from 'gatsby-image/withIEPolyfill';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import { useDevice, useDimensions } from '../utils/effects';
 import RelativeContainer from './relative-container';
 import FlexContainer from './flex-container';
-import { useDevice } from '../utils/effects';
+import { clamp } from '../utils/lodash';
 import Layout from './layout';
 
 import styles from './hero-image.module.scss';
+
+const OPACITY_CONSTANT = 1440;
 
 export default function HeroImage({
   image,
@@ -20,17 +23,21 @@ export default function HeroImage({
   className,
   ...rest
 }) {
-  const { isMini } = useDevice();
+  const { width } = useDimensions();
+  const { isMobile } = useDevice();
+
+  const opacity = clamp(width / OPACITY_CONSTANT, 0, 1);
+
   return (
     <RelativeContainer>
-      <Img style={{ height }} fluid={image} {...rest} />
+      <Img style={{ height, opacity }} fluid={image} {...rest} />
       <Layout className={styles.layout}>
         <FlexContainer
           direction="column"
           justify="center"
           className={classNames(styles.heroContainer, className, {
             [styles.heroContainerRight]: direction === 'right',
-            [styles.heroContainerFullWidth]: isMini,
+            [styles.heroContainerFullWidth]: isMobile,
           })}
         >
           <h1 className={styles.title}>{title}</h1>

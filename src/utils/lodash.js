@@ -1,4 +1,5 @@
 import capitalize from 'lodash/capitalize';
+import clamp from 'lodash/clamp';
 import debounce from 'lodash/debounce';
 import endsWith from 'lodash/endsWith';
 import find from 'lodash/find';
@@ -7,4 +8,14 @@ import startsWith from 'lodash/startsWith';
 import take from 'lodash/take';
 import trimEnd from 'lodash/trimEnd';
 
-export { capitalize, debounce, endsWith, find, map, startsWith, take, trimEnd };
+export {
+  capitalize,
+  clamp,
+  debounce,
+  endsWith,
+  find,
+  map,
+  startsWith,
+  take,
+  trimEnd,
+};

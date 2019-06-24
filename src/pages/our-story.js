@@ -8,7 +8,7 @@ import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
 import SiteWrapper from '../components/site-wrapper';
 import HeroImage from '../primitives/hero-image';
-import { useDevice } from '../utils/effects';
+import { useDevice, useDimensions } from '../utils/effects';
 import Section from '../primitives/section';
 import TEAM from '../utils/team';
 
@@ -132,7 +132,7 @@ export const query = graphql`
     }
     hero: file(relativePath: { eq: "our-story-hero.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1100) {
+        fluid(maxWidth: 1100, quality: 90) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
