@@ -8,7 +8,7 @@ import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
 import SiteWrapper from '../components/site-wrapper';
 import HeroImage from '../primitives/hero-image';
-import { useDevice, useDimensions } from '../utils/effects';
+import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
 import TEAM from '../utils/team';
 
