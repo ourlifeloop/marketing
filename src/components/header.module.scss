@@ -88,6 +88,11 @@ $nav-height: calc(
   }
 }
 
+.flexLink {
+  align-items: center;
+  display: flex;
+}
+
 .phone {
   color: $text;
   font-size: 0.8rem;

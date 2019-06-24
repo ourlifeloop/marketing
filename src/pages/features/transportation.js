@@ -50,7 +50,7 @@ export const query = graphql`
       relativePath: { eq: "a-transportation-management-system.png" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -58,7 +58,7 @@ export const query = graphql`
     }
     customize: file(relativePath: { eq: "customize-requests.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -66,7 +66,7 @@ export const query = graphql`
     }
     onDemand: file(relativePath: { eq: "on-demand-access.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -76,7 +76,7 @@ export const query = graphql`
       relativePath: { eq: "resident-family-requests-transp.png" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }

@@ -50,7 +50,7 @@ export const query = graphql`
       relativePath: { eq: "full-maintenance-management-system.png" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -58,7 +58,7 @@ export const query = graphql`
     }
     experience: file(relativePath: { eq: "customize-experience.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -66,7 +66,7 @@ export const query = graphql`
     }
     demand: file(relativePath: { eq: "on-demand-requests.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -74,7 +74,7 @@ export const query = graphql`
     }
     resident: file(relativePath: { eq: "resident-family-requests-maint.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }

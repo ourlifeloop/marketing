@@ -56,7 +56,7 @@ export const query = graphql`
     }
     dataInformed: file(relativePath: { eq: "data-informed.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -64,7 +64,7 @@ export const query = graphql`
     }
     integration: file(relativePath: { eq: "endless-integration.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -72,7 +72,7 @@ export const query = graphql`
     }
     saveTime: file(relativePath: { eq: "save-time.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }

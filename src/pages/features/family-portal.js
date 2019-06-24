@@ -46,7 +46,7 @@ export const query = graphql`
   query {
     photoAndVideo: file(relativePath: { eq: "photo-and-video-sharing.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -54,7 +54,7 @@ export const query = graphql`
     }
     access: file(relativePath: { eq: "real-time-access.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -62,7 +62,7 @@ export const query = graphql`
     }
     requests: file(relativePath: { eq: "requests.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -70,7 +70,7 @@ export const query = graphql`
     }
     email: file(relativePath: { eq: "weekly-email.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }

@@ -43,7 +43,7 @@ export const query = graphql`
   query {
     custom: file(relativePath: { eq: "fully-custom-solution.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1400) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -51,7 +51,7 @@ export const query = graphql`
     }
     sync: file(relativePath: { eq: "seamlessly-sync.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -61,7 +61,7 @@ export const query = graphql`
       relativePath: { eq: "compatible-with-in-room-channels.png" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }

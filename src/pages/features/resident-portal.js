@@ -49,7 +49,7 @@ export const query = graphql`
   query {
     independence: file(relativePath: { eq: "maximize-independence.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -57,7 +57,7 @@ export const query = graphql`
     }
     loop: file(relativePath: { eq: "keep-residents-in-the-loop.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -65,7 +65,7 @@ export const query = graphql`
     }
     ease: file(relativePath: { eq: "ease-of-use.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -73,7 +73,7 @@ export const query = graphql`
     }
     reminders: file(relativePath: { eq: "built-in-reminders.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }

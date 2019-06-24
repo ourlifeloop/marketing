@@ -43,7 +43,7 @@ export const query = graphql`
   query {
     organize: file(relativePath: { eq: "organize-community-photos.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -51,7 +51,7 @@ export const query = graphql`
     }
     tag: file(relativePath: { eq: "tag-residents.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -59,7 +59,7 @@ export const query = graphql`
     }
     photoAndVideo: file(relativePath: { eq: "photo-and-video-sharing.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }

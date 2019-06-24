@@ -54,7 +54,7 @@ export const query = graphql`
   query {
     inform: file(relativePath: { eq: "inform-your-staff.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -62,7 +62,7 @@ export const query = graphql`
     }
     flow: file(relativePath: { eq: "seamless-flow.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -70,7 +70,7 @@ export const query = graphql`
     }
     transparency: file(relativePath: { eq: "transparency-with-family.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -78,7 +78,7 @@ export const query = graphql`
     }
     independence: file(relativePath: { eq: "residents-independence.png" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }

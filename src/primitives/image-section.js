@@ -20,22 +20,18 @@ export default function ImageSection({
   const { isMobile } = useDevice();
 
   let content;
-  if (isMobile) {
-    content = (
-      <FlexContainer
-        direction="column"
-        className={classNames(styles.centered, styles.mobile)}
-      >
-        <Img fluid={image} />
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </FlexContainer>
-    );
-  } else if (leftImage) {
+  if (leftImage && !isMobile) {
     content = (
       <FlexContainer align="center">
         <div className={styles.imgContainer}>
-          <Img fluid={image} />
+          <Img
+            fluid={image}
+            className={styles.img}
+            style={{
+              maxWidth: image.presentationWidth,
+              margin: '0 auto',
+            }}
+          />
         </div>
         <FlexContainer
           flex="1"
@@ -47,7 +43,7 @@ export default function ImageSection({
         </FlexContainer>
       </FlexContainer>
     );
-  } else if (rightImage) {
+  } else if (rightImage && !isMobile) {
     content = (
       <FlexContainer align="center">
         <FlexContainer
@@ -59,14 +55,28 @@ export default function ImageSection({
           <p>{description}</p>
         </FlexContainer>
         <div className={styles.imgContainer}>
-          <Img fluid={image} />
+          <Img
+            fluid={image}
+            className={styles.img}
+            style={{
+              maxWidth: image.presentationWidth,
+              margin: '0 auto',
+            }}
+          />
         </div>
       </FlexContainer>
     );
   } else {
     content = (
-      <FlexContainer direction="column" className={styles.centered}>
-        <Img fluid={image} />
+      <FlexContainer direction="column" className={classNames(styles.centered)}>
+        <Img
+          fluid={image}
+          className={styles.img}
+          styles={{
+            maxWidth: image.presentationWidth,
+            margin: '0 auto',
+          }}
+        />
         <h3>{title}</h3>
         <p>{description}</p>
       </FlexContainer>

@@ -10,10 +10,10 @@ import FlexContainer from '../primitives/flex-container';
 import { ChevronDown, Menu, X } from '../utils/icons';
 import { removeTrailingSlash } from '../utils/common';
 import MobileDropdown from './mobile-dropdown';
+import { map, values } from '../utils/lodash';
 import NAVIGATION from '../utils/navigation';
 import Button from '../primitives/button';
 import Layout from '../primitives/layout';
-import { map } from '../utils/lodash';
 
 import styles from './header.module.scss';
 
@@ -77,8 +77,10 @@ export default function Header({
           className={styles.dropdownContainer}
           align="center"
         >
-          {name}
-          <ChevronDown size={15} />
+          <Link className={styles.flexLink} to={values(subNav)[0].link}>
+            {name}
+            <ChevronDown size={15} />
+          </Link>
           <div className={styles.dropdown}>
             {map(subNav, ({ key, name, Icon, link }) => (
               <Link
