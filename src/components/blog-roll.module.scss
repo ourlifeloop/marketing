@@ -22,7 +22,7 @@ $negative-margin: variableSize(-$post-margin-min, -$post-margin-max);
 }
 
 .otherRowPost {
-  width: 33.3%;
+  width: calc(33.3% - #{$double-margin});
   margin: 0 $positive-margin;
 
   &--tablet {
