@@ -14,6 +14,7 @@
 
   &--vertical {
     margin: 0;
+    width: 100% !important;
   }
 }
 
@@ -30,4 +31,12 @@
 
 .authorPosition {
   font-size: 0.9rem;
+}
+
+.half {
+  width: 50%;
+}
+
+.third {
+  width: 33.3%;
 }

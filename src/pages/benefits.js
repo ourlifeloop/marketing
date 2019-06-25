@@ -115,21 +115,21 @@ export default ({ data }) => {
       <Testimonials
         testimonials={[
           {
-            logo: data.cascadia.childImageSharp.fixed,
+            logo: 'cascadia',
             quote:
               "LifeLoop's valuable to us because the present and the future of our industry is to keep family members more and more involved in our residents' lives. Family members are naturally curious about what's going on with their loved ones, and LifeLoop is both a proactive and reactive way of helping with that.",
             author: 'Thomas Cloutier',
             position: 'Vice President of Operations',
           },
           {
-            logo: data.fieldstone.childImageSharp.fixed,
+            logo: 'fieldstone',
             quote:
               "I have worked with Life Loop since its beginnings and I continue to be impressed with the continued growth and improvement of the product. Our families enjoy the information and photos they get daily, a kind of a window into their loved one's day, and our staff relies on the communication and attendance tracking.",
             author: 'Lucie Flood',
             position: 'Life Enrichment Director',
           },
           {
-            logo: data.dial.childImageSharp.fixed,
+            logo: 'dial',
             quote:
               'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
             author: 'Lisa Moes',
@@ -154,27 +154,6 @@ export const query = graphql`
         fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
           presentationWidth
-        }
-      }
-    }
-    cascadia: file(relativePath: { eq: "cascadia-logo.png" }) {
-      childImageSharp {
-        fixed(width: 220, toFormat: JPG) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    dial: file(relativePath: { eq: "dial-logo.png" }) {
-      childImageSharp {
-        fixed(width: 150, toFormat: JPG) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    fieldstone: file(relativePath: { eq: "fieldstone-logo.png" }) {
-      childImageSharp {
-        fixed(width: 280, toFormat: JPG) {
-          ...GatsbyImageSharpFixed
         }
       }
     }

@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import ActionCallout from '../primitives/action-callout';
 import QuestionAndAnswer from './question-and-answer';
 import { removeTrailingSlash } from '../utils/common';
+import Testimonials from '../components/testimonials';
 import FeatureHeader from './feature-header';
 import NAVIGATION from '../utils/navigation';
 import Button from '../primitives/button';
@@ -14,6 +15,10 @@ import BlogSection from './blog-section';
 import { find } from '../utils/lodash';
 
 export default function FeatureWrapper({ children, pathname, ...rest }) {
+  const { testimonials, questions } = find(NAVIGATION.features.subNav, {
+    link: removeTrailingSlash(pathname),
+  });
+
   return (
     <SiteWrapper {...rest}>
       <FeatureHeader pathname={pathname} />
@@ -29,13 +34,8 @@ export default function FeatureWrapper({ children, pathname, ...rest }) {
           </Link>
         }
       />
-      <QuestionAndAnswer
-        questions={
-          find(NAVIGATION.features.subNav, {
-            link: removeTrailingSlash(pathname),
-          }).questions
-        }
-      />
+      <QuestionAndAnswer questions={questions} />
+      {!!testimonials && <Testimonials testimonials={testimonials} />}
       <BlogSection />
       <DemoSection />
     </SiteWrapper>
