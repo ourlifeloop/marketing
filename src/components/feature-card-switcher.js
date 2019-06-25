@@ -6,9 +6,9 @@ import Img from 'gatsby-image';
 import RelativeContainer from '../primitives/relative-container';
 import { useDimensions, useDevice } from '../utils/effects';
 import FlexContainer from '../primitives/flex-container';
+import { find, take, takeRight } from '../utils/lodash';
 import { Check, MoreHorizontal } from '../utils/icons';
 import NAVIGATION from '../utils/navigation';
-import { find, take } from '../utils/lodash';
 import Section from '../primitives/section';
 import Button from '../primitives/button';
 
@@ -160,7 +160,9 @@ const FEATURES = [
 export default () => {
   const { width } = useDimensions();
   const { isMobile } = useDevice();
+  const [isOverflowOpen, setIsOverflowOpen] = useState(false);
   const [selected, setSelected] = useState(FEATURES[0].key);
+
   const photos = useStaticQuery(
     graphql`
       query {
@@ -248,61 +250,54 @@ export default () => {
   const numTabs =
     width > 1400 ? FEATURES.length : Math.floor((width - 90) / tabWidth) - 1;
   const featureList = take(FEATURES, numTabs);
+  const overflowList = takeRight(FEATURES, FEATURES.length - numTabs);
 
   useEffect(() => {
-    if (
-      !find(featureList, { key: selected }) ||
-      (numTabs === FEATURES.length && selected === 'more')
-    ) {
-      setSelected(FEATURES[0].key);
+    if (isOverflowOpen) {
+      setIsOverflowOpen(false);
     }
   }, [numTabs]);
 
-  let content;
   const selectedFeature = find(FEATURES, { key: selected });
-  if (selectedFeature) {
-    const { name, headline, body, bullets, image, link } = selectedFeature;
-    content = (
-      <>
-        <FlexContainer
-          flex="1"
-          direction="column"
-          className={styles.textContainer}
-        >
-          <h4>{headline}</h4>
-          <p>{body}</p>
-          {bullets.map(bullet => (
-            <FlexContainer
-              key={bullet}
-              align="center"
-              className={styles.bulletContainer}
-            >
-              <Check className={styles.check} />
-              <p className={styles.bullet}>{bullet}</p>
-            </FlexContainer>
-          ))}
-          <Link to={link}>
-            <Button>Learn More About {name}</Button>
-          </Link>
-        </FlexContainer>
-        {isMobile ? (
-          <div className={styles.mobileImage}>
-            <Img fluid={photos[image].childImageSharp.fluid} />
-          </div>
-        ) : (
-          <FlexContainer flex="1">
-            <RelativeContainer className={styles.relativeContainer}>
-              <div className={styles.imageContainer}>
-                <Img fluid={photos[image].childImageSharp.fluid} />
-              </div>
-            </RelativeContainer>
+  const { name, headline, body, bullets, image, link } = selectedFeature;
+  const content = (
+    <>
+      <FlexContainer
+        flex="1"
+        direction="column"
+        className={styles.textContainer}
+      >
+        <h4>{headline}</h4>
+        <p>{body}</p>
+        {bullets.map(bullet => (
+          <FlexContainer
+            key={bullet}
+            align="center"
+            className={styles.bulletContainer}
+          >
+            <Check className={styles.check} />
+            <p className={styles.bullet}>{bullet}</p>
           </FlexContainer>
-        )}
-      </>
-    );
-  } else {
-    content = <div />;
-  }
+        ))}
+        <Link to={link}>
+          <Button>Learn More About {name}</Button>
+        </Link>
+      </FlexContainer>
+      {isMobile ? (
+        <div className={styles.mobileImage}>
+          <Img fluid={photos[image].childImageSharp.fluid} />
+        </div>
+      ) : (
+        <FlexContainer flex="1">
+          <RelativeContainer className={styles.relativeContainer}>
+            <div className={styles.imageContainer}>
+              <Img fluid={photos[image].childImageSharp.fluid} />
+            </div>
+          </RelativeContainer>
+        </FlexContainer>
+      )}
+    </>
+  );
 
   return (
     <Section>
@@ -328,10 +323,17 @@ export default () => {
               align="center"
               justify="center"
               direction="column"
-              className={classNames(styles.iconContainer, {
-                [styles.iconContainerSelected]: 'more' === selected,
-              })}
-              onClick={() => setSelected('more')}
+              className={classNames(
+                styles.iconContainer,
+                styles.dropdownContainer,
+                {
+                  [styles.dropdownContainerOpen]: isOverflowOpen,
+                  [styles.iconContainerSelected]: find(overflowList, {
+                    key: selected,
+                  }),
+                },
+              )}
+              onClick={() => setIsOverflowOpen(!isOverflowOpen)}
             >
               <MoreHorizontal
                 className={styles.icon}
@@ -341,6 +343,20 @@ export default () => {
                 stroke="currentColor"
               />
               <p className={styles.iconTitle}>More</p>
+              <div className={styles.dropdown}>
+                {overflowList.map(({ key, name, Icon }) => (
+                  <FlexContainer
+                    key={key}
+                    align="center"
+                    className={styles.dropdownLink}
+                    aria-label={name}
+                    onClick={() => setSelected(key)}
+                  >
+                    <Icon />
+                    {name}
+                  </FlexContainer>
+                ))}
+              </div>
             </FlexContainer>
           )}
         </FlexContainer>

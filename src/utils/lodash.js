@@ -6,6 +6,7 @@ import find from 'lodash/find';
 import map from 'lodash/map';
 import startsWith from 'lodash/startsWith';
 import take from 'lodash/take';
+import takeRight from 'lodash/takeRight';
 import trimEnd from 'lodash/trimEnd';
 import values from 'lodash/values';
 
@@ -18,6 +19,7 @@ export {
   map,
   startsWith,
   take,
+  takeRight,
   trimEnd,
   values,
 };
