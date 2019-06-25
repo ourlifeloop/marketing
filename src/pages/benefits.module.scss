@@ -1,6 +1,37 @@
 @import '../styles/theme';
+@import '../styles/utils';
 
 .emphasized {
   color: $text-blue;
   font-size: 1.1rem;
+}
+
+.videoContainer {
+  cursor: pointer;
+  margin: 0 variableSize(5, 50);
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &--vertical {
+    margin: 0;
+  }
+
+  > div {
+    min-width: 100%;
+    transition: box-shadow 0.2s linear;
+
+    &:hover {
+      box-shadow: 0px 0px 16px 0px $highlight;
+    }
+  }
+}
+
+.videoHeader {
+  margin-top: 2rem;
 }
