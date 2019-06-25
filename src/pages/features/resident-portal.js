@@ -26,21 +26,21 @@ export default ({ data, location }) => (
     />
     <ImageSection
       leftImage
+      title="Built In Reminders"
+      description="The LifeLoop resident portal will send residents reminders to attend events and meals before the event takes place. This is a great way to keep attendance high at your activities."
+      image={data.reminders.childImageSharp.fluid}
+    />
+    <ImageSection
+      rightImage
       title="Ease Of Use"
       description="The simplistic design of the LifeLoop resident portal makes it easy to navigate. Even better, this can be viewed on several types of devices: desktops, laptops, tablets or mobile phones. LifeLoop is compatible with both apple and android devices."
       image={data.ease.childImageSharp.fluid}
     />
     <ImageSection
-      rightImage
+      leftImage
       title="Keep Residents In The Loop"
       description="Within the portal, residents can view daily, weekly and monthly activities as well as register for those activities directly from their device. Residents can also view photos and videos that family members have shared."
       image={data.loop.childImageSharp.fluid}
-    />
-    <ImageSection
-      leftImage
-      title="Built In Reminders"
-      description="The LifeLoop resident portal will send residents reminders to attend events and meals before the event takes place. This is a great way to keep attendance high at your activities."
-      image={data.reminders.childImageSharp.fluid}
     />
   </FeatureWrapper>
 );

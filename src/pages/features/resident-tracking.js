@@ -17,10 +17,10 @@ export default ({ data, location }) => {
           Many staff members and Life Enrichment Directors have to spend too
           much time with paper distractions such as taking attendance, filling
           out activity binders and producing daily reports. The LifeLoop
-          software allows for seamless attendance taking and lets you to track
-          resident activities or one-on-ones. Within LifeLoop, providing reports
-          and identifying your residents needs has never been easier or more
-          intuitive.
+          software is hardware agnostic allows for seamless attendance taking
+          and lets you to track resident activities or one-on-ones. Within
+          LifeLoop, providing reports and identifying your residents needs has
+          never been easier or more intuitive.
         </p>
       </TitleSection>
       <ImageSection

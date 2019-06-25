@@ -30,7 +30,7 @@ export default ({ data, location }) => (
     <ImageSection
       rightImage
       title="Proactive, Detailed Weekly Email"
-      description="Receive a weekly email that highlights, in depth, your loved ones activity and attendance for the week.  This weekly summary keeps you informed even when you are on-the-go."
+      description="Family members will receive a weekly email that highlights, in depth, their loved ones activity and attendance for the week. This customizable weekly summary keeps families informed even when they are on-the-go."
       image={data.email.childImageSharp.fluid}
     />
     <ImageSection

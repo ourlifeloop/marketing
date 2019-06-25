@@ -105,6 +105,11 @@ export default {
         link: '/features/resident-tracking',
         questions: [
           {
+            question: 'What devices is LifeLoop compatible on?',
+            answer:
+              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
+          },
+          {
             question: 'How often can I run reports?',
             answer:
               'You can run reports as frequently as you would like. There is no limit to the number of reports you can run.',
@@ -128,11 +133,6 @@ export default {
             question: 'How many users can you have in LifeLoop?',
             answer:
               'There is no limit to the number of users and customers don’t get charged by the user either.',
-          },
-          {
-            question: 'What devices is LifeLoop compatible on?',
-            answer:
-              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
           },
         ],
       },
