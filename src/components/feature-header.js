@@ -39,7 +39,7 @@ export default function FeatureHeader({ pathname }) {
       query {
         hero: file(relativePath: { eq: "features-hero.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 2000) {
+            fluid(maxWidth: 1920) {
               ...GatsbyImageSharpFluid
               presentationWidth
             }

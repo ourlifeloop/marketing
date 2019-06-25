@@ -132,7 +132,7 @@ export const query = graphql`
     }
     hero: file(relativePath: { eq: "our-story-hero.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1100, quality: 90) {
+        fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
@@ -147,7 +147,7 @@ export const query = graphql`
     }
     team: file(relativePath: { eq: "team.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }

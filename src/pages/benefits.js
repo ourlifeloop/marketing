@@ -151,7 +151,7 @@ export const query = graphql`
   query {
     hero: file(relativePath: { eq: "features-hero.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
