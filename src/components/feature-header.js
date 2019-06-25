@@ -98,7 +98,7 @@ export default function FeatureHeader({ pathname }) {
       <HeroImage
         direction="right"
         height="400px"
-        objectPosition="30% 85%"
+        objectPosition="30% 92%"
         image={hero.childImageSharp.fluid}
         title="Enhancing Resident & Family Engagement Through Technology"
         description="Adapting technology solutions in a way to enhance the lives of
