@@ -17,7 +17,7 @@ const modalStyle = {
     overflow: 'visible',
     border: 'none',
     width: '100%',
-    maxWidth: 800,
+    maxWidth: 1200,
   },
 };
 
