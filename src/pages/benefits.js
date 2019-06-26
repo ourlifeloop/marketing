@@ -55,14 +55,18 @@ export default ({ data }) => {
             })}
             flex="1"
             direction="column"
-            onClick={() =>
-              setVideo({
-                link: 'https://www.youtube-nocookie.com/embed/XQDtfhPTgNo',
-                title: 'Life Enrichment Directors & Residents',
-              })
-            }
           >
-            <Img fluid={data.connectResidents.childImageSharp.fluid} />
+            <div
+              className={styles.videoImage}
+              onClick={() =>
+                setVideo({
+                  link: 'https://www.youtube-nocookie.com/embed/XQDtfhPTgNo',
+                  title: 'Life Enrichment Directors & Residents',
+                })
+              }
+            >
+              <Img fluid={data.connectResidents.childImageSharp.fluid} />
+            </div>
             <h2 className={styles.videoHeader}>Residents</h2>
             <p>
               With LifeLoop, you can transform the caregiving experience.
@@ -83,14 +87,18 @@ export default ({ data }) => {
             })}
             flex="1"
             direction="column"
-            onClick={() =>
-              setVideo({
-                link: 'https://www.youtube-nocookie.com/embed/DucvjjOT0bs',
-                title: 'Connecting Residents & Family',
-              })
-            }
           >
-            <Img fluid={data.connectFamily.childImageSharp.fluid} />
+            <div
+              className={styles.videoImage}
+              onClick={() =>
+                setVideo({
+                  link: 'https://www.youtube-nocookie.com/embed/DucvjjOT0bs',
+                  title: 'Connecting Residents & Family',
+                })
+              }
+            >
+              <Img fluid={data.connectFamily.childImageSharp.fluid} />
+            </div>
             <h2 className={styles.videoHeader}>Family</h2>
             <p>
               Allowing families the transparency they want and the access they
