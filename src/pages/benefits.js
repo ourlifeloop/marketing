@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby';
 import classNames from 'classnames';
 import Img from 'gatsby-image';
 
+import RelativeContainer from '../primitives/relative-container';
 import ActionCallout from '../primitives/action-callout';
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
@@ -13,6 +14,7 @@ import VideoModal from '../primitives/video-modal';
 import HeroImage from '../primitives/hero-image';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
+import { PlayCircle } from '../utils/icons';
 import Button from '../primitives/button';
 
 import styles from './benefits.module.scss';
@@ -112,6 +114,53 @@ export default ({ data }) => {
           </Link>
         }
       />
+      <Section>
+        <RelativeContainer>
+          <div
+            onClick={() =>
+              setVideo({
+                link: 'https://www.youtube-nocookie.com/embed/JW5KkDSdt8w',
+                title: 'Connecting Management & Staff',
+              })
+            }
+          >
+            <Img
+              className={styles.staffImage}
+              fluid={data.staffBenefits.childImageSharp.fluid}
+            />
+          </div>
+          <FlexContainer className={styles.staffContainer}>
+            <FlexContainer flex="1" align="center" justify="center">
+              <PlayCircle size={120} className={styles.staffPlayIcon} />
+            </FlexContainer>
+            <FlexContainer
+              direction="column"
+              justify="center"
+              className={styles.staffContent}
+            >
+              <h2>Communities</h2>
+              <p>
+                Provide your staff the tools they need to have purpose and
+                success in their careers. Utilizing the LifeLoop technology can
+                assist with staff retention and help you tell the story of each
+                individual resident. By investing in LifeLoop, you are ensuring
+                that you can spend more one-on-one time with your residents.
+              </p>
+              <p>
+                Additionally, community outreach and marketing initiatives can
+                benefit from LifeLoop by differentiating your community from the
+                rest and demonstrating your commitment to transparency and
+                family communication. The better you are at communicating with
+                family members, the more willing they are to recommend your
+                community to family and friends.
+              </p>
+              <Link to="/features/activities">
+                <Button>View LifeLoop's Features</Button>
+              </Link>
+            </FlexContainer>
+          </FlexContainer>
+        </RelativeContainer>
+      </Section>
       <Testimonials
         testimonials={[
           {
@@ -152,6 +201,13 @@ export const query = graphql`
     hero: file(relativePath: { eq: "benefits-hero.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    staffBenefits: file(relativePath: { eq: "staff-benefits-callout.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1400) {
           ...GatsbyImageSharpFluid
         }
       }
