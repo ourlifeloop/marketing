@@ -26,7 +26,7 @@ export default ({ data }) => {
       <HeroImage
         direction="right"
         height="400px"
-        objectPosition="30% 85%"
+        objectPosition="30% 30%"
         image={data.hero.childImageSharp.fluid}
         title="Set your community apart"
         description="LifeLoop is a proven sales & marketing tool for your community. Our platform will set your community apart from the rest by empowering staff, engaging families and impacting residents."
@@ -60,7 +60,7 @@ export default ({ data }) => {
               })
             }
           >
-            <Img fluid={data.connectStaff.childImageSharp.fluid} />
+            <Img fluid={data.connectResidents.childImageSharp.fluid} />
             <h2 className={styles.videoHeader}>Residents</h2>
             <p>
               With LifeLoop, you can transform the caregiving experience.
@@ -149,11 +149,10 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    hero: file(relativePath: { eq: "features-hero.jpg" }) {
+    hero: file(relativePath: { eq: "benefits-hero.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
-          presentationWidth
         }
       }
     }
@@ -163,17 +162,15 @@ export const query = graphql`
       childImageSharp {
         fluid(maxWidth: 623) {
           ...GatsbyImageSharpFluid
-          presentationWidth
         }
       }
     }
-    connectStaff: file(
-      relativePath: { eq: "video-callout-connect-staff.jpg" }
+    connectResidents: file(
+      relativePath: { eq: "video-callout-connect-residents.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 623) {
           ...GatsbyImageSharpFluid
-          presentationWidth
         }
       }
     }

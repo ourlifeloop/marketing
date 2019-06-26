@@ -17,6 +17,10 @@
     margin: 0;
   }
 
+  > p {
+    margin: 0.5rem 0 0;
+  }
+
   > div {
     min-width: 100%;
     transition: box-shadow 0.2s linear;

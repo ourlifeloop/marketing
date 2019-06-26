@@ -555,7 +555,7 @@ export default {
 export const testimonialImages = graphql`
   fragment testimonialImage on File {
     childImageSharp {
-      fixed(width: 220) {
+      fixed(height: 150) {
         ...GatsbyImageSharpFixed
       }
     }
@@ -563,19 +563,35 @@ export const testimonialImages = graphql`
 
   fragment testimonialImages on Query {
     aksarben: file(relativePath: { eq: "logos/aksarben-logo.png" }) {
-      ...testimonialImage
+      childImageSharp {
+        fixed(height: 87) {
+          ...GatsbyImageSharpFixed
+        }
+      }
     }
     cascadia: file(relativePath: { eq: "logos/cascadia-logo.png" }) {
-      ...testimonialImage
+      childImageSharp {
+        fixed(height: 102) {
+          ...GatsbyImageSharpFixed
+        }
+      }
     }
     countryHouse: file(relativePath: { eq: "logos/country-house-logo.png" }) {
-      ...testimonialImage
+      childImageSharp {
+        fixed(height: 130) {
+          ...GatsbyImageSharpFixed
+        }
+      }
     }
     dial: file(relativePath: { eq: "logos/dial-logo.png" }) {
       ...testimonialImage
     }
     fieldstone: file(relativePath: { eq: "logos/fieldstone-logo.png" }) {
-      ...testimonialImage
+      childImageSharp {
+        fixed(height: 60) {
+          ...GatsbyImageSharpFixed
+        }
+      }
     }
     firstPlace: file(relativePath: { eq: "logos/first-place-logo.png" }) {
       ...testimonialImage
@@ -584,16 +600,28 @@ export const testimonialImages = graphql`
       ...testimonialImage
     }
     nye: file(relativePath: { eq: "logos/nye-logo.png" }) {
-      ...testimonialImage
+      childImageSharp {
+        fixed(height: 107) {
+          ...GatsbyImageSharpFixed
+        }
+      }
     }
     roseBlumkin: file(relativePath: { eq: "logos/rose-blumkin-logo.png" }) {
       ...testimonialImage
     }
     vetter: file(relativePath: { eq: "logos/vetter-logo.png" }) {
-      ...testimonialImage
+      childImageSharp {
+        fixed(height: 84) {
+          ...GatsbyImageSharpFixed
+        }
+      }
     }
     lifeloop: file(relativePath: { eq: "lifeloop-logo.png" }) {
-      ...testimonialImage
+      childImageSharp {
+        fixed(height: 46) {
+          ...GatsbyImageSharpFixed
+        }
+      }
     }
   }
 `;

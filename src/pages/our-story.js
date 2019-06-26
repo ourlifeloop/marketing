@@ -96,7 +96,6 @@ export default ({ data }) => {
         className={styles.joinSection}
         centered
         width="medium"
-        noTopPadding
         noBottomPadding
       >
         <div className={styles.joinContainer}>
