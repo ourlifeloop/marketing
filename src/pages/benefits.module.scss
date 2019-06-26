@@ -36,6 +36,18 @@
   margin-top: 2rem;
 }
 
+.staffMinimized {
+  .staffImage {
+    height: 400px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .staffContent {
+    display: none;
+  }
+}
+
 .staffImage {
   cursor: pointer;
   height: 596px;
@@ -69,4 +81,9 @@
   padding: 2rem;
   pointer-events: all;
   width: 600px;
+}
+
+.communityFreeflow {
+  max-width: 800px;
+  margin: 2rem auto 0;
 }

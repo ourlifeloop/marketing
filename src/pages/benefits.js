@@ -19,9 +19,32 @@ import Button from '../primitives/button';
 
 import styles from './benefits.module.scss';
 
+const commuintyContent = (
+  <>
+    <h2>Communities</h2>
+    <p>
+      Provide your staff the tools they need to have purpose and success in
+      their careers. Utilizing the LifeLoop technology can assist with staff
+      retention and help you tell the story of each individual resident. By
+      investing in LifeLoop, you are ensuring that you can spend more one-on-one
+      time with your residents.
+    </p>
+    <p>
+      Additionally, community outreach and marketing initiatives can benefit
+      from LifeLoop by differentiating your community from the rest and
+      demonstrating your commitment to transparency and family communication.
+      The better you are at communicating with family members, the more willing
+      they are to recommend your community to family and friends.
+    </p>
+    <Link to="/features/activities">
+      <Button>View LifeLoop's Features</Button>
+    </Link>
+  </>
+);
+
 export default ({ data }) => {
   const [video, setVideo] = useState();
-  const { isMobile } = useDevice();
+  const { isMobile, isTablet } = useDevice();
 
   return (
     <SiteWrapper title="Keeping family, residents and staff conneceted and engaged | LifeLoop">
@@ -123,7 +146,9 @@ export default ({ data }) => {
         }
       />
       <Section>
-        <RelativeContainer>
+        <RelativeContainer
+          className={classNames({ [styles.staffMinimized]: isTablet })}
+        >
           <div
             onClick={() =>
               setVideo({
@@ -146,28 +171,18 @@ export default ({ data }) => {
               justify="center"
               className={styles.staffContent}
             >
-              <h2>Communities</h2>
-              <p>
-                Provide your staff the tools they need to have purpose and
-                success in their careers. Utilizing the LifeLoop technology can
-                assist with staff retention and help you tell the story of each
-                individual resident. By investing in LifeLoop, you are ensuring
-                that you can spend more one-on-one time with your residents.
-              </p>
-              <p>
-                Additionally, community outreach and marketing initiatives can
-                benefit from LifeLoop by differentiating your community from the
-                rest and demonstrating your commitment to transparency and
-                family communication. The better you are at communicating with
-                family members, the more willing they are to recommend your
-                community to family and friends.
-              </p>
-              <Link to="/features/activities">
-                <Button>View LifeLoop's Features</Button>
-              </Link>
+              {commuintyContent}
             </FlexContainer>
           </FlexContainer>
         </RelativeContainer>
+        {isTablet && (
+          <FlexContainer
+            direction="column"
+            className={styles.communityFreeflow}
+          >
+            {commuintyContent}
+          </FlexContainer>
+        )}
       </Section>
       <Testimonials
         testimonials={[
