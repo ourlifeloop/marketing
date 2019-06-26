@@ -26,19 +26,24 @@
       color: $primary-blue;
     }
 
+    .icon {
+      color: $primary-blue;
+      fill: $primary-blue;
+    }
+
     &:after {
       background: transparent;
       background: linear-gradient(
-        98deg,
+        95deg,
         $highlight 0%,
-        transparent 56%,
+        transparent 35%,
         transparent 100%
       );
       bottom: 0;
       content: '';
       left: 100%;
       position: absolute;
-      top: 0;
+      top: -3px;
       width: 18px;
       z-index: 1;
     }
@@ -47,8 +52,8 @@
 
 $icon-size: 50px;
 .icon {
-  color: $primary-blue;
-  fill: $primary-blue;
+  color: $text-meta;
+  fill: $text-meta;
   height: $icon-size;
   width: $icon-size;
 }

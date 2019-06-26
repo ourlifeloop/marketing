@@ -160,7 +160,7 @@ export const query = graphql`
       relativePath: { eq: "video-callout-connect-family.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 623) {
+        fluid(maxWidth: 620) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -169,7 +169,7 @@ export const query = graphql`
       relativePath: { eq: "video-callout-connect-residents.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 623) {
+        fluid(maxWidth: 620) {
           ...GatsbyImageSharpFluid
         }
       }

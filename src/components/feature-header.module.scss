@@ -15,12 +15,17 @@
     background-color: $background;
     border-top-color: $primary-blue;
 
+    .icon {
+      color: $primary-blue;
+      fill: $primary-blue;
+    }
+
     &:after {
       background: transparent;
       background: linear-gradient(
-        98deg,
+        95deg,
         $highlight 0%,
-        transparent 56%,
+        transparent 35%,
         transparent 100%
       );
       bottom: 0;
@@ -35,7 +40,8 @@
 
 $icon-size: 40px;
 .icon {
-  fill: $primary-blue;
+  color: $text-meta;
+  fill: $text-meta;
   height: $icon-size;
   width: $icon-size;
 }
