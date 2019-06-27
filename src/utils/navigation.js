@@ -1,3 +1,5 @@
+import { graphql } from 'gatsby';
+
 import calendar from '../assets/icons/calendar.svg';
 import displays from '../assets/icons/displays.svg';
 import family from '../assets/icons/family.svg';
@@ -17,7 +19,7 @@ export default {
         key: 'calendar',
         Icon: calendar,
         name: 'Activity Calendar',
-        link: '/features/activities',
+        link: '/features/activity-calendar',
         questions: [
           {
             question:

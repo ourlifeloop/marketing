@@ -36,7 +36,7 @@ const commuintyContent = (
       The better you are at communicating with family members, the more willing
       they are to recommend your community to family and friends.
     </p>
-    <Link to="/features/activities">
+    <Link to="/features/activity-calendar">
       <Button>View LifeLoop's Features</Button>
     </Link>
   </>
