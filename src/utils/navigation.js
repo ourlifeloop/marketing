@@ -578,7 +578,7 @@ export const testimonialImages = graphql`
     }
     countryHouse: file(relativePath: { eq: "logos/country-house-logo.png" }) {
       childImageSharp {
-        fixed(height: 130) {
+        fixed(height: 70) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -594,7 +594,11 @@ export const testimonialImages = graphql`
       }
     }
     firstPlace: file(relativePath: { eq: "logos/first-place-logo.png" }) {
-      ...testimonialImage
+      childImageSharp {
+        fixed(height: 80) {
+          ...GatsbyImageSharpFixed
+        }
+      }
     }
     kaplan: file(relativePath: { eq: "logos/kaplan-logo.png" }) {
       ...testimonialImage
@@ -607,7 +611,11 @@ export const testimonialImages = graphql`
       }
     }
     roseBlumkin: file(relativePath: { eq: "logos/rose-blumkin-logo.png" }) {
-      ...testimonialImage
+      childImageSharp {
+        fixed(height: 70) {
+          ...GatsbyImageSharpFixed
+        }
+      }
     }
     vetter: file(relativePath: { eq: "logos/vetter-logo.png" }) {
       childImageSharp {

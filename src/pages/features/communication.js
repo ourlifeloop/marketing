@@ -45,7 +45,7 @@ export default ({ data, location }) => (
       rightImage
       title="Customized Notifications"
       description="LifeLoop allows you to customize notifications and permissions based on each staff members individual preferences and needs. Notifications can be received as in-app notifications, texts and/or emails. Additionally, residents who are registered for an activity can receive a text message reminder 30 minutes before the activity takes place."
-      image={data.independence.childImageSharp.fluid}
+      image={data.notifications.childImageSharp.fluid}
     />
   </FeatureWrapper>
 );
@@ -77,6 +77,14 @@ export const query = graphql`
       }
     }
     independence: file(relativePath: { eq: "residents-independence.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 600) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+    notifications: file(relativePath: { eq: "customized-notifications.png" }) {
       childImageSharp {
         fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
