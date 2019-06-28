@@ -1,8 +1,8 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import classNames from 'classnames';
 
+import LifeloopBigLogo from '../assets/icons/lifeloop-big-logo.svg';
 import RelativeContainer from '../primitives/relative-container';
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
@@ -15,7 +15,7 @@ import TEAM from '../utils/team';
 import styles from './our-story.module.scss';
 
 export default ({ data }) => {
-  const { isMobile } = useDevice();
+  const { isMini, isMobile } = useDevice();
 
   return (
     <SiteWrapper title="Improving the care and overall experience of residents living in senior living communities | LifeLoop">
@@ -65,6 +65,28 @@ export default ({ data }) => {
             <Img fluid={data.story.childImageSharp.fluid} />
           </div>
         </FlexContainer>
+      </Section>
+      <Section>
+        <RelativeContainer
+          className={classNames(styles.missionContainer, {
+            [styles.missionContainerMobile]: isMini,
+          })}
+        >
+          <FlexContainer
+            flex="1"
+            direction="column"
+            align={isMini ? 'center' : 'flexstart'}
+            justify="center"
+            className={styles.missionInner}
+          >
+            <p className={styles.missionTitle}>OUR MISSION</p>
+            <p className={styles.mission}>
+              Keep senior living residents better connected to their
+              communities, their families and the world around them.
+            </p>
+          </FlexContainer>
+          <LifeloopBigLogo className={styles.missionLogo} />
+        </RelativeContainer>
       </Section>
       <TitleSection header="Our Team">
         <p>
