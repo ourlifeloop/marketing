@@ -43,10 +43,13 @@ export default function Footer() {
       <Layout>
         <FlexContainer
           justify="spacebetween"
-          align={isMobile ? 'flexstart' : 'center'}
+          align="center"
           direction={isMobile ? 'column' : 'row'}
         >
-          <FlexContainer direction="column">
+          <FlexContainer
+            direction="column"
+            align={isMobile ? 'center' : 'flexstart'}
+          >
             <FlexContainer>
               <a
                 className={styles.socialLink}
@@ -101,12 +104,7 @@ export default function Footer() {
               aria-label="LifeLoop Google Play"
               rel="noopener noreferrer"
             >
-              <Img
-                className={classNames(styles.appLinkImg, {
-                  [styles.appLinkImgMobile]: isMobile,
-                })}
-                fixed={google.childImageSharp.fixed}
-              />
+              <Img fixed={google.childImageSharp.fixed} />
             </a>
             <a
               className={styles.appLinkContainer}
@@ -115,12 +113,7 @@ export default function Footer() {
               aria-label="LifeLoop iOS App Store"
               rel="noopener noreferrer"
             >
-              <Img
-                className={classNames(styles.appLinkImg, {
-                  [styles.appLinkImgMobile]: isMobile,
-                })}
-                fixed={apple.childImageSharp.fixed}
-              />
+              <Img fixed={apple.childImageSharp.fixed} />
             </a>
           </FlexContainer>
         </FlexContainer>

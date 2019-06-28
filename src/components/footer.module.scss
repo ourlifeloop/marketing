@@ -10,6 +10,16 @@ $horizontal-padding: 1rem;
 
   &--mobile {
     height: 170px;
+
+    .link:last-of-type,
+    .socialLink:last-of-type,
+    .appLinkContainer:last-of-type {
+      margin-right: 0;
+    }
+
+    .appLinkContainer {
+      margin: $vertical-padding $horizontal-padding 0 0;
+    }
   }
 }
 
@@ -47,12 +57,5 @@ $social-size: 34px;
 
 .appLinkContainer {
   display: flex;
-}
-
-.appLinkImg {
   margin-left: $horizontal-padding;
-
-  &--mobile {
-    margin: $vertical-padding $horizontal-padding 0 0;
-  }
 }
