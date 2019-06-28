@@ -11,10 +11,11 @@
 
   &:last-of-type {
     margin-right: 0;
+    margin-bottom: 0;
   }
 
   &--vertical {
-    margin: 0;
+    margin: 0 0 2rem;
   }
 
   > p {
