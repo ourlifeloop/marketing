@@ -101,10 +101,12 @@ export default function Header({
     });
 
   const renderExternalLinks = () => (
-    <FlexContainer>
+    <FlexContainer justify="flexend">
       <a
         className={styles.minorLink}
         aria-label="LifeLoop Training"
+        target="_blank"
+        rel="noopener noreferrer"
         href="https://ourlifeloop.squarespace.com/training"
       >
         Training
@@ -112,6 +114,8 @@ export default function Header({
       <a
         className={styles.minorLink}
         aria-label="LifeLoop Login"
+        target="_blank"
+        rel="noopener noreferrer"
         href="https://ourlifeloop.com/login"
       >
         Login
@@ -149,61 +153,67 @@ export default function Header({
           )}
         </Helmet>
         <Layout>
-          <FlexContainer
-            justify="spacebetween"
-            className={styles.innerContainer}
-          >
-            <FlexContainer align="center">
-              <Link
-                className={classNames(styles.linkContainer)}
-                to="/"
-                aria-label="Lifeloop Home"
-              >
-                <Img
-                  fixed={logo.childImageSharp.fixed}
-                  className={styles.logoLink}
-                />
-              </Link>
-              {isDesktop && renderDesktopLinks()}
-            </FlexContainer>
-            <FlexContainer direction="column" justify="center" align="flexend">
-              {isDesktop && renderExternalLinks()}
+          <FlexContainer direction="column">
+            {isDesktop && renderExternalLinks()}
+            <FlexContainer
+              justify="spacebetween"
+              className={styles.innerContainer}
+            >
               <FlexContainer align="center">
-                {!isMobile && (
-                  <a
-                    className={styles.phone}
-                    href={`tel:${site.siteMetadata.phoneNumber}`}
-                  >
-                    Call us: <b>{site.siteMetadata.phoneNumber}</b>
-                  </a>
-                )}
-                {!isMini && (
-                  <Link to="/demo">
-                    <Button>Request a Demo</Button>
-                  </Link>
-                )}
-                {!isDesktop && (
-                  <FlexContainer
-                    align="center"
-                    className={classNames(styles.menuContainer, {
-                      [styles.menuContainerMini]: isMini,
-                    })}
-                  >
-                    {isNavOpen ? (
-                      <X
-                        className={styles.menu}
-                        size={50}
-                        onClick={() => setIsNavOpen(false)}
-                      />
-                    ) : (
-                      <Menu
-                        className={styles.menu}
-                        size={50}
-                        onClick={() => setIsNavOpen(true)}
-                      />
-                    )}
-                  </FlexContainer>
-                )}
+                <Link
+                  className={classNames(styles.linkContainer)}
+                  to="/"
+                  aria-label="Lifeloop Home"
+                >
+                  <Img
+                    fixed={logo.childImageSharp.fixed}
+                    className={styles.logoLink}
+                  />
+                </Link>
+                {isDesktop && renderDesktopLinks()}
+              </FlexContainer>
+              <FlexContainer
+                direction="column"
+                justify="center"
+                align="flexend"
+              >
+                <FlexContainer align="center">
+                  {!isMobile && (
+                    <a
+                      className={styles.phone}
+                      href={`tel:${site.siteMetadata.phoneNumber}`}
+                    >
+                      Call us: <b>{site.siteMetadata.phoneNumber}</b>
+                    </a>
+                  )}
+                  {!isMini && (
+                    <Link to="/demo">
+                      <Button>Request a Demo</Button>
+                    </Link>
+                  )}
+                  {!isDesktop && (
+                    <FlexContainer
+                      align="center"
+                      className={classNames(styles.menuContainer, {
+                        [styles.menuContainerMini]: isMini,
+                      })}
+                    >
+                      {isNavOpen ? (
+                        <X
+                          className={styles.menu}
+                          size={50}
+                          onClick={() => setIsNavOpen(false)}
+                        />
+                      ) : (
+                        <Menu
+                          className={styles.menu}
+                          size={50}
+                          onClick={() => setIsNavOpen(true)}
+                        />
+                      )}
+                    </FlexContainer>
+                  )}
+                </FlexContainer>
               </FlexContainer>
             </FlexContainer>
           </FlexContainer>

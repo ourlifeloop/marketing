@@ -36,7 +36,7 @@ $nav-height: calc(
   border-bottom: $border-height solid $background;
   box-shadow: 0px 0px 10px 0px $highlight;
   left: 0;
-  padding: $vertical-padding 0;
+  padding: $vertical-padding 0 0.3rem;
   position: fixed;
   right: 0;
   transition: box-shadow 0.2s linear;
@@ -79,7 +79,6 @@ $nav-height: calc(
   color: $text;
   font-size: 0.7rem;
   margin-left: 1.5rem;
-  margin-bottom: 0.4rem;
   text-decoration: none;
   transition: color 0.2s linear;
 
