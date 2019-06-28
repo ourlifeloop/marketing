@@ -3,9 +3,6 @@
 $vertical-padding: 0.6rem;
 $inner-height: 64px;
 $border-height: 1px;
-$nav-height: calc(
-  #{$inner-height} + #{$border-height} + #{$vertical-padding * 2}
-);
 
 .siteContainer {
   bottom: 0;
@@ -21,7 +18,7 @@ $nav-height: calc(
   overflow: auto;
   position: fixed;
   right: 0;
-  top: $nav-height;
+  top: 81px;
 
   &--transparent {
     top: 0;

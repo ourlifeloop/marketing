@@ -27,7 +27,7 @@ export default ({ data }) => {
   return (
     <SiteWrapper transparent>
       <HeroImage
-        height="600px"
+        height={isMobile ? '500px' : '600px'}
         className={styles.hero}
         objectPosition="30% 0%"
         image={data.hero.childImageSharp.fluid}

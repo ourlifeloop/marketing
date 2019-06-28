@@ -20,7 +20,7 @@ export default ({ data }) => {
   return (
     <SiteWrapper title="Improving the care and overall experience of residents living in senior living communities | LifeLoop">
       <HeroImage
-        height="500px"
+        height={isMobile ? '400px' : '500px'}
         image={data.hero.childImageSharp.fluid}
         direction="right"
         title="We Saw A Need."
