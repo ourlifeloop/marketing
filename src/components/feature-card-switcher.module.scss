@@ -103,10 +103,6 @@ $icon-size: 50px;
   margin: 0rem 2rem 0 3rem;
 }
 
-.mobileImage {
-  margin-top: 2rem;
-}
-
 .dropdownContainer {
   color: $text;
   cursor: pointer;
@@ -180,4 +176,21 @@ $icon-size: 40px;
   &:hover {
     color: $text-highlight;
   }
+}
+
+.mobileContainer {
+  margin-bottom: 3rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  * {
+    text-align: center;
+  }
+}
+
+.mobileImageContainer {
+  margin-top: 1rem;
+  width: 100%;
 }

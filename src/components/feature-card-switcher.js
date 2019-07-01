@@ -258,6 +258,31 @@ export default () => {
     }
   }, [numTabs]);
 
+  if (isMobile) {
+    const mobileFeatures = take(FEATURES, 3);
+    return (
+      <Section>
+        {mobileFeatures.map(({ name, headline, body, image, link }) => (
+          <FlexContainer
+            key={name}
+            direction="column"
+            align="center"
+            className={styles.mobileContainer}
+          >
+            <h4>{headline}</h4>
+            <p>{body}</p>
+            <Link to={link}>
+              <Button>{name}</Button>
+            </Link>
+            <div className={styles.mobileImageContainer}>
+              <Img fluid={photos[image].childImageSharp.fluid} />
+            </div>
+          </FlexContainer>
+        ))}
+      </Section>
+    );
+  }
+
   const selectedFeature = find(FEATURES, { key: selected });
   const { name, headline, body, bullets, image, link } = selectedFeature;
   const content = (
@@ -283,19 +308,13 @@ export default () => {
           <Button>Learn More About {name}</Button>
         </Link>
       </FlexContainer>
-      {isMobile ? (
-        <div className={styles.mobileImage}>
-          <Img fluid={photos[image].childImageSharp.fluid} />
-        </div>
-      ) : (
-        <FlexContainer flex="1">
-          <RelativeContainer className={styles.relativeContainer}>
-            <div className={styles.imageContainer}>
-              <Img fluid={photos[image].childImageSharp.fluid} />
-            </div>
-          </RelativeContainer>
-        </FlexContainer>
-      )}
+      <FlexContainer flex="1">
+        <RelativeContainer className={styles.relativeContainer}>
+          <div className={styles.imageContainer}>
+            <Img fluid={photos[image].childImageSharp.fluid} />
+          </div>
+        </RelativeContainer>
+      </FlexContainer>
     </>
   );
 
@@ -360,10 +379,7 @@ export default () => {
             </FlexContainer>
           )}
         </FlexContainer>
-        <FlexContainer
-          direction={isMobile ? 'column' : 'row'}
-          className={styles.contentContainer}
-        >
+        <FlexContainer direction="row" className={styles.contentContainer}>
           {content}
         </FlexContainer>
       </FlexContainer>
