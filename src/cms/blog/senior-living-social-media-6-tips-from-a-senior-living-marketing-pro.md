@@ -2,7 +2,7 @@
 date: 2019-06-24T18:05:12.571Z
 type: insights
 author: Andrea Clauson
-title: 'Senior living & social media: 6 tips from a senior living marketing pro'
+title: 'Senior Living & Social Media: 6 Tips from a Senior Living Marketing Pro'
 photo: /images/cms/copy-of-social-media-blog-graphic.png
 ---
 Amanda Arnouk, Marketing and Branding Manager at Vitality Living, has her work cut out for her. 
@@ -19,7 +19,7 @@ How on Earth are marketing teams — or sometimes, even, a single marketing pers
 
 In this post, Amanda shares the secrets that keep her sane, and make Vitality’s social media presence so successful.
 
-## 1 — Have systems and stick to them.
+## 1 — Have systems and stick to them
 
  Amanda’s system is her lifeline. 
 
@@ -35,7 +35,7 @@ Software is also crucial for organizing her work. Amanda herself uses Hubspot, a
 
 With Hubspot, Amanda can also get at-a-glance reports of Vitality’s monthly social media activities. She can see which communities are active online, and which ones have been quiet lately — so she can intervene.
 
-## 2 — Deal with tech discomfort.
+## 2 — Deal with tech discomfort
 
 Any digital marketer knows: regular updates are the pulse that keeps a social media presence alive.
 
@@ -51,7 +51,7 @@ Amanda sees part of her job as helping her colleagues through the social media p
 
 ## 
 
-3 - Get as close to the floor as possible. 
+## 3 - Get as close to the floor as possible
 
 To illustrate why it’s so important to get direct updates from individual communities, Amanda likes to talk about two different social media updates Vitality recently uploaded.
 
