@@ -159,7 +159,7 @@ const FEATURES = [
 
 export default () => {
   const { width } = useDimensions();
-  const { isMobile } = useDevice();
+  const { isMobile, isTablet } = useDevice();
   const [isOverflowOpen, setIsOverflowOpen] = useState(false);
   const [selected, setSelected] = useState(FEATURES[0].key);
 
@@ -290,31 +290,39 @@ export default () => {
       <FlexContainer
         flex="1"
         direction="column"
-        className={styles.textContainer}
+        align={isTablet ? 'center' : 'flexstart'}
+        className={classNames({ [styles.tabletText]: isTablet })}
       >
         <h4>{headline}</h4>
         <p>{body}</p>
-        {bullets.map(bullet => (
-          <FlexContainer
-            key={bullet}
-            align="center"
-            className={styles.bulletContainer}
-          >
-            <Check className={styles.check} />
-            <p className={styles.bullet}>{bullet}</p>
-          </FlexContainer>
-        ))}
+        {!isTablet &&
+          bullets.map(bullet => (
+            <FlexContainer
+              key={bullet}
+              align="center"
+              className={styles.bulletContainer}
+            >
+              <Check className={styles.check} />
+              <p className={styles.bullet}>{bullet}</p>
+            </FlexContainer>
+          ))}
         <Link to={link}>
           <Button>Learn More About {name}</Button>
         </Link>
       </FlexContainer>
-      <FlexContainer flex="1">
-        <RelativeContainer className={styles.relativeContainer}>
-          <div className={styles.imageContainer}>
-            <Img fluid={photos[image].childImageSharp.fluid} />
-          </div>
-        </RelativeContainer>
-      </FlexContainer>
+      {isTablet ? (
+        <div className={styles.tabletImage}>
+          <Img fluid={photos[image].childImageSharp.fluid} />
+        </div>
+      ) : (
+        <FlexContainer flex="1">
+          <RelativeContainer className={styles.relativeContainer}>
+            <div className={styles.imageContainer}>
+              <Img fluid={photos[image].childImageSharp.fluid} />
+            </div>
+          </RelativeContainer>
+        </FlexContainer>
+      )}
     </>
   );
 
@@ -379,7 +387,10 @@ export default () => {
             </FlexContainer>
           )}
         </FlexContainer>
-        <FlexContainer direction="row" className={styles.contentContainer}>
+        <FlexContainer
+          direction={isTablet ? 'column' : 'row'}
+          className={styles.contentContainer}
+        >
           {content}
         </FlexContainer>
       </FlexContainer>
