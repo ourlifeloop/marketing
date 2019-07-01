@@ -6,7 +6,6 @@ import TitleSection from '../../primitives/title.section';
 import ImageSection from '../../primitives/image-section';
 
 export default ({ data, location }) => {
-  console.log(data.efficiencies.childImageSharp.fluid);
   return (
     <FeatureWrapper
       pathname={location.pathname}

@@ -32,21 +32,17 @@ export const useScrollPosition = ({ lessThan } = {}) => {
 
 export const useResize = cb =>
   useEffect(() => {
-    if (typeof window === 'undefined') {
-      return;
-    }
+    cb();
     window.addEventListener('resize', cb);
     return () => window.removeEventListener('resize', cb);
   }, []);
 
 export const useDimensions = () => {
-  if (typeof window === 'undefined') {
-    return { width: 2000, height: 2000 };
-  }
   const [dimensions, setDimensions] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    height: 2000,
+    width: 2000,
   });
+
   useResize(
     debounce(
       () =>
@@ -57,6 +53,7 @@ export const useDimensions = () => {
       50,
     ),
   );
+
   return dimensions;
 };
 
