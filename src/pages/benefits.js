@@ -132,7 +132,6 @@ export default ({ data }) => {
               allowing you to get in touch with your loved ones caregivers
               across all levels.
             </p>
-            <p>Peace-of-mind, real time updates, communication</p>
           </FlexContainer>
         </FlexContainer>
       </Section>

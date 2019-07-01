@@ -57,7 +57,6 @@ export default () => {
       <FlexContainer>
         {take(posts.edges, numPosts).map(post => (
           <ArticleCard
-            small
             className={styles.article}
             key={post.node.fields.slug}
             link={post.node.fields.slug}

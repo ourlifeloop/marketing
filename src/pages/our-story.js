@@ -1,5 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import { graphql } from 'gatsby';
 import classNames from 'classnames';
 
 import LifeloopBigLogo from '../assets/icons/lifeloop-big-logo.svg';
