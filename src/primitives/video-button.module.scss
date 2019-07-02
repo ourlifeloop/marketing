@@ -1,0 +1,40 @@
+@import '../styles/theme';
+
+.videoBtn {
+  background-color: $background;
+  border: 1px solid $highlight;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px $highlight;
+  cursor: pointer;
+  transition: box-shadow 0.2s linear;
+
+  &:hover {
+    box-shadow: 0px 0px 16px 0px $primary-blue;
+  }
+}
+
+.videoBtnEmbed {
+  height: 85px;
+  pointer-events: none;
+  width: 158px;
+}
+
+$icon-size: 50px;
+.videoBtnIcon {
+  fill: $primary-blue;
+  height: $icon-size;
+  left: calc(50% - #{$icon-size / 2});
+  position: absolute;
+  top: calc(50% - #{$icon-size / 2});
+  width: $icon-size;
+}
+
+.videoBtnText {
+  padding: 0 1rem;
+
+  * {
+    color: $primary-blue;
+    font-size: 0.85rem;
+    margin: 0;
+  }
+}

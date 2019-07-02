@@ -11,6 +11,7 @@ import Testimonials from '../components/testimonials';
 import SiteWrapper from '../components/site-wrapper';
 import DemoSection from '../components/demo-section';
 import PlayIcon from '../assets/icons/icon-play.svg';
+import VideoButton from '../primitives/video-button';
 import VideoModal from '../primitives/video-modal';
 import HeroImage from '../primitives/hero-image';
 import { useDevice } from '../utils/effects';
@@ -50,12 +51,23 @@ export default ({ data }) => {
     <SiteWrapper title="Keeping family, residents and staff conneceted and engaged | LifeLoop">
       <HeroImage
         direction="right"
-        height="400px"
+        height={isMobile ? '400px' : '500px'}
         objectPosition="30% 30%"
         image={data.hero.childImageSharp.fluid}
         title="Set your community apart"
         description="LifeLoop is a proven sales & marketing tool for your community. Our platform will set your community apart from the rest by empowering staff, engaging families and impacting residents."
-      />
+      >
+        <VideoButton
+          text="LifeLoop: A proven marketing solution"
+          image={data.staffBenefits.childImageSharp.fluid}
+          onClick={() =>
+            setVideo({
+              link: 'https://www.youtube-nocookie.com/embed/bZcShIjmwAc',
+              title: 'LifeLoop: Set Your Community Appart',
+            })
+          }
+        />
+      </HeroImage>
       <TitleSection header="A solution for every department.">
         <p>
           LifeLoop is a full-service solution which allows your community to

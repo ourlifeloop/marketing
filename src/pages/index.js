@@ -4,14 +4,13 @@ import Img from 'gatsby-image';
 import classNames from 'classnames';
 
 import FeatureCardSwitcher from '../components/feature-card-switcher';
-import RelativeContainer from '../primitives/relative-container';
 import FlexContainer from '../primitives/flex-container';
 import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
 import Testimonials from '../components/testimonials';
 import DemoSection from '../components/demo-section';
 import SiteWrapper from '../components/site-wrapper';
-import PlayIcon from '../assets/icons/icon-play.svg';
+import VideoButton from '../primitives/video-button';
 import VideoModal from '../primitives/video-modal';
 import HeroImage from '../primitives/hero-image';
 import Section from '../primitives/section';
@@ -35,31 +34,16 @@ export default ({ data }) => {
         title="Enhancing Resident & Family Engagement Through Technology"
         description="Creating technology solutions to enhance the lives of residents, family members and the staff who care for them. LifeLoop is your innovative senior living solution."
       >
-        <FlexContainer
-          className={styles.videoBtn}
+        <VideoButton
+          text="Enhancing the lives of older adults"
+          image={data.benefitsCallout.childImageSharp.fluid}
           onClick={() =>
             setVideo({
               link: 'https://www.youtube-nocookie.com/embed/zOjOiZbJybM',
               title: 'Enhancing the lives of older adults',
             })
           }
-        >
-          <RelativeContainer>
-            <Img
-              className={styles.videoBtnEmbed}
-              fluid={data.benefitsCallout.childImageSharp.fluid}
-            />
-            <PlayIcon className={styles.videoBtnIcon} />
-          </RelativeContainer>
-          <FlexContainer
-            direction="column"
-            justify="center"
-            className={styles.videoBtnText}
-          >
-            <b>Enhancing the lives of older adults</b>
-            <p>Watch the Video</p>
-          </FlexContainer>
-        </FlexContainer>
+        />
       </HeroImage>
       <TitleSection header="A higher level of connection.">
         <p>
