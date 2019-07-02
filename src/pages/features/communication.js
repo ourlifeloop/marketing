@@ -86,7 +86,7 @@ export const query = graphql`
     }
     notifications: file(relativePath: { eq: "customized-notifications.png" }) {
       childImageSharp {
-        fluid(maxHeight: 600) {
+        fluid(maxHeight: 599) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
