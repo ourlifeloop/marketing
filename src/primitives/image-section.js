@@ -1,7 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 
 import FlexContainer from './flex-container';
 import Section from './section';
