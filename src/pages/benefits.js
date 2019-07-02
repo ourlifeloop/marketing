@@ -10,11 +10,11 @@ import TitleSection from '../primitives/title.section';
 import Testimonials from '../components/testimonials';
 import SiteWrapper from '../components/site-wrapper';
 import DemoSection from '../components/demo-section';
+import PlayIcon from '../assets/icons/icon-play.svg';
 import VideoModal from '../primitives/video-modal';
 import HeroImage from '../primitives/hero-image';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
-import { PlayCircle } from '../utils/icons';
 import Button from '../primitives/button';
 
 import styles from './benefits.module.scss';
@@ -163,7 +163,7 @@ export default ({ data }) => {
           </div>
           <FlexContainer className={styles.staffContainer}>
             <FlexContainer flex="1" align="center" justify="center">
-              <PlayCircle size={120} className={styles.staffPlayIcon} />
+              <PlayIcon width={120} className={styles.staffPlayIcon} />
             </FlexContainer>
             <FlexContainer
               direction="column"
