@@ -8,6 +8,10 @@
   }
 }
 
+.fullWidth {
+  text-align: center;
+}
+
 $margin: variableSize(10, 40);
 .rightImageText {
   margin-right: $margin;
@@ -19,4 +23,8 @@ $margin: variableSize(10, 40);
 
 .imgContainer {
   width: 60%;
+}
+
+.noMargin {
+  margin-top: 0;
 }

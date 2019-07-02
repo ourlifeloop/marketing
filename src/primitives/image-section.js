@@ -20,7 +20,30 @@ export default function ImageSection({
   const { isMobile } = useDevice();
 
   let content;
-  if (leftImage && !isMobile) {
+  if (isMobile || !(leftImage || rightImage)) {
+    return (
+      <>
+        <Section noTopPadding={!isMobile} noBottomPadding {...rest}>
+          <FlexContainer direction="column">
+            <Img
+              fluid={image}
+              className={styles.img}
+              styles={{
+                maxWidth: image.presentationWidth,
+                margin: '0 auto',
+              }}
+            />
+          </FlexContainer>
+        </Section>
+        <Section width="medium" noTopPadding className={styles.fullWidth}>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </Section>
+      </>
+    );
+  }
+
+  if (leftImage) {
     content = (
       <FlexContainer align="center">
         <div className={styles.imgContainer}>
@@ -43,7 +66,7 @@ export default function ImageSection({
         </FlexContainer>
       </FlexContainer>
     );
-  } else if (rightImage && !isMobile) {
+  } else {
     content = (
       <FlexContainer align="center">
         <FlexContainer
@@ -64,21 +87,6 @@ export default function ImageSection({
             }}
           />
         </div>
-      </FlexContainer>
-    );
-  } else {
-    content = (
-      <FlexContainer direction="column" className={classNames(styles.centered)}>
-        <Img
-          fluid={image}
-          className={styles.img}
-          styles={{
-            maxWidth: image.presentationWidth,
-            margin: '0 auto',
-          }}
-        />
-        <h3>{title}</h3>
-        <p>{description}</p>
       </FlexContainer>
     );
   }
