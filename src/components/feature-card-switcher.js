@@ -90,7 +90,7 @@ const FEATURES = [
     bullets: [
       'A full transportation management system',
       'Quickly filter requests by resident, driver, or vehicle',
-      'Accessible from any Apple or Android device making it easy to use no matter where you are',
+      'Accessible from any Apple or Android device',
       'Compatible with Google Maps',
     ],
   },
@@ -106,7 +106,7 @@ const FEATURES = [
     bullets: [
       'A full maintenance management system',
       'Quickly filter requests by crew member, resident, room number or community location',
-      'Accessible from any Apple or Android device making it easy to use no matter where you are',
+      'Accessible from any Apple or Android device',
     ],
   },
   {
@@ -134,7 +134,7 @@ const FEATURES = [
     body:
       'Family members lean on LifeLoop to keep them up-to-date on the lives and care of their loved ones no matter where they are. The family portal sparks a genuine connection between family members and staff members and helps foster communication between residents and their families.',
     bullets: [
-      'Capture and share special moments easily with the LifeLoop family portal and mobile app',
+      'Share special moments with the LifeLoop family portal and mobile app',
       'Get a real-time view into your loved one’s day',
       'Receive a weekly email with in-depth details on your loved one’s engagement',
       'Make transportation and maintenance requests easily from the portal or mobile app',

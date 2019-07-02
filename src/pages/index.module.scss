@@ -50,8 +50,19 @@
 }
 
 .videoBtnEmbed {
+  height: 85px;
   pointer-events: none;
   width: 158px;
+}
+
+$icon-size: 50px;
+.videoBtnIcon {
+  fill: $primary-blue;
+  height: $icon-size;
+  left: calc(50% - #{$icon-size / 2});
+  position: absolute;
+  top: calc(50% - #{$icon-size / 2});
+  width: $icon-size;
 }
 
 .videoBtnText {

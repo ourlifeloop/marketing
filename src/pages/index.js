@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import classNames from 'classnames';
-import ResponsiveEmbed from 'react-responsive-embed';
 
 import FeatureCardSwitcher from '../components/feature-card-switcher';
+import RelativeContainer from '../primitives/relative-container';
 import FlexContainer from '../primitives/flex-container';
 import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
 import Testimonials from '../components/testimonials';
 import DemoSection from '../components/demo-section';
 import SiteWrapper from '../components/site-wrapper';
+import PlayIcon from '../assets/icons/icon-play.svg';
 import VideoModal from '../primitives/video-modal';
 import HeroImage from '../primitives/hero-image';
 import Section from '../primitives/section';
@@ -43,12 +44,13 @@ export default ({ data }) => {
             })
           }
         >
-          <div className={styles.videoBtnEmbed}>
-            <ResponsiveEmbed
-              src="https://www.youtube-nocookie.com/embed/zOjOiZbJybM"
-              title="Enhancing the lives of older adults"
+          <RelativeContainer>
+            <Img
+              className={styles.videoBtnEmbed}
+              fluid={data.benefitsCallout.childImageSharp.fluid}
             />
-          </div>
+            <PlayIcon className={styles.videoBtnIcon} />
+          </RelativeContainer>
           <FlexContainer
             direction="column"
             justify="center"
@@ -61,11 +63,12 @@ export default ({ data }) => {
       </HeroImage>
       <TitleSection header="A higher level of connection.">
         <p>
-          We believe that quality community life extends far beyond the physical
-          walls of your facility. We believe that adapting technology solutions
-          can enhance the lives of your residents, their families and the staff
-          who care for them. We believe that we can help you tell the story of
-          your community with our custom-made senior living solutions.
+          At LifeLoop, we believe that quality community life extends far beyond
+          the physical walls of your facility. With the use of technology, we
+          have created a platform that can enhance the lives of your residents,
+          their families and the staff who care for them. Helping you tell the
+          story of your community with our custom-made senior living solutions
+          is truly our passion.
         </p>
         <p>
           LifeLoop was founded based on the need to better communicate and
@@ -190,6 +193,14 @@ export const query = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 623) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+    benefitsCallout: file(relativePath: { eq: "staff-benefits-callout.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 250) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
