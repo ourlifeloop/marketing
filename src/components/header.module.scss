@@ -18,7 +18,11 @@ $border-height: 1px;
   overflow: auto;
   position: fixed;
   right: 0;
-  top: 81px;
+  top: 100px;
+
+  &--tablet {
+    top: 81px;
+  }
 
   &--transparent {
     top: 0;

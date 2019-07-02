@@ -27,7 +27,7 @@ export default function Header({
   description,
   canonical,
 }) {
-  const { isDesktop, isMobile, isMini } = useDevice();
+  const { isDesktop, isTablet, isMobile, isMini } = useDevice();
   const previousIsDesktop = usePrevious(isDesktop);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [containerRef, scrollPosition] = useScrollPosition({
@@ -223,6 +223,7 @@ export default function Header({
         ref={containerRef}
         className={classNames(styles.contentContainer, {
           [styles.contentContainerTransparent]: transparent,
+          [styles.contentContainerTablet]: isTablet,
         })}
       >
         {children}
