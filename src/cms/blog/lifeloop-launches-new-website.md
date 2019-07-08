@@ -17,4 +17,4 @@ We introduced a range of new content on the website including detailed informati
 
 In addition, the new website features integrated social media buttons to our Facebook, Twitter and LinkedIn pages to foster continued communication with our clients. 
 
-With the launch of our new website, we are excited to introduce you to our new look. Pay us a visit here: [www.ourlifeloop.com](www.ourlifeloop.com)
+With the launch of our new website, we are excited to introduce you to our new look. Pay us a visit here: [ourlifeloop.com](www.ourlifeloop.com)
