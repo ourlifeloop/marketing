@@ -11,7 +11,7 @@ The new website is interactive and gives better access to features, benefits, cu
 
 ![](/images/cms/new-website-social-media-quote-amy.png)
 
-“Our goal with the new website is to provide our prospective customers an easier way to learn about LifeLoop’s services and solutions,” said LifeLoop Co-founder and President Amy Johnson. “The new website provides a clear image of who we are, what we do and where our value lies in the senior living space.”
+“Our goal with the new website is to provide our prospective customers an easier way to learn about LifeLoop’s services and solutions,” said LifeLoop Co-founder and CEO Amy Johnson. “The new website provides a clear image of who we are, what we do and where our value lies in the senior living space.”
 
 We introduced a range of new content on the website including detailed information on the features that LifeLoop provides to our customers and easy access to videos, our industry blog and the FAQ’s we receive the most. 
 
