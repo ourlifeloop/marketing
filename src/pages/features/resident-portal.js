@@ -21,7 +21,7 @@ export default ({ data, location }) => (
     <ImageSection
       rightImage
       title="Maximize Their Independence"
-      description="Within the senior living industry, it is widely acknowledged that engaging the resident and their family members with technology can have positive impact on the life of the resident, help alleviate social isolation and give your community a competitive edge."
+      description="Within the senior living industry, it is widely acknowledged that engaging the resident and their family members with technology can have a positive impact on the life of the resident, help alleviate social isolation and give your community a competitive edge."
       image={data.independence.childImageSharp.fluid}
     />
     <ImageSection

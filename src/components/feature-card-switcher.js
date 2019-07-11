@@ -117,7 +117,7 @@ const FEATURES = [
     headline: 'Maximize their independence',
     image: 'independence',
     body:
-      'Engaging residents and their family members with technology can have positive impact on the life of the resident, help alleviate social isolation and give your community a competitive edge.',
+      'Engaging residents and their family members with technology can have a positive impact on the life of the resident, help alleviate social isolation and give your community a competitive edge.',
     bullets: [
       'Simplistic design and easy to navigate',
       'Can be used on desktops, laptops, tables or mobile phones',
