@@ -59,7 +59,7 @@ const FEATURES = [
       'Easily quantify your life enrichment',
       'Metrics can be shared with family and assist in care plans',
       'Create workflow efficiencies and slash documentation time in half',
-      'A trusted-HIPPA compliant platform',
+      'A trusted-HIPAA compliant platform',
     ],
   },
   {

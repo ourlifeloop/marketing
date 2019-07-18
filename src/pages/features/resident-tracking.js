@@ -48,9 +48,9 @@ export default ({ data, location }) => {
       />
       <ImageSection
         leftImage
-        title="A Trusted, HIPPA Compliant Platform"
-        description="Keep all of your information in one, trusted location, accessible through one entry point. LifeLoop is fully complaint with HIPPA and can integrate with your clinical software."
-        image={data.hippa.childImageSharp.fluid}
+        title="A Trusted, HIPAA Compliant Platform"
+        description="Keep all of your information in one, trusted location, accessible through one entry point. LifeLoop is fully complaint with HIPAA and can integrate with your clinical software."
+        image={data.hipaa.childImageSharp.fluid}
       />
     </FeatureWrapper>
   );
@@ -74,7 +74,7 @@ export const query = graphql`
         }
       }
     }
-    hippa: file(relativePath: { eq: "hippa-compliant.png" }) {
+    hipaa: file(relativePath: { eq: "hipaa-compliant.png" }) {
       childImageSharp {
         fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
