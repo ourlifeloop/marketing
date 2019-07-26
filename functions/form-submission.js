@@ -25,7 +25,7 @@ exports.handler = event => {
 
   return transport
     .sendMail({
-      from: form.email || 'do_not_reply@ourlifeloop.com',
+      from: 'do_not_reply@ourlifeloop.com',
       to: targetEmail,
       subject: form.subject || 'Form Submission - Marketing',
       html: map(form, (value, key) => `<p>${key}: ${value}</p>`).join(''),
