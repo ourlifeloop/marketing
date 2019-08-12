@@ -41,6 +41,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-gtag',
+      options: {
+        trackingId: 'UA-56344911-1',
+        head: false,
+        anonymize: true,
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-favicon',
     'gatsby-plugin-react-svg',
