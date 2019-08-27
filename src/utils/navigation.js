@@ -119,7 +119,7 @@ export default {
           {
             logo: 'nye',
             quote:
-              'The display feature on LifeLoop is convenient and effective when it comes to keeping residents informed.  I’m able to be at my desk and put an announcement up that will be live throughout the building within 5 minutes.  It’s really incredible!  We also just started utilizing the display feature for our break room, so Team Members can stay informed as well.',
+              'The display feature on LifeLoop is convenient and effective when it comes to keeping residents informed.  I’m able to be at my desk and put an announcement up that will be live throughout the building within 5 minutes.  It’s really incredible!  We also just started utilizing the display feature for our break room, so Team Members can stay informed as well.',
             author: 'Hannah Langdon',
             position: 'Director of Life Enrichment',
           },
@@ -173,7 +173,7 @@ export default {
           {
             logo: 'vetter',
             quote:
-              'By utilizing LifeLoop in my community I have been able to save time, and as a result, added more one-to-ones with our residents, resulting in improved engagement and quality of life. I recommend LifeLoop to all Long Term Care Communities!',
+              'By utilizing LifeLoop in my community I have been able to save time, and as a result, added more one-to-ones with our residents, resulting in improved engagement and quality of life. I recommend LifeLoop to all Long Term Care Communities!',
             author: 'Courtney Schmitz',
             position: 'Life Enrichment Coordinator',
           },
@@ -187,7 +187,7 @@ export default {
           {
             logo: 'roseBlumkin',
             quote:
-              'LifeLoop has given our community a tool that has helped streamline our Life Enrichment program. Due to the easy-to-use features, the Life Enrichment team now has the data to help tell the story of each resident and their needs. In addition, the program has created efficiencies allowing us to spend more one-on-one time with residents — which is priceless.',
+              'LifeLoop has given our community a tool that has helped streamline our Life Enrichment program. Due to the easy-to-use features, the Life Enrichment team now has the data to help tell the story of each resident and their needs. In addition, the program has created efficiencies allowing us to spend more one-on-one time with residents — which is priceless.',
             author: 'Director of Activities',
             position: 'Rose Blumkin Jewish Home',
           },
@@ -296,7 +296,7 @@ export default {
           {
             logo: 'dial',
             quote:
-              'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
+              'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
             author: 'Lisa Moes',
             position: 'Director of Corporate Initiatives',
           },
@@ -362,7 +362,7 @@ export default {
           {
             logo: 'dial',
             quote:
-              'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
+              'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
             author: 'Lisa Moes',
             position: 'Director of Corporate Initiatives',
           },
@@ -459,7 +459,7 @@ export default {
           {
             logo: 'cascadia',
             quote:
-              'LifeLoop’s valuable to us because the present and the future of our industry is to keep family members more and more involved in our residents’ lives. Family members are naturally curious about what’s going on with their loved ones, and LifeLoop is both a proactive and reactive way of helping with that.',
+              'LifeLoop’s valuable to us because the present and the future of our industry is to keep family members more and more involved in our residents’ lives. Family members are naturally curious about what’s going on with their loved ones, and LifeLoop is both a proactive and reactive way of helping with that.',
             author: 'Thomas Cloutier',
             position: 'Cascadia Vice President of Operations',
           },
@@ -517,7 +517,7 @@ export default {
           {
             logo: 'aksarben',
             quote:
-              'This past week I was talking with a resident’s brother who travels internationally for work.  He reminded me that one big factor in choosing Aksarben Village Retirement for his sister’s care was the weekly update emails he would receive from LifeLoop!',
+              'This past week I was talking with a resident’s brother who travels internationally for work.  He reminded me that one big factor in choosing Aksarben Village Retirement for his sister’s care was the weekly update emails he would receive from LifeLoop!',
             author: 'Danielle Knudson',
             position: 'Marketing Director',
           },
@@ -557,81 +557,45 @@ export default {
 export const testimonialImages = graphql`
   fragment testimonialImage on File {
     childImageSharp {
-      fixed(height: 150) {
+      fixed(height: 128) {
         ...GatsbyImageSharpFixed
       }
     }
   }
 
   fragment testimonialImages on Query {
-    aksarben: file(relativePath: { eq: "logos/aksarben-logo.png" }) {
-      childImageSharp {
-        fixed(height: 87) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    cascadia: file(relativePath: { eq: "logos/cascadia-logo.png" }) {
-      childImageSharp {
-        fixed(height: 102) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    countryHouse: file(relativePath: { eq: "logos/country-house-logo.png" }) {
-      childImageSharp {
-        fixed(height: 70) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    dial: file(relativePath: { eq: "logos/dial-logo.png" }) {
+    aksarben: file(relativePath: { eq: "logos/aksarben-logo.jpg" }) {
       ...testimonialImage
     }
-    fieldstone: file(relativePath: { eq: "logos/fieldstone-logo.png" }) {
-      childImageSharp {
-        fixed(height: 60) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    firstPlace: file(relativePath: { eq: "logos/first-place-logo.png" }) {
-      childImageSharp {
-        fixed(height: 80) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    kaplan: file(relativePath: { eq: "logos/kaplan-logo.png" }) {
+    cascadia: file(relativePath: { eq: "logos/cascadia-logo.jpg" }) {
       ...testimonialImage
     }
-    nye: file(relativePath: { eq: "logos/nye-logo.png" }) {
-      childImageSharp {
-        fixed(height: 107) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+    countryHouse: file(relativePath: { eq: "logos/country-house-logo.jpg" }) {
+      ...testimonialImage
     }
-    roseBlumkin: file(relativePath: { eq: "logos/rose-blumkin-logo.png" }) {
-      childImageSharp {
-        fixed(height: 70) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+    dial: file(relativePath: { eq: "logos/dial-logo.jpg" }) {
+      ...testimonialImage
     }
-    vetter: file(relativePath: { eq: "logos/vetter-logo.png" }) {
-      childImageSharp {
-        fixed(height: 84) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+    fieldstone: file(relativePath: { eq: "logos/fieldstone-logo.jpg" }) {
+      ...testimonialImage
     }
-    lifeloop: file(relativePath: { eq: "lifeloop-logo.png" }) {
-      childImageSharp {
-        fixed(height: 46) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+    firstPlace: file(relativePath: { eq: "logos/first-place-logo.jpg" }) {
+      ...testimonialImage
+    }
+    kaplan: file(relativePath: { eq: "logos/kaplan-logo.jpg" }) {
+      ...testimonialImage
+    }
+    nye: file(relativePath: { eq: "logos/nye-logo.jpg" }) {
+      ...testimonialImage
+    }
+    roseBlumkin: file(relativePath: { eq: "logos/rose-blumkin-logo.jpg" }) {
+      ...testimonialImage
+    }
+    vetter: file(relativePath: { eq: "logos/vetter-logo.jpg" }) {
+      ...testimonialImage
+    }
+    lifeloop: file(relativePath: { eq: "lifeloop-logo.jpg" }) {
+      ...testimonialImage
     }
   }
 `;
