@@ -594,7 +594,7 @@ export const testimonialImages = graphql`
     vetter: file(relativePath: { eq: "logos/vetter-logo.jpg" }) {
       ...testimonialImage
     }
-    lifeloop: file(relativePath: { eq: "lifeloop-logo.jpg" }) {
+    lifeloop: file(relativePath: { eq: "lifeloop-logo.png" }) {
       ...testimonialImage
     }
   }
