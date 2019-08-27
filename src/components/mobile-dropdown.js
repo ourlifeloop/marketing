@@ -36,7 +36,7 @@ export default function MobileDropdown({ isOpen }) {
     >
       <div className={styles.innerContainer}>
         <Layout>
-          <FlexContainer direction="column">
+          <FlexContainer direction="column" className={styles.layout}>
             {map(NAVIGATION, ({ key, name, link, subNav }) => {
               if (!subNav) {
                 return (
