@@ -94,6 +94,13 @@ export default function Footer() {
               >
                 Privacy Policy
               </Link>
+              <Link
+                className={styles.link}
+                to="/accessibility"
+                aria-label="Accessibility Statement"
+              >
+                Accessibility Statement
+              </Link>
             </FlexContainer>
           </FlexContainer>
           <FlexContainer wrap>
