@@ -27,7 +27,7 @@
     transition: box-shadow 0.2s linear;
 
     &:hover {
-      box-shadow: 0px 0px 16px 0px $highlight;
+      box-shadow: 0px 0px 16px 0px $text-meta;
     }
   }
 }
