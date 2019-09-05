@@ -19,7 +19,7 @@ export default ({ data }) => {
   return (
     <SiteWrapper>
       <Layout>
-        <Section width="medium">
+        <Section fullHeight width="medium">
           <h1>Accessibility Statement</h1>
           <p>
             LifeLoop, LLC ("LifeLoop") is committed to ensuring digital

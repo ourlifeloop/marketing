@@ -20,11 +20,12 @@
   }
 
   &--fullHeight {
-    height: calc(100vh - 197px);
+    height: calc(100vh - 210px);
+    overflow-y: auto;
   }
 
   &--fullHeightMobile {
-    height: calc(100vh - 257px);
+    height: calc(100vh - 251px);
   }
 }
 
