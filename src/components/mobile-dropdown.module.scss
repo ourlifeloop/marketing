@@ -22,6 +22,10 @@ $border: 1px solid $highlight;
   overflow: auto;
 }
 
+.layout {
+  margin-bottom: 4rem;
+}
+
 .link {
   border-bottom: $border;
   color: $text;

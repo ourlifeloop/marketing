@@ -85,7 +85,7 @@ Another use for engagement is more business-oriented — it’s an important val
 
 ## 
 
-5 — An underrated channel — Google Maps
+## 5 — An underrated channel — Google Maps
 
  Finally, Amanda shares a tip for a platform she thinks communities don’t use enough: Google Maps.
 
