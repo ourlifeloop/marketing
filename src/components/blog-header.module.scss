@@ -18,7 +18,8 @@
 .link {
   border-bottom: 2px solid transparent;
   color: $text;
-  margin-left: variableSize(10, 40);
+  font-size: variableSize(14, 17);
+  margin-left: variableSize(5, 25);
   padding: 0.2rem 0.3rem 0;
   transition: color 0.2s linear;
 

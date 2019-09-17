@@ -14,6 +14,7 @@ const BLOG_TYPES = [
   { label: 'Latest', value: '/blog/latest' },
   { label: 'Customer Spotlight', value: '/blog/customer-spotlight' },
   { label: 'Industry Insights', value: '/blog/industry-insights' },
+  { label: 'Case Studies', value: '/blog/case-studies' },
   { label: 'News', value: '/blog/news' },
 ];
 
