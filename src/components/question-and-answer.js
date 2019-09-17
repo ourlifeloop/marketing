@@ -8,7 +8,7 @@ import { ChevronDown } from '../utils/icons';
 
 import styles from './question-and-answer.module.scss';
 
-const qnaItem = ({ question, answer }) => {
+const QnaItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <FlexContainer
@@ -36,7 +36,7 @@ const qnaItem = ({ question, answer }) => {
 export default function QuestionAndAnswer({ questions }) {
   return (
     <TitleSection header="Want to know more? Read our FAQ's below.">
-      {questions.map(qnaItem)}
+      {questions.map(QnaItem)}
     </TitleSection>
   );
 }

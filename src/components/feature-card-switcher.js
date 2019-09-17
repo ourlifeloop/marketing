@@ -256,7 +256,7 @@ export default () => {
     if (isOverflowOpen) {
       setIsOverflowOpen(false);
     }
-  }, [numTabs]);
+  }, [numTabs, isOverflowOpen]);
 
   if (isMobile) {
     const mobileFeatures = take(FEATURES, 3);
