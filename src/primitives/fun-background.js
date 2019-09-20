@@ -6,6 +6,9 @@ import { random } from '../utils/lodash';
 const DENSITY_MOD = 20000;
 
 const getPixelRatio = () => {
+  if (!document) {
+    return 1;
+  }
   const canvas = document.createElement('canvas');
   const ctx = canvas.getContext('2d');
   const dpr = window.devicePixelRatio || 1;
