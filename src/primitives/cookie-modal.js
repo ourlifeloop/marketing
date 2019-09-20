@@ -2,13 +2,14 @@ import React from 'react';
 import classNames from 'classnames';
 import { Link } from 'gatsby';
 
+import { useDevice, useCookiePopup } from '../utils/effects';
 import FlexContainer from '../primitives/flex-container';
 import Button from '../primitives/button';
-import { useDevice } from '../utils/effects';
 
 import styles from './cookie-modal.module.scss';
 
-export default ({ isOpen, onClose }) => {
+export default () => {
+  const { isOpen, onClose } = useCookiePopup();
   const { isMobile } = useDevice();
   return (
     <FlexContainer

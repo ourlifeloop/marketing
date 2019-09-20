@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import { useState, useEffect, useRef } from 'react';
+import localForage from 'localforage';
 
 import { debounce } from './lodash';
 
@@ -66,4 +67,23 @@ export const useDevice = () => {
   const isMini = width <= 500;
   const isDesktop = !isTablet;
   return { isMini, isTablet, isMobile, isDesktop };
+};
+
+const COOKIE_KEY = 'cookie_accepted';
+export const useCookiePopup = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    localForage.getItem(COOKIE_KEY).then(value => {
+      if (!value) {
+        setIsOpen(true);
+      }
+    });
+  }, []);
+
+  const onClose = () => {
+    setIsOpen(false);
+    localForage.setItem(COOKIE_KEY, new Date().toISOString());
+  };
+
+  return { isOpen, onClose };
 };

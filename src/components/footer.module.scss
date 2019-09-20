@@ -1,4 +1,5 @@
 @import '../styles/theme';
+@import '../styles/utils';
 
 $vertical-padding: 0.8rem;
 $horizontal-padding: 1rem;
@@ -25,7 +26,7 @@ $horizontal-padding: 1rem;
 
 .link {
   color: $text-light;
-  font-size: 0.8rem;
+  font-size: variableSize(12, 15);
   margin-right: $horizontal-padding;
   text-decoration: none;
   transition: color 0.2s linear;
