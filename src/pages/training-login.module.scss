@@ -12,10 +12,10 @@ $margin: variableSize(10, 50);
 .inner {
   background-color: $background;
   box-shadow: 0px 0px 10px 0px $text-blue;
-  height: calc(100% - #{$margin} - #{$margin});
+  height: calc(100vh - #{$margin} - #{$margin});
   margin: $margin;
   padding: 1rem;
-  width: calc(100% - #{$margin} - #{$margin});
+  width: calc(100vw - #{$margin} - #{$margin});
 }
 
 .lockContainer {
