@@ -2,7 +2,10 @@
 
 import { useState, useEffect, useRef } from 'react';
 import localForage from 'localforage';
+import { navigate } from 'gatsby';
+import dayjs from 'dayjs';
 
+import { getParameterByName } from './common';
 import { debounce } from './lodash';
 
 export const usePrevious = value => {
@@ -86,4 +89,46 @@ export const useCookiePopup = () => {
   };
 
   return { isOpen, onClose };
+};
+
+const AUTH_KEY = 'authenticated';
+const TOKEN = '85B67D636BFCC4A9E88B615B3199F';
+const PASS = 'intheloop';
+const isValidAuth = key =>
+  key &&
+  dayjs(key)
+    .add(1, 'week')
+    .isAfter(dayjs());
+
+export const useTrainingGate = () =>
+  useEffect(() => {
+    const queryPassword = getParameterByName('token');
+    localForage.getItem(AUTH_KEY).then(value => {
+      if (isValidAuth(value)) {
+        return;
+      }
+      if (queryPassword === TOKEN) {
+        localForage.setItem(AUTH_KEY, new Date().toISOString());
+      } else {
+        navigate('/training-login');
+      }
+    });
+  }, []);
+
+export const useTrainingAuth = () => {
+  useEffect(() => {
+    localForage.getItem(AUTH_KEY).then(value => {
+      if (isValidAuth(value)) {
+        navigate('/training');
+      }
+    });
+  }, []);
+
+  return value => {
+    if (value === PASS) {
+      localForage.setItem(AUTH_KEY, new Date().toISOString()).then(() => {
+        navigate('/training');
+      });
+    }
+  };
 };

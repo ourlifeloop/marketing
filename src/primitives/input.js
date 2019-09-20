@@ -22,6 +22,7 @@ export default function Input({ className, isError, type, ...rest }) {
   return (
     <input
       {...rest}
+      type={type}
       className={classNames(styles.input, className, {
         [styles.inputError]: isError,
       })}

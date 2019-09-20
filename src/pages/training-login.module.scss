@@ -1,0 +1,41 @@
+@import '../styles/theme';
+@import '../styles/utils';
+
+.container {
+  background-color: $primary-blue;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+$margin: variableSize(10, 50);
+.inner {
+  background-color: $background;
+  box-shadow: 0px 0px 10px 0px $text-blue;
+  height: calc(100% - #{$margin} - #{$margin});
+  margin: $margin;
+  padding: 1rem;
+  width: calc(100% - #{$margin} - #{$margin});
+}
+
+.lockContainer {
+  background-color: $background-dark;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  padding: 0.4rem 0.7rem;
+}
+
+.lock {
+  color: $background;
+  margin-top: 0.2rem;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+
+.input {
+  margin-bottom: 1rem;
+  max-width: 250px;
+  width: 100%;
+}
