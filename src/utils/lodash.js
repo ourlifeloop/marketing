@@ -4,6 +4,7 @@ import debounce from 'lodash/debounce';
 import endsWith from 'lodash/endsWith';
 import find from 'lodash/find';
 import map from 'lodash/map';
+import random from 'lodash/random';
 import startsWith from 'lodash/startsWith';
 import take from 'lodash/take';
 import takeRight from 'lodash/takeRight';
@@ -17,6 +18,7 @@ export {
   endsWith,
   find,
   map,
+  random,
   startsWith,
   take,
   takeRight,

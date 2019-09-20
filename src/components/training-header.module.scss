@@ -2,39 +2,15 @@
 @import '../styles/utils';
 
 $vertical-padding: 0.6rem;
-$inner-height: 66px;
 $border-height: 1px;
 
-.siteContainer {
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-}
-
-.contentContainer {
-  bottom: 0;
-  left: 0;
-  overflow: auto;
-  position: fixed;
-  right: 0;
-  top: 100px;
-}
-
 .innerContainer {
-  height: $inner-height;
+  margin: 0.5rem 0;
 }
 
 .header {
-  background-color: $background-medium;
-  box-shadow: 0px 0px 10px 0px $highlight;
-  left: 0;
   padding: $vertical-padding 0 0.3rem;
-  position: fixed;
-  right: 0;
-  transition: box-shadow 0.2s linear;
-  z-index: 100;
+  position: relative;
 }
 
 .logo {

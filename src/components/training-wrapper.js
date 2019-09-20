@@ -11,11 +11,12 @@ export default function TrainingWrapper({ children, ...rest }) {
   useTrainingGate();
 
   return (
-    <TrainingHeader {...rest}>
+    <>
+      <TrainingHeader {...rest} />
       {children}
       <Footer />
       <CookieModal />
-    </TrainingHeader>
+    </>
   );
 }
 
