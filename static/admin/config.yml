@@ -53,6 +53,10 @@ collections:
           - { label: Displays, value: displays }
           - { label: Resident Portal, value: resident-portal }
           - { label: Family Portal, value: family-portal }
+          - { label: Staff Management, value: staff-management }
+          - { label: Reporting, value: reporting }
+          - { label: Calendar Designer, value: calendar-designer }
+          - { label: Connections, value: connections }
 
   - name: tutorial-documents
     label: Tutorial Documents
@@ -77,6 +81,10 @@ collections:
           - { label: Displays, value: displays }
           - { label: Resident Portal, value: resident-portal }
           - { label: Family Portal, value: family-portal }
+          - { label: Staff Management, value: staff-management }
+          - { label: Reporting, value: reporting }
+          - { label: Calendar Designer, value: calendar-designer }
+          - { label: Connections, value: connections }
 
   - name: tutorial-faqs
     label: Tutorial FAQs
@@ -101,3 +109,7 @@ collections:
           - { label: Displays, value: displays }
           - { label: Resident Portal, value: resident-portal }
           - { label: Family Portal, value: family-portal }
+          - { label: Staff Management, value: staff-management }
+          - { label: Reporting, value: reporting }
+          - { label: Calendar Designer, value: calendar-designer }
+          - { label: Connections, value: connections }
