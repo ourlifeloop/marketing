@@ -3,14 +3,22 @@ import Img from 'gatsby-image';
 import { Link, graphql } from 'gatsby';
 
 import TrainingWrapper from '../components/training-wrapper';
+import { uniq, flatten, includes } from '../utils/lodash';
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
+import TRAINING_TOPICS from '../utils/training-topics';
 import Section from '../primitives/section';
 import Button from '../primitives/button';
 
 import styles from './training.module.scss';
 
 export default ({ data }) => {
+  const topics = uniq(
+    flatten(
+      data.allMarkdownRemark.edges.map(edge => edge.node.frontmatter.topics),
+    ),
+  );
+
   return (
     <TrainingWrapper
       header={
@@ -34,46 +42,14 @@ export default ({ data }) => {
       <Section width="medium">
         <h2 className={styles.topicHeader}>Browse by Topic</h2>
         <FlexContainer flex="1" wrap>
-          <Link to="/training/getting-started" className={styles.topic}>
-            <Img fluid={data.gettingStarted.childImageSharp.fluid} />
-            <span>Getting Started</span>
-          </Link>
-          <Link to="/training/activity-calendar" className={styles.topic}>
-            <Img fluid={data.calendar.childImageSharp.fluid} />
-            <span>Activity Calendar</span>
-          </Link>
-          <Link to="/training/resident-management" className={styles.topic}>
-            <Img fluid={data.reports.childImageSharp.fluid} />
-            <span>Resident Management</span>
-          </Link>
-          <Link to="/training/photos" className={styles.topic}>
-            <Img fluid={data.photos.childImageSharp.fluid} />
-            <span>Photos</span>
-          </Link>
-          <Link to="/training/messaging" className={styles.topic}>
-            <Img fluid={data.messages.childImageSharp.fluid} />
-            <span>Messaging</span>
-          </Link>
-          <Link to="/training/maintenance" className={styles.topic}>
-            <Img fluid={data.maintenance.childImageSharp.fluid} />
-            <span>Maintenance</span>
-          </Link>
-          <Link to="/training/transportation" className={styles.topic}>
-            <Img fluid={data.transportation.childImageSharp.fluid} />
-            <span>Transportation</span>
-          </Link>
-          <Link to="/training/displays" className={styles.topic}>
-            <Img fluid={data.displays.childImageSharp.fluid} />
-            <span>Displays</span>
-          </Link>
-          <Link to="/training/resident-portal" className={styles.topic}>
-            <Img fluid={data.residents.childImageSharp.fluid} />
-            <span>Resident Portal</span>
-          </Link>
-          <Link to="/training/family-portal" className={styles.topic}>
-            <Img fluid={data.family.childImageSharp.fluid} />
-            <span>Family Portal</span>
-          </Link>
+          {TRAINING_TOPICS.filter(({ key }) => includes(topics, key)).map(
+            ({ key, name, image }) => (
+              <Link key={key} to={`/training/${key}`} className={styles.topic}>
+                <Img fluid={data[image].childImageSharp.fluid} />
+                <span>{name}</span>
+              </Link>
+            ),
+          )}
         </FlexContainer>
       </Section>
     </TrainingWrapper>
@@ -81,44 +57,16 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  fragment featureImage on File {
-    childImageSharp {
-      fluid(maxWidth: 186) {
-        ...GatsbyImageSharpFluid
+  query {
+    allMarkdownRemark(filter: { fields: { slug: { regex: "^/training/" } } }) {
+      edges {
+        node {
+          frontmatter {
+            topics
+          }
+        }
       }
     }
-  }
-
-  query {
-    calendar: file(relativePath: { eq: "features/calendar.png" }) {
-      ...featureImage
-    }
-    displays: file(relativePath: { eq: "features/displays.png" }) {
-      ...featureImage
-    }
-    family: file(relativePath: { eq: "features/family.png" }) {
-      ...featureImage
-    }
-    gettingStarted: file(relativePath: { eq: "features/getting-started.png" }) {
-      ...featureImage
-    }
-    maintenance: file(relativePath: { eq: "features/maintenance.png" }) {
-      ...featureImage
-    }
-    messages: file(relativePath: { eq: "features/messages.png" }) {
-      ...featureImage
-    }
-    photos: file(relativePath: { eq: "features/photos.png" }) {
-      ...featureImage
-    }
-    reports: file(relativePath: { eq: "features/reports.png" }) {
-      ...featureImage
-    }
-    residents: file(relativePath: { eq: "features/residents.png" }) {
-      ...featureImage
-    }
-    transportation: file(relativePath: { eq: "features/transportation.png" }) {
-      ...featureImage
-    }
+    ...trainingImages
   }
 `;
