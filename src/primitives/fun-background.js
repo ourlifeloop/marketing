@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 
 import styles from './fun-background.module.scss';
 import { random } from '../utils/lodash';
 
-const DENSITY_MOD = 20000;
+const DENSITY_MOD = 1.2;
 
 const getPixelRatio = () => {
-  if (!document) {
+  if (typeof document === 'undefined' || !document.createElement) {
     return 1;
   }
   const canvas = document.createElement('canvas');
@@ -22,8 +23,11 @@ const getPixelRatio = () => {
   return dpr / bsr;
 };
 
-const getRandomPosition = (width, height, ratio) => {
+const getRandomPosition = (checkPosition, width, height, ratio) => {
   const isValidPosition = ({ x, y }) => {
+    if (!checkPosition) {
+      return x && y;
+    }
     const innerWidth = Math.min(850 * ratio, width - 54 * ratio);
     const sideWidth = (width - innerWidth) / 2;
     return (
@@ -43,7 +47,7 @@ const getRandomPosition = (width, height, ratio) => {
   return position;
 };
 
-export default ({ width, height }) => {
+export default function FunBackground({ width, height, checkPosition }) {
   const canvas = useRef();
   const ratio = getPixelRatio();
 
@@ -61,12 +65,20 @@ export default ({ width, height }) => {
     ctx.rect(0, 0, ratioWidth, ratioHeight);
     ctx.fill();
 
-    const numItems = Math.max(Math.floor((width * height) / DENSITY_MOD), 3);
+    const numItems = Math.max(
+      Math.floor((width * height) / (20000 / DENSITY_MOD)),
+      3,
+    );
     const numCircles = Math.floor(numItems / 2);
 
     for (let i = 0; i < numCircles; i += 1) {
       // Generate circle
-      const { x, y } = getRandomPosition(ratioWidth, ratioHeight, ratio);
+      const { x, y } = getRandomPosition(
+        checkPosition,
+        ratioWidth,
+        ratioHeight,
+        ratio,
+      );
       ctx.beginPath();
       ctx.strokeStyle = '#D1D5D9';
       ctx.lineWidth = 6;
@@ -77,7 +89,12 @@ export default ({ width, height }) => {
     const PLUS_SIZE = 8;
     for (let i = 0; i < numItems - numCircles; i += 1) {
       // Generate plus
-      const { x, y } = getRandomPosition(ratioWidth, ratioHeight, ratio);
+      const { x, y } = getRandomPosition(
+        checkPosition,
+        ratioWidth,
+        ratioHeight,
+        ratio,
+      );
       ctx.beginPath();
       ctx.strokeStyle = '#9EDE42';
       ctx.lineCap = 'round';
@@ -88,15 +105,31 @@ export default ({ width, height }) => {
       ctx.lineTo(x + PLUS_SIZE, y);
       ctx.stroke();
     }
-  }, [width, height, ratio]);
+  }, [width, height, ratio, checkPosition]);
+
+  if (!height || !width) {
+    return null;
+  }
 
   return (
     <canvas
       ref={canvas}
-      width={width * ratio || 0}
-      height={height * ratio || 0}
+      width={width * ratio}
+      height={height * ratio}
       className={styles.canvas}
       style={{ width, height }}
     />
   );
+}
+
+FunBackground.propTypes = {
+  checkPosition: PropTypes.bool,
+  height: PropTypes.number,
+  width: PropTypes.number,
+};
+
+FunBackground.defaultProps = {
+  checkPosition: false,
+  height: 0,
+  width: 0,
 };

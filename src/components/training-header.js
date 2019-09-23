@@ -64,7 +64,11 @@ export default function TrainingHeader({
           />
         )}
       </Helmet>
-      <FunBackground height={canvasHeight} width={width} />
+      <FunBackground
+        height={canvasHeight}
+        width={width}
+        checkPosition={!!header}
+      />
       <Layout>
         <FlexContainer direction="column">
           <FlexContainer justify="flexend">

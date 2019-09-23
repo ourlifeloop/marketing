@@ -13,7 +13,7 @@ export default () => {
   const { isMobile } = useDevice();
   return (
     <FlexContainer
-      align={isMobile ? 'flexStart' : 'center'}
+      align={isMobile ? 'flexstart' : 'center'}
       direction={isMobile ? 'column' : 'row'}
       className={classNames(styles.container, {
         [styles.containerOpen]: isOpen,
