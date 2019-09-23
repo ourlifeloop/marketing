@@ -28,3 +28,75 @@ collections:
       - { name: title, label: Title }
       - { name: photo, label: Photo, widget: image, required: false }
       - { name: body, label: Body, widget: markdown }
+
+  - name: training-videos
+    label: Training Videos
+    folder: src/cms/training-videos
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: video, label: Video URL }
+      - { name: cover, label: Cover Photo, widget: image }
+      - { name: isNew, label: Is New, widget: boolean }
+      - name: topics
+        label: Topics
+        widget: select
+        multiple: true
+        options:
+          - { label: Getting Started, value: getting-started }
+          - { label: Activity Calendar, value: activity-calendar }
+          - { label: Resident Management, value: resident-management }
+          - { label: Photos, value: photos }
+          - { label: Messaging, value: messaging }
+          - { label: Maintenance, value: maintenance }
+          - { label: Transportation, value: transportation }
+          - { label: Displays, value: displays }
+          - { label: Resident Portal, value: resident-portal }
+          - { label: Family Portal, value: family-portal }
+
+  - name: tutorial-documents
+    label: Tutorial Documents
+    folder: src/cms/tutorial-documents
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: lastUpdated, label: Last Updated, widget: date }
+      - { name: document, label: Document, widget: file }
+      - name: topics
+        label: Topics
+        widget: select
+        multiple: true
+        options:
+          - { label: Getting Started, value: getting-started }
+          - { label: Activity Calendar, value: activity-calendar }
+          - { label: Resident Management, value: resident-management }
+          - { label: Photos, value: photos }
+          - { label: Messaging, value: messaging }
+          - { label: Maintenance, value: maintenance }
+          - { label: Transportation, value: transportation }
+          - { label: Displays, value: displays }
+          - { label: Resident Portal, value: resident-portal }
+          - { label: Family Portal, value: family-portal }
+
+  - name: tutorial-faqs
+    label: Tutorial FAQs
+    folder: src/cms/tutorial-faqs
+    create: true
+    fields:
+      - { name: question, label: Question }
+      - { name: answer, label: Answer, widget: text }
+      - name: topics
+        label: Topics
+        widget: select
+        multiple: true
+        options:
+          - { label: Getting Started, value: getting-started }
+          - { label: Activity Calendar, value: activity-calendar }
+          - { label: Resident Management, value: resident-management }
+          - { label: Photos, value: photos }
+          - { label: Messaging, value: messaging }
+          - { label: Maintenance, value: maintenance }
+          - { label: Transportation, value: transportation }
+          - { label: Displays, value: displays }
+          - { label: Resident Portal, value: resident-portal }
+          - { label: Family Portal, value: family-portal }

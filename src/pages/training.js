@@ -24,7 +24,7 @@ export default ({ data }) => {
               dedicated to easing your learning experience and getting
               comfortable with using LifeLoop.
             </p>
-            <Link to="/training">
+            <Link to="/training/getting-started">
               <Button>New to LifeLoop? Start Here</Button>
             </Link>
           </TitleSection>
@@ -38,7 +38,7 @@ export default ({ data }) => {
             <Img fluid={data.gettingStarted.childImageSharp.fluid} />
             <span>Getting Started</span>
           </Link>
-          <Link to="/training/calendar" className={styles.topic}>
+          <Link to="/training/activity-calendar" className={styles.topic}>
             <Img fluid={data.calendar.childImageSharp.fluid} />
             <span>Activity Calendar</span>
           </Link>
