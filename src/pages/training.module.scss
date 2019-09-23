@@ -1,0 +1,43 @@
+@import '../styles/theme';
+@import '../styles/utils';
+
+.topicHeader {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.topic {
+  padding: 0 1.8rem 2.5rem;
+  text-align: center;
+  width: 25%;
+
+  span {
+    color: $text-blue;
+    display: block;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  &:hover span {
+    font-size: 1.04rem;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .topic {
+    width: 33.3%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .topic {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .topic {
+    width: 100%;
+  }
+}

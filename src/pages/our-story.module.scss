@@ -14,7 +14,7 @@
 
 $team-margin: 1rem;
 .teamContainer {
-  margin: 0 -$team-margin;
+  margin: 0 #{-$team-margin};
 }
 
 .teamMember {
