@@ -70,7 +70,7 @@ export default ({ data }) => {
             <Img fluid={data.residents.childImageSharp.fluid} />
             <span>Resident Portal</span>
           </Link>
-          <Link to="training/family-portal" className={styles.topic}>
+          <Link to="/training/family-portal" className={styles.topic}>
             <Img fluid={data.family.childImageSharp.fluid} />
             <span>Family Portal</span>
           </Link>

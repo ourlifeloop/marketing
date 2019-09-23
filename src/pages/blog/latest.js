@@ -63,8 +63,11 @@ export default ({ data, location }) => {
 };
 
 export const query = graphql`
-  query BlogRollQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+  query {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fields: { slug: { regex: "^/blog/" } } }
+    ) {
       edges {
         node {
           excerpt(pruneLength: 200)

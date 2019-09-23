@@ -5,6 +5,7 @@ import endsWith from 'lodash/endsWith';
 import find from 'lodash/find';
 import map from 'lodash/map';
 import random from 'lodash/random';
+import startCase from 'lodash/startCase';
 import startsWith from 'lodash/startsWith';
 import take from 'lodash/take';
 import takeRight from 'lodash/takeRight';
@@ -19,6 +20,7 @@ export {
   find,
   map,
   random,
+  startCase,
   startsWith,
   take,
   takeRight,

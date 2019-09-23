@@ -1,4 +1,5 @@
 const path = require('path');
+const { uniq, flatten } = require('lodash');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
@@ -19,6 +20,8 @@ exports.createPages = ({ actions, graphql }) => {
             }
             frontmatter {
               title
+              type
+              topics
             }
           }
         }
@@ -29,15 +32,33 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors);
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    // Build blog pages
+    result.data.allMarkdownRemark.edges
+      .filter(({ node }) => !!node.frontmatter.type)
+      .forEach(({ node }) =>
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(`src/templates/blog-post.template.js`),
+          context: {
+            postId: node.id,
+          },
+        }),
+      );
+
+    // Build training pages
+    uniq(
+      flatten(
+        result.data.allMarkdownRemark.edges.map(
+          ({ node }) => node.frontmatter.topics || [],
+        ),
+      ),
+    ).map(topic =>
       createPage({
-        path: node.fields.slug,
-        component: path.resolve(`src/templates/blog-post.template.js`),
-        context: {
-          postId: node.id,
-        },
-      });
-    });
+        path: `/training/${topic}`,
+        component: path.resolve(`src/templates/training.template.js`),
+        context: { topic },
+      }),
+    );
   });
 };
 
