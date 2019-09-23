@@ -90,6 +90,7 @@ collections:
         widget: select
         multiple: true
         options:
+          - { label: Main Page, value: main-page }
           - { label: Getting Started, value: getting-started }
           - { label: Activity Calendar, value: activity-calendar }
           - { label: Resident Management, value: resident-management }
