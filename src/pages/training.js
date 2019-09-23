@@ -83,7 +83,7 @@ export default ({ data }) => {
 export const query = graphql`
   fragment featureImage on File {
     childImageSharp {
-      fluid(maxWidth: 280) {
+      fluid(maxWidth: 186) {
         ...GatsbyImageSharpFluid
       }
     }
