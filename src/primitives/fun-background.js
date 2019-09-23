@@ -36,7 +36,7 @@ const getRandomPosition = (checkPosition, width, height, ratio) => {
       (x <= sideWidth ||
         x >= 850 * ratio + sideWidth ||
         y >= height - 60 * ratio ||
-        y <= 145 * ratio)
+        y <= 140 * ratio)
     );
   };
 

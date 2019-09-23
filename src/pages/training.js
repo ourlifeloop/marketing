@@ -34,43 +34,43 @@ export default ({ data }) => {
       <Section width="medium">
         <h2 className={styles.topicHeader}>Browse by Topic</h2>
         <FlexContainer flex="1" wrap>
-          <Link to="/" className={styles.topic}>
+          <Link to="/training/getting-started" className={styles.topic}>
             <Img fluid={data.gettingStarted.childImageSharp.fluid} />
             <span>Getting Started</span>
           </Link>
-          <Link to="/" className={styles.topic}>
+          <Link to="/training/calendar" className={styles.topic}>
             <Img fluid={data.calendar.childImageSharp.fluid} />
             <span>Activity Calendar</span>
           </Link>
-          <Link to="/" className={styles.topic}>
+          <Link to="/training/resident-management" className={styles.topic}>
             <Img fluid={data.reports.childImageSharp.fluid} />
             <span>Resident Management</span>
           </Link>
-          <Link to="/" className={styles.topic}>
+          <Link to="/training/photos" className={styles.topic}>
             <Img fluid={data.photos.childImageSharp.fluid} />
             <span>Photos</span>
           </Link>
-          <Link to="/" className={styles.topic}>
+          <Link to="/training/messaging" className={styles.topic}>
             <Img fluid={data.messages.childImageSharp.fluid} />
             <span>Messaging</span>
           </Link>
-          <Link to="/" className={styles.topic}>
+          <Link to="/training/maintenance" className={styles.topic}>
             <Img fluid={data.maintenance.childImageSharp.fluid} />
             <span>Maintenance</span>
           </Link>
-          <Link to="/" className={styles.topic}>
+          <Link to="/training/transportation" className={styles.topic}>
             <Img fluid={data.transportation.childImageSharp.fluid} />
             <span>Transportation</span>
           </Link>
-          <Link to="/" className={styles.topic}>
+          <Link to="/training/displays" className={styles.topic}>
             <Img fluid={data.displays.childImageSharp.fluid} />
             <span>Displays</span>
           </Link>
-          <Link to="/" className={styles.topic}>
+          <Link to="/training/resident-portal" className={styles.topic}>
             <Img fluid={data.residents.childImageSharp.fluid} />
             <span>Resident Portal</span>
           </Link>
-          <Link to="/" className={styles.topic}>
+          <Link to="training/family-portal" className={styles.topic}>
             <Img fluid={data.family.childImageSharp.fluid} />
             <span>Family Portal</span>
           </Link>
