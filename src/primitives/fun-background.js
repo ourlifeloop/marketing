@@ -81,12 +81,12 @@ export default function FunBackground({ width, height, checkPosition }) {
       );
       ctx.beginPath();
       ctx.strokeStyle = '#D1D5D9';
-      ctx.lineWidth = 6;
-      ctx.arc(x, y, 8, 0, 2 * Math.PI);
+      ctx.lineWidth = 3 * ratio;
+      ctx.arc(x, y, 4 * ratio, 0, 2 * Math.PI);
       ctx.stroke();
     }
 
-    const PLUS_SIZE = 8;
+    const PLUS_SIZE = 4 * ratio;
     for (let i = 0; i < numItems - numCircles; i += 1) {
       // Generate plus
       const { x, y } = getRandomPosition(
