@@ -1,6 +1,6 @@
 ---
 title: Adding a Resident
-video: 'https://youtu.be/wFG-fnnzupo'
+video: 'https://www.youtube-nocookie.com/embed/wFG-fnnzupo'
 cover: /images/cms/vid-cov-9.jpg
 isNew: false
 topics:

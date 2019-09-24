@@ -2,6 +2,7 @@
 @import '../styles/utils';
 
 .container {
+  cursor: pointer;
   display: flex;
   margin: 0 1.5rem 2.5rem 0;
   position: relative;
@@ -24,10 +25,12 @@ $icon-size: 50px;
 
 .title {
   color: $background;
-  bottom: 30px;
+  bottom: 22px;
   font-weight: bold;
   left: 0;
   letter-spacing: 0.7px;
+  line-height: 1.1rem;
+  padding: 0 1rem;
   position: absolute;
   right: 0;
   text-align: center;

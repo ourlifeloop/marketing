@@ -7,6 +7,7 @@ import flatten from 'lodash/flatten';
 import includes from 'lodash/includes';
 import map from 'lodash/map';
 import random from 'lodash/random';
+import sortBy from 'lodash/sortBy';
 import startCase from 'lodash/startCase';
 import startsWith from 'lodash/startsWith';
 import take from 'lodash/take';
@@ -25,6 +26,7 @@ export {
   includes,
   map,
   random,
+  sortBy,
   startCase,
   startsWith,
   take,

@@ -1,6 +1,6 @@
 ---
 title: 'Adding an Activity '
-video: 'https://youtu.be/UaQUlmfChiM'
+video: 'https://www.youtube-nocookie.com/embed/UaQUlmfChiM'
 cover: /images/cms/vid-cov-13.jpg
 isNew: false
 topics:

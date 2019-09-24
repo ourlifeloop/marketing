@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import classNames from 'classnames';
 
 import FlexContainer from '../primitives/flex-container';
 import TRAINING_TOPICS from '../utils/training-topics';
+import VideoModal from '../primitives/video-modal';
 import TrainingVideo from './training-video';
 import Section from '../primitives/section';
 
 import styles from './training-topic.module.scss';
 
 export default function TrainingTopic({ topic, videos }) {
-  console.log(videos);
+  const [activeVideo, setActiveVideo] = useState();
+
   return (
     <Section>
       <FlexContainer align="flexend">
@@ -41,10 +43,12 @@ export default function TrainingTopic({ topic, videos }) {
         </FlexContainer>
         <FlexContainer direction="column" className={styles.rightColumn}>
           <FlexContainer wrap>
-            {videos.map(({ cover, ...video }) => (
+            {videos.map(({ key, cover, video, title }) => (
               <TrainingVideo
+                key={key}
+                title={title}
                 cover={cover && <Img fixed={cover.childImageSharp.fixed} />}
-                {...video}
+                onClick={link => setActiveVideo({ link: video, title })}
               />
             ))}
           </FlexContainer>
@@ -52,6 +56,11 @@ export default function TrainingTopic({ topic, videos }) {
           <h1>Frequently Asked Questions</h1>
         </FlexContainer>
       </FlexContainer>
+      <VideoModal
+        isOpen={!!activeVideo}
+        onClose={() => setActiveVideo()}
+        {...(activeVideo || {})}
+      />
     </Section>
   );
 }
