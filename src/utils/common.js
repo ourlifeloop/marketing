@@ -16,3 +16,12 @@ export const getParameterByName = name => {
   }
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 };
+
+export const createDownload = ({ url, fileName }) => {
+  const a = document.createElement('a');
+  a.setAttribute('download', fileName);
+  a.href = url;
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+};

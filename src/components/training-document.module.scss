@@ -1,0 +1,45 @@
+@import '../styles/theme';
+@import '../styles/utils';
+
+$border: 1px solid $highlight;
+.row {
+  border-bottom: $border;
+  cursor: pointer;
+  padding: 1rem 1.2rem;
+  transition: background-color 0.2s linear;
+
+  &:first-of-type {
+    border-top: $border;
+  }
+
+  &:last-of-type {
+    margin-bottom: 3rem;
+  }
+
+  &:hover {
+    background-color: $background-dark;
+
+    .icon {
+      color: $dark-blue;
+    }
+  }
+}
+
+.textContainer {
+  padding-right: 2rem;
+}
+
+.title {
+  color: $text;
+  font-weight: 600;
+}
+
+.subText {
+  color: $text-meta;
+  font-size: 0.9rem;
+}
+
+.icon {
+  color: $primary-blue;
+  transition: background 0.2s linear;
+}

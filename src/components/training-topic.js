@@ -6,6 +6,7 @@ import classNames from 'classnames';
 import FlexContainer from '../primitives/flex-container';
 import TRAINING_TOPICS from '../utils/training-topics';
 import VideoModal from '../primitives/video-modal';
+import TrainingDocument from './training-document';
 import TrainingVideo from './training-video';
 import Section from '../primitives/section';
 
@@ -14,7 +15,10 @@ import styles from './training-topic.module.scss';
 export default function TrainingTopic({ topic, videos, documents }) {
   const [activeVideo, setActiveVideo] = useState();
 
-  console.log(documents);
+  let firstTitle = 'Videos';
+  if (!videos.length) {
+    firstTitle = documents.length ? 'Documents' : 'Frequently Asked Questions';
+  }
 
   return (
     <Section>
@@ -22,7 +26,7 @@ export default function TrainingTopic({ topic, videos, documents }) {
         <h3 className={classNames(styles.leftColumn, styles.topicsHeader)}>
           TOPICS
         </h3>
-        <h1 className={styles.rightColumn}>Videos</h1>
+        <h1 className={styles.rightColumn}>{firstTitle}</h1>
       </FlexContainer>
       <FlexContainer className={styles.content}>
         <FlexContainer direction="column" className={styles.leftColumn}>
@@ -51,7 +55,14 @@ export default function TrainingTopic({ topic, videos, documents }) {
               />
             ))}
           </FlexContainer>
-          <h1>Documents</h1>
+          {!!documents.length && firstTitle !== 'Documents' && (
+            <h1>Documents</h1>
+          )}
+          <FlexContainer direction="column">
+            {documents.map(({ key, title, document }) => (
+              <TrainingDocument key={key} title={title} document={document} />
+            ))}
+          </FlexContainer>
           <h1>Frequently Asked Questions</h1>
         </FlexContainer>
       </FlexContainer>
