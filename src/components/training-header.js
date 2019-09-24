@@ -83,21 +83,21 @@ export default function TrainingHeader({
             justify="spacebetween"
             className={styles.innerContainer}
           >
-            <FlexContainer align="center">
-              <Link
-                className={classNames(styles.linkContainer)}
-                to="/"
-                aria-label="Lifeloop Home"
-              >
+            <Link
+              className={classNames(styles.linkContainer)}
+              to="/training"
+              aria-label="Lifeloop Home"
+            >
+              <FlexContainer align="center">
                 <Img
                   fixed={logo.childImageSharp.fixed}
                   className={styles.logoLink}
                 />
-              </Link>
-              {!isMobile && (
-                <h2 className={styles.title}>Learning Community</h2>
-              )}
-            </FlexContainer>
+                {!isMobile && (
+                  <h2 className={styles.title}>Learning Community</h2>
+                )}
+              </FlexContainer>
+            </Link>
             <FlexContainer direction="column" justify="center" align="flexend">
               <FlexContainer align="center">
                 {!isTablet && (

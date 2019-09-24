@@ -1,0 +1,67 @@
+@import '../styles/theme';
+@import '../styles/utils';
+
+.leftColumn {
+  margin-right: 2rem;
+  max-width: 250px;
+  min-width: 150px;
+  width: 30%;
+}
+
+.topicsHeader {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+$topic-padding: 0.4rem;
+.topicContainer {
+  padding-top: -$topic-padding;
+}
+
+.topic {
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 0.1rem;
+  padding: $topic-padding #{2 * $topic-padding};
+  transition: background-color 0.2s linear;
+  width: 100%;
+
+  &:hover {
+    background-color: $background-dark;
+
+    .topicIcon {
+      fill: $dark-blue;
+    }
+
+    .topicName {
+      color: $text-black;
+    }
+  }
+
+  &--active,
+  &--active:hover {
+    background-color: $primary-blue;
+
+    .topicIcon {
+      fill: $background;
+    }
+
+    .topicName {
+      color: $background;
+    }
+  }
+}
+
+$icon-size: 26px;
+.topicIcon {
+  fill: $primary-blue;
+  height: $icon-size;
+  margin-right: 0.8rem;
+  transition: fill 0.2s linear;
+  width: $icon-size;
+}
+
+.topicName {
+  color: $text-blue;
+  transition: color 0.2s linear;
+}

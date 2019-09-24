@@ -37,7 +37,11 @@ collections:
       - { name: title, label: Title }
       - { name: video, label: Video URL }
       - { name: cover, label: Cover Photo, widget: image }
-      - { name: isNew, label: Is New, widget: boolean, required: false }
+      - name: isNew
+        label: Is New
+        widget: boolean
+        required: false
+        default: false
       - name: topics
         label: Topics
         widget: select

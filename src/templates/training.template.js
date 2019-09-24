@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import TrainingWrapper from '../components/training-wrapper';
+import TrainingTopic from '../components/training-topic';
 import { startCase } from '../utils/lodash';
 
 export default function TrainingTemplate({ data, pageContext }) {
@@ -11,7 +12,7 @@ export default function TrainingTemplate({ data, pageContext }) {
   const title = startCase(pageContext.topic);
   return (
     <TrainingWrapper title={`LifeLoop Training - ${title}`}>
-      <h1>{title}</h1>
+      <TrainingTopic topic={pageContext.topic} videos={videos} />
     </TrainingWrapper>
   );
 }
