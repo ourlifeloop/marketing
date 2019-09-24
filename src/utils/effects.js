@@ -45,8 +45,8 @@ export const useResize = cb =>
 
 export const useDimensions = () => {
   const [dimensions, setDimensions] = useState({
-    height: 0,
-    width: 0,
+    height: 2000,
+    width: 2000,
   });
 
   useResize(
