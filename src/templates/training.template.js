@@ -49,6 +49,12 @@ export const query = graphql`
                 }
               }
             }
+            document {
+              changeTime(formatString: "MMMM DD, YYYY")
+              relativePath
+              prettySize
+              extension
+            }
           }
         }
       }

@@ -11,8 +11,10 @@ import Section from '../primitives/section';
 
 import styles from './training-topic.module.scss';
 
-export default function TrainingTopic({ topic, videos }) {
+export default function TrainingTopic({ topic, videos, documents }) {
   const [activeVideo, setActiveVideo] = useState();
+
+  console.log(documents);
 
   return (
     <Section>
@@ -20,13 +22,10 @@ export default function TrainingTopic({ topic, videos }) {
         <h3 className={classNames(styles.leftColumn, styles.topicsHeader)}>
           TOPICS
         </h3>
-        <h1>Videos</h1>
+        <h1 className={styles.rightColumn}>Videos</h1>
       </FlexContainer>
       <FlexContainer className={styles.content}>
-        <FlexContainer
-          direction="column"
-          className={classNames(styles.leftColumn, styles.topicContainer)}
-        >
+        <FlexContainer direction="column" className={styles.leftColumn}>
           {TRAINING_TOPICS.map(({ key, name, Icon }) => (
             <Link key={key} to={`/training/${key}`}>
               <FlexContainer

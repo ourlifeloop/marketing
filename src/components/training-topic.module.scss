@@ -1,15 +1,14 @@
 @import '../styles/theme';
 @import '../styles/utils';
 
+$leftColumnWidth: 250px;
 .leftColumn {
-  margin-right: 2rem;
-  max-width: 250px;
-  min-width: 150px;
-  width: 30%;
+  width: $leftColumnWidth;
 }
 
 .rightColumn {
-  width: 100%;
+  padding-left: 2rem;
+  width: calc(100% - #{$leftColumnWidth});
 }
 
 .topicsHeader {
@@ -18,10 +17,6 @@
 }
 
 $topic-padding: 0.4rem;
-.topicContainer {
-  padding-top: -$topic-padding;
-}
-
 .topic {
   border-radius: 3px;
   cursor: pointer;

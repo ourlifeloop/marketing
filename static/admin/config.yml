@@ -77,7 +77,6 @@ collections:
     create: true
     fields:
       - { name: title, label: Title }
-      - { name: lastUpdated, label: Last Updated, widget: date }
       - { name: document, label: Document, widget: file }
       - name: topics
         label: Topics
