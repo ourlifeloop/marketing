@@ -61,6 +61,7 @@ collections:
           - { label: Reporting, value: reporting }
           - { label: Calendar Designer, value: calendar-designer }
           - { label: Connections, value: connections }
+          - { label: Marketing, value: marketing }
 
   - name: training-documents
     label: Training Documents
@@ -89,6 +90,7 @@ collections:
           - { label: Reporting, value: reporting }
           - { label: Calendar Designer, value: calendar-designer }
           - { label: Connections, value: connections }
+          - { label: Marketing, value: marketing }
 
   - name: training-faqs
     label: Training FAQs
@@ -117,3 +119,4 @@ collections:
           - { label: Reporting, value: reporting }
           - { label: Calendar Designer, value: calendar-designer }
           - { label: Connections, value: connections }
+          - { label: Marketing, value: marketing }

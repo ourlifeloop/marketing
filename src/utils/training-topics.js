@@ -95,6 +95,12 @@ export default [
     image: 'calendar',
     Icon: calendar,
   },
+  {
+    key: 'marketing',
+    name: 'Marketing',
+    image: 'calendar',
+    Icon: calendar,
+  },
 ];
 
 export const trainingImages = graphql`
