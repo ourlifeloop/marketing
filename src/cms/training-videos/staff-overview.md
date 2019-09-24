@@ -6,4 +6,6 @@ isNew: false
 topics:
   - getting-started
   - staff-management
+userTypes:
+  - staff
 ---

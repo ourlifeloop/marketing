@@ -6,5 +6,7 @@ topics:
   - getting-started
   - family-portal
   - connections
+userTypes:
+  - staff
 ---
 

@@ -6,4 +6,6 @@ isNew: false
 topics:
   - getting-started
   - activity-calendar
+userTypes:
+  - staff
 ---

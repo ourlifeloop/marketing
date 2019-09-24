@@ -6,4 +6,6 @@ topics:
   - staff-management
   - family-portal
   - getting-started
+userTypes:
+  - staff
 ---

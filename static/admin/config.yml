@@ -62,6 +62,14 @@ collections:
           - { label: Calendar Designer, value: calendar-designer }
           - { label: Connections, value: connections }
           - { label: Marketing, value: marketing }
+      - name: userTypes
+        label: User Types
+        widget: select
+        multiple: true
+        options:
+          - { label: Staff Member, value: staff }
+          - { label: Family Member, value: family }
+          - { label: Resident, value: resident }
 
   - name: training-documents
     label: Training Documents
@@ -91,6 +99,14 @@ collections:
           - { label: Calendar Designer, value: calendar-designer }
           - { label: Connections, value: connections }
           - { label: Marketing, value: marketing }
+      - name: userTypes
+        label: User Types
+        widget: select
+        multiple: true
+        options:
+          - { label: Staff Member, value: staff }
+          - { label: Family Member, value: family }
+          - { label: Resident, value: resident }
 
   - name: training-faqs
     label: Training FAQs
@@ -120,3 +136,11 @@ collections:
           - { label: Calendar Designer, value: calendar-designer }
           - { label: Connections, value: connections }
           - { label: Marketing, value: marketing }
+      - name: userTypes
+        label: User Types
+        widget: select
+        multiple: true
+        options:
+          - { label: Staff Member, value: staff }
+          - { label: Family Member, value: family }
+          - { label: Resident, value: resident }

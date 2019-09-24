@@ -5,4 +5,6 @@ cover: /images/cms/vid-cov-13.jpg
 isNew: false
 topics:
   - calendar-designer
+userTypes:
+  - staff
 ---

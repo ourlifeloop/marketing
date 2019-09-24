@@ -5,4 +5,6 @@ cover: /images/cms/vid-cov-3.jpg
 isNew: false
 topics:
   - staff-management
+userTypes:
+  - staff
 ---

@@ -5,4 +5,6 @@ cover: /images/cms/vid-cov-9.jpg
 isNew: false
 topics:
   - connections
+userTypes:
+  - staff
 ---

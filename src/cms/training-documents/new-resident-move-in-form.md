@@ -5,5 +5,7 @@ document: /images/cms/new-resident-move-in-form.pdf
 topics:
   - staff-management
   - resident-portal
+userTypes:
+  - staff
 ---
 

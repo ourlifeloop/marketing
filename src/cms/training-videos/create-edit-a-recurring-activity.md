@@ -5,4 +5,6 @@ cover: /images/cms/vid-cov-1.jpg
 isNew: false
 topics:
   - activity-calendar
+userTypes:
+  - staff
 ---
