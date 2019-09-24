@@ -1,7 +1,7 @@
-import CMS from 'netlify-cms-app';
+// import CMS from 'netlify-cms-app';
 
-import BlogPostPreview from './preview-templates/blog-post-preview';
+// import BlogPostPreview from './preview-templates/blog-post-preview';
+// import TrainingVideoPreview from './preview-templates/training-video-preview';
 
-import '../styles/global.scss';
-
-CMS.registerPreviewTemplate('blog', BlogPostPreview);
+// CMS.registerPreviewTemplate('blog', BlogPostPreview);
+// CMS.registerPreviewTemplate('training-videos', TrainingVideoPreview);
