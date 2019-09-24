@@ -6,9 +6,12 @@ import TrainingTopic from '../components/training-topic';
 import { startCase } from '../utils/lodash';
 
 export default function TrainingTemplate({ data, pageContext }) {
-  const videos = data.allMarkdownRemark.edges.map(
-    edge => edge.node.frontmatter,
-  );
+  const videos = data.allMarkdownRemark.edges
+    .filter(edge => !!edge.node.frontmatter.cover)
+    .map(edge => ({
+      key: edge.node.id,
+      ...edge.node.frontmatter,
+    }));
   const title = startCase(pageContext.topic);
   return (
     <TrainingWrapper title={`LifeLoop Training - ${title}`}>
@@ -22,14 +25,15 @@ export const query = graphql`
     allMarkdownRemark(filter: { frontmatter: { topics: { eq: $topic } } }) {
       edges {
         node {
+          id
           frontmatter {
             title
             video
             isNew
             cover {
               childImageSharp {
-                fluid(maxWidth: 100, quality: 80) {
-                  presentationWidth
+                fixed(width: 275, quality: 90) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }

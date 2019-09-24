@@ -1,0 +1,34 @@
+@import '../styles/theme';
+@import '../styles/utils';
+
+.container {
+  display: flex;
+  margin: 0 1.5rem 2.5rem 0;
+  position: relative;
+  transition: box-shadow 0.2s linear;
+
+  &:hover {
+    box-shadow: 0px 0px 16px 0px $text-meta;
+  }
+}
+
+$icon-size: 50px;
+.play {
+  fill: rgba($background, 0.65);
+  height: $icon-size;
+  left: calc(50% - #{$icon-size / 2});
+  position: absolute;
+  top: calc(50% - #{$icon-size / 2});
+  width: $icon-size;
+}
+
+.title {
+  color: $background;
+  bottom: 30px;
+  font-weight: bold;
+  left: 0;
+  letter-spacing: 0.7px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}

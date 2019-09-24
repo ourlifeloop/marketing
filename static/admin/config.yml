@@ -62,9 +62,9 @@ collections:
           - { label: Calendar Designer, value: calendar-designer }
           - { label: Connections, value: connections }
 
-  - name: tutorial-documents
-    label: Tutorial Documents
-    folder: src/cms/tutorial-documents
+  - name: training-documents
+    label: Training Documents
+    folder: src/cms/training-documents
     create: true
     fields:
       - { name: title, label: Title }
@@ -90,9 +90,9 @@ collections:
           - { label: Calendar Designer, value: calendar-designer }
           - { label: Connections, value: connections }
 
-  - name: tutorial-faqs
-    label: Tutorial FAQs
-    folder: src/cms/tutorial-faqs
+  - name: training-faqs
+    label: Training FAQs
+    folder: src/cms/training-faqs
     create: true
     fields:
       - { name: question, label: Question }

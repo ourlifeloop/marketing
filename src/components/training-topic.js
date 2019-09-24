@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 import classNames from 'classnames';
 
 import FlexContainer from '../primitives/flex-container';
 import TRAINING_TOPICS from '../utils/training-topics';
+import TrainingVideo from './training-video';
 import Section from '../primitives/section';
 
 import styles from './training-topic.module.scss';
 
-export default function TrainingTemplate({ topic, videos }) {
+export default function TrainingTopic({ topic, videos }) {
+  console.log(videos);
   return (
     <Section>
       <FlexContainer align="flexend">
@@ -23,9 +26,8 @@ export default function TrainingTemplate({ topic, videos }) {
           className={classNames(styles.leftColumn, styles.topicContainer)}
         >
           {TRAINING_TOPICS.map(({ key, name, Icon }) => (
-            <Link to={`/training/${key}`}>
+            <Link key={key} to={`/training/${key}`}>
               <FlexContainer
-                key={key}
                 align="center"
                 className={classNames(styles.topic, {
                   [styles.topicActive]: key === topic,
@@ -37,7 +39,15 @@ export default function TrainingTemplate({ topic, videos }) {
             </Link>
           ))}
         </FlexContainer>
-        <FlexContainer direction="column">
+        <FlexContainer direction="column" className={styles.rightColumn}>
+          <FlexContainer wrap>
+            {videos.map(({ cover, ...video }) => (
+              <TrainingVideo
+                cover={cover && <Img fixed={cover.childImageSharp.fixed} />}
+                {...video}
+              />
+            ))}
+          </FlexContainer>
           <h1>Documents</h1>
           <h1>Frequently Asked Questions</h1>
         </FlexContainer>

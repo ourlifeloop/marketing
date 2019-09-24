@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 
 import BlogPost from '../../components/blog-post';
 
-export default function BlogPostPreview({ widgetFor, entry, fields }) {
+export default function BlogPostPreview({ widgetFor, entry }) {
   return (
     <BlogPost
       html={widgetFor('body')}

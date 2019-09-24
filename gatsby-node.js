@@ -19,7 +19,6 @@ exports.createPages = ({ actions, graphql }) => {
               slug
             }
             frontmatter {
-              title
               type
               topics
             }
@@ -39,9 +38,7 @@ exports.createPages = ({ actions, graphql }) => {
         createPage({
           path: node.fields.slug,
           component: path.resolve(`src/templates/blog-post.template.js`),
-          context: {
-            postId: node.id,
-          },
+          context: { postId: node.id },
         }),
       );
 
@@ -68,10 +65,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === 'MarkdownRemark') {
     const value = createFilePath({ node, getNode });
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    });
+    createNodeField({ name: 'slug', node, value });
   }
 };
