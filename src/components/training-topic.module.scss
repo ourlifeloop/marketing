@@ -2,13 +2,14 @@
 @import '../styles/utils';
 
 $leftColumnWidth: 250px;
+$leftPadding: variableSize(18, 80);
 .leftColumn {
-  width: $leftColumnWidth;
+  padding-right: $leftPadding;
+  width: calc(#{$leftColumnWidth} + #{$leftPadding});
 }
 
 .rightColumn {
-  padding-left: variableSize(18, 80);
-  width: calc(100% - #{$leftColumnWidth});
+  flex: 1;
 }
 
 .topicsHeader {

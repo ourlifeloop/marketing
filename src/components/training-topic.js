@@ -3,12 +3,14 @@ import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import classNames from 'classnames';
 
+import FeatureDropdown from '../primitives/feature-dropdown';
 import FlexContainer from '../primitives/flex-container';
 import TRAINING_TOPICS from '../utils/training-topics';
 import QuestionAndAnswer from './question-and-answer';
 import VideoModal from '../primitives/video-modal';
 import TrainingDocument from './training-document';
 import TrainingVideo from './training-video';
+import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
 import { includes } from '../utils/lodash';
 
@@ -22,6 +24,7 @@ export default function TrainingTopic({
   documents,
   faqs,
 }) {
+  const { isTablet } = useDevice();
   const [activeVideo, setActiveVideo] = useState();
 
   let firstTitle = 'Videos';
@@ -32,29 +35,33 @@ export default function TrainingTopic({
   return (
     <Section>
       <FlexContainer align="flexend">
-        <h3 className={classNames(styles.leftColumn, styles.topicsHeader)}>
-          TOPICS
-        </h3>
+        {!isTablet && (
+          <h3 className={classNames(styles.leftColumn, styles.topicsHeader)}>
+            TOPICS
+          </h3>
+        )}
         <h1 className={styles.rightColumn}>{firstTitle}</h1>
       </FlexContainer>
       <FlexContainer className={styles.content}>
-        <FlexContainer direction="column" className={styles.leftColumn}>
-          {TRAINING_TOPICS.filter(({ key }) => includes(topics, key)).map(
-            ({ key, name, Icon }) => (
-              <Link key={key} to={`/training/${userType}/${key}`}>
-                <FlexContainer
-                  align="center"
-                  className={classNames(styles.topic, {
-                    [styles.topicActive]: key === topic,
-                  })}
-                >
-                  <Icon className={styles.topicIcon} />
-                  <span className={styles.topicName}>{name}</span>
-                </FlexContainer>
-              </Link>
-            ),
-          )}
-        </FlexContainer>
+        {!isTablet && (
+          <FlexContainer direction="column" className={styles.leftColumn}>
+            {TRAINING_TOPICS.filter(({ key }) => includes(topics, key)).map(
+              ({ key, name, Icon }) => (
+                <Link key={key} to={`/training/${userType}/${key}`}>
+                  <FlexContainer
+                    align="center"
+                    className={classNames(styles.topic, {
+                      [styles.topicActive]: key === topic,
+                    })}
+                  >
+                    <Icon className={styles.topicIcon} />
+                    <span className={styles.topicName}>{name}</span>
+                  </FlexContainer>
+                </Link>
+              ),
+            )}
+          </FlexContainer>
+        )}
         <FlexContainer direction="column" className={styles.rightColumn}>
           <FlexContainer wrap>
             {videos.map(({ key, cover, video, title }) => (
