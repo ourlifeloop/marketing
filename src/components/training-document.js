@@ -8,7 +8,6 @@ import styles from './training-document.module.scss';
 
 export default function TrainingDocument({ title, document }) {
   const { publicURL, prettySize, extension, changeTime } = document;
-  console.log(`${title}.${extension}`);
   return (
     <FlexContainer
       align="center"

@@ -12,7 +12,7 @@ import Section from '../primitives/section';
 
 import styles from './training-topic.module.scss';
 
-export default function TrainingTopic({ topic, videos, documents }) {
+export default function TrainingTopic({ userType, topic, videos, documents }) {
   const [activeVideo, setActiveVideo] = useState();
 
   let firstTitle = 'Videos';
@@ -31,7 +31,7 @@ export default function TrainingTopic({ topic, videos, documents }) {
       <FlexContainer className={styles.content}>
         <FlexContainer direction="column" className={styles.leftColumn}>
           {TRAINING_TOPICS.map(({ key, name, Icon }) => (
-            <Link key={key} to={`/training/${key}`}>
+            <Link key={key} to={`/training/${userType}/${key}`}>
               <FlexContainer
                 align="center"
                 className={classNames(styles.topic, {

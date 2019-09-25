@@ -1,5 +1,5 @@
 const path = require('path');
-const { uniq, flatten } = require('lodash');
+const { uniq, forEach } = require('lodash');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
@@ -21,6 +21,7 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               type
               topics
+              userTypes
             }
           }
         }
@@ -43,19 +44,41 @@ exports.createPages = ({ actions, graphql }) => {
       );
 
     // Build training pages
-    uniq(
-      flatten(
-        result.data.allMarkdownRemark.edges.map(
-          ({ node }) => node.frontmatter.topics || [],
-        ),
-      ),
-    ).map(topic =>
+    const topicsByUserType = result.data.allMarkdownRemark.edges
+      .filter(
+        ({ node }) => !!node.frontmatter.topics && !!node.frontmatter.userTypes,
+      )
+      .reduce(
+        (byType, { node }) => ({
+          ...byType,
+          ...node.frontmatter.userTypes.reduce(
+            (newByType, userType) => ({
+              ...newByType,
+              [userType]: uniq([
+                ...(byType[userType] || []),
+                ...(node.frontmatter.topics || []),
+              ]),
+            }),
+            {},
+          ),
+        }),
+        {},
+      );
+
+    forEach(topicsByUserType, (topics, userType) => {
       createPage({
-        path: `/training/${topic}`,
+        path: `/training/${userType}`,
         component: path.resolve(`src/templates/training.template.js`),
-        context: { topic },
-      }),
-    );
+        context: { userType },
+      });
+      topics.forEach(topic =>
+        createPage({
+          path: `/training/${userType}/${topic}`,
+          component: path.resolve(`src/templates/training-topic.template.js`),
+          context: { userType, topic },
+        }),
+      );
+    });
   });
 };
 

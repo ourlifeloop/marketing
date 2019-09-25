@@ -20,6 +20,7 @@ export default function TrainingHeader({
   title,
   description,
   canonical,
+  userType,
 }) {
   const { width } = useDimensions();
   const [canvasHeight, setCanvasHeight] = useState();
@@ -85,7 +86,7 @@ export default function TrainingHeader({
           >
             <Link
               className={classNames(styles.linkContainer)}
-              to="/training"
+              to={`/training/${userType}`}
               aria-label="Lifeloop Home"
             >
               <FlexContainer align="center">
@@ -126,6 +127,7 @@ TrainingHeader.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   canonical: PropTypes.string,
+  userType: PropTypes.string,
 };
 
 TrainingHeader.defaultProps = {
@@ -135,4 +137,5 @@ TrainingHeader.defaultProps = {
   description:
     'Senior living calendar management, activity tracking, and resident engagement software used to connect families, residents, and staff. Share photos and updates and communicate through messaging to ensure personalized care to seniors in skilled nursing and assisted living.',
   canonical: '',
+  userType: 'staff',
 };

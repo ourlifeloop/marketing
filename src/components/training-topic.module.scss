@@ -7,7 +7,7 @@ $leftColumnWidth: 250px;
 }
 
 .rightColumn {
-  padding-left: 2rem;
+  padding-left: variableSize(18, 80);
   width: calc(100% - #{$leftColumnWidth});
 }
 
