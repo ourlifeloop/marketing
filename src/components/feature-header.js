@@ -1,11 +1,11 @@
 import React from 'react';
-import Select from 'react-select';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link, useStaticQuery, graphql, navigate } from 'gatsby';
 
+import FeatureDropdown from '../primitives/feature-dropdown';
 import FlexContainer from '../primitives/flex-container';
-import { map, find, startsWith } from '../utils/lodash';
+import { map, startsWith } from '../utils/lodash';
 import HeroImage from '../primitives/hero-image';
 import NAVIGATION from '../utils/navigation';
 import Layout from '../primitives/layout';
@@ -21,16 +21,6 @@ const FEATURE_OPTIONS = map(
     Icon,
   }),
 );
-
-const FeatureOption = ({ innerProps, children, data, ...rest }) => {
-  const { Icon } = data;
-  return (
-    <FlexContainer {...innerProps} align="center" className={styles.option}>
-      <Icon className={styles.optionIcon} />
-      <b>{children}</b>
-    </FlexContainer>
-  );
-};
 
 export default function FeatureHeader({ pathname }) {
   const { isTablet } = useDevice();
@@ -53,15 +43,10 @@ export default function FeatureHeader({ pathname }) {
   if (isTablet) {
     subNav = (
       <FlexContainer justify="center" id="features">
-        <Select
-          isSearchable={false}
-          className={styles.select}
+        <FeatureDropdown
+          value={pathname}
           options={FEATURE_OPTIONS}
-          value={find(FEATURE_OPTIONS, option =>
-            startsWith(option.value, pathname),
-          )}
           onChange={({ value }) => navigate(value)}
-          components={{ Option: FeatureOption, SingleValue: FeatureOption }}
         />
       </FlexContainer>
     );

@@ -51,38 +51,3 @@ $icon-size: 40px;
   font-size: 0.8rem;
   text-align: center;
 }
-
-.select {
-  margin: 1rem 0;
-  max-width: 400px;
-  width: 80vw;
-}
-
-.option {
-  background-color: $background;
-  cursor: pointer;
-  padding: 0.4rem 0.6rem;
-  transition: all 0.2s linear;
-
-  b {
-    color: $text-blue;
-  }
-
-  &:hover {
-    background-color: $background-medium;
-
-    .optionIcon {
-      color: $text-blue;
-      fill: $text-blue;
-    }
-  }
-}
-
-$size: 30px;
-.optionIcon {
-  color: $primary-blue;
-  fill: $primary-blue;
-  height: $size;
-  margin-right: 0.6rem;
-  width: $size;
-}
