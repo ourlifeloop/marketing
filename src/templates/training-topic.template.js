@@ -2,11 +2,11 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import TrainingWrapper from '../components/training-wrapper';
+import { startCase, uniq, flatten } from '../utils/lodash';
 import TrainingTopic from '../components/training-topic';
-import { startCase } from '../utils/lodash';
 
 const filterTypes = (data, uniqueKey) =>
-  data.allMarkdownRemark.edges
+  data.topic.edges
     .filter(edge => !!edge.node.frontmatter[uniqueKey])
     .map(edge => ({
       key: edge.node.id,
@@ -18,6 +18,10 @@ export default ({ data, pageContext }) => {
   const documents = filterTypes(data, 'document');
   const faqs = filterTypes(data, 'question');
 
+  const topics = uniq(
+    flatten(data.topics.edges.map(({ node }) => node.frontmatter.topics)),
+  );
+
   return (
     <TrainingWrapper
       userType={pageContext.userType}
@@ -26,6 +30,7 @@ export default ({ data, pageContext }) => {
       <TrainingTopic
         userType={pageContext.userType}
         topic={pageContext.topic}
+        topics={topics}
         videos={videos}
         documents={documents}
         faqs={faqs}
@@ -36,7 +41,21 @@ export default ({ data, pageContext }) => {
 
 export const query = graphql`
   query($topic: String!, $userType: String!) {
-    allMarkdownRemark(
+    topics: allMarkdownRemark(
+      filter: {
+        fields: { slug: { regex: "^/training/" } }
+        frontmatter: { userTypes: { eq: $userType } }
+      }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            topics
+          }
+        }
+      }
+    }
+    topic: allMarkdownRemark(
       filter: {
         frontmatter: { topics: { eq: $topic }, userTypes: { eq: $userType } }
       }

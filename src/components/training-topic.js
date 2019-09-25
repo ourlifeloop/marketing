@@ -10,12 +10,14 @@ import VideoModal from '../primitives/video-modal';
 import TrainingDocument from './training-document';
 import TrainingVideo from './training-video';
 import Section from '../primitives/section';
+import { includes } from '../utils/lodash';
 
 import styles from './training-topic.module.scss';
 
 export default function TrainingTopic({
   userType,
   topic,
+  topics,
   videos,
   documents,
   faqs,
@@ -27,8 +29,6 @@ export default function TrainingTopic({
     firstTitle = documents.length ? 'Documents' : 'Frequently Asked Questions';
   }
 
-  console.log(faqs);
-
   return (
     <Section>
       <FlexContainer align="flexend">
@@ -39,19 +39,21 @@ export default function TrainingTopic({
       </FlexContainer>
       <FlexContainer className={styles.content}>
         <FlexContainer direction="column" className={styles.leftColumn}>
-          {TRAINING_TOPICS.map(({ key, name, Icon }) => (
-            <Link key={key} to={`/training/${userType}/${key}`}>
-              <FlexContainer
-                align="center"
-                className={classNames(styles.topic, {
-                  [styles.topicActive]: key === topic,
-                })}
-              >
-                <Icon className={styles.topicIcon} />
-                <span className={styles.topicName}>{name}</span>
-              </FlexContainer>
-            </Link>
-          ))}
+          {TRAINING_TOPICS.filter(({ key }) => includes(topics, key)).map(
+            ({ key, name, Icon }) => (
+              <Link key={key} to={`/training/${userType}/${key}`}>
+                <FlexContainer
+                  align="center"
+                  className={classNames(styles.topic, {
+                    [styles.topicActive]: key === topic,
+                  })}
+                >
+                  <Icon className={styles.topicIcon} />
+                  <span className={styles.topicName}>{name}</span>
+                </FlexContainer>
+              </Link>
+            ),
+          )}
         </FlexContainer>
         <FlexContainer direction="column" className={styles.rightColumn}>
           <FlexContainer wrap>
