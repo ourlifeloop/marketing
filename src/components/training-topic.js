@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import Img from 'gatsby-image';
 import classNames from 'classnames';
 
@@ -24,42 +24,61 @@ export default function TrainingTopic({
   documents,
   faqs,
 }) {
-  const { isTablet } = useDevice();
   const [activeVideo, setActiveVideo] = useState();
+  const { isTablet } = useDevice();
 
   let firstTitle = 'Videos';
   if (!videos.length) {
     firstTitle = documents.length ? 'Documents' : 'Frequently Asked Questions';
   }
 
+  const filteredTopics = TRAINING_TOPICS.filter(({ key }) =>
+    includes(topics, key),
+  );
+
   return (
     <Section>
-      <FlexContainer align="flexend">
-        {!isTablet && (
+      <FlexContainer
+        align={isTablet ? 'flexStart' : 'flexEnd'}
+        direction={isTablet ? 'column' : 'row'}
+      >
+        {!isTablet ? (
           <h3 className={classNames(styles.leftColumn, styles.topicsHeader)}>
             TOPICS
           </h3>
+        ) : (
+          <div className={styles.dropdownContainer}>
+            <FeatureDropdown
+              value={topic}
+              onChange={({ value }) =>
+                navigate(`/training/${userType}/${value}`)
+              }
+              options={filteredTopics.map(({ key, name, Icon }) => ({
+                label: name,
+                value: key,
+                Icon,
+              }))}
+            />
+          </div>
         )}
         <h1 className={styles.rightColumn}>{firstTitle}</h1>
       </FlexContainer>
       <FlexContainer className={styles.content}>
         {!isTablet && (
           <FlexContainer direction="column" className={styles.leftColumn}>
-            {TRAINING_TOPICS.filter(({ key }) => includes(topics, key)).map(
-              ({ key, name, Icon }) => (
-                <Link key={key} to={`/training/${userType}/${key}`}>
-                  <FlexContainer
-                    align="center"
-                    className={classNames(styles.topic, {
-                      [styles.topicActive]: key === topic,
-                    })}
-                  >
-                    <Icon className={styles.topicIcon} />
-                    <span className={styles.topicName}>{name}</span>
-                  </FlexContainer>
-                </Link>
-              ),
-            )}
+            {filteredTopics.map(({ key, name, Icon }) => (
+              <Link key={key} to={`/training/${userType}/${key}`}>
+                <FlexContainer
+                  align="center"
+                  className={classNames(styles.topic, {
+                    [styles.topicActive]: key === topic,
+                  })}
+                >
+                  <Icon className={styles.topicIcon} />
+                  <span className={styles.topicName}>{name}</span>
+                </FlexContainer>
+              </Link>
+            ))}
           </FlexContainer>
         )}
         <FlexContainer direction="column" className={styles.rightColumn}>
