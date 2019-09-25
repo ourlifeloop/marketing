@@ -82,7 +82,7 @@ export default function TrainingTopic({
           </FlexContainer>
         )}
         <FlexContainer direction="column" className={styles.rightColumn}>
-          <FlexContainer wrap>
+          <FlexContainer wrap className={styles.videoContainer}>
             {videos.map(({ key, cover, video, title }) => (
               <TrainingVideo
                 key={key}

@@ -101,13 +101,6 @@ export default function Footer() {
               >
                 Accessibility
               </Link>
-              <Link
-                className={styles.link}
-                to="/cookie-policy"
-                aria-label="Cookie Policy"
-              >
-                Cookie Policy
-              </Link>
             </FlexContainer>
           </FlexContainer>
           <FlexContainer wrap>
