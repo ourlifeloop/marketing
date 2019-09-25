@@ -6,16 +6,15 @@
   color: $text;
   cursor: pointer;
   font-size: 0.9rem;
-  padding: 0.8rem 0.5rem;
+  padding: 1rem 1.2rem;
   transition: all 0.2s linear;
 
   &:first-of-type {
-    margin-top: 1rem;
     border-top: 1px solid $highlight;
   }
 
   &:hover {
-    background-color: $background-secondary;
+    background-color: $background-dark;
   }
 
   &--open {
@@ -41,6 +40,7 @@
   margin: 0;
   padding: 0.5rem;
   text-align: left;
+  white-space: pre-wrap;
 }
 
 .icon {

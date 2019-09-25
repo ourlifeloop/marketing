@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
 import ActionCallout from '../primitives/action-callout';
+import TitleSection from '../primitives/title.section';
 import QuestionAndAnswer from './question-and-answer';
 import { removeTrailingSlash } from '../utils/common';
 import Testimonials from '../components/testimonials';
@@ -34,7 +35,9 @@ export default function FeatureWrapper({ children, pathname, ...rest }) {
           </Link>
         }
       />
-      <QuestionAndAnswer questions={questions} />
+      <TitleSection header="Want to know more? Read our FAQ's below.">
+        <QuestionAndAnswer questions={questions} />
+      </TitleSection>
       {!!testimonials && <Testimonials testimonials={testimonials} />}
       <BlogSection />
       <DemoSection />

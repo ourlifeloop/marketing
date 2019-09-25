@@ -64,3 +64,11 @@ $icon-size: 26px;
   color: $text-blue;
   transition: color 0.2s linear;
 }
+
+.questionContainer {
+  margin-bottom: 3rem;
+
+  > * {
+    margin: 0;
+  }
+}

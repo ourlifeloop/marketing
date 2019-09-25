@@ -3,7 +3,6 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 import FlexContainer from '../primitives/flex-container';
-import TitleSection from '../primitives/title.section';
 import { ChevronDown } from '../utils/icons';
 
 import styles from './question-and-answer.module.scss';
@@ -33,11 +32,11 @@ const QnaItem = ({ question, answer }) => {
   );
 };
 
-export default function QuestionAndAnswer({ questions }) {
+export default function QuestionAndAnswer({ questions, ...rest }) {
   return (
-    <TitleSection header="Want to know more? Read our FAQ's below.">
+    <FlexContainer direction="column" {...rest}>
       {questions.map(QnaItem)}
-    </TitleSection>
+    </FlexContainer>
   );
 }
 

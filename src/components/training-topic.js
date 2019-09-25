@@ -5,6 +5,7 @@ import classNames from 'classnames';
 
 import FlexContainer from '../primitives/flex-container';
 import TRAINING_TOPICS from '../utils/training-topics';
+import QuestionAndAnswer from './question-and-answer';
 import VideoModal from '../primitives/video-modal';
 import TrainingDocument from './training-document';
 import TrainingVideo from './training-video';
@@ -12,13 +13,21 @@ import Section from '../primitives/section';
 
 import styles from './training-topic.module.scss';
 
-export default function TrainingTopic({ userType, topic, videos, documents }) {
+export default function TrainingTopic({
+  userType,
+  topic,
+  videos,
+  documents,
+  faqs,
+}) {
   const [activeVideo, setActiveVideo] = useState();
 
   let firstTitle = 'Videos';
   if (!videos.length) {
     firstTitle = documents.length ? 'Documents' : 'Frequently Asked Questions';
   }
+
+  console.log(faqs);
 
   return (
     <Section>
@@ -63,7 +72,13 @@ export default function TrainingTopic({ userType, topic, videos, documents }) {
               <TrainingDocument key={key} title={title} document={document} />
             ))}
           </FlexContainer>
-          <h1>Frequently Asked Questions</h1>
+          {!!faqs.length && firstTitle !== 'Frequently Asked Questions' && (
+            <h1>Frequently Asked Questions</h1>
+          )}
+          <QuestionAndAnswer
+            questions={faqs}
+            className={styles.questionContainer}
+          />
         </FlexContainer>
       </FlexContainer>
       <VideoModal

@@ -48,6 +48,8 @@ export const query = graphql`
             title
             video
             isNew
+            question
+            answer
             cover {
               childImageSharp {
                 fixed(width: 275, quality: 90) {
