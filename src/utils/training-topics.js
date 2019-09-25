@@ -26,7 +26,7 @@ export default [
   {
     key: 'resident-management',
     name: 'Resident Management',
-    image: 'reports',
+    image: 'residentManagement',
     Icon: reports,
   },
   {
@@ -74,31 +74,31 @@ export default [
   {
     key: 'staff-management',
     name: 'Staff Management',
-    image: 'calendar',
+    image: 'staffManagement',
     Icon: calendar,
   },
   {
     key: 'reporting',
     name: 'Reporting',
-    image: 'calendar',
+    image: 'reporting',
     Icon: calendar,
   },
   {
     key: 'calendar-designer',
     name: 'Calendar Designer',
-    image: 'calendar',
+    image: 'calendarDesigner',
     Icon: calendar,
   },
   {
     key: 'connections',
     name: 'Connections',
-    image: 'calendar',
+    image: 'connections',
     Icon: calendar,
   },
   {
     key: 'marketing',
     name: 'Marketing',
-    image: 'calendar',
+    image: 'marketing',
     Icon: calendar,
   },
 ];
@@ -116,6 +116,14 @@ export const trainingImages = graphql`
     calendar: file(relativePath: { eq: "features/calendar.png" }) {
       ...featureImage
     }
+    calendarDesigner: file(
+      relativePath: { eq: "features/calendar-designer.png" }
+    ) {
+      ...featureImage
+    }
+    connections: file(relativePath: { eq: "features/connections.png" }) {
+      ...featureImage
+    }
     displays: file(relativePath: { eq: "features/displays.png" }) {
       ...featureImage
     }
@@ -128,16 +136,29 @@ export const trainingImages = graphql`
     maintenance: file(relativePath: { eq: "features/maintenance.png" }) {
       ...featureImage
     }
+    marketing: file(relativePath: { eq: "features/marketing.png" }) {
+      ...featureImage
+    }
     messages: file(relativePath: { eq: "features/messages.png" }) {
       ...featureImage
     }
     photos: file(relativePath: { eq: "features/photos.png" }) {
       ...featureImage
     }
-    reports: file(relativePath: { eq: "features/reports.png" }) {
+    reporting: file(relativePath: { eq: "features/reporting.png" }) {
+      ...featureImage
+    }
+    residentManagement: file(
+      relativePath: { eq: "features/resident-management.png" }
+    ) {
       ...featureImage
     }
     residents: file(relativePath: { eq: "features/residents.png" }) {
+      ...featureImage
+    }
+    staffManagement: file(
+      relativePath: { eq: "features/staff-management.png" }
+    ) {
       ...featureImage
     }
     transportation: file(relativePath: { eq: "features/transportation.png" }) {
