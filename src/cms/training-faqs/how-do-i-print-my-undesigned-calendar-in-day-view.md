@@ -1,5 +1,5 @@
 ---
-question: How do I Print my Undesigned Calendar in Day View?
+question: How do I print my undesigned calendar in Day View?
 answer: >-
   -To Begin, log into LifeLoop staff site. On the left-hand side within the blue
   panel, click on the “Calendar” button. 
