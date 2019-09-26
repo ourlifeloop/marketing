@@ -1,5 +1,5 @@
 ---
-question: ' How do I Deactivate a Resident and when should we Deactivate a Resident?'
+question: ' How do I deactivate a resident and when should we deactivate a resident?'
 answer: >-
   -On the left-hand side within the blue panel, click on the “residents”
   button. 
