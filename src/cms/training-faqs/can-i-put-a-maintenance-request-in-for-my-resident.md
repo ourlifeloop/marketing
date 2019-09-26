@@ -1,5 +1,5 @@
 ---
-question: 'Can I put a Maintenance Request in for my Resident? '
+question: 'Can I put a maintenance request in for my resident? '
 answer: >-
   This depends on your community's functionality:
 
