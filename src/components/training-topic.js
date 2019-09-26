@@ -39,7 +39,7 @@ export default function TrainingTopic({
   return (
     <Section>
       <FlexContainer
-        align={isTablet ? 'flexStart' : 'flexEnd'}
+        align={isTablet ? 'flexstart' : 'flexend'}
         direction={isTablet ? 'column' : 'row'}
       >
         {!isTablet ? (

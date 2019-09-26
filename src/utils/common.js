@@ -1,5 +1,28 @@
 import { endsWith, trimEnd } from '../utils/lodash';
 
+import DocIcon from '../assets/icons/file-type-doc.svg';
+import JpgIcon from '../assets/icons/file-type-jpg.svg';
+import PdfIcon from '../assets/icons/file-type-pdf.svg';
+import PngIcon from '../assets/icons/file-type-png.svg';
+import PptIcon from '../assets/icons/file-type-ppt.svg';
+
+export const iconForExtension = extension => {
+  switch (extension) {
+    case 'pdf':
+      return PdfIcon;
+    case 'jpg':
+    case 'jpeg':
+      return JpgIcon;
+    case 'png':
+      return PngIcon;
+    case 'ppt':
+    case 'pptx':
+      return PptIcon;
+    default:
+      return DocIcon;
+  }
+};
+
 export const removeTrailingSlash = pathname =>
   endsWith(pathname, '/') ? trimEnd(pathname, '/') : pathname;
 

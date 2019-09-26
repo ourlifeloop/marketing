@@ -6,7 +6,7 @@ import family from '../assets/icons/family.svg';
 import maintenance from '../assets/icons/maintenance.svg';
 import messages from '../assets/icons/messages.svg';
 import photos from '../assets/icons/photos.svg';
-import reports from '../assets/icons/reports.svg';
+import residentManagement from '../assets/icons/resident-management.svg';
 import residents from '../assets/icons/residents.svg';
 import transportation from '../assets/icons/transportation.svg';
 
@@ -134,7 +134,7 @@ export default {
       },
       residentTracking: {
         key: 'residentTracking',
-        Icon: reports,
+        Icon: residentManagement,
         name: 'Resident Tracking',
         link: '/features/resident-tracking',
         questions: [

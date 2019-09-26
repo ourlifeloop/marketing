@@ -39,6 +39,12 @@ $border: 1px solid $highlight;
   font-size: 0.9rem;
 }
 
+.docType {
+  fill: $primary-blue;
+  margin-right: 0.8rem;
+  width: 40px;
+}
+
 .icon {
   color: $primary-blue;
   transition: background 0.2s linear;

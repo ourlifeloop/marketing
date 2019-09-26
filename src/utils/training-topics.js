@@ -1,13 +1,19 @@
 import { graphql } from 'gatsby';
 
+import calendarDesigner from '../assets/icons/calendar-designer.svg';
 import calendar from '../assets/icons/calendar.svg';
+import connections from '../assets/icons/connections.svg';
 import displays from '../assets/icons/displays.svg';
 import family from '../assets/icons/family.svg';
+import gettingStarted from '../assets/icons/getting-started.svg';
 import maintenance from '../assets/icons/maintenance.svg';
+import marketing from '../assets/icons/marketing.svg';
 import messages from '../assets/icons/messages.svg';
 import photos from '../assets/icons/photos.svg';
-import reports from '../assets/icons/reports.svg';
+import reporting from '../assets/icons/reporting.svg';
+import residentManagement from '../assets/icons/resident-management.svg';
 import residents from '../assets/icons/residents.svg';
+import staffManagement from '../assets/icons/staff-management.svg';
 import transportation from '../assets/icons/transportation.svg';
 
 export default [
@@ -15,7 +21,7 @@ export default [
     key: 'getting-started',
     name: 'Getting Started',
     image: 'gettingStarted',
-    Icon: calendar,
+    Icon: gettingStarted,
   },
   {
     key: 'activity-calendar',
@@ -27,7 +33,7 @@ export default [
     key: 'resident-management',
     name: 'Resident Management',
     image: 'residentManagement',
-    Icon: reports,
+    Icon: residentManagement,
   },
   {
     key: 'photos',
@@ -75,31 +81,31 @@ export default [
     key: 'staff-management',
     name: 'Staff Management',
     image: 'staffManagement',
-    Icon: calendar,
+    Icon: staffManagement,
   },
   {
     key: 'reporting',
     name: 'Reporting',
     image: 'reporting',
-    Icon: calendar,
+    Icon: reporting,
   },
   {
     key: 'calendar-designer',
     name: 'Calendar Designer',
     image: 'calendarDesigner',
-    Icon: calendar,
+    Icon: calendarDesigner,
   },
   {
     key: 'connections',
     name: 'Connections',
     image: 'connections',
-    Icon: calendar,
+    Icon: connections,
   },
   {
     key: 'marketing',
     name: 'Marketing',
     image: 'marketing',
-    Icon: calendar,
+    Icon: marketing,
   },
 ];
 
