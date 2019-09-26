@@ -1,5 +1,5 @@
 ---
-question: How do I Join LifeLoop?
+question: How do I join LifeLoop?
 answer: >-
   Talk to a staff member at your community and provide them with your email. 
 
