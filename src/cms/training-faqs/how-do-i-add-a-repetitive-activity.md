@@ -1,5 +1,5 @@
 ---
-question: How do I add a Repetitive Activity?
+question: How do I add a repetitive activity?
 answer: >-
   -To Begin, log into LifeLoop staff site. On the left-hand side within the blue
   panel, click on the “Calendar” button. 
