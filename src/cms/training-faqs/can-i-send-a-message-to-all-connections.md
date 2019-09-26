@@ -1,5 +1,5 @@
 ---
-question: ' Can I Send a Message to all Connections?'
+question: ' Can I send a message to all connections?'
 answer: >-
   Yes, you can! 
 
