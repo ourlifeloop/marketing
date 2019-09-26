@@ -1,5 +1,5 @@
 ---
-question: How do I Add a Picture to my Profile?
+question: How do I add a picture to my profile?
 answer: >-
   To begin, login to your LifeLoop account. 
 
