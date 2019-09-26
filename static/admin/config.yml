@@ -42,6 +42,11 @@ collections:
         widget: boolean
         required: false
         default: false
+      - name: isMobile
+        label: Is Mobile
+        widget: boolean
+        required: false
+        default: false
       - name: topics
         label: Topics
         widget: select
@@ -78,6 +83,11 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: document, label: Document, widget: file }
+      - name: isMobile
+        label: Is Mobile
+        widget: boolean
+        required: false
+        default: false
       - name: topics
         label: Topics
         widget: select
@@ -115,6 +125,11 @@ collections:
     fields:
       - { name: question, label: Question }
       - { name: answer, label: Answer, widget: text }
+      - name: isMobile
+        label: Is Mobile
+        widget: boolean
+        required: false
+        default: false
       - name: topics
         label: Topics
         widget: select
