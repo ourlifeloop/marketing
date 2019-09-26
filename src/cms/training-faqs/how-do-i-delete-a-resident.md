@@ -1,5 +1,5 @@
 ---
-question: 'How do I Delete a Resident? '
+question: 'How do I delete a resident? '
 answer: >-
   -On the left-hand side within the blue panel, click on the “residents”
   button. 
