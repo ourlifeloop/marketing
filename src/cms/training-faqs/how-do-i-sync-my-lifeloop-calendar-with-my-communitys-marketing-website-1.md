@@ -1,5 +1,5 @@
 ---
-question: How do I Sync my LifeLoop Calendar with my Community's Marketing Website?
+question: How do I sync my LifeLoop calendar with my community's marketing website?
 answer: >-
   -To begin, log into the LifeLoop staff site. On the left-hand side within the
   blue panel go ahead and click on the “Calendar” 
