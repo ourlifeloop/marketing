@@ -1,5 +1,5 @@
 ---
-question: 'What Functionality Do Connections Have? '
+question: 'What functionality do connections have? '
 answer: |-
   In LifeLoop, Connections - Family and Friends - can do the following: 
 
