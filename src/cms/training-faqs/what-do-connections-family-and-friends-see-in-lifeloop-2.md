@@ -1,5 +1,5 @@
 ---
-question: 'What Do Connections - Family and Friends - See in LifeLoop? '
+question: What do connections - family and friends - see in LifeLoop?
 answer: |-
   Connections of a resident can see the following: 
 
