@@ -1,5 +1,5 @@
 ---
-question: How do I Print the LifeLoop Calendar (Month View)?
+question: How do I print the LifeLoop calendar (Month View)?
 answer: >-
   -To Begin, log into LifeLoop staff site. On the left-hand side within the blue
   panel, click on the “Calendar” button. 
