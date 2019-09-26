@@ -1,5 +1,5 @@
 ---
-question: How do I Add a Resident?
+question: How do I add a resident?
 answer: >-
   -On the left-hand side, within the blue panel, click on the “residents” tab. 
 
