@@ -1,5 +1,5 @@
 ---
-question: ' How do I Add an "About" Section for a Resident? '
+question: ' How do I add an "about" section for a resident? '
 answer: >-
   -On the left-hand side, within the blue panel, click on the “residents”
   button. 
