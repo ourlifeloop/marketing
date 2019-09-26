@@ -1,6 +1,6 @@
 ---
 question: >-
-  My Resident no Longer Resides at the Community, how do I Stop Receiving Emails
+  My resident no longer resides at the community, how do I stop receiving emails
   from LifeLoop? 
 answer: >-
   If you wish to no longer receive emails for any reason, please contact a staff
