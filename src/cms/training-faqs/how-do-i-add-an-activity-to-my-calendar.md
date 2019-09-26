@@ -1,5 +1,5 @@
 ---
-question: How do I Add an Activity to my Calendar?
+question: How do I add an activity to my calendar?
 answer: >-
   -To Begin, log into LifeLoop staff site. On the left-hand side within the blue
   panel, click on the “Calendar” button. 
