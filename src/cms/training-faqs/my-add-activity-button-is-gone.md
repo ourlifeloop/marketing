@@ -1,5 +1,5 @@
 ---
-question: My Add Activity Button is Gone
+question: My add activity button is gone.
 answer: >-
   If your "Add Activity" button is gone refresh your browser (Usually a circle
   with an arrow to the left of your URL box). 
