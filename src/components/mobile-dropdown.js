@@ -86,12 +86,9 @@ export default function MobileDropdown({ isOpen }) {
               );
             })}
             <FlexContainer wrap>
-              <a
-                className={styles.minorLink}
-                href="https://ourlifeloop.squarespace.com/training"
-              >
+              <Link className={styles.minorLink} to="/training/staff">
                 Training
-              </a>
+              </Link>
               <a
                 className={styles.minorLink}
                 href="https://ourlifeloop.com/login"

@@ -102,15 +102,13 @@ export default function Header({
 
   const renderExternalLinks = () => (
     <FlexContainer justify="flexend">
-      <a
+      <Link
         className={styles.minorLink}
         aria-label="LifeLoop Training"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://ourlifeloop.squarespace.com/training"
+        to="/training/staff"
       >
         Training
-      </a>
+      </Link>
       <a
         className={styles.minorLink}
         aria-label="LifeLoop Login"
