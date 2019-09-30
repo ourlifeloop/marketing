@@ -14,25 +14,11 @@ import styles from './user-training.module.scss';
 
 const headerByUserType = userType => {
   if (userType === 'staff') {
-    return (
-      <FlexContainer direction="column" align="center">
-        <TitleSection header="How Can We Help?" width="small">
-          <p>
-            Welcome to the LifeLoop Learning Community, built especially for
-            staff members! LifeLoop makes it easy for staff to manage a
-            community. However, we understand that with the many features, it is
-            a learning process to properly utilize LifeLoop. This page is
-            dedicated to easing your learning experience and getting comfortable
-            with using LifeLoop.
-          </p>
-          <Link to={`/training/${userType}/getting-started`}>
-            <Button>New to LifeLoop? Start Here</Button>
-          </Link>
-        </TitleSection>
-      </FlexContainer>
-    );
+    return 'Welcome to the LifeLoop Learning Community, built especially for staff members! LifeLoop makes it easy for staff to manage a community. However, we understand that with the many features, it is a learning process to properly utilize LifeLoop. This page is dedicated to easing your learning experience and getting comfortable with using LifeLoop.';
+  } else if (userType === 'family') {
+    return 'Welcome to the LifeLoop Learning Community, built especially for family members! LifeLoop makes it easy for you to stay connected with your loved one and learn more about their daily activities. This page is dedicated to helping you learn the LifeLoop platform and answer any questions you may have.';
   }
-  return null;
+  return 'Welcome to the LifeLoop Learning Community, built especially for residents! This page is dedicated to helping you get comfortable with using LifeLoop. Below you will be able to browse by topic, view FAQ’s and more. If you have any questions, please feel free to contact us at the phone number above or ask a community staff member for assistance.';
 };
 
 export default ({ data, userType, topics }) => {
@@ -45,7 +31,16 @@ export default ({ data, userType, topics }) => {
   return (
     <TrainingWrapper
       title={`LifeLoop Training - ${startCase(userType)}`}
-      header={headerByUserType(userType)}
+      header={
+        <FlexContainer direction="column" align="center">
+          <TitleSection header="How Can We Help?" width="small">
+            <p>{headerByUserType(userType)}</p>
+            <Link to={`/training/${userType}/getting-started`}>
+              <Button>New to LifeLoop? Start Here</Button>
+            </Link>
+          </TitleSection>
+        </FlexContainer>
+      }
       userType={userType}
     >
       <Section width="medium">
