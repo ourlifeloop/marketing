@@ -22,6 +22,7 @@ answer: >-
   LifeLoop and end all emails.
 topics:
   - family-portal
+  - main-page
 userTypes:
   - family
 ---
