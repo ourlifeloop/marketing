@@ -14,6 +14,7 @@ answer: |-
   -Optional: Maintenance and Transportation 
 topics:
   - family-portal
+  - getting-started
 userTypes:
   - resident
 ---
