@@ -23,6 +23,8 @@ answer: >-
   login information. 
 topics:
   - resident-management
+  - main-page
+  - getting-started
 userTypes:
   - staff
 ---
