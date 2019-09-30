@@ -53,7 +53,7 @@ export const useDimensions = () => {
     debounce(
       () =>
         setDimensions({
-          width: window.innerWidth,
+          width: document.body.clientWidth,
           height: window.innerHeight,
         }),
       50,
@@ -119,7 +119,7 @@ export const useTrainingAuth = () => {
   useEffect(() => {
     localForage.getItem(AUTH_KEY).then(value => {
       if (isValidAuth(value)) {
-        navigate('/training');
+        navigate('/training/staff');
       }
     });
   }, []);
@@ -127,7 +127,7 @@ export const useTrainingAuth = () => {
   return value => {
     if (value === PASS) {
       localForage.setItem(AUTH_KEY, new Date().toISOString()).then(() => {
-        navigate('/training');
+        navigate('/training/staff');
       });
     }
   };
