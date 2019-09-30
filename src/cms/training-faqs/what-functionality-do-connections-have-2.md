@@ -12,6 +12,7 @@ answer: |-
   -Optional: make maintenance and transportation requests. 
 topics:
   - family-portal
+  - getting-started
 userTypes:
   - resident
 ---
