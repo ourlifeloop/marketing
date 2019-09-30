@@ -2,11 +2,12 @@ import React from 'react';
 import Img from 'gatsby-image';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
-import TrainingWrapper from './training-wrapper';
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
 import TRAINING_TOPICS from '../utils/training-topics';
 import { includes, startCase } from '../utils/lodash';
+import QuestionAndAnswer from './question-and-answer';
+import TrainingWrapper from './training-wrapper';
 import Section from '../primitives/section';
 import Button from '../primitives/button';
 
@@ -21,7 +22,7 @@ const headerByUserType = userType => {
   return 'Welcome to the LifeLoop Learning Community, built especially for residents! This page is dedicated to helping you get comfortable with using LifeLoop. Below you will be able to browse by topic, view FAQ’s and more. If you have any questions, please feel free to contact us at the phone number above or ask a community staff member for assistance.';
 };
 
-export default ({ data, userType, topics }) => {
+export default ({ userType, topics, faqs }) => {
   const images = useStaticQuery(graphql`
     query {
       ...trainingImages
@@ -60,6 +61,11 @@ export default ({ data, userType, topics }) => {
           )}
         </FlexContainer>
       </Section>
+      {!!faqs.length && (
+        <TitleSection header="Frequently Asked Questions">
+          <QuestionAndAnswer questions={faqs} />
+        </TitleSection>
+      )}
     </TrainingWrapper>
   );
 };

@@ -5,18 +5,19 @@ import UserTraining from '../components/user-training';
 import { uniq, flatten } from '../utils/lodash';
 
 export default ({ data, pageContext }) => {
+  const faqs = data.faqs.edges.map(({ node }) => node.frontmatter);
   const topics = uniq(
-    flatten(
-      data.allMarkdownRemark.edges.map(({ node }) => node.frontmatter.topics),
-    ),
+    flatten(data.topics.edges.map(({ node }) => node.frontmatter.topics)),
   );
 
-  return <UserTraining userType={pageContext.userType} topics={topics} />;
+  return (
+    <UserTraining userType={pageContext.userType} topics={topics} faqs={faqs} />
+  );
 };
 
 export const query = graphql`
   query($userType: String!) {
-    allMarkdownRemark(
+    topics: allMarkdownRemark(
       filter: {
         fields: { slug: { regex: "^/training/" } }
         frontmatter: { userTypes: { eq: $userType } }
@@ -26,6 +27,21 @@ export const query = graphql`
         node {
           frontmatter {
             topics
+          }
+        }
+      }
+    }
+    faqs: allMarkdownRemark(
+      filter: {
+        fields: { slug: { regex: "^/training/" } }
+        frontmatter: { userTypes: { eq: "staff" }, topics: { eq: "main-page" } }
+      }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            question
+            answer
           }
         }
       }
