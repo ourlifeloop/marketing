@@ -11,6 +11,7 @@ answer: >-
 topics:
   - getting-started
   - family-portal
+  - main-page
 userTypes:
   - family
 ---

@@ -19,6 +19,8 @@ answer: >-
   threads you have will also be under the Message tab.
 topics:
   - family-portal
+  - main-page
+  - getting-started
 userTypes:
   - family
 ---

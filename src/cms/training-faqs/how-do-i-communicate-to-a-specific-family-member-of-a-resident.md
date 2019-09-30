@@ -15,6 +15,7 @@ answer: >-
 isMobile: false
 topics:
   - messaging
+  - getting-started
 userTypes:
   - staff
 ---

@@ -48,6 +48,8 @@ answer: >-
 isMobile: false
 topics:
   - activity-calendar
+  - main-page
+  - getting-started
 userTypes:
   - staff
 ---

@@ -9,6 +9,7 @@ answer: >-
 topics:
   - family-portal
   - getting-started
+  - main-page
 userTypes:
   - family
 ---

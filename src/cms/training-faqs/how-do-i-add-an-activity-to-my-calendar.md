@@ -14,6 +14,7 @@ answer: >-
 topics:
   - getting-started
   - activity-calendar
+  - main-page
 userTypes:
   - staff
 ---

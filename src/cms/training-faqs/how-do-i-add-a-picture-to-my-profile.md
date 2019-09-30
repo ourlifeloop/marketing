@@ -11,6 +11,8 @@ answer: >-
   your image (upload, taking a photo etc.) 
 topics:
   - family-portal
+  - main-page
+  - getting-started
 userTypes:
   - family
 ---
