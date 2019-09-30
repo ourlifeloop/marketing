@@ -35,3 +35,15 @@ $icon-size: 50px;
   right: 0;
   text-align: center;
 }
+
+.new {
+  background-color: $primary-blue;
+  border-radius: 50%;
+  color: $text-light;
+  font-size: 0.8rem;
+  height: 44px;
+  position: absolute;
+  left: -12px;
+  top: -12px;
+  width: 44px;
+}

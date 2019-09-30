@@ -9,10 +9,10 @@ import TRAINING_TOPICS from '../utils/training-topics';
 import QuestionAndAnswer from './question-and-answer';
 import VideoModal from '../primitives/video-modal';
 import TrainingDocument from './training-document';
+import { includes, sortBy } from '../utils/lodash';
 import TrainingVideo from './training-video';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
-import { includes } from '../utils/lodash';
 
 import styles from './training-topic.module.scss';
 
@@ -83,14 +83,17 @@ export default function TrainingTopic({
         )}
         <FlexContainer direction="column" className={styles.rightColumn}>
           <FlexContainer wrap className={styles.videoContainer}>
-            {videos.map(({ key, cover, video, title }) => (
-              <TrainingVideo
-                key={key}
-                title={title}
-                cover={cover && <Img fixed={cover.childImageSharp.fixed} />}
-                onClick={link => setActiveVideo({ link: video, title })}
-              />
-            ))}
+            {sortBy(videos, vid => (vid.isNew ? -1 : 1)).map(
+              ({ key, cover, video, title, isNew }) => (
+                <TrainingVideo
+                  key={key}
+                  isNew={isNew}
+                  title={title}
+                  cover={cover && <Img fixed={cover.childImageSharp.fixed} />}
+                  onClick={link => setActiveVideo({ link: video, title })}
+                />
+              ),
+            )}
           </FlexContainer>
           {!!documents.length && firstTitle !== 'Documents' && (
             <h1>Documents</h1>
