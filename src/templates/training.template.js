@@ -34,7 +34,10 @@ export const query = graphql`
     faqs: allMarkdownRemark(
       filter: {
         fields: { slug: { regex: "^/training/" } }
-        frontmatter: { userTypes: { eq: "staff" }, topics: { eq: "main-page" } }
+        frontmatter: {
+          userTypes: { eq: $userType }
+          topics: { eq: "main-page" }
+        }
       }
     ) {
       edges {
