@@ -27,7 +27,7 @@ export default ({ data, location }) => (
     <ImageSection
       leftImage
       title="Tag Residents In Special Moments"
-      description="Taking photos as bingo? Great! Tag residents in photos which allows those photos to show up in their resident profile and be shared with family members."
+      description="Taking photos at bingo? Great! Tag residents in photos which allows those photos to show up in their resident profile and be shared with family members."
       image={data.tag.childImageSharp.fluid}
     />
     <ImageSection
