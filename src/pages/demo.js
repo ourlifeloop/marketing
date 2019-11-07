@@ -15,6 +15,7 @@ import Label from '../primitives/label';
 import Input from '../primitives/input';
 
 const ROLES = [
+  'Life Enrichment/Activities',
   'Sales & Marketing',
   'Finance',
   'IT',
