@@ -1,0 +1,11 @@
+{
+  "appLinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "YE5LPA6BV5.com.ourlifeloop.lifeloop",
+        "paths": ["/*/*/*"]
+      }
+    ]
+  }
+}
