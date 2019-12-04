@@ -4,7 +4,15 @@
     "details": [
       {
         "appID": "YE5LPA6BV5.com.ourlifeloop.lifeloop",
-        "paths": ["/*/*/*"]
+        "paths": [
+          "/*/maintenance*",
+          "/*/transportation*",
+          "/*/activities*",
+          "/*/calendar*",
+          "/*/communication/message*",
+          "/*/gallery*",
+          "/*/residents*"
+        ]
       }
     ]
   }
