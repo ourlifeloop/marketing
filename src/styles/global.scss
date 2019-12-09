@@ -4,6 +4,9 @@
 $header-margin: 1rem;
 $other-margin: 0.8rem;
 
+html {
+  overflow-y: auto;
+}
 h1,
 h2,
 h3 {
