@@ -135,7 +135,7 @@ TrainingHeader.defaultProps = {
   title:
     'LifeLoop assisted living community management software: connecting families, residents and communities.',
   description:
-    'Senior living calendar management, activity tracking, and resident engagement software used to connect families, residents, and staff. Share photos and updates and communicate through messaging to ensure personalized care to seniors in skilled nursing and assisted living.',
+    'Technology solutions to enhance the lives of residents, family members and the staff who care for them.',
   canonical: '',
   userType: 'staff',
 };
