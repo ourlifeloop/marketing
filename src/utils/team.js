@@ -22,11 +22,6 @@ export default [
     image: 'meganKing',
   },
   {
-    name: 'Jason Stevens',
-    title: 'Vice President of Strategy & Sales Operations',
-    image: 'jasonStevens',
-  },
-  {
     name: 'Brett Robeson',
     title: 'Strategic Programs Manager',
     image: 'brettRobeson',
@@ -83,9 +78,6 @@ export const teamImages = graphql`
       ...teamImage
     }
     meganKing: file(relativePath: { eq: "team/megan.king.jpg" }) {
-      ...teamImage
-    }
-    jasonStevens: file(relativePath: { eq: "team/jason.stevens.jpg" }) {
       ...teamImage
     }
     brettRobeson: file(relativePath: { eq: "team/brett.robeson.jpg" }) {
