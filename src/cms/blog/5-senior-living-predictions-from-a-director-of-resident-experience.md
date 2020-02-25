@@ -7,13 +7,13 @@ photo: /images/cms/sara-blog-graphic-1-.jpg
 ---
 No one can doubt that these are interesting times to be in senior living.
 
-Between reimbursement shifts, rollicking demographic trends, and an impending presidential election, it’s clear there’s a lot of change on the way. 
+Between reimbursement shifts, lively demographic trends, and an impending presidential election, it’s clear there’s a lot of change on the way. 
 
 To help senior living leaders chart the path ahead, we spoke to Sara Kyle, PhD, Director of Resident Experience at Holiday Retirement, in Florida, about what she sees coming for the remainder of 2020.  
 
 Here she lends clarity on 5 big senior living trends to watch this year. 
 
-****
+- - -
 
 **1 - Wellness and engagement budgets will increase**
 
@@ -25,7 +25,7 @@ However, she thinks that engagement budgets may start to grow soon. Various pres
 
 “The business case for investing more in engagement is becoming clearer,” Sara says. “A robust engagement program draws in more residents, and can most definitely increase the average length of stay if socialization, movement and cognition focused offerings are fundamental elements in an activity program.  Research shows us such additions are invaluable for senior living communities.”
 
-****
+- - -
 
 **2 - The occupancy whiplash**
 
@@ -41,7 +41,7 @@ As more Baby Boomers age into retirement, there’s always the chance that, in s
 
 “It’s not going to happen everywhere, but it’s already happening in some states,” Sara says. “Definitely something to watch for as we recraft our message to attract people based on want, not just need.” 
 
-****
+- - -
 
 **3 - A new flurry of documentation**
 
@@ -53,7 +53,7 @@ This will likely entail strong investments in new documentation practices, wheth
 
 “Staying on top of PDPM’s documentation standards is something that communities quite literally can’t afford not to do,” Sara says. “We can predict that communities will err on the side of caution, at least until we see how PDPM’s payments actually shake out.” 
 
-****
+- - -
 
 **4 - Declining tolerance for data-silos**
 
@@ -65,7 +65,7 @@ Translation? The days of data-silos are numbered.
 
 Interoperability is a by-word in the industry for a reason. Having platforms auto-populate with data, so that leaders can see everything they need in a glance, is no longer a nice-to-have. It’s a necessity. 
 
-****
+- - -
 
 **5 - Using creativity to solve workforce woes**
 
@@ -83,10 +83,9 @@ This means that senior living communities are going to have to come up with crea
 
 The more that senior living communities can connect front-line work to residents’ well-being, and the more they can ease the routine burdens of their job, the better luck communities have with retention. 
 
-****
+- - -
 
 **The big picture**
-
 
 Finally, Sara comments on one over-arching trend that will predominate the industry for years to come: a move toward understanding the resident as a person.
 
