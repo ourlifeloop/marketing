@@ -5,7 +5,7 @@ author: Andrea Clauson
 title: >-
   COVID-19: LifeLoop Best Practices for Keeping your Residents, Staff Members
   and Families Informed
-photo: /images/cms/coronavirus-blog-graphic.png
+photo: /images/cms/coronavirus-email-graphic-2-.png
 ---
 Senior living communities across the country are taking every precaution with coronavirus (COVID-19) and putting plans in place to keep their residents healthy. While much about the spread of the disease is still unknown, indications point to the fact that older people, and those with preexisting medical conditions, appear to be more vulnerable. Knowing this, many senior living communities are restricting access of nonessential visitors, delivering meals to residents’ apartments rather than serving meals in the dining room, and asking high-risk staff members to stay at home. 
 
