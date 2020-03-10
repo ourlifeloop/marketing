@@ -31,7 +31,7 @@ While there are many uncertainties around COVID-19, we would like to assure you 
 >
 > These slides are completely customizable and can be changed based on the location of the TV in your facility. They can also be updated at a moment’s notice and broadcast throughout your community for residents, staff and visitors.  
 
-## **5.	Customize Notifications Reminder**
+## **5.	Customized Notification Reminders**
 
 > Identify one or two contacts at your community that oversee communications to staff, residents and families regarding COVID-19. These individuals will also address questions or concerns that anyone may have. Make sure they have the appropriate permissions to message all parties within LifeLoop. 
 >
