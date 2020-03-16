@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import EmbeddedDisplay from '../../components/embedded-display';
 import FeatureWrapper from '../../components/feature-wrapper';
 import TitleSection from '../../primitives/title.section';
 import ImageSection from '../../primitives/image-section';
@@ -36,6 +37,15 @@ export default ({ data, location }) => (
       description="If your community has an in-room channel, you can easily show your displays in this format allowing you to broadcast this information in all of your residents’ rooms."
       image={data.channels.childImageSharp.fluid}
     />
+    <TitleSection header="Embedded Displays">
+      <p>
+        Easily add digital signage on your website by embedding your displays.
+        This feature allows family members an opportunity to see what is going
+        on day-to-day in your community and gives prospects a feel for the type
+        of activities and events you offer.
+      </p>
+    </TitleSection>
+    <EmbeddedDisplay url="https://ourlifeloop.com/preview/displays/dzp0di" />
   </FeatureWrapper>
 );
 
