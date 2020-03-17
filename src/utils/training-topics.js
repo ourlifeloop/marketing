@@ -107,6 +107,12 @@ export default [
     image: 'marketing',
     Icon: marketing,
   },
+  {
+    key: 'resident-engagement',
+    name: 'Resident Engagement Tools',
+    image: 'residentManagement',
+    Icon: residentManagement,
+  },
 ];
 
 export const trainingImages = graphql`
