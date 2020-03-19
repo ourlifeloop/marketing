@@ -15,6 +15,7 @@ import residentManagement from '../assets/icons/resident-management.svg';
 import residents from '../assets/icons/residents.svg';
 import staffManagement from '../assets/icons/staff-management.svg';
 import transportation from '../assets/icons/transportation.svg';
+import residentEngagementTools from '../assets/icons/resident-engagement-tools.svg';
 
 export default [
   {
@@ -110,8 +111,8 @@ export default [
   {
     key: 'resident-engagement',
     name: 'Resident Engagement Tools',
-    image: 'residentManagement',
-    Icon: residentManagement,
+    image: 'residentEngagementTools',
+    Icon: residentEngagementTools,
   },
 ];
 
@@ -174,6 +175,11 @@ export const trainingImages = graphql`
       ...featureImage
     }
     transportation: file(relativePath: { eq: "features/transportation.png" }) {
+      ...featureImage
+    }
+    residentEngagementTools: file(
+      relativePath: { eq: "features/resident-engagement-tools.png" }
+    ) {
       ...featureImage
     }
   }

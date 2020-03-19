@@ -61,10 +61,15 @@ $topic-padding: 0.4rem;
 }
 
 $icon-size: 26px;
+.topicItemContainer {
+  height: $icon-size;
+  margin-right: 0.8rem;
+  width: $icon-size;
+}
+
 .topicIcon {
   fill: $primary-blue;
   height: $icon-size;
-  margin-right: 0.8rem;
   transition: fill 0.2s linear;
   width: $icon-size;
 }

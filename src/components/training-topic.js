@@ -74,7 +74,12 @@ export default function TrainingTopic({
                     [styles.topicActive]: key === topic,
                   })}
                 >
-                  <Icon className={styles.topicIcon} />
+                  <FlexContainer
+                    alignItems="center"
+                    className={styles.topicItemContainer}
+                  >
+                    <Icon className={styles.topicIcon} />
+                  </FlexContainer>
                   <span className={styles.topicName}>{name}</span>
                 </FlexContainer>
               </Link>
