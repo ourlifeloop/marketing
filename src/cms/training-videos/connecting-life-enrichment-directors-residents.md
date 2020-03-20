@@ -1,6 +1,6 @@
 ---
 title: 'Connecting: Life Enrichment Directors & Residents'
-video: 'https://youtu.be/XQDtfhPTgNo'
+video: 'https://www.youtube-nocookie.com/embed/XQDtfhPTgNo'
 cover: /images/cms/vid-cov-7.jpg
 isNew: false
 isMobile: false
@@ -9,4 +9,3 @@ topics:
 userTypes:
   - staff
 ---
-
