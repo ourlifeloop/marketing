@@ -48,7 +48,7 @@ export default ({ data }) => {
   const { isMobile, isTablet } = useDevice();
 
   return (
-    <SiteWrapper title="Keeping family, residents and staff conneceted and engaged | LifeLoop">
+    <SiteWrapper title="Keeping family, residents and staff connected and engaged | LifeLoop">
       <HeroImage
         direction="right"
         height={isMobile ? '400px' : '500px'}
@@ -224,7 +224,7 @@ export default ({ data }) => {
       <VideoModal
         isOpen={!!video}
         onClose={() => setVideo()}
-        {...video || {}}
+        {...(video || {})}
       />
     </SiteWrapper>
   );
