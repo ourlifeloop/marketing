@@ -270,11 +270,8 @@ export default ({ data }) => (
           of our service to individuals age 18 and above. We do not knowingly
           collect personal information from children under the age of 13. If you
           believe we have information about a child under 13 through improper
-          means, please notify us at{' '}
-          <a href={`mailto:${data.site.siteMetadata.information}`}>
-            {data.site.siteMetadata.information}
-          </a>
-          .
+          means, please contact us at{' '}
+          <Link to="/support">Lifeloop Support</Link>.
         </p>
         <p>
           <strong>Updating Personal Information; Opt-Out</strong>
@@ -282,18 +279,14 @@ export default ({ data }) => (
         <p>
           If your personally identifiable information changes, LifeLoop will
           endeavor to provide a way to correct, update, and/or remove your
-          previously provided personal data. This can be done by emailing a
-          request to LifeLoop at{' '}
-          <a href={`mailto:${data.site.siteMetadata.information}`}>
-            {data.site.siteMetadata.information}
-          </a>
-          . When you sign up for our updates or receive e-mail messages from
-          LifeLoop, you will always be given the chance to opt-out of special
-          offers and site updates. You may change your preferences at any time
-          and will only be contacted in manners consistent with your stated
-          preferences. All retained personally identifiable information will
-          continue to be subject to the terms of the Privacy Policy to which you
-          have previously agreed.
+          previously provided personal data. This can be done by contacting us
+          at <Link to="/support">Lifeloop Support</Link>. When you sign up for
+          our updates or receive e-mail messages from LifeLoop, you will always
+          be given the chance to opt-out of special offers and site updates. You
+          may change your preferences at any time and will only be contacted in
+          manners consistent with your stated preferences. All retained
+          personally identifiable information will continue to be subject to the
+          terms of the Privacy Policy to which you have previously agreed.
         </p>
         <p>
           <strong>Your California Privacy Rights</strong>
@@ -304,11 +297,7 @@ export default ({ data }) => (
           disclosures of personally identifiable information to third parties
           for such third parties’ direct marketing purposes. If you are a
           California resident and would like to make such a request, please
-          email LifeLoop at{' '}
-          <a href={`mailto:${data.site.siteMetadata.information}`}>
-            {data.site.siteMetadata.information}
-          </a>
-          .
+          contact us at <Link to="/support">Lifeloop Support</Link>.
         </p>
         <p>
           <strong>
@@ -321,21 +310,19 @@ export default ({ data }) => (
           longer desires to receive non-account specific information from
           LifeLoop, LifeLoop will endeavor to provide a way to correct, update
           and/or remove that User’s previously-provided personal data. This can
-          be done by emailing a request to LifeLoop at{' '}
-          <a href={`mailto:${data.site.siteMetadata.information}`}>
-            {data.site.siteMetadata.information}
-          </a>
-          . Additionally, you may request access to the personally identifiable
-          information as collected by LifeLoop by sending a request to LifeLoop
-          as set forth above. Please note that in certain circumstances,
-          LifeLoop may not be able to completely remove a User’s information
-          from its systems. For example, LifeLoop may retain a User’s personal
-          information for legitimate business purposes, if it may be necessary
-          to prevent fraud or future abuse, for account recovery purposes, if
-          required by law or as retained in LifeLoop’s data backup systems or
-          cached or archived pages. All retained personally identifiable
-          information will continue to be subject to the terms of the Privacy
-          Policy to which the User has previously agreed.
+          be done by contacting us at{' '}
+          <Link to="/support">Lifeloop Support</Link>. Additionally, you may
+          request access to the personally identifiable information as collected
+          by LifeLoop by sending a request to LifeLoop as set forth above.
+          Please note that in certain circumstances, LifeLoop may not be able to
+          completely remove a User’s information from its systems. For example,
+          LifeLoop may retain a User’s personal information for legitimate
+          business purposes, if it may be necessary to prevent fraud or future
+          abuse, for account recovery purposes, if required by law or as
+          retained in LifeLoop’s data backup systems or cached or archived
+          pages. All retained personally identifiable information will continue
+          to be subject to the terms of the Privacy Policy to which the User has
+          previously agreed.
         </p>
         <p>
           <strong>Contacting LIFELOOP</strong>
@@ -351,10 +338,7 @@ export default ({ data }) => (
           <br />
           Omaha, Nebraska 68154
           <br />
-          Email:{' '}
-          <a href={`mailto:${data.site.siteMetadata.information}`}>
-            {data.site.siteMetadata.information}
-          </a>
+          <Link to="/support">Lifeloop Contact</Link>
         </p>
       </Section>
     </Layout>
@@ -366,7 +350,6 @@ export const query = graphql`
     site {
       siteMetadata {
         displayUrl
-        information
       }
     }
   }
