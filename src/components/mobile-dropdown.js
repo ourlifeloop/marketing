@@ -91,7 +91,7 @@ export default function MobileDropdown({ isOpen }) {
               </Link>
               <a
                 className={styles.minorLink}
-                href="https://ourlifeloop.com/login"
+                href="https://lifeloopapp.com/login"
               >
                 Login
               </a>

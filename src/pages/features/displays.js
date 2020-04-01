@@ -45,7 +45,7 @@ export default ({ data, location }) => (
         of activities and events you offer.
       </p>
     </TitleSection>
-    <EmbeddedDisplay url="https://ourlifeloop.com/preview/displays/dzp0di" />
+    <EmbeddedDisplay url="https://lifeloopapp.com/preview/displays/dzp0di" />
   </FeatureWrapper>
 );
 

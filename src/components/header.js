@@ -114,7 +114,7 @@ export default function Header({
         aria-label="LifeLoop Login"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://ourlifeloop.com/login"
+        href="https://lifeloopapp.com/login"
       >
         Login
       </a>
