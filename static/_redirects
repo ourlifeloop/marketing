@@ -81,3 +81,8 @@
 /news/2019/1/3/jason-stevens-joins-lifeloop-team-as-vice-president-of-strategy-amp-sales-operations.html            /blog/jason-stevens-joins-lifeloop-team-as-vice-president-of-strategy-sales-operations
 /news/2019/5/14/lifeloopco-founder-amp-ceo-named-as-a-2019-argentum-senior-living-leader-under-40                   /blog/lifeloop%E2%80%AFco-founder-ceo-named-as-a-2019-argentum-senior-living-leader-under-40
 /news/2019/5/14/lifeloopco-founder-amp-ceo-named-as-a-2019-argentum-senior-living-leader-under-40.html              /blog/lifeloop%E2%80%AFco-founder-ceo-named-as-a-2019-argentum-senior-living-leader-under-40
+
+https://ourlifeloop.netlify.com/lifeloop/calendar/embed calendar=:calendar https://lifeloopapp.com/lifeloop/calendar/embed
+https://ourlifeloop.netlify.com/lifeloop/* https://lifeloopapp.com/lifeloop/:splat 301
+
+https://ourlifeloop.netlify.app/lifeloop/* https://lifeloopapp.com/lifeloop/:splat 301
