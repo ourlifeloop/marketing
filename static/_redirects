@@ -82,8 +82,8 @@
 /news/2019/5/14/lifeloopco-founder-amp-ceo-named-as-a-2019-argentum-senior-living-leader-under-40                   /blog/lifeloop%E2%80%AFco-founder-ceo-named-as-a-2019-argentum-senior-living-leader-under-40
 /news/2019/5/14/lifeloopco-founder-amp-ceo-named-as-a-2019-argentum-senior-living-leader-under-40.html              /blog/lifeloop%E2%80%AFco-founder-ceo-named-as-a-2019-argentum-senior-living-leader-under-40
 
-https://ourlifeloop.netlify.com/lifeloop/calendar/embed https://lifeloopapp.com/lifeloop/calendar/embed/:splat 200
+https://ourlifeloop.netlify.com/lifeloop/calendar/embed calendars=:calendars https://lifeloopapp.com/lifeloop/calendar/embed 200
 https://ourlifeloop.netlify.com/lifeloop/* https://lifeloopapp.com/lifeloop/:splat 301
 
-https://ourlifeloop.netlify.app/lifeloop/calendar/embed https://lifeloopapp.com/lifeloop/calendar/embed/:splat 200
+https://ourlifeloop.netlify.app/lifeloop/calendar/embed calendars=:calendars https://lifeloopapp.com/lifeloop/calendar/embed 200
 https://ourlifeloop.netlify.app/lifeloop/* https://lifeloopapp.com/lifeloop/:splat 301
