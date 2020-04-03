@@ -56,6 +56,11 @@ export default [
     title: 'Customer Success Specialist',
     image: 'natalliaJorgensen',
   },
+  {
+    name: 'Jess Donahue',
+    title: 'Customer Success Specialist',
+    image: 'jessDonahue',
+  },
 ];
 
 export const teamImages = graphql`
@@ -101,6 +106,9 @@ export const teamImages = graphql`
     natalliaJorgensen: file(
       relativePath: { eq: "team/natallia.jorgensen.jpg" }
     ) {
+      ...teamImage
+    }
+    jessDonahue: file(relativePath: { eq: "team/jess.donahue.jpg" }) {
       ...teamImage
     }
   }
