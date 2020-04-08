@@ -573,7 +573,7 @@ export const testimonialImages = graphql`
     countryHouse: file(relativePath: { eq: "logos/country-house-logo.jpg" }) {
       ...testimonialImage
     }
-    dial: file(relativePath: { eq: "logos/dial-logo.jpg" }) {
+    dial: file(relativePath: { eq: "logos/dial-logo.png" }) {
       ...testimonialImage
     }
     fieldstone: file(relativePath: { eq: "logos/fieldstone-logo.jpg" }) {
