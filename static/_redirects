@@ -82,6 +82,7 @@
 /news/2019/5/14/lifeloopco-founder-amp-ceo-named-as-a-2019-argentum-senior-living-leader-under-40                   /blog/lifeloop%E2%80%AFco-founder-ceo-named-as-a-2019-argentum-senior-living-leader-under-40
 /news/2019/5/14/lifeloopco-founder-amp-ceo-named-as-a-2019-argentum-senior-living-leader-under-40.html              /blog/lifeloop%E2%80%AFco-founder-ceo-named-as-a-2019-argentum-senior-living-leader-under-40
 
+https://ourlifeloop.netlify.com/login https://lifeloopapp.com/login
 https://ourlifeloop.netlify.com/dial/* https://lifeloopapp.com/dial/:splat 301
 https://ourlifeloop.netlify.com/dunklaugardens/* https://lifeloopapp.com/dunklaugardens/:splat 301
 https://ourlifeloop.netlify.com/agemark/* https://lifeloopapp.com/agemark/:splat 301
@@ -156,6 +157,7 @@ https://ourlifeloop.netlify.com/heritagecommunities/* https://lifeloopapp.com/he
 https://ourlifeloop.netlify.com/rivertownridge/* https://lifeloopapp.com/rivertownridge/:splat 301
 https://ourlifeloop.netlify.com/lifeloop/* https://lifeloopapp.com/lifeloop/:splat 301
 
+https://ourlifeloop.netlify.app/login https://lifeloopapp.com/login
 https://ourlifeloop.netlify.app/dial/* https://lifeloopapp.com/dial/:splat 301
 https://ourlifeloop.netlify.app/dunklaugardens/* https://lifeloopapp.com/dunklaugardens/:splat 301
 https://ourlifeloop.netlify.app/agemark/* https://lifeloopapp.com/agemark/:splat 301
