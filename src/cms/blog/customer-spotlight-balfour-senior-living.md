@@ -17,6 +17,8 @@ According to Louise Garrels, Balfour’s director of marketing and communication
 
 Here’s how Balfour deploys LifeLoop to make sure no one in their communities feel alone —even during a crisis.  
 
+![](/images/cms/“lifeloop-solves-so-many-of-the-problems-you-have-when-you’re-reaching-a-huge-number-of-residents-and-family-members-all-at-once-”-louise-says.-“it-keeps-us-all-connected-in-a-way-that’s-scalable-and-transparent.”.png)
+
 ## Easing fears — by elevating service
 
 Among Balfour’s residents and families, the coronavirus crisis had a predictable effect. Once the news circulated that older adults were particularly vulnerable to COVID-19, family members naturally became anxious for their loved ones’ safety. 
@@ -43,8 +45,6 @@ Has that level of engagement slipped during the coronavirus outbreak? Not at all
 
 LifeLoop streamlines the activity planning process. The platform gives life enrichment teams and other administrators an at-a-glance understanding of their activity programs, at both a systemic and facility level. 
 
-![](/images/cms/“lifeloop-solves-so-many-of-the-problems-you-have-when-you’re-reaching-a-huge-number-of-residents-and-family-members-all-at-once-”-louise-says.-“it-keeps-us-all-connected-in-a-way-that’s-scalable-and-transparent.”.png)
-
 This makes it easier for teams to see which activities have already been done, which are well attended, and which might stand for some alteration.
 
 “It’s a way of motivating our life-enrichment teams. This team has X number of activities? Well, that facility’s going to come up with even more! It unlocks that healthy sense of competition that keeps Balfour dynamic,” Louise says. 
@@ -52,6 +52,8 @@ This makes it easier for teams to see which activities have already been done, w
 And, perhaps even more important, family members have visibility into everything their loved ones participate in.  
 
 “Thanks to LifeLoop, they know that the resident they care about isn’t just sitting around,” Louise says. “It’s one thing if we tell them that their loved one is doing well. But LifeLoop helps them see it.”
+
+![](/images/cms/quote-2.png)
 
 ## Staying safe — by staying connected
 
@@ -77,7 +79,7 @@ Even better, using LifeLoop in this way has helped Balfour create a knowledge ba
 
 Finally, LifeLoop’s special features have helped to re-affirm what Balfour locations have always been: not just care facilities, but true communities of caregivers, residents, and their families.
 
-“You’re used to thinking of senior living as this 2-D thing, right?” Louise says. “There’s the resident, there’s the care staff, and that’s it. But that’s not really the whole story. The third dimension is that family member / loved one connection. LifeLoop helps us keep that in focus.”
+“You’re used to thinking of senior living as this 2-D thing, right?” Louise says. “There’s the resident, there’s the care staff, and that’s it. But that’s not really the whole story. The third dimension is that family member/loved one connection. LifeLoop helps us keep that in focus.”
 
 By opening up multiple lines of communication, LifeLoop strengthens the bonds that residents and their families feel to Balfour communities — and even opens up new opportunities for connection that no one had previously thought of.
 
