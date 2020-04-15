@@ -43,6 +43,8 @@ Has that level of engagement slipped during the coronavirus outbreak? Not at all
 
 LifeLoop streamlines the activity planning process. The platform gives life enrichment teams and other administrators an at-a-glance understanding of their activity programs, at both a systemic and facility level. 
 
+![](/images/cms/“lifeloop-solves-so-many-of-the-problems-you-have-when-you’re-reaching-a-huge-number-of-residents-and-family-members-all-at-once-”-louise-says.-“it-keeps-us-all-connected-in-a-way-that’s-scalable-and-transparent.”.png)
+
 This makes it easier for teams to see which activities have already been done, which are well attended, and which might stand for some alteration.
 
 “It’s a way of motivating our life-enrichment teams. This team has X number of activities? Well, that facility’s going to come up with even more! It unlocks that healthy sense of competition that keeps Balfour dynamic,” Louise says. 
