@@ -17,7 +17,7 @@ According to Louise Garrels, Balfour’s director of marketing and communication
 
 Here’s how Balfour deploys LifeLoop to make sure no one in their communities feel alone —even during a crisis.  
 
-![](/images/cms/“lifeloop-solves-so-many-of-the-problems-you-have-when-you’re-reaching-a-huge-number-of-residents-and-family-members-all-at-once-”-louise-says.-“it-keeps-us-all-connected-in-a-way-that’s-scalable-and-transparent.”.png)
+![](/images/cms/1.png)
 
 ## Easing fears — by elevating service
 
@@ -53,7 +53,7 @@ And, perhaps even more important, family members have visibility into everything
 
 “Thanks to LifeLoop, they know that the resident they care about isn’t just sitting around,” Louise says. “It’s one thing if we tell them that their loved one is doing well. But LifeLoop helps them see it.”
 
-![](/images/cms/quote-2.png)
+![](/images/cms/2.png)
 
 ## Staying safe — by staying connected
 
@@ -94,6 +94,8 @@ But LifeLoop gave the resident’s son a workaround.
 “He used LifeLoop to reach a Balfour staff member he could trust,” Louise says, “it was a caring staff member who he asked ‘Hey, my dad hates technology, but I’d love to see him. If you can, would you send me a picture of him, just so I can see he’s doing okay?’”
 
 That staff member did one better. She visited the resident in his room, and convinced him to give FaceTime a try with her own phone. For the first time in weeks, father and son were having a face-to-face conversation — all facilitated by LifeLoop.
+
+
 
 ## All about connection
 
