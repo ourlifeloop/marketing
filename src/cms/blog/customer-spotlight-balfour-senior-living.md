@@ -3,7 +3,7 @@ date: 2020-04-16T16:25:46.171Z
 type: spotlight
 author: Andrea Clauson
 title: 'Customer Spotlight: Balfour Senior Living'
-photo: /images/cms/balfour-blog-post-graphic.png
+photo: /images/cms/balfour-blog-post-graphic-1-.png
 ---
 The COVID-19 outbreak has totally upended American life. That’s especially true in senior living.
 
