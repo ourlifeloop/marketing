@@ -91,8 +91,8 @@ export default [
     Icon: reporting,
   },
   {
-    key: 'calendar-designer',
-    name: 'Calendar Designer',
+    key: 'designer',
+    name: 'Designer',
     image: 'calendarDesigner',
     Icon: calendarDesigner,
   },

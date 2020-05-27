@@ -64,7 +64,7 @@ collections:
           - { label: Family Portal, value: family-portal }
           - { label: Staff Management, value: staff-management }
           - { label: Reporting, value: reporting }
-          - { label: Calendar Designer, value: calendar-designer }
+          - { label: Designer, value: designer }
           - { label: Connections, value: connections }
           - { label: Marketing, value: marketing }
           - { label: Resident Engagement Tools, value: resident-engagement }
@@ -106,7 +106,7 @@ collections:
           - { label: Family Portal, value: family-portal }
           - { label: Staff Management, value: staff-management }
           - { label: Reporting, value: reporting }
-          - { label: Calendar Designer, value: calendar-designer }
+          - { label: Designer, value: designer }
           - { label: Connections, value: connections }
           - { label: Marketing, value: marketing }
           - { label: Resident Engagement Tools, value: resident-engagement }
@@ -150,7 +150,7 @@ collections:
           - { label: Family Portal, value: family-portal }
           - { label: Staff Management, value: staff-management }
           - { label: Reporting, value: reporting }
-          - { label: Calendar Designer, value: calendar-designer }
+          - { label: Designer, value: designer }
           - { label: Connections, value: connections }
           - { label: Marketing, value: marketing }
           - { label: Resident Engagement Tools, value: resident-engagement }

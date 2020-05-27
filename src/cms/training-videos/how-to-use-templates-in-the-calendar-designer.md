@@ -4,8 +4,7 @@ video: 'https://www.youtube-nocookie.com/embed/jOQfePi589M'
 cover: /images/cms/vid-cov-13.jpg
 isNew: false
 topics:
-  - calendar-designer
+  - designer
 userTypes:
   - staff
 ---
-
