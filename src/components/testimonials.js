@@ -1,7 +1,7 @@
 import React from 'react';
-import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import Img from 'gatsby-image/withIEPolyfill';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import FlexContainer from '../primitives/flex-container';
@@ -26,9 +26,11 @@ const TestimonialCard = ({
       [styles.communityColumnVertical]: isTablet,
     })}
   >
-    <div className={styles.communityLogo}>
-      <Img fixed={logo} />
-    </div>
+    <FlexContainer align="flexend" className={styles.logoContainer}>
+      <div className={styles.communityLogo}>
+        <Img fluid={logo} className={styles.communityImg} objectFit="contain" />
+      </div>
+    </FlexContainer>
     <p>
       <i>"{quote}"</i>
     </p>
@@ -40,7 +42,7 @@ const TestimonialCard = ({
   </FlexContainer>
 );
 
-export default function Testimonials({ testimonials }) {
+export default function Testimonials({ hideTitle, testimonials }) {
   const { isTablet } = useDevice();
   const images = useStaticQuery(
     graphql`
@@ -56,14 +58,16 @@ export default function Testimonials({ testimonials }) {
 
   return (
     <>
-      <TitleSection header="Join communities across the United States & Canada who are creating a better connection.">
-        <p>
-          Our product is proven to provide results that can benefit clients both
-          large and small. With LifeLoop, you will gain an experienced partner
-          who can help you achieve your desired outcomes, create efficiencies
-          and set your community apart.
-        </p>
-      </TitleSection>
+      {!hideTitle && (
+        <TitleSection header="Join communities across the United States & Canada who are creating a better connection.">
+          <p>
+            Our product is proven to provide results that can benefit clients
+            both large and small. With LifeLoop, you will gain an experienced
+            partner who can help you achieve your desired outcomes, create
+            efficiencies and set your community apart.
+          </p>
+        </TitleSection>
+      )}
       <Section
         centered
         noTopPadding
@@ -76,7 +80,7 @@ export default function Testimonials({ testimonials }) {
               key={testimonial.author}
               isTablet={isTablet}
               {...testimonial}
-              logo={images[testimonial.logo].childImageSharp.fixed}
+              logo={images[testimonial.logo].childImageSharp.fluid}
             />
           ))}
         </FlexContainer>
@@ -86,6 +90,7 @@ export default function Testimonials({ testimonials }) {
 }
 
 Testimonials.propTypes = {
+  hideTitle: PropTypes.bool,
   testimonials: PropTypes.arrayOf(
     PropTypes.shape({
       logo: PropTypes.string.isRequired,
@@ -94,4 +99,8 @@ Testimonials.propTypes = {
       position: PropTypes.string.isRequired,
     }).isRequired,
   ).isRequired,
+};
+
+Testimonials.defaultProps = {
+  hideTitle: false,
 };

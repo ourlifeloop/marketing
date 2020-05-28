@@ -18,11 +18,20 @@
   }
 }
 
+.logoContainer {
+  height: 130px;
+  margin-bottom: 1rem;
+}
+
 .communityLogo {
-  align-items: center;
-  display: flex;
-  height: 150px;
-  justify-content: center;
+  margin: 0 auto;
+  max-height: 130px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.communityImg {
+  max-height: 130px;
 }
 
 .quoteAuthor {

@@ -33,6 +33,10 @@
   &--column {
     flex-direction: column;
   }
+
+  &--columnreverse {
+    flex-direction: column-reverse;
+  }
 }
 
 .justify {

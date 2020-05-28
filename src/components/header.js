@@ -6,8 +6,8 @@ import classNames from 'classnames';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
 import { usePrevious, useDevice, useScrollPosition } from '../utils/effects';
+import { ArrowRight, ChevronDown, Menu, X } from '../utils/icons';
 import FlexContainer from '../primitives/flex-container';
-import { ChevronDown, Menu, X } from '../utils/icons';
 import { removeTrailingSlash } from '../utils/common';
 import MobileDropdown from './mobile-dropdown';
 import { map, values } from '../utils/lodash';
@@ -26,6 +26,7 @@ export default function Header({
   title,
   description,
   canonical,
+  banner,
 }) {
   const { isDesktop, isTablet, isMobile, isMini } = useDevice();
   const previousIsDesktop = usePrevious(isDesktop);
@@ -121,9 +122,34 @@ export default function Header({
     </FlexContainer>
   );
 
+  let mobileOffset = 90;
+  let contentOffset = isTablet ? 81 : 100;
+  if (transparent) {
+    contentOffset = 0;
+  }
+
+  let headerBanner;
+  if (banner) {
+    contentOffset += 40;
+    mobileOffset += 40;
+    headerBanner = (
+      <Link to={banner.link} className={styles.bannerLink}>
+        <FlexContainer
+          align="center"
+          justify="center"
+          className={styles.banner}
+        >
+          {banner.text}
+          <ArrowRight className={styles.bannerIcon} size={18} />
+        </FlexContainer>
+      </Link>
+    );
+  }
+
   return (
     <div className={styles.siteContainer}>
-      <MobileDropdown isOpen={isNavOpen} />
+      <MobileDropdown isOpen={isNavOpen} offset={mobileOffset} />
+      {headerBanner}
       <header
         style={{
           backgroundColor: !transparent
@@ -132,6 +158,7 @@ export default function Header({
         }}
         className={classNames(styles.header, {
           [styles.headerTransparent]: transparent,
+          [styles.headerBannerOffset]: headerBanner,
           [styles.headerOpenNav]: isNavOpen,
           [styles.headerWithShadow]:
             transparent && scrollPosition === TRANSPARENT_HEADER_END,
@@ -219,10 +246,8 @@ export default function Header({
       </header>
       <div
         ref={containerRef}
-        className={classNames(styles.contentContainer, {
-          [styles.contentContainerTransparent]: transparent,
-          [styles.contentContainerTablet]: isTablet,
-        })}
+        style={{ top: contentOffset }}
+        className={styles.contentContainer}
       >
         {children}
       </div>
@@ -236,6 +261,10 @@ Header.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   canonical: PropTypes.string,
+  banner: PropTypes.shape({
+    text: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+  }),
 };
 
 Header.defaultProps = {
@@ -245,4 +274,5 @@ Header.defaultProps = {
   description:
     'Technology solutions to enhance the lives of residents, family members and the staff who care for them.',
   canonical: '',
+  banner: undefined,
 };
