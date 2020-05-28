@@ -180,8 +180,8 @@ export const query = graphql`
           title: {
             in: [
               "COVID-19: LifeLoop Best Practices for Keeping your Residents, Staff Members and Families Informed"
-              "5 Senior Living Predictions from a Director of Resident Experience"
-              "How to Include Older Adults in the Digital Revolution"
+              "LifeLoop featured on MarketWatch: How senior centers are keeping residents happy as they try to protect them from COVID-19"
+              "Communication Technology Gives Communities More Time For Residents - Podcast featuring LifeLoop VP Nick Nemer"
             ]
           }
         }
