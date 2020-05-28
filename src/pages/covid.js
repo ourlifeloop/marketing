@@ -4,15 +4,19 @@ import { graphql } from 'gatsby';
 import classNames from 'classnames';
 
 import FlexContainer from '../primitives/flex-container';
+import ActionCallout from '../primitives/action-callout';
 import Testimonials from '../components/testimonials';
 import SiteWrapper from '../components/site-wrapper';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
+import Button from '../primitives/button';
 
 import styles from './covid.module.scss';
 
 export default ({ data }) => {
   const { isMobile } = useDevice();
+
+  console.log(data);
 
   return (
     <SiteWrapper>
@@ -98,6 +102,19 @@ export default ({ data }) => {
           },
         ]}
       />
+      <ActionCallout
+        noTopPadding
+        title="Resident Engagement Resources"
+        body="Our goal is to help provide you with resources and information that can benefit your residents during this unprecendented time. Below you will find a variety of activities to keep residents engaged both mentally and physically."
+        button={
+          <a
+            href={data.allResources.publicURL}
+            download={`${data.allResources.name}${data.allResources.ext}`}
+          >
+            <Button>Download All</Button>
+          </a>
+        }
+      />
     </SiteWrapper>
   );
 };
@@ -110,6 +127,25 @@ export const query = graphql`
           ...GatsbyImageSharpFixed
         }
       }
+    }
+    resources: allFile(
+      filter: {
+        sourceInstanceName: { eq: "files" }
+        extension: { in: ["pdf", "docx"] }
+      }
+    ) {
+      edges {
+        node {
+          publicURL
+          name
+          ext
+        }
+      }
+    }
+    allResources: file(relativePath: { eq: "resident-resources.zip" }) {
+      publicURL
+      name
+      ext
     }
   }
 `;
