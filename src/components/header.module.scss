@@ -44,7 +44,7 @@ $border-height: 1px;
   }
 
   &--withShadow {
-    box-shadow: 0px 0px 10px 0px $highlight;
+    box-shadow: 0px 5px 10px -5px $highlight;
   }
 
   &--bannerOffset {

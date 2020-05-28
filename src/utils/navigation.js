@@ -557,8 +557,8 @@ export default {
 export const testimonialImages = graphql`
   fragment testimonialImage on File {
     childImageSharp {
-      fixed(height: 128) {
-        ...GatsbyImageSharpFixed
+      fluid(maxHeight: 130) {
+        ...GatsbyImageSharpFluid
       }
     }
   }
@@ -592,6 +592,12 @@ export const testimonialImages = graphql`
       ...testimonialImage
     }
     vetter: file(relativePath: { eq: "logos/vetter-logo.jpg" }) {
+      ...testimonialImage
+    }
+    balfour: file(relativePath: { eq: "logos/balfour-logo.png" }) {
+      ...testimonialImage
+    }
+    jacksonCreek: file(relativePath: { eq: "logos/jackson-creek-logo.png" }) {
       ...testimonialImage
     }
     lifeloop: file(relativePath: { eq: "lifeloop-logo.png" }) {

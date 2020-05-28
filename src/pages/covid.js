@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import classNames from 'classnames';
 
 import FlexContainer from '../primitives/flex-container';
+import Testimonials from '../components/testimonials';
 import SiteWrapper from '../components/site-wrapper';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
@@ -71,6 +72,32 @@ export default ({ data }) => {
           </FlexContainer>
         </FlexContainer>
       </Section>
+      <Testimonials
+        hideTitle
+        testimonials={[
+          {
+            logo: 'balfour',
+            quote:
+              'LifeLoop solves so many of the problems you have when you’re reaching a huge number of residents and family members all at once,” Louise says. “It keeps us all connected, in a way that’s scalable and transparent.',
+            author: 'Louise Garrels',
+            position: 'Director of Marketing & Communications',
+          },
+          {
+            logo: 'lifeloop',
+            quote:
+              'I just wanted to say thank you for LifeLoop. During this frightening, isolating COVID-19 outbreak LifeLoop has been a lifeline. I have been able to keep in touch with my dad who is in memory care.  Without LifeLoop, I would feel helpless. Thank you!',
+            author: 'Meg Hentges',
+            position: 'Family Member',
+          },
+          {
+            logo: 'jacksonCreek',
+            quote:
+              "I'm not sure how we'd be getting through this time without LifeLoop! We have increased our family connections, probably doubled in the past week. Freeing up staff and creating crucial time for us to serve residents, rather than being on the phone calling families.",
+            author: 'Melida Sukle',
+            position: 'Life Enrichment Director',
+          },
+        ]}
+      />
     </SiteWrapper>
   );
 };
