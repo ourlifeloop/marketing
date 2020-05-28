@@ -13,7 +13,7 @@ import { map } from '../utils/lodash';
 
 import styles from './mobile-dropdown.module.scss';
 
-export default function MobileDropdown({ isOpen }) {
+export default function MobileDropdown({ isOpen, offset }) {
   const { isMobile } = useDevice();
   const { site } = useStaticQuery(
     graphql`
@@ -34,7 +34,7 @@ export default function MobileDropdown({ isOpen }) {
         [styles.mobilePanelOpen]: isOpen,
       })}
     >
-      <div className={styles.innerContainer}>
+      <div className={styles.innerContainer} style={{ paddingTop: offset }}>
         <Layout>
           <FlexContainer direction="column" className={styles.layout}>
             {map(NAVIGATION, ({ key, name, link, subNav }) => {
@@ -114,4 +114,5 @@ export default function MobileDropdown({ isOpen }) {
 
 MobileDropdown.propTypes = {
   isOpen: PropTypes.bool.isRequired,
+  offset: PropTypes.number.isRequired,
 };
