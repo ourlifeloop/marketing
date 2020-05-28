@@ -8,6 +8,7 @@ import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
 import Testimonials from '../components/testimonials';
 import SiteWrapper from '../components/site-wrapper';
+import BlogSection from '../components/blog-section';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
 import Button from '../primitives/button';
@@ -137,6 +138,7 @@ export default ({ data }) => {
           ))}
         </FlexContainer>
       </TitleSection>
+      <BlogSection posts={data.blogs} header="COVID-19 Blogs & Features" />
     </SiteWrapper>
   );
 };
@@ -170,6 +172,41 @@ export const query = graphql`
       publicURL
       name
       ext
+    }
+    blogs: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {
+        frontmatter: {
+          title: {
+            in: [
+              "COVID-19: LifeLoop Best Practices for Keeping your Residents, Staff Members and Families Informed"
+              "5 Senior Living Predictions from a Director of Resident Experience"
+              "How to Include Older Adults in the Digital Revolution"
+            ]
+          }
+        }
+      }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 200)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            photo {
+              childImageSharp {
+                fluid(maxWidth: 500) {
+                  ...GatsbyImageSharpFluid
+                  presentationWidth
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 `;
