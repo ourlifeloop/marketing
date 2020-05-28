@@ -7,7 +7,7 @@ import Footer from '../components/footer';
 
 // Optional Site Banner
 const BANNER_CONFIG = {
-  text: 'Find Covid-19 Information Here',
+  text: 'COVID-19: Our Commitment to You',
   link: '/covid',
 };
 
