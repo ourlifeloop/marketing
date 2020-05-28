@@ -25,3 +25,26 @@ $img-size: 400px;
     max-width: 100%;
   }
 }
+
+.resource {
+  background-color: $background;
+  border-bottom: 1px solid $highlight;
+  color: $text;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 1rem 1.2rem;
+  transition: all 0.2s linear;
+
+  &:first-of-type {
+    border-top: 1px solid $highlight;
+  }
+
+  &:hover {
+    background-color: $background-dark;
+  }
+}
+
+.download {
+  color: $primary-blue;
+  transition: all 0.2s linear;
+}

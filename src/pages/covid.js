@@ -5,18 +5,18 @@ import classNames from 'classnames';
 
 import FlexContainer from '../primitives/flex-container';
 import ActionCallout from '../primitives/action-callout';
+import TitleSection from '../primitives/title.section';
 import Testimonials from '../components/testimonials';
 import SiteWrapper from '../components/site-wrapper';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
 import Button from '../primitives/button';
+import { Download } from '../utils/icons';
 
 import styles from './covid.module.scss';
 
 export default ({ data }) => {
   const { isMobile } = useDevice();
-
-  console.log(data);
 
   return (
     <SiteWrapper>
@@ -115,6 +115,28 @@ export default ({ data }) => {
           </a>
         }
       />
+      <TitleSection header="Resident Resource Files" noTopPadding>
+        <FlexContainer direction="column">
+          {data.resources.edges.map(({ node }) => (
+            <a
+              key={node.name}
+              href={node.publicURL}
+              download={`${node.name}${node.ext}`}
+            >
+              <FlexContainer
+                align="center"
+                justify="spacebetween"
+                className={styles.resource}
+              >
+                <div className={styles.question}>
+                  {node.extension.toUpperCase()}: {node.name}
+                </div>
+                <Download className={styles.download} size={30} />
+              </FlexContainer>
+            </a>
+          ))}
+        </FlexContainer>
+      </TitleSection>
     </SiteWrapper>
   );
 };
@@ -129,6 +151,7 @@ export const query = graphql`
       }
     }
     resources: allFile(
+      sort: { fields: [ext, name] }
       filter: {
         sourceInstanceName: { eq: "files" }
         extension: { in: ["pdf", "docx"] }
@@ -137,6 +160,7 @@ export const query = graphql`
       edges {
         node {
           publicURL
+          extension
           name
           ext
         }
