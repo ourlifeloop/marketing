@@ -1,7 +1,7 @@
 ---
 title: Saving and Printing Your Designs
 video: 'https://www.youtube-nocookie.com/embed/1xsWMODBico'
-cover: /images/cms/lifeloop-template-page-1.jpeg
+cover: /images/cms/untitled-design-9-.png
 isNew: true
 isMobile: false
 topics:
