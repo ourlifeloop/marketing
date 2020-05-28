@@ -1,0 +1,27 @@
+@import '../styles/theme';
+@import '../styles/utils';
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 0.4rem;
+}
+
+.letter {
+  margin-top: 3rem;
+}
+
+$img-size: 400px;
+.amy {
+  border-radius: 50%;
+  height: $img-size;
+  margin-right: variableSize(30, 80);
+  max-width: $img-size;
+  width: 100%;
+
+  &--minimized {
+    margin-right: 0;
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+}
