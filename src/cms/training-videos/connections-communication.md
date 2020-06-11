@@ -8,7 +8,6 @@ topics:
   - getting-started
   - messaging
   - connections
-  - marketing
 userTypes:
   - staff
 ---
