@@ -37,7 +37,7 @@ export default ({ data }) => {
           onChange={e => setPass(e.target.value)}
           className={styles.input}
           placeholder="Password"
-          autoFocus
+          autoFocus // eslint-disable-line jsx-a11y/no-autofocus
         />
 
         <Button
