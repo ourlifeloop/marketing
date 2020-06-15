@@ -1,7 +1,7 @@
 ---
 title: 'Designer Components '
 video: 'https://www.youtube-nocookie.com/embed/omPwg9Bt4Ek'
-cover: /images/cms/untitled-design-9-.png
+cover: /images/cms/untitled-design-9.png
 isNew: true
 isMobile: false
 topics:
@@ -9,4 +9,3 @@ topics:
 userTypes:
   - staff
 ---
-
