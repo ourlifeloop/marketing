@@ -14,7 +14,7 @@ export default () => (
           Your inquiry has been successfully received. We will be reaching out
           to you shortly.
         </p>
-        <Link>
+        <Link to="/">
           <Button>Back to LifeLoop</Button>
         </Link>
       </TitleSection>

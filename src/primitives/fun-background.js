@@ -112,6 +112,7 @@ export default function FunBackground({ width, height, checkPosition }) {
   }
 
   return (
+    // eslint-disable-next-line jsx-a11y/control-has-associated-label
     <canvas
       ref={canvas}
       width={width * ratio}
