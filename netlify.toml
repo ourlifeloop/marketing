@@ -1,2 +1,9 @@
 [build]
+  publish = "public"
   functions = "functions"
+
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
+
+[[plugins]]
+  package = "netlify-plugin-debug-cache"
