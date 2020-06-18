@@ -28,7 +28,7 @@ export default ({ data, location }) => (
     <ImageSection
       leftImage
       title="Distribute Secure Emergency Broadcast Messages"
-      description="Quickly keep essential audiences informed with critical updates and relevant information. Stay complaint with new guidelines and publish time-sensitive messages easily via text and email leaving staff free to care for residents. "
+      description="Quickly keep essential audiences informed with critical updates and relevant information. Stay compliant with new guidelines and publish time-sensitive messages easily via text and email leaving staff free to care for residents. "
       image={data.emergency.childImageSharp.fluid}
     />
     <ImageSection
