@@ -9,12 +9,66 @@ import photos from '../assets/icons/photos.svg';
 import residentManagement from '../assets/icons/resident-management.svg';
 import residents from '../assets/icons/residents.svg';
 import transportation from '../assets/icons/transportation.svg';
+import designer from '../assets/icons/designer.svg';
 
 export default {
   features: {
     key: 'features',
     name: 'Features',
     subNav: {
+      communication: {
+        key: 'communication',
+        Icon: messages,
+        name: 'Communication',
+        link: '/features/communication',
+        questions: [
+          {
+            question:
+              'Can we turn off the messaging feature for family and/or residents if desired?',
+            answer:
+              'Family and Residents messaging cannot be turned off, however if you would not like staff to be able to message family or residents you are able to turn off their permission to do so. Family and residents would then still be able to communicate with each other through LifeLoop and keep that line of communication.',
+          },
+          {
+            question: 'Can I control who can send messages to family members?',
+            answer:
+              'Yes! The LifeLoop platform is customizable and is set up so that each user can have their own set of permissions.  Administrators can dictate who has the ability to grant user permissions and that person can control which staff members have the ability to communicate with family and residents.  Not only is this the most secure set-up, but it actually helps facilitate good communication between your community and family members of your residents by clearly defining lines of communication.',
+          },
+          {
+            question:
+              'Will I be notified if someone sends a message? If so, how?',
+            answer:
+              'You can be texted, e-mailed, and/or notified within the application.',
+          },
+          {
+            question: 'Can I add attachments to messages?',
+            answer:
+              'You can send any kind of attachment you want, including videos. Currently our maximum file size allowed for attachments is 50mb, but if you think sending larger files would benefit you, contact us to discuss customizing this feature for you.',
+          },
+        ],
+        testimonials: [
+          {
+            logo: 'fieldstone',
+            quote:
+              'LifeLoop has enhanced and simplified staff communication for our community through its messaging feature. We are now able to easily message each other, family and residents in one platform. I am always at ease that I never miss a message because of the notification I receive in LifeLoop as well as to my email. Our residents have also enjoyed using the messaging feature to contact staff and appreciate being able to view the calendar activities in their resident portal.',
+            author: 'Lucie Flood',
+            position: 'Life Enrichment Director',
+          },
+          {
+            logo: 'firstPlace',
+            quote:
+              'LifeLoop has been a remarkable tool for the residents of First Place-Phoenix and their families. It’s an easy-to-use platform that has helped the transition to moving to a supportive, inclusive apartment living. LifeLoop has brought together our community and has helped residents feel independent with utilization of the calendar feature and maintenance requests, all while the families feeling connected with knowing how engaged their loved one is.',
+            author: 'Nina Bernardo',
+            position: 'Community Life Coordinator',
+          },
+          {
+            logo: 'dial',
+            quote:
+              'With Lifeloop, one of the great things is that when a new employee starts, they are able to build relationships with residents even faster because all of the information is at their fingertips.',
+            author: 'Reed Davis',
+            position: 'Dial Retirement Communities',
+          },
+        ],
+      },
       calendar: {
         key: 'calendar',
         Icon: calendar,
@@ -76,6 +130,13 @@ export default {
             position: 'Activity Director',
           },
         ],
+      },
+      designer: {
+        key: 'designer',
+        Icon: designer,
+        name: 'Designer',
+        shortName: 'Designer',
+        link: '/features/designer',
       },
       displays: {
         key: 'displays',
@@ -193,56 +254,165 @@ export default {
           },
         ],
       },
-      communication: {
-        key: 'communication',
-        Icon: messages,
-        name: 'Communication',
-        link: '/features/communication',
+      familyPortal: {
+        key: 'familyPortal',
+        Icon: family,
+        name: 'Family Portal',
+        link: '/features/family-portal',
         questions: [
           {
-            question:
-              'Can we turn off the messaging feature for family and/or residents if desired?',
+            question: 'What devices is LifeLoop compatible on?',
             answer:
-              'Family and Residents messaging cannot be turned off, however if you would not like staff to be able to message family or residents you are able to turn off their permission to do so. Family and residents would then still be able to communicate with each other through LifeLoop and keep that line of communication.',
-          },
-          {
-            question: 'Can I control who can send messages to family members?',
-            answer:
-              'Yes! The LifeLoop platform is customizable and is set up so that each user can have their own set of permissions.  Administrators can dictate who has the ability to grant user permissions and that person can control which staff members have the ability to communicate with family and residents.  Not only is this the most secure set-up, but it actually helps facilitate good communication between your community and family members of your residents by clearly defining lines of communication.',
+              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
           },
           {
             question:
-              'Will I be notified if someone sends a message? If so, how?',
+              'Does LifeLoop have a limit to the number of photos/videos I can share with my loved one?',
             answer:
-              'You can be texted, e-mailed, and/or notified within the application.',
+              'Nope. You can upload as many photos as you’d like into the Resident Gallery and send as many videos as you’d like through our messaging feature.',
           },
           {
-            question: 'Can I add attachments to messages?',
+            question:
+              'Can I get LifeLoop for my loved one without a specific community having it?',
             answer:
-              'You can send any kind of attachment you want, including videos. Currently our maximum file size allowed for attachments is 50mb, but if you think sending larger files would benefit you, contact us to discuss customizing this feature for you.',
+              'Unfortunately, as a resident care-focused application we need community engagement for LifeLoop to be useful. Contact us with the name of the community and we will work with them to make LifeLoop available for your loved one.',
+          },
+          {
+            question: 'How do I find a community using LifeLoop today?',
+            answer:
+              'Contact us and let us know where your home base is and we will be happy to direct you to communities with LifeLoop in your area!',
+          },
+          {
+            question: 'What can family see/not see?',
+            answer:
+              'Each community uses LifeLoop differently which means the family view is going to vary. However, some of the main features in LifeLoop that will always be viewable by family are the Activity Calendar, Messages and Announcements and their loved one’s photo library. Another feature family often will have access to is their loved one’s activity feed, highlighting all the activities they have attended or declined as well as photos from these activities. Other optional features the community may have are maintenance and transportation, which would include that user’s inputted requests and the status or any comments from staff that have been published to the family member’s view.',
+          },
+          {
+            question:
+              'Does LifeLoop notify me when a new photo of my loved one has been uploaded?',
+            answer:
+              'While this is currently not a notification the LifeLoop team is constantly updating and making improvements to the application. This notification is one of those improvements that they are working towards!',
+          },
+          {
+            question:
+              'How many family members can be connected to LifeLoop per resident?',
+            answer:
+              'There is no limit to the number of family members that can be connected to LifeLoop. Family members connected must be approved by the resident.',
           },
         ],
         testimonials: [
           {
+            logo: 'lifeloop',
+            quote:
+              'LifeLoop has given my family a tool to open up communication between all of our family members. Having a window in to my mother’s life makes me feel better about her well-being. I know she is in good hands but seeing it every day is even better.',
+            author: 'Family Member of a Resident',
+          },
+          {
+            logo: 'avamere',
+            quote:
+              'LifeLoop’s valuable to us because the present and the future of our industry is to keep family members more and more involved in our residents’ lives. Family members are naturally curious about what’s going on with their loved ones, and LifeLoop is both a proactive and reactive way of helping with that.',
+            author: 'Thomas Cloutier',
+            position: 'Vice President of Sales & Marketing',
+          },
+          {
+            logo: 'lifeloop',
+            quote:
+              'LifeLoop has helped our staff to keep track of who we extend invitations to for all our activities and increase participation. The LifeLoop employees have been extremely helpful as well and are very responsive to all our questions. They also are open minded in taking our suggestions on how to make LifeLoop the best program possible for communities and families. I am so thankful to have LifeLoop as a part of our activities program and would recommend it to all senior living communities.',
+            author: 'Activity Director',
+            position: 'Senior Living Community',
+          },
+        ],
+      },
+      residentPortal: {
+        key: 'residentPortal',
+        Icon: residents,
+        name: 'Resident Portal',
+        link: '/features/resident-portal',
+        questions: [
+          {
+            question: 'What devices is LifeLoop compatible on?',
+            answer:
+              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
+          },
+          {
+            question:
+              'Does LifeLoop have a limit to the number of photos/videos that can be uploaded?',
+            answer:
+              'There is no storage limit. Many customers have thousands of photos & videos within LifeLoop.',
+          },
+          {
+            question:
+              'Can I turn off this feature for my community if desired?',
+            answer:
+              'Yes, the community has the ability to choose whether or not they would like this feature to be available to residents and their family members.',
+          },
+          {
+            question: 'Is the LifeLoop resident portal an additional cost?',
+            answer:
+              'The LifeLoop Resident Portal is included in your monthly LifeLoop fee. It is not an additional cost.',
+          },
+          {
+            question: 'What can residents see/not see?',
+            answer:
+              'If the resident portal is offered by the community, residents can see the daily agenda and all activities on the activity and/or meal calendars.  They can also see all activities that they are registered for, any messages/announcements they are recipients of, and any maintenance or transportation requests that they or family members have submitted. They can also view any photos that have been uploaded by family or staff into their gallery or that they have been tagged in.',
+          },
+        ],
+      },
+      photos: {
+        key: 'photos',
+        Icon: photos,
+        name: 'Photo & Video Sharing',
+        shortName: 'Photos',
+        link: '/features/photos',
+        questions: [
+          {
+            question: 'What devices is LifeLoop compatible on?',
+            answer:
+              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
+          },
+          {
+            question: 'What is the storage limit for photos within LifeLoop?',
+            answer:
+              'There is no storage limit. Many customers have thousands of photos within LifeLoop.',
+          },
+          {
+            question: 'Can you upload videos to LifeLoop?',
+            answer:
+              'You can upload videos as an attachment in a message, or you can upload videos in the Resident’s “About Me” section.',
+          },
+          {
+            question:
+              'Does LifeLoop notify family members when a new photo/video of their loved one has been uploaded?',
+            answer:
+              'We send an email to family members every Friday with a summary of your resident’s activities this last week. We find that most people log in through the email every week to view newly added photos. If the picture or video is sent as an attachment to a message, we do offer text and/or email notifications to the family member. Also, when family logs in through the web or the app all activity photos will be viewable and highlighted on the resident’s activity feed.',
+          },
+          {
+            question:
+              'How many family members can be connected to LifeLoop per resident?',
+            answer:
+              'There is no limit to the number of family members that can be connected to LifeLoop. Family members connected must be approved by the resident and/or community.',
+          },
+        ],
+        testimonials: [
+          {
+            logo: 'lifeloop',
+            quote:
+              'Thank you for posting photos of so many of the activities. My mother seems to really enjoy herself. I live so far away, that these photos really mean a lot to me.',
+            author: 'Family Member to Activity Director',
+          },
+          {
+            logo: 'aksarben',
+            quote:
+              'This past week I was talking with a resident’s brother who travels internationally for work.  He reminded me that one big factor in choosing Aksarben Village Retirement for his sister’s care was the weekly update emails he would receive from LifeLoop!',
+            author: 'Danielle Knudson',
+            position: 'Marketing Director',
+          },
+          {
             logo: 'fieldstone',
             quote:
-              'LifeLoop has enhanced and simplified staff communication for our community through its messaging feature. We are now able to easily message each other, family and residents in one platform. I am always at ease that I never miss a message because of the notification I receive in LifeLoop as well as to my email. Our residents have also enjoyed using the messaging feature to contact staff and appreciate being able to view the calendar activities in their resident portal.',
+              'I have worked with Life Loop since its beginnings and I continue to be impressed with the continued growth and improvement of the product. Our families enjoy the information and photos they get daily, a kind of a window into their loved one’s day, and our staff relies on the communication and attendance tracking.',
             author: 'Lucie Flood',
             position: 'Life Enrichment Director',
-          },
-          {
-            logo: 'firstPlace',
-            quote:
-              'LifeLoop has been a remarkable tool for the residents of First Place-Phoenix and their families. It’s an easy-to-use platform that has helped the transition to moving to a supportive, inclusive apartment living. LifeLoop has brought together our community and has helped residents feel independent with utilization of the calendar feature and maintenance requests, all while the families feeling connected with knowing how engaged their loved one is.',
-            author: 'Nina Bernardo',
-            position: 'Community Life Coordinator',
-          },
-          {
-            logo: 'dial',
-            quote:
-              'With Lifeloop, one of the great things is that when a new employee starts, they are able to build relationships with residents even faster because all of the information is at their fingertips.',
-            author: 'Reed Davis',
-            position: 'Dial Retirement Communities',
           },
         ],
       },
@@ -365,168 +535,6 @@ export default {
               'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
             author: 'Lisa Moes',
             position: 'Director of Corporate Initiatives',
-          },
-        ],
-      },
-      residentPortal: {
-        key: 'residentPortal',
-        Icon: residents,
-        name: 'Resident Portal',
-        link: '/features/resident-portal',
-        questions: [
-          {
-            question: 'What devices is LifeLoop compatible on?',
-            answer:
-              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
-          },
-          {
-            question:
-              'Does LifeLoop have a limit to the number of photos/videos that can be uploaded?',
-            answer:
-              'There is no storage limit. Many customers have thousands of photos & videos within LifeLoop.',
-          },
-          {
-            question:
-              'Can I turn off this feature for my community if desired?',
-            answer:
-              'Yes, the community has the ability to choose whether or not they would like this feature to be available to residents and their family members.',
-          },
-          {
-            question: 'Is the LifeLoop resident portal an additional cost?',
-            answer:
-              'The LifeLoop Resident Portal is included in your monthly LifeLoop fee. It is not an additional cost.',
-          },
-          {
-            question: 'What can residents see/not see?',
-            answer:
-              'If the resident portal is offered by the community, residents can see the daily agenda and all activities on the activity and/or meal calendars.  They can also see all activities that they are registered for, any messages/announcements they are recipients of, and any maintenance or transportation requests that they or family members have submitted. They can also view any photos that have been uploaded by family or staff into their gallery or that they have been tagged in.',
-          },
-        ],
-      },
-      familyPortal: {
-        key: 'familyPortal',
-        Icon: family,
-        name: 'Family Portal',
-        link: '/features/family-portal',
-        questions: [
-          {
-            question: 'What devices is LifeLoop compatible on?',
-            answer:
-              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
-          },
-          {
-            question:
-              'Does LifeLoop have a limit to the number of photos/videos I can share with my loved one?',
-            answer:
-              'Nope. You can upload as many photos as you’d like into the Resident Gallery and send as many videos as you’d like through our messaging feature.',
-          },
-          {
-            question:
-              'Can I get LifeLoop for my loved one without a specific community having it?',
-            answer:
-              'Unfortunately, as a resident care-focused application we need community engagement for LifeLoop to be useful. Contact us with the name of the community and we will work with them to make LifeLoop available for your loved one.',
-          },
-          {
-            question: 'How do I find a community using LifeLoop today?',
-            answer:
-              'Contact us and let us know where your home base is and we will be happy to direct you to communities with LifeLoop in your area!',
-          },
-          {
-            question: 'What can family see/not see?',
-            answer:
-              'Each community uses LifeLoop differently which means the family view is going to vary. However, some of the main features in LifeLoop that will always be viewable by family are the Activity Calendar, Messages and Announcements and their loved one’s photo library. Another feature family often will have access to is their loved one’s activity feed, highlighting all the activities they have attended or declined as well as photos from these activities. Other optional features the community may have are maintenance and transportation, which would include that user’s inputted requests and the status or any comments from staff that have been published to the family member’s view.',
-          },
-          {
-            question:
-              'Does LifeLoop notify me when a new photo of my loved one has been uploaded?',
-            answer:
-              'While this is currently not a notification the LifeLoop team is constantly updating and making improvements to the application. This notification is one of those improvements that they are working towards!',
-          },
-          {
-            question:
-              'How many family members can be connected to LifeLoop per resident?',
-            answer:
-              'There is no limit to the number of family members that can be connected to LifeLoop. Family members connected must be approved by the resident.',
-          },
-        ],
-        testimonials: [
-          {
-            logo: 'lifeloop',
-            quote:
-              'LifeLoop has given my family a tool to open up communication between all of our family members. Having a window in to my mother’s life makes me feel better about her well-being. I know she is in good hands but seeing it every day is even better.',
-            author: 'Family Member of a Resident',
-          },
-          {
-            logo: 'avamere',
-            quote:
-              'LifeLoop’s valuable to us because the present and the future of our industry is to keep family members more and more involved in our residents’ lives. Family members are naturally curious about what’s going on with their loved ones, and LifeLoop is both a proactive and reactive way of helping with that.',
-            author: 'Thomas Cloutier',
-            position: 'Vice President of Sales & Marketing',
-          },
-          {
-            logo: 'lifeloop',
-            quote:
-              'LifeLoop has helped our staff to keep track of who we extend invitations to for all our activities and increase participation. The LifeLoop employees have been extremely helpful as well and are very responsive to all our questions. They also are open minded in taking our suggestions on how to make LifeLoop the best program possible for communities and families. I am so thankful to have LifeLoop as a part of our activities program and would recommend it to all senior living communities.',
-            author: 'Activity Director',
-            position: 'Senior Living Community',
-          },
-        ],
-      },
-      photos: {
-        key: 'photos',
-        Icon: photos,
-        name: 'Photo & Video Sharing',
-        shortName: 'Photos',
-        link: '/features/photos',
-        questions: [
-          {
-            question: 'What devices is LifeLoop compatible on?',
-            answer:
-              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
-          },
-          {
-            question: 'What is the storage limit for photos within LifeLoop?',
-            answer:
-              'There is no storage limit. Many customers have thousands of photos within LifeLoop.',
-          },
-          {
-            question: 'Can you upload videos to LifeLoop?',
-            answer:
-              'You can upload videos as an attachment in a message, or you can upload videos in the Resident’s “About Me” section.',
-          },
-          {
-            question:
-              'Does LifeLoop notify family members when a new photo/video of their loved one has been uploaded?',
-            answer:
-              'We send an email to family members every Friday with a summary of your resident’s activities this last week. We find that most people log in through the email every week to view newly added photos. If the picture or video is sent as an attachment to a message, we do offer text and/or email notifications to the family member. Also, when family logs in through the web or the app all activity photos will be viewable and highlighted on the resident’s activity feed.',
-          },
-          {
-            question:
-              'How many family members can be connected to LifeLoop per resident?',
-            answer:
-              'There is no limit to the number of family members that can be connected to LifeLoop. Family members connected must be approved by the resident and/or community.',
-          },
-        ],
-        testimonials: [
-          {
-            logo: 'lifeloop',
-            quote:
-              'Thank you for posting photos of so many of the activities. My mother seems to really enjoy herself. I live so far away, that these photos really mean a lot to me.',
-            author: 'Family Member to Activity Director',
-          },
-          {
-            logo: 'aksarben',
-            quote:
-              'This past week I was talking with a resident’s brother who travels internationally for work.  He reminded me that one big factor in choosing Aksarben Village Retirement for his sister’s care was the weekly update emails he would receive from LifeLoop!',
-            author: 'Danielle Knudson',
-            position: 'Marketing Director',
-          },
-          {
-            logo: 'fieldstone',
-            quote:
-              'I have worked with Life Loop since its beginnings and I continue to be impressed with the continued growth and improvement of the product. Our families enjoy the information and photos they get daily, a kind of a window into their loved one’s day, and our staff relies on the communication and attendance tracking.',
-            author: 'Lucie Flood',
-            position: 'Life Enrichment Director',
           },
         ],
       },

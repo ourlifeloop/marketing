@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 
-import calendarDesigner from '../assets/icons/calendar-designer.svg';
+import designer from '../assets/icons/designer.svg';
 import calendar from '../assets/icons/calendar.svg';
 import connections from '../assets/icons/connections.svg';
 import displays from '../assets/icons/displays.svg';
@@ -93,8 +93,8 @@ export default [
   {
     key: 'designer',
     name: 'Designer',
-    image: 'calendarDesigner',
-    Icon: calendarDesigner,
+    image: 'designer',
+    Icon: designer,
   },
   {
     key: 'connections',
@@ -129,9 +129,7 @@ export const trainingImages = graphql`
     calendar: file(relativePath: { eq: "features/calendar.png" }) {
       ...featureImage
     }
-    calendarDesigner: file(
-      relativePath: { eq: "features/calendar-designer.png" }
-    ) {
+    designer: file(relativePath: { eq: "features/designer.png" }) {
       ...featureImage
     }
     connections: file(relativePath: { eq: "features/connections.png" }) {

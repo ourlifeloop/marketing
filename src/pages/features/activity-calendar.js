@@ -31,11 +31,6 @@ export default ({ data, location }) => (
       image={data.saveTime.childImageSharp.fluid}
     />
     <ImageSection
-      title="Design Calendars That Stand Out"
-      description="The LifeLoop Calendar Designer makes it simple and efficient for your team to design, manage and download calendars each month for your community. Calendars can be printed on your own or professionally printed with Activity Connection. Need a branded template? Just let us know!"
-      image={data.designer.childImageSharp.fluid}
-    />
-    <ImageSection
       rightImage
       title="Keeping You Data-Informed"
       description="With LifeLoop’s reporting feature, you can build robust activity calendars based on your residents likes. Easily identify the most popular and least popular activities every month which allows you to measure, manage and optimize resident engagement."
@@ -46,14 +41,6 @@ export default ({ data, location }) => (
 
 export const query = graphql`
   query {
-    designer: file(relativePath: { eq: "calendar-designer.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1400) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-        }
-      }
-    }
     dataInformed: file(relativePath: { eq: "data-informed.png" }) {
       childImageSharp {
         fluid(maxHeight: 600) {
