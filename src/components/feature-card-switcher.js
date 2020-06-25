@@ -94,6 +94,21 @@ const FEATURES = [
     ],
   },
   {
+    key: NAVIGATION.features.subNav.photos.key,
+    name: NAVIGATION.features.subNav.photos.shortName,
+    Icon: NAVIGATION.features.subNav.photos.Icon,
+    link: NAVIGATION.features.subNav.photos.link,
+    headline: 'Your word-of-mouth marketing tool',
+    image: 'organize',
+    body:
+      'Photo and video sharing through the LifeLoop portals and mobile app ensures that family members have a unique window into the daily lives of their loved ones.',
+    bullets: [
+      'Easily organize community photos',
+      'Tag residents in special moments',
+      'Set your community apart from the competition',
+    ],
+  },
+  {
     key: NAVIGATION.features.subNav.residentPortal.key,
     name: NAVIGATION.features.subNav.residentPortal.name,
     Icon: NAVIGATION.features.subNav.residentPortal.Icon,
@@ -137,21 +152,6 @@ const FEATURES = [
       'A full maintenance management system',
       'Quickly filter requests by crew member, resident, room number or community location',
       'Accessible from any Apple or Android device',
-    ],
-  },
-  {
-    key: NAVIGATION.features.subNav.photos.key,
-    name: NAVIGATION.features.subNav.photos.shortName,
-    Icon: NAVIGATION.features.subNav.photos.Icon,
-    link: NAVIGATION.features.subNav.photos.link,
-    headline: 'Your word-of-mouth marketing tool',
-    image: 'organize',
-    body:
-      'Photo and video sharing through the LifeLoop portals and mobile app ensures that family members have a unique window into the daily lives of their loved ones.',
-    bullets: [
-      'Easily organize community photos',
-      'Tag residents in special moments',
-      'Set your community apart from the competition',
     ],
   },
 ];

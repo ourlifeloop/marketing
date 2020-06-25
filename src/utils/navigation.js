@@ -323,41 +323,6 @@ export default {
           },
         ],
       },
-      residentPortal: {
-        key: 'residentPortal',
-        Icon: residents,
-        name: 'Resident Portal',
-        link: '/features/resident-portal',
-        questions: [
-          {
-            question: 'What devices is LifeLoop compatible on?',
-            answer:
-              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
-          },
-          {
-            question:
-              'Does LifeLoop have a limit to the number of photos/videos that can be uploaded?',
-            answer:
-              'There is no storage limit. Many customers have thousands of photos & videos within LifeLoop.',
-          },
-          {
-            question:
-              'Can I turn off this feature for my community if desired?',
-            answer:
-              'Yes, the community has the ability to choose whether or not they would like this feature to be available to residents and their family members.',
-          },
-          {
-            question: 'Is the LifeLoop resident portal an additional cost?',
-            answer:
-              'The LifeLoop Resident Portal is included in your monthly LifeLoop fee. It is not an additional cost.',
-          },
-          {
-            question: 'What can residents see/not see?',
-            answer:
-              'If the resident portal is offered by the community, residents can see the daily agenda and all activities on the activity and/or meal calendars.  They can also see all activities that they are registered for, any messages/announcements they are recipients of, and any maintenance or transportation requests that they or family members have submitted. They can also view any photos that have been uploaded by family or staff into their gallery or that they have been tagged in.',
-          },
-        ],
-      },
       photos: {
         key: 'photos',
         Icon: photos,
@@ -413,6 +378,41 @@ export default {
               'I have worked with Life Loop since its beginnings and I continue to be impressed with the continued growth and improvement of the product. Our families enjoy the information and photos they get daily, a kind of a window into their loved one’s day, and our staff relies on the communication and attendance tracking.',
             author: 'Lucie Flood',
             position: 'Life Enrichment Director',
+          },
+        ],
+      },
+      residentPortal: {
+        key: 'residentPortal',
+        Icon: residents,
+        name: 'Resident Portal',
+        link: '/features/resident-portal',
+        questions: [
+          {
+            question: 'What devices is LifeLoop compatible on?',
+            answer:
+              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
+          },
+          {
+            question:
+              'Does LifeLoop have a limit to the number of photos/videos that can be uploaded?',
+            answer:
+              'There is no storage limit. Many customers have thousands of photos & videos within LifeLoop.',
+          },
+          {
+            question:
+              'Can I turn off this feature for my community if desired?',
+            answer:
+              'Yes, the community has the ability to choose whether or not they would like this feature to be available to residents and their family members.',
+          },
+          {
+            question: 'Is the LifeLoop resident portal an additional cost?',
+            answer:
+              'The LifeLoop Resident Portal is included in your monthly LifeLoop fee. It is not an additional cost.',
+          },
+          {
+            question: 'What can residents see/not see?',
+            answer:
+              'If the resident portal is offered by the community, residents can see the daily agenda and all activities on the activity and/or meal calendars.  They can also see all activities that they are registered for, any messages/announcements they are recipients of, and any maintenance or transportation requests that they or family members have submitted. They can also view any photos that have been uploaded by family or staff into their gallery or that they have been tagged in.',
           },
         ],
       },
