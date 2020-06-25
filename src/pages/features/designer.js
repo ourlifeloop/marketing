@@ -8,7 +8,7 @@ import ImageSection from '../../primitives/image-section';
 export default ({ data, location }) => (
   <FeatureWrapper
     pathname={location.pathname}
-    title="Still need a title | LifeLoop"
+    title="Design calendars, newsletters, marketing pieces, menus and more all within the existing LifeLoop platform | LifeLoop"
   >
     <TitleSection header="Design Dashboard">
       <p>
