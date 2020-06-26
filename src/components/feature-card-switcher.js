@@ -47,6 +47,22 @@ const FEATURES = [
     ],
   },
   {
+    key: NAVIGATION.features.subNav.designer.key,
+    name: NAVIGATION.features.subNav.designer.name,
+    Icon: NAVIGATION.features.subNav.designer.Icon,
+    link: NAVIGATION.features.subNav.designer.link,
+    headline: 'Enhance your calendars & newsletters',
+    image: 'newsletterDesigner',
+    body:
+      'The LifeLoop Designer allows you to create calendars, newsletters, marketing pieces, menus and more all within the existing LifeLoop platform. Meaning you don’t need multiple programs to produce and distribute publications from your community. ',
+    bullets: [
+      'Easily create branded documents or request templates from our team',
+      'Create calendars in monthly, two-week, one-week or daily formats',
+      'Documents can be created in a variety of sizes',
+      'Customize with images, adjustable text size & more',
+    ],
+  },
+  {
     key: NAVIGATION.features.subNav.displays.key,
     name: NAVIGATION.features.subNav.displays.name,
     Icon: NAVIGATION.features.subNav.displays.Icon,
@@ -234,6 +250,16 @@ export default () => {
           }
         }
         independence: file(relativePath: { eq: "maximize-independence.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 637) {
+              ...GatsbyImageSharpFluid
+              presentationWidth
+            }
+          }
+        }
+        newsletterDesigner: file(
+          relativePath: { eq: "newsletter-designer.png" }
+        ) {
           childImageSharp {
             fluid(maxWidth: 637) {
               ...GatsbyImageSharpFluid

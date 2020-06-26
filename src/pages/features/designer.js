@@ -19,7 +19,7 @@ export default ({ data, location }) => (
       </p>
     </TitleSection>
     <ImageSection
-      noTopPadding
+      leftImage
       title="Calendar Designer"
       description="Easily design visually appealing calendars that can be completely customized with images, adjustable text sizes, anniversaries, birthdays and more. Calendars can be designed in one week, two week and full month formats based on what is best for your community. Create beautiful branded templates or fun monthly themes for your residents."
       image={data.calendarDesigner.childImageSharp.fluid}
@@ -43,7 +43,7 @@ export const query = graphql`
   query {
     calendarDesigner: file(relativePath: { eq: "calendar-designer.png" }) {
       childImageSharp {
-        fluid(maxHeight: 1000) {
+        fluid(maxHeight: 600) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
