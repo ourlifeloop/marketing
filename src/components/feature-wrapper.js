@@ -35,9 +35,11 @@ export default function FeatureWrapper({ children, pathname, ...rest }) {
           </Link>
         }
       />
-      <TitleSection header="Want to know more? Read our FAQ's below.">
-        <QuestionAndAnswer questions={questions} />
-      </TitleSection>
+      {!!questions && (
+        <TitleSection header="Want to know more? Read our FAQ's below.">
+          <QuestionAndAnswer questions={questions} />
+        </TitleSection>
+      )}
       {!!testimonials && <Testimonials testimonials={testimonials} />}
       <LatestBlogSection />
       <DemoSection />

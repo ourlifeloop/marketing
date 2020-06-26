@@ -9,12 +9,66 @@ import photos from '../assets/icons/photos.svg';
 import residentManagement from '../assets/icons/resident-management.svg';
 import residents from '../assets/icons/residents.svg';
 import transportation from '../assets/icons/transportation.svg';
+import designer from '../assets/icons/designer.svg';
 
 export default {
   features: {
     key: 'features',
     name: 'Features',
     subNav: {
+      communication: {
+        key: 'communication',
+        Icon: messages,
+        name: 'Communication',
+        link: '/features/communication',
+        questions: [
+          {
+            question:
+              'Can we turn off the messaging feature for family and/or residents if desired?',
+            answer:
+              'Family and Residents messaging cannot be turned off, however if you would not like staff to be able to message family or residents you are able to turn off their permission to do so. Family and residents would then still be able to communicate with each other through LifeLoop and keep that line of communication.',
+          },
+          {
+            question: 'Can I control who can send messages to family members?',
+            answer:
+              'Yes! The LifeLoop platform is customizable and is set up so that each user can have their own set of permissions.  Administrators can dictate who has the ability to grant user permissions and that person can control which staff members have the ability to communicate with family and residents.  Not only is this the most secure set-up, but it actually helps facilitate good communication between your community and family members of your residents by clearly defining lines of communication.',
+          },
+          {
+            question:
+              'Will I be notified if someone sends a message? If so, how?',
+            answer:
+              'You can be texted, e-mailed, and/or notified within the application.',
+          },
+          {
+            question: 'Can I add attachments to messages?',
+            answer:
+              'You can send any kind of attachment you want, including videos. Currently our maximum file size allowed for attachments is 50mb, but if you think sending larger files would benefit you, contact us to discuss customizing this feature for you.',
+          },
+        ],
+        testimonials: [
+          {
+            logo: 'fieldstone',
+            quote:
+              'LifeLoop has enhanced and simplified staff communication for our community through its messaging feature. We are now able to easily message each other, family and residents in one platform. I am always at ease that I never miss a message because of the notification I receive in LifeLoop as well as to my email. Our residents have also enjoyed using the messaging feature to contact staff and appreciate being able to view the calendar activities in their resident portal.',
+            author: 'Lucie Flood',
+            position: 'Life Enrichment Director',
+          },
+          {
+            logo: 'firstPlace',
+            quote:
+              'LifeLoop has been a remarkable tool for the residents of First Place-Phoenix and their families. It’s an easy-to-use platform that has helped the transition to moving to a supportive, inclusive apartment living. LifeLoop has brought together our community and has helped residents feel independent with utilization of the calendar feature and maintenance requests, all while the families feeling connected with knowing how engaged their loved one is.',
+            author: 'Nina Bernardo',
+            position: 'Community Life Coordinator',
+          },
+          {
+            logo: 'dial',
+            quote:
+              'With Lifeloop, one of the great things is that when a new employee starts, they are able to build relationships with residents even faster because all of the information is at their fingertips.',
+            author: 'Reed Davis',
+            position: 'Dial Retirement Communities',
+          },
+        ],
+      },
       calendar: {
         key: 'calendar',
         Icon: calendar,
@@ -76,6 +130,13 @@ export default {
             position: 'Activity Director',
           },
         ],
+      },
+      designer: {
+        key: 'designer',
+        Icon: designer,
+        name: 'Designer',
+        shortName: 'Designer',
+        link: '/features/designer',
       },
       displays: {
         key: 'displays',
@@ -190,216 +251,6 @@ export default {
               'LifeLoop has given our community a tool that has helped streamline our Life Enrichment program. Due to the easy-to-use features, the Life Enrichment team now has the data to help tell the story of each resident and their needs. In addition, the program has created efficiencies allowing us to spend more one-on-one time with residents — which is priceless.',
             author: 'Director of Activities',
             position: 'Rose Blumkin Jewish Home',
-          },
-        ],
-      },
-      communication: {
-        key: 'communication',
-        Icon: messages,
-        name: 'Communication',
-        link: '/features/communication',
-        questions: [
-          {
-            question:
-              'Can we turn off the messaging feature for family and/or residents if desired?',
-            answer:
-              'Family and Residents messaging cannot be turned off, however if you would not like staff to be able to message family or residents you are able to turn off their permission to do so. Family and residents would then still be able to communicate with each other through LifeLoop and keep that line of communication.',
-          },
-          {
-            question: 'Can I control who can send messages to family members?',
-            answer:
-              'Yes! The LifeLoop platform is customizable and is set up so that each user can have their own set of permissions.  Administrators can dictate who has the ability to grant user permissions and that person can control which staff members have the ability to communicate with family and residents.  Not only is this the most secure set-up, but it actually helps facilitate good communication between your community and family members of your residents by clearly defining lines of communication.',
-          },
-          {
-            question:
-              'Will I be notified if someone sends a message? If so, how?',
-            answer:
-              'You can be texted, e-mailed, and/or notified within the application.',
-          },
-          {
-            question: 'Can I add attachments to messages?',
-            answer:
-              'You can send any kind of attachment you want, including videos. Currently our maximum file size allowed for attachments is 50mb, but if you think sending larger files would benefit you, contact us to discuss customizing this feature for you.',
-          },
-        ],
-        testimonials: [
-          {
-            logo: 'fieldstone',
-            quote:
-              'LifeLoop has enhanced and simplified staff communication for our community through its messaging feature. We are now able to easily message each other, family and residents in one platform. I am always at ease that I never miss a message because of the notification I receive in LifeLoop as well as to my email. Our residents have also enjoyed using the messaging feature to contact staff and appreciate being able to view the calendar activities in their resident portal.',
-            author: 'Lucie Flood',
-            position: 'Life Enrichment Director',
-          },
-          {
-            logo: 'firstPlace',
-            quote:
-              'LifeLoop has been a remarkable tool for the residents of First Place-Phoenix and their families. It’s an easy-to-use platform that has helped the transition to moving to a supportive, inclusive apartment living. LifeLoop has brought together our community and has helped residents feel independent with utilization of the calendar feature and maintenance requests, all while the families feeling connected with knowing how engaged their loved one is.',
-            author: 'Nina Bernardo',
-            position: 'Community Life Coordinator',
-          },
-          {
-            logo: 'dial',
-            quote:
-              'With Lifeloop, one of the great things is that when a new employee starts, they are able to build relationships with residents even faster because all of the information is at their fingertips.',
-            author: 'Reed Davis',
-            position: 'Dial Retirement Communities',
-          },
-        ],
-      },
-      transportation: {
-        key: 'transportation',
-        Icon: transportation,
-        name: 'Transportation',
-        link: '/features/transportation',
-        questions: [
-          {
-            question: 'What devices is LifeLoop compatible on?',
-            answer:
-              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
-          },
-          {
-            question:
-              'Can I turn off this feature for my communities’ residents and family members if desired?',
-            answer:
-              'Yes, the community has the ability to choose whether or not they would like this feature to be available to residents and their family members.',
-          },
-          {
-            question: 'How many drivers can have access to LifeLoop?',
-            answer:
-              'A community can have an unlimited number of drivers entered in LifeLoop.',
-          },
-          {
-            question: 'Can anyone enter transportation requests?',
-            answer:
-              'Along with drivers entering requests, family members and residents can also submit maintenance requests if the community offers this feature. It is a staff permission to enter transportation requests, so the administrator can manage what staff members have this permission.',
-          },
-          {
-            question:
-              'Who has the capability to manage transportation requests?',
-            answer:
-              'The ability to manage transportation requests is a permission that can be turned on or off for various staff members. Administrators can determine which staff members have the ability to enter requests.',
-          },
-          {
-            question: 'Do drivers get notified of new requests?',
-            answer:
-              'Staff members will get notified if they have the appropriate permission. The driver assigned to the request will also get a notification.',
-          },
-        ],
-        testimonials: [
-          {
-            logo: 'vetter',
-            quote:
-              'The LifeLoop transportation feature has made it much easier for our drivers to have addresses available while on transport. Another feature that has benefited us, is the ease it has allowed in scheduling appointments. It’s nice to click on the transportation calendar and see if a driver or vehicle is available on a certain day. It is also nice to see the transportations to be able to know where residents are going at a glance. One of the best features, I think, is how easy it is to operate LifeLoop. It was easy for me to access the transportation and navigate getting residents added with appointments. Everyone has enjoyed the new transportation feature.',
-            author: 'Bethany Daniels',
-            position: 'Heritage of Red Cloud',
-          },
-          {
-            logo: 'dial',
-            quote:
-              'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
-            author: 'Lisa Moes',
-            position: 'Director of Corporate Initiatives',
-          },
-        ],
-      },
-      maintenance: {
-        key: 'maintenance',
-        Icon: maintenance,
-        name: 'Maintenance',
-        link: '/features/maintenance',
-        questions: [
-          {
-            question: 'What devices is LifeLoop compatible on?',
-            answer:
-              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
-          },
-          {
-            question:
-              'Can I attached photos or other documents to maintenance requests?',
-            answer: 'Yes, many users find this extremely valuable.',
-          },
-          {
-            question:
-              'Can I turn off this feature for my communities’ residents and family members if desired?',
-            answer:
-              'Yes, the community has the ability to choose whether or not they would like this feature to be available to residents and their family members.',
-          },
-          {
-            question:
-              'How many maintenance crew members can have access to LifeLoop?',
-            answer:
-              'A community can have an unlimited number of crew members with access to LifeLoop.',
-          },
-          {
-            question: 'Can anyone enter maintenance requests?',
-            answer:
-              'Along with maintenance crew members entering requests, family members and residents can also submit maintenance requests if the community offers this feature. It is a staff permission to enter maintenance requests, so the administrator can manage what staff members have this permission.',
-          },
-          {
-            question: 'Who has the capability to manage maintenance requests?',
-            answer:
-              'The ability to manage maintenance requests is a permission that can be turned on or off for various staff members. Administrators can determine which staff members have the ability to enter requests.',
-          },
-          {
-            question: 'Does maintenance get notified of new requests?',
-            answer:
-              'Staff members will get notified if they have the appropriate permission. The crew member assigned to the request will get a notification and the creator of the request will get notified when there is any status change to the request.',
-          },
-          {
-            question: 'Can preventative maintenance be inputted?',
-            answer:
-              'Yes! Preventative maintenance and future maintenance requests can be easily inputted.',
-          },
-        ],
-        testimonials: [
-          {
-            logo: 'dial',
-            quote:
-              'I can tell you from personal experience that LifeLoop has been a game changer for me as a Maintenance Director in managing scheduled property preventative maintenance and resident needs in the form of work orders for our property. I worked at another company prior to working at Dial and I wish I would have had a tool like LifeLoop. Not only does LifeLoop streamline communication, but it also eliminates the use of paper work orders and keeps a history of closed out work orders that you can search for if you need to.',
-            author: 'Scott Randolph',
-            position: 'Maintenance Director',
-          },
-          {
-            logo: 'dial',
-            quote:
-              'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
-            author: 'Lisa Moes',
-            position: 'Director of Corporate Initiatives',
-          },
-        ],
-      },
-      residentPortal: {
-        key: 'residentPortal',
-        Icon: residents,
-        name: 'Resident Portal',
-        link: '/features/resident-portal',
-        questions: [
-          {
-            question: 'What devices is LifeLoop compatible on?',
-            answer:
-              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
-          },
-          {
-            question:
-              'Does LifeLoop have a limit to the number of photos/videos that can be uploaded?',
-            answer:
-              'There is no storage limit. Many customers have thousands of photos & videos within LifeLoop.',
-          },
-          {
-            question:
-              'Can I turn off this feature for my community if desired?',
-            answer:
-              'Yes, the community has the ability to choose whether or not they would like this feature to be available to residents and their family members.',
-          },
-          {
-            question: 'Is the LifeLoop resident portal an additional cost?',
-            answer:
-              'The LifeLoop Resident Portal is included in your monthly LifeLoop fee. It is not an additional cost.',
-          },
-          {
-            question: 'What can residents see/not see?',
-            answer:
-              'If the resident portal is offered by the community, residents can see the daily agenda and all activities on the activity and/or meal calendars.  They can also see all activities that they are registered for, any messages/announcements they are recipients of, and any maintenance or transportation requests that they or family members have submitted. They can also view any photos that have been uploaded by family or staff into their gallery or that they have been tagged in.',
           },
         ],
       },
@@ -527,6 +378,163 @@ export default {
               'I have worked with Life Loop since its beginnings and I continue to be impressed with the continued growth and improvement of the product. Our families enjoy the information and photos they get daily, a kind of a window into their loved one’s day, and our staff relies on the communication and attendance tracking.',
             author: 'Lucie Flood',
             position: 'Life Enrichment Director',
+          },
+        ],
+      },
+      residentPortal: {
+        key: 'residentPortal',
+        Icon: residents,
+        name: 'Resident Portal',
+        link: '/features/resident-portal',
+        questions: [
+          {
+            question: 'What devices is LifeLoop compatible on?',
+            answer:
+              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
+          },
+          {
+            question:
+              'Does LifeLoop have a limit to the number of photos/videos that can be uploaded?',
+            answer:
+              'There is no storage limit. Many customers have thousands of photos & videos within LifeLoop.',
+          },
+          {
+            question:
+              'Can I turn off this feature for my community if desired?',
+            answer:
+              'Yes, the community has the ability to choose whether or not they would like this feature to be available to residents and their family members.',
+          },
+          {
+            question: 'Is the LifeLoop resident portal an additional cost?',
+            answer:
+              'The LifeLoop Resident Portal is included in your monthly LifeLoop fee. It is not an additional cost.',
+          },
+          {
+            question: 'What can residents see/not see?',
+            answer:
+              'If the resident portal is offered by the community, residents can see the daily agenda and all activities on the activity and/or meal calendars.  They can also see all activities that they are registered for, any messages/announcements they are recipients of, and any maintenance or transportation requests that they or family members have submitted. They can also view any photos that have been uploaded by family or staff into their gallery or that they have been tagged in.',
+          },
+        ],
+      },
+      transportation: {
+        key: 'transportation',
+        Icon: transportation,
+        name: 'Transportation',
+        link: '/features/transportation',
+        questions: [
+          {
+            question: 'What devices is LifeLoop compatible on?',
+            answer:
+              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
+          },
+          {
+            question:
+              'Can I turn off this feature for my communities’ residents and family members if desired?',
+            answer:
+              'Yes, the community has the ability to choose whether or not they would like this feature to be available to residents and their family members.',
+          },
+          {
+            question: 'How many drivers can have access to LifeLoop?',
+            answer:
+              'A community can have an unlimited number of drivers entered in LifeLoop.',
+          },
+          {
+            question: 'Can anyone enter transportation requests?',
+            answer:
+              'Along with drivers entering requests, family members and residents can also submit maintenance requests if the community offers this feature. It is a staff permission to enter transportation requests, so the administrator can manage what staff members have this permission.',
+          },
+          {
+            question:
+              'Who has the capability to manage transportation requests?',
+            answer:
+              'The ability to manage transportation requests is a permission that can be turned on or off for various staff members. Administrators can determine which staff members have the ability to enter requests.',
+          },
+          {
+            question: 'Do drivers get notified of new requests?',
+            answer:
+              'Staff members will get notified if they have the appropriate permission. The driver assigned to the request will also get a notification.',
+          },
+        ],
+        testimonials: [
+          {
+            logo: 'vetter',
+            quote:
+              'The LifeLoop transportation feature has made it much easier for our drivers to have addresses available while on transport. Another feature that has benefited us, is the ease it has allowed in scheduling appointments. It’s nice to click on the transportation calendar and see if a driver or vehicle is available on a certain day. It is also nice to see the transportations to be able to know where residents are going at a glance. One of the best features, I think, is how easy it is to operate LifeLoop. It was easy for me to access the transportation and navigate getting residents added with appointments. Everyone has enjoyed the new transportation feature.',
+            author: 'Bethany Daniels',
+            position: 'Heritage of Red Cloud',
+          },
+          {
+            logo: 'dial',
+            quote:
+              'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
+            author: 'Lisa Moes',
+            position: 'Director of Corporate Initiatives',
+          },
+        ],
+      },
+      maintenance: {
+        key: 'maintenance',
+        Icon: maintenance,
+        name: 'Maintenance',
+        link: '/features/maintenance',
+        questions: [
+          {
+            question: 'What devices is LifeLoop compatible on?',
+            answer:
+              'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
+          },
+          {
+            question:
+              'Can I attached photos or other documents to maintenance requests?',
+            answer: 'Yes, many users find this extremely valuable.',
+          },
+          {
+            question:
+              'Can I turn off this feature for my communities’ residents and family members if desired?',
+            answer:
+              'Yes, the community has the ability to choose whether or not they would like this feature to be available to residents and their family members.',
+          },
+          {
+            question:
+              'How many maintenance crew members can have access to LifeLoop?',
+            answer:
+              'A community can have an unlimited number of crew members with access to LifeLoop.',
+          },
+          {
+            question: 'Can anyone enter maintenance requests?',
+            answer:
+              'Along with maintenance crew members entering requests, family members and residents can also submit maintenance requests if the community offers this feature. It is a staff permission to enter maintenance requests, so the administrator can manage what staff members have this permission.',
+          },
+          {
+            question: 'Who has the capability to manage maintenance requests?',
+            answer:
+              'The ability to manage maintenance requests is a permission that can be turned on or off for various staff members. Administrators can determine which staff members have the ability to enter requests.',
+          },
+          {
+            question: 'Does maintenance get notified of new requests?',
+            answer:
+              'Staff members will get notified if they have the appropriate permission. The crew member assigned to the request will get a notification and the creator of the request will get notified when there is any status change to the request.',
+          },
+          {
+            question: 'Can preventative maintenance be inputted?',
+            answer:
+              'Yes! Preventative maintenance and future maintenance requests can be easily inputted.',
+          },
+        ],
+        testimonials: [
+          {
+            logo: 'dial',
+            quote:
+              'I can tell you from personal experience that LifeLoop has been a game changer for me as a Maintenance Director in managing scheduled property preventative maintenance and resident needs in the form of work orders for our property. I worked at another company prior to working at Dial and I wish I would have had a tool like LifeLoop. Not only does LifeLoop streamline communication, but it also eliminates the use of paper work orders and keeps a history of closed out work orders that you can search for if you need to.',
+            author: 'Scott Randolph',
+            position: 'Maintenance Director',
+          },
+          {
+            logo: 'dial',
+            quote:
+              'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
+            author: 'Lisa Moes',
+            position: 'Director of Corporate Initiatives',
           },
         ],
       },

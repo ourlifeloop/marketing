@@ -53,7 +53,7 @@ export const query = graphql`
   query {
     custom: file(relativePath: { eq: "fully-custom-solution.png" }) {
       childImageSharp {
-        fluid(maxHeight: 600) {
+        fluid(maxHeight: 1000) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }

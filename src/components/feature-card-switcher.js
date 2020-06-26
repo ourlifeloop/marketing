@@ -16,6 +16,22 @@ import styles from './feature-card-switcher.module.scss';
 
 const FEATURES = [
   {
+    key: NAVIGATION.features.subNav.communication.key,
+    name: NAVIGATION.features.subNav.communication.name,
+    Icon: NAVIGATION.features.subNav.communication.Icon,
+    link: NAVIGATION.features.subNav.communication.link,
+    headline: 'Optimize your communication efforts',
+    image: 'inform',
+    body:
+      'Communication between staff members, family members and residents has never been easier or more efficient. The LifeLoop messaging platform means you can communicate 24/7 from any device.',
+    bullets: [
+      'Easily broadcast messages to all staff, residents and family members who are connected',
+      'Staff can send messages back and forth in LifeLoop',
+      'Connected family members can connect with the appropriate staff member',
+      'Residents can maintain a sense of independence',
+    ],
+  },
+  {
     key: NAVIGATION.features.subNav.calendar.key,
     name: NAVIGATION.features.subNav.calendar.name,
     Icon: NAVIGATION.features.subNav.calendar.Icon,
@@ -26,9 +42,24 @@ const FEATURES = [
       'LifeLoop has helped communities of all sizes effectively develop, communicate and display their activity calendars to residents and family members.',
     bullets: [
       'Save time with reoccurring activity features',
-      'Design calendars that stand out',
       'Build robust calendars based on resident likes',
       'Real-time updates on all calendars and digital signage',
+    ],
+  },
+  {
+    key: NAVIGATION.features.subNav.designer.key,
+    name: NAVIGATION.features.subNav.designer.name,
+    Icon: NAVIGATION.features.subNav.designer.Icon,
+    link: NAVIGATION.features.subNav.designer.link,
+    headline: 'Enhance your calendars & newsletters',
+    image: 'newsletterDesigner',
+    body:
+      'The LifeLoop Designer allows you to create calendars, newsletters, marketing pieces, menus and more all within the existing LifeLoop platform. Meaning you don’t need multiple programs to produce and distribute publications from your community. ',
+    bullets: [
+      'Easily create branded documents or request templates from our team',
+      'Create calendars in monthly, two-week, one-week or daily formats',
+      'Documents can be created in a variety of sizes',
+      'Customize with images, adjustable text size & more',
     ],
   },
   {
@@ -63,19 +94,49 @@ const FEATURES = [
     ],
   },
   {
-    key: NAVIGATION.features.subNav.communication.key,
-    name: NAVIGATION.features.subNav.communication.name,
-    Icon: NAVIGATION.features.subNav.communication.Icon,
-    link: NAVIGATION.features.subNav.communication.link,
-    headline: 'Optimize your communication efforts',
-    image: 'inform',
+    key: NAVIGATION.features.subNav.familyPortal.key,
+    name: NAVIGATION.features.subNav.familyPortal.name,
+    Icon: NAVIGATION.features.subNav.familyPortal.Icon,
+    link: NAVIGATION.features.subNav.familyPortal.link,
+    headline: 'Be in two places at once',
+    image: 'transparency',
     body:
-      'Communication between staff members, family members and residents has never been easier or more efficient. The LifeLoop messaging platform means you can communicate 24/7 from any device.',
+      'Family members lean on LifeLoop to keep them up-to-date on the lives and care of their loved ones no matter where they are. The family portal sparks a genuine connection between family members and staff members and helps foster communication between residents and their families.',
     bullets: [
-      'Easily broadcast messages to all staff, residents and family members who are connected',
-      'Staff can send messages back and forth in LifeLoop',
-      'Connected family members can connect with the appropriate staff member',
-      'Residents can maintain a sense of independence',
+      'Share special moments with the LifeLoop family portal and mobile app',
+      'Get a real-time view into your loved one’s day',
+      'Receive a weekly email with in-depth details on your loved one’s engagement',
+      'Make transportation and maintenance requests easily from the portal or mobile app',
+    ],
+  },
+  {
+    key: NAVIGATION.features.subNav.photos.key,
+    name: NAVIGATION.features.subNav.photos.shortName,
+    Icon: NAVIGATION.features.subNav.photos.Icon,
+    link: NAVIGATION.features.subNav.photos.link,
+    headline: 'Your word-of-mouth marketing tool',
+    image: 'organize',
+    body:
+      'Photo and video sharing through the LifeLoop portals and mobile app ensures that family members have a unique window into the daily lives of their loved ones.',
+    bullets: [
+      'Easily organize community photos',
+      'Tag residents in special moments',
+      'Set your community apart from the competition',
+    ],
+  },
+  {
+    key: NAVIGATION.features.subNav.residentPortal.key,
+    name: NAVIGATION.features.subNav.residentPortal.name,
+    Icon: NAVIGATION.features.subNav.residentPortal.Icon,
+    link: NAVIGATION.features.subNav.residentPortal.link,
+    headline: 'Maximize their independence',
+    image: 'independence',
+    body:
+      'Engaging residents and their family members with technology can have a positive impact on the life of the resident, help alleviate social isolation and give your community a competitive edge.',
+    bullets: [
+      'Simplistic design and easy to navigate',
+      'Can be used on desktops, laptops, tables or mobile phones',
+      'Built in reminders to attend events and meals',
     ],
   },
   {
@@ -107,52 +168,6 @@ const FEATURES = [
       'A full maintenance management system',
       'Quickly filter requests by crew member, resident, room number or community location',
       'Accessible from any Apple or Android device',
-    ],
-  },
-  {
-    key: NAVIGATION.features.subNav.residentPortal.key,
-    name: NAVIGATION.features.subNav.residentPortal.name,
-    Icon: NAVIGATION.features.subNav.residentPortal.Icon,
-    link: NAVIGATION.features.subNav.residentPortal.link,
-    headline: 'Maximize their independence',
-    image: 'independence',
-    body:
-      'Engaging residents and their family members with technology can have a positive impact on the life of the resident, help alleviate social isolation and give your community a competitive edge.',
-    bullets: [
-      'Simplistic design and easy to navigate',
-      'Can be used on desktops, laptops, tables or mobile phones',
-      'Built in reminders to attend events and meals',
-    ],
-  },
-  {
-    key: NAVIGATION.features.subNav.familyPortal.key,
-    name: NAVIGATION.features.subNav.familyPortal.name,
-    Icon: NAVIGATION.features.subNav.familyPortal.Icon,
-    link: NAVIGATION.features.subNav.familyPortal.link,
-    headline: 'Be in two places at once',
-    image: 'transparency',
-    body:
-      'Family members lean on LifeLoop to keep them up-to-date on the lives and care of their loved ones no matter where they are. The family portal sparks a genuine connection between family members and staff members and helps foster communication between residents and their families.',
-    bullets: [
-      'Share special moments with the LifeLoop family portal and mobile app',
-      'Get a real-time view into your loved one’s day',
-      'Receive a weekly email with in-depth details on your loved one’s engagement',
-      'Make transportation and maintenance requests easily from the portal or mobile app',
-    ],
-  },
-  {
-    key: NAVIGATION.features.subNav.photos.key,
-    name: NAVIGATION.features.subNav.photos.shortName,
-    Icon: NAVIGATION.features.subNav.photos.Icon,
-    link: NAVIGATION.features.subNav.photos.link,
-    headline: 'Your word-of-mouth marketing tool',
-    image: 'organize',
-    body:
-      'Photo and video sharing through the LifeLoop portals and mobile app ensures that family members have a unique window into the daily lives of their loved ones.',
-    bullets: [
-      'Easily organize community photos',
-      'Tag residents in special moments',
-      'Set your community apart from the competition',
     ],
   },
 ];
@@ -235,6 +250,16 @@ export default () => {
           }
         }
         independence: file(relativePath: { eq: "maximize-independence.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 637) {
+              ...GatsbyImageSharpFluid
+              presentationWidth
+            }
+          }
+        }
+        newsletterDesigner: file(
+          relativePath: { eq: "newsletter-designer.png" }
+        ) {
           childImageSharp {
             fluid(maxWidth: 637) {
               ...GatsbyImageSharpFluid
