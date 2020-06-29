@@ -5,10 +5,6 @@ author: Andrea Clauson
 title: Omaha software company brings transparency, connection to care centers
 photo: /images/cms/capture44.png
 ---
-
-
-
-
 **KETV Newswatch 7**
 
 **OMAHA, Neb. —**
@@ -39,4 +35,4 @@ And she knows the coronavirus threat will linger for months — maybe years — 
 
 "Senior living is probably the last place it's going away," Johnson said. "We're really focused on giving facilities the tools to be transparent with audiences because that need is not going to change."
 
-[WATCH THE FULL VIDEO HERE](https://www.ketv.com/article/families-enjoy-socially-distant-dance-recital-by-performing-outdoors-spreading-out-routines/32991687)
+[WATCH THE FULL VIDEO HERE](https://www.ketv.com/article/omaha-software-company-brings-transparency-connection-to-care-centers/32975220)
