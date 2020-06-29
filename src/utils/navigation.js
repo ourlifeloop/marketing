@@ -137,6 +137,34 @@ export default {
         name: 'Designer',
         shortName: 'Designer',
         link: '/features/designer',
+        questions: [
+          {
+            question: 'Can I create branded calendars?',
+            answer:
+              'Yes! LifeLoop allows you to create professional monthly calendars that are customized with your branded colors, logo etc.',
+          },
+          {
+            question:
+              'Does LifeLoop offer more design options than just a monthly layout?',
+            answer:
+              'Yes! In our Designer you can create designed weekly calendars, two-page monthly calendars and standard one-page monthly calendars.',
+          },
+          {
+            question: 'What types of projects can the designer create?',
+            answer:
+              'LifeLoop’s Designer can be used for printed monthly calendars, newsletters, marketing flyers, cards, menus and more!',
+          },
+          {
+            question: 'How do my activities get on the designed calendar?',
+            answer:
+              'The Designer links up with your LifeLoop activity calendar with the click of a button, no duplicate entry is needed! Also add personal touches such as resident birthdays and anniversaries with just one click.',
+          },
+          {
+            question: 'Can I print professional quality calendars?',
+            answer:
+              'Yes! We offer professional printing through our partnership with Activity Connection. If you print your calendars with Activity Connection, you can also get a discount applied to your subscription.',
+          },
+        ],
       },
       displays: {
         key: 'displays',
