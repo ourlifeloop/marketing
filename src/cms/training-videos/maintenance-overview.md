@@ -1,7 +1,8 @@
 ---
 title: Maintenance Overview
-video: 'https://www.youtube-nocookie.com/embed/JOd8P5jFHt8'
+video: https://youtu.be/JVsqp8T9jYU
 cover: /images/cms/vid-cov-1.jpg
+isNew: true
 topics:
   - maintenance
 userTypes:
