@@ -1,7 +1,8 @@
 ---
 title: Transportation Overview
-video: 'https://www.youtube-nocookie.com/embed/9y96-JwGaFk'
+video: https://youtu.be/jSwIU4NhT0o
 cover: /images/cms/vid-cov-1.jpg
+isNew: true
 topics:
   - transportation
 userTypes:
