@@ -1,6 +1,6 @@
 ---
 title: Calendar Designer Templates
-document: /images/cms/designer-templates.pdf
+document: /images/cms/calendar-designer-templates-101.pdf
 topics:
   - designer
 userTypes:
