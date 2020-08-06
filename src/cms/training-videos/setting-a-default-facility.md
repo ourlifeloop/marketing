@@ -1,8 +1,8 @@
 ---
 title: Setting a Default Facility
-video: 'https://www.youtube-nocookie.com/embed/yHEO-n-DPrw'
+video: https://www.youtube-nocookie.com/embed/iSkQYdzRD30
 cover: /images/cms/vid-cov-3.jpg
-isNew: false
+isNew: true
 topics:
   - staff-management
 userTypes:
