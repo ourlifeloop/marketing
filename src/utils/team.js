@@ -27,29 +27,24 @@ export default [
     image: 'brettRobeson',
   },
   {
-    name: 'Joey Carney',
-    title: 'Territory Manager',
-    image: 'joeyCarney',
-  },
-  {
-    name: 'JT Seger',
-    title: 'Lead Developer',
-    image: 'jtSeger',
-  },
-  {
-    name: 'Mitchel Pigsley',
-    title: 'Lead Developer',
-    image: 'mitchelPigsley',
-  },
-  {
-    name: 'Dylan Kuzelka',
-    title: 'Quality Assurance Specialist',
-    image: 'dylanKuzelka',
-  },
-  {
     name: 'Andrea Clauson',
     title: 'Marketing Manager',
     image: 'andreaClauson',
+  },
+  {
+    name: 'Tara Robeson',
+    title: 'Accounts Payable',
+    image: 'taraRobeson',
+  },
+  {
+    name: 'Brittany Tran',
+    title: 'Customer Success Specialist',
+    image: 'brittanyTran',
+  },
+  {
+    name: 'Erin McGill',
+    title: 'Customer Success Specialist',
+    image: 'erinMcGill',
   },
   {
     name: 'Natallia Jorgensen',
@@ -57,9 +52,29 @@ export default [
     image: 'natalliaJorgensen',
   },
   {
-    name: 'Jess Donahue',
-    title: 'Customer Success Specialist',
-    image: 'jessDonahue',
+    name: 'Joey Carney',
+    title: 'Territory Manager',
+    image: 'joeyCarney',
+  },
+  {
+    name: 'JT Seger',
+    title: 'Lead Software Engineer',
+    image: 'jtSeger',
+  },
+  {
+    name: 'Mitchel Pigsley',
+    title: 'Lead Software Engineer',
+    image: 'mitchelPigsley',
+  },
+  {
+    name: 'Levi Liester',
+    title: 'Software Engineer',
+    image: 'leviLiester',
+  },
+  {
+    name: 'Dylan Kuzelka',
+    title: 'Quality Assurance Specialist',
+    image: 'dylanKuzelka',
   },
 ];
 
@@ -109,6 +124,18 @@ export const teamImages = graphql`
       ...teamImage
     }
     jessDonahue: file(relativePath: { eq: "team/jess.donahue.jpg" }) {
+      ...teamImage
+    }
+    brittanyTran: file(relativePath: { eq: "team/brittany.tran.jpg" }) {
+      ...teamImage
+    }
+    erinMcGill: file(relativePath: { eq: "team/erin.mcgill.jpg" }) {
+      ...teamImage
+    }
+    leviLiester: file(relativePath: { eq: "team/levi.liester.jpg" }) {
+      ...teamImage
+    }
+    taraRobeson: file(relativePath: { eq: "team/tara.robeson.jpg" }) {
       ...teamImage
     }
   }
