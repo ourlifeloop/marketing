@@ -47,6 +47,11 @@ export default [
     image: 'erinMcGill',
   },
   {
+    name: 'Jess Donahue',
+    title: 'Customer Success Specialist',
+    image: 'jessDonahue',
+  },
+  {
     name: 'Natallia Jorgensen',
     title: 'Customer Success Specialist',
     image: 'natalliaJorgensen',
