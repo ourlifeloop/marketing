@@ -1,8 +1,8 @@
 ---
 title: Staff Overview
-video: 'https://www.youtube-nocookie.com/embed/hBvwH9HKR4U'
+video: https://www.youtube-nocookie.com/embed/N0h8er9o88s
 cover: /images/cms/vid-cov-12.jpg
-isNew: false
+isNew: true
 topics:
   - getting-started
   - staff-management
