@@ -33,7 +33,7 @@ export default [
   },
   {
     name: 'Tara Robeson',
-    title: 'Accounts Payable',
+    title: 'Accounting Manager',
     image: 'taraRobeson',
   },
   {
