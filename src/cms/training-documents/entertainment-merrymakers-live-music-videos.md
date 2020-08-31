@@ -1,5 +1,5 @@
 ---
-title: "Entertainment: MerryMakers Live Music Videos"
+title: "Entertainment: MerryMakers Live Music Performances #3"
 document: /images/cms/merrymakers2-resident-activity-resource-guide.pdf
 isMobile: false
 topics:
