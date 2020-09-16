@@ -1,6 +1,6 @@
 ---
-title: LifeLoop Connections Informational Brochure Card
-document: /images/cms/family_member_rack_card_-_august_2020.pdf
+title: LifeLoop Info Pamphlet - Connections
+document: /images/cms/family-member-rack-card.pdf
 isMobile: false
 topics:
   - family-portal
