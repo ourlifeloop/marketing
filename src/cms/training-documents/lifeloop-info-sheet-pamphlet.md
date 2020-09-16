@@ -1,5 +1,5 @@
 ---
-title: "LifeLoop Info Sheet - Pamphlet "
+title: "LifeLoop Info Pamphlet - Staff "
 document: /images/cms/staff_member_rack_card_-_august_2020.pdf
 isMobile: false
 topics:
