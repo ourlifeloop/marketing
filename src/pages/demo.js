@@ -37,7 +37,7 @@ const FEATURES = [
   'Family Portal',
   'Resident Portal',
   'Communication & Messaging (Family, Staff, & Residents)',
-  'Photo & Video Sharing',
+  'Photo Sharing',
 ];
 
 const INITIAL_STATE = {
