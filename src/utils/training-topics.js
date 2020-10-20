@@ -44,7 +44,7 @@ export default [
   },
   {
     key: 'messaging',
-    name: 'Messaging',
+    name: 'Communication',
     image: 'messages',
     Icon: messages,
   },

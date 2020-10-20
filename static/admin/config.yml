@@ -56,7 +56,7 @@ collections:
           - { label: Activity Calendar, value: activity-calendar }
           - { label: Resident Management, value: resident-management }
           - { label: Photos, value: photos }
-          - { label: Messaging, value: messaging }
+          - { label: Communication, value: messaging }
           - { label: Maintenance, value: maintenance }
           - { label: Transportation, value: transportation }
           - { label: Displays, value: displays }
@@ -98,7 +98,7 @@ collections:
           - { label: Activity Calendar, value: activity-calendar }
           - { label: Resident Management, value: resident-management }
           - { label: Photos, value: photos }
-          - { label: Messaging, value: messaging }
+          - { label: Communication, value: messaging }
           - { label: Maintenance, value: maintenance }
           - { label: Transportation, value: transportation }
           - { label: Displays, value: displays }
@@ -142,7 +142,7 @@ collections:
           - { label: Activity Calendar, value: activity-calendar }
           - { label: Resident Management, value: resident-management }
           - { label: Photos, value: photos }
-          - { label: Messaging, value: messaging }
+          - { label: Communication, value: messaging }
           - { label: Maintenance, value: maintenance }
           - { label: Transportation, value: transportation }
           - { label: Displays, value: displays }
