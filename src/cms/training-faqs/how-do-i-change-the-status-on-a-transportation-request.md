@@ -1,5 +1,5 @@
 ---
-question: How do I Change the status on a Transportation Request?
+question: How do I change the status on a Transportation Request?
 answer: >+
   -Select the Transportation tab in the blue panel on the left-hand side. 
 
