@@ -5,13 +5,13 @@ answer: >-
   any transportation types, vehicles and drivers.
 
 
-  -Click on the gear setting on the top right hand corner
+  -Go to facility settings, which is the gear icon on the top right between the ? and bell icons.
 
 
-  -Select the Bolded Community Name on the left hand bar
+  -Select the Bolded Community Name on the left-hand side bar
 
 
-  -Click on Transportation on the top bar
+  -Click on Transportation on the top menu bar
 
 
   -Under each section, you can set what you would like to show for types of transportation, vehicles and drivers by just typing it in the blank space and hitting Create. 
