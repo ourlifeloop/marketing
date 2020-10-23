@@ -1,5 +1,5 @@
 ---
-question: Who can request transportation?
+question: Who can request Transportation?
 answer: >-
   -Staff members that have the permission to Manage and Create Transportation
   requests have the ability to request transportation.
