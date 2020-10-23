@@ -1,14 +1,13 @@
 ---
 question: How do I change the status on a Transportation Request?
-answer: >+
+answer: >
   -Select the Transportation tab in the blue panel on the left-hand side. 
 
 
-  -From your transportation calendar, select the day of the request you would like to change. On the far right hand side day view of requests, select the edit button on bottom right hand side of the request that you would like to change the status on.
+  - From your transportation calendar, select the day of the request you would like to change. In the day view on the far right-hand side, locate the request and select the edit icon.
 
 
-  -Change that Status to the current status this request needs to be at. 
-
+  - Update the status and select the Edit Request button on the bottom right to save. 
 isMobile: true
 topics:
   - transportation
