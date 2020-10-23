@@ -1,5 +1,5 @@
 ---
-question: Is recurring Maintenance the same as preventative maintenance?
+question: Is recurring Maintenance the same as preventative Maintenance?
 answer: "- Yes. For example: Change smoke detector batteries."
 isMobile: false
 topics:
