@@ -1,5 +1,5 @@
 ---
-question: What is recurring maintenance and how do I set this?
+question: What is recurring Maintenance and how do I set this?
 answer: >-
   - When you create a new request, you have the option of setting up recurring
   event. If you need to have the same maintenance to be set for multiple times a
