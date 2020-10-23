@@ -2,7 +2,7 @@
 question: " How do I Make a Transportation Request?"
 answer: >-
   -On the left-hand side within the blue panel, click on the “Transportation”
-  button. 
+  feature. 
 
 
   -Click on the “+ New Request” button. 
