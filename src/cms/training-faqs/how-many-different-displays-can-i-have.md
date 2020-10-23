@@ -1,5 +1,5 @@
 ---
-question: How many different displays can I have?
+question: How many different Displays can I have?
 answer: "- You can have as many displays as you would like. "
 isMobile: false
 topics:
