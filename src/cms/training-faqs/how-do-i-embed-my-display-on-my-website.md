@@ -1,5 +1,5 @@
 ---
-question: How do I embed my display on my website?
+question: How do I embed my Display on my website?
 answer: >-
   - On the left-hand side within the blue panel, click on the “Display”
   feature. 
