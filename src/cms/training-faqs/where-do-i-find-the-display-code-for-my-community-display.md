@@ -1,5 +1,5 @@
 ---
-question: Where do I find the Display Code for my Community Display?
+question: Where do I find the Display Code for my Community's TV Display?
 answer: >-
   - On the left-hand side within the blue panel, click on the “Display” button. 
 
