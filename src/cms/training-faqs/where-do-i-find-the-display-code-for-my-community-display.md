@@ -7,10 +7,13 @@ answer: >-
   - Click on the display you would like to show on your TV. 
 
 
-  - Select Display Code on the top right hand side
+  - Select Display Code on the top right-hand side.
 
 
-  - This will show you the display code and community name that will need to by put into your Amazon Firestick, LifeLoop Display App in order for your Display to show.
+  - This will provide you with the community name and display code that will need to be inputted into the LifeLoop display app, accessed through your FireStick on your TV. 
+
+
+  - Once inputted, select submit and your Display will show on your TV.
 isMobile: false
 topics:
   - displays
