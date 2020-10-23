@@ -1,5 +1,5 @@
 ---
-question: What is a recurring transportation and how do I set this?
+question: What is a recurring Transportation and how do I set this?
 answer: >-
   - When you create a new request, you have the option of setting up recurring
   event. If you need to have the same transportation to be set for multiple
