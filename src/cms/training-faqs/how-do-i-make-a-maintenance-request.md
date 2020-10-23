@@ -2,7 +2,7 @@
 question: How do I Make a Maintenance Request?
 answer: >-
   -On the left-hand side within the blue panel, click on the “Maintenance”
-  button. 
+  feature. 
 
 
   -Click on the “+ New Request” button. 
@@ -11,8 +11,7 @@ answer: >-
   -This will open a New Maintenance Request form on the right-hand side. 
 
 
-  -Select who the request is for, the type, if it is urgent, the type of request
-  and enter a description. 
+  -Select who the request is for, the type, if it is urgent, the type of request and enter a description. 
 
 
   -Select the green Submit Request button on the bottom of the form. 
@@ -25,4 +24,3 @@ topics:
 userTypes:
   - staff
 ---
-
