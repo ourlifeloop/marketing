@@ -5,7 +5,7 @@ answer: >-
   button. 
 
 
-  - Click on the “+ New Display” button on the top right hand side.
+  - Click on the “+ New Display” button on the top right-hand side.
 
 
   - This will open a new blank display.
