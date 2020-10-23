@@ -1,10 +1,11 @@
 ---
 question: How do I embed my display on my website?
 answer: >-
-  - On the left-hand side within the blue panel, click on the “Display” button. 
+  - On the left-hand side within the blue panel, click on the “Display”
+  feature. 
 
 
-  - Click on the display you would like to show on your TV. 
+  - Click on the display you would like to embed and add to your marketing website.
 
 
   - Select Embed Code on the top right hand side
