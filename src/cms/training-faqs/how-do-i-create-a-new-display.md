@@ -1,5 +1,5 @@
 ---
-question: How do I create a new display?
+question: How do I create a new Display?
 answer: >-
   - On the left-hand side within the blue panel, click on the “Displays”
   button. 
