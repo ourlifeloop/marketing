@@ -1,5 +1,5 @@
 ---
-question: Who can request maintenance?
+question: Who can request Maintenance?
 answer: >-
   Staff members that have the permission to Manage and Create Maintenance
   requests have the ability to request maintenance.
