@@ -15,8 +15,6 @@ At First Place, residents can make friends, have fun and live independently. The
 
 “I have had the privilege of visiting First Place and been able to see first-hand what makes it so special. Many adults with autism or other disabilities can face unique challenges in daily life and First Place is a true asset and resource for them,” Joey Carney, territory manager for LifeLoop, said. “Everything from the design of the building to the supportive, caring environment they have created helps the residents develop personally and professionally.”
 
-
-
 ### **The Transition Academy**
 
 Part of First Place’s offerings is a Transition Academy. In the first year, residents live in their own private bedroom in an apartment suite shared with three others. They volunteer, take on internships and employment and use public transportation.
@@ -31,15 +29,13 @@ In the second year of the Transition Academy, residents move up to two-bedroom s
 
 Upon graduation, 89% of the students live in a community of their choosing. Some choose to stay at First Place-Phoenix.
 
-
+![](/images/cms/2.png)
 
 ### **An Emphasis on Community Life**
 
 As the community life coordinator, Bernardo schedules roughly three events per day, and each day has a theme. The week starts with “Mindful Monday” followed by “Totally Tuesday,” which features fun games, bingo and karaoke. Wednesday is all about wellness, working out and learning about healthy eating. Thoughtful Thursday features meditation, art activities and trivia contests. Feel-good Fridays and the ice cream and smoothie happy hours celebrate the close of the week. The weekend starts with “Social Saturday” followed by “Soulful Sunday,” featuring brunch and relaxing activities. In these COVID times, and with limited access to movie theatres, bowling alleys and sporting events, more activities are now based at First Place-Phoenix where all activities include facemask wearing, hand-sanitizing and physically distancing protocols. 
 
 “I am a BIG fan of being kind to people, so I loved all of our Community Life events that we did for the Summer of Kindness and are doing for the Kind It Forward campaign,” Eaton said. “We tie dyed shirts for ourselves, friends and FP staff, made kindness boxes for families and became pen pals with seniors at a local senior living facility. We’re continuing this campaign right now by writing kindness letters, assembling face masks for the Apache and Navajo reservations, and making kindness coins for Ben’s Bells.”
-
-
 
 ### **A Sense of Independence**
 
@@ -57,11 +53,11 @@ Some residents use a smartphone or personal computer to log-in. Others like Whit
 
 While registering for activities and putting in maintenance requests make up most of the resident’s use of LifeLoop, they can also upload photos of their activities for others to view. “Partnering with First Place has allowed us to learn how we can add value to other communities outside of senior living,” said Amy Johnson, LifeLoop CEO. “Being able to explore how LifeLoop can foster communication and create connections for the residents of First Place has been very fulfilling for our company. We truly believe in the mission of their property.”
 
+![](/images/cms/1.png)
+
 Bernardo added she likes the ability to use digital signage to keep residents updated on activities and the ease of altering LifeLoop’s features to match her desires.
 
 “They’re very receptive to receiving feedback and suggestions,” she said.“We’ve really been able to adapt and maximize our use of LifeLoop.”
-
-
 
 ### **It’s a Passion**
 
