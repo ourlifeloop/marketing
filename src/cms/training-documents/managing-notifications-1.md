@@ -1,5 +1,5 @@
 ---
-title: Managing Notifications
+title: Managing Notifications for Family
 document: /images/cms/connections-notications-new.pdf
 isMobile: false
 topics:
