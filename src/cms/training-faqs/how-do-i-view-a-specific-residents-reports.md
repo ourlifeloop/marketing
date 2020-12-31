@@ -1,22 +1,16 @@
 ---
-question: 'How do I view a specific resident''s reports? '
+question: "How do I view a specific resident's reports? "
 answer: >-
-  -Each resident profile has a personal reports tab with charts that show levels
-  of activity and what types of activities they are attending. 
+  -On the left-hand side within the blue panel, click on the “Reports” button. 
 
 
-  -To view these, select the Residents tab in the blue panel on the left-hand
-  side. 
+  -Under "Group By" option, Choose "Resident" and select the community of the residents you would like to review reports for. 
 
 
-  -Choose the resident you would like to view and click on the Reports tab. 
-
-
-  -To create reports refer to “How do I Create a Resident Report”. 
+  -You can now view a report of each resident in the selected community for how many activities they have attended, declined and what types of activities they have attended. 
 isMobile: false
 topics:
   - reporting
 userTypes:
   - staff
 ---
-
