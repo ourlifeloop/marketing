@@ -27,6 +27,11 @@ export default [
     image: 'brettRobeson',
   },
   {
+    name: 'Joey Carney',
+    title: 'Territory Manager',
+    image: 'joeyCarney',
+  },
+  {
     name: 'Andrea Clauson',
     title: 'Marketing Manager',
     image: 'andreaClauson',
@@ -40,6 +45,16 @@ export default [
     name: 'Brittany Tran',
     title: 'Customer Success Specialist',
     image: 'brittanyTran',
+  },
+  {
+    name: 'Caroline Ebers',
+    title: 'Customer Success Specialist',
+    image: 'carolineEbers',
+  },
+  {
+    name: 'Chelsea Blaser',
+    title: 'Customer Success Specialist',
+    image: 'chelseaBlaser',
   },
   {
     name: 'Erin McGill',
@@ -57,9 +72,9 @@ export default [
     image: 'natalliaJorgensen',
   },
   {
-    name: 'Joey Carney',
-    title: 'Territory Manager',
-    image: 'joeyCarney',
+    name: 'Sam Almquist',
+    title: 'Customer Success Specialist',
+    image: 'samAlmquist',
   },
   {
     name: 'JT Seger',
@@ -80,6 +95,16 @@ export default [
     name: 'Dylan Kuzelka',
     title: 'Quality Assurance Specialist',
     image: 'dylanKuzelka',
+  },
+  {
+    name: 'Jared Herselman',
+    title: 'Quality Assurance Specialist',
+    image: 'jaredHerselman',
+  },
+  {
+    name: 'Paige Eicher',
+    title: 'Intern',
+    image: 'paigeEicher',
   },
 ];
 
@@ -141,6 +166,21 @@ export const teamImages = graphql`
       ...teamImage
     }
     taraRobeson: file(relativePath: { eq: "team/tara.robeson.jpg" }) {
+      ...teamImage
+    }
+    carolineEbers: file(relativePath: { eq: "team/caroline.ebers.jpg" }) {
+      ...teamImage
+    }
+    chelseaBlaser: file(relativePath: { eq: "team/chelsea.blaser.jpg" }) {
+      ...teamImage
+    }
+    jaredHerselman: file(relativePath: { eq: "team/jared.herselman.jpg" }) {
+      ...teamImage
+    }
+    paigeEicher: file(relativePath: { eq: "team/paige.eicher.jpg" }) {
+      ...teamImage
+    }
+    samAlmquist: file(relativePath: { eq: "team/sam.almquist.jpg" }) {
       ...teamImage
     }
   }
