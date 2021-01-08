@@ -1,6 +1,6 @@
 ---
 title: Calendar Designer 101
-document: /images/cms/calendar-designer.pdf
+document: /images/cms/calendar-designer-101-1-.pdf
 topics:
   - designer
 userTypes:
