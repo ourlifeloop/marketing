@@ -87,7 +87,7 @@ export default function FeatureHeader({ pathname }) {
         image={hero.childImageSharp.fluid}
         title="Enhancing Resident & Family Engagement Through Technology"
         description="Adapting technology solutions in a way to enhance the lives of
-        resident and the staff members and family who care for them. LifeLoop
+        residents and the staff members and family who care for them. LifeLoop
         is your full-service senior living solution."
       />
       {subNav}

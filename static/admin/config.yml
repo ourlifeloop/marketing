@@ -6,7 +6,7 @@ backend:
 media_folder: static/images/cms
 public_folder: /images/cms
 
-display_url: https://ourlifeloop.netlify.com/
+display_url: https://ourlifeloop.com
 
 collections:
   - name: blog

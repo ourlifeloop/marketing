@@ -46,7 +46,13 @@ export default () => {
     submitForm({
       ...form,
       subject: `General Contact: ${form.subject}`,
-    }).then(() => navigate('/form-success'));
+    })
+      .then(() =>
+        window.gtag('event', 'conversion', {
+          send_to: 'AW-446319677/1b-lCJ6es_ABEL2Y6dQB',
+        }),
+      )
+      .then(() => navigate('/form-success'));
   };
 
   return (
@@ -103,7 +109,11 @@ export default () => {
                     />
                   </Label>
                 </FormRow>
-                <Button isLoading={isLoading} disabled={!isValid} type="submit">
+                <Button
+                  isLoading={isLoading}
+                  disabled={isLoading || !isValid}
+                  type="submit"
+                >
                   Submit
                 </Button>
               </form>

@@ -83,7 +83,13 @@ export default ({ data }) => {
       role: form.role.value,
       subject: 'Demo Request',
       features: form.features.map(({ value }) => value).join(', '),
-    }).then(() => navigate('/form-success'));
+    })
+      .then(() =>
+        window.gtag('event', 'conversion', {
+          send_to: 'AW-446319677/dyT4CI3YpfABEL2Y6dQB',
+        }),
+      )
+      .then(() => navigate('/form-success'));
   };
 
   return (
@@ -185,7 +191,11 @@ export default ({ data }) => {
                     />
                   </Label>
                 </FormRow>
-                <Button isLoading={isLoading} disabled={!isValid} type="submit">
+                <Button
+                  isLoading={isLoading}
+                  disabled={isLoading || !isValid}
+                  type="submit"
+                >
                   Send Request
                 </Button>
               </form>

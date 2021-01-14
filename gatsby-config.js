@@ -33,7 +33,9 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-relative-images-v2',
+          },
           {
             resolve: 'gatsby-remark-images',
             options: { maxWidth: 700 },
@@ -43,11 +45,12 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-plugin-gtag',
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingId: 'UA-56344911-1',
-        head: false,
-        anonymize: true,
+        trackingIds: ['UA-56344911-1', 'AW-446319677'],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     'gatsby-plugin-sass',
