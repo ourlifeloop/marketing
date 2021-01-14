@@ -83,7 +83,19 @@ export default ({ data }) => {
       role: form.role.value,
       subject: 'Demo Request',
       features: form.features.map(({ value }) => value).join(', '),
-    }).then(() => navigate('/form-success'));
+    })
+      .then(
+        () =>
+          new Promise(resolve =>
+            window.gtag(
+              'event',
+              'conversion',
+              { send_to: 'AW-446319677/dyT4CI3YpfABEL2Y6dQB' },
+              resolve,
+            ),
+          ),
+      )
+      .then(() => navigate('/form-success'));
   };
 
   return (
