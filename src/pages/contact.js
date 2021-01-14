@@ -47,16 +47,15 @@ export default () => {
       ...form,
       subject: `General Contact: ${form.subject}`,
     })
-      .then(
-        () =>
-          new Promise(resolve =>
-            window.gtag(
-              'event',
-              'conversion',
-              { send_to: 'AW-446319677/1b-lCJ6es_ABEL2Y6dQB' },
-              resolve,
-            ),
+      .then(() =>
+        new Promise(resolve =>
+          window.gtag(
+            'event',
+            'conversion',
+            { send_to: 'AW-446319677/1b-lCJ6es_ABEL2Y6dQB' },
+            resolve,
           ),
+        ).catch(() => navigate('/form-success')),
       )
       .then(() => navigate('/form-success'));
   };
@@ -115,7 +114,11 @@ export default () => {
                     />
                   </Label>
                 </FormRow>
-                <Button isLoading={isLoading} disabled={!isValid} type="submit">
+                <Button
+                  isLoading={isLoading}
+                  disabled={isLoading || !isValid}
+                  type="submit"
+                >
                   Submit
                 </Button>
               </form>

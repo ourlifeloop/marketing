@@ -159,7 +159,11 @@ export default () => {
                     />
                   </Label>
                 </FormRow>
-                <Button isLoading={isLoading} disabled={!isValid} type="submit">
+                <Button
+                  isLoading={isLoading}
+                  disabled={isLoading || !isValid}
+                  type="submit"
+                >
                   Submit
                 </Button>
               </form>

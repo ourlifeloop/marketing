@@ -84,16 +84,15 @@ export default ({ data }) => {
       subject: 'Demo Request',
       features: form.features.map(({ value }) => value).join(', '),
     })
-      .then(
-        () =>
-          new Promise(resolve =>
-            window.gtag(
-              'event',
-              'conversion',
-              { send_to: 'AW-446319677/dyT4CI3YpfABEL2Y6dQB' },
-              resolve,
-            ),
+      .then(() =>
+        new Promise(resolve =>
+          window.gtag(
+            'event',
+            'conversion',
+            { send_to: 'AW-446319677/dyT4CI3YpfABEL2Y6dQB' },
+            resolve,
           ),
+        ).catch(() => navigate('/form-success')),
       )
       .then(() => navigate('/form-success'));
   };
@@ -197,7 +196,11 @@ export default ({ data }) => {
                     />
                   </Label>
                 </FormRow>
-                <Button isLoading={isLoading} disabled={!isValid} type="submit">
+                <Button
+                  isLoading={isLoading}
+                  disabled={isLoading || !isValid}
+                  type="submit"
+                >
                   Send Request
                 </Button>
               </form>
