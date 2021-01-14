@@ -48,14 +48,9 @@ export default () => {
       subject: `General Contact: ${form.subject}`,
     })
       .then(() =>
-        new Promise(resolve =>
-          window.gtag(
-            'event',
-            'conversion',
-            { send_to: 'AW-446319677/1b-lCJ6es_ABEL2Y6dQB' },
-            resolve,
-          ),
-        ).catch(() => navigate('/form-success')),
+        window.gtag('event', 'conversion', {
+          send_to: 'AW-446319677/1b-lCJ6es_ABEL2Y6dQB',
+        }),
       )
       .then(() => navigate('/form-success'));
   };

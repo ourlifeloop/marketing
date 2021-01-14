@@ -85,14 +85,9 @@ export default ({ data }) => {
       features: form.features.map(({ value }) => value).join(', '),
     })
       .then(() =>
-        new Promise(resolve =>
-          window.gtag(
-            'event',
-            'conversion',
-            { send_to: 'AW-446319677/dyT4CI3YpfABEL2Y6dQB' },
-            resolve,
-          ),
-        ).catch(() => navigate('/form-success')),
+        window.gtag('event', 'conversion', {
+          send_to: 'AW-446319677/dyT4CI3YpfABEL2Y6dQB',
+        }),
       )
       .then(() => navigate('/form-success'));
   };
