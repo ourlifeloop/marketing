@@ -7,12 +7,11 @@ answer: >-
 
   If you have not received this email, then please check your junk mail and if
   it is not there check with a staff member at your Community to make sure they
-  have your correct email. 
+  have your correct email.
 topics:
   - getting-started
-  - family-portal
+  - connection-portal
   - main-page
 userTypes:
-  - family
+  - connection
 ---
-

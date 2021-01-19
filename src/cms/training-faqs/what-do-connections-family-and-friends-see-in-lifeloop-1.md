@@ -11,10 +11,9 @@ answer: |-
 
   -Gallery with photos that connections have uploaded 
 
-  -Optional: Maintenance and Transportation 
+  -Optional: Maintenance and Transportation
 topics:
-  - family-portal
+  - connection-portal
 userTypes:
-  - family
+  - connection
 ---
-

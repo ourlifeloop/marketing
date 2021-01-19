@@ -6,7 +6,7 @@ answer: "-Sometimes a connection may already have a profile in LifeLoop. If
   connection's email is inputted into the resident's account info on accident. "
 isMobile: false
 topics:
-  - connections
+  - connection-management
 userTypes:
   - staff
 ---

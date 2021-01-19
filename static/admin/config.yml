@@ -61,11 +61,11 @@ collections:
           - { label: Transportation, value: transportation }
           - { label: Displays, value: displays }
           - { label: Resident Portal, value: resident-portal }
-          - { label: Family Portal, value: family-portal }
+          - { label: Connection Portal, value: connection-portal }
           - { label: Staff Management, value: staff-management }
           - { label: Reporting, value: reporting }
           - { label: Designer, value: designer }
-          - { label: Connections, value: connections }
+          - { label: Connection Management, value: connection-management }
           - { label: Marketing, value: marketing }
           - { label: Resident Engagement Tools, value: resident-engagement }
       - name: userTypes
@@ -103,11 +103,11 @@ collections:
           - { label: Transportation, value: transportation }
           - { label: Displays, value: displays }
           - { label: Resident Portal, value: resident-portal }
-          - { label: Family Portal, value: family-portal }
+          - { label: Connection Portal, value: connection-portal }
           - { label: Staff Management, value: staff-management }
           - { label: Reporting, value: reporting }
           - { label: Designer, value: designer }
-          - { label: Connections, value: connections }
+          - { label: Connection Management, value: connection-management }
           - { label: Marketing, value: marketing }
           - { label: Resident Engagement Tools, value: resident-engagement }
       - name: userTypes
@@ -147,11 +147,11 @@ collections:
           - { label: Transportation, value: transportation }
           - { label: Displays, value: displays }
           - { label: Resident Portal, value: resident-portal }
-          - { label: Family Portal, value: family-portal }
+          - { label: Connection Portal, value: connection-portal }
           - { label: Staff Management, value: staff-management }
           - { label: Reporting, value: reporting }
           - { label: Designer, value: designer }
-          - { label: Connections, value: connections }
+          - { label: Connection Management, value: connection-management }
           - { label: Marketing, value: marketing }
           - { label: Resident Engagement Tools, value: resident-engagement }
       - name: userTypes
@@ -160,5 +160,5 @@ collections:
         multiple: true
         options:
           - { label: Staff Member, value: staff }
-          - { label: Family Member, value: family }
+          - { label: Connection, value: connection }
           - { label: Resident, value: resident }

@@ -5,7 +5,7 @@ answer: -Yes, connections are able to click on the activity listed and view any
   timeframe and any photo's that may be tagged to the resident.
 isMobile: false
 topics:
-  - family-portal
+  - connection-portal
 userTypes:
   - staff
 ---

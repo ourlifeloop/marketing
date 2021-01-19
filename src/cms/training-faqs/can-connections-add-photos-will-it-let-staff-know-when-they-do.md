@@ -5,7 +5,7 @@ answer: -Yes, Connections can definitely add photos to share! Staff are able to
   'View/Manage Gallery'.
 isMobile: false
 topics:
-  - family-portal
+  - connection-portal
 userTypes:
   - staff
 ---

@@ -6,7 +6,7 @@ answer: -Yes, within the connections tab you can select the "import" button and
   and upload your list all at one time.
 isMobile: false
 topics:
-  - connections
+  - connection-management
 userTypes:
   - staff
 ---

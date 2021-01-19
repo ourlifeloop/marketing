@@ -1,5 +1,5 @@
 ---
-title: "LifeLoop Info Pamphlet - Staff "
+title: LifeLoop Info Pamphlet - Staff
 document: /images/cms/staff-member-rack-card.pdf
 isMobile: false
 topics:

@@ -5,7 +5,7 @@ answer: -Yes, they can send their loved one messages as well as any Connections
   in case their loved one does not login and use LifeLoop.
 isMobile: false
 topics:
-  - family-portal
+  - connection-portal
 userTypes:
   - staff
 ---

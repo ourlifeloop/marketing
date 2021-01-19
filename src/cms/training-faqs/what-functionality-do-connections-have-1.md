@@ -9,11 +9,10 @@ answer: |-
 
   -Add Photos they would like to share with the resident to their gallery. 
 
-  -Optional: make maintenance and transportation requests. 
+  -Optional: make maintenance and transportation requests.
 topics:
-  - family-portal
+  - connection-portal
   - main-page
 userTypes:
-  - family
+  - connection
 ---
-

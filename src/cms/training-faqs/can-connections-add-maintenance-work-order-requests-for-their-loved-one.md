@@ -7,7 +7,7 @@ answer: -This depends on the Community.  If  "Maintenance" is listed as a
   yellow flag next to it, signifying it was submitted by a connection.
 isMobile: false
 topics:
-  - family-portal
+  - connection-portal
 userTypes:
   - staff
 ---

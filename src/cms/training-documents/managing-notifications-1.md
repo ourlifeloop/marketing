@@ -4,7 +4,7 @@ document: /images/cms/connections-notications-new.pdf
 isMobile: false
 topics:
   - getting-started
-  - family-portal
+  - connection-portal
 userTypes:
-  - family
+  - connection
 ---

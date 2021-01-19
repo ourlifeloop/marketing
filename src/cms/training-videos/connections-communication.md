@@ -7,8 +7,7 @@ isMobile: false
 topics:
   - getting-started
   - messaging
-  - connections
+  - connection-management
 userTypes:
   - staff
 ---
-

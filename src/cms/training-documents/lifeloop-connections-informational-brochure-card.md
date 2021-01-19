@@ -3,10 +3,10 @@ title: LifeLoop Info Pamphlet - Connections
 document: /images/cms/family-member-rack-card.pdf
 isMobile: false
 topics:
-  - family-portal
-  - connections
+  - connection-portal
+  - connection-management
   - marketing
 userTypes:
-  - family
+  - connection
   - staff
 ---

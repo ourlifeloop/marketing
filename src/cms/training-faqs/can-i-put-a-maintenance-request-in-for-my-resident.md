@@ -1,5 +1,5 @@
 ---
-question: "Can I put a Maintenance request in for my resident? "
+question: 'Can I put a Maintenance request in for my resident? '
 answer: >-
   This depends on your community's functionality:
 
@@ -13,10 +13,10 @@ answer: >-
   Fill out the form and be sure to click the green “Submit” button at the bottom 
 
 
-  Once you have submitted a request you can check the status in the Maintenance tab.  
+  Once you have submitted a request you can check the status in the Maintenance tab.
 topics:
-  - family-portal
+  - connection-portal
   - main-page
 userTypes:
-  - family
+  - connection
 ---

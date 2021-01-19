@@ -15,10 +15,9 @@ answer: >-
   This will allow you to take a photo or to upload an already existing photo. 
 
 
-  Once photos are added they will appear in the Resident's Gallery. 
+  Once photos are added they will appear in the Resident's Gallery.
 topics:
-  - family-portal
+  - connection-portal
 userTypes:
-  - family
+  - connection
 ---
-

@@ -2,9 +2,9 @@ import { graphql } from 'gatsby';
 
 import designer from '../assets/icons/designer.svg';
 import calendar from '../assets/icons/calendar.svg';
-import connections from '../assets/icons/connections.svg';
+import connectionManagement from '../assets/icons/connection-management.svg';
 import displays from '../assets/icons/displays.svg';
-import family from '../assets/icons/family.svg';
+import connections from '../assets/icons/connections.svg';
 import gettingStarted from '../assets/icons/getting-started.svg';
 import maintenance from '../assets/icons/maintenance.svg';
 import marketing from '../assets/icons/marketing.svg';
@@ -73,10 +73,10 @@ export default [
     Icon: residents,
   },
   {
-    key: 'family-portal',
-    name: 'Family Portal',
-    image: 'family',
-    Icon: family,
+    key: 'connection-portal',
+    name: 'Connection Portal',
+    image: 'connections',
+    Icon: connections,
   },
   {
     key: 'staff-management',
@@ -97,10 +97,10 @@ export default [
     Icon: designer,
   },
   {
-    key: 'connections',
-    name: 'Connections',
-    image: 'connections',
-    Icon: connections,
+    key: 'connection-management',
+    name: 'Connection Management',
+    image: 'connectionManagement',
+    Icon: connectionManagement,
   },
   {
     key: 'marketing',
@@ -132,13 +132,15 @@ export const trainingImages = graphql`
     designer: file(relativePath: { eq: "features/designer.png" }) {
       ...featureImage
     }
-    connections: file(relativePath: { eq: "features/connections.png" }) {
+    connectionManagement: file(
+      relativePath: { eq: "features/connection-management.png" }
+    ) {
       ...featureImage
     }
     displays: file(relativePath: { eq: "features/displays.png" }) {
       ...featureImage
     }
-    family: file(relativePath: { eq: "features/family.png" }) {
+    connections: file(relativePath: { eq: "features/connections.png" }) {
       ...featureImage
     }
     gettingStarted: file(relativePath: { eq: "features/getting-started.png" }) {

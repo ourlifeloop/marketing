@@ -7,7 +7,7 @@ answer: -Yes, if they are connected to multiple residents they will be able to
   with the same email address.
 isMobile: false
 topics:
-  - family-portal
+  - connection-portal
 userTypes:
   - staff
 ---

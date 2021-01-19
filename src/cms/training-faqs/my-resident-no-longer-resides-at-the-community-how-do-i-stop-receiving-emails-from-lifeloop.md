@@ -1,7 +1,7 @@
 ---
 question: >-
   My resident no longer resides at the community, how do I stop receiving emails
-  from LifeLoop? 
+  from LifeLoop?
 answer: >-
   If you wish to no longer receive emails for any reason, please contact a staff
   member at your facility. 
@@ -21,9 +21,8 @@ answer: >-
   Scroll down to the bottom and “delete account” this will remove you from
   LifeLoop and end all emails.
 topics:
-  - family-portal
+  - connection-portal
   - main-page
 userTypes:
-  - family
+  - connection
 ---
-

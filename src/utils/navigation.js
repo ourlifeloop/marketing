@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 
 import calendar from '../assets/icons/calendar.svg';
 import displays from '../assets/icons/displays.svg';
-import family from '../assets/icons/family.svg';
+import connections from '../assets/icons/connections.svg';
 import maintenance from '../assets/icons/maintenance.svg';
 import messages from '../assets/icons/messages.svg';
 import photos from '../assets/icons/photos.svg';
@@ -282,11 +282,11 @@ export default {
           },
         ],
       },
-      familyPortal: {
-        key: 'familyPortal',
-        Icon: family,
-        name: 'Family Portal',
-        link: '/features/family-portal',
+      connectionPortal: {
+        key: 'connectionPortal',
+        Icon: connections,
+        name: 'Connection Portal',
+        link: '/features/connection-portal',
         questions: [
           {
             question: 'What devices is LifeLoop compatible on?',

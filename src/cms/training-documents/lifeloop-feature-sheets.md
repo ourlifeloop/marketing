@@ -5,7 +5,7 @@ isMobile: false
 topics:
   - getting-started
   - marketing
-  - connections
+  - connection-management
 userTypes:
   - staff
 ---

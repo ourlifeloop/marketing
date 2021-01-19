@@ -7,7 +7,7 @@ isMobile: false
 topics:
   - resident-management
   - getting-started
-  - connections
+  - connection-management
 userTypes:
   - staff
 ---

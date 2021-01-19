@@ -5,12 +5,11 @@ answer: >-
 
 
   Once they had added you, you will receive a LifeLoop welcome email that
-  explains how to login. 
+  explains how to login.
 topics:
-  - family-portal
+  - connection-portal
   - getting-started
   - main-page
 userTypes:
-  - family
+  - connection
 ---
-

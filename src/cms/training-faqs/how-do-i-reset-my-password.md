@@ -11,11 +11,10 @@ answer: >-
 
 
   You will now receive an email from LifeLoop with instructions on how to reset
-  your password 
+  your password
 topics:
-  - family-portal
+  - connection-portal
   - main-page
 userTypes:
-  - family
+  - connection
 ---
-

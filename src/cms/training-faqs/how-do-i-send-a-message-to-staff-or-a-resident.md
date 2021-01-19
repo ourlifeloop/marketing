@@ -18,10 +18,9 @@ answer: >-
   message so they can make sure to share it with them. All previous message
   threads you have will also be under the Message tab.
 topics:
-  - family-portal
+  - connection-portal
   - main-page
   - getting-started
 userTypes:
-  - family
+  - connection
 ---
-

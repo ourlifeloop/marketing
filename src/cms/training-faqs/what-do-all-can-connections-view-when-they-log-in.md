@@ -7,7 +7,7 @@ answer: -Connections are able to view the community's Activity Calendars, their
   community has selected)
 isMobile: false
 topics:
-  - family-portal
+  - connection-portal
 userTypes:
   - staff
 ---

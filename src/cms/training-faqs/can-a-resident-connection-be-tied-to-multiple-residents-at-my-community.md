@@ -7,7 +7,7 @@ answer: '-Yes, to tie an additional resident to a connection, select the
   login to access both connections. '
 isMobile: false
 topics:
-  - connections
+  - connection-management
 userTypes:
   - staff
 ---

@@ -7,7 +7,7 @@ answer: -The link from their invite email is for one-time use, so you can remind
   support at 402-915-3860 or support@ourlifeloop.com.
 isMobile: false
 topics:
-  - connections
+  - connection-management
 userTypes:
   - staff
 ---

@@ -8,12 +8,11 @@ answer: >-
 
 
   Select change image on the right-hand side and select how you will be adding
-  your image (upload, taking a photo etc.) 
+  your image (upload, taking a photo etc.)
 topics:
-  - family-portal
+  - connection-portal
   - main-page
   - getting-started
 userTypes:
-  - family
+  - connection
 ---
-

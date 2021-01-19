@@ -6,9 +6,9 @@ isNew: true
 isMobile: false
 topics:
   - getting-started
-  - family-portal
-  - connections
+  - connection-portal
+  - connection-management
 userTypes:
-  - family
+  - connection
   - resident
 ---

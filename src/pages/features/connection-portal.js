@@ -7,10 +7,10 @@ import ImageSection from '../../primitives/image-section';
 
 export default ({ data, location }) => (
   <FeatureWrapper pathname={location.pathname}>
-    <TitleSection header="Family Portal">
+    <TitleSection header="Connection Portal">
       <p>
         Family members lean on LifeLoop to keep them up-to-date on the lives and
-        care of their loved ones no matter where they are. The family portal
+        care of their loved ones no matter where they are. The connection portal
         sparks a genuine connection between family members and staff members and
         helps foster communication between residents and their families.
       </p>
@@ -18,7 +18,7 @@ export default ({ data, location }) => (
     <ImageSection
       rightImage
       title="Photo & Video Sharing"
-      description="Capture and share the moments that make life special! The LifeLoop family portal and mobile app offers you the ability to share photos/videos with your loved one and see any photos the community takes as well."
+      description="Capture and share the moments that make life special! The LifeLoop connection portal and mobile app offers you the ability to share photos/videos with your loved one and see any photos the community takes as well."
       image={data.photoAndVideo.childImageSharp.fluid}
     />
     <ImageSection

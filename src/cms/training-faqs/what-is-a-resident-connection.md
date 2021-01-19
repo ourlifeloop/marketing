@@ -5,7 +5,7 @@ answer: -A resident connection is any individual that is tied to a resident,
   approved by the resident before adding to LifeLoop.
 isMobile: false
 topics:
-  - connections
+  - connection-management
 userTypes:
   - staff
 ---

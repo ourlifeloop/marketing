@@ -94,10 +94,10 @@ const FEATURES = [
     ],
   },
   {
-    key: NAVIGATION.features.subNav.familyPortal.key,
-    name: NAVIGATION.features.subNav.familyPortal.name,
-    Icon: NAVIGATION.features.subNav.familyPortal.Icon,
-    link: NAVIGATION.features.subNav.familyPortal.link,
+    key: NAVIGATION.features.subNav.connectionPortal.key,
+    name: NAVIGATION.features.subNav.connectionPortal.name,
+    Icon: NAVIGATION.features.subNav.connectionPortal.Icon,
+    link: NAVIGATION.features.subNav.connectionPortal.link,
     headline: 'Be in two places at once',
     image: 'transparency',
     body:

@@ -5,7 +5,7 @@ answer: -No! If you or your residents do not want family to view their LifeLoop
   connections can still be sent communication through LifeLoop Announcements.
 isMobile: false
 topics:
-  - connections
+  - connection-management
 userTypes:
   - staff
 ---
