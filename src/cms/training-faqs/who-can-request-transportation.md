@@ -1,11 +1,14 @@
 ---
-question: Who can request Transportation?
+question: "Who can make a Transportation request? "
 answer: >-
-  -Staff members that have the permission to Manage and Create Transportation
-  requests have the ability to request transportation.
+  -Staff members that have permissions to Manage and Create transportation
+  requests are able to submit requests.  
 
 
-  - Family and Residents have the ability to put in a transportation request as long as the toggle is turned on for your community. You can discuss this with your LifeLoop Customer Success Specialist if you would prefer to have this option on or off for the family and residents. 
+  -Connections and Residents are able to submit transportation requests if their community has this feature turned on for those users.  
+
+
+  -You are able to discuss this with your Customer Support Specialist if you want this option turned on for Connections and Residents. 
 isMobile: false
 topics:
   - transportation
