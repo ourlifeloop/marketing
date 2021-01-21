@@ -1,7 +1,8 @@
 ---
-question: How do we get access to the Transportation feature for our community?
-answer: "In order to get access to this feature, reach out to your community
-  LifeLoop Champion or your LifeLoop Customer Success Specialist. "
+question: "How do we get access to the Transportation feature in LifeLoop? "
+answer: -If your community does not currently have the transportation feature in
+  LifeLoop, simply reach out to your customer success specialist and they can
+  turn the feature on for you.
 isMobile: false
 topics:
   - transportation
