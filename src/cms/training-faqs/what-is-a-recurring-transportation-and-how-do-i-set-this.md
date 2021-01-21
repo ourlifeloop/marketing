@@ -1,13 +1,11 @@
 ---
-question: What is a recurring Transportation and how do I set this?
+question: "What is a reoccurring Transportation request and how do I create that? "
 answer: >-
-  - When you create a new request, you have the option of setting up recurring
-  event. If you need to have the same transportation to be set for multiple
-  times a week, each week, month, etc. you can set this using the recurring
-  option. 
+  -When you create a new request, you will have the option of setting up a
+  recurring request. If you need to have the same transportation request at the
+  same time each week, month or days, you can set this as a recurring event.  
 
-
-  - You can also make a current request recurring. Select which request you would like to make recurring, click on the edit button on the far right hand side of the request and set recurring how often you would like it to recur. 
+  -You can also make a current request recurring if the request is still in pending,  select the event you want to edit, click on the edit button in the  upper right-hand corner and set your event to the days you want this event to recur. 
 isMobile: false
 topics:
   - transportation
