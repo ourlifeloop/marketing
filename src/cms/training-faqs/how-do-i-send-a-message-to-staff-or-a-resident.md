@@ -1,21 +1,20 @@
 ---
 question: How do I send a Message to Staff or a Resident?
 answer: >-
-  To begin, login to your LifeLoop account. 
+  -Send a message by selecting the communication tab from the options on the
+  right. 
 
 
-  Either on the right-hand side or under the Message tab choose Create Message. 
+  - Once selected click the blue "New message button" to create a new message thread. 
 
 
-  Here is where you can choose who you are sending to (staff, resident and other connected family) and enter your message. 
+  -Chose your recipients by clicking the blue arrows next to each name 
+
+  (note: not all residents log into LifeLoop so if you want to ensure that your message is seen, include a staff member) 
 
 
-  Once done, click on the Send Message on the bottom right.  
-
-
-  NOTE: If your resident is not an active user include a staff member on your message so they can make sure to share it with them. All previous message threads you have will also be under the Message tab.
+  - If all recipients have been selected click "start message thread" Now at the bottom of your screen you can type your message in the text box and send by clicking the green "send" button.
 topics:
-  - connection-portal
   - main-page
   - messaging
 userTypes:
