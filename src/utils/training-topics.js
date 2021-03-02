@@ -16,6 +16,8 @@ import residents from '../assets/icons/residents.svg';
 import staffManagement from '../assets/icons/staff-management.svg';
 import transportation from '../assets/icons/transportation.svg';
 import residentEngagementTools from '../assets/icons/resident-engagement-tools.svg';
+import activityFeed from '../assets/icons/activity-feed.svg';
+import learningCourses from '../assets/icons/learning-courses.svg';
 
 export default [
   {
@@ -114,6 +116,18 @@ export default [
     image: 'residentEngagementTools',
     Icon: residentEngagementTools,
   },
+  {
+    key: 'activity-feed',
+    name: 'Activity Feed',
+    image: 'activityFeed',
+    Icon: activityFeed,
+  },
+  {
+    key: 'learning-courses',
+    name: 'LifeLoop Learning Courses',
+    image: 'learningCourses',
+    Icon: learningCourses,
+  },
 ];
 
 export const trainingImages = graphql`
@@ -126,6 +140,9 @@ export const trainingImages = graphql`
   }
 
   fragment trainingImages on Query {
+    activityFeed: file(relativePath: { eq: "features/activity-feed.png" }) {
+      ...featureImage
+    }
     calendar: file(relativePath: { eq: "features/calendar.png" }) {
       ...featureImage
     }
@@ -144,6 +161,11 @@ export const trainingImages = graphql`
       ...featureImage
     }
     gettingStarted: file(relativePath: { eq: "features/getting-started.png" }) {
+      ...featureImage
+    }
+    learningCommunity: file(
+      relativePath: { eq: "features/learning-community.png" }
+    ) {
       ...featureImage
     }
     maintenance: file(relativePath: { eq: "features/maintenance.png" }) {

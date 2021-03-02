@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="152px" height="149px" viewBox="0 0 152 149" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke-width="5" fill="none" fill-rule="evenodd" transform="translate(3.000000, 2.927881)">
+        <path d="M95.3571178,27.0721186 L122,48.4276222 L122,108.072119 L0,108.072119 L0,27.0721186 L95.3571178,27.0721186 Z" stroke-linejoin="round"></path>
+        <path d="M95.3571178,27.0721186 L99.91,30.7211186 L110.328,39.0721186 L0,39.0721186 L0,27.0721186 L95.3571178,27.0721186 Z" stroke-linejoin="round"></path>
+        <rect stroke-linejoin="round" x="52" y="108.072119" width="17" height="7"></rect>
+        <line x1="51.5" y1="108.572119" x2="24.5" y2="135.572119" stroke-linecap="round"></line>
+        <line x1="96.5" y1="108.572119" x2="69.5" y2="135.572119" stroke-linecap="round" transform="translate(83.000000, 122.072119) scale(-1, 1) translate(-83.000000, -122.072119) "></line>
+        <line x1="60.5" y1="115.572119" x2="60.5" y2="143.572119" stroke-linecap="round"></line>
+        <polygon stroke-linejoin="round" points="45.1471154 91.5410835 45.1471154 53.5410835 81.1471154 72.5410835"></polygon>
+        <path d="M101.653118,21.8414939 L126.556118,39.4224939 L122,48.4276222 L95.3571178,27.0721186 L101.653118,21.8414939 Z"  stroke-linejoin="round"></path>
+        <polygon stroke-linejoin="round" transform="translate(118.477362, 22.863999) rotate(33.000000) translate(-118.477362, -22.863999) " points="102.406425 13 139.629149 14.1454751 143.978182 32.7279972 92.9765414 30.7492411"></polygon>
+        <path d="M120.053539,23.0737513 C154.590068,42.9615047 136.87697,46.7236307 137.015279,57.373372" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+</svg>
