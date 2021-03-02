@@ -4,6 +4,7 @@ document: /images/cms/march-2021-learning-courses-registration-5-.pdf
 isMobile: false
 topics:
   - learning-courses
+  - getting-started
 userTypes:
   - staff
 ---
