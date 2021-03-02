@@ -163,8 +163,8 @@ export const trainingImages = graphql`
     gettingStarted: file(relativePath: { eq: "features/getting-started.png" }) {
       ...featureImage
     }
-    learningCommunity: file(
-      relativePath: { eq: "features/learning-community.png" }
+    learningCourses: file(
+      relativePath: { eq: "features/learning-courses.png" }
     ) {
       ...featureImage
     }

@@ -48,19 +48,16 @@ export default ({ userType, topics, faqs }) => {
         <h2 className={styles.topicHeader}>Browse by Topic</h2>
         <FlexContainer flex="1" wrap>
           {TRAINING_TOPICS.filter(({ key }) => includes(topics, key)).map(
-            ({ key, name, image }) => {
-              console.log(image, images[image], name);
-              return (
-                <Link
-                  key={key}
-                  to={`/training/${userType}/${key}`}
-                  className={styles.topic}
-                >
-                  <Img fluid={images[image].childImageSharp.fluid} />
-                  <span>{name}</span>
-                </Link>
-              );
-            },
+            ({ key, name, image }) => (
+              <Link
+                key={key}
+                to={`/training/${userType}/${key}`}
+                className={styles.topic}
+              >
+                <Img fluid={images[image].childImageSharp.fluid} />
+                <span>{name}</span>
+              </Link>
+            ),
           )}
         </FlexContainer>
       </Section>
