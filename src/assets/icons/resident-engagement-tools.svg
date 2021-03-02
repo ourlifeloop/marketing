@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-<g>
+<g stroke="none">
 	<path d="M33.95,52.77c-0.67,0-1.22,0.55-1.22,1.22v8.79c0,0.67,0.55,1.22,1.22,1.22c0.67,0,1.22-0.55,1.22-1.22v-8.79
 		C35.17,53.31,34.63,52.77,33.95,52.77z"/>
 	<path d="M45.68,38.11c-0.67,0-1.22,0.55-1.22,1.22v5.86c0,2.56-2.08,4.64-4.64,4.64c-0.67,0-1.22,0.55-1.22,1.22

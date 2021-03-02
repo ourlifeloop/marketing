@@ -39,6 +39,7 @@ $topic-padding: 0.4rem;
 
     .topicIcon {
       fill: $dark-blue;
+      stroke: $dark-blue;
     }
 
     .topicName {
@@ -52,6 +53,7 @@ $topic-padding: 0.4rem;
 
     .topicIcon {
       fill: $background;
+      stroke: $background;
     }
 
     .topicName {
@@ -70,7 +72,8 @@ $icon-size: 26px;
 .topicIcon {
   fill: $primary-blue;
   height: $icon-size;
-  transition: fill 0.2s linear;
+  stroke: $primary-blue;
+  transition: all 0.2s linear;
   width: $icon-size;
 }
 

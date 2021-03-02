@@ -16,6 +16,8 @@ import residents from '../assets/icons/residents.svg';
 import staffManagement from '../assets/icons/staff-management.svg';
 import transportation from '../assets/icons/transportation.svg';
 import residentEngagementTools from '../assets/icons/resident-engagement-tools.svg';
+import activityFeed from '../assets/icons/activity-feed.svg';
+import learningCourses from '../assets/icons/learning-courses.svg';
 
 export default [
   {
@@ -25,22 +27,22 @@ export default [
     Icon: gettingStarted,
   },
   {
+    key: 'marketing',
+    name: 'Marketing',
+    image: 'marketing',
+    Icon: marketing,
+  },
+  {
     key: 'activity-calendar',
     name: 'Activity Calendar',
     image: 'calendar',
     Icon: calendar,
   },
   {
-    key: 'resident-management',
-    name: 'Resident Management',
-    image: 'residentManagement',
-    Icon: residentManagement,
-  },
-  {
-    key: 'photos',
-    name: 'Photos',
-    image: 'photos',
-    Icon: photos,
+    key: 'activity-feed',
+    name: 'Activity Feed',
+    image: 'activityFeed',
+    Icon: activityFeed,
   },
   {
     key: 'messaging',
@@ -49,28 +51,10 @@ export default [
     Icon: messages,
   },
   {
-    key: 'maintenance',
-    name: 'Maintenance',
-    image: 'maintenance',
-    Icon: maintenance,
-  },
-  {
-    key: 'transportation',
-    name: 'Transportation',
-    image: 'transportation',
-    Icon: transportation,
-  },
-  {
-    key: 'displays',
-    name: 'Displays',
-    image: 'displays',
-    Icon: displays,
-  },
-  {
-    key: 'resident-portal',
-    name: 'Resident Portal',
-    image: 'residents',
-    Icon: residents,
+    key: 'connection-management',
+    name: 'Connection Management',
+    image: 'connectionManagement',
+    Icon: connectionManagement,
   },
   {
     key: 'connection-portal',
@@ -79,10 +63,34 @@ export default [
     Icon: connections,
   },
   {
-    key: 'staff-management',
-    name: 'Staff Management',
-    image: 'staffManagement',
-    Icon: staffManagement,
+    key: 'designer',
+    name: 'Designer',
+    image: 'designer',
+    Icon: designer,
+  },
+  {
+    key: 'displays',
+    name: 'Displays',
+    image: 'displays',
+    Icon: displays,
+  },
+  {
+    key: 'learning-courses',
+    name: 'LifeLoop Learning Courses',
+    image: 'learningCourses',
+    Icon: learningCourses,
+  },
+  {
+    key: 'maintenance',
+    name: 'Maintenance',
+    image: 'maintenance',
+    Icon: maintenance,
+  },
+  {
+    key: 'photos',
+    name: 'Photos',
+    image: 'photos',
+    Icon: photos,
   },
   {
     key: 'reporting',
@@ -91,28 +99,34 @@ export default [
     Icon: reporting,
   },
   {
-    key: 'designer',
-    name: 'Designer',
-    image: 'designer',
-    Icon: designer,
-  },
-  {
-    key: 'connection-management',
-    name: 'Connection Management',
-    image: 'connectionManagement',
-    Icon: connectionManagement,
-  },
-  {
-    key: 'marketing',
-    name: 'Marketing',
-    image: 'marketing',
-    Icon: marketing,
-  },
-  {
     key: 'resident-engagement',
     name: 'Resident Engagement Tools',
     image: 'residentEngagementTools',
     Icon: residentEngagementTools,
+  },
+  {
+    key: 'resident-management',
+    name: 'Resident Management',
+    image: 'residentManagement',
+    Icon: residentManagement,
+  },
+  {
+    key: 'resident-portal',
+    name: 'Resident Portal',
+    image: 'residents',
+    Icon: residents,
+  },
+  {
+    key: 'staff-management',
+    name: 'Staff Management',
+    image: 'staffManagement',
+    Icon: staffManagement,
+  },
+  {
+    key: 'transportation',
+    name: 'Transportation',
+    image: 'transportation',
+    Icon: transportation,
   },
 ];
 
@@ -126,6 +140,9 @@ export const trainingImages = graphql`
   }
 
   fragment trainingImages on Query {
+    activityFeed: file(relativePath: { eq: "features/activity-feed.png" }) {
+      ...featureImage
+    }
     calendar: file(relativePath: { eq: "features/calendar.png" }) {
       ...featureImage
     }
@@ -144,6 +161,11 @@ export const trainingImages = graphql`
       ...featureImage
     }
     gettingStarted: file(relativePath: { eq: "features/getting-started.png" }) {
+      ...featureImage
+    }
+    learningCommunity: file(
+      relativePath: { eq: "features/learning-community.png" }
+    ) {
       ...featureImage
     }
     maintenance: file(relativePath: { eq: "features/maintenance.png" }) {
