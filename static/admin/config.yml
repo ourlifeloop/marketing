@@ -52,22 +52,24 @@ collections:
         widget: select
         multiple: true
         options:
-          - { label: Getting Started, value: getting-started }
           - { label: Activity Calendar, value: activity-calendar }
-          - { label: Resident Management, value: resident-management }
-          - { label: Photos, value: photos }
+          - { label: Activity Feed, value: activity-feed }
           - { label: Communication, value: messaging }
-          - { label: Maintenance, value: maintenance }
-          - { label: Transportation, value: transportation }
-          - { label: Displays, value: displays }
-          - { label: Resident Portal, value: resident-portal }
-          - { label: Connection Portal, value: connection-portal }
-          - { label: Staff Management, value: staff-management }
-          - { label: Reporting, value: reporting }
-          - { label: Designer, value: designer }
           - { label: Connection Management, value: connection-management }
+          - { label: Connection Portal, value: connection-portal }
+          - { label: Designer, value: designer }
+          - { label: Displays, value: displays }
+          - { label: Getting Started, value: getting-started }
+          - { label: LifeLoop Learning Courses, value: learning-courses }
+          - { label: Maintenance, value: maintenance }
           - { label: Marketing, value: marketing }
+          - { label: Photos, value: photos }
+          - { label: Reporting, value: reporting }
           - { label: Resident Engagement Tools, value: resident-engagement }
+          - { label: Resident Management, value: resident-management }
+          - { label: Resident Portal, value: resident-portal }
+          - { label: Transportation, value: transportation }
+          - { label: Staff Management, value: staff-management }
       - name: userTypes
         label: User Types
         widget: select
@@ -94,22 +96,24 @@ collections:
         widget: select
         multiple: true
         options:
-          - { label: Getting Started, value: getting-started }
           - { label: Activity Calendar, value: activity-calendar }
-          - { label: Resident Management, value: resident-management }
-          - { label: Photos, value: photos }
+          - { label: Activity Feed, value: activity-feed }
           - { label: Communication, value: messaging }
-          - { label: Maintenance, value: maintenance }
-          - { label: Transportation, value: transportation }
-          - { label: Displays, value: displays }
-          - { label: Resident Portal, value: resident-portal }
-          - { label: Connection Portal, value: connection-portal }
-          - { label: Staff Management, value: staff-management }
-          - { label: Reporting, value: reporting }
-          - { label: Designer, value: designer }
           - { label: Connection Management, value: connection-management }
+          - { label: Connection Portal, value: connection-portal }
+          - { label: Designer, value: designer }
+          - { label: Displays, value: displays }
+          - { label: Getting Started, value: getting-started }
+          - { label: LifeLoop Learning Courses, value: learning-courses }
+          - { label: Maintenance, value: maintenance }
           - { label: Marketing, value: marketing }
+          - { label: Photos, value: photos }
+          - { label: Reporting, value: reporting }
           - { label: Resident Engagement Tools, value: resident-engagement }
+          - { label: Resident Management, value: resident-management }
+          - { label: Resident Portal, value: resident-portal }
+          - { label: Transportation, value: transportation }
+          - { label: Staff Management, value: staff-management }
       - name: userTypes
         label: User Types
         widget: select
@@ -138,22 +142,24 @@ collections:
         multiple: true
         options:
           - { label: Main Page, value: main-page }
-          - { label: Getting Started, value: getting-started }
           - { label: Activity Calendar, value: activity-calendar }
-          - { label: Resident Management, value: resident-management }
-          - { label: Photos, value: photos }
+          - { label: Activity Feed, value: activity-feed }
           - { label: Communication, value: messaging }
-          - { label: Maintenance, value: maintenance }
-          - { label: Transportation, value: transportation }
-          - { label: Displays, value: displays }
-          - { label: Resident Portal, value: resident-portal }
-          - { label: Connection Portal, value: connection-portal }
-          - { label: Staff Management, value: staff-management }
-          - { label: Reporting, value: reporting }
-          - { label: Designer, value: designer }
           - { label: Connection Management, value: connection-management }
+          - { label: Connection Portal, value: connection-portal }
+          - { label: Designer, value: designer }
+          - { label: Displays, value: displays }
+          - { label: Getting Started, value: getting-started }
+          - { label: LifeLoop Learning Courses, value: learning-courses }
+          - { label: Maintenance, value: maintenance }
           - { label: Marketing, value: marketing }
+          - { label: Photos, value: photos }
+          - { label: Reporting, value: reporting }
           - { label: Resident Engagement Tools, value: resident-engagement }
+          - { label: Resident Management, value: resident-management }
+          - { label: Resident Portal, value: resident-portal }
+          - { label: Transportation, value: transportation }
+          - { label: Staff Management, value: staff-management }
       - name: userTypes
         label: User Types
         widget: select
