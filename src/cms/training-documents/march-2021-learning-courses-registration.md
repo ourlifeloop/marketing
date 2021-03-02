@@ -4,6 +4,7 @@ document: /images/cms/march-lifeloop-learning-course-links-pdf-1-.pdf
 isMobile: false
 topics:
   - getting-started
+  - learning-courses
 userTypes:
   - staff
 ---
