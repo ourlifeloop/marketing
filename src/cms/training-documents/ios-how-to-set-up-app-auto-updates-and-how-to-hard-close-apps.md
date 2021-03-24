@@ -6,6 +6,5 @@ topics:
   - getting-started
 userTypes:
   - staff
-  - family
   - resident
 ---
