@@ -7,4 +7,5 @@ topics:
 userTypes:
   - staff
   - resident
+  - connection
 ---
