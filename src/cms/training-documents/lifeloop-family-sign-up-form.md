@@ -1,6 +1,6 @@
 ---
 title: Connections Sign-up Brochure
-document: /images/cms/lifeloop-family-marketing-sign-up.pdf
+document: /images/cms/connections-sign-up-brochure-3-.pdf
 isMobile: false
 topics:
   - connection-management
