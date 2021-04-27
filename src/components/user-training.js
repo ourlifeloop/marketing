@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
 import FlexContainer from '../primitives/flex-container';
@@ -11,7 +11,7 @@ import TrainingWrapper from './training-wrapper';
 import Section from '../primitives/section';
 import Button from '../primitives/button';
 
-import styles from './user-training.module.scss';
+import { topic, topicHeader } from './user-training.module.scss';
 
 const headerByUserType = userType => {
   if (userType === 'staff') {
@@ -22,7 +22,7 @@ const headerByUserType = userType => {
   return 'Welcome to the LifeLoop Learning Community, built especially for residents! This page is dedicated to helping you get comfortable with using LifeLoop. Below you will be able to browse by topic, view FAQ’s and more. If you have any questions, please feel free to contact us at the phone number above or ask a community staff member for assistance.';
 };
 
-export default ({ userType, topics, faqs }) => {
+export default function UserTraining({ userType, topics, faqs }) {
   const images = useStaticQuery(graphql`
     query {
       ...trainingImages
@@ -45,16 +45,18 @@ export default ({ userType, topics, faqs }) => {
       userType={userType}
     >
       <Section width="medium">
-        <h2 className={styles.topicHeader}>Browse by Topic</h2>
+        <h2 className={topicHeader}>Browse by Topic</h2>
         <FlexContainer flex="1" wrap>
           {TRAINING_TOPICS.filter(({ key }) => includes(topics, key)).map(
             ({ key, name, image }) => (
               <Link
                 key={key}
                 to={`/training/${userType}/${key}`}
-                className={styles.topic}
+                className={topic}
               >
-                <Img fluid={images[image].childImageSharp.fluid} />
+                <GatsbyImage
+                  image={images[image].childImageSharp.gatsbyImageData}
+                />
                 <span>{name}</span>
               </Link>
             ),
@@ -68,4 +70,4 @@ export default ({ userType, topics, faqs }) => {
       )}
     </TrainingWrapper>
   );
-};
+}

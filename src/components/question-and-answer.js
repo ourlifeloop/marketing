@@ -5,7 +5,12 @@ import PropTypes from 'prop-types';
 import FlexContainer from '../primitives/flex-container';
 import { ChevronDown } from '../utils/icons';
 
-import styles from './question-and-answer.module.scss';
+import {
+  container,
+  containerOpen,
+  innerContainer,
+  icon,
+} from './question-and-answer.module.scss';
 
 const QnaItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,19 +20,19 @@ const QnaItem = ({ question, answer }) => {
       direction="column"
       align="flexstart"
       onClick={() => setIsOpen(!isOpen)}
-      className={classNames(styles.container, {
-        [styles.containerOpen]: isOpen,
+      className={classNames(container, {
+        [containerOpen]: isOpen,
       })}
     >
       <FlexContainer
         align="center"
         justify="spacebetween"
-        className={styles.innerContainer}
+        className={innerContainer}
       >
-        <div className={styles.question}>Q: {question}</div>
-        <ChevronDown className={styles.icon} size={30} />
+        <div className={question}>Q: {question}</div>
+        <ChevronDown className={icon} size={30} />
       </FlexContainer>
-      {isOpen && <p className={styles.answer}>{answer}</p>}
+      {isOpen && <p className={answer}>{answer}</p>}
     </FlexContainer>
   );
 };

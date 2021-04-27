@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import classNames from 'classnames';
 
 import FlexContainer from '../primitives/flex-container';
 
-import styles from './article-card.module.scss';
+import {
+  postImage,
+  postImageSmall,
+  postTitle,
+  postExcerpt,
+} from './article-card.module.scss';
 
 export default function ArticleCard({
   className,
@@ -20,15 +25,16 @@ export default function ArticleCard({
     <Link to={link} className={className}>
       <FlexContainer direction="column">
         {!!photo && (
-          <Img
-            className={classNames(styles.postImage, {
-              [styles.postImageSmall]: small,
+          <GatsbyImage
+            alt={title}
+            image={photo}
+            className={classNames(postImage, {
+              [postImageSmall]: small,
             })}
-            fluid={photo}
           />
         )}
-        <p className={styles.postTitle}>{title}</p>
-        <p className={styles.postExcerpt}>{excerpt}</p>
+        <p className={postTitle}>{title}</p>
+        <p className={postExcerpt}>{excerpt}</p>
       </FlexContainer>
     </Link>
   );

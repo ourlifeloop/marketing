@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import styles from './label.module.scss';
+import { label, input } from './label.module.scss';
 
 export default function Label({ children, title, htmlFor, ...rest }) {
   return (
-    <label className={styles.label} htmlFor={htmlFor} {...rest}>
+    <label className={label} htmlFor={htmlFor} {...rest}>
       {title}
       {React.Children.map(children, child =>
         React.cloneElement(child, {
-          className: classNames(child.className, styles.input),
+          className: classNames(child.className, input),
           id: htmlFor,
         }),
       )}

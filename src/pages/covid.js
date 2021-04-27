@@ -1,7 +1,7 @@
 import React from 'react';
-import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import classNames from 'classnames';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import FlexContainer from '../primitives/flex-container';
 import ActionCallout from '../primitives/action-callout';
@@ -14,28 +14,36 @@ import Section from '../primitives/section';
 import Button from '../primitives/button';
 import { Download } from '../utils/icons';
 
-import styles from './covid.module.scss';
+import {
+  title,
+  letter,
+  amy,
+  amyMinimized,
+  resource,
+  download,
+} from './covid.module.scss';
 
-export default ({ data }) => {
+export default function Covid({ data }) {
   const { isMobile } = useDevice();
 
   return (
     <SiteWrapper>
       <Section>
         <FlexContainer direction="column" align="center">
-          <h1 className={styles.title}>COVID-19</h1>
+          <h1 className={title}>COVID-19</h1>
           <h2>our commitment to you</h2>
         </FlexContainer>
         <FlexContainer
-          className={styles.letter}
+          className={letter}
           direction={isMobile ? 'columnreverse' : 'row'}
           align={isMobile ? 'center' : 'flexstart'}
         >
-          <Img
-            className={classNames(styles.amy, {
-              [styles.amyMinimized]: isMobile,
+          <GatsbyImage
+            alt="Amy Johnson"
+            image={getImage(data.amy)}
+            className={classNames(amy, {
+              [amyMinimized]: isMobile,
             })}
-            fixed={data.amy.childImageSharp.fixed}
           />
           <FlexContainer flex="1" direction="column">
             <p>Dear Clients, Residents & Family Members -</p>
@@ -127,12 +135,12 @@ export default ({ data }) => {
               <FlexContainer
                 align="center"
                 justify="spacebetween"
-                className={styles.resource}
+                className={resource}
               >
-                <div className={styles.question}>
+                <div>
                   {node.extension.toUpperCase()}: {node.name}
                 </div>
-                <Download className={styles.download} size={30} />
+                <Download className={download} size={30} />
               </FlexContainer>
             </a>
           ))}
@@ -141,15 +149,19 @@ export default ({ data }) => {
       <BlogSection posts={data.blogs} header="COVID-19 Blogs & Features" />
     </SiteWrapper>
   );
-};
+}
 
 export const query = graphql`
-  query {
+  {
     amy: file(relativePath: { eq: "team/amy.johnson.jpg" }) {
       childImageSharp {
-        fixed(width: 400, height: 400, cropFocus: NORTH, quality: 90) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(
+          width: 400
+          height: 400
+          quality: 90
+          transformOptions: { cropFocus: NORTH }
+          layout: CONSTRAINED
+        )
       }
     }
     resources: allFile(
@@ -198,10 +210,7 @@ export const query = graphql`
             title
             photo {
               childImageSharp {
-                fluid(maxWidth: 500) {
-                  ...GatsbyImageSharpFluid
-                  presentationWidth
-                }
+                gatsbyImageData(width: 500, layout: CONSTRAINED)
               }
             }
           }

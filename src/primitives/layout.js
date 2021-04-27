@@ -4,14 +4,14 @@ import classNames from 'classnames';
 
 import { useDevice } from '../utils/effects';
 
-import styles from './layout.module.scss';
+import { layout, layoutMobile } from './layout.module.scss';
 
 export default function Layout({ children, className }) {
   const { isMobile } = useDevice();
   return (
     <div
-      className={classNames(className, styles.layout, {
-        [styles.layoutMobile]: isMobile,
+      className={classNames(className, layout, {
+        [layoutMobile]: isMobile,
       })}
     >
       {children}

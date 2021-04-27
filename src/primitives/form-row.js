@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import FlexContainer from './flex-container';
 import { useDevice } from '../utils/effects';
 
-import styles from './form-row.module.scss';
+import { childItem, childItemCollapsed } from './form-row.module.scss';
 
 export default function FormRow({ children }) {
   const { isMini } = useDevice();
@@ -13,8 +13,8 @@ export default function FormRow({ children }) {
     <FlexContainer direction={isMini ? 'column' : 'row'}>
       {React.Children.map(children, child =>
         React.cloneElement(child, {
-          className: classNames(child.className, styles.child, {
-            [styles.childCollapsed]: isMini,
+          className: classNames(child.className, childItem, {
+            [childItemCollapsed]: isMini,
           }),
         }),
       )}

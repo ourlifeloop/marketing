@@ -4,7 +4,7 @@
   background-color: $background-dark;
 }
 
-.link {
+.linkItem {
   border-top: 3px solid $background-dark;
   flex: 1;
   margin-top: 0.5rem;
@@ -46,7 +46,7 @@ $icon-size: 40px;
   width: $icon-size;
 }
 
-.name {
+.nameItem {
   color: $text-meta;
   font-size: 0.8rem;
   text-align: center;

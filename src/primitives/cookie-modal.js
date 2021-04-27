@@ -6,22 +6,25 @@ import { useDevice, useCookiePopup } from '../utils/effects';
 import FlexContainer from '../primitives/flex-container';
 import Button from '../primitives/button';
 
-import styles from './cookie-modal.module.scss';
+import {
+  container,
+  containerOpen,
+  text,
+  textMobile,
+} from './cookie-modal.module.scss';
 
-export default () => {
+export default function CookieModal() {
   const { isOpen, onClose } = useCookiePopup();
   const { isMobile } = useDevice();
   return (
     <FlexContainer
       align={isMobile ? 'flexstart' : 'center'}
       direction={isMobile ? 'column' : 'row'}
-      className={classNames(styles.container, {
-        [styles.containerOpen]: isOpen,
+      className={classNames(container, {
+        [containerOpen]: isOpen,
       })}
     >
-      <span
-        className={classNames(styles.text, { [styles.textMobile]: isMobile })}
-      >
+      <span className={classNames(text, { [textMobile]: isMobile })}>
         LifeLoop uses cookies to improve your experience on our site, analyze
         site traffic, and provide content from third parties. By continuing to
         use this website, you consent to the use of cookies in accordance with
@@ -30,4 +33,4 @@ export default () => {
       <Button onClick={onClose}>I Accept</Button>
     </FlexContainer>
   );
-};
+}

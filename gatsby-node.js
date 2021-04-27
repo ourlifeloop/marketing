@@ -91,3 +91,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({ name: 'slug', node, value });
   }
 };
+
+exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
+  const config = getConfig();
+  const miniCssExtractPlugin = config.plugins.find(
+    plugin => plugin.constructor.name === 'MiniCssExtractPlugin',
+  );
+  if (miniCssExtractPlugin) {
+    miniCssExtractPlugin.options.ignoreOrder = true;
+    actions.replaceWebpackConfig(config);
+  }
+};

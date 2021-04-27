@@ -23,7 +23,7 @@ $icon-size: 50px;
   width: $icon-size;
 }
 
-.title {
+.titleContainer {
   color: $background;
   bottom: 22px;
   font-weight: bold;
@@ -36,7 +36,7 @@ $icon-size: 50px;
   text-align: center;
 }
 
-.new {
+.newContainer {
   background-color: $primary-blue;
   border-radius: 50%;
   color: $text-light;

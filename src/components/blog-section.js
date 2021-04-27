@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { getImage } from 'gatsby-plugin-image';
 
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
@@ -7,7 +8,7 @@ import { useDevice } from '../utils/effects';
 import ArticleCard from './article-card';
 import { take } from '../utils/lodash';
 
-import styles from './blog-section.module.scss';
+import { article } from './blog-section.module.scss';
 
 export default function BlogSection({ header, posts }) {
   const { isTablet, isMobile } = useDevice();
@@ -22,10 +23,10 @@ export default function BlogSection({ header, posts }) {
       <FlexContainer>
         {take(posts.edges, numPosts).map(post => (
           <ArticleCard
-            className={styles.article}
+            className={article}
             key={post.node.fields.slug}
             link={post.node.fields.slug}
-            photo={post.node.frontmatter.photo.childImageSharp.fluid}
+            photo={getImage(post.node.frontmatter.photo)}
             title={post.node.frontmatter.title}
             excerpt={post.node.excerpt}
           />

@@ -3,10 +3,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 import BlogSection from './blog-section';
 
-export default () => {
+export default function LatestBlogSection() {
   const { allMarkdownRemark: posts } = useStaticQuery(
     graphql`
-      query {
+      {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { type: { eq: "insights" } } }
@@ -23,10 +23,7 @@ export default () => {
                 title
                 photo {
                   childImageSharp {
-                    fluid(maxWidth: 500) {
-                      ...GatsbyImageSharpFluid
-                      presentationWidth
-                    }
+                    gatsbyImageData(width: 500, layout: CONSTRAINED)
                   }
                 }
               }
@@ -38,4 +35,4 @@ export default () => {
   );
 
   return <BlogSection posts={posts} />;
-};
+}

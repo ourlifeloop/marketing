@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { graphql } from 'gatsby';
 import classNames from 'classnames';
 
@@ -13,16 +13,30 @@ import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
 import TEAM from '../utils/team';
 
-import styles from './our-story.module.scss';
+import {
+  storyImage,
+  storyImageVertical,
+  missionContainer,
+  missionContainerMobile,
+  missionInner,
+  missionTitle,
+  mission,
+  missionLogo,
+  teamContainer,
+  teamMember,
+  joinSection,
+  joinContainer,
+  teamImage,
+} from './our-story.module.scss';
 
-export default ({ data }) => {
+export default function OurStory({ data }) {
   const { isMini, isMobile } = useDevice();
 
   return (
     <SiteWrapper title="Improving the care and overall experience of residents living in senior living communities | LifeLoop">
       <HeroImage
         height={isMobile ? '400px' : '500px'}
-        image={data.hero.childImageSharp.fluid}
+        image={data.hero.childImageSharp.gatsbyImageData}
         direction="right"
         title="We Saw A Need."
         description={
@@ -59,18 +73,18 @@ export default ({ data }) => {
             <p>Co-Founder & CEO, LifeLoop</p>
           </FlexContainer>
           <div
-            className={classNames(styles.storyImage, {
-              [styles.storyImageVertical]: isMobile,
+            className={classNames(storyImage, {
+              [storyImageVertical]: isMobile,
             })}
           >
-            <Img fluid={data.story.childImageSharp.fluid} />
+            <GatsbyImage image={data.story.childImageSharp.gatsbyImageData} />
           </div>
         </FlexContainer>
       </Section>
       <Section>
         <RelativeContainer
-          className={classNames(styles.missionContainer, {
-            [styles.missionContainerMobile]: isMini,
+          className={classNames(missionContainer, {
+            [missionContainerMobile]: isMini,
           })}
         >
           <FlexContainer
@@ -78,15 +92,15 @@ export default ({ data }) => {
             direction="column"
             align={isMini ? 'center' : 'flexstart'}
             justify="center"
-            className={styles.missionInner}
+            className={missionInner}
           >
-            <p className={styles.missionTitle}>OUR MISSION</p>
-            <p className={styles.mission}>
+            <p className={missionTitle}>OUR MISSION</p>
+            <p className={mission}>
               Keep senior living residents better connected to their
               communities, their families and the world around them.
             </p>
           </FlexContainer>
-          <LifeloopBigLogo className={styles.missionLogo} />
+          <LifeloopBigLogo className={missionLogo} />
         </RelativeContainer>
       </Section>
       <TitleSection header="Our Team">
@@ -99,15 +113,17 @@ export default ({ data }) => {
         </p>
       </TitleSection>
       <Section noTopPadding>
-        <FlexContainer flex="1" wrap className={styles.teamContainer}>
+        <FlexContainer flex="1" wrap className={teamContainer}>
           {TEAM.map(({ name, title, image }) => {
             const imageData = data[image];
             if (!imageData) {
               return null;
             }
             return (
-              <div key={name} className={styles.teamMember}>
-                <Img fluid={imageData.childImageSharp.fluid} />
+              <div key={name} className={teamMember}>
+                <GatsbyImage
+                  image={imageData.childImageSharp.gatsbyImageData}
+                />
                 <b>{name}</b>
                 <p>{title}</p>
               </div>
@@ -115,13 +131,8 @@ export default ({ data }) => {
           })}
         </FlexContainer>
       </Section>
-      <Section
-        className={styles.joinSection}
-        centered
-        width="medium"
-        noBottomPadding
-      >
-        <div className={styles.joinContainer}>
+      <Section className={joinSection} centered width="medium" noBottomPadding>
+        <div className={joinContainer}>
           <h2>Join the LifeLoop Team</h2>
           <p>
             We care about our customers. We are problem solvers, we embrace
@@ -136,17 +147,17 @@ export default ({ data }) => {
         </div>
       </Section>
       <RelativeContainer>
-        <Img
-          className={styles.teamImage}
-          fluid={data.team.childImageSharp.fluid}
+        <GatsbyImage
+          image={data.team.childImageSharp.gatsbyImageData}
+          className={teamImage}
         />
       </RelativeContainer>
     </SiteWrapper>
   );
-};
+}
 
 export const query = graphql`
-  query {
+  {
     site {
       siteMetadata {
         careers
@@ -154,24 +165,17 @@ export const query = graphql`
     }
     hero: file(relativePath: { eq: "our-story-hero.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     story: file(relativePath: { eq: "story-origin.png" }) {
       childImageSharp {
-        fluid(maxWidth: 500) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 500, layout: CONSTRAINED)
       }
     }
     team: file(relativePath: { eq: "team.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     ...teamImages

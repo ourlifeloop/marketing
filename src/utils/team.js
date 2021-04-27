@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 
-export default [
+const TEAM = [
   {
     name: 'Amy Johnson',
     title: 'Co-Founder & CEO',
@@ -108,12 +108,12 @@ export default [
   },
 ];
 
+export default TEAM;
+
 export const teamImages = graphql`
   fragment teamImage on File {
     childImageSharp {
-      fluid(maxWidth: 500) {
-        ...GatsbyImageSharpFluid
-      }
+      gatsbyImageData(width: 500, layout: CONSTRAINED)
     }
   }
 

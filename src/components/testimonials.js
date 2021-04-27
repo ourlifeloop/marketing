@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Img from 'gatsby-image/withIEPolyfill';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import FlexContainer from '../primitives/flex-container';
@@ -10,7 +10,17 @@ import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
 import '../utils/navigation';
 
-import styles from './testimonials.module.scss';
+import {
+  communityColumn,
+  communityColumnVertical,
+  logoContainer,
+  communityLogo,
+  communityImg,
+  quoteAuthor,
+  authorPosition,
+  half,
+  third,
+} from './testimonials.module.scss';
 
 const TestimonialCard = ({
   className,
@@ -22,22 +32,27 @@ const TestimonialCard = ({
 }) => (
   <FlexContainer
     direction="column"
-    className={classNames(styles.communityColumn, className, {
-      [styles.communityColumnVertical]: isTablet,
+    className={classNames(communityColumn, className, {
+      [communityColumnVertical]: isTablet,
     })}
   >
-    <FlexContainer align="flexend" className={styles.logoContainer}>
-      <div className={styles.communityLogo}>
-        <Img fluid={logo} className={styles.communityImg} objectFit="contain" />
+    <FlexContainer align="flexend" className={logoContainer}>
+      <div className={communityLogo}>
+        <GatsbyImage
+          alt={author}
+          image={logo}
+          className={communityImg}
+          objectFit="contain"
+        />
       </div>
     </FlexContainer>
     <p>
       <i>"{quote}"</i>
     </p>
     <p>
-      <b className={styles.quoteAuthor}>{author}</b>
+      <b className={quoteAuthor}>{author}</b>
       <br />
-      <i className={styles.authorPosition}>{position}</i>
+      <i className={authorPosition}>{position}</i>
     </p>
   </FlexContainer>
 );
@@ -76,11 +91,11 @@ export default function Testimonials({ hideTitle, testimonials }) {
         <FlexContainer direction={isTablet ? 'column' : 'row'}>
           {testimonials.map(testimonial => (
             <TestimonialCard
-              className={testimonials.length < 3 ? styles.half : styles.third}
+              className={testimonials.length < 3 ? half : third}
               key={testimonial.author}
               isTablet={isTablet}
               {...testimonial}
-              logo={images[testimonial.logo].childImageSharp.fluid}
+              logo={getImage(images[testimonial.logo])}
             />
           ))}
         </FlexContainer>

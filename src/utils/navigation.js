@@ -11,7 +11,7 @@ import residents from '../assets/icons/residents.svg';
 import transportation from '../assets/icons/transportation.svg';
 import designer from '../assets/icons/designer.svg';
 
-export default {
+const NAVIGATION = {
   features: {
     key: 'features',
     name: 'Features',
@@ -590,12 +590,12 @@ export default {
   },
 };
 
+export default NAVIGATION;
+
 export const testimonialImages = graphql`
   fragment testimonialImage on File {
     childImageSharp {
-      fluid(maxHeight: 130) {
-        ...GatsbyImageSharpFluid
-      }
+      gatsbyImageData(height: 130, layout: CONSTRAINED, quality: 100)
     }
   }
 

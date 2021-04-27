@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Link, graphql } from 'gatsby';
 import classNames from 'classnames';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import RelativeContainer from '../primitives/relative-container';
 import ActionCallout from '../primitives/action-callout';
@@ -20,7 +20,19 @@ import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
 import Button from '../primitives/button';
 
-import styles from './benefits.module.scss';
+import {
+  emphasized,
+  videoContainer,
+  videoContainerVertical,
+  videoImage,
+  videoHeader,
+  staffMinimized,
+  staffBenefits,
+  staffContainer,
+  staffPlayIcon,
+  staffContent,
+  communityFreeflow,
+} from './benefits.module.scss';
 
 const commuintyContent = (
   <>
@@ -45,7 +57,7 @@ const commuintyContent = (
   </>
 );
 
-export default ({ data }) => {
+export default function Benefits({ data }) {
   const [video, setVideo] = useState();
   const { isMobile, isTablet } = useDevice();
 
@@ -55,13 +67,13 @@ export default ({ data }) => {
         direction="right"
         height={isMobile ? '400px' : '500px'}
         objectPosition="30% 30%"
-        image={data.hero.childImageSharp.fluid}
+        image={getImage(data.hero)}
         title="Set your community apart"
         description="LifeLoop is a proven sales & marketing tool for your community. Our platform will set your community apart from the rest by empowering staff, engaging families and impacting residents."
       >
         <VideoButton
           text="LifeLoop: A proven marketing solution"
-          image={data.staffBenefits.childImageSharp.fluid}
+          image={getImage(data.staffBenefits)}
           onClick={() =>
             setVideo({
               link: 'https://www.youtube-nocookie.com/embed/bZcShIjmwAc',
@@ -79,7 +91,7 @@ export default ({ data }) => {
           experienced partner who can help you achieve your desired outcomes,
           create efficiencies and set your community apart.
         </p>
-        <p className={styles.emphasized}>
+        <p className={emphasized}>
           Being “in the loop” means always having the latest information at your
           fingertips.
         </p>
@@ -87,14 +99,14 @@ export default ({ data }) => {
       <Section>
         <FlexContainer direction={isMobile ? 'column' : 'row'}>
           <FlexContainer
-            className={classNames(styles.videoContainer, {
-              [styles.videoContainerVertical]: isMobile,
+            className={classNames(videoContainer, {
+              [videoContainerVertical]: isMobile,
             })}
             flex="1"
             direction="column"
           >
-            <div
-              className={styles.videoImage}
+            <FlexContainer
+              className={videoImage}
               onClick={() =>
                 setVideo({
                   link: 'https://www.youtube-nocookie.com/embed/XQDtfhPTgNo',
@@ -102,9 +114,9 @@ export default ({ data }) => {
                 })
               }
             >
-              <Img fluid={data.connectResidents.childImageSharp.fluid} />
-            </div>
-            <h2 className={styles.videoHeader}>Residents</h2>
+              <GatsbyImage image={getImage(data.connectResidents)} />
+            </FlexContainer>
+            <h2 className={videoHeader}>Residents</h2>
             <p>
               With LifeLoop, you can transform the caregiving experience.
               Residents are connected with family, friends and community staff
@@ -119,14 +131,14 @@ export default ({ data }) => {
             </p>
           </FlexContainer>
           <FlexContainer
-            className={classNames(styles.videoContainer, {
-              [styles.videoContainerVertical]: isMobile,
+            className={classNames(videoContainer, {
+              [videoContainerVertical]: isMobile,
             })}
             flex="1"
             direction="column"
           >
-            <div
-              className={styles.videoImage}
+            <FlexContainer
+              className={videoImage}
               onClick={() =>
                 setVideo({
                   link: 'https://www.youtube-nocookie.com/embed/DucvjjOT0bs',
@@ -134,9 +146,9 @@ export default ({ data }) => {
                 })
               }
             >
-              <Img fluid={data.connectFamily.childImageSharp.fluid} />
-            </div>
-            <h2 className={styles.videoHeader}>Family</h2>
+              <GatsbyImage image={getImage(data.connectFamily)} />
+            </FlexContainer>
+            <h2 className={videoHeader}>Family</h2>
             <p>
               Allowing families the transparency they want and the access they
               deserve is central to our mission and vision. With LifeLoop, you
@@ -160,9 +172,10 @@ export default ({ data }) => {
       />
       <Section>
         <RelativeContainer
-          className={classNames({ [styles.staffMinimized]: isTablet })}
+          className={classNames({ [staffMinimized]: isTablet })}
         >
-          <div
+          <FlexContainer
+            className={staffBenefits}
             onClick={() =>
               setVideo({
                 link: 'https://www.youtube-nocookie.com/embed/JW5KkDSdt8w',
@@ -170,29 +183,23 @@ export default ({ data }) => {
               })
             }
           >
-            <Img
-              className={styles.staffImage}
-              fluid={data.staffBenefits.childImageSharp.fluid}
-            />
-          </div>
-          <FlexContainer className={styles.staffContainer}>
+            <GatsbyImage image={getImage(data.staffBenefits)} />
+          </FlexContainer>
+          <FlexContainer className={staffContainer}>
             <FlexContainer flex="1" align="center" justify="center">
-              <PlayIcon width={120} className={styles.staffPlayIcon} />
+              <PlayIcon width={120} className={staffPlayIcon} />
             </FlexContainer>
             <FlexContainer
               direction="column"
               justify="center"
-              className={styles.staffContent}
+              className={staffContent}
             >
               {commuintyContent}
             </FlexContainer>
           </FlexContainer>
         </RelativeContainer>
         {isTablet && (
-          <FlexContainer
-            direction="column"
-            className={styles.communityFreeflow}
-          >
+          <FlexContainer direction="column" className={communityFreeflow}>
             {commuintyContent}
           </FlexContainer>
         )}
@@ -230,40 +237,32 @@ export default ({ data }) => {
       />
     </SiteWrapper>
   );
-};
+}
 
 export const query = graphql`
-  query {
+  {
     hero: file(relativePath: { eq: "benefits-hero.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED, quality: 80)
       }
     }
     staffBenefits: file(relativePath: { eq: "staff-benefits-callout.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1400) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(height: 596, layout: CONSTRAINED, quality: 80)
       }
     }
     connectFamily: file(
       relativePath: { eq: "video-callout-connect-family.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 620) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 623, layout: CONSTRAINED, quality: 80)
       }
     }
     connectResidents: file(
       relativePath: { eq: "video-callout-connect-residents.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 620) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 623, layout: CONSTRAINED, quality: 80)
       }
     }
   }

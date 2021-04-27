@@ -7,7 +7,15 @@ import { useDevice } from '../utils/effects';
 import Button from '../primitives/button';
 import ArticleCard from './article-card';
 
-import styles from './blog-roll.module.scss';
+import {
+  firstRowPost,
+  firstRowPostVertical,
+  postContainer,
+  otherRowPost,
+  otherRowPostMobile,
+  otherRowPostTablet,
+  showMoreElement,
+} from './blog-roll.module.scss';
 
 export default function BlogRoll({ posts }) {
   const { isTablet, isMobile } = useDevice();
@@ -24,11 +32,11 @@ export default function BlogRoll({ posts }) {
       ...firstRowPosts,
       <ArticleCard
         key={firstPost.node.fields.slug}
-        className={classNames(styles.firstRowPost, {
-          [styles.firstRowPostVertical]: isMobile,
+        className={classNames(firstRowPost, {
+          [firstRowPostVertical]: isMobile,
         })}
         link={firstPost.node.fields.slug}
-        photo={firstPost.node.frontmatter.photo.childImageSharp.fluid}
+        photo={firstPost.node.frontmatter.photo.childImageSharp.gatsbyImageData}
         title={firstPost.node.frontmatter.title}
         excerpt={firstPost.node.excerpt}
       />,
@@ -39,11 +47,13 @@ export default function BlogRoll({ posts }) {
       ...firstRowPosts,
       <ArticleCard
         key={secondPost.node.fields.slug}
-        className={classNames(styles.firstRowPost, {
-          [styles.firstRowPostVertical]: isMobile,
+        className={classNames(firstRowPost, {
+          [firstRowPostVertical]: isMobile,
         })}
         link={secondPost.node.fields.slug}
-        photo={secondPost.node.frontmatter.photo.childImageSharp.fluid}
+        photo={
+          secondPost.node.frontmatter.photo.childImageSharp.gatsbyImageData
+        }
         title={secondPost.node.frontmatter.title}
         excerpt={secondPost.node.excerpt}
       />,
@@ -70,25 +80,26 @@ export default function BlogRoll({ posts }) {
     <>
       <FlexContainer
         direction={isMobile ? 'column' : 'row'}
-        className={styles.postContainer}
+        className={postContainer}
       >
         {firstRowPosts}
       </FlexContainer>
       {!!olderPosts.length &&
         chunkedOlderPosts.map((rowPosts, i) => (
-          <FlexContainer key={i} className={styles.postContainer}>
+          <FlexContainer key={i} className={postContainer}>
             {rowPosts.map(otherPost => (
               <ArticleCard
                 small={!isTablet}
                 key={otherPost.node.fields.slug}
-                className={classNames(styles.otherRowPost, {
-                  [styles.otherRowPostTablet]: isTablet,
-                  [styles.otherRowPostMobile]: isMobile,
+                className={classNames(otherRowPost, {
+                  [otherRowPostTablet]: isTablet,
+                  [otherRowPostMobile]: isMobile,
                 })}
                 link={otherPost.node.fields.slug}
                 photo={
                   otherPost.node.frontmatter.photo
-                    ? otherPost.node.frontmatter.photo.childImageSharp.fluid
+                    ? otherPost.node.frontmatter.photo.childImageSharp
+                        .gatsbyImageData
                     : null
                 }
                 title={otherPost.node.frontmatter.title}
@@ -98,7 +109,7 @@ export default function BlogRoll({ posts }) {
           </FlexContainer>
         ))}
       {isMorePosts && (
-        <FlexContainer className={styles.showMore} justify="center">
+        <FlexContainer className={showMoreElement} justify="center">
           <Button onClick={() => setShowMore(true)}>Load More</Button>
         </FlexContainer>
       )}

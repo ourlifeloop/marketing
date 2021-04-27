@@ -7,9 +7,9 @@ import Button from '../primitives/button';
 import { subscribe } from '../utils/api';
 import Input from '../primitives/input';
 
-import styles from './blog-subscriber.module.scss';
+import { input } from './blog-subscriber.module.scss';
 
-export default () => {
+export default function BlogSubscriber() {
   const [state, setState] = useState({
     email: '',
     error: undefined,
@@ -46,7 +46,7 @@ export default () => {
       </p>
       <FlexContainer justify="center">
         <Input
-          className={styles.input}
+          className={input}
           placeholder="Enter your email address"
           value={email}
           onChange={e =>
@@ -59,8 +59,8 @@ export default () => {
         />
         <Button onClick={onSubscribe}>Subscribe</Button>
       </FlexContainer>
-      {!!error && <div className={styles.error}>{error}</div>}
-      {!!success && <div className={styles.success}>{success}</div>}
+      {!!error && <div className={error}>{error}</div>}
+      {!!success && <div className={success}>{success}</div>}
     </TitleSection>
   );
-};
+}

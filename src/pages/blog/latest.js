@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import classNames from 'classnames';
 
 import FlexContainer from '../../primitives/flex-container';
@@ -12,9 +12,17 @@ import { useDevice } from '../../utils/effects';
 import Layout from '../../primitives/layout';
 import Button from '../../primitives/button';
 
-import styles from './blog.module.scss';
+import {
+  featured,
+  featuredVertical,
+  featuredPhoto,
+  featuredContent,
+  featureTag,
+  featureExcerpt,
+  rollTitle,
+} from './blog.module.scss';
 
-export default ({ data, location }) => {
+export default function LatestBlog({ data, location }) {
   const { isTablet } = useDevice();
   const { edges: posts } = data.allMarkdownRemark;
   const [featuredPost, ...latestPosts] = posts;
@@ -25,16 +33,15 @@ export default ({ data, location }) => {
         <BlogHeader pathname={location.pathname} />
         <FlexContainer
           direction={isTablet ? 'column' : 'row'}
-          className={classNames(styles.featured, {
-            [styles.featuredVertical]: isTablet,
+          className={classNames(featured, {
+            [featuredVertical]: isTablet,
           })}
         >
           {featuredPost.node.frontmatter.photo && (
-            <div className={styles.featuredPhoto}>
-              <Img
-                fluid={
-                  featuredPost.node.frontmatter.photo.childImageSharp.fluid
-                }
+            <div className={featuredPhoto}>
+              <GatsbyImage
+                alt={featuredPost.node.frontmatter.title}
+                image={getImage(featuredPost.node.frontmatter.photo)}
               />
             </div>
           )}
@@ -42,11 +49,11 @@ export default ({ data, location }) => {
             flex="1"
             direction="column"
             justify="center"
-            className={styles.featuredContent}
+            className={featuredContent}
           >
-            <div className={styles.featureTag}>Featured Article</div>
+            <div className={featureTag}>Featured Article</div>
             <h2>{featuredPost.node.frontmatter.title}</h2>
-            <p className={styles.featureExcerpt}>{featuredPost.node.excerpt}</p>
+            <p className={featureExcerpt}>{featuredPost.node.excerpt}</p>
             <Link to={featuredPost.node.fields.slug}>
               <Button>Read More</Button>
             </Link>
@@ -55,15 +62,15 @@ export default ({ data, location }) => {
       </Layout>
       <BlogFooter />
       <Layout>
-        <h2 className={styles.rollTitle}>The Latest Articles</h2>
+        <h2 className={rollTitle}>The Latest Articles</h2>
         <BlogRoll posts={latestPosts} />
       </Layout>
     </SiteWrapper>
   );
-};
+}
 
 export const query = graphql`
-  query {
+  {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { fields: { slug: { regex: "^/blog/" } } }
@@ -79,10 +86,7 @@ export const query = graphql`
             title
             photo {
               childImageSharp {
-                fluid(maxHeight: 500, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                  presentationWidth
-                }
+                gatsbyImageData(height: 500, quality: 90, layout: FULL_WIDTH)
               }
             }
           }

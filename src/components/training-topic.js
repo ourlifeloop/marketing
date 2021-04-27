@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, navigate } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import classNames from 'classnames';
 
 import FeatureDropdown from '../primitives/feature-dropdown';
@@ -14,7 +14,19 @@ import TrainingVideo from './training-video';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
 
-import styles from './training-topic.module.scss';
+import {
+  leftColumn,
+  topicsHeader,
+  dropdownContainer,
+  rightColumn,
+  topicItem,
+  topicItemActive,
+  topicItemContainer,
+  topicIcon,
+  topicName,
+  videoContainer,
+  questionContainer,
+} from './training-topic.module.scss';
 
 export default function TrainingTopic({
   userType,
@@ -43,11 +55,9 @@ export default function TrainingTopic({
         direction={isTablet ? 'column' : 'row'}
       >
         {!isTablet ? (
-          <h3 className={classNames(styles.leftColumn, styles.topicsHeader)}>
-            TOPICS
-          </h3>
+          <h3 className={classNames(leftColumn, topicsHeader)}>TOPICS</h3>
         ) : (
-          <div className={styles.dropdownContainer}>
+          <div className={dropdownContainer}>
             <FeatureDropdown
               value={topic}
               onChange={({ value }) =>
@@ -61,40 +71,46 @@ export default function TrainingTopic({
             />
           </div>
         )}
-        <h1 className={styles.rightColumn}>{firstTitle}</h1>
+        <h1 className={rightColumn}>{firstTitle}</h1>
       </FlexContainer>
-      <FlexContainer className={styles.content}>
+      <FlexContainer>
         {!isTablet && (
-          <FlexContainer direction="column" className={styles.leftColumn}>
+          <FlexContainer direction="column" className={leftColumn}>
             {filteredTopics.map(({ key, name, Icon }) => (
               <Link key={key} to={`/training/${userType}/${key}`}>
                 <FlexContainer
                   align="center"
-                  className={classNames(styles.topic, {
-                    [styles.topicActive]: key === topic,
+                  className={classNames(topicItem, {
+                    [topicItemActive]: key === topic,
                   })}
                 >
                   <FlexContainer
                     alignItems="center"
-                    className={styles.topicItemContainer}
+                    className={topicItemContainer}
                   >
-                    <Icon className={styles.topicIcon} />
+                    <Icon className={topicIcon} />
                   </FlexContainer>
-                  <span className={styles.topicName}>{name}</span>
+                  <span className={topicName}>{name}</span>
                 </FlexContainer>
               </Link>
             ))}
           </FlexContainer>
         )}
-        <FlexContainer direction="column" className={styles.rightColumn}>
-          <FlexContainer wrap className={styles.videoContainer}>
+        <FlexContainer direction="column" className={rightColumn}>
+          <FlexContainer wrap className={videoContainer}>
             {sortBy(videos, vid => (vid.isNew ? -1 : 1)).map(
               ({ key, cover, video, title, isNew }) => (
                 <TrainingVideo
                   key={key}
                   isNew={isNew}
                   title={title}
-                  cover={cover && <Img fixed={cover.childImageSharp.fixed} />}
+                  cover={
+                    cover && (
+                      <GatsbyImage
+                        image={cover.childImageSharp.gatsbyImageData}
+                      />
+                    )
+                  }
                   onClick={link => setActiveVideo({ link: video, title })}
                 />
               ),
@@ -111,10 +127,7 @@ export default function TrainingTopic({
           {!!faqs.length && firstTitle !== 'Frequently Asked Questions' && (
             <h1>Frequently Asked Questions</h1>
           )}
-          <QuestionAndAnswer
-            questions={faqs}
-            className={styles.questionContainer}
-          />
+          <QuestionAndAnswer questions={faqs} className={questionContainer} />
         </FlexContainer>
       </FlexContainer>
       <VideoModal

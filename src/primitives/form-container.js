@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 import FlexContainer from './flex-container';
 
-import styles from './form-container.module.scss';
+import { formContainer } from './form-container.module.scss';
 
 export default function FormContainer({ children }) {
   return (
-    <FlexContainer direction="column" className={styles.formContainer}>
+    <FlexContainer direction="column" className={formContainer}>
       {children}
     </FlexContainer>
   );

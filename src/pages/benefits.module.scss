@@ -37,7 +37,7 @@
 }
 
 .staffMinimized {
-  .staffImage {
+  .staffBenefits {
     height: 400px;
     margin: 0 auto;
     max-width: 800px;
@@ -48,14 +48,11 @@
   }
 }
 
-.staffImage {
+.staffBenefits {
   cursor: pointer;
   height: 596px;
   transition: box-shadow 0.2s linear;
-
-  img {
-    margin: 0;
-  }
+  width: 100%;
 
   &:hover {
     box-shadow: 0px 0px 16px 0px $text-meta;

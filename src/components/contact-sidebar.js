@@ -7,7 +7,13 @@ import FlexContainer from '../primitives/flex-container';
 import { useDevice } from '../utils/effects';
 import NAVIGATION from '../utils/navigation';
 
-import styles from './contact-sidebar.module.scss';
+import {
+  infoContainer,
+  infoContainerVertical,
+  infoLink,
+  featureIcon,
+  featureName,
+} from './contact-sidebar.module.scss';
 
 export default function ContactSidebar({ links }) {
   const { isTablet } = useDevice();
@@ -26,20 +32,20 @@ export default function ContactSidebar({ links }) {
   return (
     <FlexContainer direction="column">
       <div
-        className={classNames(styles.infoContainer, {
-          [styles.infoContainerVertical]: isTablet,
+        className={classNames(infoContainer, {
+          [infoContainerVertical]: isTablet,
         })}
       >
         <h3>Other ways to connect with us</h3>
         {React.Children.map(links, link =>
           React.cloneElement(link, {
-            className: classNames(link.className, styles.infoLink),
+            className: classNames(link.className, infoLink),
           }),
         )}
       </div>
       <div
-        className={classNames(styles.infoContainer, {
-          [styles.infoContainerVertical]: isTablet,
+        className={classNames(infoContainer, {
+          [infoContainerVertical]: isTablet,
         })}
       >
         <h3>Interested in joining the team?</h3>
@@ -56,8 +62,8 @@ export default function ContactSidebar({ links }) {
         </p>
       </div>
       <div
-        className={classNames(styles.infoContainer, {
-          [styles.infoContainerVertical]: isTablet,
+        className={classNames(infoContainer, {
+          [infoContainerVertical]: isTablet,
         })}
       >
         <h3>How LifeLoop Works</h3>
@@ -68,10 +74,10 @@ export default function ContactSidebar({ links }) {
           and communication with your internal and external stakeholders.
         </p>
         {map(NAVIGATION.features.subNav, ({ key, Icon, name, link }) => (
-          <Link key={key} to={link} className={styles.infoLink}>
+          <Link key={key} to={link} className={infoLink}>
             <FlexContainer align="center">
-              <Icon className={styles.featureIcon} />
-              <span className={styles.featureName}>{name}</span>
+              <Icon className={featureIcon} />
+              <span className={featureName}>{name}</span>
             </FlexContainer>
           </Link>
         ))}

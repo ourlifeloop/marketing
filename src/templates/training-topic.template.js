@@ -13,7 +13,7 @@ const filterTypes = (data, uniqueKey) =>
       ...edge.node.frontmatter,
     }));
 
-export default ({ data, pageContext }) => {
+export default function TrainingTopicTemplate({ data, pageContext }) {
   const videos = filterTypes(data, 'cover');
   const documents = filterTypes(data, 'document');
   const faqs = filterTypes(data, 'question');
@@ -37,7 +37,7 @@ export default ({ data, pageContext }) => {
       />
     </TrainingWrapper>
   );
-};
+}
 
 export const query = graphql`
   query($topic: String!, $userType: String!) {
@@ -71,9 +71,7 @@ export const query = graphql`
             answer
             cover {
               childImageSharp {
-                fixed(width: 275, quality: 90) {
-                  ...GatsbyImageSharpFixed
-                }
+                gatsbyImageData(width: 275, quality: 90, layout: FIXED)
               }
             }
             document {

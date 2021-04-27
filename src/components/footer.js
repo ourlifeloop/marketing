@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import classNames from 'classnames';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
@@ -11,25 +11,27 @@ import Facebook from '../assets/icons/facebook.svg';
 import LinkedIn from '../assets/icons/linked-in.svg';
 import Twitter from '../assets/icons/twitter.svg';
 
-import styles from './footer.module.scss';
+import {
+  footer,
+  footerMobile,
+  socialLink,
+  link,
+  appLinkContainer,
+} from './footer.module.scss';
 
 export default function Footer() {
   const { isMobile } = useDevice();
   const { google, apple } = useStaticQuery(
     graphql`
-      query {
+      {
         apple: file(relativePath: { eq: "app-store-logo.png" }) {
           childImageSharp {
-            fixed(width: 155) {
-              ...GatsbyImageSharpFixed_noBase64
-            }
+            gatsbyImageData(width: 155, placeholder: NONE, layout: FIXED)
           }
         }
         google: file(relativePath: { eq: "google-play-logo.png" }) {
           childImageSharp {
-            fixed(width: 155) {
-              ...GatsbyImageSharpFixed_noBase64
-            }
+            gatsbyImageData(width: 155, placeholder: NONE, layout: FIXED)
           }
         }
       }
@@ -37,9 +39,7 @@ export default function Footer() {
   );
 
   return (
-    <footer
-      className={classNames(styles.footer, { [styles.footerMobile]: isMobile })}
-    >
+    <footer className={classNames(footer, { [footerMobile]: isMobile })}>
       <Layout>
         <FlexContainer
           justify="spacebetween"
@@ -52,7 +52,7 @@ export default function Footer() {
           >
             <FlexContainer>
               <a
-                className={styles.socialLink}
+                className={socialLink}
                 href="https://twitter.com/ourlifeloop"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -61,7 +61,7 @@ export default function Footer() {
                 <Twitter />
               </a>
               <a
-                className={styles.socialLink}
+                className={socialLink}
                 href="https://www.facebook.com/ourlifeloop"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -70,7 +70,7 @@ export default function Footer() {
                 <Facebook />
               </a>
               <a
-                className={styles.socialLink}
+                className={socialLink}
                 href="https://www.linkedin.com/company/lifeloop"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -81,21 +81,17 @@ export default function Footer() {
             </FlexContainer>
             <FlexContainer>
               <Link
-                className={styles.link}
+                className={link}
                 to="/terms"
                 aria-label="Terms & Conditions"
               >
                 Terms & Conditions
               </Link>
-              <Link
-                className={styles.link}
-                to="/privacy"
-                aria-label="Privacy Policy"
-              >
+              <Link className={link} to="/privacy" aria-label="Privacy Policy">
                 Privacy Policy
               </Link>
               <Link
-                className={styles.link}
+                className={link}
                 to="/accessibility"
                 aria-label="Accessibility Statement"
               >
@@ -105,22 +101,22 @@ export default function Footer() {
           </FlexContainer>
           <FlexContainer wrap>
             <a
-              className={styles.appLinkContainer}
+              className={appLinkContainer}
               href="https://play.google.com/store/apps/details?id=com.lifeloopproject"
               target="_blank"
               aria-label="LifeLoop Google Play"
               rel="noopener noreferrer"
             >
-              <Img fixed={google.childImageSharp.fixed} />
+              <GatsbyImage alt="Google Play" image={getImage(google)} />
             </a>
             <a
-              className={styles.appLinkContainer}
+              className={appLinkContainer}
               href="https://appstore.com/lifeloopforiphone"
               target="_blank"
               aria-label="LifeLoop iOS App Store"
               rel="noopener noreferrer"
             >
-              <Img fixed={apple.childImageSharp.fixed} />
+              <GatsbyImage alt="iOS App Store" image={getImage(apple)} />
             </a>
           </FlexContainer>
         </FlexContainer>

@@ -5,20 +5,27 @@ import LifeloopBigLogo from '../assets/icons/lifeloop-big-logo.svg';
 import FlexContainer from '../primitives/flex-container';
 import Button from '../primitives/button';
 
-import styles from './404.module.scss';
+import {
+  container,
+  title,
+  subTitle,
+  line,
+  icon,
+  content,
+} from './404.module.scss';
 
-export default () => {
+export default function NotFound() {
   return (
-    <FlexContainer align="center" justify="center" className={styles.container}>
+    <FlexContainer align="center" justify="center" className={container}>
       <FlexContainer direction="column">
-        <h1 className={styles.title}>404</h1>
-        <h2 className={styles.subTitle}>Page Not Found</h2>
+        <h1 className={title}>404</h1>
+        <h2 className={subTitle}>Page Not Found</h2>
         <FlexContainer align="center">
-          <hr className={styles.line} />
-          <LifeloopBigLogo className={styles.icon} />
-          <hr className={styles.line} />
+          <hr className={line} />
+          <LifeloopBigLogo className={icon} />
+          <hr className={line} />
         </FlexContainer>
-        <p className={styles.content}>
+        <p className={content}>
           We're sorry, we can't seem to find the page you were looking for.
         </p>
         <FlexContainer justify="center">
@@ -29,4 +36,4 @@ export default () => {
       </FlexContainer>
     </FlexContainer>
   );
-};
+}
