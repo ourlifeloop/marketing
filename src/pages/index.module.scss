@@ -35,3 +35,11 @@
 .hero {
   padding-top: 2.5rem;
 }
+
+.heroImg {
+  height: 600px;
+
+  &--mobile {
+    height: 500px;
+  }
+}

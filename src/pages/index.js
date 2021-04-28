@@ -20,6 +20,8 @@ import { useDevice } from '../utils/effects';
 
 import {
   hero,
+  heroImg,
+  heroImgMobile,
   videoContainer,
   videoContainerVertical,
 } from './index.module.scss';
@@ -31,8 +33,8 @@ export default function Home({ data }) {
   return (
     <SiteWrapper transparent>
       <HeroImage
-        height={isMobile ? '500px' : '600px'}
         className={hero}
+        imgClassName={classNames(heroImg, { [heroImgMobile]: isMobile })}
         objectPosition="30% 0%"
         image={getImage(data.hero)}
         title="Enhancing Resident & Family Engagement Through Technology"

@@ -28,21 +28,25 @@ export default function HeroImage({
   description,
   children,
   className,
+  imgClassName,
   ...rest
 }) {
   const { width } = useDimensions();
   const { isMobile } = useDevice();
 
   const opacity = clamp(width / OPACITY_CONSTANT, 0, 1);
+  console.log(width, opacity, rest);
 
   return (
     <RelativeContainer>
-      <GatsbyImage
-        alt={title}
-        image={image}
-        style={{ height, opacity }}
-        {...rest}
-      />
+      <FlexContainer style={{ opacity, height }}>
+        <GatsbyImage
+          alt={title}
+          image={image}
+          className={imgClassName}
+          {...rest}
+        />
+      </FlexContainer>
       <Layout className={layout}>
         <FlexContainer
           direction="column"
@@ -69,10 +73,12 @@ HeroImage.propTypes = {
   description: PropTypes.string.isRequired,
   children: PropTypes.node,
   className: PropTypes.string,
+  imgClassName: PropTypes.string,
 };
 
 HeroImage.defaultProps = {
   direction: 'left',
   children: undefined,
   className: undefined,
+  imgClassName: undefined,
 };
