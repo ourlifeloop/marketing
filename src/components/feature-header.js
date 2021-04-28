@@ -70,7 +70,7 @@ export default function FeatureHeader({ pathname }) {
                   })}
                 >
                   <FlexContainer direction="column" align="center">
-                    <Icon className={icon} />
+                    {!!Icon && <Icon className={icon} />}
                     <span className={nameItem}>{shortName || name}</span>
                   </FlexContainer>
                 </Link>

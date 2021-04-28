@@ -6,11 +6,11 @@ import { find, startsWith } from '../utils/lodash';
 
 import { option, optionIcon, select } from './feature-dropdown.module.scss';
 
-const FeatureOption = ({ innerProps, children, data, ...rest }) => {
+const FeatureOption = ({ innerProps, children, data }) => {
   const { Icon } = data;
   return (
     <FlexContainer {...innerProps} align="center" className={option}>
-      <Icon className={optionIcon} />
+      {!!Icon && <Icon className={optionIcon} />}
       <b>{children}</b>
     </FlexContainer>
   );

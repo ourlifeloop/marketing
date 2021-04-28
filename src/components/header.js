@@ -20,6 +20,7 @@ import {
   flexLink,
   dropdown,
   dropdownLink,
+  dropdownLinkName,
   minorLink,
   bannerInner,
   bannerLink,
@@ -109,8 +110,8 @@ export default function Header({
                 aria-label={name}
               >
                 <FlexContainer align="center">
-                  <Icon />
-                  {name}
+                  {!!Icon && <Icon />}
+                  <span className={dropdownLinkName}>{name}</span>
                 </FlexContainer>
               </Link>
             ))}

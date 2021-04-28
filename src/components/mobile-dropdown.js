@@ -9,7 +9,6 @@ import { ChevronDown } from '../utils/icons';
 import NAVIGATION from '../utils/navigation';
 import Button from '../primitives/button';
 import Layout from '../primitives/layout';
-import { map } from '../utils/lodash';
 
 import {
   mobilePanel,
@@ -41,7 +40,12 @@ export default function MobileDropdown({ isOpen, offset }) {
     `,
   );
 
-  const [isFeaturesOpen, setIsFeaturesOpen] = useState(true);
+  const [openState, setOpenState] = useState(
+    Object.values(NAVIGATION)
+      .filter(nav => !!nav.subNav)
+      .reduce((obj, nav) => ({ ...obj, [nav.key]: true }), {}),
+  );
+
   return (
     <div
       className={classNames(mobilePanel, {
@@ -51,7 +55,7 @@ export default function MobileDropdown({ isOpen, offset }) {
       <div className={innerContainer} style={{ paddingTop: offset }}>
         <Layout>
           <FlexContainer direction="column" className={layout}>
-            {map(NAVIGATION, ({ key, name, link, subNav }) => {
+            {Object.values(NAVIGATION).map(({ key, name, link, subNav }) => {
               if (!subNav) {
                 return (
                   <Link key={key} className={linkItem} to={link}>
@@ -62,26 +66,28 @@ export default function MobileDropdown({ isOpen, offset }) {
               return (
                 <FlexContainer
                   key={key}
-                  onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
-                  className={link}
+                  onClick={() =>
+                    setOpenState({ ...openState, [key]: !openState[key] })
+                  }
+                  className={linkItem}
                   direction="column"
                 >
                   <FlexContainer justify="spacebetween" align="center">
                     {name}
                     <ChevronDown
                       className={classNames(linkIcon, {
-                        [linkIconOpen]: isFeaturesOpen,
+                        [linkIconOpen]: openState[key],
                       })}
                       size={30}
                     />
                   </FlexContainer>
                   <FlexContainer
                     className={classNames(featuresContainer, {
-                      [featuresContainerOpen]: isFeaturesOpen,
+                      [featuresContainerOpen]: openState[key],
                     })}
                     wrap
                   >
-                    {map(subNav, ({ key, name, Icon, link }) => (
+                    {Object.values(subNav).map(({ key, name, Icon, link }) => (
                       <Link
                         key={key}
                         to={link}
@@ -90,7 +96,7 @@ export default function MobileDropdown({ isOpen, offset }) {
                         })}
                       >
                         <FlexContainer align="center">
-                          <Icon />
+                          {!!Icon && <Icon />}
                           {name}
                         </FlexContainer>
                       </Link>

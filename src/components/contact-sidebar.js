@@ -76,7 +76,7 @@ export default function ContactSidebar({ links }) {
         {map(NAVIGATION.features.subNav, ({ key, Icon, name, link }) => (
           <Link key={key} to={link} className={infoLink}>
             <FlexContainer align="center">
-              <Icon className={featureIcon} />
+              {!!Icon && <Icon className={featureIcon} />}
               <span className={featureName}>{name}</span>
             </FlexContainer>
           </Link>

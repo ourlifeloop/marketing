@@ -573,10 +573,21 @@ const NAVIGATION = {
     name: 'Benefits',
     link: '/benefits',
   },
-  ourStory: {
-    key: 'ourStory',
-    name: 'Our Story',
-    link: '/our-story',
+  about: {
+    key: 'about',
+    name: 'About',
+    subNav: {
+      ourStory: {
+        key: 'ourStory',
+        name: 'Our Story',
+        link: '/our-story',
+      },
+      careers: {
+        key: 'careers',
+        name: 'Careers',
+        link: '/careers',
+      },
+    },
   },
   blog: {
     key: 'blog',

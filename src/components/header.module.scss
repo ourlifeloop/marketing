@@ -149,7 +149,6 @@ $border-height: 1px;
   position: absolute;
   top: 0;
   transition: all 0.2s linear;
-  width: 220px;
   z-index: 100;
 
   &:before {
@@ -184,6 +183,10 @@ $icon-size: 30px;
   &:hover {
     color: $text-highlight;
   }
+}
+
+.dropdownLinkName {
+  white-space: nowrap;
 }
 
 .menuContainer {
