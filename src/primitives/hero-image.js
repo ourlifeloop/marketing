@@ -35,7 +35,6 @@ export default function HeroImage({
   const { isMobile } = useDevice();
 
   const opacity = clamp(width / OPACITY_CONSTANT, 0, 1);
-  console.log(width, opacity, rest);
 
   return (
     <RelativeContainer>
@@ -67,7 +66,7 @@ export default function HeroImage({
 
 HeroImage.propTypes = {
   image: PropTypes.shape().isRequired,
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   direction: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
@@ -77,6 +76,7 @@ HeroImage.propTypes = {
 };
 
 HeroImage.defaultProps = {
+  height: undefined,
   direction: 'left',
   children: undefined,
   className: undefined,

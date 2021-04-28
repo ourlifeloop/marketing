@@ -78,7 +78,7 @@ export default function Header({
         }
         logo: file(relativePath: { eq: "lifeloop-logo.png" }) {
           childImageSharp {
-            gatsbyImageData(width: 180, placeholder: NONE, layout: CONSTRAINED)
+            gatsbyImageData(width: 181, placeholder: NONE, layout: CONSTRAINED)
           }
         }
       }
