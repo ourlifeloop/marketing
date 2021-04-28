@@ -593,6 +593,33 @@ const NAVIGATION = {
     key: 'blog',
     name: 'Blog',
     link: '/blog/latest',
+    subNav: {
+      latest: {
+        key: 'latest',
+        name: 'Latest',
+        link: '/blog/latest',
+      },
+      customerSpotlight: {
+        key: 'customerSpotlight',
+        name: 'Customer Spotlight',
+        link: '/blog/customer-spotlight',
+      },
+      industryInsights: {
+        key: 'industryInsights',
+        name: 'Industry Insights',
+        link: '/blog/industry-insights',
+      },
+      castStudies: {
+        key: 'castStudies',
+        name: 'Case Studies',
+        link: '/blog/case-studies',
+      },
+      news: {
+        key: 'news',
+        name: 'News',
+        link: '/blog/news',
+      },
+    },
   },
   contactUs: {
     key: 'contactUs',
