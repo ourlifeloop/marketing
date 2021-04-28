@@ -7,6 +7,7 @@ import FlexContainer from '../primitives/flex-container';
 import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
 import SiteWrapper from '../components/site-wrapper';
+import { ChevronRight } from '../utils/icons';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
 
@@ -21,6 +22,9 @@ import {
   weAre,
   weAreCollapsed,
   weAreWrapper,
+  positionLink,
+  openPosition,
+  linkIcon,
 } from './careers.module.scss';
 
 const WHO_WE_ARE = [
@@ -103,7 +107,33 @@ export default function Careers({ data }) {
           ))}
         </FlexContainer>
       </Section>
-      <TitleSection secondary header="Got Questions? We have answers!">
+      {!!data.allMarkdownRemark.edges.length && (
+        <TitleSection header="We're searching for talent.">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <a
+              key={node.id}
+              href={node.frontmatter.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={node.frontmatter.title}
+              className={positionLink}
+            >
+              <FlexContainer
+                align="center"
+                justify="spacebetween"
+                className={openPosition}
+              >
+                <span>{node.frontmatter.title}</span>
+                <ChevronRight className={linkIcon} size={24} />
+              </FlexContainer>
+            </a>
+          ))}
+        </TitleSection>
+      )}
+      <TitleSection
+        secondary={!!data.allMarkdownRemark.edges.length}
+        header="Got Questions? We have answers!"
+      >
         <p>
           We're always looking for talented pros to join our team, so if this
           sounds like the place for you, we want to talk.
@@ -127,6 +157,17 @@ export const query = graphql`
     site {
       siteMetadata {
         careers
+      }
+    }
+    allMarkdownRemark(filter: { fields: { slug: { regex: "^/careers/" } } }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            link
+            title
+          }
+        }
       }
     }
     meeting: file(relativePath: { eq: "meeting.jpeg" }) {
