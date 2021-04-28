@@ -7,7 +7,7 @@ import Button from '../primitives/button';
 import { subscribe } from '../utils/api';
 import Input from '../primitives/input';
 
-import { input } from './blog-subscriber.module.scss';
+import { input, errorItem, successItem } from './blog-subscriber.module.scss';
 
 export default function BlogSubscriber() {
   const [state, setState] = useState({
@@ -59,8 +59,8 @@ export default function BlogSubscriber() {
         />
         <Button onClick={onSubscribe}>Subscribe</Button>
       </FlexContainer>
-      {!!error && <div className={error}>{error}</div>}
-      {!!success && <div className={success}>{success}</div>}
+      {!!error && <div className={errorItem}>{error}</div>}
+      {!!success && <div className={successItem}>{success}</div>}
     </TitleSection>
   );
 }
