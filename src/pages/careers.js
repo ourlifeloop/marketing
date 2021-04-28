@@ -57,7 +57,7 @@ export default function Careers({ data }) {
 
   return (
     <SiteWrapper title="Careers | LifeLoop assisted living community management software">
-      <Section centered className={titleSection}>
+      <Section width="small" centered className={titleSection}>
         <h1 className={titleText}>Interested in joining the team?</h1>
       </Section>
       <FlexContainer>
@@ -68,7 +68,7 @@ export default function Careers({ data }) {
           objectPosition="50% 68%"
         />
       </FlexContainer>
-      <Section centered>
+      <Section width="small" centered>
         <div className={sectionText}>
           We are a group of people who constantly strive to improve our company,
           our product, our community, and ourselves. We believe that aging is
