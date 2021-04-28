@@ -29,5 +29,9 @@ export default function ActionCallout({ title, body, button, ...rest }) {
 ActionCallout.propTypes = {
   title: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,
-  button: PropTypes.node.isRequired,
+  button: PropTypes.node,
+};
+
+ActionCallout.defaultProps = {
+  button: undefined,
 };
