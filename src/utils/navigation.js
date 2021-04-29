@@ -591,7 +591,7 @@ const NAVIGATION = {
   },
   blog: {
     key: 'blog',
-    name: 'Blog',
+    name: 'News',
     link: '/blog/latest',
     subNav: {
       latest: {
@@ -616,7 +616,7 @@ const NAVIGATION = {
       },
       news: {
         key: 'news',
-        name: 'News',
+        name: 'In the News',
         link: '/blog/news',
       },
     },
