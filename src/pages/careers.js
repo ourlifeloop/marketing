@@ -95,7 +95,7 @@ export default function Careers({ data }) {
       />
       <Section secondary width="medium">
         <FlexContainer wrap className={weAreWrapper} justify="center">
-          {WHO_WE_ARE.map(text => (
+          {WHO_WE_ARE.map((text) => (
             <FlexContainer
               align="center"
               justify="center"
@@ -172,7 +172,7 @@ export const query = graphql`
     }
     meeting: file(relativePath: { eq: "meeting.jpeg" }) {
       childImageSharp {
-        gatsbyImageData(width: 1000, quality: 80, layout: CONSTRAINED)
+        gatsbyImageData(width: 1440, quality: 90, layout: CONSTRAINED)
       }
     }
     joeyInAction: file(relativePath: { eq: "joey-in-action.jpeg" }) {
