@@ -2,28 +2,43 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import styles from './spinner.module.scss';
+import {
+  spinner,
+  light,
+  child,
+  circle2,
+  circle3,
+  circle4,
+  circle5,
+  circle6,
+  circle7,
+  circle8,
+  circle9,
+  circle10,
+  circle11,
+  circle12,
+} from './spinner.module.scss';
 
 export default function Spinner({ className, size, isLight }) {
   return (
     <div
       style={{ width: size, height: size }}
-      className={classNames(styles.spinner, className, {
-        [styles.light]: isLight,
+      className={classNames(spinner, className, {
+        [light]: isLight,
       })}
     >
-      <div className={classNames(styles.circle1, styles.child)} />
-      <div className={classNames(styles.circle2, styles.child)} />
-      <div className={classNames(styles.circle3, styles.child)} />
-      <div className={classNames(styles.circle4, styles.child)} />
-      <div className={classNames(styles.circle5, styles.child)} />
-      <div className={classNames(styles.circle6, styles.child)} />
-      <div className={classNames(styles.circle7, styles.child)} />
-      <div className={classNames(styles.circle8, styles.child)} />
-      <div className={classNames(styles.circle9, styles.child)} />
-      <div className={classNames(styles.circle10, styles.child)} />
-      <div className={classNames(styles.circle11, styles.child)} />
-      <div className={classNames(styles.circle12, styles.child)} />
+      <div className={child} />
+      <div className={classNames(circle2, child)} />
+      <div className={classNames(circle3, child)} />
+      <div className={classNames(circle4, child)} />
+      <div className={classNames(circle5, child)} />
+      <div className={classNames(circle6, child)} />
+      <div className={classNames(circle7, child)} />
+      <div className={classNames(circle8, child)} />
+      <div className={classNames(circle9, child)} />
+      <div className={classNames(circle10, child)} />
+      <div className={classNames(circle11, child)} />
+      <div className={classNames(circle12, child)} />
     </div>
   );
 }

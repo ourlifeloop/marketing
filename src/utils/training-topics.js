@@ -19,7 +19,7 @@ import residentEngagementTools from '../assets/icons/resident-engagement-tools.s
 import activityFeed from '../assets/icons/activity-feed.svg';
 import learningCourses from '../assets/icons/learning-courses.svg';
 
-export default [
+const TRAINING_TOPICS = [
   {
     key: 'getting-started',
     name: 'Getting Started',
@@ -130,12 +130,12 @@ export default [
   },
 ];
 
+export default TRAINING_TOPICS;
+
 export const trainingImages = graphql`
   fragment featureImage on File {
     childImageSharp {
-      fluid(maxWidth: 186) {
-        ...GatsbyImageSharpFluid
-      }
+      gatsbyImageData(width: 186, layout: CONSTRAINED)
     }
   }
 

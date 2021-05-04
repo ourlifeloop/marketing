@@ -4,19 +4,17 @@ import classNames from 'classnames';
 
 import Spinner from './spinner';
 
-import styles from './button.module.scss';
+import { spinner, button, inner, loading } from './button.module.scss';
 
 export default function Button({ children, className, isLoading, ...rest }) {
   let loadingSpinner = null;
   if (isLoading) {
-    loadingSpinner = <Spinner isLight size={20} className={styles.spinner} />;
+    loadingSpinner = <Spinner isLight size={20} className={spinner} />;
   }
   return (
-    <button {...rest} className={classNames(styles.button, className)}>
+    <button {...rest} className={classNames(button, className)}>
       {loadingSpinner}
-      <span
-        className={classNames(styles.inner, { [styles.loading]: isLoading })}
-      >
+      <span className={classNames(inner, { [loading]: isLoading })}>
         {children}
       </span>
     </button>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import classNames from 'classnames';
 
 import FeatureCardSwitcher from '../components/feature-card-switcher';
@@ -18,25 +18,31 @@ import Button from '../primitives/button';
 
 import { useDevice } from '../utils/effects';
 
-import styles from './index.module.scss';
+import {
+  hero,
+  heroImg,
+  heroImgMobile,
+  videoContainer,
+  videoContainerVertical,
+} from './index.module.scss';
 
-export default ({ data }) => {
+export default function Home({ data }) {
   const [video, setVideo] = useState();
   const { isMobile } = useDevice();
 
   return (
     <SiteWrapper transparent>
       <HeroImage
-        height={isMobile ? '500px' : '600px'}
-        className={styles.hero}
+        className={hero}
+        imgClassName={classNames(heroImg, { [heroImgMobile]: isMobile })}
         objectPosition="30% 0%"
-        image={data.hero.childImageSharp.fluid}
+        image={getImage(data.hero)}
         title="Enhancing Resident & Family Engagement Through Technology"
         description="Creating technology solutions to enhance the lives of residents, family members and the staff who care for them. LifeLoop is your innovative senior living solution."
       >
         <VideoButton
           text="Enhancing the lives of older adults"
-          image={data.benefitsCallout.childImageSharp.fluid}
+          image={getImage(data.benefitsCallout)}
           onClick={() =>
             setVideo({
               link: 'https://www.youtube-nocookie.com/embed/zOjOiZbJybM',
@@ -107,8 +113,8 @@ export default ({ data }) => {
       <Section centered noTopPadding>
         <FlexContainer direction={isMobile ? 'column' : 'row'}>
           <FlexContainer
-            className={classNames(styles.videoContainer, {
-              [styles.videoContainerVertical]: isMobile,
+            className={classNames(videoContainer, {
+              [videoContainerVertical]: isMobile,
             })}
             flex="1"
             direction="column"
@@ -120,12 +126,15 @@ export default ({ data }) => {
               })
             }
           >
-            <Img fluid={data.connectStaff.childImageSharp.fluid} />
+            <GatsbyImage
+              alt="Connecting Management & Staff"
+              image={getImage(data.connectStaff)}
+            />
             <p>Connecting Management & Staff</p>
           </FlexContainer>
           <FlexContainer
-            className={classNames(styles.videoContainer, {
-              [styles.videoContainerVertical]: isMobile,
+            className={classNames(videoContainer, {
+              [videoContainerVertical]: isMobile,
             })}
             flex="1"
             direction="column"
@@ -137,7 +146,10 @@ export default ({ data }) => {
               })
             }
           >
-            <Img fluid={data.connectFamily.childImageSharp.fluid} />
+            <GatsbyImage
+              alt="Connecting Residents & Family"
+              image={getImage(data.connectFamily)}
+            />
             <p>Connecting Residents & Family</p>
           </FlexContainer>
         </FlexContainer>
@@ -150,44 +162,32 @@ export default ({ data }) => {
       />
     </SiteWrapper>
   );
-};
+}
 
 export const query = graphql`
-  query {
+  {
     hero: file(relativePath: { eq: "home-hero.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-        }
+        gatsbyImageData(quality: 80, layout: CONSTRAINED)
       }
     }
     connectFamily: file(
       relativePath: { eq: "video-callout-connect-family.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 623) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-        }
+        gatsbyImageData(width: 623, layout: CONSTRAINED)
       }
     }
     connectStaff: file(
       relativePath: { eq: "video-callout-connect-staff.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 623) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-        }
+        gatsbyImageData(width: 623, layout: CONSTRAINED)
       }
     }
     benefitsCallout: file(relativePath: { eq: "staff-benefits-callout.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 250) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-        }
+        gatsbyImageData(width: 250, layout: CONSTRAINED)
       }
     }
   }

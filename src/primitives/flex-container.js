@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import styles from './flex-container.module.scss';
+import * as styles from './flex-container.module.scss';
 import { capitalize } from '../utils/lodash';
 
 export default function FlexContainer({

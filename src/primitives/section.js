@@ -5,7 +5,18 @@ import classNames from 'classnames';
 import FlexContainer from './flex-container';
 import Layout from './layout';
 
-import styles from './section.module.scss';
+import {
+  container,
+  containerSecondary,
+  containerCentered,
+  containerNoTopPadding,
+  containerNoBottomPadding,
+  containerFullHeight,
+  containerFullHeightMobile,
+  innerContainer,
+  innerContainerMedium,
+  innerContainerSmall,
+} from './section.module.scss';
 import { useDevice } from '../utils/effects';
 
 export default function Section({
@@ -23,20 +34,20 @@ export default function Section({
     <FlexContainer
       direction="column"
       justify={centered ? 'center' : 'flexstart'}
-      className={classNames(styles.container, className, {
-        [styles.containerSecondary]: secondary,
-        [styles.containerCentered]: centered,
-        [styles.containerNoTopPadding]: noTopPadding,
-        [styles.containerNoBottomPadding]: noBottomPadding,
-        [styles.containerFullHeight]: fullHeight,
-        [styles.containerFullHeightMobile]: fullHeight && isMobile,
+      className={classNames(container, className, {
+        [containerSecondary]: secondary,
+        [containerCentered]: centered,
+        [containerNoTopPadding]: noTopPadding,
+        [containerNoBottomPadding]: noBottomPadding,
+        [containerFullHeight]: fullHeight,
+        [containerFullHeightMobile]: fullHeight && isMobile,
       })}
     >
       <Layout>
         <div
-          className={classNames(styles.innerContainer, {
-            [styles.innerContainerMedium]: width === 'medium',
-            [styles.innerContainerSmall]: width === 'small',
+          className={classNames(innerContainer, {
+            [innerContainerMedium]: width === 'medium',
+            [innerContainerSmall]: width === 'small',
           })}
         >
           {children}

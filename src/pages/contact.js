@@ -22,7 +22,7 @@ const INITIAL_STATE = {
   message: '',
 };
 
-export default () => {
+export default function Contact() {
   const { isTablet } = useDevice();
   const [form, setForm] = useState(INITIAL_STATE);
   const [isLoading, setIsLoading] = useState(false);
@@ -136,4 +136,4 @@ export default () => {
       </Layout>
     </SiteWrapper>
   );
-};
+}

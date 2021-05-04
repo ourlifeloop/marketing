@@ -5,7 +5,7 @@ import SiteWrapper from '../components/site-wrapper';
 import Section from '../primitives/section';
 import Layout from '../primitives/layout';
 
-export default ({ data }) => {
+export default function Accessibility({ data }) {
   const support = <Link to="/support">LifeLoop Support</Link>;
   const phone = (
     <a href={`tel:${data.site.siteMetadata.phoneNumber}`}>
@@ -60,7 +60,7 @@ export default ({ data }) => {
       </Layout>
     </SiteWrapper>
   );
-};
+}
 
 export const query = graphql`
   query {

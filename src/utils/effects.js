@@ -49,6 +49,15 @@ export const useDimensions = () => {
     width: 2000,
   });
 
+  useEffect(
+    () =>
+      setDimensions({
+        width: document.body.clientWidth,
+        height: window.innerHeight,
+      }),
+    [setDimensions],
+  );
+
   useResize(
     debounce(
       () =>

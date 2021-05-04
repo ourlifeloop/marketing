@@ -5,7 +5,7 @@ import FlexContainer from './flex-container';
 import { useDevice } from '../utils/effects';
 import Section from './section';
 
-import styles from './action-callout.module.scss';
+import { callout, calloutText } from './action-callout.module.scss';
 
 export default function ActionCallout({ title, body, button, ...rest }) {
   const { isMini } = useDevice();
@@ -13,10 +13,10 @@ export default function ActionCallout({ title, body, button, ...rest }) {
     <Section width="medium" {...rest}>
       <FlexContainer
         direction={isMini ? 'column' : 'row'}
-        className={styles.callout}
+        className={callout}
         align="center"
       >
-        <FlexContainer className={styles.calloutText} direction="column">
+        <FlexContainer className={calloutText} direction="column">
           <h3>{title}</h3>
           <p>{body}</p>
         </FlexContainer>
@@ -29,5 +29,9 @@ export default function ActionCallout({ title, body, button, ...rest }) {
 ActionCallout.propTypes = {
   title: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,
-  button: PropTypes.node.isRequired,
+  button: PropTypes.node,
+};
+
+ActionCallout.defaultProps = {
+  button: undefined,
 };

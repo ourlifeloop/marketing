@@ -1,12 +1,17 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 
 import FlexContainer from './flex-container';
 import Section from './section';
 import { useDevice } from '../utils/effects';
 
-import styles from './image-section.module.scss';
+import {
+  imgContainer,
+  leftImageText,
+  rightImageText,
+  fullWidth,
+} from './image-section.module.scss';
 
 export default function ImageSection({
   title,
@@ -24,9 +29,9 @@ export default function ImageSection({
       <>
         <Section noTopPadding={!isMobile} noBottomPadding {...rest}>
           <FlexContainer direction="column">
-            <Img
-              fluid={image}
-              className={styles.img}
+            <GatsbyImage
+              alt={title}
+              image={image}
               styles={{
                 maxWidth: image.presentationWidth,
                 margin: '0 auto',
@@ -34,7 +39,7 @@ export default function ImageSection({
             />
           </FlexContainer>
         </Section>
-        <Section width="medium" noTopPadding className={styles.fullWidth}>
+        <Section width="medium" noTopPadding className={fullWidth}>
           <h3>{title}</h3>
           <p>{description}</p>
         </Section>
@@ -45,21 +50,17 @@ export default function ImageSection({
   if (leftImage) {
     content = (
       <FlexContainer align="center">
-        <div className={styles.imgContainer}>
-          <Img
-            fluid={image}
-            className={styles.img}
+        <div className={imgContainer}>
+          <GatsbyImage
+            alt={title}
+            image={image}
             style={{
               maxWidth: image.presentationWidth,
               margin: '0 auto',
             }}
           />
         </div>
-        <FlexContainer
-          flex="1"
-          direction="column"
-          className={styles.leftImageText}
-        >
+        <FlexContainer flex="1" direction="column" className={leftImageText}>
           <h3>{title}</h3>
           <p>{description}</p>
         </FlexContainer>
@@ -68,18 +69,14 @@ export default function ImageSection({
   } else {
     content = (
       <FlexContainer align="center">
-        <FlexContainer
-          flex="1"
-          direction="column"
-          className={styles.rightImageText}
-        >
+        <FlexContainer flex="1" direction="column" className={rightImageText}>
           <h3>{title}</h3>
           <p>{description}</p>
         </FlexContainer>
-        <div className={styles.imgContainer}>
-          <Img
-            fluid={image}
-            className={styles.img}
+        <div className={imgContainer}>
+          <GatsbyImage
+            alt={title}
+            image={image}
             style={{
               maxWidth: image.presentationWidth,
               margin: '0 auto',

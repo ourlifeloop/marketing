@@ -7,7 +7,7 @@ import BlogFooter from '../../components/blog-subscriber';
 import BlogRoll from '../../components/blog-roll';
 import Layout from '../../primitives/layout';
 
-export default ({ data, location }) => {
+export default function NewsBlog({ data, location }) {
   return (
     <SiteWrapper title="Blog | LifeLoop assisted living community management software">
       <Layout>
@@ -17,7 +17,7 @@ export default ({ data, location }) => {
       <BlogFooter />
     </SiteWrapper>
   );
-};
+}
 
 export const query = graphql`
   query NewsQuery {
@@ -36,10 +36,7 @@ export const query = graphql`
             title
             photo {
               childImageSharp {
-                fluid(maxWidth: 500, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                  presentationWidth
-                }
+                gatsbyImageData(width: 500, quality: 90, layout: CONSTRAINED)
               }
             }
           }

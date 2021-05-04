@@ -11,7 +11,7 @@ import residents from '../assets/icons/residents.svg';
 import transportation from '../assets/icons/transportation.svg';
 import designer from '../assets/icons/designer.svg';
 
-export default {
+const NAVIGATION = {
   features: {
     key: 'features',
     name: 'Features',
@@ -573,15 +573,53 @@ export default {
     name: 'Benefits',
     link: '/benefits',
   },
-  ourStory: {
-    key: 'ourStory',
-    name: 'Our Story',
-    link: '/our-story',
+  about: {
+    key: 'about',
+    name: 'About',
+    subNav: {
+      ourStory: {
+        key: 'ourStory',
+        name: 'Our Story',
+        link: '/our-story',
+      },
+      careers: {
+        key: 'careers',
+        name: 'Careers',
+        link: '/careers',
+      },
+    },
   },
   blog: {
     key: 'blog',
-    name: 'Blog',
+    name: 'News',
     link: '/blog/latest',
+    subNav: {
+      latest: {
+        key: 'latest',
+        name: 'Latest',
+        link: '/blog/latest',
+      },
+      customerSpotlight: {
+        key: 'customerSpotlight',
+        name: 'Customer Spotlight',
+        link: '/blog/customer-spotlight',
+      },
+      industryInsights: {
+        key: 'industryInsights',
+        name: 'Industry Insights',
+        link: '/blog/industry-insights',
+      },
+      castStudies: {
+        key: 'castStudies',
+        name: 'Case Studies',
+        link: '/blog/case-studies',
+      },
+      news: {
+        key: 'news',
+        name: 'In the News',
+        link: '/blog/news',
+      },
+    },
   },
   contactUs: {
     key: 'contactUs',
@@ -590,12 +628,12 @@ export default {
   },
 };
 
+export default NAVIGATION;
+
 export const testimonialImages = graphql`
   fragment testimonialImage on File {
     childImageSharp {
-      fluid(maxHeight: 130) {
-        ...GatsbyImageSharpFluid
-      }
+      gatsbyImageData(height: 130, layout: CONSTRAINED, quality: 100)
     }
   }
 

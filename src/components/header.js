@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -15,7 +15,32 @@ import NAVIGATION from '../utils/navigation';
 import Button from '../primitives/button';
 import Layout from '../primitives/layout';
 
-import styles from './header.module.scss';
+import {
+  dropdownContainer,
+  flexLink,
+  dropdown,
+  dropdownLink,
+  dropdownLinkName,
+  minorLink,
+  bannerInner,
+  bannerLink,
+  bannerIcon,
+  siteContainer,
+  header,
+  headerTransparent,
+  headerBannerOffset,
+  headerOpenNav,
+  headerWithShadow,
+  innerContainer,
+  linkContainer,
+  linkElement,
+  logoLink,
+  phone,
+  menuContainer,
+  menuContainerMini,
+  menu,
+  contentContainer,
+} from './header.module.scss';
 
 const TRANSPARENT_START_OPACITY = 0.37;
 const TRANSPARENT_HEADER_END = 400;
@@ -45,7 +70,7 @@ export default function Header({
 
   const { site, logo } = useStaticQuery(
     graphql`
-      query {
+      {
         site {
           siteMetadata {
             phoneNumber
@@ -54,9 +79,7 @@ export default function Header({
         }
         logo: file(relativePath: { eq: "lifeloop-logo.png" }) {
           childImageSharp {
-            fixed(width: 180) {
-              ...GatsbyImageSharpFixed_noBase64
-            }
+            gatsbyImageData(width: 181, placeholder: NONE, layout: CONSTRAINED)
           }
         }
       }
@@ -67,32 +90,28 @@ export default function Header({
     map(NAVIGATION, ({ key, name, link, subNav }) => {
       if (!subNav) {
         return (
-          <Link key={key} className={styles.link} to={link} aria-label={name}>
+          <Link key={key} className={linkElement} to={link} aria-label={name}>
             {name}
           </Link>
         );
       }
       return (
-        <FlexContainer
-          key={key}
-          className={styles.dropdownContainer}
-          align="center"
-        >
-          <Link className={styles.flexLink} to={values(subNav)[0].link}>
+        <FlexContainer key={key} className={dropdownContainer} align="center">
+          <Link className={flexLink} to={values(subNav)[0].link}>
             {name}
             <ChevronDown size={15} />
           </Link>
-          <div className={styles.dropdown}>
+          <div className={dropdown}>
             {map(subNav, ({ key, name, Icon, link }) => (
               <Link
                 key={key}
                 to={link}
-                className={styles.dropdownLink}
+                className={dropdownLink}
                 aria-label={name}
               >
                 <FlexContainer align="center">
-                  <Icon />
-                  {name}
+                  {!!Icon && <Icon />}
+                  <span className={dropdownLinkName}>{name}</span>
                 </FlexContainer>
               </Link>
             ))}
@@ -104,14 +123,14 @@ export default function Header({
   const renderExternalLinks = () => (
     <FlexContainer justify="flexend">
       <Link
-        className={styles.minorLink}
+        className={minorLink}
         aria-label="LifeLoop Training"
         to="/training/staff"
       >
         Training
       </Link>
       <a
-        className={styles.minorLink}
+        className={minorLink}
         aria-label="LifeLoop Login"
         target="_blank"
         rel="noopener noreferrer"
@@ -133,21 +152,17 @@ export default function Header({
     contentOffset += 40;
     mobileOffset += 40;
     headerBanner = (
-      <Link to={banner.link} className={styles.bannerLink}>
-        <FlexContainer
-          align="center"
-          justify="center"
-          className={styles.banner}
-        >
+      <Link to={banner.link} className={bannerLink}>
+        <FlexContainer align="center" justify="center" className={bannerInner}>
           {banner.text}
-          <ArrowRight className={styles.bannerIcon} size={18} />
+          <ArrowRight className={bannerIcon} size={18} />
         </FlexContainer>
       </Link>
     );
   }
 
   return (
-    <div className={styles.siteContainer}>
+    <div className={siteContainer}>
       <MobileDropdown isOpen={isNavOpen} offset={mobileOffset} />
       {headerBanner}
       <header
@@ -156,11 +171,11 @@ export default function Header({
             ? 'white'
             : `rgba(256, 256, 256, ${opacity})`,
         }}
-        className={classNames(styles.header, {
-          [styles.headerTransparent]: transparent,
-          [styles.headerBannerOffset]: headerBanner,
-          [styles.headerOpenNav]: isNavOpen,
-          [styles.headerWithShadow]:
+        className={classNames(header, {
+          [headerTransparent]: transparent,
+          [headerBannerOffset]: headerBanner,
+          [headerOpenNav]: isNavOpen,
+          [headerWithShadow]:
             transparent && scrollPosition === TRANSPARENT_HEADER_END,
         })}
       >
@@ -180,19 +195,17 @@ export default function Header({
         <Layout>
           <FlexContainer direction="column">
             {isDesktop && renderExternalLinks()}
-            <FlexContainer
-              justify="spacebetween"
-              className={styles.innerContainer}
-            >
+            <FlexContainer justify="spacebetween" className={innerContainer}>
               <FlexContainer align="center">
                 <Link
-                  className={classNames(styles.linkContainer)}
+                  className={classNames(linkContainer)}
                   to="/"
-                  aria-label="Lifeloop Home"
+                  aria-label="LifeLoop Home"
                 >
-                  <Img
-                    fixed={logo.childImageSharp.fixed}
-                    className={styles.logoLink}
+                  <GatsbyImage
+                    alt="LifeLoop, LLC"
+                    image={getImage(logo)}
+                    className={logoLink}
                   />
                 </Link>
                 {isDesktop && renderDesktopLinks()}
@@ -205,7 +218,7 @@ export default function Header({
                 <FlexContainer align="center">
                   {!isMobile && (
                     <a
-                      className={styles.phone}
+                      className={phone}
                       href={`tel:${site.siteMetadata.phoneNumber}`}
                     >
                       Call us: <b>{site.siteMetadata.phoneNumber}</b>
@@ -219,19 +232,19 @@ export default function Header({
                   {!isDesktop && (
                     <FlexContainer
                       align="center"
-                      className={classNames(styles.menuContainer, {
-                        [styles.menuContainerMini]: isMini,
+                      className={classNames(menuContainer, {
+                        [menuContainerMini]: isMini,
                       })}
                     >
                       {isNavOpen ? (
                         <X
-                          className={styles.menu}
+                          className={menu}
                           size={50}
                           onClick={() => setIsNavOpen(false)}
                         />
                       ) : (
                         <Menu
-                          className={styles.menu}
+                          className={menu}
                           size={50}
                           onClick={() => setIsNavOpen(true)}
                         />
@@ -247,7 +260,7 @@ export default function Header({
       <div
         ref={containerRef}
         style={{ top: contentOffset }}
-        className={styles.contentContainer}
+        className={contentContainer}
       >
         {children}
       </div>

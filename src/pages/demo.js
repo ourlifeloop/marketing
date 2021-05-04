@@ -54,7 +54,7 @@ const INITIAL_STATE = {
 
 const arrayToOptions = arr => arr.map(str => ({ label: str, value: str }));
 
-export default ({ data }) => {
+export default function Demo({ data }) {
   const { isTablet } = useDevice();
   const [form, setForm] = useState(INITIAL_STATE);
   const [isLoading, setIsLoading] = useState(false);
@@ -218,7 +218,7 @@ export default ({ data }) => {
       </Layout>
     </SiteWrapper>
   );
-};
+}
 
 export const query = graphql`
   query {

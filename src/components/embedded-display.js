@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 import Section from '../primitives/section';
 
-import styles from './embedded-display.module.scss';
+import { container, aspectRatio } from './embedded-display.module.scss';
 
 export default function EmbeddedDisplay({ url }) {
   return (
     <Section noTopPadding>
-      <div className={styles.container}>
-        <div className={styles.aspectRatio}>
+      <div className={container}>
+        <div className={aspectRatio}>
           <iframe
             title="Lifeloop Display"
             src={url}

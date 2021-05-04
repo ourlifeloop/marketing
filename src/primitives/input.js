@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Select from 'react-select';
 
-import styles from './input.module.scss';
+import { input, inputError, textarea } from './input.module.scss';
 
 export default function Input({ className, isError, type, ...rest }) {
   if (type === 'select') {
@@ -13,8 +13,8 @@ export default function Input({ className, isError, type, ...rest }) {
     return (
       <textarea
         {...rest}
-        className={classNames(styles.input, styles.textarea, className, {
-          [styles.inputError]: isError,
+        className={classNames(input, textarea, className, {
+          [inputError]: isError,
         })}
       />
     );
@@ -23,8 +23,8 @@ export default function Input({ className, isError, type, ...rest }) {
     <input
       {...rest}
       type={type}
-      className={classNames(styles.input, className, {
-        [styles.inputError]: isError,
+      className={classNames(input, className, {
+        [inputError]: isError,
       })}
     />
   );

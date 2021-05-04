@@ -1,11 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 
 import FeatureWrapper from '../../components/feature-wrapper';
 import TitleSection from '../../primitives/title.section';
 import ImageSection from '../../primitives/image-section';
 
-export default ({ data, location }) => {
+export default function ResidentTrackingFeature({ data, location }) {
   return (
     <FeatureWrapper
       pathname={location.pathname}
@@ -26,76 +27,86 @@ export default ({ data, location }) => {
         leftImage
         title="Quantify Your Life Enrichment"
         description="With LifeLoop’s reporting feature, you can build robust activity calendars based on your residents likes. Easily identify the most popular and least popular activities every month which allows you to measure, manage and optimize resident engagement."
-        image={data.quantify.childImageSharp.fluid}
+        image={getImage(data.quantify)}
       />
       <ImageSection
         rightImage
         title="Empower Your Staff"
         description="Metrics can be shared between your staff and the resident’s family to track individual needs and create personalized care plans. LifeLoop’s dynamic resident reports can be created for a community, for a specific resident or by activity."
-        image={data.empower.childImageSharp.fluid}
+        image={getImage(data.empower)}
       />
       <ImageSection
         leftImage
         title="Person-Centered Care"
         description="Understanding the residents flow of information is essential to maximizing their level of care and proactively identifying their needs. Capturing the full picture is the key to implementing person-centered care all while providing you with a distinct perspective into your residents’ lives."
-        image={data.care.childImageSharp.fluid}
+        image={getImage(data.care)}
       />
       <ImageSection
         rightImage
         title="Create Efficiencies"
         description="LifeLoop helps your staff create work flow efficiencies and slash documentation time. All that time spent ticking boxes and charting participation is time that can be spent dreaming up new activities or in direct contact with residents."
-        image={data.efficiencies.childImageSharp.fluid}
+        image={getImage(data.efficiencies)}
       />
       <ImageSection
         leftImage
         title="A Trusted, HIPAA Compliant Platform"
         description="Keep all of your information in one, trusted location, accessible through one entry point. LifeLoop is fully complaint with HIPAA and can integrate with your clinical software."
-        image={data.hipaa.childImageSharp.fluid}
+        image={getImage(data.hipaa)}
       />
     </FeatureWrapper>
   );
-};
+}
 
 export const query = graphql`
-  query {
+  {
     efficiencies: file(relativePath: { eq: "create-efficiencies.png" }) {
       childImageSharp {
-        fluid(maxHeight: 600) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-        }
+        gatsbyImageData(
+          height: 600
+          layout: CONSTRAINED
+          quality: 80
+          placeholder: BLURRED
+        )
       }
     }
     empower: file(relativePath: { eq: "empower-staff.png" }) {
       childImageSharp {
-        fluid(maxHeight: 600) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-        }
+        gatsbyImageData(
+          height: 600
+          layout: CONSTRAINED
+          quality: 80
+          placeholder: BLURRED
+        )
       }
     }
     hipaa: file(relativePath: { eq: "hipaa-compliant.png" }) {
       childImageSharp {
-        fluid(maxHeight: 600) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-        }
+        gatsbyImageData(
+          height: 600
+          layout: CONSTRAINED
+          quality: 80
+          placeholder: BLURRED
+        )
       }
     }
     care: file(relativePath: { eq: "person-centered-care.png" }) {
       childImageSharp {
-        fluid(maxHeight: 600) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-        }
+        gatsbyImageData(
+          height: 600
+          layout: CONSTRAINED
+          quality: 80
+          placeholder: BLURRED
+        )
       }
     }
     quantify: file(relativePath: { eq: "quantify-life-enrichment.png" }) {
       childImageSharp {
-        fluid(maxHeight: 600) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-        }
+        gatsbyImageData(
+          height: 600
+          layout: CONSTRAINED
+          quality: 80
+          placeholder: BLURRED
+        )
       }
     }
   }

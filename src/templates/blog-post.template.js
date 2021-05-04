@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { graphql } from 'gatsby';
 
 import BlogSubscriber from '../components/blog-subscriber';
@@ -16,7 +16,11 @@ export default function BlogPostTemplate({ data }) {
         {...frontmatter}
         postUrl={`${site.siteMetadata.displayUrl}${fields.slug}`}
         html={<div dangerouslySetInnerHTML={{ __html: html }} />}
-        photo={!!photo && <Img fluid={photo.childImageSharp.fluid} />}
+        photo={
+          !!photo && (
+            <GatsbyImage image={photo.childImageSharp.gatsbyImageData} />
+          )
+        }
       />
       <BlogSubscriber />
     </SiteWrapper>
@@ -36,10 +40,7 @@ export const query = graphql`
         author
         photo {
           childImageSharp {
-            fluid(maxWidth: 1000, quality: 80) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-            }
+            gatsbyImageData(quality: 80, layout: CONSTRAINED)
           }
         }
       }

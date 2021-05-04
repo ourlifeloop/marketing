@@ -29,6 +29,14 @@ collections:
       - { name: photo, label: Photo, widget: image, required: false }
       - { name: body, label: Body, widget: markdown }
 
+  - name: careers
+    label: Careers
+    folder: src/cms/careers
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: link, label: Link }
+
   - name: training-videos
     label: Training Videos
     folder: src/cms/training-videos

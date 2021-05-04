@@ -8,7 +8,7 @@ $border-height: 1px;
   margin: 0.5rem 0;
 }
 
-.header {
+.headerItem {
   padding: $vertical-padding 0;
   position: relative;
 }
@@ -19,24 +19,11 @@ $border-height: 1px;
   width: 100%;
 }
 
-.title {
+.titleItem {
   margin: 0 0 0 1.2rem;
   font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
   font-size: variableSize(25, 35);
   font-weight: 100;
-}
-
-.link {
-  color: $text;
-  font-size: 0.8rem;
-  margin-left: 1.8rem;
-  padding: 1rem 0;
-  text-decoration: none;
-  transition: color 0.2s linear;
-
-  &:hover {
-    color: $text-highlight;
-  }
 }
 
 .minorLink {

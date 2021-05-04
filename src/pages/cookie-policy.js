@@ -4,7 +4,7 @@ import SiteWrapper from '../components/site-wrapper';
 import Section from '../primitives/section';
 import Layout from '../primitives/layout';
 
-export default () => {
+export default function CookiePolicy() {
   return (
     <SiteWrapper>
       <Layout>
@@ -112,4 +112,4 @@ export default () => {
       </Layout>
     </SiteWrapper>
   );
-};
+}

@@ -8,7 +8,13 @@ import { removeTrailingSlash } from '../utils/common';
 import { useDevice } from '../utils/effects';
 import { find } from '../utils/lodash';
 
-import styles from './blog-header.module.scss';
+import {
+  select,
+  link,
+  linkActive,
+  container,
+  containerVertical,
+} from './blog-header.module.scss';
 
 const BLOG_TYPES = [
   { label: 'Latest', value: '/blog/latest' },
@@ -18,13 +24,13 @@ const BLOG_TYPES = [
   { label: 'News', value: '/blog/news' },
 ];
 
-export default ({ pathname }) => {
+export default function BlogHeader({ pathname }) {
   const { isMini, isMobile } = useDevice();
   let links;
   if (isMobile) {
     links = (
       <Select
-        className={styles.select}
+        className={select}
         options={BLOG_TYPES}
         value={find(BLOG_TYPES, { value: removeTrailingSlash(pathname) })}
         onChange={({ value }) => navigate(value)}
@@ -38,8 +44,8 @@ export default ({ pathname }) => {
             key={value}
             to={value}
             partiallyActive
-            className={styles.link}
-            activeClassName={styles.linkActive}
+            className={link}
+            activeClassName={linkActive}
           >
             {label}
           </Link>
@@ -52,12 +58,12 @@ export default ({ pathname }) => {
       align="center"
       direction={isMini ? 'column' : 'row'}
       justify="spacebetween"
-      className={classNames(styles.container, {
-        [styles.containerVertical]: isMini,
+      className={classNames(container, {
+        [containerVertical]: isMini,
       })}
     >
       <h1>The Loop</h1>
       {links}
     </FlexContainer>
   );
-};
+}

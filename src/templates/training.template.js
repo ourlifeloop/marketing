@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import UserTraining from '../components/user-training';
 import { uniq, flatten } from '../utils/lodash';
 
-export default ({ data, pageContext }) => {
+export default function TraningTemplate({ data, pageContext }) {
   const faqs = data.faqs.edges.map(({ node }) => node.frontmatter);
   const topics = uniq(
     flatten(data.topics.edges.map(({ node }) => node.frontmatter.topics)),
@@ -13,7 +13,7 @@ export default ({ data, pageContext }) => {
   return (
     <UserTraining userType={pageContext.userType} topics={topics} faqs={faqs} />
   );
-};
+}
 
 export const query = graphql`
   query($userType: String!) {

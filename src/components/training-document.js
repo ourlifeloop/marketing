@@ -4,7 +4,13 @@ import { createDownload, iconForExtension } from '../utils/common';
 import FlexContainer from '../primitives/flex-container';
 import { Download } from '../utils/icons';
 
-import styles from './training-document.module.scss';
+import {
+  row,
+  docType,
+  textContainer,
+  subText,
+  icon,
+} from './training-document.module.scss';
 
 export default function TrainingDocument({ title, document }) {
   const { publicURL, prettySize, extension, changeTime } = document;
@@ -13,7 +19,7 @@ export default function TrainingDocument({ title, document }) {
     <FlexContainer
       align="center"
       justify="spacebetween"
-      className={styles.row}
+      className={row}
       onClick={() =>
         createDownload({
           url: publicURL,
@@ -22,15 +28,15 @@ export default function TrainingDocument({ title, document }) {
       }
     >
       <FlexContainer align="center">
-        <Icon className={styles.docType} />
-        <FlexContainer direction="column" className={styles.textContainer}>
-          <div className={styles.title}>
+        <Icon className={docType} />
+        <FlexContainer direction="column" className={textContainer}>
+          <div className={title}>
             {title} ({prettySize})
           </div>
-          <div className={styles.subText}>Last Updated {changeTime}</div>
+          <div className={subText}>Last Updated {changeTime}</div>
         </FlexContainer>
       </FlexContainer>
-      <Download size={30} className={styles.icon} />
+      <Download size={30} className={icon} />
     </FlexContainer>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { getImage } from 'gatsby-plugin-image';
 import { Link, useStaticQuery, graphql, navigate } from 'gatsby';
 
 import FeatureDropdown from '../primitives/feature-dropdown';
@@ -10,7 +11,13 @@ import HeroImage from '../primitives/hero-image';
 import NAVIGATION from '../utils/navigation';
 import Layout from '../primitives/layout';
 
-import styles from './feature-header.module.scss';
+import {
+  container,
+  linkItem,
+  linkItemActive,
+  nameItem,
+  icon,
+} from './feature-header.module.scss';
 import { useDevice } from '../utils/effects';
 
 const FEATURE_OPTIONS = map(
@@ -26,13 +33,10 @@ export default function FeatureHeader({ pathname }) {
   const { isTablet } = useDevice();
   const { hero } = useStaticQuery(
     graphql`
-      query {
+      {
         hero: file(relativePath: { eq: "features-hero.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1920) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-            }
+            gatsbyImageData(quality: 80, layout: CONSTRAINED)
           }
         }
       }
@@ -52,7 +56,7 @@ export default function FeatureHeader({ pathname }) {
     );
   } else {
     subNav = (
-      <div className={styles.container} id="features">
+      <div className={container} id="features">
         <Layout>
           <FlexContainer>
             {map(
@@ -61,13 +65,13 @@ export default function FeatureHeader({ pathname }) {
                 <Link
                   key={key}
                   to={`${link}#features`}
-                  className={classNames(styles.link, {
-                    [styles.linkActive]: startsWith(pathname, link),
+                  className={classNames(linkItem, {
+                    [linkItemActive]: startsWith(pathname, link),
                   })}
                 >
                   <FlexContainer direction="column" align="center">
-                    <Icon className={styles.icon} />
-                    <span className={styles.name}>{shortName || name}</span>
+                    {!!Icon && <Icon className={icon} />}
+                    <span className={nameItem}>{shortName || name}</span>
                   </FlexContainer>
                 </Link>
               ),
@@ -84,11 +88,9 @@ export default function FeatureHeader({ pathname }) {
         direction="right"
         height="400px"
         objectPosition="30% 92%"
-        image={hero.childImageSharp.fluid}
+        image={getImage(hero)}
         title="Enhancing Resident & Family Engagement Through Technology"
-        description="Adapting technology solutions in a way to enhance the lives of
-        residents and the staff members and family who care for them. LifeLoop
-        is your full-service senior living solution."
+        description="Adapting technology solutions in a way to enhance the lives of residents and the staff members and family who care for them. LifeLoop is your full-service senior living solution."
       />
       {subNav}
     </>

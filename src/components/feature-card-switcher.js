@@ -1,7 +1,7 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import RelativeContainer from '../primitives/relative-container';
 import { useDimensions, useDevice } from '../utils/effects';
@@ -12,7 +12,28 @@ import NAVIGATION from '../utils/navigation';
 import Section from '../primitives/section';
 import Button from '../primitives/button';
 
-import styles from './feature-card-switcher.module.scss';
+import {
+  mobileContainer,
+  mobileImageContainer,
+  tabletText,
+  bulletItem,
+  bulletContainer,
+  check,
+  tabletImage,
+  relativeContainer,
+  imageContainer,
+  container,
+  navContainer,
+  iconContainer,
+  iconContainerSelected,
+  icon,
+  iconTitle,
+  dropdownContainer,
+  dropdownContainerOpen,
+  dropdown,
+  dropdownLink,
+  contentContainer,
+} from './feature-card-switcher.module.scss';
 
 const FEATURES = [
   {
@@ -172,7 +193,7 @@ const FEATURES = [
   },
 ];
 
-export default () => {
+export default function FeatureCardSwitcher() {
   const { width } = useDimensions();
   const { isMobile, isTablet } = useDevice();
   const [isOverflowOpen, setIsOverflowOpen] = useState(false);
@@ -180,91 +201,61 @@ export default () => {
 
   const photos = useStaticQuery(
     graphql`
-      query {
+      {
         dataInformed: file(relativePath: { eq: "data-informed.png" }) {
           childImageSharp {
-            fluid(maxWidth: 637) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-            }
+            gatsbyImageData(width: 637, layout: CONSTRAINED)
           }
         }
         person: file(relativePath: { eq: "person-centered-care.png" }) {
           childImageSharp {
-            fluid(maxWidth: 637) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-            }
+            gatsbyImageData(width: 637, layout: CONSTRAINED)
           }
         }
         transparency: file(
           relativePath: { eq: "transparency-with-family.png" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 637) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-            }
+            gatsbyImageData(width: 637, layout: CONSTRAINED)
           }
         }
         organize: file(relativePath: { eq: "organize-community-photos.png" }) {
           childImageSharp {
-            fluid(maxWidth: 637) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-            }
+            gatsbyImageData(width: 637, layout: CONSTRAINED)
           }
         }
         sync: file(relativePath: { eq: "seamlessly-sync.png" }) {
           childImageSharp {
-            fluid(maxWidth: 637) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-            }
+            gatsbyImageData(width: 637, layout: CONSTRAINED, placeholder: NONE)
           }
         }
         inform: file(relativePath: { eq: "inform-your-staff.png" }) {
           childImageSharp {
-            fluid(maxWidth: 637) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-            }
+            gatsbyImageData(width: 637, layout: CONSTRAINED)
           }
         }
         customize: file(relativePath: { eq: "customize-requests.png" }) {
           childImageSharp {
-            fluid(maxWidth: 637) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-            }
+            gatsbyImageData(width: 637, layout: CONSTRAINED)
           }
         }
         management: file(
           relativePath: { eq: "full-maintenance-management-system.png" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 637) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-            }
+            gatsbyImageData(width: 637, layout: CONSTRAINED)
           }
         }
         independence: file(relativePath: { eq: "maximize-independence.png" }) {
           childImageSharp {
-            fluid(maxWidth: 637) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-            }
+            gatsbyImageData(width: 637, layout: CONSTRAINED)
           }
         }
         newsletterDesigner: file(
           relativePath: { eq: "newsletter-designer.png" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 637) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-            }
+            gatsbyImageData(width: 637, layout: CONSTRAINED)
           }
         }
       }
@@ -292,15 +283,15 @@ export default () => {
             key={name}
             direction="column"
             align="center"
-            className={styles.mobileContainer}
+            className={mobileContainer}
           >
             <h4>{headline}</h4>
             <p>{body}</p>
             <Link to={link}>
               <Button>{name}</Button>
             </Link>
-            <div className={styles.mobileImageContainer}>
-              <Img fluid={photos[image].childImageSharp.fluid} />
+            <div className={mobileImageContainer}>
+              <GatsbyImage alt={name} image={getImage(photos[image])} />
             </div>
           </FlexContainer>
         ))}
@@ -316,7 +307,7 @@ export default () => {
         flex="1"
         direction="column"
         align={isTablet ? 'center' : 'flexstart'}
-        className={classNames({ [styles.tabletText]: isTablet })}
+        className={classNames({ [tabletText]: isTablet })}
       >
         <h4>{headline}</h4>
         <p>{body}</p>
@@ -325,10 +316,10 @@ export default () => {
             <FlexContainer
               key={bullet}
               align="center"
-              className={styles.bulletContainer}
+              className={bulletContainer}
             >
-              <Check className={styles.check} />
-              <p className={styles.bullet}>{bullet}</p>
+              <Check className={check} />
+              <p className={bulletItem}>{bullet}</p>
             </FlexContainer>
           ))}
         <Link to={link}>
@@ -336,14 +327,14 @@ export default () => {
         </Link>
       </FlexContainer>
       {isTablet ? (
-        <div className={styles.tabletImage}>
-          <Img fluid={photos[image].childImageSharp.fluid} />
+        <div className={tabletImage}>
+          <GatsbyImage alt={name} image={getImage(photos[image])} />
         </div>
       ) : (
         <FlexContainer flex="1">
-          <RelativeContainer className={styles.relativeContainer}>
-            <div className={styles.imageContainer}>
-              <Img fluid={photos[image].childImageSharp.fluid} />
+          <RelativeContainer className={relativeContainer}>
+            <div className={imageContainer}>
+              <GatsbyImage alt={name} image={getImage(photos[image])} />
             </div>
           </RelativeContainer>
         </FlexContainer>
@@ -353,21 +344,21 @@ export default () => {
 
   return (
     <Section>
-      <FlexContainer direction="column" className={styles.container}>
-        <FlexContainer justify="center" className={styles.navContainer}>
+      <FlexContainer direction="column" className={container}>
+        <FlexContainer justify="center" className={navContainer}>
           {featureList.map(({ key, name, Icon }) => (
             <FlexContainer
               align="center"
               justify="center"
               key={key}
               direction="column"
-              className={classNames(styles.iconContainer, {
-                [styles.iconContainerSelected]: key === selected,
+              className={classNames(iconContainer, {
+                [iconContainerSelected]: key === selected,
               })}
               onClick={() => setSelected(key)}
             >
-              <Icon className={styles.icon} />
-              <p className={styles.iconTitle}>{name}</p>
+              <Icon className={icon} />
+              <p className={iconTitle}>{name}</p>
             </FlexContainer>
           ))}
           {numTabs < FEATURES.length && (
@@ -375,32 +366,28 @@ export default () => {
               align="center"
               justify="center"
               direction="column"
-              className={classNames(
-                styles.iconContainer,
-                styles.dropdownContainer,
-                {
-                  [styles.dropdownContainerOpen]: isOverflowOpen,
-                  [styles.iconContainerSelected]: find(overflowList, {
-                    key: selected,
-                  }),
-                },
-              )}
+              className={classNames(iconContainer, dropdownContainer, {
+                [dropdownContainerOpen]: isOverflowOpen,
+                [iconContainerSelected]: find(overflowList, {
+                  key: selected,
+                }),
+              })}
               onClick={() => setIsOverflowOpen(!isOverflowOpen)}
             >
               <MoreHorizontal
-                className={styles.icon}
+                className={icon}
                 width="50px"
                 height="50px"
                 strokeWidth="2"
                 stroke="currentColor"
               />
-              <p className={styles.iconTitle}>More</p>
-              <div className={styles.dropdown}>
+              <p className={iconTitle}>More</p>
+              <div className={dropdown}>
                 {overflowList.map(({ key, name, Icon }) => (
                   <FlexContainer
                     key={key}
                     align="center"
-                    className={styles.dropdownLink}
+                    className={dropdownLink}
                     aria-label={name}
                     onClick={() => setSelected(key)}
                   >
@@ -414,11 +401,11 @@ export default () => {
         </FlexContainer>
         <FlexContainer
           direction={isTablet ? 'column' : 'row'}
-          className={styles.contentContainer}
+          className={contentContainer}
         >
           {content}
         </FlexContainer>
       </FlexContainer>
     </Section>
   );
-};
+}

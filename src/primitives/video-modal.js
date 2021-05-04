@@ -21,7 +21,7 @@ const modalStyle = {
   },
 };
 
-export default ({ isOpen, onClose, link, title }) => {
+export default function VideoModal({ isOpen, onClose, link, title }) {
   return (
     <ReactModal
       style={modalStyle}
@@ -31,4 +31,4 @@ export default ({ isOpen, onClose, link, title }) => {
       <ResponsiveEmbed src={link} title={title} />
     </ReactModal>
   );
-};
+}

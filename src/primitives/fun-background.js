@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './fun-background.module.scss';
+import { canvasElement } from './fun-background.module.scss';
 import { random } from '../utils/lodash';
 
 const DENSITY_MOD = 1.2;
@@ -117,7 +117,7 @@ export default function FunBackground({ width, height, checkPosition }) {
       ref={canvas}
       width={width * ratio}
       height={height * ratio}
-      className={styles.canvas}
+      className={canvasElement}
       style={{ width, height }}
     />
   );

@@ -1,10 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import styles from './relative-container.module.scss';
+import { container } from './relative-container.module.scss';
 
-export default ({ children, className, ...rest }) => (
-  <div {...rest} className={classNames(styles.container, className)}>
-    {children}
-  </div>
-);
+export default function RelativeContainer({ children, className, ...rest }) {
+  return (
+    <div {...rest} className={classNames(container, className)}>
+      {children}
+    </div>
+  );
+}

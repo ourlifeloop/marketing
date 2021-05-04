@@ -1,0 +1,90 @@
+@import '../styles/theme';
+@import '../styles/utils';
+
+.titleSection {
+  background-color: $background-secondary;
+}
+
+.sectionText {
+  font-size: variableSize(18, 28);
+  margin: 3rem 0;
+  width: 100%;
+}
+
+.titleText {
+  @extend .sectionText;
+  font-size: variableSize(45, 60);
+  font-weight: 300;
+  line-height: variableSize(55, 70);
+}
+
+.meetingImage {
+  width: 100%;
+  height: variableSize(200, 600);
+}
+
+.actionImage {
+  height: auto;
+  max-height: 300px;
+  width: calc(100% / 3);
+
+  &--tablet {
+    width: calc(100% / 2);
+  }
+
+  &--mobile {
+    width: 100%;
+  }
+}
+
+$weAreMargin: 1rem;
+.weAreWrapper {
+  margin: #{-$weAreMargin / 2} #{-$weAreMargin};
+}
+
+.weAre {
+  background-color: $background;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px 2px $highlight;
+  font-size: variableSize(18, 28);
+  height: variableSize(120, 160);
+  margin: #{$weAreMargin / 2} $weAreMargin;
+  max-height: 160px;
+  padding: #{$weAreMargin / 2};
+  text-align: center;
+  width: calc(100% / 3 - #{$weAreMargin * 2});
+
+  &--collapsed {
+    width: calc(100% / 2 - #{$weAreMargin * 2});
+  }
+}
+
+.positionLink {
+  color: inherit;
+  display: block;
+
+  &:last-of-type {
+    border-bottom: 1px solid $background-dark;
+  }
+}
+
+.openPosition {
+  border-top: 1px solid $background-dark;
+  font-size: variableSize(16, 22);
+  font-weight: bold;
+  padding: 1.6rem 0;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $primary-blue;
+
+    .linkIcon {
+      color: $primary-blue;
+    }
+  }
+}
+
+.linkIcon {
+  margin: 0 1rem;
+  transition: color 0.2s;
+}

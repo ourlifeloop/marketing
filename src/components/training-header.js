@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -13,7 +13,16 @@ import { removeTrailingSlash } from '../utils/common';
 import Button from '../primitives/button';
 import Layout from '../primitives/layout';
 
-import styles from './training-header.module.scss';
+import {
+  headerItem,
+  minorLink,
+  minorIcon,
+  innerContainer,
+  linkContainer,
+  logoLink,
+  phone,
+  titleItem,
+} from './training-header.module.scss';
 
 export default function TrainingHeader({
   header,
@@ -28,7 +37,7 @@ export default function TrainingHeader({
   const { isMobile, isTablet } = useDevice();
   const { site, logo } = useStaticQuery(
     graphql`
-      query {
+      {
         site {
           siteMetadata {
             phoneNumber
@@ -37,9 +46,7 @@ export default function TrainingHeader({
         }
         logo: file(relativePath: { eq: "lifeloop-logo.png" }) {
           childImageSharp {
-            fixed(width: 180) {
-              ...GatsbyImageSharpFixed_noBase64
-            }
+            gatsbyImageData(width: 180, placeholder: NONE, layout: FIXED)
           }
         }
       }
@@ -51,7 +58,7 @@ export default function TrainingHeader({
   }, [width]);
 
   return (
-    <header className={styles.header} ref={containerRef}>
+    <header className={headerItem} ref={containerRef}>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -73,37 +80,32 @@ export default function TrainingHeader({
       <Layout>
         <FlexContainer direction="column">
           <FlexContainer justify="flexend">
-            <Link to="/" className={styles.minorLink}>
+            <Link to="/" className={minorLink}>
               <FlexContainer align="center">
                 Return to Website
-                <LogOut className={styles.minorIcon} size={16} />
+                <LogOut className={minorIcon} size={16} />
               </FlexContainer>
             </Link>
           </FlexContainer>
-          <FlexContainer
-            justify="spacebetween"
-            className={styles.innerContainer}
-          >
+          <FlexContainer justify="spacebetween" className={innerContainer}>
             <Link
-              className={classNames(styles.linkContainer)}
+              className={classNames(linkContainer)}
               to={`/training/${userType}`}
-              aria-label="Lifeloop Home"
+              aria-label="LifeLoop Home"
             >
               <FlexContainer align="center">
-                <Img
-                  fixed={logo.childImageSharp.fixed}
-                  className={styles.logoLink}
+                <GatsbyImage
+                  image={logo.childImageSharp.gatsbyImageData}
+                  className={logoLink}
                 />
-                {!isMobile && (
-                  <h2 className={styles.title}>Learning Community</h2>
-                )}
+                {!isMobile && <h2 className={titleItem}>Learning Community</h2>}
               </FlexContainer>
             </Link>
             <FlexContainer direction="column" justify="center" align="flexend">
               <FlexContainer align="center">
                 {!isTablet && (
                   <a
-                    className={styles.phone}
+                    className={phone}
                     href={`tel:${site.siteMetadata.phoneNumber}`}
                   >
                     Support: <b>{site.siteMetadata.phoneNumber}</b>

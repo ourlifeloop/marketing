@@ -13,6 +13,7 @@ module.exports = {
         name: 'images',
       },
     },
+    'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -33,12 +34,10 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          {
-            resolve: 'gatsby-remark-relative-images-v2',
-          },
+          'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-images',
-            options: { maxWidth: 700 },
+            options: { maxWidth: 700, linkImagesToOriginal: false },
           },
         ],
       },
@@ -54,7 +53,19 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-favicon',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name:
+          'LifeLoop assisted living community management software: connecting families, residents and communities.',
+        short_name: 'LifeLoop',
+        start_url: '/',
+        background_color: '#f6f8fa',
+        theme_color: '#0186ed',
+        display: 'standalone',
+        icon: 'src/favicon.png',
+      },
+    },
     'gatsby-plugin-react-svg',
     {
       resolve: 'gatsby-plugin-netlify-cms',

@@ -9,9 +9,22 @@ import { ChevronDown } from '../utils/icons';
 import NAVIGATION from '../utils/navigation';
 import Button from '../primitives/button';
 import Layout from '../primitives/layout';
-import { map } from '../utils/lodash';
 
-import styles from './mobile-dropdown.module.scss';
+import {
+  mobilePanel,
+  mobilePanelOpen,
+  innerContainer,
+  layout,
+  linkItem,
+  linkIcon,
+  linkIconOpen,
+  featuresContainer,
+  featuresContainerOpen,
+  featureLink,
+  featureLinkFullWidth,
+  minorLink,
+  requestButton,
+} from './mobile-dropdown.module.scss';
 
 export default function MobileDropdown({ isOpen, offset }) {
   const { isMobile } = useDevice();
@@ -27,20 +40,25 @@ export default function MobileDropdown({ isOpen, offset }) {
     `,
   );
 
-  const [isFeaturesOpen, setIsFeaturesOpen] = useState(true);
+  const [openState, setOpenState] = useState(
+    Object.values(NAVIGATION)
+      .filter(nav => !!nav.subNav)
+      .reduce((obj, nav) => ({ ...obj, [nav.key]: true }), {}),
+  );
+
   return (
     <div
-      className={classNames(styles.mobilePanel, {
-        [styles.mobilePanelOpen]: isOpen,
+      className={classNames(mobilePanel, {
+        [mobilePanelOpen]: isOpen,
       })}
     >
-      <div className={styles.innerContainer} style={{ paddingTop: offset }}>
+      <div className={innerContainer} style={{ paddingTop: offset }}>
         <Layout>
-          <FlexContainer direction="column" className={styles.layout}>
-            {map(NAVIGATION, ({ key, name, link, subNav }) => {
+          <FlexContainer direction="column" className={layout}>
+            {Object.values(NAVIGATION).map(({ key, name, link, subNav }) => {
               if (!subNav) {
                 return (
-                  <Link key={key} className={styles.link} to={link}>
+                  <Link key={key} className={linkItem} to={link}>
                     {name}
                   </Link>
                 );
@@ -48,35 +66,37 @@ export default function MobileDropdown({ isOpen, offset }) {
               return (
                 <FlexContainer
                   key={key}
-                  onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
-                  className={styles.link}
+                  onClick={() =>
+                    setOpenState({ ...openState, [key]: !openState[key] })
+                  }
+                  className={linkItem}
                   direction="column"
                 >
                   <FlexContainer justify="spacebetween" align="center">
                     {name}
                     <ChevronDown
-                      className={classNames(styles.linkIcon, {
-                        [styles.linkIconOpen]: isFeaturesOpen,
+                      className={classNames(linkIcon, {
+                        [linkIconOpen]: openState[key],
                       })}
                       size={30}
                     />
                   </FlexContainer>
                   <FlexContainer
-                    className={classNames(styles.featuresContainer, {
-                      [styles.featuresContainerOpen]: isFeaturesOpen,
+                    className={classNames(featuresContainer, {
+                      [featuresContainerOpen]: openState[key],
                     })}
                     wrap
                   >
-                    {map(subNav, ({ key, name, Icon, link }) => (
+                    {Object.values(subNav).map(({ key, name, Icon, link }) => (
                       <Link
                         key={key}
                         to={link}
-                        className={classNames(styles.featureLink, {
-                          [styles.featureLinkFullWidth]: isMobile,
+                        className={classNames(featureLink, {
+                          [featureLinkFullWidth]: isMobile,
                         })}
                       >
                         <FlexContainer align="center">
-                          <Icon />
+                          {!!Icon && <Icon />}
                           {name}
                         </FlexContainer>
                       </Link>
@@ -86,23 +106,20 @@ export default function MobileDropdown({ isOpen, offset }) {
               );
             })}
             <FlexContainer wrap>
-              <Link className={styles.minorLink} to="/training/staff">
+              <Link className={minorLink} to="/training/staff">
                 Training
               </Link>
-              <a
-                className={styles.minorLink}
-                href="https://lifeloopapp.com/login"
-              >
+              <a className={minorLink} href="https://lifeloopapp.com/login">
                 Login
               </a>
               <a
-                className={styles.minorLink}
+                className={minorLink}
                 href={`tel:${site.siteMetadata.phoneNumber}`}
               >
                 <b>{site.siteMetadata.phoneNumber}</b>
               </a>
             </FlexContainer>
-            <Link to="/demo" className={styles.requestButton}>
+            <Link to="/demo" className={requestButton}>
               <Button>Request a Demo</Button>
             </Link>
           </FlexContainer>
