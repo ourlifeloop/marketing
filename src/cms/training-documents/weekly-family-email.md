@@ -1,5 +1,5 @@
 ---
-title: 'Weekly Family Email '
+title: Weekly Family Email Example
 document: /images/cms/weekly_summary_email_snapshot.png
 topics:
   - getting-started
