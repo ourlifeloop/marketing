@@ -1,6 +1,6 @@
 ---
-title: Family Sign-In Form
-document: /images/cms/family-sign-in-form.docx
+title: Family Sign-Up Form
+document: /images/cms/family-sign-up-form.pdf
 topics:
   - connection-management
 userTypes:
