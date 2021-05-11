@@ -32,7 +32,7 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors);
     }
 
-    // Build blog pages
+    // Build career pages
     result.data.allMarkdownRemark.edges
       .filter(({ node }) => !!node.frontmatter.responsibilities)
       .forEach(({ node }) =>
@@ -43,6 +43,7 @@ exports.createPages = ({ actions, graphql }) => {
         }),
       );
 
+    // Build blog pages
     result.data.allMarkdownRemark.edges
       .filter(({ node }) => !!node.frontmatter.type)
       .forEach(({ node }) =>
