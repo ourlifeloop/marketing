@@ -32,10 +32,16 @@ collections:
   - name: careers
     label: Careers
     folder: src/cms/careers
+    preview_path: 'career/{{slug}}'
     create: true
     fields:
+      - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: link, label: Link }
+      - name: responsibilities
+        label: Responsibilities
+        widget: list
+        field: { label: Responsibility, name: responsibility }
+      - { name: body, label: Body, widget: markdown }
 
   - name: training-videos
     label: Training Videos

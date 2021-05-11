@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import classNames from 'classnames';
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
@@ -110,11 +110,9 @@ export default function Careers({ data }) {
       {!!data.allMarkdownRemark.edges.length && (
         <TitleSection header="We're searching for talent.">
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <a
+            <Link
               key={node.id}
-              href={node.frontmatter.link}
-              target="_blank"
-              rel="noopener noreferrer"
+              to={node.fields.slug}
               aria-label={node.frontmatter.title}
               className={positionLink}
             >
@@ -126,7 +124,7 @@ export default function Careers({ data }) {
                 <span>{node.frontmatter.title}</span>
                 <ChevronRight className={linkIcon} size={24} />
               </FlexContainer>
-            </a>
+            </Link>
           ))}
         </TitleSection>
       )}
@@ -163,8 +161,10 @@ export const query = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
-            link
             title
           }
         }
