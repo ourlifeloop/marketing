@@ -1,0 +1,24 @@
+@import '../../styles/theme';
+
+.container {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+$margin: 0.8rem;
+.subHeading {
+  margin: #{$margin * 2} 0 $margin;
+}
+
+.list {
+  margin: 0;
+}
+
+.listItem {
+  list-style-position: inside;
+  margin-bottom: $margin;
+}
+
+.apply {
+  margin-top: $margin * 2;
+}

@@ -21,17 +21,28 @@ exports.createPages = ({ actions, graphql }) => {
               type
               topics
               userTypes
+              responsibilities
             }
           }
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors);
     }
 
     // Build blog pages
+    result.data.allMarkdownRemark.edges
+      .filter(({ node }) => !!node.frontmatter.responsibilities)
+      .forEach(({ node }) =>
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(`src/templates/career.template.js`),
+          context: { careerId: node.id },
+        }),
+      );
+
     result.data.allMarkdownRemark.edges
       .filter(({ node }) => !!node.frontmatter.type)
       .forEach(({ node }) =>
@@ -70,7 +81,7 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve(`src/templates/training.template.js`),
         context: { userType },
       });
-      topics.forEach(topic =>
+      topics.forEach((topic) =>
         createPage({
           path: `/training/${userType}/${topic}`,
           component: path.resolve(`src/templates/training-topic.template.js`),
@@ -93,7 +104,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
   const config = getConfig();
   const miniCssExtractPlugin = config.plugins.find(
-    plugin => plugin.constructor.name === 'MiniCssExtractPlugin',
+    (plugin) => plugin.constructor.name === 'MiniCssExtractPlugin',
   );
   if (miniCssExtractPlugin) {
     miniCssExtractPlugin.options.ignoreOrder = true;
