@@ -22,5 +22,5 @@ responsibilities:
   - Work directly with product designers to ensure code changes adhere to
     designs standards.
   - Initiate and smoke test zero-downtime deployments to production and test
-    environments
+    environments.
 ---
