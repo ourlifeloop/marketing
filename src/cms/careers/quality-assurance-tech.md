@@ -12,5 +12,15 @@ description: >-
 
 
   Candidates must have solid communication skills and an understanding of software product teams. Experience in JavaScript/Node, Cypress, and Git is strongly recommended.
-responsibilities: []
+responsibilities:
+  - Plan, schedule, and execute manual software testing on all new code changes.
+  - Continuously improve and run an automated test suite.
+  - Work directly with developers to analyze the test scope of code changes and
+    provide accurate feedback when features do not align with specifications.
+  - Test, reproduce, and document incoming software defects from customer
+    support.
+  - Work directly with product designers to ensure code changes adhere to
+    designs standards.
+  - Initiate and smoke test zero-downtime deployments to production and test
+    environments
 ---
