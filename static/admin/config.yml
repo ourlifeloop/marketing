@@ -34,8 +34,13 @@ collections:
     folder: src/cms/careers
     create: true
     fields:
+      - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: link, label: Link }
+      - { name: description, label: Description, widget: markdown }
+      - name: responsibilities,
+        label: Responsibilities,
+        widget: list,
+        required: false
 
   - name: training-videos
     label: Training Videos
