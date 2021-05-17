@@ -1,13 +1,11 @@
 ---
 date: 2021-05-17T19:32:08.911Z
 type: spotlight
-author: Andrea Clauson
+author: Nick Nemer & Andrea Clauson
 title: "Customer Spotlight: Elaine "
 photo: /images/cms/mo-freeman.jpeg
 ---
 Compassion and empathy are the most prominent traits in those that dedicate their lives to helping others. We see this every day in working with our clients in senior living and have discovered that same passion for kindness in our clients at Elaine. The team at Elaine provides transportation services and healthcare access to individuals experiencing homelessness in the Phoenix and Scottsdale areas. With the goal of eliminating barriers around the social determinants of health, Elaine works tirelessly to connect this population to the critical resources that they need that aren’t covered by insurance. Since its founding in 2019, it is not hard to see the positive impact that Elaine has had on the lives of so many in their area. 
-
-
 
 ### Reducing disparities in health care
 
@@ -17,9 +15,7 @@ Offering this level of support has had an incredible impact on the homeless popu
 
 Something else that sets Elaine apart is the relational component of their services. The staff and drivers have a deep compassion, empathy and understanding and truly enjoy making a difference whether big or small. Most of the individuals who use their ride services turn in to returning clients and share it with others that they know. Elaine also works closely with case workers or social workers to get rides scheduled. “Not only is transportation a huge need for individuals who are homeless but we also look at other underserved populations such as the elderly, low-income, and uninsured or underinsured, said Eric. We want to be available to all individuals who lack transportation access.”
 
-
-
-### A holistic approach 
+### A holistic approach
 
 In looking at a holistic approach to health, Elaine takes it a step further by offering their clients ride services for bank visits, interviews, court appointments, parenting or financial literacy courses, support groups, laundry needs, food access and more.  “We came to realize that we needed to connect them to food access, housing, education and other critical resources and services if we wanted to truly enhance their lives, says Eric.  These social determinants of health have a major impact on their overall quality of life, and we want to eliminate those barriers”. 
 
@@ -28,7 +24,6 @@ What makes Elaine so unique is that they look past someone’s current situation
 ![](/images/cms/1.png)
 
 ### A partnership was born
-
 
 At LifeLoop we have always believed in one core idea: connection is vital. Enhancing resident connection to their families and to the world around them is why LifeLoop was born. And working with a company like Elaine, who shares that same passion for connection, has been the foundation for a great partnership. 
 
@@ -40,13 +35,10 @@ Bringing in a new technology vendor can seem like a big task but Eric shares how
 
 ![](/images/cms/2.png)
 
-
-
 ### A Bright Future
-
 
 One thing is for certain, Elaine is filling a need in society and doing it with incredible empathy and kindness. We are lucky enough to work with clients who inspire us daily and Elaine is certainly no exception. The future is brighter because of the services they offer and the compassion they have for others. 
 
 “One of the most rewarding things for us is seeing our platform be used in different ways to serve a larger population than the one we set out to help.  The partnership that we have formed with Elaine has been eye opening to us all, and we will continue to grow with that team, and look at different ways that we can help,” said Amy Johnson, CEO & Co-founder of LifeLoop. 
 
-If you want to learn more about Elaine and the difference they are making in the Phoenix and Scottsdale areas, you can go to their website [here](https://elaineaz.org/), or you can reach out to Eric Barr at [ebarr@elaineaz.org](ebarr@elaineaz.org).
+If you want to learn more about Elaine and the difference they are making in the Phoenix and Scottsdale areas, you can go to their website [here](https://elaineaz.org/), or you can reach out to Eric Barr at ebarr@elaineaz.org.
