@@ -26,7 +26,6 @@ export default function CareerPost({
   )}&body=${encodeURIComponent(
     'Full Name:\nPhone:\n\n(Please Attach Resume)',
   )}`;
-  console.log(emailConfig);
   return (
     <>
       <Section width="small">
