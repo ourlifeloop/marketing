@@ -16,4 +16,4 @@ responsibilities:
 ---
 We are looking for a software wizard with exceptional talents and a love for learning. We only hire code ninjas and rockstars. Do you seek to understand? Do you dream of solving complex problems? You would be working on a small, fast-moving product team focused on collaboration, communication, and excellence. At LifeLoop, you are not a forgotten cog in the machine; you are a valued member of a team striving to better the product, our relationships with each other, and ourselves.
 
-Candidates must have at least two years of experience as an engineer. Knowledge of JavaScript/Node and React is required, and an understanding of Microsoft Azure and MongoDB is a plus
+Candidates must have at least two years of experience as an engineer. Knowledge of JavaScript/Node and React is required, and an understanding of Microsoft Azure and MongoDB is a plus.
