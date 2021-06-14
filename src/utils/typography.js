@@ -2,14 +2,18 @@ import Typography from 'typography';
 
 const typography = new Typography({
   baseFontSize: '18px',
-  headerWeight: '700',
+  headerWeight: '500',
   bodyWeight: '400',
-  headerFontFamily: ['FilsonProBook', 'Helvetica', 'sans-serif'],
-  bodyFontFamily: ['Source Sans Pro', 'Helvetica', 'sans-serif'],
+  headerFontFamily: ['Montserrat', 'sans-serif'],
+  bodyFontFamily: ['Source Sans Pro', 'sans-serif'],
   googleFonts: [
     {
       name: 'Source Sans Pro',
       styles: ['300', '400', '700'],
+    },
+    {
+      name: 'Montserrat',
+      styles: ['500'],
     },
   ],
 });
