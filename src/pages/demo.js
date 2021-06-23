@@ -50,6 +50,7 @@ const INITIAL_STATE = {
   features: [],
   role: undefined,
   comments: '',
+  hearAboutUs: '',
 };
 
 const arrayToOptions = arr => arr.map(str => ({ label: str, value: str }));
@@ -67,6 +68,7 @@ export default function Demo({ data }) {
     !!form.phone &&
     !!form.state &&
     !!form.features.length &&
+    !!form.hearAboutUs &&
     !!form.role;
 
   const updateForm = (key, value) =>
@@ -176,6 +178,17 @@ export default function Demo({ data }) {
                       options={arrayToOptions(ROLES)}
                       value={form.role}
                       onChange={value => updateForm('role', value)}
+                    />
+                  </Label>
+                </FormRow>
+                <FormRow>
+                  <Label
+                    htmlFor="hearAboutUs"
+                    title="How did you hear about LifeLoop?"
+                  >
+                    <Input
+                      value={form.hearAboutUs}
+                      onChange={e => updateForm('hearAboutUs', e.target.value)}
                     />
                   </Label>
                 </FormRow>
