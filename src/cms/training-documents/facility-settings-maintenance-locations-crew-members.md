@@ -1,6 +1,6 @@
 ---
-title: Facility Settings - Maintenance Locations & Crew Members
-document: /images/cms/facility-settings-maintenance-locations-crew-members.pdf
+title: Manage Settings - Maintenance Types, Locations & Crew Members
+document: /images/cms/manage-settings-maintenance.pdf
 topics:
   - maintenance
 userTypes:
