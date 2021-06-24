@@ -1,9 +1,8 @@
 ---
-title: Facility Settings Overview - User Instructions
-document: /images/cms/lifeloop-facility-settings-overview-user-instructions.pdf
+title: Manage Settings Overview - User Instructions
+document: /images/cms/manage_settings-overview-user-instructions.pdf
 topics:
   - getting-started
 userTypes:
   - staff
 ---
-
