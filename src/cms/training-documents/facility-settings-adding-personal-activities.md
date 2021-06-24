@@ -1,6 +1,6 @@
 ---
-title: 'Facility Settings: Adding Personal Activities'
-document: /images/cms/facility-settings-adding-locations-personal-activities.pdf
+title: "Manage Settings: Adding a Community Logo"
+document: /images/cms/manage-settings-adding-a-community-logo.pdf
 topics:
   - resident-management
 userTypes:
