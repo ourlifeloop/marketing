@@ -1,6 +1,6 @@
 ---
-title: 'Facility Settings: Activity Locations & Personal Activities'
-document: /images/cms/facility-settings-activity-locations-personal-activities.pdf
+title: "Manage Settings: Activity Locations & Personal Activities"
+document: /images/cms/manage-settings-act-loc-and-personal-act.pdf
 topics:
   - activity-calendar
 userTypes:
