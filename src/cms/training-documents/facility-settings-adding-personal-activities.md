@@ -2,7 +2,7 @@
 title: "Manage Settings: Adding a Community Logo"
 document: /images/cms/manage-settings-adding-a-community-logo.pdf
 topics:
-  - resident-management
+  - getting-started
 userTypes:
   - staff
 ---
