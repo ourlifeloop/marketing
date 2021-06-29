@@ -7,6 +7,5 @@ topics:
   - marketing
   - connection-management
 userTypes:
-  - connection
   - staff
 ---
