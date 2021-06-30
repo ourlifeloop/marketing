@@ -90,7 +90,7 @@ collections:
         multiple: true
         options:
           - { label: Staff Member, value: staff }
-          - { label: Family Member, value: family }
+          - { label: Connection, value: connection }
           - { label: Resident, value: resident }
 
   - name: training-documents
