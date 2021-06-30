@@ -1,5 +1,5 @@
 ---
-question: Can I cancel Maintenance request
+question: Can I cancel Maintenance request?
 answer: >
   -	In the maintenance tile, find the request you would like to delete and click
   “view details”.
