@@ -41,7 +41,7 @@ export default function CommunicationFeature({ data, location }) {
       />
       <ImageSection
         leftImage
-        title="Transparancy With Your Residents' Families"
+        title="Transparency With Your Residents' Families"
         description="The messaging feature allows family members the transparency they want and the access they deserve. With LifeLoop, all connected family members can see the staff directory and easily send messages to the appropriate staff member. Even better, family members can send messages to their loved one as well."
         image={getImage(data.transparency)}
       />

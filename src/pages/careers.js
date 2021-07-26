@@ -29,7 +29,7 @@ import {
 
 const WHO_WE_ARE = [
   'Be Self-Aware',
-  'Be Persistant',
+  'Be Persistent',
   'Be Open-Minded',
   'Be Accountable',
   'Be Curious',
