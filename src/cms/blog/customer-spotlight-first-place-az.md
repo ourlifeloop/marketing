@@ -29,7 +29,7 @@ In the second year of the Transition Academy, residents move up to two-bedroom s
 
 Upon graduation, 89% of the students live in a community of their choosing. Some choose to stay at First Place-Phoenix.
 
-![](/images/cms/2.png)
+![]()
 
 ### **An Emphasis on Community Life**
 
@@ -53,7 +53,7 @@ Some residents use a smartphone or personal computer to log-in. Others like Whit
 
 While registering for activities and putting in maintenance requests make up most of the resident’s use of LifeLoop, they can also upload photos of their activities for others to view. “Partnering with First Place has allowed us to learn how we can add value to other communities outside of senior living,” said Amy Johnson, LifeLoop CEO. “Being able to explore how LifeLoop can foster communication and create connections for the residents of First Place has been very fulfilling for our company. We truly believe in the mission of their property.”
 
-![](/images/cms/1.png)
+![]()
 
 Bernardo added she likes the ability to use digital signage to keep residents updated on activities and the ease of altering LifeLoop’s features to match her desires.
 
