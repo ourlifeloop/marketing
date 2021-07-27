@@ -21,7 +21,7 @@ In looking at a holistic approach to health, Elaine takes it a step further by o
 
 What makes Elaine so unique is that they look past someone’s current situation and truly see the individual behind it. They have shown time and time again that facilitating this population with the necessary resources and tools can have a positive, lasting impact. One of the most impactful stories shared with us was when the team at Elaine helped a client move into housing that he was able to purchase himself after repeatedly living in shelters. And after finally getting a place of his own, he invited his friend from the shelter to move in with him as a way to pay it forward. “I see it every day, a small gesture can mean the world to someone who is at the end of their rope or at their lowest point, said Eric. If we can look at ways to help advance and enhance lives, then they will continue to do the same for others.”
 
-![](/images/cms/1.png)
+![]()
 
 ### A partnership was born
 
@@ -33,7 +33,7 @@ Elaine’s drivers use LifeLoop to schedule their rides on a day-to-day basis. T
 
 Bringing in a new technology vendor can seem like a big task but Eric shares how the process has gone smoothly for them. “I did not expect to come in and have a technology platform but also build a meaningful relationship with the company. It has been cool for me but also super helpful to my staff, said Eric. There is a lot of opportunity for our team to expand into everything that LifeLoop has to offer.”
 
-![](/images/cms/2.png)
+![]()
 
 ### A Bright Future
 
