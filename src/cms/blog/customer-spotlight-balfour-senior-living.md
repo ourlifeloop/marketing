@@ -2,7 +2,7 @@
 date: 2020-04-16T16:25:46.171Z
 type: spotlight
 author: Andrea Clauson
-title: 'Customer Spotlight: Balfour Senior Living'
+title: "Customer Spotlight: Balfour Senior Living"
 photo: /images/cms/balfour-blog-post-graphic-1-.png
 ---
 The COVID-19 outbreak has totally upended American life. That’s especially true in senior living.
@@ -17,7 +17,7 @@ According to Louise Garrels, Balfour’s director of marketing and communication
 
 Here’s how Balfour deploys LifeLoop to make sure no one in their communities feel alone —even during a crisis.  
 
-![](/images/cms/1.png)
+![]()
 
 ## Easing fears — by elevating service
 
@@ -53,7 +53,7 @@ And, perhaps even more important, family members have visibility into everything
 
 “Thanks to LifeLoop, they know that the resident they care about isn’t just sitting around,” Louise says. “It’s one thing if we tell them that their loved one is doing well. But LifeLoop helps them see it.”
 
-![](/images/cms/2.png)
+![]()
 
 ## Staying safe — by staying connected
 
@@ -72,8 +72,6 @@ Balfour has hosted virtual town halls through the platform. They’ve broadcast 
 Even better, using LifeLoop in this way has helped Balfour create a knowledge base for the best way to reach their customers.
 
 “It took some time to standardize our messaging practices, but with LifeLoop, we have a shared learning environment, where all of us are constantly learning from each other,” Louise says.
-
-## 
 
 ## In a crisis — but always a community
 
@@ -94,8 +92,6 @@ But LifeLoop gave the resident’s son a workaround.
 “He used LifeLoop to reach a Balfour staff member he could trust,” Louise says, “it was a caring staff member who he asked ‘Hey, my dad hates technology, but I’d love to see him. If you can, would you send me a picture of him, just so I can see he’s doing okay?’”
 
 That staff member did one better. She visited the resident in his room, and convinced him to give FaceTime a try with her own phone. For the first time in weeks, father and son were having a face-to-face conversation — all facilitated by LifeLoop.
-
-
 
 ## All about connection
 
