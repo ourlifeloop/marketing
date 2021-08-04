@@ -34,7 +34,7 @@ export default function CalendarManagementFeature({ data, location }) {
         image={getImage(data.timeSlots)}
       />
       <ImageSection
-        rightImage
+        leftImage
         title="Keeping You Data-Informed"
         description="With LifeLoop’s reporting feature, you can build robust activity calendars based on your residents likes. Easily identify the most popular and least popular activities every month which allows you to measure, manage and optimize resident engagement."
         image={getImage(data.dataInformed)}
