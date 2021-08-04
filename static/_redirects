@@ -2,8 +2,9 @@
 /home.html                              /
 /index                                  /
 /index.html                             /
-/features                               /features/activity-calendar
-/features.html                          /features/activity-calendar
+/features                               /features/calendar-management
+/features.html                          /features/calendar-management
+/features/activity-calendar             /features/calendar-management
 /features/family-portal                 /features/connection-portal
 /story                                  /our-story
 /story.html                             /our-story

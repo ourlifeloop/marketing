@@ -72,8 +72,8 @@ const NAVIGATION = {
       calendar: {
         key: 'calendar',
         Icon: calendar,
-        name: 'Activity Calendar',
-        link: '/features/activity-calendar',
+        name: 'Calendar Management',
+        link: '/features/calendar-management',
         questions: [
           {
             question:
