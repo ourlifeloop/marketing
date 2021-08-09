@@ -26,7 +26,7 @@ Like many communities, the desire for a technology partner was always there for 
 
 While streamlining the communication process was the initial draw to bringing LifeLoop on board, they were quick to share that the benefits were not only felt by staff, but by family members as well. Today’s families live in a connected world. They don’t want to break a connection with their loved ones just because they move into a senior living community. Showing a resident’s day-to-day activities might seem like a small thing, but for these family members — it’s absolutely priceless. “LifeLoop helped us solve problems we didn’t even know we had. It allowed us to realize the types of things family members wanted to know about their loved ones. Also, the ability to keep on top of the community as a whole with LifeLoop was quite amazing. We thought we were on top of it but with LifeLoop we realized there was so much more we could be doing,” said Honor. 
 
-![](/images/cms/1.png)
+![]()
 
 ### Access for All
 
@@ -42,6 +42,6 @@ As senior living occupancy rates became strained during much of the past year, B
 
 These exchanges of information leave room for more meaningful relationships between the community and its stakeholders. Making the communication personal, rather than procedural, builds an invaluable trust and helps sustain positive word-of-mouth. And by opening up a three-way flow of communication between staff members, residents and families, everyone who is involved is enriched by it. “When a family member tells us what will make the trial stay epic, we put that information into the system and LifeLoop disseminates that information to the right person. LifeLoop has added discipline to our move-in process which, in the past, was a little sporadic. The automating of that process is really very valuable,” said Honor. 
 
-![](/images/cms/2.png)
+![]()
 
 Instead of looking at the pandemic as a disruption, Birchgrove chose to look at it as an opportunity to re-evaluate operations and innovate in as many areas as possible. Finding the right partners to be an extension of your organization can have a collective impact on residents, families and staff members. Through the challenges of the past year, the team at Birchgrove has established communication as a best practice and gained confidence in the solutions they have developed to help them be successful.
