@@ -2,18 +2,12 @@
 date: 2021-08-17T15:34:52.840Z
 type: news
 author: "Aging Media Network "
-title: Nick Nemer, LifeLoop VP, Named as a 2021 Future Leaders Awards for Senior
-  Housing
-photo: /images/cms/capture.png
+title: Nick Nemer, LifeLoop VP, Named as a 2021 Future Leader for Senior Housing
+photo: /images/cms/nick.png
 ---
 ## Aging Media Announces the Future Leaders Awards Class of 2021
 
-
-
-	
 The Future Leaders Awards program presented by Aging Media Network recognizes leadership excellence at a variety of levels in care delivery and aging.
-
-
 
 CHICAGO (PRWEB) AUGUST 16, 2021
 
@@ -33,7 +27,9 @@ For more information about the Future Leader Awards and to view the complete Fut
 
 This year’s Future Leaders Awards honorees are as follows:
 
-Home Health Care News:
+
+
+*Home Health Care News:*
 Abhishek Vadalia, Director, Growth & Partnerships, Honor
 Adrian Killebrew, Vice President of Business Development, Axxess
 Amy Flaster, Chief Medical Officer, ConcertoCare
@@ -49,7 +45,9 @@ Nick Muscato, Senior Vice President of Finance, Amedisys
 Ryan Iwamoto, President & Co-founder, 24 Hour Home Care
 Sofia Koshevatsky, CEO, Healthflex Home Health Services
 
-Hospice News:
+
+
+*Hospice News:*
 Abbie Watson, Vice President of Central Operations, St. Croix Hospice
 Alexander Koshevatsky, CEO, Healthflex Hospice
 Ashley Arnold, Vice President of Clinical Services, St. Croix Hospice
@@ -58,31 +56,37 @@ Raymond Capella, Vice President, Clinical Services, Enclara Pharmacia
 Shannon Becher, Area Vice President of Clinical, Amedisys
 Sonya Dolan, Founder and CEO, Mettle Health
 
-Senior Housing News:
-Anthony Ormsbee-Hale, Vice President, People Operations, Civitas Senior Living
-Cassie Tweten, Chief Sales Officer, Arrow Senior Living Management
-Elise Selinger, Real Estate Innovation Manager, 2Life Communities
-Eric Harrmann, Chief Design Officer, AG Architecture
-Gabriel Melchor, Director of Business Intelligence, Enquire
-George Netscher, CEO, SafelyYou
-Isaac Wallace, Design Project Manager, ERDMAN
-Kathleen Sullivan, VP of Finance and Accounting, Benchmark Senior Living
-Kyle Rand, Co-Founder & CEO, Rendever
-Laura Fischer, Vice President, Senior Regional Operations, Brookdale Senior Living
-Nick Nemer, Vice President Sales & Marketing, LifeLoop
-Nikki Jo Olsen, Corporate Resident Enrichment Director, Avenida Partners
+
+
+*Senior Housing News:*\
+Anthony Ormsbee-Hale, Vice President, People Operations, Civitas Senior Living\
+Cassie Tweten, Chief Sales Officer, Arrow Senior Living Management\
+Elise Selinger, Real Estate Innovation Manager, 2Life Communities\
+Eric Harrmann, Chief Design Officer, AG Architecture\
+Gabriel Melchor, Director of Business Intelligence, Enquire\
+George Netscher, CEO, SafelyYou\
+Isaac Wallace, Design Project Manager, ERDMAN\
+Kathleen Sullivan, VP of Finance and Accounting, Benchmark Senior Living\
+Kyle Rand, Co-Founder & CEO, Rendever\
+Laura Fischer, Vice President, Senior Regional Operations, Brookdale Senior Living\
+**Nick Nemer, Vice President Sales & Marketing, LifeLoop**\
+Nikki Jo Olsen, Corporate Resident Enrichment Director, Avenida Partners\
 Shelley Li, Regional Director of Operations, West Bay Senior Living
 
-Skilled Nursing News:
-Jason Haney, Vice President Operations, American Health Plans, American Health Partners
-Jonah Blumenthal, CMO, TypoDuctions | DRIFT
-LeorDimant, Managing Director, Greystone
-Kevin McInerney, Chief Personnel Officer and Government Affairs, Legacy Healthcare
-TK King, Vice President, Operational Development, EmpRes Healthcare Management, LLC
+
+
+*Skilled Nursing News:*\
+Jason Haney, Vice President Operations, American Health Plans, American Health Partners\
+Jonah Blumenthal, CMO, TypoDuctions | DRIFT\
+LeorDimant, Managing Director, Greystone\
+Kevin McInerney, Chief Personnel Officer and Government Affairs, Legacy Healthcare\
+TK King, Vice President, Operational Development, EmpRes Healthcare Management, LLC\
 Toni Fimowicz, National Director of Organizational Development, Villa Healthcare
 
-About Aging Media Network:
+
+
+**About Aging Media Network:**
 Aging Media Network is an innovative publishing company based in Chicago, Illinois, and is the publisher of Senior Housing News, Home Health Care News, Hospice News and Skilled Nursing News.
 
-About PointClickCare:
+**About PointClickCare:**
 With a suite of fully-integrated applications powered by cloud-based healthcare software, PointClickCare leads the way in helping care providers connect, collaborate, and share data within their network. PointClickCare provides diverse care teams across the care continuum real-time patient insights at any stage of a patient’s healthcare journey, enabling better decision making and improved clinical outcomes at lower cost. Over 21,000 long-term and acute/post-acute care providers, and over 1,300 hospitals, use PointClickCare today. For more information on PointClickCare’s software solutions, visit pointclickcare.com.
