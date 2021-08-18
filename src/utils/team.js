@@ -93,7 +93,7 @@ const TEAM = [
   },
   {
     name: 'Dylan Kuzelka',
-    title: 'Quality Assurance Specialist',
+    title: 'Designer',
     image: 'dylanKuzelka',
   },
   {
