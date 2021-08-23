@@ -19,7 +19,7 @@ $icon-size: 50px;
 .play {
   fill: rgba($background, 0.65);
   height: $icon-size;
-  left: calc(50% - math.div($icon-size, 2));
+  left: calc(50% - #{math.div($icon-size, 2)});
   position: absolute;
   top: 30%;
   width: $icon-size;

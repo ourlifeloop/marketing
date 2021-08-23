@@ -41,7 +41,7 @@
 
 $weAreMargin: 1rem;
 .weAreWrapper {
-  margin: math.div(-$weAreMargin, 2) -$weAreMargin;
+  margin: #{math.div(-$weAreMargin, 2)} -$weAreMargin;
 }
 
 .weAre {
@@ -50,9 +50,9 @@ $weAreMargin: 1rem;
   box-shadow: 0px 0px 8px 2px $highlight;
   font-size: variableSize(18, 28);
   height: variableSize(120, 160);
-  margin: math.div(-$weAreMargin, 2) $weAreMargin;
+  margin: #{math.div($weAreMargin, 2)} $weAreMargin;
   max-height: 160px;
-  padding: math.div(-$weAreMargin, 2);
+  padding: #{math.div($weAreMargin, 2)};
   text-align: center;
   width: calc(100% / 3 - #{$weAreMargin * 2});
 
