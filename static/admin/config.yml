@@ -43,6 +43,43 @@ collections:
         field: { label: Responsibility, name: responsibility }
       - { name: body, label: Body, widget: markdown }
 
+  - name: testimonials
+    label: Testimonials
+    folder: src/cms/testimonials
+    create: true
+    fields:
+      - { name: logo, label: Logo, widget: image }
+      - { name: quote, label: Quote }
+      - { name: author, label: Author }
+      - { name: position, label: Position }
+      - name: pages
+        label: Page(s)
+        widget: select
+        multiple: true
+        options:
+          - { label: Home Page, value: / }
+          - { label: Covid, value: /covid }
+          - { label: Benefits, value: /benefits }
+          - { label: Communication Feature, value: /features/communication }
+          - {
+              label: Calendar Management Feature,
+              value: /features/calendar-management,
+            }
+          - { label: Designer Feature, value: /features/designer }
+          - { label: Digital Signage Feature, value: /features/displays }
+          - {
+              label: Resident Tracking Feature,
+              value: /features/resident-tracking,
+            }
+          - {
+              label: Connection Portal Feature,
+              value: /features/connection-portal,
+            }
+          - { label: Photo & Video Sharing Feature, value: /features/photos }
+          - { label: Resident Portal Feature, value: /features/resident-portal }
+          - { label: Transportation Feature, value: /features/transportation }
+          - { label: Maintenance Feature, value: /features/maintenance }
+
   - name: training-videos
     label: Training Videos
     folder: src/cms/training-videos
