@@ -46,6 +46,7 @@ collections:
   - name: testimonials
     label: Testimonials
     folder: src/cms/testimonials
+    slug: '{{author}}_{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}'
     create: true
     fields:
       - { name: logo, label: Logo, widget: image }

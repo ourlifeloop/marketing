@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @import '../styles/theme';
 
 .videoBtn {
@@ -23,9 +25,9 @@ $icon-size: 50px;
 .videoBtnIcon {
   fill: $primary-blue;
   height: $icon-size;
-  left: calc(50% - #{$icon-size / 2});
+  left: calc(50% - math.div($icon-size, 2));
   position: absolute;
-  top: calc(50% - #{$icon-size / 2});
+  top: calc(50% - math.div($icon-size, 2));
   width: $icon-size;
 }
 

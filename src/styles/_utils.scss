@@ -1,8 +1,14 @@
+@use 'sass:math';
+
 $minWidth: 400;
 $maxWidth: 1440;
 @function variableSize($min, $max) {
   @return calc(
     #{$min}px +
-      ((100vw - #{$minWidth}px) / #{(($maxWidth - $minWidth) / ($max - $min))})
+      (
+        (100vw - #{$minWidth}px) / #{(
+            math.div($maxWidth - $minWidth, $max - $min)
+          )}
+      )
   );
 }

@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @import '../styles/theme';
 
 .container {
@@ -15,7 +17,7 @@
   cursor: pointer;
   height: 100px;
   position: relative;
-  width: #{((1346 - (18 * 2)) / 9)}px;
+  width: #{math.div(1346 - 18 * 2, 9)}px;
   transition: all 0.2s linear;
 
   &--selected {
@@ -60,7 +62,9 @@ $icon-size: 50px;
 
 .iconTitle {
   font-size: 0.8rem;
+  line-height: 1rem;
   margin: 0;
+  text-align: center;
 }
 
 .contentContainer {
