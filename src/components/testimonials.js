@@ -4,11 +4,11 @@ import classNames from 'classnames';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import { includes, shuffle, take } from '../utils/lodash';
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
-import '../utils/navigation';
 
 import {
   communityColumn,
@@ -57,17 +57,44 @@ const TestimonialCard = ({
   </FlexContainer>
 );
 
-export default function Testimonials({ hideTitle, testimonials }) {
+export default function Testimonials({ hideTitle, pathname }) {
   const { isTablet } = useDevice();
-  const images = useStaticQuery(
+  const testimonials = useStaticQuery(
     graphql`
       query {
-        ...testimonialImages
+        allMarkdownRemark(
+          filter: { fields: { slug: { regex: "^/testimonials/" } } }
+        ) {
+          edges {
+            node {
+              id
+              frontmatter {
+                author
+                quote
+                position
+                pages
+                logo {
+                  childImageSharp {
+                    gatsbyImageData(
+                      height: 130
+                      layout: CONSTRAINED
+                      quality: 100
+                    )
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     `,
   );
 
-  if (testimonials.length < 2 || testimonials.length > 3) {
+  const filteredTestimonials = shuffle(testimonials.allMarkdownRemark.edges)
+    .map(({ node }) => ({ key: node.id, ...node.frontmatter }))
+    .filter(({ pages }) => includes(pages, pathname));
+
+  if (filteredTestimonials.length < 2) {
     return null;
   }
 
@@ -86,16 +113,16 @@ export default function Testimonials({ hideTitle, testimonials }) {
       <Section
         centered
         noTopPadding
-        width={testimonials.length < 3 ? 'medium' : 'large'}
+        width={filteredTestimonials.length < 3 ? 'medium' : 'large'}
       >
         <FlexContainer direction={isTablet ? 'column' : 'row'}>
-          {testimonials.map(testimonial => (
+          {take(filteredTestimonials, 3).map((testimonial) => (
             <TestimonialCard
-              className={testimonials.length < 3 ? half : third}
-              key={testimonial.author}
+              className={filteredTestimonials.length < 3 ? half : third}
+              key={testimonial.key}
               isTablet={isTablet}
               {...testimonial}
-              logo={getImage(images[testimonial.logo])}
+              logo={getImage(testimonial.logo)}
             />
           ))}
         </FlexContainer>
@@ -105,15 +132,8 @@ export default function Testimonials({ hideTitle, testimonials }) {
 }
 
 Testimonials.propTypes = {
+  pathname: PropTypes.string.isRequired,
   hideTitle: PropTypes.bool,
-  testimonials: PropTypes.arrayOf(
-    PropTypes.shape({
-      logo: PropTypes.string.isRequired,
-      quote: PropTypes.string.isRequired,
-      author: PropTypes.string.isRequired,
-      position: PropTypes.string.isRequired,
-    }).isRequired,
-  ).isRequired,
 };
 
 Testimonials.defaultProps = {

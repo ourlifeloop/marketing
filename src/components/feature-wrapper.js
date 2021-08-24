@@ -16,8 +16,9 @@ import DemoSection from './demo-section';
 import { find } from '../utils/lodash';
 
 export default function FeatureWrapper({ children, pathname, ...rest }) {
-  const { testimonials, questions } = find(NAVIGATION.features.subNav, {
-    link: removeTrailingSlash(pathname),
+  const link = removeTrailingSlash(pathname);
+  const { questions } = find(NAVIGATION.features.subNav, {
+    link,
   });
 
   return (
@@ -40,7 +41,7 @@ export default function FeatureWrapper({ children, pathname, ...rest }) {
           <QuestionAndAnswer questions={questions} />
         </TitleSection>
       )}
-      {!!testimonials && <Testimonials testimonials={testimonials} />}
+      <Testimonials pathname={link} />
       <LatestBlogSection />
       <DemoSection />
     </SiteWrapper>

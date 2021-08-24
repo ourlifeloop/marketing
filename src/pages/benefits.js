@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */
 
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import classNames from 'classnames';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
@@ -9,6 +10,7 @@ import RelativeContainer from '../primitives/relative-container';
 import ActionCallout from '../primitives/action-callout';
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
+import { removeTrailingSlash } from '../utils/common';
 import Testimonials from '../components/testimonials';
 import SiteWrapper from '../components/site-wrapper';
 import DemoSection from '../components/demo-section';
@@ -57,7 +59,7 @@ const commuintyContent = (
   </>
 );
 
-export default function Benefits({ data }) {
+export default function Benefits({ data, location }) {
   const [video, setVideo] = useState();
   const { isMobile, isTablet } = useDevice();
 
@@ -204,31 +206,7 @@ export default function Benefits({ data }) {
           </FlexContainer>
         )}
       </Section>
-      <Testimonials
-        testimonials={[
-          {
-            logo: 'avamere',
-            quote:
-              "LifeLoop's valuable to us because the present and the future of our industry is to keep family members more and more involved in our residents' lives. Family members are naturally curious about what's going on with their loved ones, and LifeLoop is both a proactive and reactive way of helping with that.",
-            author: 'Thomas Cloutier',
-            position: 'Vice President of Sales & Marketing',
-          },
-          {
-            logo: 'fieldstone',
-            quote:
-              "I have worked with Life Loop since its beginnings and I continue to be impressed with the continued growth and improvement of the product. Our families enjoy the information and photos they get daily, a kind of a window into their loved one's day, and our staff relies on the communication and attendance tracking.",
-            author: 'Lucie Flood',
-            position: 'Life Enrichment Director',
-          },
-          {
-            logo: 'dial',
-            quote:
-              'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
-            author: 'Lisa Moes',
-            position: 'Dial Retirement Communities',
-          },
-        ]}
-      />
+      <Testimonials pathname={removeTrailingSlash(location.pathname)} />
       <DemoSection />
       <VideoModal
         isOpen={!!video}
@@ -238,6 +216,12 @@ export default function Benefits({ data }) {
     </SiteWrapper>
   );
 }
+
+Benefits.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export const query = graphql`
   {

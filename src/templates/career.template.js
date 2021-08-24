@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import SiteWrapper from '../components/site-wrapper';
 import CareerPost from '../components/career-post';
 
-export default function BlogPostTemplate({ data }) {
+export default function CareerTemplate({ data }) {
   const { markdownRemark: career, site } = data;
   const { frontmatter, html, fields } = career;
   const { title } = frontmatter;

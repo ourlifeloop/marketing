@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import classNames from 'classnames';
@@ -26,7 +27,7 @@ import {
   videoContainerVertical,
 } from './index.module.scss';
 
-export default function Home({ data }) {
+export default function Home({ data, location }) {
   const [video, setVideo] = useState();
   const { isMobile } = useDevice();
 
@@ -68,31 +69,7 @@ export default function Home({ data }) {
         </p>
       </TitleSection>
       <FeatureCardSwitcher />
-      <Testimonials
-        testimonials={[
-          {
-            logo: 'avamere',
-            quote:
-              "LifeLoop's valuable to us because the present and the future of our industry is to keep family members more and more involved in our residents' lives. Family members are naturally curious about what's going on with their loved ones, and LifeLoop is both a proactive and reactive way of helping with that.",
-            author: 'Thomas Cloutier',
-            position: 'Vice President of Sales & Marketing',
-          },
-          {
-            logo: 'fieldstone',
-            quote:
-              "I have worked with Life Loop since its beginnings and I continue to be impressed with the continued growth and improvement of the product. Our families enjoy the information and photos they get daily, a kind of a window into their loved one's day, and our staff relies on the communication and attendance tracking.",
-            author: 'Lucie Flood',
-            position: 'Life Enrichment Director',
-          },
-          {
-            logo: 'dial',
-            quote:
-              'In this industry, employee turnover is common, unfortunately, and it can be very difficult to bring new staff up to speed. An easy system like this really helps. And it can even help build a consistent company culture, even as staff rotates.',
-            author: 'Lisa Moes',
-            position: 'Dial Retirement Communities',
-          },
-        ]}
-      />
+      <Testimonials pathname={location.pathname} />
       <ActionCallout
         noTopPadding
         title="Innovative solutions for your senior living community."
@@ -163,6 +140,12 @@ export default function Home({ data }) {
     </SiteWrapper>
   );
 }
+
+Home.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export const query = graphql`
   {

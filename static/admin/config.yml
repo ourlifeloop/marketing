@@ -52,7 +52,7 @@ collections:
       - { name: logo, label: Logo, widget: image }
       - { name: quote, label: Quote }
       - { name: author, label: Author }
-      - { name: position, label: Position }
+      - { name: position, label: Position, required: false }
       - name: pages
         label: Page(s)
         widget: select

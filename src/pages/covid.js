@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import classNames from 'classnames';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
@@ -6,6 +7,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import FlexContainer from '../primitives/flex-container';
 import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
+import { removeTrailingSlash } from '../utils/common';
 import Testimonials from '../components/testimonials';
 import SiteWrapper from '../components/site-wrapper';
 import BlogSection from '../components/blog-section';
@@ -23,7 +25,7 @@ import {
   download,
 } from './covid.module.scss';
 
-export default function Covid({ data }) {
+export default function Covid({ data, location }) {
   const { isMobile } = useDevice();
 
   return (
@@ -86,30 +88,8 @@ export default function Covid({ data }) {
         </FlexContainer>
       </Section>
       <Testimonials
+        pathname={removeTrailingSlash(location.pathname)}
         hideTitle
-        testimonials={[
-          {
-            logo: 'balfour',
-            quote:
-              'LifeLoop solves so many of the problems you have when you’re reaching a huge number of residents and family members all at once,” Louise says. “It keeps us all connected, in a way that’s scalable and transparent.',
-            author: 'Louise Garrels',
-            position: 'Director of Marketing & Communications',
-          },
-          {
-            logo: 'lifeloop',
-            quote:
-              'I just wanted to say thank you for LifeLoop. During this frightening, isolating COVID-19 outbreak LifeLoop has been a lifeline. I have been able to keep in touch with my dad who is in memory care.  Without LifeLoop, I would feel helpless. Thank you!',
-            author: 'Meg Hentges',
-            position: 'Family Member',
-          },
-          {
-            logo: 'jacksonCreek',
-            quote:
-              "I'm not sure how we'd be getting through this time without LifeLoop! We have increased our family connections, probably doubled in the past week. Freeing up staff and creating crucial time for us to serve residents, rather than being on the phone calling families.",
-            author: 'Melida Sukle',
-            position: 'Life Enrichment Director',
-          },
-        ]}
       />
       <ActionCallout
         noTopPadding
@@ -150,6 +130,12 @@ export default function Covid({ data }) {
     </SiteWrapper>
   );
 }
+
+Covid.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export const query = graphql`
   {
