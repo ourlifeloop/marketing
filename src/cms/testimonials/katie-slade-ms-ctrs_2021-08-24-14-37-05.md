@@ -11,4 +11,5 @@ author: Katie Slade, MS, CTRS
 position: Activity Director
 pages:
   - /features/resident-tracking
+  - /features/connection-portal
 ---
