@@ -8,7 +8,7 @@ quote: "I love all that LifeLoop has to offer! Two features have quickly become
   very happy I decided to give LifeLoop a try and would recommend LifeLoop to
   any activities professional without hesitation."
 author: Amy Cullen CALA, CDP
-position: Corporate Life Engagement, Kaplan
+position: Corporate Life Engagement
 pages:
   - /features/calendar-management
 ---
