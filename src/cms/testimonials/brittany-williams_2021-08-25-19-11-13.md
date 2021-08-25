@@ -6,7 +6,7 @@ quote: LifeLoop will not only enhance resident and family engagement but will
   a platform that could keep everyone connected. This tool sets our community
   apart from the rest by demonstrating the commitment to our culture.
 author: Brittany Williams
-position: VP of Strategic Development, Focused Post Acute Care Partners
+position: VP of Strategic Development
 pages:
   - /features/communication
 ---
