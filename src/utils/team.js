@@ -68,7 +68,7 @@ const TEAM = [
   },
   {
     name: 'Natallia Jorgensen',
-    title: 'Customer Success Specialist',
+    title: 'Senior Customer Success Specialist',
     image: 'natalliaJorgensen',
   },
   {
@@ -100,11 +100,6 @@ const TEAM = [
     name: 'Jared Herselman',
     title: 'Quality Assurance Specialist',
     image: 'jaredHerselman',
-  },
-  {
-    name: 'Paige Eicher',
-    title: 'Intern',
-    image: 'paigeEicher',
   },
 ];
 
@@ -175,9 +170,6 @@ export const teamImages = graphql`
       ...teamImage
     }
     jaredHerselman: file(relativePath: { eq: "team/jared.herselman.jpg" }) {
-      ...teamImage
-    }
-    paigeEicher: file(relativePath: { eq: "team/paige.eicher.jpg" }) {
       ...teamImage
     }
     samAlmquist: file(relativePath: { eq: "team/sam.almquist.jpg" }) {
