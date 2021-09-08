@@ -1,5 +1,5 @@
 ---
-title: 'Community Marketing Flyer - Not Connecting Families '
+title: Community Marketing- without Connections (Flyer)
 document: /images/cms/community-marketing-flyer-not-connecting-families.png
 isMobile: false
 topics:
@@ -7,4 +7,3 @@ topics:
 userTypes:
   - staff
 ---
-
