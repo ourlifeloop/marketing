@@ -1,5 +1,5 @@
 ---
-title: "LifeLoop Info Sheet - Staff "
+title: For Staff- LifeLoop Summary (Flyer)
 document: /images/cms/staff-member-pdf.pdf
 isMobile: false
 topics:
