@@ -1,5 +1,5 @@
 ---
-title: 'Community Marketing Flyer - Connecting Families '
+title: Community Marketing- with Connections (Flyer)
 document: /images/cms/community-marketing-flyer-connecting-families.pdf
 isMobile: false
 topics:
@@ -7,4 +7,3 @@ topics:
 userTypes:
   - staff
 ---
-
