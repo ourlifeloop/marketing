@@ -1,5 +1,5 @@
 ---
-title: LifeLoop Info Pamphlet - Staff
+title: For Staff- LifeLoop Summary (Rack Card)
 document: /images/cms/staff-member-rack-card.pdf
 isMobile: false
 topics:
