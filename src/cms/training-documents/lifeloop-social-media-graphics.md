@@ -1,5 +1,5 @@
 ---
-title: LifeLoop Social Media Graphics
+title: Rollout Social Graphics
 document: /images/cms/lifeloop-social-media-graphics.zip
 isMobile: false
 topics:
@@ -8,4 +8,3 @@ topics:
 userTypes:
   - staff
 ---
-
