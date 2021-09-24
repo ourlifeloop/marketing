@@ -27,9 +27,24 @@ const TEAM = [
     image: 'brettRobeson',
   },
   {
+    name: 'Jesse Hardy',
+    title: 'Sales Support Specialist',
+    image: 'jesseHardy',
+  },
+  {
     name: 'Joey Carney',
     title: 'Territory Manager',
     image: 'joeyCarney',
+  },
+  {
+    name: 'Jess Donahue',
+    title: 'Territory Manager',
+    image: 'jessDonahue',
+  },
+  {
+    name: 'Ellen Osborne',
+    title: 'Territory Manager',
+    image: 'ellenOsborne',
   },
   {
     name: 'Andrea Clauson',
@@ -37,9 +52,24 @@ const TEAM = [
     image: 'andreaClauson',
   },
   {
+    name: 'Madison Siniard',
+    title: 'Marketing Specialist',
+    image: 'madisonSiniard',
+  },
+  {
     name: 'Tara Robeson',
     title: 'Accounting Manager',
     image: 'taraRobeson',
+  },
+  {
+    name: 'Carlee Jordan',
+    title: 'Recruiter',
+    image: 'carleeJordan',
+  },
+  {
+    name: 'Natallia Jorgensen',
+    title: 'Senior Customer Success Specialist',
+    image: 'natalliaJorgensen',
   },
   {
     name: 'Brittany Tran',
@@ -62,19 +92,29 @@ const TEAM = [
     image: 'erinMcGill',
   },
   {
-    name: 'Jess Donahue',
-    title: 'Customer Success Specialist',
-    image: 'jessDonahue',
-  },
-  {
-    name: 'Natallia Jorgensen',
-    title: 'Senior Customer Success Specialist',
-    image: 'natalliaJorgensen',
-  },
-  {
     name: 'Sam Almquist',
     title: 'Customer Success Specialist',
     image: 'samAlmquist',
+  },
+  {
+    name: 'Katie Paul',
+    title: 'Customer Success Assistant',
+    image: 'katiePaul',
+  },
+  {
+    name: 'Dylan Kuzelka',
+    title: 'Designer',
+    image: 'dylanKuzelka',
+  },
+  {
+    name: 'Jared Herselman',
+    title: 'Quality Assurance Specialist',
+    image: 'jaredHerselman',
+  },
+  {
+    name: 'Erin Reed',
+    title: 'Quality Assurance Specialist',
+    image: 'erinReed',
   },
   {
     name: 'JT Seger',
@@ -92,14 +132,9 @@ const TEAM = [
     image: 'leviLiester',
   },
   {
-    name: 'Dylan Kuzelka',
-    title: 'Designer',
-    image: 'dylanKuzelka',
-  },
-  {
-    name: 'Jared Herselman',
-    title: 'Quality Assurance Specialist',
-    image: 'jaredHerselman',
+    name: 'Jedd Patterson',
+    title: 'Software Engineer',
+    image: 'jeddPatterson',
   },
 ];
 
@@ -173,6 +208,27 @@ export const teamImages = graphql`
       ...teamImage
     }
     samAlmquist: file(relativePath: { eq: "team/sam.almquist.jpg" }) {
+      ...teamImage
+    }
+    carleeJordan: file(relativePath: { eq: "team/carlee.jordan.png" }) {
+      ...teamImage
+    }
+    ellenOsborne: file(relativePath: { eq: "team/ellen.osborne.png" }) {
+      ...teamImage
+    }
+    erinReed: file(relativePath: { eq: "team/erin.reed.png" }) {
+      ...teamImage
+    }
+    jeddPatterson: file(relativePath: { eq: "team/jedd.patterson.png" }) {
+      ...teamImage
+    }
+    jesseHardy: file(relativePath: { eq: "team/jesse.hardy.png" }) {
+      ...teamImage
+    }
+    katiePaul: file(relativePath: { eq: "team/katie.paul.png" }) {
+      ...teamImage
+    }
+    madisonSiniard: file(relativePath: { eq: "team/madison.siniard.png" }) {
       ...teamImage
     }
   }
