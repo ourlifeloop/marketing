@@ -3,7 +3,7 @@ date: 2021-09-27T18:39:00.422Z
 type: spotlight
 author: "Phil Lee "
 title: Movement & Connection - A guest blog by LifeLoop Co-Founder Phil Lee
-photo: /images/cms/sage-green-modern-hexagon-homes-campaign-email-header-3-.png
+photo: /images/cms/phil-lee-blog-post.png
 ---
 Phil Lee, co-founder of LifeLoop, is an avid fitness enthusiast and has been volunteering at senior living communities for years teaching fitness and mobility classes. In the article below, Phil shares his personal account of heading back into communities to share his love of fitness with residents following the first wave of the COVID pandemic. 
 
