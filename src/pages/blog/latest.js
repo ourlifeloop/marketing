@@ -15,6 +15,7 @@ import Button from '../../primitives/button';
 import {
   featured,
   featuredVertical,
+  featuredPhotoContainer,
   featuredPhoto,
   featuredContent,
   featureTag,
@@ -38,11 +39,13 @@ export default function LatestBlog({ data, location }) {
           })}
         >
           {featuredPost.node.frontmatter.photo && (
-            <div className={featuredPhoto}>
-              <GatsbyImage
-                alt={featuredPost.node.frontmatter.title}
-                image={getImage(featuredPost.node.frontmatter.photo)}
-              />
+            <div className={featuredPhotoContainer}>
+              <div className={featuredPhoto}>
+                <GatsbyImage
+                  alt={featuredPost.node.frontmatter.title}
+                  image={getImage(featuredPost.node.frontmatter.photo)}
+                />
+              </div>
             </div>
           )}
           <FlexContainer

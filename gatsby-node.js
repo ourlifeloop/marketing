@@ -112,3 +112,13 @@ exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
     actions.replaceWebpackConfig(config);
   }
 };
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type MarkdownRemarkFrontmatter implements Node {
+      responsibilities: [String]
+    }
+  `;
+  createTypes(typeDefs);
+};

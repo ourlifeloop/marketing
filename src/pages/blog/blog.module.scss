@@ -19,11 +19,14 @@
   }
 }
 
+.featuredPhotoContainer {
+  max-height: 500px;
+  max-width: 40%;
+}
+
 .featuredPhoto {
   display: flex;
   height: 100%;
-  max-height: 500px;
-  max-width: 60%;
   width: 100%;
 
   img {
