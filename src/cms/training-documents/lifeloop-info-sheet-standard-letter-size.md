@@ -1,6 +1,6 @@
 ---
 title: For Staff- LifeLoop Summary (Flyer)
-document: /images/cms/staff-member-pdf.pdf
+document: /images/cms/c._for_staff-_lifeloop_summary_flyer.pdf
 isMobile: false
 topics:
   - getting-started
