@@ -1,6 +1,6 @@
 ---
 title: For Resident- LifeLoop Summary (Flyer)
-document: /images/cms/resident_pdf_-_august_2020.pdf
+document: /images/cms/h2._for_residents-_lifeloop_summary_flyer.pdf
 isMobile: false
 topics:
   - getting-started
