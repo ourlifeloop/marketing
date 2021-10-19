@@ -1,6 +1,6 @@
 ---
-title: Community Marketing Guide
-document: /images/cms/lifeloop-marketing-guide-2020.pdf
+title: Community Marketing Packet
+document: /images/cms/lifeloop_marketing_packet.pdf
 isMobile: false
 topics:
   - getting-started
@@ -8,4 +8,3 @@ topics:
 userTypes:
   - staff
 ---
-
