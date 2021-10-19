@@ -1,6 +1,6 @@
 ---
 title: Resident Connection Authorization Form
-document: /images/cms/resident-connection-authorization-form-2-.pdf
+document: /images/cms/f._connection_authorization_form.pdf
 topics:
   - connection-management
   - resident-portal
