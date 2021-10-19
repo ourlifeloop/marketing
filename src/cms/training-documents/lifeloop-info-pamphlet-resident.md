@@ -1,6 +1,6 @@
 ---
 title: For Resident- LifeLoop Summary (Rack Card)
-document: /images/cms/resident_rack_card_-_august_2020.pdf
+document: /images/cms/h1._for_residents-_lifeloop_summary_rack_cards.pdf
 isMobile: false
 topics:
   - resident-portal
