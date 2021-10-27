@@ -116,7 +116,10 @@ export default function SeniorLivingSolution({ data, location }) {
                 })
               }
             >
-              <GatsbyImage image={getImage(data.connectResidents)} />
+              <GatsbyImage
+                image={getImage(data.connectResidents)}
+                alt="Resident Benefits"
+              />
             </FlexContainer>
             <h2 className={videoHeader}>Residents</h2>
             <p>
@@ -148,7 +151,10 @@ export default function SeniorLivingSolution({ data, location }) {
                 })
               }
             >
-              <GatsbyImage image={getImage(data.connectFamily)} />
+              <GatsbyImage
+                image={getImage(data.connectFamily)}
+                alt="Family Benefits"
+              />
             </FlexContainer>
             <h2 className={videoHeader}>Family</h2>
             <p>
@@ -185,7 +191,10 @@ export default function SeniorLivingSolution({ data, location }) {
               })
             }
           >
-            <GatsbyImage image={getImage(data.staffBenefits)} />
+            <GatsbyImage
+              image={getImage(data.staffBenefits)}
+              alt="Staff Benefits"
+            />
           </FlexContainer>
           <FlexContainer className={staffContainer}>
             <FlexContainer flex="1" align="center" justify="center">

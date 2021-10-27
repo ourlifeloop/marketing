@@ -49,7 +49,7 @@ const commuintyContent = (
   </>
 );
 
-export default function AIDD({ data, location }) {
+export default function AIDDSolution({ data, location }) {
   const { isMobile, isTablet } = useDevice();
 
   return (
@@ -88,7 +88,7 @@ export default function AIDD({ data, location }) {
             direction="column"
           >
             <FlexContainer className={videoImage}>
-              <GatsbyImage image={getImage(data.residents)} />
+              <GatsbyImage image={getImage(data.residents)} alt="Residents" />
             </FlexContainer>
             <h2 className={videoHeader}>Residents</h2>
             <p>
@@ -109,7 +109,7 @@ export default function AIDD({ data, location }) {
             direction="column"
           >
             <FlexContainer className={videoImage}>
-              <GatsbyImage image={getImage(data.family)} />
+              <GatsbyImage image={getImage(data.family)} alt="Family" />
             </FlexContainer>
             <h2 className={videoHeader}>Family</h2>
             <p>
@@ -140,7 +140,7 @@ export default function AIDD({ data, location }) {
           className={classNames({ [staffMinimized]: isTablet })}
         >
           <FlexContainer className={staffBenefits}>
-            <GatsbyImage image={getImage(data.communities)} />
+            <GatsbyImage image={getImage(data.communities)} alt="Community" />
           </FlexContainer>
           <FlexContainer justify="flexend" className={staffContainer}>
             <FlexContainer
@@ -164,7 +164,7 @@ export default function AIDD({ data, location }) {
   );
 }
 
-AIDD.propTypes = {
+AIDDSolution.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,

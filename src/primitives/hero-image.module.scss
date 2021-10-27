@@ -9,6 +9,10 @@
   top: 0;
 }
 
+.heroBackgroundDark {
+  background-color: $dark-blue;
+}
+
 .heroContainer {
   height: 100%;
   max-width: variableSize(350, 480);
@@ -24,10 +28,18 @@
 
 .titleText {
   font-size: variableSize(30, 42);
+
+  &--dark {
+    color: $text-light;
+  }
 }
 
 .titleDescription {
   color: $text;
   line-height: 27px;
   font-size: 1.1rem;
+
+  &--dark {
+    color: $highlight;
+  }
 }
