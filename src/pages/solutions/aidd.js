@@ -12,6 +12,7 @@ import { removeTrailingSlash } from '../../utils/common';
 import Testimonials from '../../components/testimonials';
 import SiteWrapper from '../../components/site-wrapper';
 import DemoSection from '../../components/demo-section';
+import BlogSection from '../../components/blog-section';
 import HeroImage from '../../primitives/hero-image';
 import { useDevice } from '../../utils/effects';
 import Section from '../../primitives/section';
@@ -159,6 +160,7 @@ export default function AIDDSolution({ data, location }) {
         )}
       </Section>
       <Testimonials pathname={removeTrailingSlash(location.pathname)} />
+      <BlogSection posts={data.blogs} />
       <DemoSection />
     </SiteWrapper>
   );
@@ -200,6 +202,37 @@ export const query = graphql`
           layout: CONSTRAINED
           quality: 80
         )
+      }
+    }
+    blogs: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {
+        frontmatter: {
+          title: {
+            in: [
+              "Customer Spotlight: Daymark Living"
+              "Customer Spotlight: First Place AZ"
+            ]
+          }
+        }
+      }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 200)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            photo {
+              childImageSharp {
+                gatsbyImageData(width: 500, layout: CONSTRAINED)
+              }
+            }
+          }
+        }
       }
     }
   }

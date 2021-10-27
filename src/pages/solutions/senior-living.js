@@ -268,36 +268,5 @@ export const query = graphql`
         )
       }
     }
-    blogs: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: {
-        frontmatter: {
-          title: {
-            in: [
-              "LifeLoop Customer Spotlight: Children's Respite Care Center"
-              "Customer Spotlight: Elaine"
-            ]
-          }
-        }
-      }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 200)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            photo {
-              childImageSharp {
-                gatsbyImageData(width: 500, layout: CONSTRAINED)
-              }
-            }
-          }
-        }
-      }
-    }
   }
 `;

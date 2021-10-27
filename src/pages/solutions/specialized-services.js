@@ -183,8 +183,8 @@ export const query = graphql`
         frontmatter: {
           title: {
             in: [
-              "Customer Spotlight: Daymark Living"
-              "Customer Spotlight: First Place AZ"
+              "LifeLoop Customer Spotlight: Children's Respite Care Center"
+              "Customer Spotlight: Elaine"
             ]
           }
         }
