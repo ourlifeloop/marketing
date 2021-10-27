@@ -159,11 +159,6 @@ export const query = graphql`
         gatsbyImageData(layout: CONSTRAINED, quality: 80)
       }
     }
-    communities: file(relativePath: { eq: "staff-benefits-callout.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(width: 1356, layout: CONSTRAINED, quality: 80)
-      }
-    }
     crcc: file(relativePath: { eq: "ss-crcc.png" }) {
       childImageSharp {
         gatsbyImageData(
