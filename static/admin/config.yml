@@ -60,13 +60,15 @@ collections:
         options:
           - { label: Home Page, value: / }
           - { label: Covid, value: /covid }
-          - { label: Benefits, value: /benefits }
+          - { label: Senior Living Solution, value: /solutions/senior-living }
+          - { label: AIDD Solution, value: /solutions/aidd }
+          - { label: Specialized Services Solution, value: /solutions/specialized-services }
           - { label: Communication Feature, value: /features/communication }
           - {
               label: Calendar Management Feature,
               value: /features/calendar-management,
             }
-          - { label: Designer Feature, value: /features/designer }
+          - { label: Designer Feature, value: /features/designer }a
           - { label: Digital Signage Feature, value: /features/displays }
           - {
               label: Resident Tracking Feature,

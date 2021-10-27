@@ -26,15 +26,15 @@ import {
   emphasized,
   videoContainer,
   videoContainerVertical,
-  videoImage,
+  videoImageHoverable,
   videoHeader,
   staffMinimized,
-  staffBenefits,
+  staffBenefitsHoverable,
   staffContainer,
   staffPlayIcon,
   staffContent,
   communityFreeflow,
-} from './senior-living.module.scss';
+} from './solutions.module.scss';
 
 const commuintyContent = (
   <>
@@ -70,8 +70,8 @@ export default function SeniorLivingSolution({ data, location }) {
         height={isMobile ? '400px' : '500px'}
         objectPosition="30% 30%"
         image={getImage(data.hero)}
-        title="Set your community apart"
-        description="LifeLoop is a proven sales & marketing tool for your community. Our platform will set your community apart from the rest by empowering staff, engaging families and impacting residents."
+        title="Create a Community of Opportunity"
+        description="LifeLoop is proud to partner with communities that empower people with intellectual and developmental disabilities to thrive. Our product is proven to benefit and support all types of community life."
       >
         <VideoButton
           text="LifeLoop: A proven marketing solution"
@@ -108,7 +108,7 @@ export default function SeniorLivingSolution({ data, location }) {
             direction="column"
           >
             <FlexContainer
-              className={videoImage}
+              className={videoImageHoverable}
               onClick={() =>
                 setVideo({
                   link: 'https://www.youtube-nocookie.com/embed/XQDtfhPTgNo',
@@ -140,7 +140,7 @@ export default function SeniorLivingSolution({ data, location }) {
             direction="column"
           >
             <FlexContainer
-              className={videoImage}
+              className={videoImageHoverable}
               onClick={() =>
                 setVideo({
                   link: 'https://www.youtube-nocookie.com/embed/DucvjjOT0bs',
@@ -177,7 +177,7 @@ export default function SeniorLivingSolution({ data, location }) {
           className={classNames({ [staffMinimized]: isTablet })}
         >
           <FlexContainer
-            className={staffBenefits}
+            className={staffBenefitsHoverable}
             onClick={() =>
               setVideo({
                 link: 'https://www.youtube-nocookie.com/embed/JW5KkDSdt8w',
@@ -225,7 +225,7 @@ SeniorLivingSolution.propTypes = {
 
 export const query = graphql`
   {
-    hero: file(relativePath: { eq: "benefits-hero.jpg" }) {
+    hero: file(relativePath: { eq: "senior-living-solution-hero.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, quality: 80)
       }
@@ -239,14 +239,24 @@ export const query = graphql`
       relativePath: { eq: "video-callout-connect-family.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(width: 623, layout: CONSTRAINED, quality: 80)
+        gatsbyImageData(
+          width: 623
+          height: 400
+          layout: CONSTRAINED
+          quality: 80
+        )
       }
     }
     connectResidents: file(
       relativePath: { eq: "video-callout-connect-residents.jpg" }
     ) {
       childImageSharp {
-        gatsbyImageData(width: 623, layout: CONSTRAINED, quality: 80)
+        gatsbyImageData(
+          width: 623
+          height: 400
+          layout: CONSTRAINED
+          quality: 80
+        )
       }
     }
   }
