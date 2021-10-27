@@ -6,21 +6,21 @@ import { Link, graphql } from 'gatsby';
 import classNames from 'classnames';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-import RelativeContainer from '../primitives/relative-container';
-import ActionCallout from '../primitives/action-callout';
-import FlexContainer from '../primitives/flex-container';
-import TitleSection from '../primitives/title.section';
-import { removeTrailingSlash } from '../utils/common';
-import Testimonials from '../components/testimonials';
-import SiteWrapper from '../components/site-wrapper';
-import DemoSection from '../components/demo-section';
-import PlayIcon from '../assets/icons/icon-play.svg';
-import VideoButton from '../primitives/video-button';
-import VideoModal from '../primitives/video-modal';
-import HeroImage from '../primitives/hero-image';
-import { useDevice } from '../utils/effects';
-import Section from '../primitives/section';
-import Button from '../primitives/button';
+import RelativeContainer from '../../primitives/relative-container';
+import ActionCallout from '../../primitives/action-callout';
+import FlexContainer from '../../primitives/flex-container';
+import TitleSection from '../../primitives/title.section';
+import { removeTrailingSlash } from '../../utils/common';
+import Testimonials from '../../components/testimonials';
+import SiteWrapper from '../../components/site-wrapper';
+import DemoSection from '../../components/demo-section';
+import PlayIcon from '../../assets/icons/icon-play.svg';
+import VideoButton from '../../primitives/video-button';
+import VideoModal from '../../primitives/video-modal';
+import HeroImage from '../../primitives/hero-image';
+import { useDevice } from '../../utils/effects';
+import Section from '../../primitives/section';
+import Button from '../../primitives/button';
 
 import {
   emphasized,
@@ -34,7 +34,7 @@ import {
   staffPlayIcon,
   staffContent,
   communityFreeflow,
-} from './benefits.module.scss';
+} from './senior-living.module.scss';
 
 const commuintyContent = (
   <>
@@ -59,7 +59,7 @@ const commuintyContent = (
   </>
 );
 
-export default function Benefits({ data, location }) {
+export default function SeniorLivingSolution({ data, location }) {
   const [video, setVideo] = useState();
   const { isMobile, isTablet } = useDevice();
 
@@ -217,7 +217,7 @@ export default function Benefits({ data, location }) {
   );
 }
 
-Benefits.propTypes = {
+SeniorLivingSolution.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
