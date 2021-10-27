@@ -64,12 +64,10 @@ export default function SpecializedServiceSolution({ data, location }) {
             <FlexContainer className={videoImage}>
               <GatsbyImage
                 image={getImage(data.crcc)}
-                alt="Children’s Respite Care Center Omaha"
+                alt="Children’s Respite Care Center"
               />
             </FlexContainer>
-            <h2 className={videoHeader}>
-              Children’s Respite Care Center Omaha
-            </h2>
+            <h2 className={videoHeader}>Children’s Respite Care Center</h2>
             <p>
               Children’s Respite Care Center (CRCC) currently serves nearly 600
               children from birth through 21 years of age with medically fragile
@@ -185,8 +183,8 @@ export const query = graphql`
         frontmatter: {
           title: {
             in: [
-              "LifeLoop Customer Spotlight: Children's Respite Care Center"
-              "Customer Spotlight: Elaine"
+              "Customer Spotlight: Daymark Living"
+              "Customer Spotlight: First Place AZ"
             ]
           }
         }

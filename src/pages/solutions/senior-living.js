@@ -70,8 +70,8 @@ export default function SeniorLivingSolution({ data, location }) {
         height={isMobile ? '400px' : '500px'}
         objectPosition="30% 30%"
         image={getImage(data.hero)}
-        title="Create a Community of Opportunity"
-        description="LifeLoop is proud to partner with communities that empower people with intellectual and developmental disabilities to thrive. Our product is proven to benefit and support all types of community life."
+        title="Set your community apart"
+        description="LifeLoop is a proven sales & marketing tool for your community. Our platform will set your community apart from the rest by empowering staff, engaging families and impacting residents."
       >
         <VideoButton
           text="LifeLoop: A proven marketing solution"
@@ -266,6 +266,37 @@ export const query = graphql`
           layout: CONSTRAINED
           quality: 80
         )
+      }
+    }
+    blogs: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {
+        frontmatter: {
+          title: {
+            in: [
+              "LifeLoop Customer Spotlight: Children's Respite Care Center"
+              "Customer Spotlight: Elaine"
+            ]
+          }
+        }
+      }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 200)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            photo {
+              childImageSharp {
+                gatsbyImageData(width: 500, layout: CONSTRAINED)
+              }
+            }
+          }
+        }
       }
     }
   }
