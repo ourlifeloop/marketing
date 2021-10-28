@@ -1,8 +1,8 @@
 ---
 title: Family View
-video: 'https://www.youtube-nocookie.com/embed/feeuDH_qshU'
+video: https://www.youtube-nocookie.com/embed/feeuDH_qshU
 cover: /images/cms/vid-cov-6.jpg
-isNew: true
+isNew: false
 topics:
   - connection-portal
 userTypes:
