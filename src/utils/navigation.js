@@ -412,10 +412,26 @@ const NAVIGATION = {
       },
     },
   },
-  benefits: {
-    key: 'benefits',
-    name: 'Benefits',
-    link: '/benefits',
+  solutions: {
+    key: 'solutions',
+    name: 'Solutions',
+    subNav: {
+      seniorLiving: {
+        key: 'seniorLiving',
+        name: 'Senior Living',
+        link: '/solutions/senior-living'
+      },
+      aidd: {
+        key: 'aidd',
+        name: 'AIDD',
+        link: '/solutions/aidd'
+      },
+      specializedServices: {
+        key: 'specializedServices',
+        name: 'Specialized Services',
+        link: '/solutions/specialized-services'
+      },
+    },
   },
   about: {
     key: 'about',

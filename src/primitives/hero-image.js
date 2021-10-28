@@ -14,13 +14,17 @@ import {
   heroContainer,
   heroContainerRight,
   heroContainerFullWidth,
+  heroBackgroundDark,
   titleText,
+  titleTextDark,
   titleDescription,
+  titleDescriptionDark,
 } from './hero-image.module.scss';
 
 const OPACITY_CONSTANT = 1440;
 
 export default function HeroImage({
+  isDark,
   image,
   height,
   direction,
@@ -37,7 +41,11 @@ export default function HeroImage({
   const opacity = clamp(width / OPACITY_CONSTANT, 0, 1);
 
   return (
-    <RelativeContainer>
+    <RelativeContainer
+      className={classNames({
+        [heroBackgroundDark]: isDark,
+      })}
+    >
       <FlexContainer style={{ opacity, height }}>
         <GatsbyImage
           alt={title}
@@ -55,8 +63,20 @@ export default function HeroImage({
             [heroContainerFullWidth]: isMobile,
           })}
         >
-          <h1 className={titleText}>{title}</h1>
-          <p className={titleDescription}>{description}</p>
+          <h1
+            className={classNames(titleText, {
+              [titleTextDark]: isDark,
+            })}
+          >
+            {title}
+          </h1>
+          <p
+            className={classNames(titleDescription, {
+              [titleDescriptionDark]: isDark,
+            })}
+          >
+            {description}
+          </p>
           {children}
         </FlexContainer>
       </Layout>
@@ -65,6 +85,7 @@ export default function HeroImage({
 }
 
 HeroImage.propTypes = {
+  isDark: PropTypes.bool,
   image: PropTypes.shape().isRequired,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   direction: PropTypes.string,
@@ -76,6 +97,7 @@ HeroImage.propTypes = {
 };
 
 HeroImage.defaultProps = {
+  isDark: false,
   height: undefined,
   direction: 'left',
   children: undefined,
