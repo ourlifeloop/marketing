@@ -38,6 +38,12 @@ export default function ConnectionPortalFeature({ data, location }) {
       />
       <ImageSection
         leftImage
+        title="LifeLoop Express: Delivering Happiness"
+        description="The LifeLoop Express allows family members to send their loved one a personalized postcard directly through our platform. Family members can log in to LifeLoop, select a postcard, and include a personal message and photo. So what's the best part? We do all the heavy lifting for you! LifeLoop takes care of the printing, mailing, and ensuring it gets delivered directly to the correct resident. It is guaranteed to deliver a smile."
+        image={getImage(data.express)}
+      />
+      <ImageSection
+        rightImage
         title="Making Requests Has Never Been Easier"
         description="With the transportation feature in LifeLoop, you can easily manage and schedule ride requests for your loved one. With the maintenance feature, you can input maintenance requests on behalf of your loved one and receive progress updates and a detailed history log."
         image={getImage(data.requests)}
@@ -69,6 +75,16 @@ export const query = graphql`
       }
     }
     requests: file(relativePath: { eq: "requests.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          height: 600
+          layout: CONSTRAINED
+          quality: 80
+          placeholder: BLURRED
+        )
+      }
+    }
+    express: file(relativePath: { eq: "ll-express.png" }) {
       childImageSharp {
         gatsbyImageData(
           height: 600
