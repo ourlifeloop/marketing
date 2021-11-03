@@ -1,8 +1,8 @@
 ---
 title: Connections & Communication
-video: 'https://www.youtube-nocookie.com/embed/WPj2Pclcv9A'
+video: https://www.youtube-nocookie.com/embed/WPj2Pclcv9A
 cover: /images/cms/vid-cov-1.jpg
-isNew: true
+isNew: false
 isMobile: false
 topics:
   - getting-started
