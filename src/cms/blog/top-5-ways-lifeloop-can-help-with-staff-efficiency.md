@@ -5,15 +5,11 @@ author: Madison Siniard
 title: Top 5 Ways LifeLoop Can Help with Staff Efficiency
 photo: /images/cms/blog-headers.png
 ---
-
-
 <!--StartFragment-->
 
 For our clients in the senior living industry, having appropriate staffing is a necessity to keep each community running smoothly. Since the onset of COVID, senior living providers have experienced unprecedented levels of staffing shortages, which has left many communities without a sufficient number of caregivers. According to a [2021 American Health Care Association survey](https://www.ahcancal.org/News-and-Communications/Fact-Sheets/FactSheets/Workforce-Survey-June2020.pdf), 94% of nursing homes and 81% of assisted living communities have faced a shortage of staff members. 
 
 As our industry faces a significant shortage of, and a growing demand for, quality workers, we are well aware that many communities are trying to do more with less. Finding and retaining new employees can be a challenge on top of the need to properly train and onboard new hires. And unfortunately, the hiring and training process for new employees can often feel endless and exhausting. This is where LifeLoop can step in and create efficiencies that benefit all parties involved. Here are 5 crucial ways that the LifeLoop technology can assist with employee efficiency, retention and training:
-
-
 
 1. Keep Resident Information Easily Accessible 
 
@@ -35,20 +31,17 @@ No matter what department they are in, staff members can increase their producti
 
 At LifeLoop, we believe that time savings on operational tasks gives staff members the added benefit of being able to spend more one-on-one time with residents. As our industry has learned through COVID, transparent communication is key for staff, resident, and family satisfaction. But now more than ever, timely communication is an expectation for families as they look for the best place for their loved one and it is vital for communities to deliver. 
 
-
-
 When it comes to communication for your community, LifeLoop offers valuable time savings by allowing you to send out branded messages and announcements to staff, residents, family, community vendors, and more. By sending announcements through LifeLoop, families, staff, and residents will immediately be notified keeping everyone on the same page with minimal effort required to distribute these updates. And you can ensure that recipients never miss an important message because they will receive notifications for all messages you send as a push notification, text message or via email. 
 
 ![](/images/cms/efficiency-4.png)
 
-\
+
+
 <!--StartFragment-->
 
 4. Seamless Integration
 
 We’ve learned from our clients that residents love calendars and being able to see the upcoming activities for the week and month ahead. As with anything in LifeLoop, you can expect a seamless integration from your calendar to other features within the platform. Your calendar can be automatically shared and updated real-time on your website, on your displays, in the resident portal and in the family mobile app in a matter of minutes which prevents staff from having to make updates in multiple places. 
-
-
 
 The real value here comes in the form of extreme time-savings for staff members which allows them to spend the hours saved with residents or on other important tasks. Staff who feel more efficient and productive in their jobs usually feel more personally fulfilled compared to when they feel stretched thin. Technology that not only benefits staff members but amplifies their productivity is key to successful operations for any community. 
 
@@ -66,11 +59,7 @@ We are well aware that the onboarding process for new employees can be time inte
 
 As we look back on the staffing challenges of the past few years, and as we look ahead to what the future of our communities will look like, we simply cannot ignore the correlation between staff efficiency and community success. Meaningful engagement, from staff members all the way down to our residents, has a direct impact on community ROI. Your staff members and their ability to effectively and efficiently do their jobs has a direct correlation to resident satisfaction, engagement data, quality of life, and more. So investing in the tools to keep staff efficient by simplifying daily tasks is a meaningful step in the right direction. 
 
-
-
 If you’re interesting in finding out more about LifeLoop and what it can do for you community you can request a demo here: <https://ourlifeloop.com/demo> 
-
-
 
 <!--EndFragment-->
 
