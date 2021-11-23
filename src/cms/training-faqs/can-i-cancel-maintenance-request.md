@@ -1,10 +1,10 @@
 ---
 question: Can I cancel Maintenance request?
 answer: >
-  -	In the maintenance tile, find the request you would like to delete and click
-  “view details”.
+  In the Maintenance tile, find the request you would like to delete and click
+  “View Details”.
 
-  -	In the details select “Cancel Request” and your request will be deleted. 
+  In the details select “Cancel Request” and your request will be deleted. 
 isMobile: false
 topics:
   - maintenance
