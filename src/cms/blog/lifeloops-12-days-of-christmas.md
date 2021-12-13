@@ -5,13 +5,9 @@ author: Andrea Clauson
 title: LifeLoop's 12 Days of Christmas
 photo: /images/cms/12-days.png
 ---
-
-
 As the holidays approach this year, we are feeling incredibly grateful as a company. To say that the last few years in senior living have not been easy would be, well, a gross understatement. I think we can all admit we had moments of struggle, moments where we implemented the “fake it till we make it” mentality, and honestly moments that might have felt a little hopeless.
 
 One of the advantages, however, was that we saw what we were really made of. As a company, we are privileged to witness just how dedicated and truly selfless those who work in senior care are. This industry, at the heart of it, is about people. People who live in communities but also those who care for them. And while the world may have focused on the negatives of the senior living industry in the past year or so, we got to witness firsthand how so many of our clients stepped up to the plate and truly made positive impacts on the daily lives of their residents and each other. So, during this season of giving, we decided we can no longer keep these stories to ourselves. They deserve, and NEED, to be shared! So please enjoy LifeLoop’s 12 Days of Christmas. Celebrating the good, the beautiful and the selfless side of senior living.
-
-
 
 ### Day 1 – Elegance Senior Living
 
@@ -19,9 +15,9 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ***\-        Submitted by Teresa Capener, Resident Experience Director at Westworth at East MillCreek***
 
+###  
 
-
-###  Day 2 – Watermark Retirement Communities
+### Day 2 – Watermark Retirement Communities
 
 "October could not have come soon enough for these two lovebirds. John and Connie met at Watermark’s Fountains at Crystal Lake on John's first day of moving in.They had an instant connection, and this fall Crystal Lake held a reception to celebrate their love, with a beautiful cake, and surrounded by Watermark family. This happy couple is proof that you are never too old to find true love."
 
@@ -29,15 +25,11 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ***\-        Submitted by Aaryn Brewer, Senior Project Manager at Watermark Retirement Communities***
 
- 
-
 ### Day 3 – Village Northwest Unlimited
 
 "'Building successful lives through opportunities and choices' is the vision we have shared for over 45 years of providing services to individuals with Intellectual and Developmental disabilities. Beginning in July, our residents have been able to experience a new lineup of activities that we have been working on for several months. Many of these activities allow the residents to get out into the community to enjoy their favorite activities such as bowling, fishing, trips to the zoo and many others. Families love seeing all the amazing activities our staff members plan."
 
 ***\-        Submitted by Justin Jonas, CPA, Director of Operations at VNU***
-
-
 
 ### Day 4 – Westmont Living
 
@@ -47,23 +39,17 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ![](/images/cms/12-days-1.png)
 
-
-
 ### Day 5 – MorningPointe Senior Living
 
 “Our Morning Pointe EDs are one-of-a-kind! And at the Morning Pointe of Russell (KY) campus, Cheryl Stephens leads the pack with a spirit of teamwork, enthusiasm for senior living, and making a happy home for residents! Her associates love her, too. She loves being an executive director, so much so that her biggest fear is not being there someday for her team. ‘I want to be here at Morning Pointe until I'm too old to work!’ says Cheryl.”
 
 ***\-        Submitted by Heather Tussing, Chief Operations Officer for MorningPointe Senior Living***
 
-
-
 ### Day 6 – Dial Senior Living
 
 "Mindy and Rachel are the Lifestyle Directors at our Overlook Village community. These two ladies really know how to bring the FUN! Every week Mindy and Rachel go above and beyond to infuse happiness into the lives of our residents.From talent shows, to fundraising for a cause, and making music videos with our residents every Monday, there’s never a dull moment! Mindy and Rachel work tirelessly to create a positive and engaging community for our residents each day."
 
 ***\-        Submitted by Kirsten Deangelis, Lifestyle & Culture Director, Dial Senior Living***
-
-
 
 ### Day 7 – WellQuest Living
 
@@ -72,8 +58,6 @@ One of the advantages, however, was that we saw what we were really made of. As 
 “Staff has been known to make little gifts for residents to show they care, decorate a residents room to make it more cheery, order takeout from a residents favorite restaurant just because, sew buttons on residents shirts, just all around a close knit family here at WellQuest with residents treating other residents and staff like their own family and vice versa."
 
 ***\-        Submitted by Laura Carrillo, Programs Director, Wellquest of Elk Grove***
-
-
 
 ### Day 8 – Agemark Senior Living
 
@@ -85,8 +69,6 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ![](/images/cms/12-days-2.png)
 
-
-
 ### Day 9 – Stellar Senior Living
 
 "Tai, Life Enrichment Director at The Palms at Sun City, is affectionately known as the “Cheerleader” of the community and is the residents’ biggest advocate! Each month she builds a ROBUST and well-rounded activities program that encourages residents to accomplish their life goals and dreams."
@@ -97,8 +79,6 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 * Submitted by Caitlin Curtis, Assistant Director of Health Services, Stellar Senior Living
 
-
-
 ### Day 10 – Hillcrest Health Services
 
 "The Grand Lodge at Hillcrest Country Estates prides itself on being an active and adventurous community with team members who always put our residents first."
@@ -106,8 +86,6 @@ One of the advantages, however, was that we saw what we were really made of. As 
 "At the Grand Lodge age is just a number and we pride ourselves on continuing to stay active, always trying new things, and creating a culture of compassion and empathy for everyone who steps in our doors."
 
 ***\-        Submitted by Michael Pollock, Director of Lifestyle & Wellness, Hillcrest Health Services***
-
-
 
 ### Day 11 – Senior Resource Group
 
@@ -127,8 +105,6 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ![](/images/cms/12-days-3.png)
 
-### Day 13 – BLOG BONUS –  Cascadia Senior Living & Fieldstone Communities
+### Day 13 – Blog Bonus –  Cascadia Senior Living & Fieldstone Communities
 
-“Boop is always a ray of sunshine! You can bet she dresses for every holiday in her finest, most festive attire. And she loves spending time on art projects and listening to musical entertainers.”    
-
-***\-        Submitted by Mandi Ellison, VP of People & Brand, Cascadia Senior Living***
+![](/images/cms/12-days-blog-images.png)
