@@ -9,8 +9,6 @@ As the holidays approach this year, we are feeling incredibly grateful as a comp
 
 One of the advantages, however, was that we saw what we were really made of. As a company, we are privileged to witness just how dedicated and truly selfless those who work in senior care are. This industry, at the heart of it, is about people. People who live in communities but also those who care for them. And while the world may have focused on the negatives of the senior living industry in the past year or so, we got to witness firsthand how so many of our clients stepped up to the plate and truly made positive impacts on the daily lives of their residents and each other. So, during this season of giving, we decided we can no longer keep these stories to ourselves. They deserve, and NEED, to be shared! So please enjoy LifeLoop’s 12 Days of Christmas. Celebrating the good, the beautiful and the selfless side of senior living.
 
-
-
 ### Day 1 – Elegance Senior Living
 
 "Tomas our Maintenance Engineer is amazing! The man is always busy and works so hard to stay on top of everyone’s requests. Tomas is kind and forever patient as he walks us through how to use the remote or take care of a flooded apartment. There is literally nothing Tomas is not able to repair, improve or build from the ground up. Whenever there is an emergency, day or night, he is always quick to come in to make sure our residents are well cared for. Tomas always has a smile on his face and is always there for our team. This kind-hearted man even remembers our birthdays and is always getting them a delicious cake and thoughtful gift and has even purchased TV’s for a couple of staff members in need. We are so blessed to have this great man on our team!"
@@ -25,9 +23,9 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 "Maria Barnett is the Community Life Director at Caliche Senior Living and has worked here since the opening in 2017! It means so much to Maria to make sure the residents have a memorable time during the holidays.Her heart is so invested in her residents and staff, and since Christmas is her favorite holiday, she plans a special celebration for everyone that includes gifts, live music, and a lot of fun for her residents! Maria is truly one of a kind!"
 
-***\-        Submitted by Aaryn Brewer, Senior Project Manager at Watermark Retirement Communities***
+***\-        Submitted by Aaryn Brewer, Senior Project Manager at Watermark Retirement Communities*** 
 
-
+###  
 
 ### Day 3 – Village Northwest Unlimited
 
@@ -35,7 +33,7 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ***\-        Submitted by Justin Jonas, CPA, Director of Operations at VNU***
 
-
+###  
 
 ### Day 4 – Westmont Living
 
@@ -51,7 +49,7 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ***\-        Submitted by Heather Tussing, Chief Operations Officer for MorningPointe Senior Living***
 
-
+###  
 
 ### Day 6 – Dial Senior Living
 
@@ -59,7 +57,7 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ***\-        Submitted by Kirsten Deangelis, Lifestyle & Culture Director, Dial Senior Living***
 
-
+###  
 
 ### Day 7 – WellQuest Living
 
@@ -69,7 +67,7 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ***\-        Submitted by Laura Carrillo, Programs Director, Wellquest of Elk Grove***
 
-
+###  
 
 ### Day 8 – Agemark Senior Living
 
@@ -91,7 +89,7 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ***\-         Submitted by Caitlin Curtis, Assistant Director of Health Services, Stellar Senior Living***
 
-
+###  
 
 ### Day 10 – Hillcrest Health Services
 
@@ -101,7 +99,7 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ***\-        Submitted by Michael Pollock, Director of Lifestyle & Wellness, Hillcrest Health Services***
 
-
+###  
 
 ### Day 11 – Senior Resource Group
 
@@ -113,7 +111,7 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ***\-        Submitted by Eric Dobner, Regional ZEST Director, Senior Resource Group***
 
-
+###  
 
 ### Day 12 – Avamere Health Services
 
