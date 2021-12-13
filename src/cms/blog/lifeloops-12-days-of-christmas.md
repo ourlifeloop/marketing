@@ -9,6 +9,8 @@ As the holidays approach this year, we are feeling incredibly grateful as a comp
 
 One of the advantages, however, was that we saw what we were really made of. As a company, we are privileged to witness just how dedicated and truly selfless those who work in senior care are. This industry, at the heart of it, is about people. People who live in communities but also those who care for them. And while the world may have focused on the negatives of the senior living industry in the past year or so, we got to witness firsthand how so many of our clients stepped up to the plate and truly made positive impacts on the daily lives of their residents and each other. So, during this season of giving, we decided we can no longer keep these stories to ourselves. They deserve, and NEED, to be shared! So please enjoy LifeLoop’s 12 Days of Christmas. Celebrating the good, the beautiful and the selfless side of senior living.
 
+
+
 ### Day 1 – Elegance Senior Living
 
 "Tomas our Maintenance Engineer is amazing! The man is always busy and works so hard to stay on top of everyone’s requests. Tomas is kind and forever patient as he walks us through how to use the remote or take care of a flooded apartment. There is literally nothing Tomas is not able to repair, improve or build from the ground up. Whenever there is an emergency, day or night, he is always quick to come in to make sure our residents are well cared for. Tomas always has a smile on his face and is always there for our team. This kind-hearted man even remembers our birthdays and is always getting them a delicious cake and thoughtful gift and has even purchased TV’s for a couple of staff members in need. We are so blessed to have this great man on our team!"
@@ -25,11 +27,15 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ***\-        Submitted by Aaryn Brewer, Senior Project Manager at Watermark Retirement Communities***
 
+
+
 ### Day 3 – Village Northwest Unlimited
 
 "'Building successful lives through opportunities and choices' is the vision we have shared for over 45 years of providing services to individuals with Intellectual and Developmental disabilities. Beginning in July, our residents have been able to experience a new lineup of activities that we have been working on for several months. Many of these activities allow the residents to get out into the community to enjoy their favorite activities such as bowling, fishing, trips to the zoo and many others. Families love seeing all the amazing activities our staff members plan."
 
 ***\-        Submitted by Justin Jonas, CPA, Director of Operations at VNU***
+
+
 
 ### Day 4 – Westmont Living
 
@@ -45,11 +51,15 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 ***\-        Submitted by Heather Tussing, Chief Operations Officer for MorningPointe Senior Living***
 
+
+
 ### Day 6 – Dial Senior Living
 
 "Mindy and Rachel are the Lifestyle Directors at our Overlook Village community. These two ladies really know how to bring the FUN! Every week Mindy and Rachel go above and beyond to infuse happiness into the lives of our residents.From talent shows, to fundraising for a cause, and making music videos with our residents every Monday, there’s never a dull moment! Mindy and Rachel work tirelessly to create a positive and engaging community for our residents each day."
 
 ***\-        Submitted by Kirsten Deangelis, Lifestyle & Culture Director, Dial Senior Living***
+
+
 
 ### Day 7 – WellQuest Living
 
@@ -58,6 +68,8 @@ One of the advantages, however, was that we saw what we were really made of. As 
 “Staff has been known to make little gifts for residents to show they care, decorate a residents room to make it more cheery, order takeout from a residents favorite restaurant just because, sew buttons on residents shirts, just all around a close knit family here at WellQuest with residents treating other residents and staff like their own family and vice versa."
 
 ***\-        Submitted by Laura Carrillo, Programs Director, Wellquest of Elk Grove***
+
+
 
 ### Day 8 – Agemark Senior Living
 
@@ -77,7 +89,9 @@ One of the advantages, however, was that we saw what we were really made of. As 
 
 "Tai creates special moments that turn the days into weeks, weeks into months and months into years, memories that will last a lifetime for the residents, their families, and her fellow team members. Tai is a STELLAR employee, we are so fortunate to have her on our team!"
 
-* Submitted by Caitlin Curtis, Assistant Director of Health Services, Stellar Senior Living
+***\-         Submitted by Caitlin Curtis, Assistant Director of Health Services, Stellar Senior Living***
+
+
 
 ### Day 10 – Hillcrest Health Services
 
@@ -86,6 +100,8 @@ One of the advantages, however, was that we saw what we were really made of. As 
 "At the Grand Lodge age is just a number and we pride ourselves on continuing to stay active, always trying new things, and creating a culture of compassion and empathy for everyone who steps in our doors."
 
 ***\-        Submitted by Michael Pollock, Director of Lifestyle & Wellness, Hillcrest Health Services***
+
+
 
 ### Day 11 – Senior Resource Group
 
@@ -96,6 +112,8 @@ One of the advantages, however, was that we saw what we were really made of. As 
 "Their Executive Director and their Resident Council President gave moving speeches where they spoke of the significance behind the tree planting. They called the Magnolia their “Tribute Tree” because it honors something that has impacted their lives in a very meaningful way, and because it is a tribute to what we can do together. "
 
 ***\-        Submitted by Eric Dobner, Regional ZEST Director, Senior Resource Group***
+
+
 
 ### Day 12 – Avamere Health Services
 
