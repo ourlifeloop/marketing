@@ -47,6 +47,11 @@ const TEAM = [
     image: 'ellenOsborne',
   },
   {
+    name: 'TJ Butler',
+    title: 'Territory Manager',
+    image: 'tjButler',
+  },
+  {
     name: 'Andrea Clauson',
     title: 'Marketing Manager',
     image: 'andreaClauson',
@@ -102,13 +107,23 @@ const TEAM = [
     image: 'katiePaul',
   },
   {
+    name: 'Hayley Post',
+    title: 'Customer Success Assistant',
+    image: 'hayleyPost',
+  },
+  {
+    name: 'Hana Hutchens',
+    title: 'Customer Success Assistant',
+    image: 'hanaHutchens',
+  },
+  {
     name: 'Dylan Kuzelka',
     title: 'Designer',
     image: 'dylanKuzelka',
   },
   {
     name: 'Jared Herselman',
-    title: 'Quality Assurance Specialist',
+    title: 'Lead Quality Assurance Specialist',
     image: 'jaredHerselman',
   },
   {
@@ -186,7 +201,7 @@ export const teamImages = graphql`
     jessDonahue: file(relativePath: { eq: "team/jess.donahue.jpg" }) {
       ...teamImage
     }
-    brittanyTran: file(relativePath: { eq: "team/brittany.tran.jpg" }) {
+    brittanyTran: file(relativePath: { eq: "team/brittany.tran.jpeg" }) {
       ...teamImage
     }
     erinMcGill: file(relativePath: { eq: "team/erin.mcgill.jpg" }) {
@@ -216,7 +231,7 @@ export const teamImages = graphql`
     ellenOsborne: file(relativePath: { eq: "team/ellen.osborne.png" }) {
       ...teamImage
     }
-    erinReed: file(relativePath: { eq: "team/erin.reed.png" }) {
+    erinReed: file(relativePath: { eq: "team/erin.reed.jpg" }) {
       ...teamImage
     }
     jeddPatterson: file(relativePath: { eq: "team/jedd.patterson.png" }) {
@@ -229,6 +244,15 @@ export const teamImages = graphql`
       ...teamImage
     }
     madisonSiniard: file(relativePath: { eq: "team/madison.siniard.png" }) {
+      ...teamImage
+    }
+    hanaHutchens: file(relativePath: { eq: "team/hana.hutchens.jpg" }) {
+      ...teamImage
+    }
+    hayleyPost: file(relativePath: { eq: "team/hayley.post.jpg" }) {
+      ...teamImage
+    }
+    tjButler: file(relativePath: { eq: "team/tj.butler.jpg" }) {
       ...teamImage
     }
   }
