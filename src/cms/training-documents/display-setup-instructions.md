@@ -1,6 +1,6 @@
 ---
 title: Display Setup Instructions
-document: /images/cms/display-setup-instructions-amazon-firestick-6-.pdf
+document: /images/cms/new-display-setup-instructions-1-.pdf
 topics:
   - displays
 userTypes:

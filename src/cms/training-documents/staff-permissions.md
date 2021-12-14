@@ -1,6 +1,6 @@
 ---
 title: Staff Permissions by Role
-document: /images/cms/lifeloop-staff-permissions-document-3-.pdf
+document: /images/cms/staff-permissions-by-role-1-.pdf
 topics:
   - staff-management
 userTypes:
