@@ -29,7 +29,7 @@ With more than 10,000 active members in tech hubs across the US, Powderkeg is th
 
 ## About LifeLoop
 
-LifeLoop connects senior living residents, staff, and family members with its inclusive senior living solutions. At work in 500+ communities across the country, LifeLoop is the go-to solution to enhance your operational efficiency, increase and simplify your communication, and vastly improve your resident and family engagement. LifeLoop gives both staff and family members an unprecedented level of transparency, and helps families maintain a more meaningful connection with their loved ones. For more information, visit [www.ourlifeloop.com](http://www.ourlifeloop.com/)
+LifeLoop connects senior living residents, staff, and family members with its inclusive senior living solutions. At work in 700+ communities across the country, LifeLoop is the go-to solution to enhance your operational efficiency, increase and simplify your communication, and vastly improve your resident and family engagement. LifeLoop gives both staff and family members an unprecedented level of transparency, and helps families maintain a more meaningful connection with their loved ones. For more information, visit [www.ourlifeloop.com](http://www.ourlifeloop.com/)
 
 ## Media Contact
 
