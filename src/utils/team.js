@@ -73,7 +73,7 @@ const TEAM = [
   },
   {
     name: 'Natallia Jorgensen',
-    title: 'Senior Customer Success Specialist',
+    title: 'Enterprise Customer Relationship Specialist, Team Lead',
     image: 'natalliaJorgensen',
   },
   {
