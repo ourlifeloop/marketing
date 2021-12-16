@@ -53,7 +53,7 @@ const TEAM = [
   },
   {
     name: 'Andrea Clauson',
-    title: 'Marketing Manager',
+    title: 'Director of Marketing',
     image: 'andreaClauson',
   },
   {
@@ -63,7 +63,7 @@ const TEAM = [
   },
   {
     name: 'Tara Robeson',
-    title: 'Accounting Manager',
+    title: 'Accounting Manager/HR',
     image: 'taraRobeson',
   },
   {
@@ -78,42 +78,42 @@ const TEAM = [
   },
   {
     name: 'Brittany Tran',
-    title: 'Customer Success Specialist',
+    title: 'Customer Relationship Specialist',
     image: 'brittanyTran',
   },
   {
-    name: 'Caroline Ebers',
-    title: 'Customer Success Specialist',
-    image: 'carolineEbers',
-  },
-  {
     name: 'Chelsea Blaser',
-    title: 'Customer Success Specialist',
+    title: 'Customer Relationship Specialist',
     image: 'chelseaBlaser',
   },
   {
     name: 'Erin McGill',
-    title: 'Customer Success Specialist',
+    title: 'Onboarding Specialist',
     image: 'erinMcGill',
   },
   {
+    name: 'Caroline Ebers',
+    title: 'Onboarding Specialist',
+    image: 'carolineEbers',
+  },
+  {
     name: 'Sam Almquist',
-    title: 'Customer Success Specialist',
+    title: 'Customer Support Specialist',
     image: 'samAlmquist',
   },
   {
     name: 'Katie Paul',
-    title: 'Customer Success Assistant',
+    title: 'Implementation Specialist',
     image: 'katiePaul',
   },
   {
     name: 'Hayley Post',
-    title: 'Customer Success Assistant',
+    title: 'Implementation Specialist',
     image: 'hayleyPost',
   },
   {
-    name: 'Hana Hutchens',
-    title: 'Customer Success Assistant',
+    name: 'Hanna Hutchens',
+    title: 'Implementation Specialist',
     image: 'hanaHutchens',
   },
   {
