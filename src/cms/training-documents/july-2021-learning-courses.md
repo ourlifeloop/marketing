@@ -1,6 +1,6 @@
 ---
-title: November 2021 Learning Courses
-document: /images/cms/nov-lifeloop-learning-course-links-pdf-1-.pdf
+title: January 2022 Learning Courses
+document: /images/cms/jan-lifeloop-learning-course-links-pdf-3-.pdf
 isMobile: false
 topics:
   - learning-courses
