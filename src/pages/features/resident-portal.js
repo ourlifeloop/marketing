@@ -14,10 +14,10 @@ export default function ResidentPortalFeature({ data, location }) {
     >
       <TitleSection header="Resident Portal">
         <p>
-          Within the senior living industry, it is widely acknowledged that
-          engaging the resident and their family members with technology can
-          have positive impact on the life of the resident, help alleviate
-          social isolation and give your community a competitive edge.
+          LifeLoop provides a user-friendly platform to help residents stay
+          connected to their family, friends, and community. Easily register for
+          activities, message loved ones and receive important community
+          announcements from any device with internet access.
         </p>
       </TitleSection>
       <ImageSection

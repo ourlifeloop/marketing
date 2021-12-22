@@ -33,7 +33,7 @@ const TEAM = [
   },
   {
     name: 'Joey Carney',
-    title: 'Territory Manager',
+    title: 'Senior Territory Manager',
     image: 'joeyCarney',
   },
   {
