@@ -1,6 +1,6 @@
 ---
 title: January 2022 Learning Courses
-document: /images/cms/jan-lifeloop-learning-course-links-pdf-3-.pdf
+document: /images/cms/jan-lifeloop-learning-course-links-pdf-4-.pdf
 isMobile: false
 topics:
   - learning-courses
