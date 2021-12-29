@@ -4,7 +4,7 @@ document: /images/cms/residents-notifications-new-2-.pdf
 isMobile: false
 topics:
   - getting-started
-  - maintenance
+  - work-requests
   - transportation
   - messaging
 userTypes:

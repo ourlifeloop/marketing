@@ -11,7 +11,7 @@ answer: |-
 
   -Gallery with photos that connections have uploaded 
 
-  -Optional: Maintenance and Transportation
+  -Optional: Work Requests and Transportation
 topics:
   - connection-portal
   - getting-started

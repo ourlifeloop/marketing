@@ -1,7 +1,7 @@
 import calendar from '../assets/icons/calendar.svg';
 import displays from '../assets/icons/displays.svg';
 import connections from '../assets/icons/connections.svg';
-import maintenance from '../assets/icons/maintenance.svg';
+import workRequests from '../assets/icons/work-requests.svg';
 import messages from '../assets/icons/messages.svg';
 import photos from '../assets/icons/photos.svg';
 import residentManagement from '../assets/icons/resident-management.svg';
@@ -362,7 +362,7 @@ const NAVIGATION = {
       },
       maintenance: {
         key: 'maintenance',
-        Icon: maintenance,
+        Icon: workRequests,
         name: 'Maintenance',
         link: '/features/maintenance',
         questions: [
@@ -419,17 +419,17 @@ const NAVIGATION = {
       seniorLiving: {
         key: 'seniorLiving',
         name: 'Senior Living',
-        link: '/solutions/senior-living'
+        link: '/solutions/senior-living',
       },
       aidd: {
         key: 'aidd',
         name: 'AIDD',
-        link: '/solutions/aidd'
+        link: '/solutions/aidd',
       },
       specializedServices: {
         key: 'specializedServices',
         name: 'Specialized Services',
-        link: '/solutions/specialized-services'
+        link: '/solutions/specialized-services',
       },
     },
   },
