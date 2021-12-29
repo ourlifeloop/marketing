@@ -1,14 +1,14 @@
 ---
-question: How do I Make a Maintenance Request?
+question: How do I Make a Work Request?
 answer: >-
-  -On the left-hand side within the blue panel, click on the “Maintenance”
+  -On the left-hand side within the blue panel, click on the Work Requests
   feature. 
 
 
   -Click on the “+ New Request” button. 
 
 
-  -This will open a New Maintenance Request form on the right-hand side. 
+  -This will open a New Work Request form on the right-hand side. 
 
 
   -Select who the request is for, the type, if it is urgent, the type of request and enter a description. 
@@ -17,10 +17,10 @@ answer: >-
   -Select the green Submit Request button on the bottom of the form. 
 
 
-  -Once the request is submitted it will appear in the menu on the left. 
+  -Once the request is submitted it will appear in the menu on the left.
 isMobile: false
 topics:
-  - maintenance
+  - work-requests
 userTypes:
   - staff
 ---

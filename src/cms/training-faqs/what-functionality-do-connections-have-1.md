@@ -9,7 +9,7 @@ answer: |-
 
   -Add Photos they would like to share with the resident to their gallery. 
 
-  -Optional: make maintenance and transportation requests.
+  -Optional: make work and transportation requests.
 topics:
   - connection-portal
   - main-page
