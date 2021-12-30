@@ -14,6 +14,7 @@ import {
 
 export default function TrainingDocument({ title, document }) {
   const { publicURL, prettySize, extension, changeTime } = document;
+  console.log(changeTime, document);
   const Icon = iconForExtension(extension);
   return (
     <FlexContainer
