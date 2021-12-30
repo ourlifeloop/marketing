@@ -6,7 +6,7 @@ answer: -When a request has been completed you will receive a notification via
   order and see the status.
 isMobile: false
 topics:
-  - work-requests
+  - maintenance
 userTypes:
   - connection
 ---

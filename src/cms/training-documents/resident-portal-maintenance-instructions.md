@@ -1,9 +1,9 @@
 ---
-title: Resident Portal - Work Request Instructions
+title: Resident Portal - Maintenance Instructions
 document: /images/cms/resident-portal-user-instructions-maintenance.pdf
 isMobile: false
 topics:
-  - work-requests
+  - maintenance
 userTypes:
   - resident
 ---

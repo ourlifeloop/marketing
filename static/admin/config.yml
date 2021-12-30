@@ -84,7 +84,7 @@ collections:
           - { label: Photo & Video Sharing Feature, value: /features/photos }
           - { label: Resident Portal Feature, value: /features/resident-portal }
           - { label: Transportation Feature, value: /features/transportation }
-          - { label: Work Requests Feature, value: /features/maintenance }
+          - { label: Maintenance Feature, value: /features/maintenance }
 
   - name: training-videos
     label: Training Videos
@@ -118,7 +118,7 @@ collections:
           - { label: Displays, value: displays }
           - { label: Getting Started, value: getting-started }
           - { label: LifeLoop Learning Courses, value: learning-courses }
-          - { label: Work Requests, value: work-requests }
+          - { label: Maintenance, value: maintenance }
           - { label: Marketing, value: marketing }
           - { label: Photos, value: photos }
           - { label: Reporting, value: reporting }
@@ -162,7 +162,7 @@ collections:
           - { label: Displays, value: displays }
           - { label: Getting Started, value: getting-started }
           - { label: LifeLoop Learning Courses, value: learning-courses }
-          - { label: Work Requests, value: work-requests }
+          - { label: Maintenance, value: maintenance }
           - { label: Marketing, value: marketing }
           - { label: Photos, value: photos }
           - { label: Reporting, value: reporting }
@@ -208,7 +208,7 @@ collections:
           - { label: Displays, value: displays }
           - { label: Getting Started, value: getting-started }
           - { label: LifeLoop Learning Courses, value: learning-courses }
-          - { label: Work Requests, value: work-requests }
+          - { label: Maintenance, value: maintenance }
           - { label: Marketing, value: marketing }
           - { label: Photos, value: photos }
           - { label: Reporting, value: reporting }

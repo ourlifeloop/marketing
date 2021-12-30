@@ -6,7 +6,7 @@ import connectionManagement from '../assets/icons/connection-management.svg';
 import displays from '../assets/icons/displays.svg';
 import connections from '../assets/icons/connections.svg';
 import gettingStarted from '../assets/icons/getting-started.svg';
-import workRequests from '../assets/icons/work-requests.svg';
+import maintenance from '../assets/icons/maintenance.svg';
 import marketing from '../assets/icons/marketing.svg';
 import messages from '../assets/icons/messages.svg';
 import photos from '../assets/icons/photos.svg';
@@ -81,10 +81,10 @@ const TRAINING_TOPICS = [
     Icon: learningCourses,
   },
   {
-    key: 'work-requests',
-    name: 'Work Requests',
-    image: 'workRequests',
-    Icon: workRequests,
+    key: 'maintenance',
+    name: 'Maintenance',
+    image: 'maintenance',
+    Icon: maintenance,
   },
   {
     key: 'photos',
@@ -168,7 +168,7 @@ export const trainingImages = graphql`
     ) {
       ...featureImage
     }
-    workRequests: file(relativePath: { eq: "features/work-requests.png" }) {
+    maintenance: file(relativePath: { eq: "features/maintenance.png" }) {
       ...featureImage
     }
     marketing: file(relativePath: { eq: "features/marketing.png" }) {

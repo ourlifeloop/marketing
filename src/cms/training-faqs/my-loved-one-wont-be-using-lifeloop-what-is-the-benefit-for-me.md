@@ -16,7 +16,7 @@ answer: >-
   -Staff love sharing photos with residents and as a connection you can add photos to LifeLoop for staff to share with your loved one. 
 
 
-  -You can also request work and transportation for your loved one if they cannot do it themselves.
+  -You can also request maintenance and transportation for your loved one if they cannot do it themselves. 
 isMobile: false
 topics:
   - getting-started

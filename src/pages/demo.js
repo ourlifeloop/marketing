@@ -32,7 +32,7 @@ const FEATURES = [
   'Calendar Builder & Management',
   'Digital Signage',
   'Resident Tracking & Reporting',
-  'Work Requests',
+  'Maintenance',
   'Transportation',
   'Family Portal',
   'Resident Portal',
@@ -53,7 +53,7 @@ const INITIAL_STATE = {
   hearAboutUs: '',
 };
 
-const arrayToOptions = (arr) => arr.map((str) => ({ label: str, value: str }));
+const arrayToOptions = arr => arr.map(str => ({ label: str, value: str }));
 
 export default function Demo({ data }) {
   const { isTablet } = useDevice();
@@ -77,7 +77,7 @@ export default function Demo({ data }) {
       [key]: value,
     });
 
-  const onSubmit = (e) => {
+  const onSubmit = e => {
     e.preventDefault();
     setIsLoading(true);
     submitForm({
@@ -117,13 +117,13 @@ export default function Demo({ data }) {
                   <Label htmlFor="firstName" title="First Name">
                     <Input
                       value={form.firstName}
-                      onChange={(e) => updateForm('firstName', e.target.value)}
+                      onChange={e => updateForm('firstName', e.target.value)}
                     />
                   </Label>
                   <Label htmlFor="lastName" title="Last Name">
                     <Input
                       value={form.lastName}
-                      onChange={(e) => updateForm('lastName', e.target.value)}
+                      onChange={e => updateForm('lastName', e.target.value)}
                     />
                   </Label>
                 </FormRow>
@@ -131,7 +131,7 @@ export default function Demo({ data }) {
                   <Label htmlFor="company" title="Company Name">
                     <Input
                       value={form.company}
-                      onChange={(e) => updateForm('company', e.target.value)}
+                      onChange={e => updateForm('company', e.target.value)}
                     />
                   </Label>
                 </FormRow>
@@ -139,7 +139,7 @@ export default function Demo({ data }) {
                   <Label htmlFor="email" title="Email">
                     <Input
                       value={form.email}
-                      onChange={(e) => updateForm('email', e.target.value)}
+                      onChange={e => updateForm('email', e.target.value)}
                     />
                   </Label>
                 </FormRow>
@@ -147,13 +147,13 @@ export default function Demo({ data }) {
                   <Label htmlFor="phone" title="Phone">
                     <Input
                       value={form.phone}
-                      onChange={(e) => updateForm('phone', e.target.value)}
+                      onChange={e => updateForm('phone', e.target.value)}
                     />
                   </Label>
                   <Label htmlFor="state" title="State">
                     <Input
                       value={form.state}
-                      onChange={(e) => updateForm('state', e.target.value)}
+                      onChange={e => updateForm('state', e.target.value)}
                     />
                   </Label>
                 </FormRow>
@@ -167,7 +167,7 @@ export default function Demo({ data }) {
                       options={arrayToOptions(FEATURES)}
                       isMulti
                       value={form.features}
-                      onChange={(value) => updateForm('features', value || [])}
+                      onChange={value => updateForm('features', value || [])}
                     />
                   </Label>
                 </FormRow>
@@ -177,7 +177,7 @@ export default function Demo({ data }) {
                       type="select"
                       options={arrayToOptions(ROLES)}
                       value={form.role}
-                      onChange={(value) => updateForm('role', value)}
+                      onChange={value => updateForm('role', value)}
                     />
                   </Label>
                 </FormRow>
@@ -188,9 +188,7 @@ export default function Demo({ data }) {
                   >
                     <Input
                       value={form.hearAboutUs}
-                      onChange={(e) =>
-                        updateForm('hearAboutUs', e.target.value)
-                      }
+                      onChange={e => updateForm('hearAboutUs', e.target.value)}
                     />
                   </Label>
                 </FormRow>
@@ -202,7 +200,7 @@ export default function Demo({ data }) {
                     <Input
                       type="textarea"
                       value={form.comments}
-                      onChange={(e) => updateForm('comments', e.target.value)}
+                      onChange={e => updateForm('comments', e.target.value)}
                     />
                   </Label>
                 </FormRow>

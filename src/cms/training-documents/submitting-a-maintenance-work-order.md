@@ -1,8 +1,8 @@
 ---
-title: Submitting a Work Request
+title: Submitting a Maintenance Work Order
 document: /images/cms/submitting-a-maintenance-work-order.pdf
 topics:
-  - work-requests
+  - maintenance
 userTypes:
   - staff
 ---

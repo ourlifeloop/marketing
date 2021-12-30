@@ -25,7 +25,7 @@ const CATEGORIES = [
   'Family Member & Resident Connections',
   'Displays',
   'Transportation',
-  'Work Requests',
+  'Maintenance',
   'Calendar/Activities',
   'Notification',
   'Announcements/Messages',
@@ -42,7 +42,7 @@ const INITIAL_STATE = {
   message: '',
 };
 
-const arrayToOptions = (arr) => arr.map((str) => ({ label: str, value: str }));
+const arrayToOptions = arr => arr.map(str => ({ label: str, value: str }));
 
 export default function Support() {
   const { isTablet } = useDevice();
@@ -64,7 +64,7 @@ export default function Support() {
       [key]: value,
     });
 
-  const onSubmit = (e) => {
+  const onSubmit = e => {
     e.preventDefault();
     setIsLoading(true);
     submitForm(
@@ -94,13 +94,13 @@ export default function Support() {
                   <Label htmlFor="firstName" title="First Name">
                     <Input
                       value={form.firstName}
-                      onChange={(e) => updateForm('firstName', e.target.value)}
+                      onChange={e => updateForm('firstName', e.target.value)}
                     />
                   </Label>
                   <Label htmlFor="lastName" title="Last Name">
                     <Input
                       value={form.lastName}
-                      onChange={(e) => updateForm('lastName', e.target.value)}
+                      onChange={e => updateForm('lastName', e.target.value)}
                     />
                   </Label>
                 </FormRow>
@@ -108,7 +108,7 @@ export default function Support() {
                   <Label htmlFor="email" title="Email">
                     <Input
                       value={form.email}
-                      onChange={(e) => updateForm('email', e.target.value)}
+                      onChange={e => updateForm('email', e.target.value)}
                     />
                   </Label>
                 </FormRow>
@@ -116,7 +116,7 @@ export default function Support() {
                   <Label htmlFor="community" title="Community">
                     <Input
                       value={form.community}
-                      onChange={(e) => updateForm('community', e.target.value)}
+                      onChange={e => updateForm('community', e.target.value)}
                     />
                   </Label>
                   <Label htmlFor="userType" title="Customer Type">
@@ -124,7 +124,7 @@ export default function Support() {
                       type="select"
                       options={arrayToOptions(USER_TYPES)}
                       value={form.userType}
-                      onChange={(value) => updateForm('userType', value)}
+                      onChange={value => updateForm('userType', value)}
                     />
                   </Label>
                 </FormRow>
@@ -138,9 +138,7 @@ export default function Support() {
                       options={arrayToOptions(CATEGORIES)}
                       isMulti
                       value={form.categories}
-                      onChange={(value) =>
-                        updateForm('categories', value || [])
-                      }
+                      onChange={value => updateForm('categories', value || [])}
                     />
                   </Label>
                 </FormRow>
@@ -148,7 +146,7 @@ export default function Support() {
                   <Label htmlFor="subject" title="Subject">
                     <Input
                       value={form.subject}
-                      onChange={(e) => updateForm('subject', e.target.value)}
+                      onChange={e => updateForm('subject', e.target.value)}
                     />
                   </Label>
                 </FormRow>
@@ -157,7 +155,7 @@ export default function Support() {
                     <Input
                       type="textarea"
                       value={form.message}
-                      onChange={(e) => updateForm('message', e.target.value)}
+                      onChange={e => updateForm('message', e.target.value)}
                     />
                   </Label>
                 </FormRow>
