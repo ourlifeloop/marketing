@@ -98,7 +98,7 @@ export default function TrainingTopic({
         )}
         <FlexContainer direction="column" className={rightColumn}>
           <FlexContainer wrap className={videoContainer}>
-            {sortBy(videos, vid => (vid.isNew ? -1 : 1)).map(
+            {sortBy(videos, (vid) => (vid.isNew ? -1 : 1)).map(
               ({ key, cover, video, title, isNew }) => (
                 <TrainingVideo
                   key={key}
@@ -111,7 +111,7 @@ export default function TrainingTopic({
                       />
                     )
                   }
-                  onClick={link => setActiveVideo({ link: video, title })}
+                  onClick={(link) => setActiveVideo({ link: video, title })}
                 />
               ),
             )}
@@ -120,8 +120,13 @@ export default function TrainingTopic({
             <h1>Documents</h1>
           )}
           <FlexContainer direction="column">
-            {documents.map(({ key, title, document }) => (
-              <TrainingDocument key={key} title={title} document={document} />
+            {documents.map(({ key, title, document, date }) => (
+              <TrainingDocument
+                key={key}
+                date={date}
+                title={title}
+                document={document}
+              />
             ))}
           </FlexContainer>
           {!!faqs.length && firstTitle !== 'Frequently Asked Questions' && (

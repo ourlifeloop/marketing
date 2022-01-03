@@ -143,6 +143,7 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: document, label: Document, widget: file }
+      - { name: date, label: Last Update, widget: date }
       - name: isMobile
         label: Is Mobile
         widget: boolean
