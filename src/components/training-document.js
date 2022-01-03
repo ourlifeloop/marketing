@@ -12,9 +12,8 @@ import {
   icon,
 } from './training-document.module.scss';
 
-export default function TrainingDocument({ title, document }) {
-  const { publicURL, prettySize, extension, changeTime } = document;
-  console.log(changeTime, document);
+export default function TrainingDocument({ title, date, document }) {
+  const { publicURL, prettySize, extension } = document;
   const Icon = iconForExtension(extension);
   return (
     <FlexContainer
@@ -34,7 +33,7 @@ export default function TrainingDocument({ title, document }) {
           <div className={title}>
             {title} ({prettySize})
           </div>
-          <div className={subText}>Last Updated {changeTime}</div>
+          <div className={subText}>Last Updated {date}</div>
         </FlexContainer>
       </FlexContainer>
       <Download size={30} className={icon} />
