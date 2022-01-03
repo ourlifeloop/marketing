@@ -10,6 +10,10 @@ responsibilities:
   - Communicating effectively with the product QA team.
   - Communicating effectively with the Customer Relationship Specialists.
 ---
+
+
+**Must live in greater Omaha area and/or be willing to commute.**
+
 At LifeLoop we pride ourselves on being customer-centric. We strive to provide the best customer experience and we hire accordingly! If you love being part of a team environment, helping others and being organized you will fit right in! LifeLoop is a fast growing SaaS company that is continually adding to its team, providing ample opportunity to grow with it!
 
 The Customer Support Specialist role is responsible for providing support for all LifeLoop users (staff, residents and family). This position requires excellent troubleshooting skills with precise and quick responses. They will work closely with the QA (Quality Assurance) product team to troubleshoot and resolve any issues beyond their control and effectively communicate outcomes.
