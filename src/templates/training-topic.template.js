@@ -7,8 +7,8 @@ import TrainingTopic from '../components/training-topic';
 
 const filterTypes = (data, uniqueKey) =>
   data.topic.edges
-    .filter(edge => !!edge.node.frontmatter[uniqueKey])
-    .map(edge => ({
+    .filter((edge) => !!edge.node.frontmatter[uniqueKey])
+    .map((edge) => ({
       key: edge.node.id,
       ...edge.node.frontmatter,
     }));
@@ -40,7 +40,7 @@ export default function TrainingTopicTemplate({ data, pageContext }) {
 }
 
 export const query = graphql`
-  query($topic: String!, $userType: String!) {
+  query ($topic: String!, $userType: String!) {
     topics: allMarkdownRemark(
       filter: {
         fields: { slug: { regex: "^/training/" } }
@@ -75,11 +75,11 @@ export const query = graphql`
               }
             }
             document {
-              changeTime(formatString: "MMMM DD, YYYY")
               publicURL
               prettySize
               extension
             }
+            date(formatString: "MMMM DD, YYYY")
           }
         }
       }

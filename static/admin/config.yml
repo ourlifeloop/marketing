@@ -15,7 +15,7 @@ collections:
     preview_path: 'blog/{{slug}}'
     create: true
     fields:
-      - { name: date, label: Date, widget: date }
+      - { name: date, label: Date, widget: datetime }
       - name: type
         label: Type
         widget: select
@@ -35,7 +35,7 @@ collections:
     preview_path: 'career/{{slug}}'
     create: true
     fields:
-      - { name: date, label: Date, widget: date }
+      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - name: responsibilities
         label: Responsibilities
@@ -143,6 +143,7 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: document, label: Document, widget: file }
+      - { name: date, label: Last Update, widget: datetime }
       - name: isMobile
         label: Is Mobile
         widget: boolean
