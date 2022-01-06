@@ -6,6 +6,7 @@
 /features.html                          /features/calendar-management
 /features/activity-calendar             /features/calendar-management
 /features/family-portal                 /features/connection-portal
+/features/maintenance                   /features/work-requests
 /story                                  /our-story
 /story.html                             /our-story
 /contact.html                           /contact

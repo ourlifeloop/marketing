@@ -233,7 +233,7 @@ const NAVIGATION = {
           {
             question: 'What can family see/not see?',
             answer:
-              'Each community uses LifeLoop differently which means the family view is going to vary. However, some of the main features in LifeLoop that will always be viewable by family are the Activity Calendar, Messages and Announcements and their loved one’s photo library. Another feature family often will have access to is their loved one’s activity feed, highlighting all the activities they have attended or declined as well as photos from these activities. Other optional features the community may have are maintenance and transportation, which would include that user’s inputted requests and the status or any comments from staff that have been published to the family member’s view.',
+              'Each community uses LifeLoop differently which means the family view is going to vary. However, some of the main features in LifeLoop that will always be viewable by family are the Activity Calendar, Messages and Announcements and their loved one’s photo library. Another feature family often will have access to is their loved one’s activity feed, highlighting all the activities they have attended or declined as well as photos from these activities. Other optional features the community may have are work requests and transportation, which would include that user’s inputted requests and the status or any comments from staff that have been published to the family member’s view.',
           },
           {
             question:
@@ -316,7 +316,7 @@ const NAVIGATION = {
           {
             question: 'What can residents see/not see?',
             answer:
-              'If the resident portal is offered by the community, residents can see the daily agenda and all activities on the activity and/or meal calendars.  They can also see all activities that they are registered for, any messages/announcements they are recipients of, and any maintenance or transportation requests that they or family members have submitted. They can also view any photos that have been uploaded by family or staff into their gallery or that they have been tagged in.',
+              'If the resident portal is offered by the community, residents can see the daily agenda and all activities on the activity and/or meal calendars.  They can also see all activities that they are registered for, any messages/announcements they are recipients of, and any work or transportation requests that they or family members have submitted. They can also view any photos that have been uploaded by family or staff into their gallery or that they have been tagged in.',
           },
         ],
       },
@@ -345,7 +345,7 @@ const NAVIGATION = {
           {
             question: 'Can anyone enter transportation requests?',
             answer:
-              'Along with drivers entering requests, family members and residents can also submit maintenance requests if the community offers this feature. It is a staff permission to enter transportation requests, so the administrator can manage what staff members have this permission.',
+              'Along with drivers entering requests, family members and residents can also submit work requests if the community offers this feature. It is a staff permission to enter transportation requests, so the administrator can manage what staff members have this permission.',
           },
           {
             question:
@@ -360,11 +360,11 @@ const NAVIGATION = {
           },
         ],
       },
-      maintenance: {
-        key: 'maintenance',
+      workRequests: {
+        key: 'workRequests',
         Icon: workRequests,
-        name: 'Maintenance',
-        link: '/features/maintenance',
+        name: 'Work Requests',
+        link: '/features/work-requests',
         questions: [
           {
             question: 'What devices is LifeLoop compatible on?',
@@ -373,7 +373,7 @@ const NAVIGATION = {
           },
           {
             question:
-              'Can I attached photos or other documents to maintenance requests?',
+              'Can I attached photos or other documents to work requests?',
             answer: 'Yes, many users find this extremely valuable.',
           },
           {
@@ -383,25 +383,24 @@ const NAVIGATION = {
               'Yes, the community has the ability to choose whether or not they would like this feature to be available to residents and their family members.',
           },
           {
-            question:
-              'How many maintenance crew members can have access to LifeLoop?',
+            question: 'How many staff members can have access to LifeLoop?',
             answer:
-              'A community can have an unlimited number of crew members with access to LifeLoop.',
+              'A community can have unlimited staff members with access to LifeLoop.',
           },
           {
-            question: 'Can anyone enter maintenance requests?',
+            question: 'Can anyone enter work requests?',
             answer:
-              'Along with maintenance crew members entering requests, family members and residents can also submit maintenance requests if the community offers this feature. It is a staff permission to enter maintenance requests, so the administrator can manage what staff members have this permission.',
+              'Along with staff members entering requests, family members and residents can also submit work requests if the community offers this feature. It is a staff permission to enter work requests, so the administrator can manage what staff members have this permission.',
           },
           {
-            question: 'Who has the capability to manage maintenance requests?',
+            question: 'Who has the capability to manage work requests?',
             answer:
-              'The ability to manage maintenance requests is a permission that can be turned on or off for various staff members. Administrators can determine which staff members have the ability to enter requests.',
+              'The ability to manage work requests is a permission that can be turned on or off for various staff members. Administrators can determine which staff members have the ability to enter requests.',
           },
           {
-            question: 'Does maintenance get notified of new requests?',
+            question: 'Who gets notified of new requests?',
             answer:
-              'Staff members will get notified if they have the appropriate permission. The crew member assigned to the request will get a notification and the creator of the request will get notified when there is any status change to the request.',
+              'Staff members will get notified if they have the appropriate permission. The staff member assigned to the request will get a notification and the creator of the request will get notified when there is any status change to the request.',
           },
           {
             question: 'Can preventative maintenance be inputted?',

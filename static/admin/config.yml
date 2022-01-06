@@ -84,7 +84,7 @@ collections:
           - { label: Photo & Video Sharing Feature, value: /features/photos }
           - { label: Resident Portal Feature, value: /features/resident-portal }
           - { label: Transportation Feature, value: /features/transportation }
-          - { label: Work Requests Feature, value: /features/maintenance }
+          - { label: Work Requests Feature, value: /features/work-requests }
 
   - name: training-videos
     label: Training Videos

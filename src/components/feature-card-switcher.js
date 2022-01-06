@@ -43,8 +43,7 @@ const FEATURES = [
     link: NAVIGATION.features.subNav.communication.link,
     headline: 'Optimize your communication efforts',
     image: 'inform',
-    body:
-      'Communication between staff members, family members and residents has never been easier or more efficient. The LifeLoop messaging platform means you can communicate 24/7 from any device.',
+    body: 'Communication between staff members, family members and residents has never been easier or more efficient. The LifeLoop messaging platform means you can communicate 24/7 from any device.',
     bullets: [
       'Easily broadcast messages to all staff, residents and family members who are connected',
       'Staff can send messages back and forth in LifeLoop',
@@ -59,8 +58,7 @@ const FEATURES = [
     link: NAVIGATION.features.subNav.calendar.link,
     headline: 'Activity calendars simplified',
     image: 'dataInformed',
-    body:
-      'LifeLoop has helped communities of all sizes effectively develop, communicate and display their activity calendars to residents and family members.',
+    body: 'LifeLoop has helped communities of all sizes effectively develop, communicate and display their activity calendars to residents and family members.',
     bullets: [
       'Save time with reoccurring activity features',
       'Build robust calendars based on resident likes',
@@ -74,8 +72,7 @@ const FEATURES = [
     link: NAVIGATION.features.subNav.designer.link,
     headline: 'Enhance your calendars & newsletters',
     image: 'newsletterDesigner',
-    body:
-      'The LifeLoop Designer allows you to create calendars, newsletters, marketing pieces, menus and more all within the existing LifeLoop platform. Meaning you don’t need multiple programs to produce and distribute publications from your community. ',
+    body: 'The LifeLoop Designer allows you to create calendars, newsletters, marketing pieces, menus and more all within the existing LifeLoop platform. Meaning you don’t need multiple programs to produce and distribute publications from your community. ',
     bullets: [
       'Easily create branded documents or request templates from our team',
       'Create calendars in monthly, two-week, one-week or daily formats',
@@ -90,8 +87,7 @@ const FEATURES = [
     link: NAVIGATION.features.subNav.displays.link,
     headline: 'Enhance resident engagement in an affordable way',
     image: 'sync',
-    body:
-      'Digital signage with LifeLoop is a low cost, easy to deploy solution for your community.  The only hardware you need is an Amazon FireStick making this an impressive, yet affordable digital signage option to implement for your residents.',
+    body: 'Digital signage with LifeLoop is a low cost, easy to deploy solution for your community.  The only hardware you need is an Amazon FireStick making this an impressive, yet affordable digital signage option to implement for your residents.',
     bullets: [
       'A fully customizable solution – incorporate brand colors, logo, etc',
       'Seamlessly syncs with your activity calendar',
@@ -105,8 +101,7 @@ const FEATURES = [
     link: NAVIGATION.features.subNav.residentTracking.link,
     headline: 'Person-centered care',
     image: 'person',
-    body:
-      'Understanding the residents flow of information is essential to maximizing their level of care and proactively identifying their needs.',
+    body: 'Understanding the residents flow of information is essential to maximizing their level of care and proactively identifying their needs.',
     bullets: [
       'Easily quantify your life enrichment',
       'Metrics can be shared with family and assist in care plans',
@@ -121,13 +116,12 @@ const FEATURES = [
     link: NAVIGATION.features.subNav.connectionPortal.link,
     headline: 'Be in two places at once',
     image: 'transparency',
-    body:
-      'Family members lean on LifeLoop to keep them up-to-date on the lives and care of their loved ones no matter where they are. The family portal sparks a genuine connection between family members and staff members and helps foster communication between residents and their families.',
+    body: 'Family members lean on LifeLoop to keep them up-to-date on the lives and care of their loved ones no matter where they are. The family portal sparks a genuine connection between family members and staff members and helps foster communication between residents and their families.',
     bullets: [
       'Share special moments with the LifeLoop family portal and mobile app',
       'Get a real-time view into your loved one’s day',
       'Receive a weekly email with in-depth details on your loved one’s engagement',
-      'Make transportation and maintenance requests easily from the portal or mobile app',
+      'Make transportation and work requests easily from the portal or mobile app',
     ],
   },
   {
@@ -137,8 +131,7 @@ const FEATURES = [
     link: NAVIGATION.features.subNav.photos.link,
     headline: 'Your word-of-mouth marketing tool',
     image: 'organize',
-    body:
-      'Photo and video sharing through the LifeLoop portals and mobile app ensures that family members have a unique window into the daily lives of their loved ones.',
+    body: 'Photo and video sharing through the LifeLoop portals and mobile app ensures that family members have a unique window into the daily lives of their loved ones.',
     bullets: [
       'Easily organize community photos',
       'Tag residents in special moments',
@@ -152,8 +145,7 @@ const FEATURES = [
     link: NAVIGATION.features.subNav.residentPortal.link,
     headline: 'Maximize their independence',
     image: 'independence',
-    body:
-      'Engaging residents and their family members with technology can have a positive impact on the life of the resident, help alleviate social isolation and give your community a competitive edge.',
+    body: 'Engaging residents and their family members with technology can have a positive impact on the life of the resident, help alleviate social isolation and give your community a competitive edge.',
     bullets: [
       'Simplistic design and easy to navigate',
       'Can be used on desktops, laptops, tables or mobile phones',
@@ -167,8 +159,7 @@ const FEATURES = [
     link: NAVIGATION.features.subNav.transportation.link,
     headline: 'Monitor your transportation in one place',
     image: 'customize',
-    body:
-      'Input and manage transportation requests with one intuitive platform. Easily view the status of each request and sort by driver or vehicle.',
+    body: 'Input and manage transportation requests with one intuitive platform. Easily view the status of each request and sort by driver or vehicle.',
     bullets: [
       'A full transportation management system',
       'Quickly filter requests by resident, driver, or vehicle',
@@ -177,17 +168,16 @@ const FEATURES = [
     ],
   },
   {
-    key: NAVIGATION.features.subNav.maintenance.key,
-    name: NAVIGATION.features.subNav.maintenance.name,
-    Icon: NAVIGATION.features.subNav.maintenance.Icon,
-    link: NAVIGATION.features.subNav.maintenance.link,
-    headline: 'Monitor your maintenance in one place',
+    key: NAVIGATION.features.subNav.workRequests.key,
+    name: NAVIGATION.features.subNav.workRequests.name,
+    Icon: NAVIGATION.features.subNav.workRequests.Icon,
+    link: NAVIGATION.features.subNav.workRequests.link,
+    headline: 'Monitor your work requests in one place',
     image: 'management',
-    body:
-      'Input and manage maintenance requests with live progress updates and a detailed history log. Easily view the status of each request and sort by approved and pending requests.',
+    body: 'Input and manage work requests with live progress updates and a detailed history log. Easily view the status of each request and sort by approved and pending requests.',
     bullets: [
-      'A full maintenance management system',
-      'Quickly filter requests by crew member, resident, room number or community location',
+      'A full work request management system',
+      'Quickly filter requests by staff member, resident, room number or community location',
       'Accessible from any Apple or Android device',
     ],
   },
@@ -240,7 +230,7 @@ export default function FeatureCardSwitcher() {
           }
         }
         management: file(
-          relativePath: { eq: "full-maintenance-management-system.png" }
+          relativePath: { eq: "full-work-request-management-system.png" }
         ) {
           childImageSharp {
             gatsbyImageData(width: 637, layout: CONSTRAINED)
@@ -312,7 +302,7 @@ export default function FeatureCardSwitcher() {
         <h4>{headline}</h4>
         <p>{body}</p>
         {!isTablet &&
-          bullets.map(bullet => (
+          bullets.map((bullet) => (
             <FlexContainer
               key={bullet}
               align="center"

@@ -45,7 +45,7 @@ export default function ConnectionPortalFeature({ data, location }) {
       <ImageSection
         rightImage
         title="Making Requests Has Never Been Easier"
-        description="With the transportation feature in LifeLoop, you can easily manage and schedule ride requests for your loved one. With the maintenance feature, you can input maintenance requests on behalf of your loved one and receive progress updates and a detailed history log."
+        description="With the transportation feature in LifeLoop, you can easily manage and schedule ride requests for your loved one. With the work request feature, you can input work requests on behalf of your loved one and receive progress updates and a detailed history log."
         image={getImage(data.requests)}
       />
     </FeatureWrapper>
