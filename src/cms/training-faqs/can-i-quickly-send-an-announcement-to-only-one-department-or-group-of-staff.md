@@ -1,6 +1,6 @@
 ---
 question: Can I quickly send an announcement to only one department or group of staff?
-answer: "-Yes! You can create any groups from your Staff List two ways. First by
+answer: "Yes. You can create any groups from your Staff List two ways. First, by
   clicking the \"+ Group\" button next to their name, typing a new group name
   into the bar showing 'Choose group tags' and hitting enter key or use the
   drop-down to select an already existing group and pressing 'Submit\".  Second,
