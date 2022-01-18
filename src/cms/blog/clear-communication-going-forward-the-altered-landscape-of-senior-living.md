@@ -19,7 +19,7 @@ Prior to the pandemic, communication for Kim’s communities operated on an indi
 
 For [Fieldstone Memory Care in Marysville, WA](https://www.fieldstonecommunities.com/memory-care-in-marysville-wa/), pre-COVID communication was a weekly email newsletter that notified families of new staff members, community openings, and special events. In addition to using the platform for clear communication regarding the virus, Executive Director [Wayne Purdom](https://www.fieldstonecommunities.com/blog/marysville-memory-care/welcome-wayne-purdom-executive-director-of-fieldstone-memory-care-marysville/) also found frequent, non-pandemic related contact between residents and their families to be extremely beneficial.
 
-![](/images/cms/1.png)
+![]()
 
 “At the beginning of the pandemic, families were anxious because they couldn’t come to see their loved ones. We ramped up our picture posting with [LifeLoop](https://ourlifeloop.com/) so families could visually verify that their residents were happy,” he said.
 
@@ -31,7 +31,7 @@ Wayne also uses [LifeLoop](https://ourlifeloop.com/) to track the mental health 
 
 Looking toward the future, both Wayne and Kim said that their industry and the assumptions of family members are morphing with COVID-19. They expect that when the dust settles, the senior living sector will be substantially altered.
 
-![](/images/cms/2.png)
+![]()
 
 “Regardless of how the pandemic ends, family members of residents will anticipate more high-level communication from the staff and the communities,” Wayne said. “Even when visitation becomes available again, people will have an expectation going forward.”
 
