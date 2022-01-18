@@ -1,9 +1,9 @@
 ---
-question: 'How can Connections be removed from LifeLoop? '
-answer: -To delete a Connection, go to the Connections section of LifeLoop,
-  click their name from the Connections list and click the 'Edit' button from
-  the pop-up box.  You will then see a 'Delete' button on the bottom of the
-  pop-up box.
+question: "How can Connections be removed from LifeLoop? "
+answer: To delete a Connection, click on the 'Connections' tab in the toolbar.
+  Locate the name from the Connections list then click on their profile. Click
+  the 'Edit' button on the top right-hand side of the pop-up box.  The 'Delete'
+  button is on the bottom left of the pop-up box.
 isMobile: false
 topics:
   - connection-portal
