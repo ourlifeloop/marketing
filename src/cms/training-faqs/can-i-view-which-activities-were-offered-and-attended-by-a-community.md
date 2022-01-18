@@ -1,7 +1,7 @@
 ---
 question: Can I view which activities were offered and attended by a community?
 answer: >-
-  -Yes! 
+  Yes.
 
 
   -On the left-hand side within the blue panel, click on the “Reports” button. 
