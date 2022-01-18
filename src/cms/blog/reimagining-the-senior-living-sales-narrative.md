@@ -9,7 +9,7 @@ When the COVID-19 pandemic first hit, senior living facilities became frequent t
 
 “Our sales communication has morphed from a lifestyle message to a health and safety message,” Jami says. “Bridge Senior Living has always prioritized the health and safety of our residents, but the public was previously less interested in our directives. Now they are at the forefront of most conversations.” 
 
-![](/images/cms/2.png)
+![]()
 
 Spread across 15 states and various brands, Jami supervises the sales processes for all 27 Bridge Senior Living communities. With 15 years in the industry, her experience in both operations and sales has provided her with the perspective needed to support her sales teams as they rethink tactics to market their communities. 
 
@@ -27,7 +27,7 @@ Instead of an on-site chat, the sales associate first has a video call with a po
 
 And according to both Jami and Nick, these advancements are here to stay. Baby Boomers are currently moving their parents into senior living facilities, and with their generation at the front-end of the technology boom, instant information and the use of technology will soon become the norm for ensuing generations of senior living residents. 
 
-![](/images/cms/1.png)
+![]()
 
 “There will be an expectation moving forward to incorporate tech into all facets of senior living communities,” says Nick. “We need to be able to present this to our consumers as a high-stakes differentiator for their communities.”
 
