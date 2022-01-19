@@ -1,27 +1,13 @@
 ---
-question: 'How do I delete a resident? '
+question: "How do I delete a resident? "
 answer: >-
-  -On the left-hand side within the blue panel, click on the “residents”
-  button. 
+  Click on the 'Residents' button. Locate the resident you need to deactivate in
+  the resident list. 
 
-
-  -Locate the resident you need to deactivate in the resident list. 
-
-
-  -Select that resident and click “delete resident” on the top right. 
-
-
-  -Once you’ve done this, a new screen will appear asking you if you are sure. 
-
-
-  -Select “delete”. 
-
-
-  -Deleting is a permanent action. 
+  Select that resident and click “delete resident” on the top right. Once you’ve done this, a new screen will appear asking you if you are sure. Select 'delete'. Deleting is a permanent action. 
 isMobile: false
 topics:
   - resident-management
 userTypes:
   - staff
 ---
-
