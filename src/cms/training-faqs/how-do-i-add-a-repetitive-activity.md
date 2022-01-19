@@ -1,5 +1,5 @@
 ---
-question: How do I add a repetitive activity?
+question: How do I add a recurring activity?
 answer: " On the left-hand side within the blue panel, click on the 'Calendar'
   button. Click on the day you would like to add an activity to or the + Add
   Activity button on the top right. A form will appear to the right of your
