@@ -1,26 +1,10 @@
 ---
 question: How do I edit and/or change permissions to a staff member?
-answer: >-
-  -On the left-hand side within the blue panel, click on the “Staff” button. 
-
-
-  -Find and select the staff member you’re wanting to edit and click on that
-  staff member’s name 
-
-
-  -The staff member’s information will appear 
-
-
-  -On the top right hand of the screen click the “Edit” button.  
-
-
-  -A new screen will appear as though you’re adding a new resident and you will
-  want to go through that staff member’s information and make the appropriate
-  changes to their account. 
-
-
-  -Once you’ve made all the changes you’d like, scroll to the bottom of the
-  screen and click on the green “Update Staff” button. 
+answer: On the left-hand side, click on the 'Staff' button. Locate the staff
+  member you’re wanting to edit and click on that staff member’s name. On the
+  top right hand of the screen click the 'Edit' button. Make the needed changes
+  and save. To adjust permissions, click the 'Permissions' tab on the left-hand
+  side then click on 'Save Permissions' button.
 isMobile: false
 topics:
   - main-page
@@ -29,4 +13,3 @@ topics:
 userTypes:
   - staff
 ---
-
