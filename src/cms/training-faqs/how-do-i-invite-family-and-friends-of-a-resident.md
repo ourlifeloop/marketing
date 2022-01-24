@@ -7,9 +7,8 @@ answer: >-
   that appears. The family will receive an email and complete registration. You
   can also invite loved ones by going to the "Connections" tab on the left-hand
   side of your screen and choosing the "invite" button on the top right-hand
-  side. 
-
-  This will then prompt you for the resident the connection is tied to and their email address.  
+  side. This will then prompt you for the resident the connection is tied to and
+  their email address.  
 
 
   NOTE: It is very important to double-check that emails are entered correctly when inviting family to ensure that the right person is receiving this invitation. 
