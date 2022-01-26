@@ -17,11 +17,11 @@ import {
   storyImage,
   storyImageVertical,
   missionContainer,
-  missionContainerMobile,
   missionInner,
   missionTitle,
   mission,
   missionLogo,
+  missionLogoContainer,
   teamContainer,
   teamMember,
   joinSection,
@@ -30,7 +30,7 @@ import {
 } from './our-story.module.scss';
 
 export default function OurStory({ data }) {
-  const { isMini, isMobile } = useDevice();
+  const { isMobile } = useDevice();
 
   return (
     <SiteWrapper title="Improving the care and overall experience of residents living in senior living communities | LifeLoop">
@@ -82,25 +82,31 @@ export default function OurStory({ data }) {
         </FlexContainer>
       </Section>
       <Section>
-        <RelativeContainer
-          className={classNames(missionContainer, {
-            [missionContainerMobile]: isMini,
-          })}
-        >
+        <RelativeContainer className={missionContainer}>
           <FlexContainer
             flex="1"
             direction="column"
-            align={isMini ? 'center' : 'flexstart'}
-            justify="center"
+            align="center"
             className={missionInner}
           >
             <p className={missionTitle}>OUR MISSION</p>
             <p className={mission}>
-              Keep senior living residents better connected to their
-              communities, their families and the world around them.
+              Empower caregivers to create connection with individuals and their
+              loved ones.
+            </p>
+            <p className={missionTitle}>OUR VISION</p>
+            <p className={mission}>
+              Help caregivers create communities that people love being a part
+              of.
             </p>
           </FlexContainer>
-          <LifeloopBigLogo className={missionLogo} />
+          <FlexContainer
+            className={missionLogoContainer}
+            align="center"
+            justify="center"
+          >
+            <LifeloopBigLogo className={missionLogo} />
+          </FlexContainer>
         </RelativeContainer>
       </Section>
       <TitleSection header="Our Team">

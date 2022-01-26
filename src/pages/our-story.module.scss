@@ -71,33 +71,13 @@ $team-margin: 1rem;
 
 .missionContainer {
   background-color: $background-medium;
-  height: 200px;
-  padding: 2rem;
-
-  &--mobile {
-    height: auto;
-
-    .missionInner {
-      margin-right: 0;
-      margin-top: 6rem;
-    }
-
-    .mission {
-      text-align: center;
-    }
-
-    .missionLogo {
-      top: -6rem;
-      bottom: initial;
-      right: calc(50% - 3rem);
-      width: 6rem;
-    }
-  }
+  padding: 3rem;
 }
 
 .missionInner {
-  height: 100%;
-  margin-right: 10rem;
+  margin-right: 0;
+  margin-top: 5rem;
+  z-index: 1;
 }
 
 .missionTitle {
@@ -105,6 +85,8 @@ $team-margin: 1rem;
   font-size: variableSize(20, 27);
   font-weight: bold;
   margin-bottom: variableSize(4, 12);
+  margin-top: variableSize(12, 24);
+  text-align: center;
 }
 
 .mission {
@@ -113,11 +95,20 @@ $team-margin: 1rem;
   font-weight: 300;
   line-height: variableSize(22, 30);
   margin: 0;
+  text-align: center;
 }
 
 .missionLogo {
-  bottom: 0;
+  width: 6rem;
+}
+
+$logo-size: 14rem;
+.missionLogoContainer {
+  background-color: $background-medium;
+  border-radius: 50%;
   position: absolute;
-  right: 2rem;
-  width: 8rem;
+  right: calc(50% - $logo-size / 2);
+  top: -4rem;
+  width: $logo-size;
+  height: $logo-size;
 }
