@@ -1,5 +1,5 @@
 ---
-question: How do I Reset my Password?
+question: How do I reset my Password?
 answer: Go to your LifeLoop login page. Select the 'forgot your password?' under
   the Login button. Enter your email that you previously used to login to
   LifeLoop. You will now receive an email from LifeLoop with instructions on how
