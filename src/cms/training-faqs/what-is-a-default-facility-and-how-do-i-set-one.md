@@ -1,6 +1,6 @@
 ---
-question: What is a default facility and how do I set one?
-answer: "-If you have multiple levels of care in your LifeLoop account, you can
+question: What is a default Community and how do I set one?
+answer: "If you have multiple levels of care in your LifeLoop account, you can
   select the one you prefer to populate when logging in. "
 isMobile: false
 topics:
