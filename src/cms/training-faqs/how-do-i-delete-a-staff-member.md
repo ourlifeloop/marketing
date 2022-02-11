@@ -6,7 +6,7 @@ answer: "Click on the 'Staff' button. Find and select the staff member you’re
   button.  A new screen will appear as though you’re adding a new resident and
   you will want to go through that staff member’s information and make the
   appropriate changes to their account. Once you’ve made all the changes you’d
-  like, scroll to the bottom of the screen and click on the green 'Update Staff'
+  like, scroll to the bottom of the screen and click on the  'Update Staff'
   button. "
 isMobile: false
 topics:
