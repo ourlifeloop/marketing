@@ -1,6 +1,6 @@
 ---
 question: "How do I delete a staff member? "
-answer: "Click on the 'Staff' button. Find and select the staff member you’re
+answer: "Click on the 'Staff' tab. Find and select the staff member you’re
   wanting to edit and click on that staff member’s name. The staff member’s
   information will appear. On the top right hand of the screen click the 'Edit'
   button.  A new screen will appear as though you’re adding a new resident and
