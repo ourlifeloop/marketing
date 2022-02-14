@@ -1,6 +1,6 @@
 ---
-question: ' How do I add an "about" section for a resident? '
-answer: "Click on the 'Residents' button. Locate the resident that you wish to
+question: ' How do I add an "about" section for a Resident? '
+answer: "Click on the \"Residents\" button. Locate the resident that you wish to
   add information to and select the 'edit' quick action icon. This will take you
   to their profile, select 'about' on the left below profile and add an
   anniversary, their likes and dislikes (which are searchable in the resident
