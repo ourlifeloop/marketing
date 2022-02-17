@@ -1,5 +1,5 @@
 ---
-question: Can Connections invite other connections?
+question: Can connections invite other connections?
 answer: "No, they will need to reach out to the community to add additional
   connections. A staff member will need to authorize if the connection has been
   approved by the resident or responsible party.  A staff member can then create
