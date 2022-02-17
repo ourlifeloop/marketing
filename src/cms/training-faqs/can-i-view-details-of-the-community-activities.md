@@ -1,5 +1,5 @@
 ---
-question: Can I view details of the Community Activities?
+question: Can I view details of the Community activities?
 answer: Yes. Under the Daily Agenda, click on the specific scheduled activity
   and you will be able to see details of the activity.
 isMobile: false
