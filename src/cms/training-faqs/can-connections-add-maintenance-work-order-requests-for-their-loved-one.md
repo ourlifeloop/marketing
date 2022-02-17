@@ -1,5 +1,5 @@
 ---
-question: Can Connections add Work Requests for their loved one?
+question: Can connections add work requests for their loved one?
 answer: This depends on the Community.  If "Work Requests" is listed as a
   feature in your toolbar for your Community, connections may be able to submit
   requests if your team has requested this function be turned on for
