@@ -117,7 +117,7 @@ collections:
           - { label: Designer, value: designer }
           - { label: Displays, value: displays }
           - { label: Getting Started, value: getting-started }
-          - { label: LifeLoop Learning Courses, value: learning-courses }
+          - { label: LifeLoop University, value: lifeloop-university }
           - { label: Work Requests, value: work-requests }
           - { label: Marketing, value: marketing }
           - { label: Photos, value: photos }
@@ -162,7 +162,7 @@ collections:
           - { label: Designer, value: designer }
           - { label: Displays, value: displays }
           - { label: Getting Started, value: getting-started }
-          - { label: LifeLoop Learning Courses, value: learning-courses }
+          - { label: LifeLoop University, value: lifeloop-university }
           - { label: Work Requests, value: work-requests }
           - { label: Marketing, value: marketing }
           - { label: Photos, value: photos }
@@ -208,7 +208,7 @@ collections:
           - { label: Designer, value: designer }
           - { label: Displays, value: displays }
           - { label: Getting Started, value: getting-started }
-          - { label: LifeLoop Learning Courses, value: learning-courses }
+          - { label: LifeLoop University, value: lifeloop-university }
           - { label: Work Requests, value: work-requests }
           - { label: Marketing, value: marketing }
           - { label: Photos, value: photos }

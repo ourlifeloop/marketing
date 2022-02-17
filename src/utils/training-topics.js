@@ -17,7 +17,7 @@ import staffManagement from '../assets/icons/staff-management.svg';
 import transportation from '../assets/icons/transportation.svg';
 import residentEngagementTools from '../assets/icons/resident-engagement-tools.svg';
 import activityFeed from '../assets/icons/activity-feed.svg';
-import learningCourses from '../assets/icons/learning-courses.svg';
+import lifeloopUniversity from '../assets/icons/lifeloop-university.svg';
 
 const TRAINING_TOPICS = [
   {
@@ -75,10 +75,10 @@ const TRAINING_TOPICS = [
     Icon: displays,
   },
   {
-    key: 'learning-courses',
-    name: 'LifeLoop Learning Courses',
-    image: 'learningCourses',
-    Icon: learningCourses,
+    key: 'lifeloop-university',
+    name: 'LifeLoop University',
+    image: 'lifeloopUniversity',
+    Icon: lifeloopUniversity,
   },
   {
     key: 'work-requests',
@@ -163,8 +163,8 @@ export const trainingImages = graphql`
     gettingStarted: file(relativePath: { eq: "features/getting-started.png" }) {
       ...featureImage
     }
-    learningCourses: file(
-      relativePath: { eq: "features/learning-courses.png" }
+    lifeloopUniversity: file(
+      relativePath: { eq: "features/lifeloop-university.png" }
     ) {
       ...featureImage
     }
