@@ -1,5 +1,5 @@
 ---
-question: "Can I put a Work Request in for my resident? "
+question: "Can I put a work request in for my resident? "
 answer: This depends on your community's functionality. If you can, you will see
   a "Work Requests" tab in the blue panel on the left-hand side of your screen.
   Select this and find the "New Request" button on the top right. Fill out the
