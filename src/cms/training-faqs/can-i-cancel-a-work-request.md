@@ -1,5 +1,5 @@
 ---
-question: Can I cancel a Work Request?
+question: Can I cancel a work request?
 answer: >
   In the "Work Request" tile, find the request you would like to delete and
   click "View Details”. In the details, select "Cancel Request” and your request
