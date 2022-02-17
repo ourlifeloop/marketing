@@ -1,5 +1,5 @@
 ---
-question: Are recurring Work Requests the same as preventative Work Requests?
+question: Are recurring work requests the same as preventative work requests?
 answer: 'Yes. For example: "Change smoke detector batteries."'
 isMobile: false
 topics:
