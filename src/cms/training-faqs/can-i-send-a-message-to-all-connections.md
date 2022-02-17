@@ -1,5 +1,5 @@
 ---
-question: " Can I send a message to all Connections?"
+question: " Can I send a message to all connections?"
 answer: 'Yes. On the left hand side within the blue panel, click on the
   "Connections" Tab. Choose the "Announcements" tab on the top left-hand side of
   the screen. Select the community from the drop down on the beginning of the
