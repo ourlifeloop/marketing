@@ -1,6 +1,7 @@
 ---
 question: Where can I find my community’s contact information?
-answer: "-\tIn the directory tile select the button on the left that says “community”.\n"
+answer: |
+  In the directory tile select the button on the left that says “community”.
 isMobile: false
 topics:
   - messaging
@@ -8,4 +9,3 @@ topics:
 userTypes:
   - resident
 ---
-
