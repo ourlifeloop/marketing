@@ -1,5 +1,5 @@
 ---
-question: " How do I deactivate a Resident and when should we deactivate a Resident?"
+question: " How do I deactivate a resident and when should we deactivate a resident?"
 answer: "Click on the \"Residents\" tab. Locate the resident you need to
   deactivate in the resident list. Select that resident then click on the \"Edit
   Resident\" button on the top right. On the bottom left, select
