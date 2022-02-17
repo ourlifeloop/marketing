@@ -1,5 +1,5 @@
 ---
-question: " How do I make a Transportation Request?"
+question: " How do I make a transportation request?"
 answer: >-
   On the left-hand side, click on the "Transportation" tab. Click on the "+ New
   Request" button. This will open a New Transportation Request form on the
