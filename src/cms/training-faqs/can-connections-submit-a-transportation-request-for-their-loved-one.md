@@ -1,5 +1,5 @@
 ---
-question: "Can Connections submit a Transportation request for their loved one? "
+question: "Can connections submit a transportation request for their loved one? "
 answer: 'This depends on the Community.  If "Transportation" is listed as a
   feature in your toolbar for your community, connections may be able to submit
   requests if your team has requested this function be turned on for
