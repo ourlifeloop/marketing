@@ -1,5 +1,5 @@
 ---
-question: Can I have the same Display on more than one TV?
+question: Can I have the same display on more than one TV?
 answer: " Yes. Use the same display code on your Firestick for the display you
   would like to have on your TV. "
 isMobile: false
