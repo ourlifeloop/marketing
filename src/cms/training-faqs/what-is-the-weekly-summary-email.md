@@ -1,5 +1,5 @@
 ---
-question: What is the Weekly Summary Email?
+question: What is the weekly summary email?
 answer: The weekly summary email is an email that goes out to connections weekly
   on Saturday afternoons. The email will contain a count of all activities your
   loved one has attended the past week (if the family activity feed is turned on
