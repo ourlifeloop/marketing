@@ -1,5 +1,5 @@
 ---
-question: What are recurring Work Requests and how do I set this?
+question: What are recurring work requests and how do I set this?
 answer: When you create a new request, you have the option of setting up
   recurring event. If you need to have the same request to be set for multiple
   times a week, each week, month, etc. you can set this using the recurring
