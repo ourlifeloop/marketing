@@ -1,5 +1,5 @@
 ---
-question: What are resident engagement Tools?
+question: What are resident engagement tools?
 answer: COVID-19 spurred us to provide some additional tools to keep your
   residents active and engaged during these times. These are geared toward self
   engagement by providing links that residents can access in the comfort of
