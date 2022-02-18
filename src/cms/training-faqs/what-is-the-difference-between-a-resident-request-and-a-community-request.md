@@ -1,5 +1,5 @@
 ---
-question: What is the difference between a Resident request and a Community request?
+question: What is the difference between a resident request and a community request?
 answer: >-
   A resident request is a transportation request for one or more specific
   residents. 
