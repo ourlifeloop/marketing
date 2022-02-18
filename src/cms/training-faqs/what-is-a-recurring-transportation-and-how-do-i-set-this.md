@@ -1,5 +1,5 @@
 ---
-question: "What is a reoccurring Transportation request and how do I create that? "
+question: "What is a reoccurring transportation request and how do I create that? "
 answer: >-
   When you create a new request, you will have the option of setting up a
   recurring request. If you need to have the same transportation request at the
