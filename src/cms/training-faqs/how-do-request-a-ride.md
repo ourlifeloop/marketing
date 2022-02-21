@@ -1,5 +1,5 @@
 ---
-question: How I do request a ride?
+question: How do I request a ride?
 answer: >
   Select the "Transportation" tile. On the top right-hand corner, click the blue
   "+ New Request" button. Fill out the form to the best of your ability and then
