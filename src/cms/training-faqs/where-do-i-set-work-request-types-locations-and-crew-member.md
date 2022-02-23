@@ -1,5 +1,5 @@
 ---
-question: Where do I set work request types, locations and crew member?
+question: Where do I set work request types, locations and crew members?
 answer: As long as you have the permissions to do so, you will be able to set
   and edit any work requests types, locations and crew members. Go to manage
   settings, the gear icon on the top right between the ? and bell icons on the
