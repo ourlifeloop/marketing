@@ -1,0 +1,10 @@
+---
+title: Work Requests Overview - How to Create and Manage Work Requests
+document: /images/cms/work-requests-staff-overview-how-to-create-and-manage.pdf
+date: 2022-03-08T22:10:21.641Z
+isMobile: false
+topics:
+  - work-requests
+userTypes:
+  - staff
+---
