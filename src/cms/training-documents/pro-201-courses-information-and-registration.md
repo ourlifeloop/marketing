@@ -1,7 +1,7 @@
 ---
-title: Pro 201 Courses Information and Registration
-document: /images/cms/pro-201-courses-lifeloop-university-7-.pdf
-date: 2022-02-17T14:46:27.454Z
+title: Pro 201 Courses FAQ
+document: /images/cms/faq-pro-201-courses-lifeloop-university.pdf
+date: 2022-03-22T13:46:27.454Z
 isMobile: false
 topics:
   - lifeloop-university
