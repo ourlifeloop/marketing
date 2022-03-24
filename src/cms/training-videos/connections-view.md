@@ -2,7 +2,7 @@
 title: Connections View
 video: https://www.youtube-nocookie.com/embed/ybCOGIRjXaU
 cover: /images/cms/vid-cov-3.jpg
-isNew: true
+isNew: false
 isMobile: false
 topics:
   - getting-started
