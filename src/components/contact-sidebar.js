@@ -37,7 +37,7 @@ export default function ContactSidebar({ links }) {
         })}
       >
         <h3>Other ways to connect with us</h3>
-        {React.Children.map(links, link =>
+        {React.Children.map(links, (link) =>
           React.cloneElement(link, {
             className: classNames(link.className, infoLink),
           }),
@@ -68,10 +68,10 @@ export default function ContactSidebar({ links }) {
       >
         <h3>How LifeLoop Works</h3>
         <p>
-          LifeLoop was founded based on the need to better communicate and
-          engage family members of senior living communities. Today, we are a
-          multi-faceted platform designed to streamline operations, work flow,
-          and communication with your internal and external stakeholders.
+          LifeLoop was founded on the need for better communication and
+          engagement with family members of senior living communities. Today, we
+          are a multi-faceted platform designed to streamline operations, work
+          flow, and communication with your internal and external stakeholders.
         </p>
         {map(NAVIGATION.features.subNav, ({ key, Icon, name, link }) => (
           <Link key={key} to={link} className={infoLink}>

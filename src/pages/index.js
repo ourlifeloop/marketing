@@ -62,10 +62,10 @@ export default function Home({ data, location }) {
           is truly our passion.
         </p>
         <p>
-          LifeLoop was founded based on the need to better communicate and
-          engage family members of senior living communities. Today, we are a
-          multi-faceted platform designed to streamline operations, work flow,
-          and communication with your internal and external stakeholders.
+          LifeLoop was founded on the need for better communication and
+          engagement with family members of senior living communities. Today, we
+          are a multi-faceted platform designed to streamline operations, work
+          flow, and communication with your internal and external stakeholders.
         </p>
       </TitleSection>
       <FeatureCardSwitcher />
