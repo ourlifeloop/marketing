@@ -1,9 +1,8 @@
 ---
 question: Can I print a list of staff members?
-answer: 'Yes. Under the "Selected" button, choose "Export CSV". This will allow
-  you to export and print list from an Excel file with Name, Email, Phone,
-  Title, Birthday, Groups, and which Community or level of care they have access
-  to. '
+answer: 'Yes. Under the "Selected" tab, choose "Export CSV". This will allow you
+  to export and print list from an Excel file with Name, Email, Phone, Title,
+  Birthday, Groups, and which Community or level of care they have access to. '
 isMobile: false
 topics:
   - staff-management
