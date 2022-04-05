@@ -102,6 +102,16 @@ const TEAM = [
     image: 'samAlmquist',
   },
   {
+    name: 'Kim Meschede',
+    title: 'Customer Support Specialist',
+    image: 'kimMeschede',
+  },
+  {
+    name: 'Mckayla Bruner',
+    title: 'Customer Support Specialist',
+    image: 'mckaylaBruner',
+  },
+  {
     name: 'Katie Paul',
     title: 'Implementation Specialist',
     image: 'katiePaul',
@@ -225,7 +235,13 @@ export const teamImages = graphql`
     samAlmquist: file(relativePath: { eq: "team/sam.almquist.jpg" }) {
       ...teamImage
     }
-    carleeJordan: file(relativePath: { eq: "team/carlee.jordan.png" }) {
+    kimMeschede: file(relativePath: { eq: "team/kim.meschede.png" }) {
+      ...teamImage
+    }
+    mckaylaBruner: file(relativePath: { eq: "team/mckayla.bruner.png" }) {
+      ...teamImage
+    }
+    carleeJordan: file(relativePath: { eq: "team/carlee.jordan.jpg" }) {
       ...teamImage
     }
     ellenOsborne: file(relativePath: { eq: "team/ellen.osborne.png" }) {
@@ -234,13 +250,13 @@ export const teamImages = graphql`
     erinReed: file(relativePath: { eq: "team/erin.reed.jpg" }) {
       ...teamImage
     }
-    jeddPatterson: file(relativePath: { eq: "team/jedd.patterson.png" }) {
+    jeddPatterson: file(relativePath: { eq: "team/jedd.patterson.jpg" }) {
       ...teamImage
     }
     jesseHardy: file(relativePath: { eq: "team/jesse.hardy.png" }) {
       ...teamImage
     }
-    katiePaul: file(relativePath: { eq: "team/katie.paul.png" }) {
+    katiePaul: file(relativePath: { eq: "team/katie.paul.jpg" }) {
       ...teamImage
     }
     madisonSiniard: file(relativePath: { eq: "team/madison.siniard.png" }) {
