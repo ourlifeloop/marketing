@@ -1,6 +1,6 @@
 ---
 question: How do I add a recurring activity?
-answer: ' On the feature menu, click on the "Calendar" tab. Click on the day you
+answer: ' On the feature menu, select the "Calendar" tab. Click on the day you
   would like to add an activity to or on and select "+ Add Activity" on the top
   right. A form will appear to the right of your calendar. Enter your activity
   information into the form. Under reoccurring, click on set and select the
