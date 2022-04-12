@@ -1,7 +1,7 @@
 ---
 question: How do I invite family and friends of a resident?
 answer: >-
-  In the feature menu, click on the "Residents" tab. Find the resident you would
+  On the feature menu, click on the "Residents" tab. Find the resident you would
   like to add a connection to. While remaining in the resident list, select the
   third "Quick Action" icon. Type the connections email in the box that appears.
   The family will receive an email and complete registration. You can also
