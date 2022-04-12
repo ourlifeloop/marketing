@@ -1,6 +1,6 @@
 ---
 question: How do I send a message to another staff member?
-answer: 'In the feature menu, click on the "Communication" tab. On the top
+answer: 'On the feature menu, click on the "Communication" tab. On the top
   right-hand side, select "+ New Message”.  This will give you a modal with the
   option to message Residents, Connections or Staff. Locate the staff member’s
   name and select the blue arrow to add them to the conversation and then select
