@@ -1,6 +1,6 @@
 ---
 question: How do I edit and/or change permissions to a staff member?
-answer: In the feature menu, click on the "Staff" tab. Locate the staff member
+answer: On the feature menu, click on the "Staff" tab. Locate the staff member
   you’re wanting to edit and click on that staff member’s name. On the top
   right-hand side of the screen click "Edit". Make the needed changes and save.
   To adjust permissions, click the "Permissions" tab on the left-hand side then
