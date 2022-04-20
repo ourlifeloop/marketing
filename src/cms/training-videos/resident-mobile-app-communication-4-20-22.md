@@ -1,5 +1,5 @@
 ---
-title: Resident Mobile App Communication 4.20.22
+title: Resident Mobile App Communication
 video: https://www.youtube-nocookie.com/embed/wwPG_9Tkzbc
 cover: /images/cms/vid-cov-6.jpg
 isNew: true
