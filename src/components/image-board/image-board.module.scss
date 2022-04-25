@@ -1,0 +1,13 @@
+.image {
+  height: auto;
+  max-height: 300px;
+  width: calc(100% / 3);
+
+  &--tablet {
+    width: calc(100% / 2);
+  }
+
+  &--mobile {
+    width: 100%;
+  }
+}

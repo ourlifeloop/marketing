@@ -25,20 +25,6 @@
   height: variableSize(200, 600);
 }
 
-.actionImage {
-  height: auto;
-  max-height: 300px;
-  width: calc(100% / 3);
-
-  &--tablet {
-    width: calc(100% / 2);
-  }
-
-  &--mobile {
-    width: 100%;
-  }
-}
-
 $weAreMargin: 1rem;
 .weAreWrapper {
   margin: #{math.div(-$weAreMargin, 2)} -$weAreMargin;

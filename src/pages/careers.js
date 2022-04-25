@@ -7,6 +7,7 @@ import FlexContainer from '../primitives/flex-container';
 import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
 import SiteWrapper from '../components/site-wrapper';
+import ImageBoard from '../components/image-board';
 import { ChevronRight } from '../utils/icons';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
@@ -16,9 +17,6 @@ import {
   titleText,
   sectionText,
   meetingImage,
-  actionImage,
-  actionImageTablet,
-  actionImageMobile,
   weAre,
   weAreCollapsed,
   weAreWrapper,
@@ -76,19 +74,7 @@ export default function Careers({ data }) {
           process is the foundation of our success and our culture.
         </div>
       </Section>
-      <FlexContainer wrap>
-        {imageBoard.map((image, i) => (
-          <GatsbyImage
-            key={i}
-            className={classNames(actionImage, {
-              [actionImageTablet]: isTablet,
-              [actionImageMobile]: isMini,
-            })}
-            alt={`LifeLoop in Action - ${i + 1}`}
-            image={image}
-          />
-        ))}
-      </FlexContainer>
+      <ImageBoard images={imageBoard} />
       <ActionCallout
         title="Our core values drive everything we do."
         body="At LifeLoop, we live our values, and we also hire according to those values. Our best ideas happen when we demand the most of each other - and just as much of ourselves."
