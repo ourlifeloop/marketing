@@ -7,6 +7,8 @@ import LatestBlogSection from '../components/latest-blog-section';
 import FlexContainer from '../primitives/flex-container';
 import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
+import Testimonials from '../components/testimonials';
+import { removeTrailingSlash } from '../utils/common';
 import SiteWrapper from '../components/site-wrapper';
 import DemoSection from '../components/demo-section';
 import ImageBoard from '../components/image-board';
@@ -14,7 +16,7 @@ import Button from '../primitives/button';
 
 import { banner, list, listElement } from './in2l.module.scss';
 
-export default function IN2L({ data }) {
+export default function IN2L({ data, location }) {
   return (
     <SiteWrapper>
       <GatsbyImage
@@ -89,6 +91,7 @@ export default function IN2L({ data }) {
           </Link>
         }
       />
+      <Testimonials pathname={removeTrailingSlash(location.pathname)} />
       <LatestBlogSection />
       <DemoSection />
     </SiteWrapper>
