@@ -7,8 +7,8 @@ import Footer from '../components/footer';
 
 // Optional Site Banner
 const BANNER_CONFIG = {
-  text: 'COVID-19: Our Commitment to You',
-  link: '/covid',
+  text: 'iN2L & LifeLoop | One Mission. One Solution.',
+  link: '/in2l',
 };
 
 export default function SiteWrapper({ transparent, children, ...rest }) {

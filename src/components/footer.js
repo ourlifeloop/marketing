@@ -97,6 +97,9 @@ export default function Footer() {
               >
                 Accessibility
               </Link>
+              <Link className={link} to="/covid" aria-label="Covid Response">
+                Covid
+              </Link>
             </FlexContainer>
           </FlexContainer>
           <FlexContainer wrap>

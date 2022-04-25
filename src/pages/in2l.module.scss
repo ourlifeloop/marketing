@@ -1,0 +1,16 @@
+.banner {
+  width: 100%;
+}
+
+.list {
+  margin-bottom: 0;
+  width: 80%;
+}
+
+.listElement {
+  text-align: left;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
