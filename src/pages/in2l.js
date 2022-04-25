@@ -9,6 +9,7 @@ import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
 import SiteWrapper from '../components/site-wrapper';
 import DemoSection from '../components/demo-section';
+import ImageBoard from '../components/image-board';
 import Button from '../primitives/button';
 
 import { banner, list, listElement } from './in2l.module.scss';
@@ -31,6 +32,16 @@ export default function IN2L({ data }) {
           resident engagement.
         </p>
       </TitleSection>
+      <ImageBoard
+        images={[
+          data.express,
+          data.blackjack,
+          data.staffBenefits,
+          data.slideshow,
+          data.dashboard,
+          data.residentTablets,
+        ].map(getImage)}
+      />
       <TitleSection header="What does this mean?" width="small">
         <p>
           Both iN2L and LifeLoop were founded on a shared mission to
@@ -91,11 +102,35 @@ IN2L.propTypes = {
 };
 
 export const query = graphql`
-  {
+  fragment actionImage on File {
+    childImageSharp {
+      gatsbyImageData(height: 300, quality: 80, layout: CONSTRAINED)
+    }
+  }
+
+  query {
     in2lPlusLifeLoop: file(relativePath: { eq: "in2l-plus-lifeloop.png" }) {
       childImageSharp {
         gatsbyImageData(width: 1440, quality: 100, layout: CONSTRAINED)
       }
+    }
+    blackjack: file(relativePath: { eq: "in2l-blackjack.webp" }) {
+      ...actionImage
+    }
+    express: file(relativePath: { eq: "lifeloop-express-cell.png" }) {
+      ...actionImage
+    }
+    staffBenefits: file(relativePath: { eq: "staff-benefits-callout.jpg" }) {
+      ...actionImage
+    }
+    slideshow: file(relativePath: { eq: "in2l-slideshow.jpeg" }) {
+      ...actionImage
+    }
+    dashboard: file(relativePath: { eq: "aidd-communities.png" }) {
+      ...actionImage
+    }
+    residentTablets: file(relativePath: { eq: "in2l-resident-tablets.png" }) {
+      ...actionImage
     }
   }
 `;

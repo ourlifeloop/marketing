@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
@@ -9,9 +10,14 @@ import { useDevice } from '../../utils/effects';
 export default function ImageBoard({ title, images }) {
   const { isTablet, isMini } = useDevice();
 
+  let imageBoard = images;
+  if (isMini) {
+    imageBoard = images.filter((_, i) => i < 4);
+  }
+
   return (
     <FlexContainer wrap>
-      {images.map((img, i) => (
+      {imageBoard.map((img, i) => (
         <GatsbyImage
           key={i}
           className={classNames(image, {
@@ -25,3 +31,8 @@ export default function ImageBoard({ title, images }) {
     </FlexContainer>
   );
 }
+
+ImageBoard.propTypes = {
+  title: PropTypes.string.isRequired,
+  images: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+};

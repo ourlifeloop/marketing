@@ -7,7 +7,7 @@ import Footer from '../components/footer';
 
 // Optional Site Banner
 const BANNER_CONFIG = {
-  text: 'iN2L & LifeLoop | One Mission. One Solution.',
+  text: 'iN2L + LifeLoop | One Mission. One Solution.',
   link: '/in2l',
 };
 

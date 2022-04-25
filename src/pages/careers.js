@@ -38,20 +38,7 @@ const WHO_WE_ARE = [
 ];
 
 export default function Careers({ data }) {
-  const { isTablet, isMini } = useDevice();
-
-  let imageBoard = [
-    data.joeyInAction,
-    data.dylanInAction,
-    data.natalliaInAction,
-    data.philLeviInAction,
-    data.amyInAction,
-    data.jtInAction,
-  ].map(getImage);
-
-  if (isMini) {
-    imageBoard = imageBoard.filter((_, i) => i < 4);
-  }
+  const { isMini } = useDevice();
 
   return (
     <SiteWrapper title="Careers | LifeLoop assisted living community management software">
@@ -74,7 +61,16 @@ export default function Careers({ data }) {
           process is the foundation of our success and our culture.
         </div>
       </Section>
-      <ImageBoard images={imageBoard} />
+      <ImageBoard
+        images={[
+          data.joeyInAction,
+          data.dylanInAction,
+          data.natalliaInAction,
+          data.philLeviInAction,
+          data.amyInAction,
+          data.jtInAction,
+        ].map(getImage)}
+      />
       <ActionCallout
         title="Our core values drive everything we do."
         body="At LifeLoop, we live our values, and we also hire according to those values. Our best ideas happen when we demand the most of each other - and just as much of ourselves."
