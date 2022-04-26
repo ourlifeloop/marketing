@@ -60,6 +60,7 @@ collections:
         options:
           - { label: Home Page, value: / }
           - { label: Covid, value: /covid }
+          - { label: iN2L + LifeLoop, value: /in2l }
           - { label: Senior Living Solution, value: /solutions/senior-living }
           - { label: AIDD Solution, value: /solutions/aidd }
           - {
