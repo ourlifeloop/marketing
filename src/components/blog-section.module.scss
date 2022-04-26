@@ -7,6 +7,7 @@ $post-margin-max: 20;
 $positive-margin: variableSize($post-margin-min, $post-margin-max);
 
 .article {
+  flex: 1;
   margin: 1rem $positive-margin 0;
 
   &:first-of-type {

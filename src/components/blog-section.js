@@ -21,7 +21,7 @@ export default function BlogSection({ header, posts }) {
   return (
     <TitleSection width="large" header={header}>
       <FlexContainer>
-        {take(posts.edges, numPosts).map(post => (
+        {take(posts.edges, numPosts).map((post) => (
           <ArticleCard
             className={article}
             key={post.node.fields.slug}

@@ -62,6 +62,7 @@ export default function Careers({ data }) {
         </div>
       </Section>
       <ImageBoard
+        title="LifeLoop in Action"
         images={[
           data.joeyInAction,
           data.dylanInAction,

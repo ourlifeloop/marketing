@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-import LatestBlogSection from '../components/latest-blog-section';
 import FlexContainer from '../primitives/flex-container';
 import ActionCallout from '../primitives/action-callout';
 import TitleSection from '../primitives/title.section';
@@ -11,6 +10,7 @@ import Testimonials from '../components/testimonials';
 import { removeTrailingSlash } from '../utils/common';
 import SiteWrapper from '../components/site-wrapper';
 import DemoSection from '../components/demo-section';
+import BlogSection from '../components/blog-section';
 import ImageBoard from '../components/image-board';
 import Button from '../primitives/button';
 
@@ -35,6 +35,7 @@ export default function IN2L({ data, location }) {
         </p>
       </TitleSection>
       <ImageBoard
+        title="iN2L + LifeLoop"
         images={[
           data.express,
           data.blackjack,
@@ -92,7 +93,7 @@ export default function IN2L({ data, location }) {
         }
       />
       <Testimonials pathname={removeTrailingSlash(location.pathname)} />
-      <LatestBlogSection />
+      <BlogSection posts={data.blogs} />
       <DemoSection />
     </SiteWrapper>
   );
@@ -134,6 +135,37 @@ export const query = graphql`
     }
     residentTablets: file(relativePath: { eq: "in2l-resident-tablets.png" }) {
       ...actionImage
+    }
+    blogs: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {
+        frontmatter: {
+          title: {
+            in: [
+              "iN2L + LifeLoop | Together, we can do more."
+              "iN2L Acquires LifeLoop"
+            ]
+          }
+        }
+      }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 200)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            photo {
+              childImageSharp {
+                gatsbyImageData(width: 500, layout: CONSTRAINED)
+              }
+            }
+          }
+        }
+      }
     }
   }
 `;
