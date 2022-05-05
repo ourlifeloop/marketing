@@ -3,7 +3,7 @@ date: 2022-05-02T17:05:07.234Z
 type: news
 author: Amy Johnson
 title: "A Letter From Amy Johnson: Where We've Been & Where We're Going"
-photo: /images/cms/amy-blog-graphic.png
+photo: /images/cms/amy-blog-banner-.png
 ---
 ### The Beginnings
 
