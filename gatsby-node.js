@@ -118,6 +118,7 @@ exports.createSchemaCustomization = ({ actions }) => {
   const typeDefs = `
     type MarkdownRemarkFrontmatter implements Node {
       responsibilities: [String]
+      link: String
     }
   `;
   createTypes(typeDefs);
