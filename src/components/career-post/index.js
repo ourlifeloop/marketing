@@ -17,6 +17,7 @@ import FlexContainer from '../../primitives/flex-container';
 export default function CareerPost({
   title,
   date,
+  link,
   html,
   responsibilities,
   careerEmail,
@@ -43,7 +44,7 @@ export default function CareerPost({
           ))}
         </ul>
         <FlexContainer className={apply} align="center" justify="center">
-          <a href={`mailto:${careerEmail}?${emailConfig}`}>
+          <a href={link || `mailto:${careerEmail}?${emailConfig}`}>
             <Button>Apply Now</Button>
           </a>
         </FlexContainer>

@@ -30,6 +30,7 @@ export const query = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        link
         responsibilities
       }
     }

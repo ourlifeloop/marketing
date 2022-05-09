@@ -37,6 +37,7 @@ collections:
     fields:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: link, label: Link, required: false }
       - name: responsibilities
         label: Responsibilities
         widget: list
