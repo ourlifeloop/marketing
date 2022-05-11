@@ -2,9 +2,20 @@
 date: 2022-05-11T18:15:30.180Z
 title: Onboarding Specialist
 link: https://recruit.hirebridge.com/v3/applicationv2/Jobapplylogin.aspx?cid=8153&jid=576857
+responsibilities:
+  - Conduct all Customer Trainings (Includes initial onboarding training and
+    monthly refreshers.)
+  - Will help conduct LifeLoop University Beginner and Pro Courses (Monthly
+    Webinar Trainings open to all customers.)
+  - Utilize Mailchimp to create monthly customer communication emails.
+  - Help keep all LifeLoop Learning Community documents, FAQs, and Videos up to
+    date and relevant as the LifeLoop platform changes.
+  - Offer ongoing support for the Customer Support Team during high volume
+    periods.
+  - Provide any needed 1:1 supplemental customer training.
+  - Conduct Resident and Connection trainings as well as stay up to date on
+    product releases, updates, and bug fixes.
 ---
-
-
 **Job description**
 
 At LifeLoop we pride ourselves on being customer centric. We strive to provide the best customer experience and we hire accordingly! If you love being part of a team environment, helping others and being organized you will fit right in! LifeLoop is a fast-growing SaaS company that is continually adding to its team, providing ample opportunity to grow with it!
@@ -13,36 +24,18 @@ The Onboarding Specialist role is responsible for all new customer training as w
 
 As part of the Customer Success Team, this position will be cross trained on all facets of customer success during onboarding. This will include being trained on Implementation and Support.
 
-In this position, you will be responsible for …
 
-Conduct all Customer Trainings (Includes initial onboarding training and monthly refreshers.)
-
-Will help conduct LifeLoop University Beginner and Pro Courses (Monthly Webinar Trainings open to all customers.)
-
-Utilize Mailchimp to create monthly customer communication emails.
-
-Help keep all LifeLoop Learning Community documents, FAQs, and Videos up to date and relevant as the LifeLoop platform changes.
-
-***Additional Duties***
-
-Offer ongoing support for the Customer Support Team during high volume periods.
-
-Provide any needed 1:1 supplemental customer training.
-
-Conduct Resident and Connection trainings as well as 
-
-Stay up to date on product releases, updates, and bug fixes.
 
 ***Required Knowledge, Skills, and Abilities***
 
 **Customer service** – a good portion of the Onboarding Support Specialist’s day will be interacting with customers through 1:1 training. Providing that “next level” of customer service and training is where LifeLoop stands out. Personal qualities needed to do so include, but are not limited to:
 
-* * * Providing valuable guidance and recommendations on product usage
-    * Showing empathy
-    * Possessing a calm demeanor
-    * Ability to educate and communicate clearly and concisely.
-    * Ability to answer questions quickly and efficiently.
-    * Be comfortable on video during trainings and be able to think on the fly.
+* Providing valuable guidance and recommendations on product usage
+* Showing empathy
+* Possessing a calm demeanor
+* Ability to educate and communicate clearly and concisely.
+* Ability to answer questions quickly and efficiently.
+* Be comfortable on video during trainings and be able to think on the fly.
 
 **Computer Literacy** - required to learn and become proficient with internal systems and the LifeLoop Platform. Some frequently used systems include Microsoft Excel, Word, SharePoint, Zoom, Canva, Camtasia, and Google docs.
 
