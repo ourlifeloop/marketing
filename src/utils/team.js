@@ -88,7 +88,7 @@ const TEAM = [
   },
   {
     name: 'Erin McGill',
-    title: 'Onboarding Specialist',
+    title: 'Onboarding Specialist, Team Lead',
     image: 'erinMcGill',
   },
   {
@@ -98,7 +98,7 @@ const TEAM = [
   },
   {
     name: 'Sam Almquist',
-    title: 'Customer Support Specialist',
+    title: 'Customer Support Specialist, Team Lead',
     image: 'samAlmquist',
   },
   {
@@ -113,7 +113,7 @@ const TEAM = [
   },
   {
     name: 'Katie Paul',
-    title: 'Implementation Specialist',
+    title: 'Implementation Specialist, Team Lead',
     image: 'katiePaul',
   },
   {
