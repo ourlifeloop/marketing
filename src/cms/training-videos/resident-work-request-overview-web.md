@@ -1,7 +1,7 @@
 ---
-title: Resident Work Request Overview-Web
-video: https://youtu.be/3HsQuoR2oiQ/embed
-cover: /images/cms/training-video-slides-7-.png
+title: Resident Work Request Overview
+video: https://www.youtube-nocookie.com/embed/3HsQuoR2oiQ
+cover: /images/cms/vid-cov-6.jpg
 isNew: true
 isMobile: false
 topics:
