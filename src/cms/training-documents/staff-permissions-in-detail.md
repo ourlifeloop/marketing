@@ -1,7 +1,7 @@
 ---
 title: Staff Permissions in Detail
-document: /images/cms/lifeloop-staff-permissions-in-detail-3-.pdf
-date: 2022-01-04T13:00:00.000Z
+document: /images/cms/staff-permissions-in-detail.pdf
+date: 2022-05-16T12:00:00.000Z
 isMobile: false
 topics:
   - getting-started
