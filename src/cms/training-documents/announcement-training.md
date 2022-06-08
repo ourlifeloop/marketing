@@ -1,6 +1,6 @@
 ---
 title: Announcement Training
-document: /images/cms/announcement-lifeloop-trainings-3-.pdf
+document: /images/cms/announcement-training-.pdf
 date: 2021-10-26T12:00:00.000Z
 isMobile: false
 topics:
