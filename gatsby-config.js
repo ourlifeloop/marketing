@@ -80,5 +80,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-netlify',
+    {
+      resolve: 'gatsby-plugin-hubspot',
+      options: {
+        trackingCode: '8341689',
+        respectDNT: false,
+        productionOnly: true,
+      },
+    },
   ],
 };
