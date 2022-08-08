@@ -1,7 +1,7 @@
 ---
 title: Managing Staff Notifications
-document: /images/cms/staff-notifications-new.pdf
-date: 2021-10-26T12:00:00.000Z
+document: /images/cms/new-staff-notifications.pdf
+date: 2022-08-08T12:00:00.000Z
 isMobile: false
 topics:
   - staff-management
