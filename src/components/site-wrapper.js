@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import CookieModal from '../primitives/cookie-modal';
@@ -12,6 +12,11 @@ const BANNER_CONFIG = {
 };
 
 export default function SiteWrapper({ transparent, children, ...rest }) {
+  useEffect(() => {
+    if (window && window._trackPage) {
+      window._trackPage({ location: window.location });
+    }
+  }, []);
   return (
     <Header transparent={transparent} banner={BANNER_CONFIG} {...rest}>
       {children}
