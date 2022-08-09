@@ -1,8 +1,13 @@
 import './src/styles/global.scss';
 
 const EXCLUDED_ROUTES = ['/training-login', '/support'];
+const isProduction = process.env.NODE_ENV === 'production';
 
 const _trackPage = ({ location }) => {
+  if (!isProduction || !Array.isArray(window._hsq)) {
+    return null;
+  }
+
   const DO_NOT_TRACK =
     (window.doNotTrack ||
       navigator.doNotTrack ||
@@ -14,11 +19,7 @@ const _trackPage = ({ location }) => {
       navigator.msDoNotTrack === '1' ||
       window.external.msTrackingProtectionEnabled());
 
-  if (
-    process.env.NODE_ENV === 'production' &&
-    Array.isArray(window._hsq) &&
-    !DO_NOT_TRACK
-  ) {
+  if (!DO_NOT_TRACK) {
     const path = location
       ? `${location.pathname}${location.search}${location.hash}`
       : undefined;
@@ -26,10 +27,9 @@ const _trackPage = ({ location }) => {
       window._hsq.push(['setPath', path]);
       window._hsq.push(['trackPageView']);
     }
-  } else if (DO_NOT_TRACK && Array.isArray(window._hsq)) {
+  } else {
     window._hsq.push(['doNotTrack']);
   }
-
   return null;
 };
 
