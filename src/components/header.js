@@ -191,6 +191,12 @@ export default function Header({
               )}
             />
           )}
+          <script
+            type="text/javascript"
+            id="hs-script-loader"
+            key="gatsby-plugin-hubspot"
+            src={`//js.hs-scripts.com/8341689.js`}
+          />
         </Helmet>
         <Layout>
           <FlexContainer direction="column">

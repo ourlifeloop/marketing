@@ -56,8 +56,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name:
-          'LifeLoop assisted living community management software: connecting families, residents and communities.',
+        name: 'LifeLoop assisted living community management software: connecting families, residents and communities.',
         short_name: 'LifeLoop',
         start_url: '/',
         background_color: '#f6f8fa',
@@ -80,13 +79,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-netlify',
-    {
-      resolve: 'gatsby-plugin-hubspot',
-      options: {
-        trackingCode: '8341689',
-        respectDNT: true,
-        productionOnly: true,
-      },
-    },
   ],
 };
