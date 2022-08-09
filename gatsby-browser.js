@@ -1,6 +1,6 @@
 import './src/styles/global.scss';
 
-const EXCLUDED_ROUTES = [];
+const EXCLUDED_ROUTES = ['/training-login', '/support'];
 
 const _trackPage = ({ location }) => {
   const DO_NOT_TRACK =
@@ -15,7 +15,7 @@ const _trackPage = ({ location }) => {
       window.external.msTrackingProtectionEnabled());
 
   if (
-    process.env.NODE_ENV !== 'production' &&
+    process.env.NODE_ENV === 'production' &&
     Array.isArray(window._hsq) &&
     !DO_NOT_TRACK
   ) {
