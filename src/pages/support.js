@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { Link, navigate } from 'gatsby';
 
+import { submitForm } from '../utils/api';
+import { useDevice } from '../utils/effects';
+import Button from '../primitives/button';
 import ContactSidebar from '../components/contact-sidebar';
 import FlexContainer from '../primitives/flex-container';
 import FormContainer from '../primitives/form-container';
-import SiteWrapper from '../components/site-wrapper';
 import FormRow from '../primitives/form-row';
-import { useDevice } from '../utils/effects';
-import Section from '../primitives/section';
-import Layout from '../primitives/layout';
-import Button from '../primitives/button';
-import { submitForm } from '../utils/api';
-import Label from '../primitives/label';
+import IgnoreTrackingFormRow from '../primitives/ignore-tracking-form-row';
 import Input from '../primitives/input';
+import Label from '../primitives/label';
+import Layout from '../primitives/layout';
+import Section from '../primitives/section';
+import SiteWrapper from '../components/site-wrapper';
 
 const USER_TYPES = ['Staff', 'Resident', 'Family'];
 
@@ -90,6 +91,7 @@ export default function Support() {
               <h1>Support</h1>
               <p>Answer a few questions and we'll help you find a solution.</p>
               <form onSubmit={onSubmit}>
+                <IgnoreTrackingFormRow />
                 <FormRow>
                   <Label htmlFor="firstName" title="First Name">
                     <Input
