@@ -42,11 +42,6 @@ const TEAM = [
     image: 'jessDonahue',
   },
   {
-    name: 'Ellen Osborne',
-    title: 'Territory Manager',
-    image: 'ellenOsborne',
-  },
-  {
     name: 'TJ Butler',
     title: 'Territory Manager',
     image: 'tjButler',
@@ -221,9 +216,6 @@ export const teamImages = graphql`
       ...teamImage
     }
     mckaylaBruner: file(relativePath: { eq: "team/mckayla.bruner.png" }) {
-      ...teamImage
-    }
-    ellenOsborne: file(relativePath: { eq: "team/ellen.osborne.png" }) {
       ...teamImage
     }
     erinReed: file(relativePath: { eq: "team/erin.reed.jpg" }) {
