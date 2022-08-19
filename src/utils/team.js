@@ -13,7 +13,7 @@ const TEAM = [
   },
   {
     name: 'Nick Nemer',
-    title: 'Vice President Business Development',
+    title: 'Vice President of Strategic Growth',
     image: 'nickNemer',
   },
   {
@@ -58,7 +58,7 @@ const TEAM = [
   },
   {
     name: 'Tara Robeson',
-    title: 'Accounting Manager/HR',
+    title: 'Office Finance Manager',
     image: 'taraRobeson',
   },
   {
@@ -117,19 +117,34 @@ const TEAM = [
     image: 'hanaHutchens',
   },
   {
+    name: 'Bailey Ahmady',
+    title: 'Onboarding Specialist',
+    image: 'baileyAhmady',
+  },
+  {
+    name: 'Joslynn Martin',
+    title: 'Onboarding Specialist',
+    image: 'joslynnMartin',
+  },
+  {
+    name: 'Ashley Rutan',
+    title: 'Customer Success Specialist',
+    image: 'ashleyRutan',
+  },
+  {
     name: 'Dylan Kuzelka',
     title: 'Designer',
     image: 'dylanKuzelka',
   },
   {
-    name: 'Jared Herselman',
-    title: 'Lead Quality Assurance Specialist',
-    image: 'jaredHerselman',
-  },
-  {
     name: 'Erin Reed',
     title: 'Quality Assurance Specialist',
     image: 'erinReed',
+  },
+  {
+    name: 'Jared Herselman',
+    title: 'Lead Quality Assurance Specialist',
+    image: 'jaredHerselman',
   },
   {
     name: 'JT Seger',
@@ -237,6 +252,15 @@ export const teamImages = graphql`
       ...teamImage
     }
     tjButler: file(relativePath: { eq: "team/tj.butler.jpg" }) {
+      ...teamImage
+    }
+    baileyAhmady: file(relativePath: { eq: "team/bailey.ahmady.jpeg" }) {
+      ...teamImage
+    }
+    joslynnMartin: file(relativePath: { eq: "team/joslynn.martin.jpeg" }) {
+      ...teamImage
+    }
+    ashleyRutan: file(relativePath: { eq: "team/ashley.rutan.png" }) {
       ...teamImage
     }
   }
