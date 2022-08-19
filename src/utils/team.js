@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 const TEAM = [
   {
     name: 'Amy Johnson',
-    title: 'Co-Founder & CEO',
+    title: 'Co-Founder & Chief Strategy Officer',
     image: 'amyJohnson',
   },
   {
@@ -18,7 +18,7 @@ const TEAM = [
   },
   {
     name: 'Megan King',
-    title: 'Vice President of Operations & Customer Success',
+    title: 'Vice President of Operations',
     image: 'meganKing',
   },
   {
@@ -33,7 +33,7 @@ const TEAM = [
   },
   {
     name: 'Joey Carney',
-    title: 'Senior Territory Manager',
+    title: 'Manager, Mid-Market Account Management',
     image: 'joeyCarney',
   },
   {
@@ -65,11 +65,6 @@ const TEAM = [
     name: 'Tara Robeson',
     title: 'Accounting Manager/HR',
     image: 'taraRobeson',
-  },
-  {
-    name: 'Carlee Jordan',
-    title: 'Recruiter',
-    image: 'carleeJordan',
   },
   {
     name: 'Natallia Jorgensen',
@@ -143,23 +138,13 @@ const TEAM = [
   },
   {
     name: 'JT Seger',
-    title: 'Lead Software Engineer',
+    title: 'Principle Engineer',
     image: 'jtSeger',
-  },
-  {
-    name: 'Mitchel Pigsley',
-    title: 'Lead Software Engineer',
-    image: 'mitchelPigsley',
   },
   {
     name: 'Levi Liester',
     title: 'Software Engineer',
     image: 'leviLiester',
-  },
-  {
-    name: 'Jedd Patterson',
-    title: 'Software Engineer',
-    image: 'jeddPatterson',
   },
 ];
 
@@ -192,9 +177,6 @@ export const teamImages = graphql`
       ...teamImage
     }
     jtSeger: file(relativePath: { eq: "team/jt.seger.jpg" }) {
-      ...teamImage
-    }
-    mitchelPigsley: file(relativePath: { eq: "team/mitchel.pigsley.jpg" }) {
       ...teamImage
     }
     dylanKuzelka: file(relativePath: { eq: "team/dylan.kuzelka.jpg" }) {
@@ -241,16 +223,10 @@ export const teamImages = graphql`
     mckaylaBruner: file(relativePath: { eq: "team/mckayla.bruner.png" }) {
       ...teamImage
     }
-    carleeJordan: file(relativePath: { eq: "team/carlee.jordan.jpg" }) {
-      ...teamImage
-    }
     ellenOsborne: file(relativePath: { eq: "team/ellen.osborne.png" }) {
       ...teamImage
     }
     erinReed: file(relativePath: { eq: "team/erin.reed.jpg" }) {
-      ...teamImage
-    }
-    jeddPatterson: file(relativePath: { eq: "team/jedd.patterson.jpg" }) {
       ...teamImage
     }
     jesseHardy: file(relativePath: { eq: "team/jesse.hardy.png" }) {
