@@ -41,6 +41,7 @@ const INITIAL_STATE = {
   categories: [],
   subject: '',
   message: '',
+  ['cc-num']: 'i-exist-so-hubspot-ignores-this-form', // eslint-disable-line
 };
 
 const arrayToOptions = (arr) => arr.map((str) => ({ label: str, value: str }));
@@ -90,87 +91,84 @@ export default function Support() {
             <FormContainer>
               <h1>Support</h1>
               <p>Answer a few questions and we'll help you find a solution.</p>
-              <form onSubmit={onSubmit}>
-                <IgnoreTrackingFormRow />
-                <FormRow>
-                  <Label htmlFor="firstName" title="First Name">
-                    <Input
-                      value={form.firstName}
-                      onChange={(e) => updateForm('firstName', e.target.value)}
-                    />
-                  </Label>
-                  <Label htmlFor="lastName" title="Last Name">
-                    <Input
-                      value={form.lastName}
-                      onChange={(e) => updateForm('lastName', e.target.value)}
-                    />
-                  </Label>
-                </FormRow>
-                <FormRow>
-                  <Label htmlFor="email" title="Email">
-                    <Input
-                      value={form.email}
-                      onChange={(e) => updateForm('email', e.target.value)}
-                    />
-                  </Label>
-                </FormRow>
-                <FormRow>
-                  <Label htmlFor="community" title="Community">
-                    <Input
-                      value={form.community}
-                      onChange={(e) => updateForm('community', e.target.value)}
-                    />
-                  </Label>
-                  <Label htmlFor="userType" title="Customer Type">
-                    <Input
-                      type="select"
-                      options={arrayToOptions(USER_TYPES)}
-                      value={form.userType}
-                      onChange={(value) => updateForm('userType', value)}
-                    />
-                  </Label>
-                </FormRow>
-                <FormRow>
-                  <Label
-                    htmlFor="categories"
-                    title="Category (select all that apply)"
-                  >
-                    <Input
-                      type="select"
-                      options={arrayToOptions(CATEGORIES)}
-                      isMulti
-                      value={form.categories}
-                      onChange={(value) =>
-                        updateForm('categories', value || [])
-                      }
-                    />
-                  </Label>
-                </FormRow>
-                <FormRow>
-                  <Label htmlFor="subject" title="Subject">
-                    <Input
-                      value={form.subject}
-                      onChange={(e) => updateForm('subject', e.target.value)}
-                    />
-                  </Label>
-                </FormRow>
-                <FormRow>
-                  <Label htmlFor="message" title="Message">
-                    <Input
-                      type="textarea"
-                      value={form.message}
-                      onChange={(e) => updateForm('message', e.target.value)}
-                    />
-                  </Label>
-                </FormRow>
-                <Button
-                  isLoading={isLoading}
-                  disabled={isLoading || !isValid}
-                  type="submit"
+              <IgnoreTrackingFormRow />
+              <FormRow>
+                <Label htmlFor="firstName" title="First Name">
+                  <Input
+                    value={form.firstName}
+                    onChange={(e) => updateForm('firstName', e.target.value)}
+                  />
+                </Label>
+                <Label htmlFor="lastName" title="Last Name">
+                  <Input
+                    value={form.lastName}
+                    onChange={(e) => updateForm('lastName', e.target.value)}
+                  />
+                </Label>
+              </FormRow>
+              <FormRow>
+                <Label htmlFor="email" title="Email">
+                  <Input
+                    value={form.email}
+                    onChange={(e) => updateForm('email', e.target.value)}
+                  />
+                </Label>
+              </FormRow>
+              <FormRow>
+                <Label htmlFor="community" title="Community">
+                  <Input
+                    value={form.community}
+                    onChange={(e) => updateForm('community', e.target.value)}
+                  />
+                </Label>
+                <Label htmlFor="userType" title="Customer Type">
+                  <Input
+                    type="select"
+                    options={arrayToOptions(USER_TYPES)}
+                    value={form.userType}
+                    onChange={(value) => updateForm('userType', value)}
+                  />
+                </Label>
+              </FormRow>
+              <FormRow>
+                <Label
+                  htmlFor="categories"
+                  title="Category (select all that apply)"
                 >
-                  Submit
-                </Button>
-              </form>
+                  <Input
+                    type="select"
+                    options={arrayToOptions(CATEGORIES)}
+                    isMulti
+                    value={form.categories}
+                    onChange={(value) => updateForm('categories', value || [])}
+                  />
+                </Label>
+              </FormRow>
+              <FormRow>
+                <Label htmlFor="subject" title="Subject">
+                  <Input
+                    value={form.subject}
+                    onChange={(e) => updateForm('subject', e.target.value)}
+                  />
+                </Label>
+              </FormRow>
+              <FormRow>
+                <Label htmlFor="message" title="Message">
+                  <Input
+                    type="textarea"
+                    value={form.message}
+                    onChange={(e) => updateForm('message', e.target.value)}
+                  />
+                </Label>
+              </FormRow>
+              <Button
+                isLoading={isLoading}
+                disabled={isLoading || !isValid}
+                type="submit"
+                onClick={onSubmit}
+              >
+                Submit
+              </Button>
             </FormContainer>
             <ContactSidebar
               links={[

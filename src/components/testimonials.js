@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import { includes, shuffle, take } from '../utils/lodash';
+import { includes, take } from '../utils/lodash';
 import FlexContainer from '../primitives/flex-container';
 import TitleSection from '../primitives/title.section';
 import { useDevice } from '../utils/effects';
@@ -90,7 +90,7 @@ export default function Testimonials({ hideTitle, pathname }) {
     `,
   );
 
-  const filteredTestimonials = shuffle(testimonials.allMarkdownRemark.edges)
+  const filteredTestimonials = testimonials.allMarkdownRemark.edges
     .map(({ node }) => ({ key: node.id, ...node.frontmatter }))
     .filter(({ pages }) => includes(pages, pathname));
 
