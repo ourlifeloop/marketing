@@ -9,15 +9,11 @@ const _trackPage = ({ location }) => {
   }
 
   const DO_NOT_TRACK =
-    (window.doNotTrack ||
-      navigator.doNotTrack ||
-      navigator.msDoNotTrack ||
-      'msTrackingProtectionEnabled' in window.external) &&
+    (window.doNotTrack || navigator.doNotTrack || navigator.msDoNotTrack) &&
     (window.doNotTrack === '1' ||
       navigator.doNotTrack === 'yes' ||
       navigator.doNotTrack === '1' ||
-      navigator.msDoNotTrack === '1' ||
-      window.external.msTrackingProtectionEnabled());
+      navigator.msDoNotTrack === '1');
 
   if (!DO_NOT_TRACK) {
     const path = location
