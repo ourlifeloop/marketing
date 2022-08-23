@@ -1,7 +1,7 @@
 ---
 title: "LifeLoop: A Solution for Every Department (Packet)"
-document: /images/cms/lifeloop_-a-solution-for-every-department-packet-_.pdf
-date: 2022-01-17T13:00:00.000Z
+document: /images/cms/solution-for-every-department-1-.pdf
+date: 2022-08-23T12:00:00.000Z
 isMobile: false
 topics:
   - getting-started
