@@ -142,7 +142,7 @@ export const query = graphql`
         frontmatter: {
           title: {
             in: [
-              "Get to Know Our CEO, Navin Gupta"
+              "iN2L + LifeLoop Names Navin Gupta as Chief Executive Officer"
               "iN2L + LifeLoop | Together, we can do more."
             ]
           }
