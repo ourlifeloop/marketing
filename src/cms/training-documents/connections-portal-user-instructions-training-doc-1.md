@@ -1,7 +1,7 @@
 ---
 title: Connections Portal - User Instructions Training Doc
-document: /images/cms/connections-portal-user-instructions-training-doc-2-.pdf
-date: 2022-02-10T13:00:00.000Z
+document: /images/cms/new-connection-user-guide-2-.pdf
+date: 2022-08-23T12:00:00.000Z
 isMobile: false
 topics:
   - connection-portal
