@@ -7,17 +7,13 @@ photo: /images/cms/navin-blog-banner.png
 ---
 This morning, we announced Navin Gutpa as the new CEO of iN2L + LifeLoop. In this Q&A-style blog, we wanted to give you a little more insight into Navin and his vision for the company. 
 
-#### 
-What has shaped you into the person you are today?
+#### What has shaped you into the person you are today?
 
 I was born and raised in India. I had the incredible privilege of growing up in the foothills of the Himalayan mountains, where I spent 13 years of my life in a boarding school from the age of four and a half. The school was built in 1895, so it had a long history from the British times to independent India. We had children from several neighboring countries like Nepal, Tibet, Thailand, and Hong Kong, and teachers from England and Australia. This created an extremely diverse and rich experience. 
 
-
 Unlike every other family member before me who would go on to step into the family business, I decided to pursue computer engineering. I developed a very early love for computing and was extremely fascinated by the potential of what these machines could do. I graduated from Bangalore University and spent the first decade in telecommunication, through the evolution from narrowband to DSL and then onto passive optical networks. Through this journey, I got to spend a few years in Germany and subsequently in South Florida. The last decade has been spent in healthcare, both in acute and long-term post-acute care. The last several years I was working very closely within the senior space in home and hospice – opportunities to not only bend the cost curve in healthcare but truly drive improved senior care and end of life care. I am deeply passionate about this segment.
 
-#### 
-Tell us about your education and career.
-
+#### Tell us about your education and career.
 
 I started school at the PES School of Technology in India and then I attended Florida State University to get my Master’s of Science. Following that, I went to Indiana University for my Master’s of Business Administration. 
 
@@ -29,15 +25,11 @@ I love fitness and particularly CrossFit. Crossfit is that one sport that engage
 
 I also love all things old – I read a lot of old authors and enjoy music originating from centuries ago. When we had our first child, we even picked up a parenting book written over 100 years ago!
 
-
-
 #### What are you passionate about outside of work?
 
 I firmly believe that “To whom much is given, much is required.” My life mission is driven by a commitment to human flourishing and upliftment of the local community. I am grateful to play a very small part in organizations that serve seniors, youth mentorship, young adult leadership, foster care support, human trafficking, and financial literacy. 
 
 I am also extremely passionate about my family. I have been married to my wife Regina for 18 years, and we have two boys, Nikhil (13) and Avi (12). All of us are foodies, and UberEATS makes it far too easy to try new cuisine. I share a passion for Star Wars and Avengers with my boys and a love for espionage movies/shows with my wife.
-
-
 
 #### What are you most excited about in your new role as CEO?
 
@@ -45,13 +37,9 @@ Innovation is at the core of this company. That is why customers stick with us f
 
 I know change can be unnerving. However, when you look back at some of the most successful companies, change was the catalyst for explosive momentum and massive growth. Take Microsoft for instance. Yes, a HUGE company, but their recent growth was predicated on a massive shift in the corporate strategy to move everything to the cloud, to become a SaaS organization versus an on-premise software organization. 
 
-
-
 #### What does this change mean for iN2L + LifeLoop clients?
 
 As an iN2L + LifeLoop customer, you shouldn’t expect any day-to-day changes. I will be spending time with customers as part of an initial “listening tour” that will be kicking off soon. If you are able, I would welcome an opportunity to connect with you directly. 
-
-
 
 #### What does the iN2L + LifeLoop mission mean to you?
 
