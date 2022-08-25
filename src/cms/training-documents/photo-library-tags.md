@@ -1,6 +1,6 @@
 ---
 title: Photo Library Tags
-document: /images/cms/photo-library-tags.pdf
+document: /images/cms/photo-library-tags-1-.pdf
 date: 2022-06-30T19:30:29.037Z
 isMobile: false
 topics:
