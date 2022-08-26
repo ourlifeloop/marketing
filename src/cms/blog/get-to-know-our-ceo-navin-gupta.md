@@ -5,7 +5,7 @@ author: Andrea Clauson
 title: Get to Know Our CEO, Navin Gupta
 photo: /images/cms/navin-blog-banner.png
 ---
-This morning, we announced Navin Gutpa as the new CEO of iN2L + LifeLoop. In this Q&A-style blog, we wanted to give you a little more insight into Navin and his vision for the company. 
+This morning, we announced Navin Gupta as the new CEO of iN2L + LifeLoop. In this Q&A-style blog, we wanted to give you a little more insight into Navin and his vision for the company. 
 
 #### What has shaped you into the person you are today?
 
