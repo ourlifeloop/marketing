@@ -7,6 +7,8 @@ photo: /images/cms/navin-blog-banner.png
 ---
 This morning, we announced Navin Gupta as the new CEO of iN2L + LifeLoop. In this Q&A-style blog, we wanted to give you a little more insight into Navin and his vision for the company. 
 
+
+
 #### What has shaped you into the person you are today?
 
 I was born and raised in India. I had the incredible privilege of growing up in the foothills of the Himalayan mountains, where I spent 13 years of my life in a boarding school from the age of four and a half. The school was built in 1895, so it had a long history from the British times to independent India. We had children from several neighboring countries like Nepal, Tibet, Thailand, and Hong Kong, and teachers from England and Australia. This created an extremely diverse and rich experience. 
