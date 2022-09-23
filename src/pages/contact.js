@@ -1,17 +1,59 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React, { useState } from 'react';
+import { Link, navigate } from 'gatsby';
 
 import ContactSidebar from '../components/contact-sidebar';
 import FlexContainer from '../primitives/flex-container';
 import FormContainer from '../primitives/form-container';
 import SiteWrapper from '../components/site-wrapper';
+import FormRow from '../primitives/form-row';
 import { useDevice } from '../utils/effects';
 import Section from '../primitives/section';
 import Layout from '../primitives/layout';
-import HubspotFormRenderer from '../components/hubspot.form.renderer';
+import Button from '../primitives/button';
+import { submitForm } from '../utils/api';
+import Label from '../primitives/label';
+import Input from '../primitives/input';
+
+const INITIAL_STATE = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  subject: '',
+  message: '',
+};
 
 export default function Contact() {
   const { isTablet } = useDevice();
+  const [form, setForm] = useState(INITIAL_STATE);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const isValid =
+    !!form.firstName &&
+    !!form.lastName &&
+    !!form.email &&
+    !!form.subject &&
+    !!form.message;
+
+  const updateForm = (key, value) =>
+    setForm({
+      ...form,
+      [key]: value,
+    });
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    submitForm({
+      ...form,
+      subject: `General Contact: ${form.subject}`,
+    })
+      .then(() =>
+        window.gtag('event', 'conversion', {
+          send_to: 'AW-446319677/1b-lCJ6es_ABEL2Y6dQB',
+        }),
+      )
+      .then(() => navigate('/form-success'));
+  };
 
   return (
     <SiteWrapper title="Contact Us | LifeLoop assisted living community management software">
@@ -27,13 +69,54 @@ export default function Contact() {
                 We love to talk about our product. Go ahead and start the
                 conversation.
               </p>
-              <HubspotFormRenderer
-                id="contact-form"
-                region="na1"
-                portalId="8341689"
-                formId="5fff7408-6fc1-4070-ad4d-5a6716754d11"
-                version="V2_PRERELEASE"
-              />
+              <form onSubmit={onSubmit}>
+                <FormRow>
+                  <Label htmlFor="firstName" title="First Name">
+                    <Input
+                      value={form.firstName}
+                      onChange={(e) => updateForm('firstName', e.target.value)}
+                    />
+                  </Label>
+                  <Label htmlFor="lastName" title="Last Name">
+                    <Input
+                      value={form.lastName}
+                      onChange={(e) => updateForm('lastName', e.target.value)}
+                    />
+                  </Label>
+                </FormRow>
+                <FormRow>
+                  <Label htmlFor="email" title="Email">
+                    <Input
+                      value={form.email}
+                      onChange={(e) => updateForm('email', e.target.value)}
+                    />
+                  </Label>
+                </FormRow>
+                <FormRow>
+                  <Label htmlFor="subject" title="Subject">
+                    <Input
+                      value={form.subject}
+                      onChange={(e) => updateForm('subject', e.target.value)}
+                    />
+                  </Label>
+                </FormRow>
+                <FormRow>
+                  <Label htmlFor="message" title="Message">
+                    <Input
+                      type="textarea"
+                      value={form.message}
+                      onChange={(e) => updateForm('message', e.target.value)}
+                    />
+                  </Label>
+                </FormRow>
+                <Button
+                  isLoading={isLoading}
+                  disabled={isLoading || !isValid}
+                  type="submit"
+                >
+                  Submit
+                </Button>
+              </form>
             </FormContainer>
             <ContactSidebar
               links={[

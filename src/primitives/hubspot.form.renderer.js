@@ -13,18 +13,21 @@ export default function HubspotFormRenderer({
     script.src = 'https://js.hsforms.net/forms/v2.js';
     document.body.appendChild(script);
 
-    script.addEventListener('load', () => {
+    const onLoadHubspot = () => {
       if (window.hbspt) {
-        const result = window.hbspt.forms.create({
+        window.hbspt.forms.create({
           region,
           version,
           portalId,
           formId,
           target: `#${id}`,
         });
-        console.log(result, '-------- result');
       }
-    });
+    };
+    script.addEventListener('load', onLoadHubspot);
+    return () => {
+      script.removeEventListener('load', onLoadHubspot);
+    };
   }, [region, version, portalId, formId, id]);
 
   return <FlexContainer direction="column" id={id} />;
