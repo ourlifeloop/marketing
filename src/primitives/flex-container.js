@@ -38,7 +38,7 @@ export default function FlexContainer({
 }
 
 FlexContainer.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   className: PropTypes.string,
   align: PropTypes.oneOf([
     'stretch',
@@ -77,4 +77,5 @@ FlexContainer.defaultProps = {
   flex: null,
   shrink: null,
   style: {},
+  children: null,
 };

@@ -40,7 +40,7 @@ export default function Contact() {
       [key]: value,
     });
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
     submitForm({
@@ -74,13 +74,13 @@ export default function Contact() {
                   <Label htmlFor="firstName" title="First Name">
                     <Input
                       value={form.firstName}
-                      onChange={e => updateForm('firstName', e.target.value)}
+                      onChange={(e) => updateForm('firstName', e.target.value)}
                     />
                   </Label>
                   <Label htmlFor="lastName" title="Last Name">
                     <Input
                       value={form.lastName}
-                      onChange={e => updateForm('lastName', e.target.value)}
+                      onChange={(e) => updateForm('lastName', e.target.value)}
                     />
                   </Label>
                 </FormRow>
@@ -88,7 +88,7 @@ export default function Contact() {
                   <Label htmlFor="email" title="Email">
                     <Input
                       value={form.email}
-                      onChange={e => updateForm('email', e.target.value)}
+                      onChange={(e) => updateForm('email', e.target.value)}
                     />
                   </Label>
                 </FormRow>
@@ -96,7 +96,7 @@ export default function Contact() {
                   <Label htmlFor="subject" title="Subject">
                     <Input
                       value={form.subject}
-                      onChange={e => updateForm('subject', e.target.value)}
+                      onChange={(e) => updateForm('subject', e.target.value)}
                     />
                   </Label>
                 </FormRow>
@@ -105,7 +105,7 @@ export default function Contact() {
                     <Input
                       type="textarea"
                       value={form.message}
-                      onChange={e => updateForm('message', e.target.value)}
+                      onChange={(e) => updateForm('message', e.target.value)}
                     />
                   </Label>
                 </FormRow>
