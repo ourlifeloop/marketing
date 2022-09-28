@@ -37,6 +37,21 @@ import {
 
 const FEATURES = [
   {
+    key: NAVIGATION.features.subNav.content.key,
+    name: NAVIGATION.features.subNav.content.name,
+    Icon: NAVIGATION.features.subNav.content.Icon,
+    link: NAVIGATION.features.subNav.content.link,
+    headline: 'Need Copy From Marketing',
+    image: 'inform',
+    body: 'Communication between staff members, family members and residents has never been easier or more efficient. The LifeLoop messaging platform means you can communicate 24/7 from any device.',
+    bullets: [
+      'Easily broadcast messages to all staff, residents and family members who are connected',
+      'Staff can send messages back and forth in LifeLoop',
+      'Connected family members can connect with the appropriate staff member',
+      'Residents can maintain a sense of independence',
+    ],
+  },
+  {
     key: NAVIGATION.features.subNav.communication.key,
     name: NAVIGATION.features.subNav.communication.name,
     Icon: NAVIGATION.features.subNav.communication.Icon,
