@@ -24,25 +24,25 @@ export default function ContentFeature({ data, location }) {
         leftImage
         title="Engagement without Hardware, Connection without Limits"
         description="Our combined goal is to empower your community to drive purposeful connection, meaningful engagement, and operational excellence…from any device! The connection and engagement your residents and families desire is now in one more powerful platform."
-        image={getImage(data.dataInformed)}
+        image={getImage(data.connectionWithoutLimits)}
       />
       <ImageSection
         rightImage
         title="Get Content From Any Device in Any Location"
         description="Take your senior living community to the next level by allowing residents to access content in their room or during formal activities. They can also find content customized to their unique, individual interests. On the staff side, they can easily utilize content in group or individual care settings, no matter what type of device they have."
-        image={getImage(data.timeSlots)}
+        image={getImage(data.anyDeviceAnyLocation)}
       />
       <ImageSection
         leftImage
         title="Engage Residents at All Levels of Care"
         description="In addition to being engaging and fun, the content library is purposefully designed and curated to address all the core dimensions of wellness, ensuring that communities can leverage a single solution for all levels of care, from independent living to memory care."
-        image={getImage(data.dataInformed)}
+        image={getImage(data.anyDeviceAnyLocation)}
       />
       <ImageSection
         rightImage
         title="Building a Robust Activity Calendar Has Never Been Easier"
         description="Cut down on the time it takes to plan purposeful activities by leveragingthe vast content library to engage residents in group activities. Easily utilize activity reporting to ensure you are offering enough activities and engagement to satisfy your residents’ changing needs."
-        image={getImage(data.integration)}
+        image={getImage(data.saltbox)}
       />
     </FeatureWrapper>
   );
@@ -50,7 +50,7 @@ export default function ContentFeature({ data, location }) {
 
 export const query = graphql`
   {
-    dataInformed: file(relativePath: { eq: "connection-without-limits.png" }) {
+    connectionWithoutLimits: file(relativePath: { eq: "connection-without-limits.png" }) {
       childImageSharp {
         gatsbyImageData(
           height: 600
@@ -60,7 +60,7 @@ export const query = graphql`
         )
       }
     }
-    integration: file(relativePath: { eq: "endless-integration.png" }) {
+    anyDeviceAnyLocation: file(relativePath: { eq: "any-device-any-location.png" }) {
       childImageSharp {
         gatsbyImageData(
           height: 600
@@ -80,7 +80,7 @@ export const query = graphql`
         )
       }
     }
-    timeSlots: file(relativePath: { eq: "time-slots.png" }) {
+    saltbox: file(relativePath: { eq: "saltbox.png" }) {
       childImageSharp {
         gatsbyImageData(
           height: 600
