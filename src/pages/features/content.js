@@ -50,7 +50,7 @@ export default function ContentFeature({ data, location }) {
 
 export const query = graphql`
   {
-    dataInformed: file(relativePath: { eq: "data-informed.png" }) {
+    dataInformed: file(relativePath: { eq: "connection-without-limits.png" }) {
       childImageSharp {
         gatsbyImageData(
           height: 600
