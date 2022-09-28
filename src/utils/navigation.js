@@ -14,6 +14,36 @@ const NAVIGATION = {
     key: 'features',
     name: 'Features',
     subNav: {
+      content: {
+        key: 'content',
+        Icon: messages,
+        name: 'Content',
+        link: '/features/content',
+        questions: [
+          {
+            question:
+                'Can we turn off the messaging feature for family and/or residents if desired?',
+            answer:
+                'Family and Residents messaging cannot be turned off, however if you would not like staff to be able to message family or residents you are able to turn off their permission to do so. Family and residents would then still be able to communicate with each other through LifeLoop and keep that line of communication.',
+          },
+          {
+            question: 'Can I control who can send messages to family members?',
+            answer:
+                'Yes! The LifeLoop platform is customizable and is set up so that each user can have their own set of permissions.  Administrators can dictate who has the ability to grant user permissions and that person can control which staff members have the ability to communicate with family and residents.  Not only is this the most secure set-up, but it actually helps facilitate good communication between your community and family members of your residents by clearly defining lines of communication.',
+          },
+          {
+            question:
+                'Will I be notified if someone sends a message? If so, how?',
+            answer:
+                'You can be texted, e-mailed, and/or notified within the application.',
+          },
+          {
+            question: 'Can I add attachments to messages?',
+            answer:
+                'You can send any kind of attachment you want, including videos. Currently our maximum file size allowed for attachments is 50mb, but if you think sending larger files would benefit you, contact us to discuss customizing this feature for you.',
+          },
+        ],
+      },
       communication: {
         key: 'communication',
         Icon: messages,
