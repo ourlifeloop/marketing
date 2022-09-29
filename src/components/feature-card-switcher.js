@@ -41,14 +41,13 @@ const FEATURES = [
     name: NAVIGATION.features.subNav.content.name,
     Icon: NAVIGATION.features.subNav.content.Icon,
     link: NAVIGATION.features.subNav.content.link,
-    headline: 'Need Copy From Marketing',
-    image: 'inform',
-    body: 'Communication between staff members, family members and residents has never been easier or more efficient. The LifeLoop messaging platform means you can communicate 24/7 from any device.',
+    headline: 'Engagement content from any device in any location',
+    image: 'connectionWithoutLimits',
+    body: 'By combining the power of iN2L’s person-centered content with LifeLoop’s web and mobile app-based solutions, you can experience the impact of these two powerful solutions at your fingertips, no matter where you are or what device you use.',
     bullets: [
-      'Easily broadcast messages to all staff, residents and family members who are connected',
-      'Staff can send messages back and forth in LifeLoop',
-      'Connected family members can connect with the appropriate staff member',
-      'Residents can maintain a sense of independence',
+      'Access iN2L’s content on any device with Internet access',
+      'Provide person-centered content for all levels of care, from independent living to memory care',
+      'Create a holistic wellness program using content from our library, designed to address all the core dimensions of wellness',
     ],
   },
   {
@@ -207,6 +206,11 @@ export default function FeatureCardSwitcher() {
   const photos = useStaticQuery(
     graphql`
       {
+        connectionWithoutLimits: file(relativePath: { eq: "connection-without-limits.png" }) {
+          childImageSharp {
+            gatsbyImageData(width: 637, layout: CONSTRAINED)
+          }
+        }
         dataInformed: file(relativePath: { eq: "data-informed.png" }) {
           childImageSharp {
             gatsbyImageData(width: 637, layout: CONSTRAINED)

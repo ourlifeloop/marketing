@@ -10,7 +10,7 @@ export default function ContentFeature({ data, location }) {
   return (
     <FeatureWrapper
       pathname={location.pathname}
-      title="Schedule, track and analyze resident activities and events on our powerful assisted living activity community calendar | LifeLoop"
+      title="Engagement without hardware, connection without limits"
     >
       <TitleSection header="Next Generation LifeLoop, with Content Powered by iN2L">
         <p>
