@@ -21,6 +21,7 @@ export default function ContentFeature({ data, location }) {
         </p>
       </TitleSection>
       <ImageSection
+        noTopPadding
         leftImage
         title="Engagement without Hardware, Connection without Limits"
         description="Our combined goal is to empower your community to drive purposeful connection, meaningful engagement, and operational excellence…from any device! The connection and engagement your residents and families desire is now in one more powerful platform."
@@ -36,7 +37,7 @@ export default function ContentFeature({ data, location }) {
         leftImage
         title="Engage Residents at All Levels of Care"
         description="In addition to being engaging and fun, the content library is purposefully designed and curated to address all the core dimensions of wellness, ensuring that communities can leverage a single solution for all levels of care, from independent living to memory care."
-        image={getImage(data.anyDeviceAnyLocation)}
+        image={getImage(data.spotlight)}
       />
       <ImageSection
         rightImage
@@ -70,7 +71,7 @@ export const query = graphql`
         )
       }
     }
-    saveTime: file(relativePath: { eq: "save-time.png" }) {
+    spotlight: file(relativePath: { eq: "spotlight.png" }) {
       childImageSharp {
         gatsbyImageData(
           height: 600
