@@ -1,4 +1,5 @@
 import calendar from '../assets/icons/calendar.svg';
+import content from '../assets/icons/content.svg';
 import displays from '../assets/icons/displays.svg';
 import connections from '../assets/icons/connections.svg';
 import workRequests from '../assets/icons/work-requests.svg';
@@ -16,7 +17,7 @@ const NAVIGATION = {
     subNav: {
       content: {
         key: 'content',
-        Icon: messages,
+        Icon: content,
         name: 'Content',
         link: '/features/content',
         questions: [
