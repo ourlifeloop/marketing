@@ -23,25 +23,30 @@ const NAVIGATION = {
         questions: [
           {
             question:
-                'Can we turn off the messaging feature for family and/or residents if desired?',
+                'What devices is LifeLoop compatible on?',
             answer:
-                'Family and Residents messaging cannot be turned off, however if you would not like staff to be able to message family or residents you are able to turn off their permission to do so. Family and residents would then still be able to communicate with each other through LifeLoop and keep that line of communication.',
+                'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet, or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
           },
           {
-            question: 'Can I control who can send messages to family members?',
+            question: 'Is engagement content available to residents on an individual basis or just in group activities?',
             answer:
-                'Yes! The LifeLoop platform is customizable and is set up so that each user can have their own set of permissions.  Administrators can dictate who has the ability to grant user permissions and that person can control which staff members have the ability to communicate with family and residents.  Not only is this the most secure set-up, but it actually helps facilitate good communication between your community and family members of your residents by clearly defining lines of communication.',
+                'The engagement content is available to both residents and staff! Meaning residents can access the engagement content individually or staff can utilize it in one-on-one meetings with residents or in group activity settings.',
           },
           {
             question:
-                'Will I be notified if someone sends a message? If so, how?',
+                'Can customers still buy iN2L Hardware?',
             answer:
-                'You can be texted, e-mailed, and/or notified within the application.',
+                'Yes. There will always be a place for the iN2L hardware within the senior living setting. There will be no restrictions placed on customer’s hardware choices and buying hardware from iN2L is still a viable option. Additionally, certain care settings, like memory care, will enjoy additional content and functionality that is designed specifically for their residents.',
           },
           {
-            question: 'Can I add attachments to messages?',
+            question: 'What content is available on LifeLoop?',
             answer:
-                'You can send any kind of attachment you want, including videos. Currently our maximum file size allowed for attachments is 50mb, but if you think sending larger files would benefit you, contact us to discuss customizing this feature for you.',
+                'The initial launch of iN2L content on LifeLoop will have the top 100 most utilized content items including games, travel videos, worship content, music, Saltbox TV and more. Additionally, more than 3,000 content items being prepared to launch prior to Q1 2023.',
+          },
+          {
+            question: 'How do I find a community using LifeLoop today?',
+            answer:
+                'Contact us and let us know where your home base is and we will be happy to direct you to communities with LifeLoop in your area.',
           },
         ],
       },

@@ -41,13 +41,13 @@ const FEATURES = [
     name: NAVIGATION.features.subNav.content.name,
     Icon: NAVIGATION.features.subNav.content.Icon,
     link: NAVIGATION.features.subNav.content.link,
-    headline: 'Engagement content from any device in any location',
+    headline: 'Engagement content from any device',
     image: 'connectionWithoutLimits',
     body: 'By combining the power of iN2L’s person-centered content with LifeLoop’s web and mobile app-based solutions, you can experience the impact of these two powerful solutions at your fingertips, no matter where you are or what device you use.',
     bullets: [
       'Access iN2L’s content on any device with Internet access',
-      'Provide person-centered content for all levels of care, from independent living to memory care',
-      'Create a holistic wellness program using content from our library, designed to address all the core dimensions of wellness',
+      'Provide person-centered content for all levels of care',
+      'Easily create a holistic wellness program using content from our library',
     ],
   },
   {
