@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 import designer from '../assets/icons/designer.svg';
 import calendar from '../assets/icons/calendar.svg';
 import connectionManagement from '../assets/icons/connection-management.svg';
-import content from '../assets/icons/content.svg';
 import displays from '../assets/icons/displays.svg';
 import connections from '../assets/icons/connections.svg';
 import gettingStarted from '../assets/icons/getting-started.svg';
@@ -62,12 +61,6 @@ const TRAINING_TOPICS = [
     name: 'Connection Portal',
     image: 'connections',
     Icon: connections,
-  },
-  {
-    key: 'content',
-    name: 'Content',
-    image: 'content',
-    Icon: content,
   },
   {
     key: 'designer',
