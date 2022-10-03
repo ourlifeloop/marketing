@@ -28,20 +28,20 @@ const NAVIGATION = {
                 'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet, or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
           },
           {
-            question: 'Is engagement content available to residents on an individual basis or just in group activities?',
+            question: 'What engagement content is available on LifeLoop?',
             answer:
-                'The engagement content is available to both residents and staff! Meaning residents can access the engagement content individually or staff can utilize it in one-on-one meetings with residents or in group activity settings.',
+                'The initial launch of iN2L content oin LifeLoop will have the top 100 most utilized content items including games, travel videos, worship content, music, Saltbox TV and more. Additionally, more than 3,000 content items are being prepared to launch prior to Q1 2023.',
           },
           {
             question:
-                'Can customers still buy iN2L Hardware?',
+                'Is engagement content available to residents on an individual basis or just in group activities?',
             answer:
-                'Yes. There will always be a place for the iN2L hardware within the senior living setting. There will be no restrictions placed on customer’s hardware choices and buying hardware from iN2L is still a viable option. Additionally, certain care settings, like memory care, will enjoy additional content and functionality that is designed specifically for their residents.',
+                'The engagement content is available to both residents and staff! Meaning residents can access the engagement content individually or staff can utilize it in one-on-one meetings with residents or in group activity settings. Additionally communities have the ability to turn on or off the resident content if they choose to keep it staff-specific.',
           },
           {
-            question: 'What content is available on LifeLoop?',
+            question: 'Can customers still buy iN2L Hardware?',
             answer:
-                'The initial launch of iN2L content on LifeLoop will have the top 100 most utilized content items including games, travel videos, worship content, music, Saltbox TV and more. Additionally, more than 3,000 content items being prepared to launch prior to Q1 2023.',
+                'Yes. There will always be a place for the iN2L hardware within the senior living setting. There will be no restrictions placed on customer’s hardware choices and buying hardware from iN2L is still a viable option. Additionally, certain care settings, like memory care, will enjoy additional content and functionality that is designed specifically for their residents.',
           },
           {
             question: 'How do I find a community using LifeLoop today?',
