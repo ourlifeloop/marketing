@@ -162,6 +162,7 @@ collections:
           - { label: Communication, value: messaging }
           - { label: Connection Management, value: connection-management }
           - { label: Connection Portal, value: connection-portal }
+          - { label: Content, value: content }
           - { label: Designer, value: designer }
           - { label: Displays, value: displays }
           - { label: Getting Started, value: getting-started }
@@ -208,6 +209,7 @@ collections:
           - { label: Communication, value: messaging }
           - { label: Connection Management, value: connection-management }
           - { label: Connection Portal, value: connection-portal }
+          - { label: Content, value: content }
           - { label: Designer, value: designer }
           - { label: Displays, value: displays }
           - { label: Getting Started, value: getting-started }
