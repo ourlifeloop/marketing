@@ -7,4 +7,5 @@ topics:
   - content
 userTypes:
   - resident
+  - staff
 ---
