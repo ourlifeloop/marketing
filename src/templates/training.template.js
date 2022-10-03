@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import UserTraining from '../components/user-training';
 import { uniq, flatten } from '../utils/lodash';
 
-export default function TraningTemplate({ data, pageContext }) {
+export default function TrainingTemplate({ data, pageContext }) {
   const faqs = data.faqs.edges.map(({ node }) => node.frontmatter);
   const topics = uniq(
     flatten(data.topics.edges.map(({ node }) => node.frontmatter.topics)),
