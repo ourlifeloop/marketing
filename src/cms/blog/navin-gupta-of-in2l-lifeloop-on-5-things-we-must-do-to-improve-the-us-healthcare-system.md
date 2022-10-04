@@ -4,7 +4,7 @@ type: news
 author: Jake Frankel
 title: Navin Gupta Of iN2L + LifeLoop On 5 Things We Must Do To Improve the US
   Healthcare System
-photo: /images/cms/authority-magazine.png
+photo: /images/cms/authority-magazine-2-.png
 ---
 Link to original story by Jake Frankel:
 
