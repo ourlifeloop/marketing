@@ -6,7 +6,7 @@ title: iN2L + LifeLoop Announces Next Generation LifeLoop, with Content Powered
   by iN2L
 photo: /images/cms/press-release-new-page-header.png
 ---
-# **iN2L + LifeLoop Announces Next Generation LifeLoop, with Content Powered by iN2L**
+## **iN2L + LifeLoop Announces Next Generation LifeLoop, with Content Powered by iN2L**
 
 ###### *Latest launch delivers limitless connectivity by providing iN2L’s best-in-class content directly on LifeLoop’s web and mobile app-based platform*
 
