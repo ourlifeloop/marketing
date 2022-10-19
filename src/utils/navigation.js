@@ -23,7 +23,7 @@ const NAVIGATION = {
         questions: [
           {
             question:
-                'What devices is LifeLoop compatible on?',
+                'What devices is LifeLoop compatible on???',
             answer:
                 'LifeLoop is hardware agnostic. The platform will function on any desktop, laptop, tablet, or mobile device. LifeLoop works with both Apple and Android devices and functions best with the Google Chrome internet browser. There is also a LifeLoop app available for tablet and mobile devices.',
           },
