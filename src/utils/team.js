@@ -27,11 +27,6 @@ const TEAM = [
     image: 'brettRobeson',
   },
   {
-    name: 'Jesse Hardy',
-    title: 'Sales Support Specialist',
-    image: 'jesseHardy',
-  },
-  {
     name: 'Joey Carney',
     title: 'Manager, Mid-Market Account Management',
     image: 'joeyCarney',
@@ -40,11 +35,6 @@ const TEAM = [
     name: 'Jess Donahue',
     title: 'Territory Manager',
     image: 'jessDonahue',
-  },
-  {
-    name: 'TJ Butler',
-    title: 'Territory Manager',
-    image: 'tjButler',
   },
   {
     name: 'Andrea Clauson',
@@ -236,9 +226,6 @@ export const teamImages = graphql`
     erinReed: file(relativePath: { eq: "team/erin.reed.jpg" }) {
       ...teamImage
     }
-    jesseHardy: file(relativePath: { eq: "team/jesse.hardy.png" }) {
-      ...teamImage
-    }
     katiePaul: file(relativePath: { eq: "team/katie.paul.jpg" }) {
       ...teamImage
     }
@@ -249,9 +236,6 @@ export const teamImages = graphql`
       ...teamImage
     }
     hayleyPost: file(relativePath: { eq: "team/hayley.post.jpg" }) {
-      ...teamImage
-    }
-    tjButler: file(relativePath: { eq: "team/tj.butler.jpg" }) {
       ...teamImage
     }
     baileyAhmady: file(relativePath: { eq: "team/bailey.ahmady.jpeg" }) {
