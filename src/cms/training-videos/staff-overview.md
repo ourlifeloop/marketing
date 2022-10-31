@@ -1,8 +1,8 @@
 ---
-title: Staff Overview
-video: https://www.youtube-nocookie.com/embed/N0h8er9o88s
-cover: /images/cms/vid-cov-12.jpg
-isNew: false
+title: Staff Web Platform Overview
+video: https://LifeLoop.cdn.spotlightr.com/watch/MTMxMDM2NA==
+cover: /images/cms/training-video-slides-18-.png
+isNew: true
 topics:
   - getting-started
   - staff-management
