@@ -183,6 +183,10 @@ export default function Header({
           <html lang="en" />
           <title>{title}</title>
           <meta name="description" content={description} />
+          <meta
+            name="google-site-verification"
+            content="o1Ya0tLsHFKRpZ1wv7j4r96iQJJvU-H8qkMCK6ZBqpo"
+          />
           {!!canonical && (
             <link
               ref="canonical"
