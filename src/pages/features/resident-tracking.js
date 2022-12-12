@@ -50,7 +50,7 @@ export default function ResidentTrackingFeature({ data, location }) {
       <ImageSection
         leftImage
         title="A Trusted, HIPAA Compliant Platform"
-        description="Keep all of your information in one, trusted location, accessible through one entry point. LifeLoop is fully complaint with HIPAA and can integrate with your clinical software."
+        description="Keep all of your information in one, trusted location, accessible through one entry point. LifeLoop is fully compliant with HIPAA and can integrate with your clinical software."
         image={getImage(data.hipaa)}
       />
     </FeatureWrapper>

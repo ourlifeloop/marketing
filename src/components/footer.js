@@ -10,6 +10,7 @@ import Layout from '../primitives/layout';
 import Facebook from '../assets/icons/facebook.svg';
 import LinkedIn from '../assets/icons/linked-in.svg';
 import Twitter from '../assets/icons/twitter.svg';
+import Instagram from '../assets/icons/Instagram.svg';
 
 import {
   footer,
@@ -53,15 +54,6 @@ export default function Footer() {
             <FlexContainer>
               <a
                 className={socialLink}
-                href="https://twitter.com/ourlifeloop"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LifeLoop Twitter"
-              >
-                <Twitter />
-              </a>
-              <a
-                className={socialLink}
                 href="https://www.facebook.com/ourlifeloop"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -70,13 +62,31 @@ export default function Footer() {
                 <Facebook />
               </a>
               <a
-                className={socialLink}
-                href="https://www.linkedin.com/company/lifeloop"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LifeLoop Linked In"
+                  className={socialLink}
+                  href="https://www.linkedin.com/company/lifeloop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LifeLoop Linked In"
               >
                 <LinkedIn />
+              </a>
+              <a
+                  className={socialLink}
+                  href="https://twitter.com/iN2L_LifeLoop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LifeLoop Twitter"
+              >
+                <Twitter />
+              </a>
+              <a
+                  className={socialLink}
+                  href="https://www.instagram.com/in2l_lifeloop/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LifeLoop Twitter"
+              >
+                <Instagram />
               </a>
             </FlexContainer>
             <FlexContainer>
