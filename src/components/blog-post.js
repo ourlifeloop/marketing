@@ -64,7 +64,7 @@ export default function BlogPost({
           </a>
           <a
             className={socialLink}
-            href={`https://www.linkedin.com/shareArticle?mini=true&source=LifeLoop+%7C+Senior+Living+Tools&summary=${encodeURIComponent(
+            href={`https://www.linkedin.com/shareArticle?mini=true&source=iN2L%2BLifeLoop+%7C+Senior+Living+Tools&summary=${encodeURIComponent(
               title,
             )}&url=${encodeURIComponent(postUrl)}`}
             target="_blank"
