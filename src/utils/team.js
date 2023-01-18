@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 const TEAM = [
   {
     name: 'Amy Johnson',
-    title: 'Co-Founder & Chief Strategy Officer',
+    title: 'Co-Founder',
     image: 'amyJohnson',
   },
   {
@@ -13,18 +13,13 @@ const TEAM = [
   },
   {
     name: 'Nick Nemer',
-    title: 'Vice President of Strategic Growth',
+    title: 'Senior Vice President of Strategic Growth',
     image: 'nickNemer',
   },
   {
     name: 'Megan King',
     title: 'Vice President of Operations',
     image: 'meganKing',
-  },
-  {
-    name: 'Brett Robeson',
-    title: 'Strategic Programs Manager',
-    image: 'brettRobeson',
   },
   {
     name: 'Joey Carney',
@@ -47,44 +42,34 @@ const TEAM = [
     image: 'madisonSiniard',
   },
   {
-    name: 'Tara Robeson',
-    title: 'Office Finance Manager',
-    image: 'taraRobeson',
-  },
-  {
     name: 'Natallia Jorgensen',
-    title: 'Enterprise Customer Relationship Specialist, Team Lead',
+    title: 'Associate Manager of Customer Success - Enterprise',
     image: 'natalliaJorgensen',
   },
   {
     name: 'Brittany Tran',
-    title: 'Customer Relationship Specialist',
+    title: 'Sr. Customer Success Manager',
     image: 'brittanyTran',
   },
   {
     name: 'Chelsea Blaser',
-    title: 'Customer Relationship Specialist',
+    title: 'Customer Success Manager - MM',
     image: 'chelseaBlaser',
   },
   {
     name: 'Erin McGill',
-    title: 'Onboarding Specialist, Team Lead',
+    title: 'Associate Manager, Education and Enablement',
     image: 'erinMcGill',
   },
   {
     name: 'Caroline Ebers',
-    title: 'Onboarding Specialist',
+    title: 'Customer Success Manager - SMB',
     image: 'carolineEbers',
   },
   {
     name: 'Sam Almquist',
-    title: 'Customer Support Specialist, Team Lead',
+    title: 'Team Lead - Customer Support',
     image: 'samAlmquist',
-  },
-  {
-    name: 'Kim Meschede',
-    title: 'Customer Support Specialist',
-    image: 'kimMeschede',
   },
   {
     name: 'Mckayla Bruner',
@@ -93,27 +78,27 @@ const TEAM = [
   },
   {
     name: 'Katie Paul',
-    title: 'Implementation Specialist, Team Lead',
+    title: 'Team Lead - Professional Services',
     image: 'katiePaul',
   },
   {
     name: 'Hayley Post',
-    title: 'Implementation Specialist',
+    title: 'Customer Success Architect',
     image: 'hayleyPost',
   },
   {
     name: 'Hanna Hutchens',
-    title: 'Implementation Specialist',
+    title: 'Customer Success Architect',
     image: 'hanaHutchens',
   },
   {
     name: 'Bailey Ahmady',
-    title: 'Onboarding Specialist',
+    title: 'Education Specialist',
     image: 'baileyAhmady',
   },
   {
     name: 'Joslynn Martin',
-    title: 'Onboarding Specialist',
+    title: 'Education Specialist',
     image: 'joslynnMartin',
   },
   {
@@ -122,14 +107,14 @@ const TEAM = [
     image: 'ashleyRutan',
   },
   {
+    name: 'Brett Robeson',
+    title: 'Customer Renewals Specialist',
+    image: 'brettRobeson',
+  },
+  {
     name: 'Dylan Kuzelka',
     title: 'Designer',
     image: 'dylanKuzelka',
-  },
-  {
-    name: 'Erin Reed',
-    title: 'Quality Assurance Specialist',
-    image: 'erinReed',
   },
   {
     name: 'Jared Herselman',
@@ -202,9 +187,6 @@ export const teamImages = graphql`
     leviLiester: file(relativePath: { eq: "team/levi.liester.jpg" }) {
       ...teamImage
     }
-    taraRobeson: file(relativePath: { eq: "team/tara.robeson.jpg" }) {
-      ...teamImage
-    }
     carolineEbers: file(relativePath: { eq: "team/caroline.ebers.jpg" }) {
       ...teamImage
     }
@@ -217,13 +199,7 @@ export const teamImages = graphql`
     samAlmquist: file(relativePath: { eq: "team/sam.almquist.jpg" }) {
       ...teamImage
     }
-    kimMeschede: file(relativePath: { eq: "team/kim.meschede.png" }) {
-      ...teamImage
-    }
     mckaylaBruner: file(relativePath: { eq: "team/mckayla.bruner.png" }) {
-      ...teamImage
-    }
-    erinReed: file(relativePath: { eq: "team/erin.reed.jpg" }) {
       ...teamImage
     }
     katiePaul: file(relativePath: { eq: "team/katie.paul.jpg" }) {
