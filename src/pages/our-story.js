@@ -70,7 +70,7 @@ export default function OurStory({ data }) {
               enhancing family and resident engagement.
             </p>
             <b>Amy Johnson</b>
-            <p>Co-Founder & CEO, LifeLoop</p>
+            <p>Co-Founder LifeLoop</p>
           </FlexContainer>
           <div
             className={classNames(storyImage, {

@@ -83,7 +83,7 @@ export default function Covid({ data, location }) {
             </p>
             <p>Sincerely,</p>
             <b>Amy Johnson</b>
-            <p>Co-Founder & CEO, LifeLoop</p>
+            <p>Co-Founder LifeLoop</p>
           </FlexContainer>
         </FlexContainer>
       </Section>
