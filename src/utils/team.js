@@ -2,11 +2,6 @@ import { graphql } from 'gatsby';
 
 const TEAM = [
   {
-    name: 'Amy Johnson',
-    title: 'Co-Founder',
-    image: 'amyJohnson',
-  },
-  {
     name: 'Philip Lee',
     title: 'Co-Founder',
     image: 'philipLee',
@@ -143,9 +138,6 @@ export const teamImages = graphql`
   }
 
   fragment teamImages on Query {
-    amyJohnson: file(relativePath: { eq: "team/amy.johnson.jpg" }) {
-      ...teamImage
-    }
     philipLee: file(relativePath: { eq: "team/philip.lee.jpg" }) {
       ...teamImage
     }
