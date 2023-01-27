@@ -1,7 +1,7 @@
 ---
 title: Community Marketing Guide
-document: /images/cms/copy-of-lifeloop-marketing-packet.pdf
-date: 2022-02-11T13:00:00.000Z
+document: /images/cms/community-marketing-guide-1-.pdf
+date: 2023-01-27T13:00:00.000Z
 isMobile: false
 topics:
   - getting-started
