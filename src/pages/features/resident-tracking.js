@@ -49,9 +49,9 @@ export default function ResidentTrackingFeature({ data, location }) {
       />
       <ImageSection
         leftImage
-        title="A Trusted, HIPAA Compliant Platform"
-        description="Keep all of your information in one, trusted location, accessible through one entry point. LifeLoop is fully compliant with HIPAA and can integrate with your clinical software."
-        image={getImage(data.hipaa)}
+        title="A Trusted, Secure Platform"
+        description="Keep all your information in one trusted location, accessible through one entry point. LifeLoop’s platform allows you and your community to rest assured all information is being safely and securely communicated."
+        image={getImage(data.safeAndSecure)}
       />
     </FeatureWrapper>
   );
@@ -79,7 +79,7 @@ export const query = graphql`
         )
       }
     }
-    hipaa: file(relativePath: { eq: "hipaa-compliant.png" }) {
+    safeAndSecure: file(relativePath: { eq: "safe-and-secure.png" }) {
       childImageSharp {
         gatsbyImageData(
           height: 600
