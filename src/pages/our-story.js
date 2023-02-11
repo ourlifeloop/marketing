@@ -91,13 +91,11 @@ export default function OurStory({ data }) {
           >
             <p className={missionTitle}>OUR MISSION</p>
             <p className={mission}>
-              Empower caregivers to create connection with individuals and their
-              loved ones.
+              Our mission is to make senior care exceptional for everyone.
             </p>
             <p className={missionTitle}>OUR VISION</p>
             <p className={mission}>
-              Help caregivers create communities that people love being a part
-              of.
+              A world where seniors live with purpose, passion, and joy.
             </p>
           </FlexContainer>
           <FlexContainer

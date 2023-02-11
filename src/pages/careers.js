@@ -26,15 +26,11 @@ import {
 } from './careers.module.scss';
 
 const WHO_WE_ARE = [
-  'Be Self-Aware',
-  'Be Persistent',
-  'Be Open-Minded',
-  'Be Accountable',
-  'Be Curious',
-  'Be Empathetic',
-  'Be a Friend',
-  'Be a Team Player',
-  'Be Your Best',
+    'Be Real, Be Kind, Be Empathetic',
+    'Be a Learner',
+    'Be Results-Oriented',
+    'Be a Winning Team',
+    'Be an Owner',
 ];
 
 export default function Careers({ data }) {
