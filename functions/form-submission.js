@@ -9,7 +9,7 @@ const transport = nodemailer.createTransport(
   }),
 );
 
-exports.handler = event => {
+exports.handler = (event) => {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
@@ -23,15 +23,24 @@ exports.handler = event => {
     ? process.env.SUPPORT_EMAIL
     : process.env.INQUIRY_EMAIL;
 
+  const options = {
+    from: 'do_not_reply@ourlifeloop.com',
+    to: [
+      targetEmail,
+      // TODO remove once support email is confirmed to work
+      'mckayla.bruner@ourlifeloop.com',
+      'ashley.rutan@ourlifeloop.com',
+    ],
+    subject: form.subject || 'Form Submission - Marketing',
+    html: map(form, (value, key) => `<p>${key}: ${value}</p>`).join(''),
+  };
+
+  console.log(JSON.stringify(options, null, 2));
+
   return transport
-    .sendMail({
-      from: 'do_not_reply@ourlifeloop.com',
-      to: targetEmail,
-      subject: form.subject || 'Form Submission - Marketing',
-      html: map(form, (value, key) => `<p>${key}: ${value}</p>`).join(''),
-    })
+    .sendMail(options)
     .then(() => ({ statusCode: 200 }))
-    .catch(err => {
+    .catch((err) => {
       console.error(err);
       return { statusCode: 500 };
     });
