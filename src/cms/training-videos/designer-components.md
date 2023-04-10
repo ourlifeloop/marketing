@@ -1,6 +1,6 @@
 ---
 title: "Designer Components "
-video: https://www.youtube-nocookie.com/embed/omPwg9Bt4Ek
+video: https://lifeloop.cdn.spotlightr.com/watch/MTQwMjQ1OQ==
 cover: /images/cms/untitled-design-9.png
 isNew: false
 isMobile: false
