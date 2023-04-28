@@ -1,7 +1,7 @@
 ---
-title: Refreshing Your LifeLoop Display
-document: /images/cms/refreshing-your-lifeloop-display-7-.pdf
-date: 2022-01-21T16:33:01.831Z
+title: Refreshing a Display
+document: /images/cms/refreshing-a-display.pdf
+date: 2023-04-28T15:33:01.831Z
 isMobile: false
 topics:
   - displays
