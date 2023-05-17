@@ -55,6 +55,8 @@
     "whatwg-fetch": "^3.6.2"
   },
   "devDependencies": {
+    "html-loader": "^4.2.0",
+    "netlify-cli": "^15.1.1",
     "prettier": "^2.3.2"
   },
   "repository": {
