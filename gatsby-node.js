@@ -104,13 +104,20 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
   const config = getConfig();
+  config.module.rules = [
+    ...config.module.rules,
+    {
+      test: /\.html$/i,
+      loader: 'html-loader',
+    },
+  ];
   const miniCssExtractPlugin = config.plugins.find(
     (plugin) => plugin.constructor.name === 'MiniCssExtractPlugin',
   );
   if (miniCssExtractPlugin) {
     miniCssExtractPlugin.options.ignoreOrder = true;
-    actions.replaceWebpackConfig(config);
   }
+  actions.replaceWebpackConfig(config);
 };
 
 exports.createSchemaCustomization = ({ actions }) => {
