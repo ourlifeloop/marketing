@@ -42,7 +42,7 @@ export default function ContentFeature({ data, location }) {
       <ImageSection
         rightImage
         title="Building a Robust Activity Calendar Has Never Been Easier"
-        description="Cut down on the time it takes to plan purposeful activities by leveragingthe vast content library to engage residents in group activities. Easily utilize activity reporting to ensure you are offering enough activities and engagement to satisfy your residents’ changing needs."
+        description="Cut down on the time it takes to plan purposeful activities by leveraging the vast content library to engage residents in group activities. Easily utilize activity reporting to ensure you are offering enough activities and engagement to satisfy your residents’ changing needs."
         image={getImage(data.saltbox)}
       />
     </FeatureWrapper>
