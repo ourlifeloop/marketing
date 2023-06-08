@@ -1,7 +1,7 @@
 ---
 title: Smart Import Details
-document: /images/cms/smartimportdetails_training-guide-template-1-.pdf
-date: 2023-02-08T14:42:38.860Z
+document: /images/cms/smartimportdetails_training-guide-template.pdf
+date: 2023-06-08T13:42:38.860Z
 isMobile: false
 topics:
   - getting-started
