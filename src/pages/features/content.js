@@ -43,7 +43,7 @@ export default function ContentFeature({ data, location }) {
         rightImage
         title="Building a Robust Activity Calendar Has Never Been Easier"
         description="Cut down on the time it takes to plan purposeful activities by leveraging the vast content library to engage residents in group activities. Easily utilize activity reporting to ensure you are offering enough activities and engagement to satisfy your residents’ changing needs."
-        image={getImage(data.saltbox)}
+        image={getImage(data.spiro)}
       />
     </FeatureWrapper>
   );
@@ -81,7 +81,7 @@ export const query = graphql`
         )
       }
     }
-    saltbox: file(relativePath: { eq: "saltbox.png" }) {
+    spiro: file(relativePath: { eq: "spiro.png" }) {
       childImageSharp {
         gatsbyImageData(
           height: 600
