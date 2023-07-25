@@ -1,7 +1,7 @@
 ---
 title: "REGISTER HERE: 2023 Beginner Courses"
-document: /images/cms/beginner-101-courses-lifeloop-university-1-.pdf
-date: 2022-12-05T16:10:32.328Z
+document: /images/cms/beginner-courses-lifeloop-university-1-.pdf
+date: 2023-07-25T15:10:32.328Z
 isMobile: false
 topics:
   - lifeloop-university
