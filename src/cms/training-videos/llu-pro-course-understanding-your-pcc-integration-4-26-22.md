@@ -1,7 +1,7 @@
 ---
-title: LLU Pro course Understanding your PCC Integration [4.26.22]
-video: https://www.youtube-nocookie.com/embed/4oPfGW0AjZw
-cover: /images/cms/university-pro-course-introexit-slides-7-.png
+title: LLU Pro course Complete Guide to Designer Projects 6.13.23
+video: https://LifeLoop.cdn.spotlightr.com/watch/MTQzODc0Nw==
+cover: /images/cms/social-headers-3-.png
 isNew: false
 isMobile: false
 topics:
