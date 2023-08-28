@@ -1,6 +1,6 @@
 ---
 title: Weekly Summary Training
-document: /images/cms/weekly-summary-training-4-.pdf
+document: /images/cms/weekly-summary-training-5-.pdf
 date: 2023-08-28T12:00:00.000Z
 isMobile: false
 topics:
