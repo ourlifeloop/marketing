@@ -28,7 +28,8 @@ export default function CookieModal() {
         LifeLoop uses cookies to improve your experience on our site, analyze
         site traffic, and provide content from third parties. By continuing to
         use this website, you consent to the use of cookies in accordance with
-        our <Link to="/cookie-policy">Cookie Policy</Link>. 
+        our <a href="https://lifeloop.com/privacy">Cookie Policy</a>
+        . 
       </span>
       <Button onClick={onClose}>I Accept</Button>
     </FlexContainer>
