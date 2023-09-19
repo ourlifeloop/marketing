@@ -15,6 +15,9 @@ $margin: variableSize(10, 50);
   margin: $margin;
   padding: 1rem;
   width: 100%;
+  button {
+    font-size: 16px;
+  }
 }
 
 .lockContainer {
@@ -25,7 +28,7 @@ $margin: variableSize(10, 50);
 }
 
 .lock {
-  color: $background;
+  color: $text-meta;
   margin-top: 0.2rem;
 }
 

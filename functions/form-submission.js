@@ -24,12 +24,11 @@ exports.handler = (event) => {
     : process.env.INQUIRY_EMAIL;
 
   const options = {
-    from: 'do_not_reply@ourlifeloop.com',
+    from: 'do_not_reply@lifeloop.com',
     to: [
       targetEmail,
       // TODO remove once support email is confirmed to work
-      'mckayla.bruner@ourlifeloop.com',
-      'ashley.rutan@ourlifeloop.com',
+      'mckayla.bruner@lifeloop.com',
     ],
     subject: form.subject || 'Form Submission - Marketing',
     html: map(form, (value, key) => `<p>${key}: ${value}</p>`).join(''),

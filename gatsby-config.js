@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    displayUrl: 'https://ourlifeloop.com',
+    displayUrl: 'https://lifeloop.com',
     phoneNumber: '(402) 915-3860',
-    inquiries: 'inquiries@ourlifeloop.com',
-    careers: 'careers@ourlifeloop.com',
+    inquiries: 'inquiries@lifeloop.com',
+    careers: 'careers@lifeloop.com',
   },
   plugins: [
     {

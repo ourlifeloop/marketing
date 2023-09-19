@@ -8,7 +8,7 @@ import dayjs from 'dayjs';
 import { getParameterByName } from './common';
 import { debounce } from './lodash';
 
-export const usePrevious = value => {
+export const usePrevious = (value) => {
   const ref = useRef();
   useEffect(() => {
     ref.current = value;
@@ -21,7 +21,7 @@ export const useScrollPosition = ({ lessThan } = {}) => {
   const ref = useRef();
 
   useEffect(() => {
-    const onScroll = evt => {
+    const onScroll = (evt) => {
       const { scrollTop } = evt.currentTarget;
       if (!lessThan || scrollTop <= lessThan) {
         setPosition(scrollTop);
@@ -36,7 +36,7 @@ export const useScrollPosition = ({ lessThan } = {}) => {
   return [ref, position];
 };
 
-export const useResize = cb =>
+export const useResize = (cb) =>
   useEffect(() => {
     cb();
     window.addEventListener('resize', cb);
@@ -85,7 +85,7 @@ const COOKIE_KEY = 'cookie_accepted';
 export const useCookiePopup = () => {
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
-    localForage.getItem(COOKIE_KEY).then(value => {
+    localForage.getItem(COOKIE_KEY).then((value) => {
       if (!value) {
         setIsOpen(true);
       }
@@ -103,16 +103,12 @@ export const useCookiePopup = () => {
 const AUTH_KEY = 'authenticated';
 const TOKEN = '85B67D636BFCC4A9E88B615B3199F';
 const PASS = 'intheloop';
-const isValidAuth = key =>
-  key &&
-  dayjs(key)
-    .add(1, 'week')
-    .isAfter(dayjs());
+const isValidAuth = (key) => key && dayjs(key).add(1, 'week').isAfter(dayjs());
 
 export const useTrainingGate = () =>
   useEffect(() => {
     const queryPassword = getParameterByName('token');
-    localForage.getItem(AUTH_KEY).then(value => {
+    localForage.getItem(AUTH_KEY).then((value) => {
       if (isValidAuth(value)) {
         return;
       }
@@ -126,14 +122,14 @@ export const useTrainingGate = () =>
 
 export const useTrainingAuth = () => {
   useEffect(() => {
-    localForage.getItem(AUTH_KEY).then(value => {
+    localForage.getItem(AUTH_KEY).then((value) => {
       if (isValidAuth(value)) {
         navigate('/training/staff');
       }
     });
   }, []);
 
-  return value => {
+  return (value) => {
     if (value === PASS) {
       localForage.setItem(AUTH_KEY, new Date().toISOString()).then(() => {
         navigate('/training/staff');

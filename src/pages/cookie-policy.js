@@ -29,9 +29,9 @@ export default function CookiePolicy() {
             <strong>2. Consent</strong>
           </p>
           <p>
-            By visiting www.ourlifeloop.com, or any other website owned or
-            operated by LifeLoop (collectively "Websites"), you are accepting
-            and consenting to the practices described in this Cookie Policy.
+            By visiting www.lifeloop.com, or any other website owned or operated
+            by LifeLoop (collectively "Websites"), you are accepting and
+            consenting to the practices described in this Cookie Policy.
           </p>
           <p>
             <strong>3. Cookies</strong>

@@ -62,51 +62,55 @@ export default function Footer() {
                 <Facebook />
               </a>
               <a
-                  className={socialLink}
-                  href="https://www.linkedin.com/company/lifeloop"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LifeLoop Linked In"
+                className={socialLink}
+                href="https://www.linkedin.com/company/lifeloop"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LifeLoop Linked In"
               >
                 <LinkedIn />
               </a>
               <a
-                  className={socialLink}
-                  href="https://twitter.com/iN2L_LifeLoop"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LifeLoop Twitter"
+                className={socialLink}
+                href="https://twitter.com/iN2L_LifeLoop"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LifeLoop Twitter"
               >
                 <Twitter />
               </a>
               <a
-                  className={socialLink}
-                  href="https://www.instagram.com/in2l_lifeloop/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LifeLoop Twitter"
+                className={socialLink}
+                href="https://www.instagram.com/we_are_lifeloop/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LifeLoop Twitter"
               >
                 <Instagram />
               </a>
             </FlexContainer>
             <FlexContainer>
-              <Link
+              <a
+                href="https://lifeloop.com/terms"
                 className={link}
-                to="/terms"
-                aria-label="Terms & Conditions"
+                aria-label="Terms and Conditions"
               >
                 Terms & Conditions
-              </Link>
-              <Link className={link} to="/privacy" aria-label="Privacy Policy">
-                Privacy Policy
-              </Link>
-              <Link
+              </a>
+              <a
+                href="https://lifeloop.com/privacy"
                 className={link}
-                to="/accessibility"
+                aria-label="Privacy Policy"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="https://lifeloop.com/accessibility"
+                className={link}
                 aria-label="Accessibility Statement"
               >
                 Accessibility
-              </Link>
+              </a>
               <Link className={link} to="/covid" aria-label="Covid Response">
                 Covid
               </Link>
@@ -124,7 +128,7 @@ export default function Footer() {
             </a>
             <a
               className={appLinkContainer}
-              href="https://appstore.com/lifeloopforiphone"
+              href="https://apps.apple.com/us/app/lifeloop/id1245703605"
               target="_blank"
               aria-label="LifeLoop iOS App Store"
               rel="noopener noreferrer"

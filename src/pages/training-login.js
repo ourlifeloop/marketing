@@ -44,7 +44,7 @@ export default function TrainingLogin({ data }) {
           value={pass}
           type="password"
           isError={isError}
-          onChange={e => setPass(e.target.value)}
+          onChange={(e) => setPass(e.target.value)}
           className={input}
           placeholder="Password"
           autoFocus // eslint-disable-line jsx-a11y/no-autofocus
@@ -69,7 +69,7 @@ export const query = graphql`
   {
     logo: file(relativePath: { eq: "lifeloop-logo.png" }) {
       childImageSharp {
-        gatsbyImageData(width: 250, placeholder: NONE, layout: FIXED)
+        gatsbyImageData(width: 260, placeholder: NONE, layout: FIXED)
       }
     }
   }

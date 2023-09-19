@@ -46,7 +46,7 @@ export default function TrainingHeader({
         }
         logo: file(relativePath: { eq: "lifeloop-logo.png" }) {
           childImageSharp {
-            gatsbyImageData(width: 180, placeholder: NONE, layout: FIXED)
+            gatsbyImageData(width: 190, placeholder: NONE, layout: FIXED)
           }
         }
       }
@@ -80,12 +80,12 @@ export default function TrainingHeader({
       <Layout>
         <FlexContainer direction="column">
           <FlexContainer justify="flexend">
-            <Link to="/" className={minorLink}>
+            <a href="https://lifeloop.com" className={minorLink}>
               <FlexContainer align="center">
                 Return to Website
                 <LogOut className={minorIcon} size={16} />
               </FlexContainer>
-            </Link>
+            </a>
           </FlexContainer>
           <FlexContainer justify="spacebetween" className={innerContainer}>
             <Link
