@@ -1,7 +1,7 @@
 ---
-title: Beginner Courses FAQ
-document: /images/cms/intro-beginner-101-courses-lifeloop-university.pdf
-date: 2023-07-25T13:45:25.602Z
+title: University Beginner Courses FAQ
+document: /images/cms/llu-faqs-all-courses-lifeloop-university-1-.pdf
+date: 2023-09-19T13:45:25.602Z
 isMobile: false
 topics:
   - lifeloop-university
