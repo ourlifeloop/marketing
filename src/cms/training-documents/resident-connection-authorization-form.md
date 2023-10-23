@@ -1,6 +1,6 @@
 ---
 title: Resident Connection Authorization Form
-document: /images/cms/lifeloop-f.-connection-authorization-form.pdf
+document: /images/cms/lifeloop-f.-connection-authorization-form-1-.pdf
 date: 2023-10-11T12:00:00.000Z
 topics:
   - connection-management
