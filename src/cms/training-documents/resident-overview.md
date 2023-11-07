@@ -1,7 +1,7 @@
 ---
-title: "Resident Portal - User Instructions "
-document: /images/cms/resident-portal-user-instructions.pdf
-date: 2023-03-08T13:00:00.000Z
+title: Resident Portal Overview
+document: /images/cms/resident-portal-overview-nb-.pdf
+date: 2023-11-07T13:00:00.000Z
 isMobile: false
 topics:
   - resident-portal
