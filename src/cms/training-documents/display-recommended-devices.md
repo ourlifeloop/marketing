@@ -1,7 +1,7 @@
 ---
 title: Display Recommended Devices
-document: /images/cms/display-recommended-devices-3-.pdf
-date: 2023-05-10T14:41:40.073Z
+document: /images/cms/displays-recommended-devices-nb-.pdf
+date: 2023-11-07T15:41:40.073Z
 topics:
   - displays
 userTypes:
