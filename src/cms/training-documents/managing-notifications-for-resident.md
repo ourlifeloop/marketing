@@ -1,7 +1,7 @@
 ---
-title: Managing Notifications for Resident
-document: /images/cms/residents-notifications-new-.pdf
-date: 2021-10-26T12:00:00.000Z
+title: Resident Portal Managing Notifications
+document: /images/cms/resident-portal-managing-notifications.pdf
+date: 2023-11-29T13:00:00.000Z
 isMobile: false
 topics:
   - getting-started
