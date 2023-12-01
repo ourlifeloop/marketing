@@ -1,7 +1,7 @@
 ---
 title: Connections LifeLoop Express Guide
-document: /images/cms/connection-user-guide-lifeloop-express.pdf
-date: 2023-06-08T21:22:04.064Z
+document: /images/cms/connections-portal-ll-express.pdf
+date: 2023-12-01T22:22:04.064Z
 isMobile: false
 topics:
   - getting-started
