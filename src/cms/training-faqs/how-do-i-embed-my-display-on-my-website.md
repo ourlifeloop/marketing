@@ -1,9 +1,15 @@
 ---
-question: How do I embed my display on my website?
-answer: 'On the feature menu, click on the "Display" tab. Click on the display
-  you would like to embed and add to your marketing website. Click on "Embed
-  Code" on the top right-hand side. This will show you the embed code that you
-  will need to copy and paste into your website. '
+question: How do I put my display on my website?
+answer: >-
+  Select "Displays" on the feature menu. Select the display you would like to
+  share on your website. Select "edit display" to edit the settings of this
+  display. Selecting "Publish" under "Publish public URL" will provide a
+  shareable link that can be distributed publicly. Save the changes and you will
+  now see the public URL on the display details that you can copy and share on
+  your marketing site.
+
+
+  Selecting Not Published provides extra security for the display to only be found by using the Fire TV Stick Connect Code. 
 isMobile: false
 topics:
   - displays
