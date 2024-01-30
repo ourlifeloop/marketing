@@ -1,6 +1,6 @@
 ---
 title: How to Create a Slideshow in LifeLoop
-video: https://www.youtube-nocookie.com/embed/alMfRGnb2WA
+video: https://LifeLoop.cdn.spotlightr.com/watch/MTU4OTg2NA==
 cover: /images/cms/vid-cov-4.jpg
 isNew: false
 isMobile: false
