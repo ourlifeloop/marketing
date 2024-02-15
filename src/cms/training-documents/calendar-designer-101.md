@@ -1,7 +1,7 @@
 ---
-title: Calendar Designer 101
-document: /images/cms/calendar-designer-101-3-.pdf
-date: 2023-03-03T13:00:00.000Z
+title: Calendar Designer Overview
+document: /images/cms/designer-calendar-overview.pdf
+date: 2024-02-14T13:00:00.000Z
 topics:
   - designer
 userTypes:
