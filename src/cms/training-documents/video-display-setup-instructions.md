@@ -1,7 +1,7 @@
 ---
-title: Video Display Setup Instructions
-document: /images/cms/video-display-setup-instructions.pdf
-date: 2023-07-24T11:00:00.000Z
+title: Adding a Video to a Display Instructions
+document: /images/cms/adding-a-video-to-a-display.pdf
+date: 2024-03-11T11:00:00.000Z
 isMobile: false
 topics:
   - displays
