@@ -1,7 +1,7 @@
 ---
 title: "REGISTER HERE: Learning Lounge"
-document: /images/cms/learning-lounge-flyer.pdf
-date: 2024-01-30T22:40:55.573Z
+document: /images/cms/learning-lounge-flyer-1-.pdf
+date: 2024-03-26T21:40:55.573Z
 isMobile: false
 topics:
   - lifeloop-university
