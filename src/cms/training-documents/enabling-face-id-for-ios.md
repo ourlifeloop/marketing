@@ -5,7 +5,6 @@ date: 2024-04-11T20:16:32.116Z
 isMobile: false
 topics:
   - getting-started
-  - resident-portal
 userTypes:
   - staff
   - resident
