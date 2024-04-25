@@ -1,6 +1,6 @@
 ---
-title: 'How to Take Attendance '
-video: 'https://www.youtube-nocookie.com/embed/1bhYkofPhD0'
+title: How to Take Attendance in mobile app
+video: https://lifeloop.cdn.spotlightr.com/watch/MTU4NTc0NA==
 cover: /images/cms/vid-cov-2.jpg
 isNew: false
 topics:
