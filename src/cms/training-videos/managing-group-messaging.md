@@ -1,6 +1,6 @@
 ---
-title: Managing Group Messaging
-video: https://www.youtube-nocookie.com/embed/7kqMLuTBpy0
+title: Messaging
+video: https://LifeLoop.cdn.spotlightr.com/watch/MTMwMDg4Mw==
 cover: /images/cms/vid-cov-12.jpg
 isNew: false
 isMobile: false
