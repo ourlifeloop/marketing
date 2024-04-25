@@ -1,6 +1,6 @@
 ---
-title: "Create/Edit a Recurring Activity "
-video: https://www.youtube-nocookie.com/embed/oZUiI9rn6_0
+title: "Create a recurring activity "
+video: https://lifeloop.cdn.spotlightr.com/watch/MTI4NjA2MA==
 cover: /images/cms/vid-cov-1.jpg
 isNew: false
 isMobile: false
