@@ -2,7 +2,7 @@
 title: Content Overview for Staff
 video: https://LifeLoop.cdn.spotlightr.com/watch/MTI5NDE4OQ==
 cover: /images/cms/youtube-cover.png
-isNew: true
+isNew: false
 isMobile: false
 topics:
   - content
