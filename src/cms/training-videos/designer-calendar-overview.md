@@ -1,7 +1,7 @@
 ---
 title: Designer Calendar Overview
 video: https://lifeloop.cdn.spotlightr.com/watch/MTQ0NTIxNA==
-cover: /images/cms/training-video-slides-2-.png
+cover: /images/cms/youtube-cover.png
 isNew: true
 isMobile: false
 topics:
