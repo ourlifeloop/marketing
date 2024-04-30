@@ -1,8 +1,8 @@
 ---
 title: Staff Web Platform Overview
 video: https://LifeLoop.cdn.spotlightr.com/watch/MTMxMDM2NA==
-cover: /images/cms/training-video-slides-18-.png
-isNew: true
+cover: /images/cms/youtube-cover.png
+isNew: false
 topics:
   - getting-started
   - staff-management
