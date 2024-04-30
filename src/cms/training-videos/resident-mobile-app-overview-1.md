@@ -1,9 +1,9 @@
 ---
 title: Resident Mobile App Overview
 video: https://www.youtube-nocookie.com/embed/vwPlhY6fMJo
-cover: /images/cms/vid-cov-5.jpg
-isNew: true
-isMobile: true
+cover: /images/cms/youtube-cover.png
+isNew: false
+isMobile: false
 topics:
   - resident-portal
 userTypes:
