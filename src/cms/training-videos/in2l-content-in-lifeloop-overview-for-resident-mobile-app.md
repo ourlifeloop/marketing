@@ -2,7 +2,7 @@
 title: Content Overview for Resident Mobile App
 video: https://LifeLoop.cdn.spotlightr.com/watch/MTY0NjA2Mw==
 cover: /images/cms/youtube-cover.png
-isNew: true
+isNew: false
 isMobile: false
 topics:
   - content
