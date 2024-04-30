@@ -1,7 +1,7 @@
 ---
 title: Staff Management Overview
 video: https://LifeLoop.cdn.spotlightr.com/watch/MTMyNTY5MQ==
-cover: /images/cms/vid-cov-1.jpg
+cover: /images/cms/youtube-cover.png
 isNew: false
 isMobile: false
 topics:
