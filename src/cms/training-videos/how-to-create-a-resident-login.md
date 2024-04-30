@@ -1,7 +1,7 @@
 ---
 title: How to Create a Resident Login
 video: https://www.youtube-nocookie.com/embed/hYI9RPyk-Qk
-cover: /images/cms/vid-cov-7.jpg
+cover: /images/cms/youtube-cover.png
 isNew: false
 isMobile: false
 topics:
