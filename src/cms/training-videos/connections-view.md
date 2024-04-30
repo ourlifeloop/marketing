@@ -1,7 +1,7 @@
 ---
 title: Connections View
 video: https://www.youtube-nocookie.com/embed/ybCOGIRjXaU
-cover: /images/cms/vid-cov-3.jpg
+cover: /images/cms/youtube-cover.png
 isNew: false
 isMobile: false
 topics:
