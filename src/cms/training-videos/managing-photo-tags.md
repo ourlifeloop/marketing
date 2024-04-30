@@ -1,8 +1,8 @@
 ---
 title: Managing Photo Tags
 video: https://LifeLoop.cdn.spotlightr.com/watch/MTMyNDIzNw==
-cover: /images/cms/training-video-slides-19-.png
-isNew: true
+cover: /images/cms/youtube-cover.png
+isNew: false
 isMobile: false
 topics:
   - photos
