@@ -1,8 +1,8 @@
 ---
 title: Staff Work Requests Overview
 video: https://www.youtube-nocookie.com/embed/SdIIVqcrBZE
-cover: /images/cms/specialized-services-footer.png
-isNew: true
+cover: /images/cms/youtube-cover.png
+isNew: false
 isMobile: false
 topics:
   - work-requests
