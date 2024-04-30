@@ -2,7 +2,7 @@
 title: Designer Calendar Overview
 video: https://lifeloop.cdn.spotlightr.com/watch/MTQ0NTIxNA==
 cover: /images/cms/youtube-cover.png
-isNew: true
+isNew: false
 isMobile: false
 topics:
   - designer
