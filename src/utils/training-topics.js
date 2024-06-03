@@ -9,6 +9,7 @@ import connections from '../assets/icons/connections.svg';
 import gettingStarted from '../assets/icons/getting-started.svg';
 import workRequests from '../assets/icons/work-requests.svg';
 import marketing from '../assets/icons/marketing.svg';
+import menus from '../assets/icons/menus.svg';
 import messages from '../assets/icons/messages.svg';
 import photos from '../assets/icons/photos.svg';
 import reporting from '../assets/icons/reporting.svg';
@@ -135,6 +136,12 @@ const TRAINING_TOPICS = [
     image: 'transportation',
     Icon: transportation,
   },
+  {
+    key: 'menus',
+    name: 'Menus',
+    image: 'menus',
+    Icon: menus,
+  },
 ];
 
 export default TRAINING_TOPICS;
@@ -182,6 +189,9 @@ export const trainingImages = graphql`
       ...featureImage
     }
     marketing: file(relativePath: { eq: "features/marketing.png" }) {
+      ...featureImage
+    }
+    menus: file(relativePath: { eq: "features/menus.png" }) {
       ...featureImage
     }
     messages: file(relativePath: { eq: "features/messages.png" }) {
