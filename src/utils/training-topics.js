@@ -9,7 +9,7 @@ import connections from '../assets/icons/connections.svg';
 import gettingStarted from '../assets/icons/getting-started.svg';
 import workRequests from '../assets/icons/work-requests.svg';
 import marketing from '../assets/icons/marketing.svg';
-import menus from '../assets/icons/menus.svg';
+import diningMenus from '../assets/icons/dining-menus.svg';
 import messages from '../assets/icons/messages.svg';
 import photos from '../assets/icons/photos.svg';
 import reporting from '../assets/icons/reporting.svg';
@@ -89,6 +89,12 @@ const TRAINING_TOPICS = [
     Icon: lifeloopUniversity,
   },
   {
+    key: 'dining-menus',
+    name: 'Menus',
+    image: 'diningMenus',
+    Icon: diningMenus,
+  },
+  {
     key: 'work-requests',
     name: 'Work Requests',
     image: 'workRequests',
@@ -135,12 +141,6 @@ const TRAINING_TOPICS = [
     name: 'Transportation',
     image: 'transportation',
     Icon: transportation,
-  },
-  {
-    key: 'menus',
-    name: 'Menus',
-    image: 'menus',
-    Icon: menus,
   },
 ];
 
@@ -191,7 +191,7 @@ export const trainingImages = graphql`
     marketing: file(relativePath: { eq: "features/marketing.png" }) {
       ...featureImage
     }
-    menus: file(relativePath: { eq: "features/menus.png" }) {
+    diningMenus: file(relativePath: { eq: "features/dining-menus.png" }) {
       ...featureImage
     }
     messages: file(relativePath: { eq: "features/messages.png" }) {
