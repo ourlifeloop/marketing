@@ -9,6 +9,7 @@ import connections from '../assets/icons/connections.svg';
 import gettingStarted from '../assets/icons/getting-started.svg';
 import workRequests from '../assets/icons/work-requests.svg';
 import marketing from '../assets/icons/marketing.svg';
+import diningMenus from '../assets/icons/dining-menus.svg';
 import messages from '../assets/icons/messages.svg';
 import photos from '../assets/icons/photos.svg';
 import reporting from '../assets/icons/reporting.svg';
@@ -86,6 +87,12 @@ const TRAINING_TOPICS = [
     name: 'LifeLoop University',
     image: 'lifeloopUniversity',
     Icon: lifeloopUniversity,
+  },
+  {
+    key: 'dining-menus',
+    name: 'Menus',
+    image: 'diningMenus',
+    Icon: diningMenus,
   },
   {
     key: 'work-requests',
@@ -182,6 +189,9 @@ export const trainingImages = graphql`
       ...featureImage
     }
     marketing: file(relativePath: { eq: "features/marketing.png" }) {
+      ...featureImage
+    }
+    diningMenus: file(relativePath: { eq: "features/dining-menus.png" }) {
       ...featureImage
     }
     messages: file(relativePath: { eq: "features/messages.png" }) {
