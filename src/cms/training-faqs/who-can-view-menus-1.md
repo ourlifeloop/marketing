@@ -8,4 +8,5 @@ topics:
   - dining-menus
 userTypes:
   - resident
+  - connection
 ---
