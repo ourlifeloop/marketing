@@ -1,7 +1,7 @@
 ---
 title: Connections Transportation Guide
-document: /images/cms/connection-user-guide-transportation-.pdf
-date: 2023-06-08T21:35:24.200Z
+document: /images/cms/connections-portal-transportation.pdf
+date: 2024-06-13T21:35:24.200Z
 isMobile: false
 topics:
   - transportation
