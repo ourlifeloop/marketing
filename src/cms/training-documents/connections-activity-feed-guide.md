@@ -1,10 +1,11 @@
 ---
-title: Connections Activity Feed Guide
-document: /images/cms/connection-user-guide-activity-feed.pdf
-date: 2023-06-08T21:21:10.735Z
+title: Connections Portal Activity Feed and Calendars Guide
+document: /images/cms/connections-portal-activity-feed-and-calendar.pdf
+date: 2024-06-13T21:21:10.735Z
 isMobile: false
 topics:
   - activity-feed
+  - activity-calendar
 userTypes:
   - connection
 ---
