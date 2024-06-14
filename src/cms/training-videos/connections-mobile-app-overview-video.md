@@ -1,6 +1,6 @@
 ---
 title: Connections Mobile App Overview Video
-video: https://www.youtube-nocookie.com/embed/uGGrGYGft-g
+video: https://LifeLoop.cdn.spotlightr.com/watch/MTY3ODUxMQ==
 cover: /images/cms/youtube-cover.png
 isNew: false
 isMobile: false
