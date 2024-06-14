@@ -2,7 +2,8 @@
 title: Staff Mobile App Overview
 video: https://LifeLoop.cdn.spotlightr.com/watch/MTY3ODU3Mg==
 cover: /images/cms/youtube-cover.png
-isNew: false
+isNew: true
+isMobile: true
 topics:
   - getting-started
   - staff-management
